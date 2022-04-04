@@ -27,6 +27,7 @@ domain: lucas-a-meyer.github.io       # if you want to force HTTPS, specify the 
 url: https://lucas-a-meyer.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 twitter_username: lucas_a_meyer
 github_username:  lucas-a-meyer
+linkedin_username: lucasameyer
 
 # Build settings
 theme: minima
