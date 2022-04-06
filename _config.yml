@@ -30,9 +30,7 @@ github_username:  lucas-a-meyer
 linkedin_username: lucasameyer
 
 plugins:
-- jekyll-feed
-
-
+  - jekyll-feed
 
 # Ask Jekyll to auto-open the editor when composing the post
 jekyll_compose:
@@ -59,5 +57,4 @@ jekyll_compose:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-
-theme: jekyll-theme-tactile
+theme: minima
