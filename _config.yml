@@ -29,10 +29,7 @@ twitter_username: lucas_a_meyer
 github_username:  lucas-a-meyer
 linkedin_username: lucasameyer
 
-# theme: minima
-remote_theme: pages-themes/leap-day
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
 - jekyll-feed
 
 
