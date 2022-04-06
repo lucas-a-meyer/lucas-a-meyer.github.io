@@ -59,4 +59,4 @@ jekyll_compose:
 #   - vendor/ruby/
 
 #theme: minima
-remote-theme: benbalter/retlab
+remote-theme: pages-themes/tactile
