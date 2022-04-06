@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: The feather, the bathroom scale and the kangaroo

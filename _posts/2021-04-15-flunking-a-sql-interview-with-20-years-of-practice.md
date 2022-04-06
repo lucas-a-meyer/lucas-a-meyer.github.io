@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Flunking a SQL interview with 20+ years of practice

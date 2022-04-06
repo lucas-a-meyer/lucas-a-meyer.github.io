@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: What happens when a hiring manager posts a position on LinkedIn

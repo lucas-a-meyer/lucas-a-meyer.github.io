@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Mad Ned's advice

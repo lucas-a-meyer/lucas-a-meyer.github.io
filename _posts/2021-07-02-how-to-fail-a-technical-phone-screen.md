@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: How to fail a technical phone screen

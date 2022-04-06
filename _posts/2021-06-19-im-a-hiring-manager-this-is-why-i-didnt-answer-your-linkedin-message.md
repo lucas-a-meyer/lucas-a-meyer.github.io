@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: I'm a hiring manager: this is why I didn't answer your LinkedIn message

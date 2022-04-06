@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Do you know how smart I am in Portuguese?

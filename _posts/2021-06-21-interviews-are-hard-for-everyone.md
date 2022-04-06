@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Interviews are hard for everyone

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Data science and 9/11

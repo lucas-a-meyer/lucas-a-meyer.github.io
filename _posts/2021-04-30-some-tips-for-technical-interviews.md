@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Some tips for technical interviews

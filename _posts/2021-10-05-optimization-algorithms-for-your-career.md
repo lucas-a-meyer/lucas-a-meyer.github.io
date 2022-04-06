@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Optimization algorithms for your career

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: So you want to become a manager
