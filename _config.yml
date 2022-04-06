@@ -58,5 +58,6 @@ jekyll_compose:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-#theme: minima
-remote-theme: pages-themes/tactile
+theme: minima
+#remote-theme: pages-themes/
+#theme: tactile
