@@ -62,3 +62,5 @@ jekyll_compose:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+theme: jekyll-theme-tactile
