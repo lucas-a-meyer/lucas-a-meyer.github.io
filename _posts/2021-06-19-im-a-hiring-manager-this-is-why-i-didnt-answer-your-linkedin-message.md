@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I'm a hiring manager: this is why I didn't answer your LinkedIn message
+title: "I'm a hiring manager: this is why I didn't answer your LinkedIn message"
 date: 2021-06-19 12:00 -0400
 categories: career, hiring, interviews
 ---

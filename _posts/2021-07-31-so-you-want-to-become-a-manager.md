@@ -1,6 +1,6 @@
 ---
 layout: post
-title: So you want to become a manager
+title: "So you want to become a manager"
 date: 2021-07-31 12:00 -0400
 categories: management
 ---

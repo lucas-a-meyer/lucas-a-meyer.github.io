@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The XY Problem
+title: "The XY Problem"
 date: 2021-07-22 12:00 -0400
 categories: career
 ---

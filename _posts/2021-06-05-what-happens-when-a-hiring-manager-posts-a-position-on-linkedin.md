@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What happens when a hiring manager posts a position on LinkedIn
+title: "What happens when a hiring manager posts a position on LinkedIn"
 date: 2021-06-05 12:00 -0400
 categories: career, hiring, interviews
 ---

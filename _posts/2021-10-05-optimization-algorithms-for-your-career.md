@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimization algorithms for your career
+title: "Optimization algorithms for your career"
 date: 2021-10-05 12:00 -0400
 categories: career, data science
 ---

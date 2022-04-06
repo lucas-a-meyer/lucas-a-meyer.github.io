@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reverse causation
+title: "Reverse causation"
 date: 2021-11-22 12:00 -0400
 categories: data science
 ---

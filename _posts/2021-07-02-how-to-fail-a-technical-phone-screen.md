@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to fail a technical phone screen
+title: "How to fail a technical phone screen"
 date: 2021-07-02 12:00 -0400
 categories: career, interviews
 ---

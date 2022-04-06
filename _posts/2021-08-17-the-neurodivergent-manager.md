@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The neurodivergent manager
+title: "The neurodivergent manager"
 date: 2021-08-17 12:00 -0400
 categories: management
 ---

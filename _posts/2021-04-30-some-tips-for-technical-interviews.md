@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Some tips for technical interviews
+title: "Some tips for technical interviews"
 date: 2021-04-30 12:00 -0400
 categories: career, interviews
 ---

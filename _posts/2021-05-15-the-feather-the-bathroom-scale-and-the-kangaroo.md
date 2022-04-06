@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The feather, the bathroom scale and the kangaroo
+title: "The feather, the bathroom scale and the kangaroo"
 date: 2021-05-15 12:00 -0400
 categories: data science
 ---

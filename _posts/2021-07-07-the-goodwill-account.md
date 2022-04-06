@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The goodwill account
+title: "The goodwill account"
 date: 2021-07-07 12:00 -0400
 categories: career
 ---

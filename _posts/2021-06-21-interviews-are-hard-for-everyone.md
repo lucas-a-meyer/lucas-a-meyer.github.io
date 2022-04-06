@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interviews are hard for everyone
+title: "Interviews are hard for everyone"
 date: 2021-06-21 12:00 -0400
 categories: career, interviews
 ---

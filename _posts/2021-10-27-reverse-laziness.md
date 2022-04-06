@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reverse laziness
+title: "Reverse laziness"
 date: 2021-10-27 12:00 -0400
 categories: concepts
 ---

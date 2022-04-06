@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weak baselines
+title: "Weak baselines"
 date: 2021-11-29 12:00 -0400
 categories: data science
 ---

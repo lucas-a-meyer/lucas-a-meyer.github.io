@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writing good emails
+title: "Writing good emails"
 date: 2021-09-18 12:00 -0400
 categories: career
 ---

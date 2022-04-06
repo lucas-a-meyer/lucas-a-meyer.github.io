@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Do you know how smart I am in Portuguese?
+title: "Do you know how smart I am in Portuguese?"
 date: 2021-10-10 12:00 -0400
 categories: writing
 ---

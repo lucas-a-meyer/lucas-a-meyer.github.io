@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cunningham's Law
+title: "Cunningham's Law"
 date: 2021-11-04 12:00 -0400
 categories: concepts
 ---

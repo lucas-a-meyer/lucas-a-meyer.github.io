@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flunking a SQL interview with 20+ years of practice
+title: "Flunking a SQL interview with 20+ years of practice"
 date: 2021-04-15 12:00 -0400
 categories: career, interviews
 ---
