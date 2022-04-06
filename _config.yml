@@ -30,9 +30,11 @@ github_username:  lucas-a-meyer
 linkedin_username: lucasameyer
 
 # Build settings
-theme: minima
+# theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Ask Jekyll to auto-open the editor when composing the post
 jekyll_compose:
