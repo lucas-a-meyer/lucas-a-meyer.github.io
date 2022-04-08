@@ -32,6 +32,7 @@ linkedin_username: lucasameyer
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jelyll-include-cache
 
 # Ask Jekyll to auto-open the editor when composing the post
 jekyll_compose:
@@ -61,3 +62,4 @@ jekyll_compose:
 theme: minima
 # remote-theme: pages-themes/tactile
 # theme: jekyll-theme-tactile
+#remote_theme: "mmistakes/minimal-mistakes@4.24.0"

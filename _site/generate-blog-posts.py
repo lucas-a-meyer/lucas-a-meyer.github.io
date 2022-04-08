@@ -21,7 +21,7 @@ def generateFileName(date, title, format):
 def generateFileContent(date, title, tags, embed):
     fileContent = f"""---
 layout: post
-title: {title.replace(":", "")}
+title: "{title}"
 date: {date} 12:00 -0400
 categories: {tags}
 ---
