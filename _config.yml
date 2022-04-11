@@ -29,7 +29,7 @@ linkedin_username: lucasameyer
 github_username:  lucas-a-meyer
 twitter_username: lucas_a_meyer
 
-google_analytics: UA-75015365-3
+google_analytics: G-6KTZ853BN5
 
 plugins:
   - jekyll-feed
@@ -61,7 +61,7 @@ jekyll_compose:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-theme: minima
-# remote-theme: pages-themes/tactile
+# theme: minima
+theme: jekyll/minima
 # theme: jekyll-theme-tactile
 #remote_theme: "mmistakes/minimal-mistakes@4.24.0"
