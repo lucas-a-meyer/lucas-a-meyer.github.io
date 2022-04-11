@@ -62,6 +62,6 @@ jekyll_compose:
 #   - vendor/ruby/
 
 # theme: minima
-theme: jekyll/minima
+remote_theme: jekyll/minima
 # theme: jekyll-theme-tactile
 #remote_theme: "mmistakes/minimal-mistakes@4.24.0"
