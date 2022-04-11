@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leaving Amazon
-date: 2022-04-22 11:30 -0400
+date: 2022-04-11 11:30 -0400
 categories: 
     - career 
     - hiring
