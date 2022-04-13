@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leaving Amazon
+title: My policies on interviewing
 date: 2022-04-13 11:30 -0400
 categories: 
     - career 
