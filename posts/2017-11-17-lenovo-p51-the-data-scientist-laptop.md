@@ -1,10 +1,6 @@
 ---
 title: "Lenovo P51 - the Data Scientist's laptop"
-author: Lucas A. Meyer
 date: '2017-11-17'
-categories:
-  - Data Science
-
 ---
 
 Recently, as part of a computer refresh, I have moved from a Microsoft Surface Pro 3 to a Lenovo P51. 
