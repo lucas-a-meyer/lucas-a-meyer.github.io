@@ -1,7 +1,14 @@
 ---
-title: "Lucas A. Meyer's blog"
+title: "Lucas A. Meyer's Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
