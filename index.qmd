@@ -1,5 +1,5 @@
 ---
-title: "blog"
+title: "Lucas A. Meyer's blog"
 ---
 
 This is a Quarto website.
