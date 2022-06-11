@@ -2,25 +2,30 @@
 title: Why you should blog if you are a data scientist
 author: Lucas A. Meyer
 date: '2019-02-13'
+categories:
+  - Blog
+  - Data Science
 ---
 
 A while back, David Robinson offered the following advice on Twitter:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When you’ve written the same code 3 times, write a function<br><br>When you’ve given the same in-person advice 3 times, write a blog post</p>&mdash; David Robinson (@drob) <a href="https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw">November 9, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 928447584712253440 >}}
 
 He also followed it up with an [excellent blog post](http://varianceexplained.org/r/start-blog/) aimed at aspiring data scientists. I think that the most important idea from that post is actually from a presentation he gave. Here's the key idea, as reported by Amelia McNamara:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Things that are still on your computer are approximately useless.&quot; -<a href="https://twitter.com/drob?ref_src=twsrc%5Etfw">@drob</a> <a href="https://twitter.com/hashtag/eUSR?src=hash&amp;ref_src=twsrc%5Etfw">#eUSR</a> <a href="https://twitter.com/hashtag/eUSR2017?src=hash&amp;ref_src=twsrc%5Etfw">#eUSR2017</a> <a href="https://t.co/nS3IBiRHBn">pic.twitter.com/nS3IBiRHBn</a></p>&mdash; Amelia McNamara (@AmeliaMN) <a href="https://twitter.com/AmeliaMN/status/926509282874585089?ref_src=twsrc%5Etfw">November 3, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{< tweet 926509282874585089 >}}
 
-In summary, things that you keep to yourself have very little value, and things that you share with the world have a lot of value. I think that's a very cool idea for the Economics of information. For an extreme case, imagine you have a trade secret that allows you to solve a specific class of problems faster than others. In this case, it's understandable that you want to keep the trade secret to yourself. But it makes sense to advertise to the world that you can quickly solve some kinds problems faster than others. That makes your trade secret more valuable.
+In summary, things that you keep to yourself have very little value, and things that you share with the world have a lot of value. I think that's a very cool idea for the Economics of information. For an extreme case, imagine you have a trade secret that allows you to solve a specific class of problems faster than others. In this case, it's understandable that you want to keep the trade secret to yourself. But it make sense to advertise to the world that you can quickly solve some kinds problems faster than others. That makes your trade secret more valuable.
 
 ## The discipline of writing about what you're doing
 
-When I was a wee little kid and had just entered college, one of my first classes was "Physics Lab", and the first class of that was to measure "gravity", more specifically, the gravitational acceleration . Of course, mathy Computer Science studies that we were, we all knew that the gravitational acceleration would be $g \approx 9.8 m/s^2$. 
+When I was a wee little kid and had just entered college, one of my first classes was "Physics Lab", and the first class of that was to measure "gravity", more specifically, the gravitational acceleration . Of course, mathy Computer Science studies that we were, we all knew that the gravitational acceleration would be $ g \approx 9.8 m/s^2 $. 
 
 Measuring it, however, it's not very easy. First, remember that this is in the early 90s in Brazil, so digital cameras were very rare. Part of the problem is that 9.8 meters (approximately 30 feet) is quite high, so if we wanted our experiment to take around 1s, we would need a big ladder. Or, as it happened, we'd need to run an experiment that took less than a second for each run. In a class with 25 students, that was the preferred route. 
 
 We set up a vertical track attached to a device that would spark every 1/60 of a second, and we attached grid paper to the track. This is called a [Behr free fall apparatus](https://cse.wwu.edu/physics/acceleration-due-gravity-behr-free-fall-apparatus-and-spark-timer). 
+
+![Behr Free Fall Apparatus](https://cse.wwu.edu/system/files/styles/large/private/Behr%20Free%20Fall%20Apparatus.JPG?itok=2ZjngUyN)
 
 We would release the device from the top of the track, and the sparks would mark the grid paper. We would then manually measure the distances between the sparks and the differences between the distances would tell us the acceleration. In theory. Again, remember this is the early 90s, so there's no Windows 95 or Excel easily available, there were several steps that were prone to error. 
 

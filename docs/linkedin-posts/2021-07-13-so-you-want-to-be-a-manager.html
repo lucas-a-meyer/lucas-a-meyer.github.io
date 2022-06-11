@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lucas A. Meyer">
-<meta name="dcterms.date" content="2019-02-13">
+<meta name="dcterms.date" content="2021-07-13">
 
-<title>Lucas A. Meyer - Why you should blog if you are a data scientist</title>
+<title>Lucas A. Meyer - So you want to be a manager</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -56,7 +55,6 @@ ul.task-list{list-style: none;}
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -117,24 +115,21 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Why you should blog if you are a data scientist</h1>
-</div>
+<h1 class="title">So you want to be a manager</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">management</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Lucas A. Meyer </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2019</p>
+      <p class="date">July 13, 2021</p>
     </div>
   </div>
     
@@ -143,43 +138,10 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>A while back, David Robinson offered the following advice on Twitter:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-When you’ve written the same code 3 times, write a function<br><br>When you’ve given the same in-person advice 3 times, write a blog post
-</p>
-— David Robinson (<span class="citation" data-cites="drob">@drob</span>) <a href="https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw">November 9, 2017</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>He also followed it up with an <a href="http://varianceexplained.org/r/start-blog/">excellent blog post</a> aimed at aspiring data scientists. I think that the most important idea from that post is actually from a presentation he gave. Here’s the key idea, as reported by Amelia McNamara:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-"Things that are still on your computer are approximately useless." -<a href="https://twitter.com/drob?ref_src=twsrc%5Etfw"><span class="citation" data-cites="drob">@drob</span></a> <a href="https://twitter.com/hashtag/eUSR?src=hash&amp;ref_src=twsrc%5Etfw">#eUSR</a> <a href="https://twitter.com/hashtag/eUSR2017?src=hash&amp;ref_src=twsrc%5Etfw">#eUSR2017</a> <a href="https://t.co/nS3IBiRHBn">pic.twitter.com/nS3IBiRHBn</a>
-</p>
-— Amelia McNamara (<span class="citation" data-cites="AmeliaMN">@AmeliaMN</span>) <a href="https://twitter.com/AmeliaMN/status/926509282874585089?ref_src=twsrc%5Etfw">November 3, 2017</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>In summary, things that you keep to yourself have very little value, and things that you share with the world have a lot of value. I think that’s a very cool idea for the Economics of information. For an extreme case, imagine you have a trade secret that allows you to solve a specific class of problems faster than others. In this case, it’s understandable that you want to keep the trade secret to yourself. But it makes sense to advertise to the world that you can quickly solve some kinds problems faster than others. That makes your trade secret more valuable.</p>
-<section id="the-discipline-of-writing-about-what-youre-doing" class="level2">
-<h2 class="anchored" data-anchor-id="the-discipline-of-writing-about-what-youre-doing">The discipline of writing about what you’re doing</h2>
-<p>When I was a wee little kid and had just entered college, one of my first classes was “Physics Lab”, and the first class of that was to measure “gravity”, more specifically, the gravitational acceleration . Of course, mathy Computer Science studies that we were, we all knew that the gravitational acceleration would be <span class="math inline">\(g \approx 9.8 m/s^2\)</span>.</p>
-<p>Measuring it, however, it’s not very easy. First, remember that this is in the early 90s in Brazil, so digital cameras were very rare. Part of the problem is that 9.8 meters (approximately 30 feet) is quite high, so if we wanted our experiment to take around 1s, we would need a big ladder. Or, as it happened, we’d need to run an experiment that took less than a second for each run. In a class with 25 students, that was the preferred route.</p>
-<p>We set up a vertical track attached to a device that would spark every 1/60 of a second, and we attached grid paper to the track. This is called a <a href="https://cse.wwu.edu/physics/acceleration-due-gravity-behr-free-fall-apparatus-and-spark-timer">Behr free fall apparatus</a>.</p>
-<p>We would release the device from the top of the track, and the sparks would mark the grid paper. We would then manually measure the distances between the sparks and the differences between the distances would tell us the acceleration. In theory. Again, remember this is the early 90s, so there’s no Windows 95 or Excel easily available, there were several steps that were prone to error.</p>
-<p>The desired outcome was not only to calculate the acceleration due to gravity, but also to generate a lab report.</p>
-</section>
-<section id="writing-the-lab-report" class="level2">
-<h2 class="anchored" data-anchor-id="writing-the-lab-report">Writing the lab report</h2>
-<p>It was a simple experiment, but there was a twist. Another class of 25 students would have to replicate the experiment following the lab report from the first 25. Oh boy. We quickly found out that the best lab reports were the ones in which the experimenter would document the experiment <em>as they were executing</em> the experiment. Another thing that worked was going through the experiment more than once. What <strong>did not work</strong> was to perform the experiment and then go to where the computers were to type up a report from memory.</p>
-<p>I thought that was very insightful, shortly afterwards, we would learn about Donald Knuth’s proposed paradigm of <a href="https://en.wikipedia.org/wiki/Literate_programming">literate programming</a>, which lives on in Jupyter Notebooks and R Markdown and that is very popular in data science today. Behind it is the same concept of explanations interspersed with technical work to produce something that is reproducible and easy to understand.</p>
-</section>
-<section id="blogging-helps-you-train-to-write-about-your-work" class="level2">
-<h2 class="anchored" data-anchor-id="blogging-helps-you-train-to-write-about-your-work">Blogging helps you train to write about your work</h2>
-<p>Besides the excellent reasons offered by David Robinson for aspiring data scientists to blog, I think experienced data scientists can also benefit from blogging. David argues that aspiring data scientists should blog for technical practice, to build a portfolio, and to get feedback. Experienced data scientists might benefit for similar reasons, but not exactly the same.</p>
-<p>Similar to “practicing”, blogging about technical topics helps you learn how to communicate better about them, and also helps you learn how to write better research reports. Similar to “portfolio”, it signals a data scientist’s body of work. For an early-in-career data scientist, it may be more showing that you can do analysis, but for an experienced data scientist is more about what type of analysis you like to do. Finally, I think that “feedback” also works differently for early-in-career and experienced data scientists. I’m not sure random strangers in the internet will sweep in and correct your posts, but you can find out what people are reading and sharing. You may be surprised when you learn what parts of your work people find interesting.</p>
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6820742108136120320" height="995" width="504" frameborder="0" allowfullscreen="" title="Embedded post">
+</iframe>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

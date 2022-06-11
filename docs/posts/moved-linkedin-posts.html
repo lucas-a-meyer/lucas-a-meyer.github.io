@@ -56,7 +56,6 @@ ul.task-list{list-style: none;}
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -118,7 +117,11 @@ ul.task-list{list-style: none;}
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Why you should blog if you are a data scientist</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Blog</div>
+    <div class="quarto-category">Data Science</div>
+  </div>
+  </div>
 
 
 
@@ -144,27 +147,21 @@ ul.task-list{list-style: none;}
 </header>
 
 <p>A while back, David Robinson offered the following advice on Twitter:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-When you’ve written the same code 3 times, write a function<br><br>When you’ve given the same in-person advice 3 times, write a blog post
-</p>
-— David Robinson (<span class="citation" data-cites="drob">@drob</span>) <a href="https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw">November 9, 2017</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p></p>
 <p>He also followed it up with an <a href="http://varianceexplained.org/r/start-blog/">excellent blog post</a> aimed at aspiring data scientists. I think that the most important idea from that post is actually from a presentation he gave. Here’s the key idea, as reported by Amelia McNamara:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-"Things that are still on your computer are approximately useless." -<a href="https://twitter.com/drob?ref_src=twsrc%5Etfw"><span class="citation" data-cites="drob">@drob</span></a> <a href="https://twitter.com/hashtag/eUSR?src=hash&amp;ref_src=twsrc%5Etfw">#eUSR</a> <a href="https://twitter.com/hashtag/eUSR2017?src=hash&amp;ref_src=twsrc%5Etfw">#eUSR2017</a> <a href="https://t.co/nS3IBiRHBn">pic.twitter.com/nS3IBiRHBn</a>
-</p>
-— Amelia McNamara (<span class="citation" data-cites="AmeliaMN">@AmeliaMN</span>) <a href="https://twitter.com/AmeliaMN/status/926509282874585089?ref_src=twsrc%5Etfw">November 3, 2017</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>In summary, things that you keep to yourself have very little value, and things that you share with the world have a lot of value. I think that’s a very cool idea for the Economics of information. For an extreme case, imagine you have a trade secret that allows you to solve a specific class of problems faster than others. In this case, it’s understandable that you want to keep the trade secret to yourself. But it makes sense to advertise to the world that you can quickly solve some kinds problems faster than others. That makes your trade secret more valuable.</p>
+<p></p>
+<p>In summary, things that you keep to yourself have very little value, and things that you share with the world have a lot of value. I think that’s a very cool idea for the Economics of information. For an extreme case, imagine you have a trade secret that allows you to solve a specific class of problems faster than others. In this case, it’s understandable that you want to keep the trade secret to yourself. But it make sense to advertise to the world that you can quickly solve some kinds problems faster than others. That makes your trade secret more valuable.</p>
 <section id="the-discipline-of-writing-about-what-youre-doing" class="level2">
 <h2 class="anchored" data-anchor-id="the-discipline-of-writing-about-what-youre-doing">The discipline of writing about what you’re doing</h2>
-<p>When I was a wee little kid and had just entered college, one of my first classes was “Physics Lab”, and the first class of that was to measure “gravity”, more specifically, the gravitational acceleration . Of course, mathy Computer Science studies that we were, we all knew that the gravitational acceleration would be <span class="math inline">\(g \approx 9.8 m/s^2\)</span>.</p>
+<p>When I was a wee little kid and had just entered college, one of my first classes was “Physics Lab”, and the first class of that was to measure “gravity”, more specifically, the gravitational acceleration . Of course, mathy Computer Science studies that we were, we all knew that the gravitational acceleration would be $ g m/s^2 $.</p>
 <p>Measuring it, however, it’s not very easy. First, remember that this is in the early 90s in Brazil, so digital cameras were very rare. Part of the problem is that 9.8 meters (approximately 30 feet) is quite high, so if we wanted our experiment to take around 1s, we would need a big ladder. Or, as it happened, we’d need to run an experiment that took less than a second for each run. In a class with 25 students, that was the preferred route.</p>
 <p>We set up a vertical track attached to a device that would spark every 1/60 of a second, and we attached grid paper to the track. This is called a <a href="https://cse.wwu.edu/physics/acceleration-due-gravity-behr-free-fall-apparatus-and-spark-timer">Behr free fall apparatus</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://cse.wwu.edu/system/files/styles/large/private/Behr%20Free%20Fall%20Apparatus.JPG?itok=2ZjngUyN" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Behr Free Fall Apparatus</figcaption><p></p>
+</figure>
+</div>
 <p>We would release the device from the top of the track, and the sparks would mark the grid paper. We would then manually measure the distances between the sparks and the differences between the distances would tell us the acceleration. In theory. Again, remember this is the early 90s, so there’s no Windows 95 or Excel easily available, there were several steps that were prone to error.</p>
 <p>The desired outcome was not only to calculate the acceleration due to gravity, but also to generate a lab report.</p>
 </section>

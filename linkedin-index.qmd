@@ -1,7 +1,7 @@
 ---
-title: "Lucas A. Meyer's Blog"
+title: "Lucas A. Meyer's LinkedIn Posts"
 listing:
-  contents: posts
+  contents: linkedin-posts
   sort: "date desc"
   type: default
   categories: false

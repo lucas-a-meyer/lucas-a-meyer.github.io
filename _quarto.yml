@@ -2,10 +2,17 @@ project:
   type: website
   output-dir: docs
   google-analytics: "G-6KTZ853BN5"
+  pre-render: ./pre-render.sh
+  post-render: ./post-render.sh
 
 website:
   title: "Lucas A. Meyer"
   navbar:
+    left:
+        - text: "Home"
+          file: index.qmd
+        - text: "LinkedIn Posts"
+          file: linkedin-index.qmd
     right:
       - about.qmd
       - icon: github
