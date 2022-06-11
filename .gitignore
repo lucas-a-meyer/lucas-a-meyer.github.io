@@ -1,6 +1,8 @@
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.venv
 vendor
+.quarto
 
 /.quarto/
