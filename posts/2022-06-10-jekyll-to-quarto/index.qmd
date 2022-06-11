@@ -1,6 +1,7 @@
 ---
 title: "Converting my blog from Jekyll to Quarto"
 date: "2022-06-10"
+author: "Lucas A. Meyer"
 ---
 
 I thought it was going to be hard. It was not.
