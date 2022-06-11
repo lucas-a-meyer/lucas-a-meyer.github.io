@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Eventually, I will write something better here. For what it’s worth, Quarto is awesome."
+    "text": "Quarto is awesome."
   },
   {
     "objectID": "posts-sample/welcome/index.html",
@@ -130,7 +130,7 @@
     "href": "posts/2018-08-23-yo-stroopwafel.html",
     "title": "Yo, Stroop!",
     "section": "",
-    "text": "YoStroop is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying “thank you” for help and valuable contributions. It was developed using Python, Azure Functions v2.0 and Cosmos DB."
+    "text": "YoStroop is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying “thank you” for help and valuable contributions.\nIt was developed using Python, Azure Functions v2.0 and Cosmos DB."
   },
   {
     "objectID": "posts/2018-08-23-yo-stroopwafel.html#motivation",
