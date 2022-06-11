@@ -1,6 +1,7 @@
 ---
 title: A story about my father
 date: '2019-02-04'
+author: "Lucas A. Meyer"
 ---
 
 My father passed away a few years ago. I don't even remember exactly when. I think it was in 2013 or 2014. We were not close when he died, and I don't remember ever being close. To my memory, he was mostly away since I was around 7, and he left home for good when I was 12 or 13. Not having a father made a lot of things harder in my life, which I imagine made me more capable in some respects.

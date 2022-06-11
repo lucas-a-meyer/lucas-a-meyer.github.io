@@ -1,6 +1,7 @@
 ---
 title: Hurricane Irma
 date: '2017-09-11'
+author: "Lucas A. Meyer"
 ---
 
 

@@ -1,11 +1,12 @@
 ---
 title: "Lenovo P51 - the Data Scientist's laptop"
 date: '2017-11-17'
+author: "Lucas A. Meyer"
 ---
 
 Recently, as part of a computer refresh, I have moved from a Microsoft Surface Pro 3 to a Lenovo P51. 
-The Microsoft Surface Pro 3 was the right computer for me at the time I 
-got it, but as time went by my position changed substantially, and it ceased to be appropriate for me.
+
+The Microsoft Surface Pro 3 was the right computer for me at the time I got it, but as time went by my position changed substantially, and it ceased to be appropriate for me.
 
 When I got the Surface, the core of my work consisted in traveling, having conference calls and
 light emailing and spreadsheet work. As time went by, my work went back to creating analytics, 

@@ -1,6 +1,8 @@
 ---
 title: A reflection on FY18 and FY19 plans
 date: '2018-05-28'
+author: "Lucas A. Meyer"
+draft: true
 ---
 
 # Reflecting on FY18 and planning for FY19

@@ -1,11 +1,12 @@
 ---
 title: Yo, Stroop!
 date: '2018-08-23'
+author: "Lucas A. Meyer"
 ---
 
 [YoStroop](https://github.com/RealLucasMeyer/yostroop) is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying "thank you" for help and valuable contributions. 
-It was developed using Python, Azure Functions v2.0 and Cosmos DB.
 
+It was developed using Python, Azure Functions v2.0 and Cosmos DB.
 
 ## Motivation
 

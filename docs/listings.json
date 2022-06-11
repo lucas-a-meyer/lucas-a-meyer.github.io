@@ -4,17 +4,15 @@
     "items": [
       "/posts/jekyll-to-quarto/index.html",
       "/posts/moved-linkedin-posts.html",
-      "/posts/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.html",
-      "/posts/2019-02-12-the-day-somebody-stole-my-work.html",
-      "/posts/2019-02-04-a-story-about-my-father.html",
-      "/posts/2019-01-29-installing-arch-linux.html",
-      "/posts/2018-08-23-yo-stroopwafel.html",
-      "/posts/2018-07-08-praising-conway-s-data-science-venn-diagram.html",
-      "/posts/2018-06-25-centralized-vs-distributed-data-teams.html",
-      "/posts/2018-05-28-a-reflection-on-fy18-and-fy19-plans.html",
-      "/posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html",
-      "/posts/2018-02-20-the-three-types-of-gifts-in-buddhism.html",
-      "/posts/2017-09-11-hurricane-irma.html"
+      "/posts/why-you-should-blog-if-you-are-a-data-scientist.html",
+      "/posts/the-day-somebody-stole-my-work.html",
+      "/posts/a-story-about-my-father.html",
+      "/posts/installing-arch-linux.html",
+      "/posts/yo-stroopwafel.html",
+      "/posts/praising-conway-s-data-science-venn-diagram.html",
+      "/posts/centralized-vs-distributed-data-teams.html",
+      "/posts/lenovo-p51-the-data-scientist-laptop.html",
+      "/posts/hurricane-irma.html"
     ]
   },
   {
