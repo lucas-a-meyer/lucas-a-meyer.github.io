@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
-<meta name="dcterms.date" content="2022-06-09">
+<meta name="dcterms.date" content="2019-01-29">
 
-<title>Lucas A. Meyer - Moved all my LinkedIn posts</title>
+<title>Lucas A. Meyer - Installing Arch Linux</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Moved all my LinkedIn posts</h1>
+<h1 class="title">Installing Arch Linux</h1>
 </div>
 
 
@@ -133,7 +133,7 @@ ul.task-list{list-style: none;}
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 9, 2022</p>
+      <p class="date">January 29, 2019</p>
     </div>
   </div>
     
@@ -142,9 +142,17 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>I moved all my LinkedIn posts that were on the blog to []</p>
+<p>Even though I work at Microsoft and really love Windows, I’ve recently installed Arch Linux as a dual boot.</p>
+<p>A lot of data scientists and software developers I know prefer OS X, and Windows doesn’t get that much love. Although many people provide many reasons not to use Windows, I was always able to work around whatever those issues were. Sometimes this required Cygwin, Git Bash, and more recently, <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">WSL</a> (the Windows Subsystem for Linux). I can’t remember any software that I was ever unable to use in Windows: LaTeX, git, Inkscape… everything I need had a decent Windows version, even if I had to compile it from source.</p>
+<p>Weirdly, because I can do so much with Windows, I find that I take too many shortcuts. The most damaging shortcuts are the ones that damage reproducibility, especially when creating documentation for my projects. It’s too easy to copy and paste into PowerPoint and be done with the communications for a talk. Some of my talks, especially about my <a href="https://treasurytoday.com/asa-2017-winners/judges-choice-winner-microsoft">most successful product</a>, have many similar versions with one or two slides changed. Someone asks me for a slightly shorter or slightly longer talk and I suddenly have a new file with one or two extra (or hidden) slides that I may need to maintain. It’s not lost on me that this is a lack of discipline on my part, but if you were to invite me to a <a href="https://en.wikipedia.org/wiki/Brigadeiro">brigadeiro</a> store, it would be hypocritical of you to accuse me of having no self-control.</p>
+<section id="why-arch" class="level2">
+<h2 class="anchored" data-anchor-id="why-arch">Why Arch</h2>
+<p>I first got into contact with Arch through a German friend back in 2010. When trying to install it, I quickly learned that Arch requires you to understand what you’re doing, and especially, that if you <strong>don’t</strong> understand what you’re doing, things break. Over time, I found that although some things have a steep learning curve, the return on the time investment was very positive. I also tried Ubuntu, Fedora and Red Hat, and although I could get productive more quickly, keeping them configured to my taste later was harder - when something broke it took me longer to understand what it was.</p>
+<p>There are several things that still don’t work well in Linux. One of the most vexing is having a high-DPI display. It’s somewhat hard to configure it. It works well in KDE, but KDE has tearing issues. It doesn’t work too well in GNOME unless you use Wayland, which brings a host of different issues. You can make everything a lot worse by using the NVidia proprietary driver with Wayland, but it’s needed if you want to use the GPU efficiently.</p>
+<p>So although I managed to configure my Arch installation to use GNOME under Wayland and use the NVidia proprietary driver, it’s very unstable. Native applications tend to run, but many applications crash in comical ways: resizing Google Chrome under Wayland is a sure way to cause a crash, for example.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

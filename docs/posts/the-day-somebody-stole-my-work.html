@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Lucas A. Meyer">
-<meta name="dcterms.date" content="2022-06-09">
+<meta name="dcterms.date" content="2019-02-12">
 
-<title>Lucas A. Meyer - Moved all my LinkedIn posts</title>
+<title>Lucas A. Meyer - The day somebody “stole” my work</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,24 +115,18 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Moved all my LinkedIn posts</h1>
+<h1 class="title">The day somebody “stole” my work</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Lucas A. Meyer </p>
-          </div>
-  </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 9, 2022</p>
+      <p class="date">February 12, 2019</p>
     </div>
   </div>
     
@@ -142,9 +135,60 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>I moved all my LinkedIn posts that were on the blog to []</p>
+<p>Part of the work of data science is to create machines that people can use to solve problems. Sometimes these machines can be re-used for other problems with little need for reconfiguration. Sometimes the people reusing one of the machines a data scientist creates will do so without letting the data scientist know until there’s a problem.</p>
+<p>To protect the innocent, some details of the stories below have been changed.</p>
+<section id="the-chatbot" class="level2">
+<h2 class="anchored" data-anchor-id="the-chatbot">The chatbot</h2>
+<p>Years ago, I wrote a chatbot to automate some really mundane question-answering for my team. Although it was not something extremely high-tech, it was the exact right tool for the job. Most chatbots I’ve seen are “Rube Goldberg machines”, like the “Self Operating Napkin” below. My chatbot really cut down on mundane manual work, and therefore was really successful.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Rube_Goldberg%27s_%22Self-Operating_Napkin%22_%28cropped%29.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Rube Goldberg Self-Operating Napkin</figcaption><p></p>
+</figure>
+</div>
+<p>Because of its success, my chatbot got a lot of use and it started to be shown to customers as an example of our usage of technology. “Some guy in some place”, let’s call him G, became a specialist in demonstrating the chatbot I wrote, and he would do so very well.</p>
+<p>After a while, somebody had a question about my chatbot in an internal distribution list. The question went like “Can that chatbot do X?”. I answered that “No, it can’t do that - that was something that I had thought about but ended up never implementing it”. In a monumental display of corporate civility, someone replied over me saying: “You should ask G, as he is the creator of that chatbot”. I actually declined to further the discussion, and to my knowledge everybody on that thread still thinks that G is the creator of the chatbot.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="chatbot.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">chatbot</figcaption><p></p>
+</figure>
+</div>
+<p>That made me realize that G was not putting a lot of effort in attributing my work.</p>
+</section>
+<section id="the-recommendation-system" class="level2">
+<h2 class="anchored" data-anchor-id="the-recommendation-system">The recommendation system</h2>
+<p>At some point I wrote a recommendation system to solve a specific problem, let’s call it the “X Recommender”. It was not particularly well written but it did the job: it recommended X with a decent precision. However, by the time I was done, the client (let’s call them C) that needed that problem solved was moved out. I made a note to improve on that system at some point and stashed it.</p>
+<p>A few years later, someone wanted to be mentored by me, and they happened to be a specialist in X. So we started building models around X, and at some point we revived the “X Recommender” to make it better.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rec.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Recommendation System</figcaption><p></p>
+</figure>
+</div>
+<p>At this point, people from C came back asking for an “X Recommender”, and they also wanted to learn how to build one. I told them how to build one, step-by-step. They did not succeed in building it for production, but built it enough for a presentation and scheduled time for us to work together to make it ready for production.</p>
+<p>Meanwhile, I presented the very old “X recommender” to a group. A member of the group saw the similarities and asked me why I was taking credit for the work that C had done.</p>
+<p>That made me realize that C was not putting a lot of effort in attributing my work.</p>
+</section>
+<section id="the-consequences-of-not-having-the-work-attributed" class="level2">
+<h2 class="anchored" data-anchor-id="the-consequences-of-not-having-the-work-attributed">The consequences of not having the work attributed</h2>
+<p>It’s not like I’m not <a href="https://treasurytoday.com/adam-smith-awards-yearbook/adam-smith-awards-yearbook-2017">recognized</a> for my work, quite the opposite. I think the downside is more “societal”, or “corporate-wide”. In some sense, this is like a <a href="https://en.wikipedia.org/wiki/Signalling_(economics)">signalling problem</a> in which a non-expert in a particular work product signals that they’re an expert. If the signal is misinterpreted, problems that the expert could solve may end up being directed to the non-expert, and that may result in solvable problems not being solved.</p>
+<p>There are upsides, however. One upside is that a lot of trivial problems and issues gets filtered from the expert and solved by the non-expert instead. Another upside is that the non-expert will likely get better over time, if only to maintain the façade. Presumably the gain in skills from the non-expert will be faster than for the expert, so overall the skills for the company overall will increase.</p>
+</section>
+<section id="i-actually-dont-have-an-answer" class="level2">
+<h2 class="anchored" data-anchor-id="i-actually-dont-have-an-answer">I actually don’t have an answer</h2>
+<p>I’m not sure how to make this better. I have received feedback that I don’t “sell” my work enough, but it’s a complicated equation…</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="math.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Complicated math</figcaption><p></p>
+</figure>
+</div>
+<p>The problem is that selling the work takes time, and that will sometimes result in less time to do high-quality data science work. It may also result in wider than optimal adoption, which will require extra support, also detracting to high-quality data science work. Perhaps it pays better, but higher-quality also generally pays better than lower-quality, so it’s not that simple.</p>
+<p>Of course, I wish my work was such high-quality that this was the real problem. The likely explanation is that I rather work with models than sell them.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
