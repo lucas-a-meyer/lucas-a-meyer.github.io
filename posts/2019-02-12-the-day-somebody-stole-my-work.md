@@ -1,6 +1,7 @@
 ---
 title: The day somebody "stole" my work
 date: '2019-02-12'
+author: "Lucas A. Meyer"
 ---
 
 Part of the work of data science is to create machines that people can use to solve problems. Sometimes these machines can be re-used for other problems with little need for reconfiguration. Sometimes the people reusing one of the machines a data scientist creates will do so without letting the data scientist know until there's a problem.
