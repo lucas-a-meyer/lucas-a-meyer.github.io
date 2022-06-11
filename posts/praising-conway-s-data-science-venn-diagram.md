@@ -6,7 +6,7 @@ author: "Lucas A. Meyer"
 
 Drew Conway's [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) is perhaps the most well-known description of data science.
 
-![Drew Conway's Data Science Venn Diagram](/img/Data_Science_VD.png)
+![Data Science Venn Diagram](https://static1.squarespace.com/static/5150aec6e4b0e340ec52710a/t/51525c33e4b0b3e0d10f77ab/1364352052403/Data_Science_VD.png?format=750w)
 
 Drew published it more than five years ago. Since then, a ridiculous number of Venn diagrams have been created, [one](https://www.datasciencecentral.com/profiles/blogs/the-data-science-venn-diagram-revisited) [worse](https://whatsthebigdata.com/2016/07/08/the-new-data-scientist-venn-diagram/) [than](https://twitter.com/kirkdborne/status/961452846821597184) [the](https://twitter.com/kirkdborne/status/739446818233327616) [other](https://blog.zhaw.ch/datascience/files/2014/06/SkillSet.png).
 
