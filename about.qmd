@@ -6,14 +6,15 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/lucas_a_meyer
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/in/lucasameyer
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/lucas-a-meyer
 
 ---
+I am a Data Scientist at the AI for Good Research Lab at Microsoft. 
 
-Eventually, I will write something better here. For what it's worth, [Quarto](https://quarto.org) is awesome.
+[Quarto](https://quarto.org) is awesome.
