@@ -16,4 +16,4 @@ about:
 
 ---
 
-About this blog
+Eventually, I will write something better here. For what it's worth, [Quarto] is awesome.
