@@ -2,6 +2,7 @@
 title: Centralized vs. Distributed Data Science Teams
 date: '2018-06-25'
 author: "Lucas A. Meyer"
+image: "https://cdn-images-1.medium.com/max/2000/1*YfxWi5QZkShNHS0XLuKlMQ.png"
 ---
 
 In a recent [DataFramed podcast](https://www.datacamp.com/community/podcast/organizing-data-science-teams), [Hugo Bowne-Anderson](https://github.com/hugobowne) and 
