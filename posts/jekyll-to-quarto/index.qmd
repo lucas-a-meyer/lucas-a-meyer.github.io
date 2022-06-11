@@ -3,7 +3,7 @@ title: "Converting my blog from Jekyll to Quarto"
 date: "2022-06-10"
 ---
 
-I thought it was gooing to be hard.
+I thought it was going to be hard. It was not.
 
 ### What I wanted in a blog platform
 For a long time, I had an unfulfilled wish list for a blog platform:
