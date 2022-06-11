@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: profile.jpg
+image: bias.jpg
 about:
   template: jolla
   links:
@@ -16,4 +16,4 @@ about:
 
 ---
 
-Eventually, I will write something better here. For what it's worth, [Quarto] is awesome.
+Eventually, I will write something better here. For what it's worth, [Quarto](https://quarto.org) is awesome.
