@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/talks.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/2022-06-10-jekyll-to-quarto/index.html",
@@ -50,9 +54,5 @@
       "/linkedin-posts/2021-04-30-some-tips-for-technical-interviews.html",
       "/linkedin-posts/2021-04-15-flunking-a-sql-interview-with-20-years-of-practice.html"
     ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": []
   }
 ]
