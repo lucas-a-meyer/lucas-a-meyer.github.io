@@ -13,6 +13,8 @@ website:
           file: index.qmd
         - text: "LinkedIn Posts"
           file: linkedin-index.qmd
+        - text: "Using Quarto"
+          href: /using-quarto
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/lucasameyer      
