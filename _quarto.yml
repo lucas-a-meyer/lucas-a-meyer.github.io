@@ -1,28 +1,26 @@
 project:
   type: website
   output-dir: docs
-  google-analytics: "G-6KTZ853BN5"
   pre-render: ./pre-render.sh
   post-render: ./post-render.sh
 
 website:
   title: "Lucas A. Meyer"
+  google-analytics: "G-6KTZ853BN5"
   navbar:
     left:
         - text: "Home"
           file: index.qmd
         - text: "LinkedIn Posts"
           file: linkedin-index.qmd
-        - text: "Using Quarto"
-          href: "/using-quarto/"
     right:
-      - about.qmd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/lucasameyer      
       - icon: github
         href: https://github.com/lucas-a-meyer
       - icon: twitter
         href: https://twitter.com/lucas_a_meyer
-      - icon: linkedin
-        href: https://www.linkedin.com/in/lucasameyer
+      - about.qmd
 
 format:
   html:
