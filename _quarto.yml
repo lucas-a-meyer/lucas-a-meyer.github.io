@@ -15,6 +15,10 @@ website:
           file: linkedin-index.qmd
         - text: "Using Quarto"
           href: /using-quarto
+        - text: "GNNs with Python"
+          href: /python-gnn
+        - text: "Econometrics with Python"
+          href: /python-econometrics
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/lucasameyer      
