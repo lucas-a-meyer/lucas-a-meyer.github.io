@@ -3,7 +3,7 @@ title: "Cunningham's Law"
 date: 2021-11-04 12:00 -0400
 author: "Lucas A. Meyer"
 categories: concepts
-image: /images/cunningham-law.jpg
+image: /images/cunninghams-law.jpg
 ---
 
 Cunningham's Law states "the best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer." 
@@ -20,7 +20,7 @@ On the other hand, the incorrect statement "Han Solo is Luke's father" provides 
 
 ... and if there's something wrong with my theory above, I'm sure someone is going to correct me!
 
-![](/images/cunningham-law.jpg)
+![](/images/cunninghams-law.jpg)
 
 #### LinkedIn
 This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769>
