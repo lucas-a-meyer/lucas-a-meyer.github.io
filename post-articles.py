@@ -102,6 +102,10 @@ def process_file(filepath):
         front_matter["draft"] = True
         # If the file has a linkedin field, adjust the text 
         # and check if I should post
+        with open(filepath) as f:
+            
+        
+
         img = ""
         print(front_matter)
         post_to_linkedin(filepath, txt, img)
