@@ -2,7 +2,10 @@
 title: Why you should blog if you are a data scientist
 author: Lucas A. Meyer
 date: '2019-02-13'
+linkedin: '2022-06-20'
 image: /images/useful-output.jpg
+posted-to-linkedin: false
+draft: false
 ---
 
 A while back, David Robinson offered the following advice on Twitter:

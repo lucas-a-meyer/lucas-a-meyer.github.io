@@ -8,6 +8,4 @@ A company wants to execute a series of profitable tasks. Managers receive tasks 
 
 Workers (experts and non-experts) always know their true experience level. (This is a simplification, as it might be interesting for non-experts to be overly confident). Managers ability will be a standard deviation applied to the level of expertise of their employees. Competent managers will have a low standard deviation, where incompetent ones will have high standard deviation. Underutilized experts quit, reducing the company's expert pool. Again, for simplification, experts and non-experts are paid the same (it may be interesting to reward experts and non-experts based on their perceived expertise)
 
-
-
 This problem has been in my head for a lot longer than it should. This is a rough draft, but I think that if I do not commit it to "paper", I won't make progress on it.
