@@ -7,7 +7,6 @@ categories:
     - neurodiversity
     - writing
 image: /images/writing.jpg
-
 ---
 
 A little over a decade ago, during my MBA at #UWFoster, somebody I really admire told me: "you're good at keeping in touch with the people you know".
