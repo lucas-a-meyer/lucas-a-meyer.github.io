@@ -7,9 +7,13 @@ categories:
     - interviews
 ---
 
-
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998.
 
 I have written SQL almost daily for over 20 years. A few months ago, I flunked a SQL interview for a *manager* position. 
 
 Interviewing is hard, be kind.
+
+#### LinkedIn
+This was also posted to LinkedIn at:
+https://www.linkedin.com/embed/feed/update/urn:li:share:6789180889353064448
+ 
