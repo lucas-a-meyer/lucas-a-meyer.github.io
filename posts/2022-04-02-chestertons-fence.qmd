@@ -8,4 +8,4 @@ image: /images/fence.jpg
 
 #### LinkedIn
 
-This was posted to LinkedIn at "https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816>
+This was posted to LinkedIn at <https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816>
