@@ -6,11 +6,12 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/2022-06-17-computer-urinal/index.html",
-      "/posts/failing-to-lead-by-example.html",
-      "/posts/2022-06-10-jekyll-to-quarto/index.html",
+      "/posts/2022-06-20-computer-urinal.html",
+      "/posts/2022-06-20-computer-urinal copy.html",
+      "/posts/2022-06-16-failing-to-lead-by-example.html",
+      "/posts/2022-06-10-jekyll-to-quarto.html",
       "/posts/2022-05-10-work-life-balance.html",
-      "/posts/2019-02-13-why-you-should-blog/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.html",
+      "/posts/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.html",
       "/posts/2019-02-12-the-day-somebody-stole-my-work.html",
       "/posts/2019-02-04-a-story-about-my-father.html",
       "/posts/2019-01-29-installing-arch-linux.html",

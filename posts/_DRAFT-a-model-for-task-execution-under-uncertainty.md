@@ -1,5 +1,5 @@
 ---
-title: A model for task execution under uncertainty
+title: "A model for task execution under uncertainty"
 date: '2100-02-03'
 draft: true
 ---

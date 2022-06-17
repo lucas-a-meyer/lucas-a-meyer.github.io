@@ -10,15 +10,16 @@ import os
 from bs4 import BeautifulSoup
 from markdown import markdown
 import re
+import yaml
+import datetime
+
 
 def markdown_to_text(markdown_string):
     """ Converts a markdown string to plaintext """
 
     # Remove YAML
-    yaml = re.match(r"---.*?---", markdown_string, re.DOTALL).group(0)
-    markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)
-
-    
+    yml = re.match(r"---.*?---", markdown_string, re.DOTALL).group(0)
+    markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)  
 
     # Remove markdown code blocks
     markdown_string = re.sub(r"```.*?```", '', markdown_string, 0, re.DOTALL)
@@ -53,19 +54,19 @@ def markdown_to_text(markdown_string):
     soup = BeautifulSoup(html, "html.parser")
     text = ''.join(soup.findAll(text=True))
 
-    return yaml, text
+    return yml, text
 
 
 def get_file_plaintext(filepath):
     with open(filepath) as f:
-        yaml, plaintext = markdown_to_text(f.read())
+        yml, plaintext = markdown_to_text(f.read())
         plaintext = re.sub(r"\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n-", '\n-', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
-        return yaml, plaintext
+        return yml, plaintext
 
 def linkedin_text(txt):
     post = txt
@@ -90,14 +91,20 @@ def post_to_linkedin(title, text, imagepath):
     print(f"\n==============\n\n")
 
 def process_file(filepath):
-    yaml, txt = get_file_plaintext(filepath)
+    print(f"Processing {filepath}")
+    yml, txt = get_file_plaintext(filepath)
 
     # For all files, check if we need to adjust the draft field
-
-    # If the file has a linkedin field, adjust the text 
-    # and check if I should post
-    img = ""
-    post_to_linkedin(filepath, txt, img)
+    front_matter = yaml.safe_load(yml.replace("---", ""))
+    post_date = datetime.datetime.strptime(front_matter.get("date"), "%Y-%m-%d").date()
+    
+    if post_date > datetime.date.today():
+        front_matter["draft"] = True
+        # If the file has a linkedin field, adjust the text 
+        # and check if I should post
+        img = ""
+        print(front_matter)
+        post_to_linkedin(filepath, txt, img)
 
 
     # If the file has a linkedin field, adjust the text 
