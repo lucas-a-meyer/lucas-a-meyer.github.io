@@ -7,7 +7,7 @@ image: /images/computer-urinal.jpg
 
 Years ago, in a tech conference, a researcher asked: "Isn't it embarrassing that the conference center urinals can detect when you're done and automatically flush, but your computer can't detect that you're not using it and automatically lock?"
 
-![](/images/computer-urinal.jpg){width=50%}
+![](/images/computer-urinal.jpg){center, width=50%}
 
 This seemingly simple problem is harder than it looks. People don't (normally) quietly stare at urinals for several minutes, but that can happen to computer screens (e.g., watching a movie or presentation, reading a document). 
 
