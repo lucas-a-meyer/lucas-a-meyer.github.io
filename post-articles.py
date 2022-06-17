@@ -102,9 +102,14 @@ def process_file(filepath):
         front_matter["draft"] = True
         # If the file has a linkedin field, adjust the text 
         # and check if I should post
-        with open(filepath) as f:
-            
+        with open(filepath, "r") as f:
+            md_content = f.read()
         
+        new_yml = yaml.dump(front_matter)
+        new_yml = f"---\n{new_yml}---"
+        md_content = md_content.replace(yml, new_yml)
+        with open(filepath, "w") as f:
+            f.write(md_content)
 
         img = ""
         print(front_matter)

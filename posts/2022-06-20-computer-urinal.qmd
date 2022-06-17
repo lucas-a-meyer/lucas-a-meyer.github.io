@@ -1,9 +1,11 @@
 ---
-title: "Computers and Urinals"
-date: "2022-06-20"
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
+date: '2022-06-20'
+draft: true
 image: /images/computer-urinal.jpg
+title: Computers and Urinals
 ---
+
 Years ago, in a tech conference, a researcher asked: "Isn't it embarrassing that the conference center urinals can detect when you're done and automatically flush, but your computer can't detect that you're not using it and automatically lock?"
 
 <center>![](/images/computer-urinal.jpg){width=40%}</center>

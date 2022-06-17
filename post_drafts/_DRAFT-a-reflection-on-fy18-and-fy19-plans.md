@@ -1,8 +1,8 @@
 ---
-title: A reflection on FY18 and FY19 plans
+author: Lucas A. Meyer
 date: '2100-05-28'
-author: "Lucas A. Meyer"
 draft: true
+title: A reflection on FY18 and FY19 plans
 ---
 
 # Reflecting on FY18 and planning for FY19
@@ -70,3 +70,4 @@ Creativity is like breathing. You got to breath out, and you got to breath in. I
 * 24 blog posts, that is, at least two per month
 * 4 presentations in local meetups
 * 2 external conference presentations
+
