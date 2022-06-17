@@ -23,4 +23,6 @@ After that, the day became “the day we saw the dolphins”.
 
 I hope that your spring break is as enjoyable as mine.
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6916579598633701376" height="1035" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+#### LinkedIn
+
+This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376>
