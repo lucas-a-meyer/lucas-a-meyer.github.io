@@ -19,6 +19,9 @@ def markdown_to_text(markdown_string):
 
     # Remove YAML
     markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)
+
+    # Remove commentary
+    markdown_string = re.sub(r"<!--.*?-->", '', markdown_string, 0, re.DOTALL)
     
     # Remove formatting newlines
     # markdown_string = re.sub(r"\n([^-])", r'\g<1>\n', markdown_string, 0, re.DOTALL)
@@ -50,20 +53,31 @@ def markdown_to_text(markdown_string):
     return text
 
 
-def generate_plaintext_for_file(filepath):
-    print(f"\n======> {filepath}\n")
+def get_file_plaintext(filepath):
     with open(filepath) as f:
         plaintext = markdown_to_text(f.read())
-        print(f"Length: {len(plaintext)} characters\n\n")
         plaintext = re.sub(r"\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n-", '\n-', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
-        print(plaintext)
-    print(f"\n======\n")
+        return plaintext
 
+def linkedin_text(txt):
+    post = txt
+    size = len(post)
+    if size > 3000:
+        post = post[:3000]
+        post += """...
+        
+(Sorry...this post ended up being too big for LinkedIn. The complete post is in my blog, at www[dot]meyerperin[dot]com.)
+
+        """
+    else:
+        post += """You can see my older posts and more at my blog, at www[dot]meyerperin[dot]com."""
+
+    return post
 
 def generate_plaintext_for_directory(di):
     print(f"Files and directories for {di}")
@@ -71,7 +85,11 @@ def generate_plaintext_for_directory(di):
         for filename in files:
             if filename.endswith("qmd") or filename.endswith("md"):
                 filepath = os.path.join(root, filename)
-                generate_plaintext_for_file(filepath)
+                txt = get_file_plaintext(filepath)
+                li_text = linkedin_text(txt)
+                print(li_text)
+
+
 
 def main():
     post_directories = ["posts"]
