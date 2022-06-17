@@ -7,7 +7,9 @@ categories:
     - interviews
 ---
 
-In most big companies, interviewers interview for the company, rather than for the position. Even if you think you did bad in one of your interviews, it is still worthwhile to try to regroup and do your best for the next interviews.
+In most big companies, interviewers interview for the company, rather than for the position. 
+
+Even if you think you did bad in one of your interviews, it is still worthwhile to try to regroup and do your best for the next interviews.
 
 Maybe you won't get the exact position you applied for, but in most cases, you will be considered for similar positions.
 
