@@ -1,0 +1,15 @@
+---
+title: "Flunking a SQL interview with 20+ years of practice"
+author: "Lucas A. Meyer"
+date: 2021-04-15
+categories: 
+    - career
+    - interviews
+---
+
+
+I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998.
+
+I have written SQL almost daily for over 20 years. A few months ago, I flunked a SQL interview for a *manager* position. 
+
+Interviewing is hard, be kind.
