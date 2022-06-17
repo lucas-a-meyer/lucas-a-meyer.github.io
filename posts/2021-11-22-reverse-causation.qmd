@@ -1,8 +1,9 @@
 ---
-layout: post
 title: "Reverse causation"
 date: 2021-11-22 12:00 -0400
 categories: data science
+author: "Lucas A. Meyer"
+image: /images/reverse-causation.jpg
 ---
 
 Gather close as I tell you a cautionary tale about data science. 
