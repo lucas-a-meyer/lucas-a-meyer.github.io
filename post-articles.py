@@ -14,11 +14,14 @@ import re
 def markdown_to_text(markdown_string):
     """ Converts a markdown string to plaintext """
 
+    # Remove YAML
+    yaml = re.match(r"---.*?---", '', markdown_string, 0, re.DOTALL)
+    markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)
+
+    
+
     # Remove markdown code blocks
     markdown_string = re.sub(r"```.*?```", '', markdown_string, 0, re.DOTALL)
-
-    # Remove YAML
-    markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)
 
     # Remove commentary
     markdown_string = re.sub(r"<!--.*?-->", '', markdown_string, 0, re.DOTALL)
@@ -50,19 +53,19 @@ def markdown_to_text(markdown_string):
     soup = BeautifulSoup(html, "html.parser")
     text = ''.join(soup.findAll(text=True))
 
-    return text
+    return yaml, text
 
 
 def get_file_plaintext(filepath):
     with open(filepath) as f:
-        plaintext = markdown_to_text(f.read())
+        yaml, plaintext = markdown_to_text(f.read())
         plaintext = re.sub(r"\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n-", '\n-', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
-        return plaintext
+        return yaml, plaintext
 
 def linkedin_text(txt):
     post = txt
@@ -85,9 +88,13 @@ def generate_plaintext_for_directory(di):
         for filename in files:
             if filename.endswith("qmd") or filename.endswith("md"):
                 filepath = os.path.join(root, filename)
-                txt = get_file_plaintext(filepath)
+                yaml, txt = get_file_plaintext(filepath)
                 li_text = linkedin_text(txt)
+                print(f"\n======={filepath}({len(txt)})=======\n\n")
+                print(yaml)
+                print()
                 print(li_text)
+                print(f"\n==============\n\n")
 
 
 
