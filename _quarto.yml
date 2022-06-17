@@ -14,8 +14,6 @@ website:
     left:
         - text: "Home"
           file: index.qmd
-        - text: "LinkedIn Posts"
-          file: linkedin-index.qmd
         - text: "Using Quarto"
           href: /using-quarto
         - text: "GNNs with Python"
