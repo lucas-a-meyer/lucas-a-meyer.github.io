@@ -15,19 +15,13 @@ And boy, is the P51 bigger. It has a 15-inch screen and a power brick that alone
 
 Due to some standardization constraints, my P51 is the 1920x1080 version with touch screen. It has 32 Gb of RAM and a 500 Gb SSD. It has the i7 7820HQ running at 2.9 GHz and a Quadro M2200 GPU. If I had the option, I'd choose the 4K screen and the Xeon processor, but I did not have that option. 
 
-The battery life is surprisingly good. For the kind of things that I do in planes (writing blog posts, editing presentations, light programming), the battery seems to last well over 8h without Wi-Fi and about 7h 
-with Wi-Fi. I have yet to run out of battery in a flight. I have read that the earlier version of the P51, the P50, would trip the circuit breaker of a plane if you tried to plug it in. I have not attempted to plug in the P51 yet.
+The battery life is surprisingly good. For the kind of things that I do in planes (writing blog posts, editing presentations, light programming), the battery seems to last well over 8h without Wi-Fi and about 7h with Wi-Fi. I have yet to run out of battery in a flight. I have read that the earlier version of the P51, the P50, would trip the circuit breaker of a plane if you tried to plug it in. I have not attempted to plug in the P51 yet.
 
-The P51 is usable in the Premium Economy seats and, of course, in business and first class seats, but I have the impression that it would not fit well in the economy class of carriers that have 
-a very small distance between seats (like American Airlines domestic flights), especially if the person in front of you reclines their seat. It works well in exit seats.
+The P51 is usable in the Premium Economy seats and, of course, in business and first class seats, but I have the impression that it would not fit well in the economy class of carriers that have a very small distance between seats (like American Airlines domestic flights), especially if the person in front of you reclines their seat. It works well in exit seats.
 
-One gripe I had about the Surface Pro 3 was that I always had to travel with a USB hub, a mouse, and a couple mini-DisplayPort adapters. The P51 comes with a mechanical keyboard, the beloved TrackPoint, 
-a good TouchPad, 4 USB ports, a Thunderbolt 3 port, an Ethernet port, an HDMI port, and, to my surprise, a mini-DisplayPort, so I get to keep all the adapters I had for the Surface. 
+One gripe I had about the Surface Pro 3 was that I always had to travel with a USB hub, a mouse, and a couple mini-DisplayPort adapters. The P51 comes with a mechanical keyboard, the beloved TrackPoint, a good TouchPad, 4 USB ports, a Thunderbolt 3 port, an Ethernet port, an HDMI port, and, to my surprise, a mini-DisplayPort, so I get to keep all the adapters I had for the Surface. 
 
-I've also considered the P51-S. The slimmer version trades off some power (it goes from quad-core to dual-core) for a thinner, lighter frame. I think the P51-S would also have been a solid choice, but I 
-think it would force me to do most of my work from a workstation and/or a server that I'd need to remote into frequently, adding to the stress of versioning and synchronizing. Somewhat 
-counter-intuitively, I chose the heavier computer _because_ I travel a lot, as it has enough power for me to do the vast majority of my work on it and use a server or workstation just for the real
-hardcore stuff. 
+I've also considered the P51-S. The slimmer version trades off some power (it goes from quad-core to dual-core) for a thinner, lighter frame. I think the P51-S would also have been a solid choice, but I think it would force me to do most of my work from a workstation and/or a server that I'd need to remote into frequently, adding to the stress of versioning and synchronizing. Somewhat counter-intuitively, I chose the heavier computer _because_ I travel a lot, as it has enough power for me to do the vast majority of my work on it and use a server or workstation just for the realhardcore stuff. 
 
 In summary, the Lenovo P51 is a great computer for the traveling data scientist. It's powerful enough to be used as your primary machine. For me, it's near the top limit of a computer that is comfortable
 to travel with, but still _within_ that limit. I got used to it in no time and completely gave up my desktop workstation.
