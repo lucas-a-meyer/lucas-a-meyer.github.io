@@ -1,8 +1,15 @@
 ---
-layout: post
+author: "Lucas A. Meyer"
 title: Joining Microsoft
 date: 2022-04-18 11:30 -0400
 categories: 
     - career 
+image: /images/just-hired-microsoft.jpg
+
 ---
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6921815848412135424" height="734" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+
+
+#### LinkedIn
+
+This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424>
