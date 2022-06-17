@@ -1,11 +1,15 @@
 ---
-title: "Some tips for technical interviews"
+title: "You're applying to more positions than you think"
 date: 2021-04-30
 categories: 
     - career
     - interviews
 ---
 
+In most big companies, interviewers interview for the company, rather than for the position. Even if you think you did bad in one of your interviews, it is still worthwhile to try to regroup and do your best for the next interviews.
+
+Maybe you won't get the exact position you applied for, but in most cases, you will be considered for similar positions.
+
 #### LinkedIn
 This was also posted to LinkedIn: 
-<https://www.linkedin.com/feed/update/urn:li:share:6798662703675273216>
+<https://www.linkedin.com/posts/lucasameyer_recruitment-interview-activity-6790036166214336512-CSHt?utm_source=linkedin_share&utm_medium=member_desktop_web?
