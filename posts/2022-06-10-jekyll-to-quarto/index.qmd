@@ -14,6 +14,7 @@ For a long time, I had an unfulfilled wish list for a blog platform:
 - Easy to deploy to Github
 - Can script in Python
 
+
 A large number of platforms fulfills the first two items, but I struggled to find one that fulfilled the last item. I finally found Pelican, but I found it too clunky and started to worry that it was not going to be maintained for long. Therefore, I oscillated between Jekyll and Hugo (using blogdown) for a long time. I liked blogdown a lot, but whenever I'm switching a lot between R and Python, my brain gets really unhappy.
 
 ### Quarto has everything, and more 

@@ -20,15 +20,15 @@ def markdown_to_text(markdown_string):
     # Remove YAML
     markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)
     
-    # Remove headings
-    # markdown_string = '\n'.join([i for i in markdown_string.splitlines() if not i.startswith("#")])
+    # Remove formatting newlines
+    # markdown_string = re.sub(r"\n([^-])", r'\g<1>\n', markdown_string, 0, re.DOTALL)
 
     # md -> html -> text since BeautifulSoup can extract text cleanly
     html = markdown(markdown_string)
 
     # remove code snippets
     html = re.sub(r'<pre>(.*?)</pre>', ' ', html)
-    html = re.sub(r'<code>(.*?)</code >', ' ', html)
+    html = re.sub(r'<code>(.*?)</code>', ' ', html)
 
     # Remove headings
     html = re.sub(r'<h1>(.*?)</h1>', ' ', html)
@@ -58,6 +58,8 @@ def generate_plaintext_for_file(filepath):
         plaintext = re.sub(r"\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n-", '\n-', plaintext, 0, re.DOTALL)
+        plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
+        plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         print(plaintext)
     print(f"\n======\n")
