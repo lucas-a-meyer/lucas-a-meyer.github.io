@@ -1,5 +1,6 @@
 ---
 title: "You're applying to more positions than you think"
+author: "Lucas A. Meyer"
 date: 2021-04-30
 categories: 
     - career
