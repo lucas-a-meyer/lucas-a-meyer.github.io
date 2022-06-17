@@ -5,7 +5,7 @@ author: "Lucas A. Meyer"
 freeze: true
 ---
 
-I thought it was going to be hard. It was not.
+I thought moving from Jekyll to Quarto was going to be hard. It was not.
 
 ### What I wanted in a blog platform
 For a long time, I had an unfulfilled wish list for a blog platform:
