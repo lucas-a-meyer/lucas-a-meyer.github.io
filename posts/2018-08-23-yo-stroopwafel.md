@@ -23,18 +23,13 @@ I have failed to achieve almost all of the goals above, but maybe will achieve m
 
 ## Azure Functions v2
 
-Microsoft recently released a [Python worker](https://github.com/Azure/azure-functions-python-worker) for the 
-[Azure Functions runtime v2](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions). 
-As of this writing (2018-08-23), both Azure Functions v2 and the python worker are in "preview mode". The Azure Functions v1 runtime supports development and hosting only in the portal or on Windows. The v2 runtime runs on .NET Core, and therefore can run on Windows, macOS and Linux. Microsoft provides a 
-[set of tools](https://github.com/Azure/azure-functions-core-tools) based on Node.JS and .NET Core that make it easy to develop in any platform. That takes care of objectives #1, #3 and #6. Although knocking off three objectives simply by selecting Azure Functions v2 sounded very promising to begin with, that's as many objectives as I could achieve.
+Microsoft recently released a [Python worker](https://github.com/Azure/azure-functions-python-worker) for the [Azure Functions runtime v2](https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions). As of this writing (2018-08-23), both Azure Functions v2 and the python worker are in "preview mode". The Azure Functions v1 runtime supports development and hosting only in the portal or on Windows. The v2 runtime runs on .NET Core, and therefore can run on Windows, macOS and Linux. Microsoft provides a [set of tools](https://github.com/Azure/azure-functions-core-tools) based on Node.JS and .NET Core that make it easy to develop in any platform. That takes care of objectives #1, #3 and #6. Although knocking off three objectives simply by selecting Azure Functions v2 sounded very promising to begin with, that's as many objectives as I could achieve.
 
 ### Linux host
 
-Regardless of the platform you develop on, Python function apps need to be hosted on 
-[Azure Functions on Linux](https://blogs.msdn.microsoft.com/appserviceteam/2017/11/15/functions-on-linux-preview/). Running on Linux has a couple downsides:
+Regardless of the platform you develop on, Python function apps need to be hosted on [Azure Functions on Linux](https://blogs.msdn.microsoft.com/appserviceteam/2017/11/15/functions-on-linux-preview/). Running on Linux has a couple downsides:
 
-1. You have to access the Azure Portal using a 
-[secret code](https://ms.portal.azure.com/?websitesextension_pythonFunctions=true) to enable Azure to offer Linux hosts
+1. You have to access the Azure Portal using a [secret code](https://ms.portal.azure.com/?websitesextension_pythonFunctions=true) to enable Azure to offer Linux hosts
 
 2. As of this writing (2018-08-23), Linux hosts can only be dedicated. Azure Functions can normally run in two modes: "Consumption" and "Dedicated". Consumption is virtually free, but the "dedicated" mode costs approximately $35 per month for the cheapest version. According to the [README](https://github.com/Azure/azure-functions-python-worker/blob/dev/README.md) the "Consumption" mode is upcoming, and I have a small allowance due to my MSDN subscription, so I caved.
 
