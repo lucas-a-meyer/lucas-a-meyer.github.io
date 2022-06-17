@@ -1,7 +1,9 @@
 ---
-layout: post
 title: "Cunningham's Law"
 date: 2021-11-04 12:00 -0400
+author: "Lucas A. Meyer"
 categories: concepts
 ---
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6862028173295648769" height="1135" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
+#### LinkedIn
+This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769>
