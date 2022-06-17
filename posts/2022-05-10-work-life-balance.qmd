@@ -2,7 +2,7 @@
 title: "Work life balance is worth something"
 date: "2022-05-10"
 author: "Lucas A. Meyer"
-image: /images/money-gun.png
+image: /images/money-gun.jpg
 ---
 
 Should you choose #Microsoft or #FAANG?
