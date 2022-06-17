@@ -8,8 +8,7 @@ Recently, as part of a computer refresh, I have moved from a Microsoft Surface P
 
 The Microsoft Surface Pro 3 was the right computer for me at the time I got it, but as time went by my position changed substantially, and it ceased to be appropriate for me.
 
-When I got the Surface, the core of my work consisted in traveling, having conference calls and light emailing and spreadsheet work. As time went by, my work went back to creating analytics, 
-creating presentations about analytics, and traveling. There is where the screen of the Surface becomes a liability at 12 inches. I wanted something bigger.
+When I got the Surface, the core of my work consisted in traveling, having conference calls and light emailing and spreadsheet work. As time went by, my work went back to creating analytics, creating presentations about analytics, and traveling. There is where the screen of the Surface becomes a liability at 12 inches. I wanted something bigger.
 
 And boy, is the P51 bigger. It has a 15-inch screen and a power brick that alone is twice as heavy as the Surface Pro. It's big enough to have a keyboard that comes with a numeric keypad. Since I still have to travel a lot, I chose the P51 over the beefier 17-inch P71. The P71 won't even fit in my somewhat large Osprey backpack. The P51 barely fits.
 
@@ -23,5 +22,4 @@ One gripe I had about the Surface Pro 3 was that I always had to travel with a U
 
 I've also considered the P51-S. The slimmer version trades off some power (it goes from quad-core to dual-core) for a thinner, lighter frame. I think the P51-S would also have been a solid choice, but I think it would force me to do most of my work from a workstation and/or a server that I'd need to remote into frequently, adding to the stress of versioning and synchronizing. Somewhat counter-intuitively, I chose the heavier computer _because_ I travel a lot, as it has enough power for me to do the vast majority of my work on it and use a server or workstation just for the realhardcore stuff. 
 
-In summary, the Lenovo P51 is a great computer for the traveling data scientist. It's powerful enough to be used as your primary machine. For me, it's near the top limit of a computer that is comfortable
-to travel with, but still _within_ that limit. I got used to it in no time and completely gave up my desktop workstation.
+In summary, the Lenovo P51 is a great computer for the traveling data scientist. It's powerful enough to be used as your primary machine. For me, it's near the top limit of a computer that is comfortable to travel with, but still _within_ that limit. I got used to it in no time and completely gave up my desktop workstation.
