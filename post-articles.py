@@ -15,7 +15,7 @@ def markdown_to_text(markdown_string):
     """ Converts a markdown string to plaintext """
 
     # Remove YAML
-    yaml = re.match(r"---.*?---", '', markdown_string, 0, re.DOTALL)
+    yaml = re.match(r"---.*?---", markdown_string, re.DOTALL).group(0)
     markdown_string = re.sub(r"---.*?---", '', markdown_string, 0, re.DOTALL)
 
     
@@ -78,9 +78,32 @@ def linkedin_text(txt):
 
         """
     else:
-        post += """You can see my older posts and more at my blog, at www[dot]meyerperin[dot]com."""
-
+        post += """\n\nYou can see my older posts and more at my blog, at www[dot]meyerperin[dot]com."""
     return post
+
+def post_to_linkedin(title, text, imagepath):
+    li_text = linkedin_text(text)
+    print(f"\n======= {title} ({len(text)}) =======\n\n")
+    print(f"Image: {imagepath}")
+    print()
+    print(li_text)
+    print(f"\n==============\n\n")
+
+def process_file(filepath):
+    yaml, txt = get_file_plaintext(filepath)
+
+    # For all files, check if we need to adjust the draft field
+
+    # If the file has a linkedin field, adjust the text 
+    # and check if I should post
+    img = ""
+    post_to_linkedin(filepath, txt, img)
+
+
+    # If the file has a linkedin field, adjust the text 
+    # and check if I should post
+
+
 
 def generate_plaintext_for_directory(di):
     print(f"Files and directories for {di}")
@@ -88,15 +111,7 @@ def generate_plaintext_for_directory(di):
         for filename in files:
             if filename.endswith("qmd") or filename.endswith("md"):
                 filepath = os.path.join(root, filename)
-                yaml, txt = get_file_plaintext(filepath)
-                li_text = linkedin_text(txt)
-                print(f"\n======={filepath}({len(txt)})=======\n\n")
-                print(yaml)
-                print()
-                print(li_text)
-                print(f"\n==============\n\n")
-
-
+                process_file(filepath)
 
 def main():
     post_directories = ["posts"]
