@@ -3,7 +3,24 @@ title: "Cunningham's Law"
 date: 2021-11-04 12:00 -0400
 author: "Lucas A. Meyer"
 categories: concepts
+image: /images/cunningham-law.jpg
 ---
+
+Cunningham's Law states "the best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer." 
+
+It's not only applicable to the internet. I find that it works in a lot of other interactions, including work interactions. 
+
+Cunningham's Law is frequently presented as a way to exploit a bias that people potentially have against "things being wrong". While the "bias exploitation" story may be true, there's also an economic reason why using Cunningham's Law is a nice thing to do.
+
+A common example of when posting the wrong answer is expected is in Stack Overflow: when asking your question, it's a good practice to show what you already tried and what's not working (essentially posting the wrong answer). 
+
+The advantage of such a protocol is that it makes it easier on the people trying to help. Consider the example "Who is Luke's father?". Asked as a question, there's a lot of context missing: Luke the Apostle? Luke Skywalker? Luke Wilson? My neighbor Luke? 
+
+On the other hand, the incorrect statement "Han Solo is Luke's father" provides a lot of additional context: this is about Star Wars, and it also provides how the question asker expects the answer to look like. Economically, it lowers the production cost of an answer, making it easier to get one.
+
+... and if there's something wrong with my theory above, I'm sure someone is going to correct me!
+
+![](/images/cunningham-law.jpg)
 
 #### LinkedIn
 This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769>
