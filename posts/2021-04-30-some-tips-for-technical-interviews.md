@@ -12,4 +12,4 @@ Maybe you won't get the exact position you applied for, but in most cases, you w
 
 #### LinkedIn
 This was also posted to LinkedIn: 
-<https://www.linkedin.com/posts/lucasameyer_recruitment-interview-activity-6790036166214336512-CSHt?utm_source=linkedin_share&utm_medium=member_desktop_web>
+<https://www.linkedin.com/posts/lucasameyer_recruitment-interview-activity-6790036166214336512-CSHt>
