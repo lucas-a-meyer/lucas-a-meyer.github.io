@@ -1,0 +1,27 @@
+---
+title: "Mad Ned's career advice"
+date: 2021-09-06
+categories: 
+- career
+image: /images/goonies2.jpg
+author: "Lucas A. Meyer"
+---
+
+When I write that I have a "decades-long" career, I'm stretching it a little bit: my career is just a little bit over 20 years. 
+
+A lot of the people that started their career at the same time I did moved away from tech. 
+
+"Mad Ned" wrote "An Old Hacker's tips on staying employed" from the perspective of someone who has been at their tech career for 35 years.
+https://lnkd.in/g6ycG-C3 
+
+I wish I read his post 15+ years ago. 
+
+You should read his whole post. One of the key points is to develop your personal brand. If you drop the ball a lot, say you will do things but don't and are just a pain to work with, you will get that reputation, and that can follow you around. If you consistently deliver, are helpful and everybody knows it, that also tends to follow you around. 
+
+The tech market is simultaneously surprisingly large (sometimes you don't know people in your own company) and surprisingly small (someone you knew a decade ago reaches out with a new opportunity). As your career grows longer, the probability of knowing someone and being known increases.
+
+Also, being kind to people goes a long way, regardless of where you are in your career.
+
+#### LinkedIn
+
+This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096>

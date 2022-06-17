@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Interviews are hard for everyone"
+author: "Lucas A. Meyer"
+date: 2021-06-21
+categories: career, interviews
+---
+
+I am bad at being at the "job seeker" side of the table in interviews. 
+
+I'm usually very nervous. I ramble. I make mistakes, I don't do eye contact, especially on video. I once had a sweat attack in an interview. 
+
+I answer questions without thinking why the question was asked. I don't always comment my code. I don't always break the problem in smaller parts.
+
+For every job I got, I failed to get at least the same number of jobs. I flunked interviews that were supposed to be easy. I lucked out in some interviews that were supposed to be hard.
+
+When you look at someone's successes in social networks, remember that you're only seeing the numerator. You don't know the denominator. In my case, it took a lot of tries.
+
+It's hard for me to tell you what will work in your situation, but for most people I know, it took many tries. Most "overnight successes" actually had many years of preparation.
+
+
+#### LinkedIn
+This was also posted to LinkedIn: 
+<https://www.linkedin.com/feed/update/urn:li:share:6812769571775365120>

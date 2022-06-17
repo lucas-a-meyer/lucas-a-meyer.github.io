@@ -1,0 +1,26 @@
+---
+title: "So you want to be a manager"
+date: 2021-07-13
+author: "Lucas A. Meyer"
+categories: 
+    - management
+---
+This is what your calendar can look like. 
+
+<center>![](/images/blurred-calendar.jpg){width=60%}</center>
+
+This is not a recent and real calendar from me (so don't try to book meetings in the open spaces) but it's a really good approximation of a typical week.
+
+These would be *meetings with people*, not blocked time to do work. This may not be representative of all managers, but once a manager has a team of size 10+, they may need lots of meetings to:
+- connect with members of their team for both ongoing work and career development
+- understand what clients want
+- synchronize with other internal teams we depend on
+- perform recruiting activities (interviewing, panels, presentations)
+- meetings with their own managers
+- meetings with peers to ensure we're learning from each other
+
+I am an extreme introvert, and try really hard to avoid low-value meetings. But I still do 30+ hours. So if you want to be a manager, you need to like (or at least be able to endure) talking to people for a long time each week.
+
+
+#### LinkedIn
+This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6820742108136120320>

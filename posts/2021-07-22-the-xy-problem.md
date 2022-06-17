@@ -1,0 +1,30 @@
+---
+title: "The XY Problem"
+date: 2021-07-22
+author: "Lucas A. Meyer"
+categories: 
+    - career
+---
+
+During a recent presentation, I've been asked: "What do you wish new hires knew?"
+
+My (incorrect - sorry UW MSBA) answer: "I wish they knew that we don't expect them to know everything". 
+
+But what I really wished people knew about was "The XY problem", or "how to properly ask technical questions".
+
+The classic guide for asking technical questions can be [found on the web](https://buff.ly/3efqRVR), but the most important part for me is the ["XY Problem"](https://buff.ly/3yTtEvE).
+
+The common mistake is to ask "how can I do X to solve Y". The also common and more dangerous version is asking "how can I do X" and omitting "to solve Y".
+
+For example, let's say Jay urgently needs to get some data that exists in a database. Jay recently used pandas in Jupyter for a different project and decides to ask "How can I connect a Jupyter notebook to the corporate database?" (omitting the reason why). What Jay doesn't is that a report already exists.
+
+People spend time helping Jay. Jay spends time getting permissions, installing and configuring packages, etc. to solve a problem that was already solved.
+
+State the problem you're trying to solve, rather than asking for help with a specific task. You may learn a lot more.
+
+Interestingly, Amazon provides training on asking good questions.
+
+#### LinkedIn
+
+This was posted to LinkedIn at
+<https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760>

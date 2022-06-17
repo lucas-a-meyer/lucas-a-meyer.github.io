@@ -1,0 +1,26 @@
+---
+title: "Writing good emails"
+author: "Lucas A. Meyer"
+date: 2021-09-18
+categories: career
+image: /images/grad-student-email.jpg
+---
+
+Earlier in my career, I took quite a while writing emails. As most people earlier in their careers, my main concern was to "not be wrong" rather than actually "moving the discussion forward efficiently" (or ending it). That was especially true when senior people were in the thread.
+
+![](/images/grad-student-email.jpg)
+
+I have been in threads with CEOs and CFOs of big companies, and these people are extremely efficient in their email handling. Bezos famously forwarded emails with a single question mark for action. Another CEO I worked for would simply write "fix this". Those threads tend to cascade really fast until they got to the person that could actually do something. One thread I was on got five forwards in about eight minutes (I was the lucky person that couldn't forward the thread to anyone else!).
+
+At my age, I already know a bunch of keyboard shortcuts, and can get through dozens of emails in just a few minutes. A few tricks I picked up along the way:
+- Owners for questions or actions should be clearly identified
+- If someone is an owner, they go on the "to:" line
+- Don't fork threads, especially if they have actions
+- Actions go at the end
+
+I'm still not at the professor level in the cartoon, but I'm working towards it.
+
+#### LinkedIn
+
+This was posted to LinkedIn at: 
+<https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746>
