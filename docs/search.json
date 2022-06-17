@@ -257,5 +257,19 @@
     "title": "You’re applying to more positions than you think",
     "section": "",
     "text": "Even if you think you did bad in one of your interviews, it is still worthwhile to try to regroup and do your best for the next interviews.\nMaybe you won’t get the exact position you applied for, but in most cases, you will be considered for similar positions.\n\nLinkedIn\nThis was also posted to LinkedIn: https://www.linkedin.com/posts/lucasameyer_recruitment-interview-activity-6790036166214336512-CSHt"
+  },
+  {
+    "objectID": "posts/2021-05-06-document-variables.html",
+    "href": "posts/2021-05-06-document-variables.html",
+    "title": "Remember to document your code",
+    "section": "",
+    "text": "Remember to think out loud. But also don’t forget:\nComment your code. Maybe even write a quick comment of what you’re going to do before you try to do it.\nName your variables and functions carefully, with a name that explains what they’re going to do.\nIf you’re writing SQL, name your CTEs and columns you create with meaningful names.\nFormat your code well if you have time. Your mind may be racing to finish the problem, this will help.\nOf course we want candidates that can solve the interview problem, but we also want candidates that write code that is easy to understand and maintain.\n\nLinkedIn\nThis was also posted to LinkedIn: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe"
+  },
+  {
+    "objectID": "posts/2021-05-12-getting-nervous.html",
+    "href": "posts/2021-05-12-getting-nervous.html",
+    "title": "Getting nervous during an interview",
+    "section": "",
+    "text": "It’s very common for people to get nervous during them. When I’m doing a technical interview and I see a candidate getting nervous:\n\nI ask them if they need a hint\nI write a “helper function” to make the problem easier to solve\nI reduce the complexity of the problem to a simpler case\nI try to reassure them by telling them that understanding how they’re thinking about the problem is as important as solving the problem: this helps me see where they are stuck.\n\nFrankly, I’m not that sure if what I do helps. Does it?\nWhat would you like interviewers to do if they realize you’re stuck and getting nervous?\n\nLinkedIn\nThis was also posted to LinkedIn: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir"
   }
 ]
