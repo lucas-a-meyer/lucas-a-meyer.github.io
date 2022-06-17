@@ -8,8 +8,6 @@ image: /images/reverse-laziness.jpg
 
 I've noticed a behavior in both my professional life and with my kids doing their homework: people spend a lot of time on things they don't like.
 
-<center>![](/images/reverse-laziness.jpg){width="30%"}</center>
-
 Many years ago, I had that realization about myself. For some things I didn't like doing, I'd procrastinate, complain, but ultimately ended up having to be engaged with that task over a long period of time. During that time, the stress of the task kept hanging over me. 
 
 I decided to do a deal with myself: I'd set up a short but reasonable time to do the task and during that time I'd do the best I could. At the end, I'd be *done*. Back then, I didn't know about the #pomodoro method, which can actually be used in a similar way.
