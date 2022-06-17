@@ -3,6 +3,9 @@ project:
   output-dir: docs
   pre-render: ./pre-render.sh
   post-render: ./post-render.sh
+  preview:
+    port: 4200
+    browser: false
 
 website:
   title: "Lucas A. Meyer"
