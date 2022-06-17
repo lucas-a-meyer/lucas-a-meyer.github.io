@@ -1,0 +1,27 @@
+---
+title: "Work life balance is worth something"
+date: "2022-05-10"
+author: "Lucas A. Meyer"
+image: /images/money-gun.png
+---
+
+Should you choose #Microsoft or #FAANG?
+
+Last week, a Microsoft #recruiter I admire and has a lot of followers posted something about Microsoft being the gateway to FAANG. Having been into both Microsoft and FAANG and having participated on hundreds of recruiting processes for both (as an interviewer, hiring manager and interviewee), I have #feelings about this. Lots of feelings.
+
+First off, let's get my economist way of thinking and potential biases out of the way. By revealed preference, you know I prefer Microsoft to FAANG, at least under the conditions that were offered to me. I recently chose to come back to work for Microsoft from FAANG (I also had recent offers from other FAANGs). Therefore, take my words with a grain of salt.
+
+Also, given recent performance, FAANGs are not an investment thing anymore. For pop-investing fans, the acronym is now MAMAA, one of which is Microsoft (Netflix was dropped). 
+
+But this doesn't matter, since the main argument about FAANGs was about recruiting: FAANGs (allegedly) pay better than Microsoft. There are non-FAANG companies that also (at least used to) pay extremely well (e.g., Airbnb and Uber). When recruiters compete against FAANGs, it's a difficult fight. It's not uncommon to have a FAANG offer that is 50% over other companies. You don't have to spend a lot of time in Blind to find out that in terms of total compensation, FAANGs pay very well.
+
+I can tell you: it's great to be paid very well.
+I can also tell you: it's not the only thing that matters.
+
+As a data scientist, I think a lot about optimization problems. If your personal career optimization problem is solving for maximizing short-term total compensation (TC), FAANGs are great. And, as that same recruiter wrote in a subsequent post, there's no shame on having that goal.
+
+But maybe you want to optimize for other things: work/life balance, impact, stress, learning, risk, work environment. Short-term TC is super important, especially in when you want to get a house, buy a car, get established, pay those student loans. But after some point, it may matter less to you. Privilege check: this is about choosing between high degrees of privilege, and I'm blessed and humbled to have the opportunity to choose, as many in the tech area do.
+
+For the opportunities that were available to me, Microsoft was by far the best option for what I was optimizing for: learning, working with people I admire, work life balance, being able to talk about my work, having lasting impact on the world, and very good compensation with lower stock market risk.
+
+As any person that knows about Goodhart's law or Charlie Munger can tell you, you get what you optimize for. When you're choosing what you are optimizing for, make sure that it is what you really want.
