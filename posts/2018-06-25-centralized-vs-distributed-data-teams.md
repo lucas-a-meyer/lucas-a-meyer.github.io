@@ -5,8 +5,7 @@ author: "Lucas A. Meyer"
 image: "https://cdn-images-1.medium.com/max/2000/1*YfxWi5QZkShNHS0XLuKlMQ.png"
 ---
 
-In a recent [DataFramed podcast](https://www.datacamp.com/community/podcast/organizing-data-science-teams), [Hugo Bowne-Anderson](https://github.com/hugobowne) and 
-[Jonathan Nolis](https://github.com/jnolis) discuss whether data scientist teams should be centralized or distributed. I have my own opinions about that question.
+In a recent [DataFramed podcast](https://www.datacamp.com/community/podcast/organizing-data-science-teams), [Hugo Bowne-Anderson](https://github.com/hugobowne) and [Jonathan Nolis](https://github.com/jnolis) discuss whether data scientist teams should be centralized or distributed. I have my own opinions about that question.
 
 ## Should data science teams be centralized or distributed?
  
