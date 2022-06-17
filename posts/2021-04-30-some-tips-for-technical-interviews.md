@@ -8,4 +8,4 @@ categories:
 
 #### LinkedIn
 This was also posted to LinkedIn: 
-https://www.linkedin.com/feed/update/urn:li:share:6798662703675273216
+<https://www.linkedin.com/feed/update/urn:li:share:6798662703675273216>
