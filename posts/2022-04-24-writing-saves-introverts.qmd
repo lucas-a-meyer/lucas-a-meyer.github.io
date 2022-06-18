@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How writing can help introverts communicate
-date: 2022-04-22 11:30 -0400
+date: "2022-04-22"
 categories: 
     - career
     - neurodiversity

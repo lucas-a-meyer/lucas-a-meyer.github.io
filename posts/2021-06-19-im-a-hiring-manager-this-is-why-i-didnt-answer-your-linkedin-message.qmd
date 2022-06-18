@@ -1,9 +1,12 @@
 ---
 title: "I'm a hiring manager: this is why I didn't answer your LinkedIn message"
-date: 2021-06-19
+date: "2021-06-19"
 author: "Lucas A. Meyer"
 image: /images/linkedin-notifications.jpg
-categories: career, hiring, interviews
+categories: 
+    - career
+    - hiring
+    - interviews
 ---
 ## "It's not you, it's me"
 Most managers become managers because they care about helping people succeed. That's my philosophy, and I would answer all the messages I receive if I had enough time.

@@ -1,7 +1,7 @@
 ---
 author: "Lucas A. Meyer"
 title: "Using corn cob lights to beat seasonal blues"
-date: 2021-12-14 21:41 -0400
+date: "2021-12-14"
 image: /images/rainy-day.jpg
 ---
 

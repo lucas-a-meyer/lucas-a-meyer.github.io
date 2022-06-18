@@ -1,6 +1,6 @@
 ---
 title: "The goodwill account"
-date: 2021-07-07
+date: "2021-07-07"
 author: "Lucas A. Meyer"
 categories: 
     - career

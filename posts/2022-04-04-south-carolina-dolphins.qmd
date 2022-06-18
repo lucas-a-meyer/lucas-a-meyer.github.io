@@ -1,7 +1,7 @@
 ---
 author: "Lucas A. Meyer"
 title: South Carolina dolphins!
-date: 2022-04-04 11:16 -0400
+date: "2022-04-04"
 image: /images/lucas-in-charleston.jpg
 ---
 

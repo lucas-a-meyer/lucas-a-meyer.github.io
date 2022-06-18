@@ -1,7 +1,7 @@
 ---
 author: "Lucas A. Meyer"
 title: Hiring is a superpower
-date: 2022-04-05 21:30 -0400
+date: "2022-04-05"
 categories: 
     - career
     - hiring

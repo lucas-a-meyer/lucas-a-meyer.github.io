@@ -1,7 +1,7 @@
 ---
 author: "Lucas A. Meyer"
 title:  "Chesterton's Fence"
-date:   2022-04-02 11:02:54 -0400
+date: "2022-04-02"
 categories: concepts
 image: /images/fence.jpg
 ---

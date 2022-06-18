@@ -1,6 +1,6 @@
 ---
 title: "Mad Ned's career advice"
-date: 2021-09-06
+date: "2021-09-06"
 categories: 
 - career
 image: /images/goonies2.jpg

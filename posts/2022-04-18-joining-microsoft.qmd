@@ -1,8 +1,8 @@
 ---
 author: "Lucas A. Meyer"
 title: Joining Microsoft
-date: 2022-04-18 11:30 -0400
-categories: 
+date: "2022-04-18"
+categories:
     - career 
 image: /images/just-hired-microsoft.jpg
 ---

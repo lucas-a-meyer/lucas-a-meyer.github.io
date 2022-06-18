@@ -1,7 +1,7 @@
 ---
 author: "Lucas A. Meyer"
 title: "Farewell Lunch"
-date: 2022-04-15 11:30 -0400
+date: "2022-04-15"
 categories: 
     - career 
 image: /images/farewell-lunch.jpg

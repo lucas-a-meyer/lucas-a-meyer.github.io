@@ -1,7 +1,7 @@
 ---
 title: "How to fail a technical phone screen"
 author: "Lucas A. Meyer"
-date: 2021-07-02 12:00 -0400
+date: "2021-07-02"
 categories: 
     - career
     - interviews

@@ -1,6 +1,6 @@
 ---
 title: "Do you know how smart I am in Portuguese?"
-date: 2021-10-10
+date: "2021-10-10"
 author: "Lucas A. Meyer"
 categories: writing
 image: /images/smart-portuguese.jpg

@@ -2,7 +2,7 @@
 layout: post
 title: "Interviews are hard for everyone"
 author: "Lucas A. Meyer"
-date: 2021-06-21
+date: "2021-06-21"
 categories: career, interviews
 ---
 

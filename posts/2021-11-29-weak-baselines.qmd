@@ -1,7 +1,7 @@
 ---
 title: "Weak baselines"
 author: "Lucas A. Meyer"
-date: 2021-11-29 12:00 -0400
+date: "2021-11-29"
 categories: data science
 image: /images/weak-baseline.jpg
 ---

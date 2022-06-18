@@ -1,7 +1,7 @@
 ---
 title: "Writing good emails"
 author: "Lucas A. Meyer"
-date: 2021-09-18
+date: "2021-09-18"
 categories: career
 image: /images/grad-student-email.jpg
 ---

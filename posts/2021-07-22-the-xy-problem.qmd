@@ -1,6 +1,6 @@
 ---
 title: "The XY Problem"
-date: 2021-07-22
+date: "2021-07-22"
 author: "Lucas A. Meyer"
 categories: 
     - career

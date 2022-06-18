@@ -1,6 +1,6 @@
 ---
 title: "Reverse causation"
-date: 2021-11-22 12:00 -0400
+date: "2021-11-22"
 categories: data science
 author: "Lucas A. Meyer"
 image: /images/reverse-causation.jpg

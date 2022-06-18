@@ -1,6 +1,6 @@
 ---
 title: "What happens when a hiring manager posts a position on LinkedIn"
-date: 2021-06-05
+date: "2021-06-05"
 author: "Lucas A. Meyer"
 categories: 
     - career

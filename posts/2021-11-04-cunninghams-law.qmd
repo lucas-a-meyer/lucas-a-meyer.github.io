@@ -1,6 +1,6 @@
 ---
 title: "Cunningham's Law"
-date: 2021-11-04 12:00 -0400
+date: "2021-11-04"
 author: "Lucas A. Meyer"
 categories: concepts
 image: /images/cunninghams-law.jpg
