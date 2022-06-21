@@ -3,7 +3,7 @@ title: "Work life balance is worth something"
 date: "2022-05-10"
 author: "Lucas A. Meyer"
 image: /images/money-gun.jpg
-posted-to-linkedin: true
+posted-to-linkedin: "2022-05-10"
 
 ---
 

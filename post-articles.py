@@ -260,8 +260,12 @@ def process_file(filepath):
         ensure_future_posts_is_draft(filepath, yml, front_matter)    
 
     li_post_date = get_date(front_matter, "linkedin-target-date")
+    last_li_post = get_date(front_matter, "posted-to-linkedin")
     
-    if li_post_date and li_post_date >= datetime.date.today():
+    # If the article has a "linkedin-target-date"
+    # and the article has not been posted to linkedin yet
+    # and the article target date is at least today
+    if li_post_date and not last_li_post and li_post_date >= datetime.date.today():
         img = front_matter.get("image")
         print(front_matter)
         post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}")

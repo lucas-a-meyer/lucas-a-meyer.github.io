@@ -5,6 +5,7 @@ draft: false
 image: /images/computer-urinal.jpg
 title: Computers and Urinals
 linkedin-target-date: "2022-06-20"
+posted-to-linkedin: "2022-06-20"
 
 ---
 
