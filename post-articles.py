@@ -73,15 +73,15 @@ def get_file_plaintext(filepath):
 def linkedin_text(txt):
     post = txt
     size = len(post)
-    if size > 3000:
-        post = post[:3000]
+    if size > 2800:
+        post = post[:2800]
         post += """...
         
 (Sorry...this post ended up being too big for LinkedIn. The complete post is in my blog, at www(dot)meyerperin(dot)com .)
 
         """
     else:
-        post += """\n\nI posted this automatically from my blog using my #Quarto to #Linkedin converter. You can see my older posts and more at my blog, at www(dot)meyerperin(dot)com ."""
+        post += """\n\nI posted this automatically from my blog using my Quarto to Linkedin converter. You can see my older posts and more at my blog, at www(dot)meyerperin(dot)com ."""
 
     post = post.replace("\n", "\\n")
     post = post.replace('"', '\\"')
@@ -211,17 +211,30 @@ def post_asset(token, person_id, asset, text):
    post_json = post_json.replace("ASSET_URN", asset)
    post_json = post_json.replace("POST_TEXT", text)
 
-   print(post_json)
    url = "https://api.linkedin.com/v2/ugcPosts"
    resp = requests.post(url, post_json, headers=headers)
-   print(f"post_asset {resp.status_code}")
 
    return resp.status_code
 
-def post_to_linkedin(filepath, text, imagepath, front_matter, yml):
+def post_to_linkedin(filepath, text, imagepath, front_matter, yml, link=None):
+
+    cfg_file = open("/home/lucasmeyer/.linkedin/config.json")
+    li_cfg = json.load(cfg_file)
+
+    person_id = li_cfg.get("urn")
+    token = li_cfg.get("access_token")
 
     li_text = linkedin_text(text)
-    code = post_linkedin_image(li_text, imagepath)
+
+    code = 505
+
+    if os.path.exists(imagepath):
+        code = post_linkedin_image(li_text, imagepath, person_id, token)
+    elif link:
+        code = 505
+    else:
+        # li_text = li_text[:1300]
+        code = post_linkedin_text(li_text, person_id, token)
 
     # if posting was successful, update the front-matter so it won't post again
     if code == 201:
@@ -234,26 +247,50 @@ def post_to_linkedin(filepath, text, imagepath, front_matter, yml):
         md_content = md_content.replace(yml, new_yml)
         with open(filepath, "w") as f:
             f.write(md_content) 
+            print(f"\n==================> Posted {filepath} to LinkedIn \n\n")
+    else:
+            print(f"\n====={code}==========> Failed to post {filepath} to LinkedIn \n\n")
+        
 
-    print(f"\n======= {filepath} ({len(text)}) =======\n\n")
-    print(f"Image: {imagepath}")
-    print()
-    print(li_text)
-    print(f"\n======{code}========\n\n")
+def post_linkedin_text(txt, person_id, token):
+   headers = {
+      "Authorization": f"Bearer {token}",
+      "Content-Type": "application/json"
+   }
 
+   post_json = """
+   {
+        "author": "PERSON_URN",
+        "lifecycleState": "PUBLISHED",
+        "specificContent": {
+            "com.linkedin.ugc.ShareContent": {
+                "shareCommentary": {
+                    "text": "POST_TEXT"
+                },
+                "shareMediaCategory": "NONE"
+            }
+        },
+        "visibility": {
+            "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+        }
+    }
+   """
 
-def post_linkedin_image(txt, img_path):
+   post_json = post_json.replace("PERSON_URN", person_id)
+   post_json = post_json.replace("POST_TEXT", txt)
 
-   cfg_file = open("/home/lucasmeyer/.linkedin/config.json")
-   li_cfg = json.load(cfg_file)
+   print(post_json)
 
-   person_id = li_cfg.get("urn")
-   token = li_cfg.get("access_token")
+   url = "https://api.linkedin.com/v2/ugcPosts"
+   resp = requests.post(url, post_json, headers=headers)
+
+   return resp.status_code
+
+def post_linkedin_image(txt, img_path, person_id, token):
 
    asset, upload_url = get_upload_url(token, person_id)
 
    resp_code = upload_image(img_path, upload_url, token)
-   print(f"post_linkedin_image {resp_code}")
    if resp_code == 201:
       resp_code = post_asset(token, person_id, asset, txt)
 
@@ -278,7 +315,6 @@ def process_file(filepath):
     # and the article target date is at least today
     if li_post_date and not last_li_post and li_post_date <= datetime.date.today():
         img = front_matter.get("image")
-        print(front_matter)
         post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter, yml)
 
     # If the file has a linkedin field, adjust the text 
