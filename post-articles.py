@@ -70,18 +70,22 @@ def get_file_plaintext(filepath):
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         return yml, plaintext
 
-def linkedin_text(txt):
+def linkedin_text(txt, filepath):
     post = txt
     size = len(post)
+    if filepath.endswith(".md"):
+        linkpath = filepath[:-2] + "html"
+    if filepath.endswith(".qmd"):
+        linkpath = filepath[:-3] + "html"
     if size > 2800:
         post = post[:2800]
-        post += """...
+        post += f"""...
         
-(Sorry...this post ended up being too big for LinkedIn. The complete post is in my blog, at www(dot)meyerperin(dot)com .)
+This post ended up being too long for LinkedIn but the remainder is at http://www.meyerperin.com/{linkpath}
 
         """
     else:
-        post += """\n\nI posted this automatically from my blog using my Quarto to Linkedin converter. You can see my older posts and more at my blog, at www(dot)meyerperin(dot)com ."""
+        post += f"""\n\nThis post originally appeared at http://www.meyerperin.com/{linkpath}"""
 
     post = post.replace("\n", "\\n")
     post = post.replace('"', '\\"')
@@ -240,7 +244,7 @@ def post_to_linkedin(filepath, text, imagepath, front_matter, yml, link=None):
     person_id = li_cfg.get("urn")
     token = li_cfg.get("access_token")
 
-    li_text = linkedin_text(text)
+    li_text = linkedin_text(text, filepath)
 
     code = 505
 
@@ -335,7 +339,8 @@ def process_file(filepath):
     # If the article has a "linkedin-target-date"
     # and the article has not been posted to linkedin yet
     # and the article target date is at least today
-    if li_post_date and not last_li_post and li_post_date <= datetime.date.today():
+    # and the article is not in draft
+    if not draft and li_post_date and not last_li_post and li_post_date <= datetime.date.today():
         img = front_matter.get("image")
         post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter, yml)
 

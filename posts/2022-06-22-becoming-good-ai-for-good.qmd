@@ -3,7 +3,8 @@ author: Lucas A. Meyer
 date: '2022-06-21'
 draft: false
 image: /images/aiforgood.jpg
-linkedin-target-date: '2022-06-22'
+linkedin-target-date: '2022-06-21'
+posted-to-linkedin: '2022-06-21'
 title: Becoming Good at AI for Good
 ---
 
@@ -17,4 +18,4 @@ I especially like the part about getting things from model to impact. Before lea
 
 This is a lot better, and likely to help you understand a lot about the real-world constraints of making AI happen.
 
-The article can be found at https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good
+The article can be found at <https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good>

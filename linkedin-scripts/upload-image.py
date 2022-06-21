@@ -91,14 +91,14 @@ def post_asset(token, person_id, asset, text):
                "shareCommentary": {
                   "text": "POST_TEXT"
                },
-               "shareMediaCategory": "IMAGE",
+               "shareMediaCategory": "ARTICLE",
                "media": [
                   {
                      "status": "READY",
                      "description": {
                            "text": "Center stage!"
                      },
-                     "media": "ASSET_URN",
+                     "originalUrl": "https://www.meyerperin.com/posts/2022-06-22-becoming-good-ai-for-good.html",
                      "title": {
                            "text": "Where does the title go?"
                      }

@@ -3,8 +3,8 @@ author: Lucas A. Meyer
 date: '2022-06-23'
 draft: true
 image: /images/aiforgood.jpg
-linkedin-target-date: '2022-06-23'
-title: Vacations at Wild Dunes
+linkedin-target-date: '2022-06-24'
+title: "Vacations at Wild Dunes"
 ---
 
 For my latest #vacation, I went with my family to the Charleston, SC area, more specifically to the Isle of Palms. We were very lucky to get amazing weather and see some [dolphins in the wild](2022-04-04-south-carolina-dolphins.qmd).
