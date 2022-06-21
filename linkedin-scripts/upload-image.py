@@ -52,6 +52,36 @@ def post_asset(token, person_id, asset, text):
       "Content-Type": "application/json"
    }
 
+   discard = """
+   {
+      "author": "PERSON_URN",
+      "lifecycleState": "PUBLISHED",
+      "specificContent": {
+         "com.linkedin.ugc.ShareContent": {
+               "shareCommentary": {
+                  "text": "POST_TEXT"
+               },
+               "shareMediaCategory": "ARTICLE",
+               "media": [
+                  {
+                     "status": "READY",
+                     "description": {
+                           "text": "Center stage!"
+                     },
+                     "media": "ASSET_URN",
+                     "title": {
+                           "text": "Where does the title go?"
+                     }
+                  }
+               ]
+         }
+      },
+      "visibility": {
+         "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+      }
+   }
+   """
+
    post_json = """
    {
       "author": "PERSON_URN",
@@ -73,6 +103,7 @@ def post_asset(token, person_id, asset, text):
                            "text": "Where does the title go?"
                      }
                   }
+
                ]
          }
       },
@@ -108,10 +139,13 @@ def post_linkedin_image(text, img_path):
    return(resp_code)
 
 filepath = 'aiforgood.jpg'
-text = "Years ago, in a tech conference, a researcher asked: Isn't it embarrassing that the conference center urinals can detect when you're done and automatically flush, but your computer can't detect that you're not using it and automatically lock?\n\n \n\nThis seemingly simple problem is harder than it looks. People don't (normally) quietly stare at urinals for several minutes, but that can happen to computer screens (e.g., watching a movie or presentation, reading a document). \n\nNewer phones and tablets use eye tracking to save battery. They can figure out whether you're looking at a screen, and if you're not, lock. It works well, but these are devices that you almost always hold close to your face, so they can keep a camera pointing at you all the time. If you cover the camera or use an external monitor, you start having problems. With computers, I have a very strong preference for using external monitors, so I'm already in the problem situation to begin with. The solution could be to add a sensor to each monitor or camera, but given the thousands of models available, that could get complicated.\n\nDuring my long career, I've seen many pranks on people that left their computers unlocked. Some places look down at the person who left the computer unlocked, but I actually prefer the places that chastise the pranksters: instead of pranking, it would be better if they locked the computer and kindly had a word with the forgetful person.\n\nIn any case, one of my favorite Windows 11 features (apparently also present in Windows 10) is the ability to lock my computer automatically when I move away from it.\n\nThe way to do that is a little convoluted: you need to pair your Bluetooth phone with your computer (which, of course, also needs to have Bluetooth), and when your computer, using Bluetooth, detects that your phone moved away from your computer, it will automatically lock.\n\nFrom my description above, you probably already appreciate how a seemingly simple problem that we can solve for a urinal can be hard to solve even if your device has a lot more features. \n\nThe people who implemented the feature still couldn't solve all problems. What to do if the user doesn't have their phone today? Current solution: just show an error message. What to do if the user moves away but leaves the phone nearby? We detect phones, not users, so it will leave it unlocked.\n\nIn any case, I'm glad to see that computers of 2020s are inching closer to the toilets of the early 2000s.\n\nYou can see my older posts and more at my blog, at www-meyerperin-com ."  
+text = "Sorry, this is just a test post. The tests should end soon, and maybe even redirect people to https://www.meyerperin.com/" 
+
 text = text.replace("\n", "\\n")
 
 code = post_linkedin_image(text, filepath)
 
 if code == 201:
    print("Success")
+else:
+   print(code)

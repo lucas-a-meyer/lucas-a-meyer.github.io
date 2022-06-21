@@ -102,6 +102,22 @@ def ensure_future_posts_is_draft(filepath, yml, front_matter):
     with open(filepath, "w") as f:
         f.write(md_content)
 
+def remove_draft(filepath, yml, front_matter):
+    
+    front_matter["draft"] = False
+    # If the file has a linkedin field, adjust the text 
+    # and check if I should post
+    with open(filepath, "r") as f:
+        md_content = f.read()
+    
+    new_yml = yaml.dump(front_matter)
+    new_yml = f"---\n{new_yml}---"
+    md_content = md_content.replace(yml, new_yml)
+    with open(filepath, "w") as f:
+        f.write(md_content)
+
+
+
 def get_date(front_matter, field):
     fm_date = front_matter.get(field)
     if not fm_date:
@@ -297,15 +313,21 @@ def post_linkedin_image(txt, img_path, person_id, token):
    return(resp_code)
 
 def process_file(filepath):
-    print(f"Processing {filepath}")
+    # print(f"Processing {filepath}")
     yml, txt = get_file_plaintext(filepath)
 
     # For all files, check if we need to adjust the draft field
     front_matter = yaml.safe_load(yml.replace("---", ""))
     post_date = get_date(front_matter, "date")
+    draft = front_matter.get("draft")
 
-    if post_date > datetime.date.today():
-        ensure_future_posts_is_draft(filepath, yml, front_matter)    
+    if draft and post_date <= datetime.date.today():
+        remove_draft(filepath, yml, front_matter)
+        print(f"==========> Removed {filepath} from draft")
+
+    if not draft and post_date > datetime.date.today():
+        ensure_future_posts_is_draft(filepath, yml, front_matter)   
+        print(f"==========> Added {filepath} to draft")
 
     li_post_date = get_date(front_matter, "linkedin-target-date")
     last_li_post = get_date(front_matter, "posted-to-linkedin")
