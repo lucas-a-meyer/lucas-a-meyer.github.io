@@ -1,9 +1,10 @@
 ---
 author: Lucas A. Meyer
-date: '2022-06-21'
+date: '2022-06-22'
 draft: true
 image: /images/aiforgood.jpg
-title: Computers and Urinals
+linkedin-target-date: '2022-06-22'
+title: Becoming Good at AI for Good
 ---
 
 The AI for Good Research Lab published an [article](https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good) last year about how to do AI projects in the #AI4Good domain. 

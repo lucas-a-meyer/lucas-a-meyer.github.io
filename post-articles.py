@@ -77,11 +77,11 @@ def linkedin_text(txt):
         post = post[:3000]
         post += """...
         
-(Sorry...this post ended up being too big for LinkedIn. The complete post is in my blog, at www-meyerperin-com .)
+(Sorry...this post ended up being too big for LinkedIn. The complete post is in my blog, at www(dot)meyerperin(dot)com .)
 
         """
     else:
-        post += """\n\nYou can see my older posts and more at my blog, at www-meyerperin-com ."""
+        post += """\n\nI posted this automatically from my blog using my #Quarto to #Linkedin converter. You can see my older posts and more at my blog, at www(dot)meyerperin(dot)com ."""
 
     post = post.replace("\n", "\\n")
     post = post.replace('"', '\\"')
@@ -115,7 +115,7 @@ def get_date(front_matter, field):
     return desired_date
 
 def process_directory(di):
-    print(f"Files and directories for {di}")
+    print(f"Processing directory: {di}")
     for root, dirs, files in os.walk(di):
         for filename in files:
             if filename.endswith("qmd") or filename.endswith("md"):
@@ -218,13 +218,24 @@ def post_asset(token, person_id, asset, text):
 
    return resp.status_code
 
-def post_to_linkedin(title, text, imagepath):
-
+def post_to_linkedin(filepath, text, imagepath, front_matter, yml):
 
     li_text = linkedin_text(text)
     code = post_linkedin_image(li_text, imagepath)
 
-    print(f"\n======= {title} ({len(text)}) =======\n\n")
+    # if posting was successful, update the front-matter so it won't post again
+    if code == 201:
+        front_matter["posted-to-linkedin"] = datetime.date.today().strftime("%Y-%m-%d")
+        with open(filepath, "r") as f:
+            md_content = f.read()
+        
+        new_yml = yaml.dump(front_matter)
+        new_yml = f"---\n{new_yml}---"
+        md_content = md_content.replace(yml, new_yml)
+        with open(filepath, "w") as f:
+            f.write(md_content) 
+
+    print(f"\n======= {filepath} ({len(text)}) =======\n\n")
     print(f"Image: {imagepath}")
     print()
     print(li_text)
@@ -265,10 +276,10 @@ def process_file(filepath):
     # If the article has a "linkedin-target-date"
     # and the article has not been posted to linkedin yet
     # and the article target date is at least today
-    if li_post_date and not last_li_post and li_post_date >= datetime.date.today():
+    if li_post_date and not last_li_post and li_post_date <= datetime.date.today():
         img = front_matter.get("image")
         print(front_matter)
-        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}")
+        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter, yml)
 
     # If the file has a linkedin field, adjust the text 
     # and check if I should post
