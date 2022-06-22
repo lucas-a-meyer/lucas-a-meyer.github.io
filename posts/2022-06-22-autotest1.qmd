@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: '2022-06-22'
 draft: false
 image: /images/nobody-reads-blog.jpg
-title: Posting automatically from my blog to LinkedIn
+title: Updating my blog automatically
 ---
 
 Nobody reads my blog. 
