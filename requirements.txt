@@ -54,10 +54,12 @@ ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
 Pygments==2.12.0
+PyJWT==2.4.0
 pyparsing==3.0.9
 pyrsistent==0.18.1
 python-dateutil==2.8.2
 python-pptx==0.6.21
+pytz==2022.1
 PyYAML==6.0
 pyzmq==23.1.0
 qtconsole==5.3.1
@@ -71,6 +73,7 @@ terminado==0.15.0
 tinycss2==1.1.1
 tornado==6.1
 traitlets==5.2.2.post1
+twilio==7.9.3
 urllib3==1.26.9
 wcwidth==0.2.5
 webencodings==0.5.1

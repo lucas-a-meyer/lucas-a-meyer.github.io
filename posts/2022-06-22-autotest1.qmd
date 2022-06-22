@@ -1,9 +1,9 @@
 ---
-title: 'Posting automatically from my blog to LinkedIn'
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
 date: '2022-06-22'
-draft: true
+draft: false
 image: /images/nobody-reads-blog.jpg
+title: Posting automatically from my blog to LinkedIn
 ---
 
 Nobody reads my blog. 
