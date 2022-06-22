@@ -6,3 +6,4 @@ vendor
 .quarto
 
 /.quarto/
+render-logs/
