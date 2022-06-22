@@ -317,7 +317,7 @@ def post_linkedin_image(txt, img_path, person_id, token):
    return(resp_code)
 
 def process_file(filepath):
-    # print(f"Processing {filepath}")
+    print(f"Processing {filepath}")
     yml, txt = get_file_plaintext(filepath)
 
     # For all files, check if we need to adjust the draft field
