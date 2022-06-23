@@ -12,6 +12,8 @@ website:
   google-analytics: "G-6KTZ853BN5"
   twitter-card: true
   open-graph: true
+  site-url: https://www.meyerperin.com
+  description: "Lucas A. Meyer's blog"
   navbar:
     left:
         - text: "Home"
