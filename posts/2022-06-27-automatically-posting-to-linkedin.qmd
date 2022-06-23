@@ -21,9 +21,7 @@ The problem of writing an article on LinkedIn is that the editor is good for tex
 
 The problem of creating a training is that I think it's a lot of work. I never tried, and maybe it's easier than I think it is, but just getting started seems like a lot.
 
-Instead of using LinkedIn, a very popular option is to use Medium or, more specifically, "Towards Data Science" (TDS), a subset of Medium articles focused on data science. I frequently find articles I like in TDS, but it's somewhat paywalled. You get just a few free articles for free. 
-
-For authors, the advantages are that TDS is widely promoted in search results and that authors get paid. Not enough to quit a job and write for TDS, but enough to buy a couple books per year.
+Instead of using LinkedIn, a very popular option is to use Medium or, more specifically, "Towards Data Science" (TDS), a subset of Medium articles focused on data science. I frequently find articles I like in TDS, but it's somewhat paywalled. You get just a few free articles for free. For authors, the advantages are that TDS is widely promoted in search results and that authors get paid. Not enough to quit a job and write for TDS, but enough to buy a couple books per year. Other options are newsletters, but it starts to feel too much like a job.
 
 The LinkedIn algorithm seems to punish posts that only point users to an external article. I can understand that: this type of post is unlikely to generate any engagement inside of LinkedIn: people just "click out".
 
