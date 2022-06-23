@@ -10,6 +10,8 @@ project:
 website:
   title: "Lucas A. Meyer"
   google-analytics: "G-6KTZ853BN5"
+  twitter-card: true
+  open-graph: true
   navbar:
     left:
         - text: "Home"

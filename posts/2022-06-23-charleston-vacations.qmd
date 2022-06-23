@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 date: '2022-06-23'
 draft: true
-image: /images/aiforgood.jpg
+image: /images/wild-dunes.jpg
 linkedin-target-date: '2022-06-24'
 title: "Vacations at Wild Dunes"
 ---
