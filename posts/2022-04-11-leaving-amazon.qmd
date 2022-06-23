@@ -1,12 +1,12 @@
 ---
 author: "Lucas A. Meyer"
-title: Leaving Amazon
+title: "Leaving Amazon"
 date: "2022-04-11"
 categories: 
     - career 
     - hiring
 image: /images/mac-power-off.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919333255288627200
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6919333255288627200"
 ---
 
 This is my last week at Amazon. I will announce my new position (which is beyond awesome) early next week. 

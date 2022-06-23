@@ -1,5 +1,5 @@
 ---
-title: A story about my father
+title: "A story about my father"
 date: '2019-02-04'
 author: "Lucas A. Meyer"
 ---

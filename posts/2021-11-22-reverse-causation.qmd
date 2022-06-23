@@ -4,7 +4,7 @@ date: "2021-11-22"
 categories: data science
 author: "Lucas A. Meyer"
 image: /images/reverse-causation.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848"
 ---
 
 Gather close as I tell you a cautionary tale about data science. 

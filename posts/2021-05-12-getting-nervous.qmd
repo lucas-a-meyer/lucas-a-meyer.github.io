@@ -5,7 +5,7 @@ date: "2021-05-06"
 categories: 
     - career
     - interviews
-linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir
+linkedin-link: "https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir"
 ---
 
 I do a lot of interviews, and they are high-pressure situations. 

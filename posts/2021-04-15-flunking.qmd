@@ -5,7 +5,7 @@ date: "2021-04-15"
 categories: 
     - career
     - interviews
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448"
 ---
 
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998.

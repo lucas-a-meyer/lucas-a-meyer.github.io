@@ -5,7 +5,7 @@ date: "2021-05-06"
 categories: 
     - career
     - interviews
-linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe
+linkedin-link: "https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe"
 ---
 
 When you are doing a code interview, it's possible (and even likely) that you're going to be nervous. Remember to document your thinking process.

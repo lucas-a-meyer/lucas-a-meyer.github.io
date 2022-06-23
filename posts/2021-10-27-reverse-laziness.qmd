@@ -4,7 +4,7 @@ date: "2021-10-27"
 author: "Lucas A. Meyer"
 categories: concepts
 image: /images/reverse-laziness.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6859131315925721088
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6859131315925721088"
 ---
 
 I've noticed a behavior in both my professional life and with my kids doing their homework: people spend a lot of time on things they don't like.

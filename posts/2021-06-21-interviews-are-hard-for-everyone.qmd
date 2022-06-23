@@ -1,10 +1,11 @@
 ---
-layout: post
 title: "Interviews are hard for everyone"
 author: "Lucas A. Meyer"
 date: "2021-06-21"
-categories: career, interviews
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6812769571775365120
+categories: 
+    - career
+    - interviews
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6812769571775365120"
 ---
 
 I am bad at being at the "job seeker" side of the table in interviews. 

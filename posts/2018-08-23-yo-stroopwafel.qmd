@@ -1,5 +1,5 @@
 ---
-title: Yo, Stroop!
+title: "Yo, Stroop!"
 date: '2018-08-23'
 author: "Lucas A. Meyer"
 ---

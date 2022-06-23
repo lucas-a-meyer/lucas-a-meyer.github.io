@@ -7,7 +7,7 @@ categories:
     - neurodiversity
     - writing
 image: /images/writing.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776"
 ---
 
 I don't like talking to people, but I don't mind writing to them.

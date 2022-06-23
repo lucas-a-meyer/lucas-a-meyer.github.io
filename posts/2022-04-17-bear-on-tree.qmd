@@ -5,7 +5,7 @@ date: "2022-04-17"
 categories: 
     - home
 image: /images/bear-tree-2.jpg
-linkedin-link: https://www.linkedin.com/posts/lucasameyer_during-a-couple-of-our-conference-calls-activity-6921261803536560128-JJ1z
+linkedin-link: "https://www.linkedin.com/posts/lucasameyer_during-a-couple-of-our-conference-calls-activity-6921261803536560128-JJ1z"
 ---
 
 During a couple of our conference calls, I told my team that I needed a moment because I needed to deal with a bear situation. Usually it was quick, just the dog barking a lot, or an overturned trash can. I’m not sure they believed me.

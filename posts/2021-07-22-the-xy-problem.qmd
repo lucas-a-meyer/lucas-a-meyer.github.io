@@ -4,7 +4,7 @@ date: "2021-07-22"
 author: "Lucas A. Meyer"
 categories: 
     - career
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760"
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?"

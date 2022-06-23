@@ -5,7 +5,7 @@ date: "2022-04-15"
 categories: 
     - career 
 image: /images/farewell-lunch.jpg
-linkedin-link: https://www.linkedin.com/posts/lucasameyer_amazon-seattle-leadership-activity-6920874431531618304-nxUL
+linkedin-link: "https://www.linkedin.com/posts/lucasameyer_amazon-seattle-leadership-activity-6920874431531618304-nxUL"
 ---
 
 It was a good farewell lunch at #Amazon. It was a nice day (for #Seattle standards) and the company was top notch. My team at Amazon was very distributed, with some people in San Diego, some people in Vancouver and some in Seattle, so the sad part is that I only got to see the Seattle team.

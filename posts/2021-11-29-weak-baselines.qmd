@@ -4,7 +4,7 @@ author: "Lucas A. Meyer"
 date: "2021-11-29"
 categories: data science
 image: /images/weak-baseline.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712"
 ---
 
 Gather close as I tell you another cautionary tale about data science.

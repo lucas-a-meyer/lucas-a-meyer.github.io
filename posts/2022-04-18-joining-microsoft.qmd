@@ -1,11 +1,11 @@
 ---
 author: "Lucas A. Meyer"
-title: Joining Microsoft
+title: "Joining Microsoft"
 date: "2022-04-18"
 categories:
     - career 
 image: /images/just-hired-microsoft.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424"
 ---
 
 I’m extremely happy to share that I’m starting a new position as Principal Data Scientist at the AI for Good Research Lab at Microsoft!

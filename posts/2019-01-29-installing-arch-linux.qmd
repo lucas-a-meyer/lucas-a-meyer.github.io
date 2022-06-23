@@ -1,5 +1,5 @@
 ---
-title: Installing Arch Linux
+title: "Installing Arch Linux"
 date: '2019-01-29'
 author: "Lucas A. Meyer"
 ---

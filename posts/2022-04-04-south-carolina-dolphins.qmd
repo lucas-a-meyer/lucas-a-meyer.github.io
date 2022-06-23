@@ -3,7 +3,7 @@ author: "Lucas A. Meyer"
 title: South Carolina dolphins!
 date: "2022-04-04"
 image: /images/lucas-in-charleston.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376"
 ---
 
 After a long winter in Seattle, I finally got some vacations, which I used to visit the Isle of Palms, SC. 

@@ -4,7 +4,7 @@ date: "2021-10-10"
 author: "Lucas A. Meyer"
 categories: writing
 image: /images/smart-portuguese.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6853333112810815488
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6853333112810815488"
 ---
 
 Recently, several people at work said they liked my #writing. 

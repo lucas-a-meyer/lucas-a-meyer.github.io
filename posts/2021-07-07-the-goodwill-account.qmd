@@ -4,7 +4,7 @@ date: "2021-07-07"
 author: "Lucas A. Meyer"
 categories: 
     - career
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6818567778430275584
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6818567778430275584"
 ---
 
 One of the most helpful team-building exercises I participated in was very simple. It was called the "goodwill account".

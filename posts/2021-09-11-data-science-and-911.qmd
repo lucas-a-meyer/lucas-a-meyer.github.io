@@ -5,7 +5,7 @@ date: "2021-09-11"
 categories: 
   - "data science"
 image: /images/bin-laden-compound.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784"
 ---
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 

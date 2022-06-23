@@ -1,6 +1,6 @@
 ---
-title: Why you should blog if you are a data scientist
-author: Lucas A. Meyer
+title: "Why you should blog if you are a data scientist"
+author: "Lucas A. Meyer"
 date: '2019-02-13'
 image: /images/useful-output.jpg
 draft: false

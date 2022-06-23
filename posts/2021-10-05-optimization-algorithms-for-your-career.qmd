@@ -6,7 +6,7 @@ categories:
     - career
     - data science
 image: /images/optimization-career.png
-linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/
+linkedin-link: "https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/"
 ---
 
 Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization. 

@@ -5,7 +5,7 @@ categories:
 - career
 image: /images/goonies2.jpg
 author: "Lucas A. Meyer"
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096"
 ---
 
 When I write that I have a "decades-long" career, I'm stretching it a little bit: my career is just a little bit over 20 years. 

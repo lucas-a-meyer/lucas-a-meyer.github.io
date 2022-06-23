@@ -1,5 +1,5 @@
 ---
-title: Praising Conway's Data Science Venn Diagram
+title: "Praising Conway's Data Science Venn Diagram"
 date: '2018-07-08'
 author: "Lucas A. Meyer"
 ---

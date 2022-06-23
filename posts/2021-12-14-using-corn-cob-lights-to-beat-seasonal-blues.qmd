@@ -3,7 +3,7 @@ author: "Lucas A. Meyer"
 title: "Using corn cob lights to beat seasonal blues"
 date: "2021-12-14"
 image: /images/rainy-day.jpg
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912
+linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912"
 ---
 
 There are a lot of tech companies in Seattle, always hiring (I will myself post a new position soon). And if you know something about Seattle, it's probably that it rains a lot.

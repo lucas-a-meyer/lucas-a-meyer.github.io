@@ -1,5 +1,5 @@
 ---
-title: The day somebody "stole" my work
+title: "The day somebody stole my work"
 date: '2019-02-12'
 author: "Lucas A. Meyer"
 ---

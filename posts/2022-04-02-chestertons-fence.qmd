@@ -4,7 +4,7 @@ title:  "Chesterton's Fence"
 date: "2022-04-02"
 categories: concepts
 image: /images/fence.jpg
-linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816
+linkedin-link: "https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816"
 ---
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 
