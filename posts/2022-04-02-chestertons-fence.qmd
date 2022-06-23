@@ -4,6 +4,7 @@ title:  "Chesterton's Fence"
 date: "2022-04-02"
 categories: concepts
 image: /images/fence.jpg
+linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816
 ---
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 
@@ -18,6 +19,3 @@ I frequently learn a lot when trying to understand the reasons why the original 
 
 When I was less experienced and less careful, I brought down plenty of fences unnecessarily, and was later surprised to find escaped sheep on the road and farmers yelling at me
 
-#### LinkedIn
-
-This was posted to LinkedIn at <https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816>

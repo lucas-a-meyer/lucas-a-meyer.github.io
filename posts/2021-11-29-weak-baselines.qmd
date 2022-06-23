@@ -4,6 +4,7 @@ author: "Lucas A. Meyer"
 date: "2021-11-29"
 categories: data science
 image: /images/weak-baseline.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712
 ---
 
 Gather close as I tell you another cautionary tale about data science.
@@ -21,7 +22,3 @@ The project was celebrated as a success. A press release was issued, promoting t
 A few months later, a new data scientist joined the company, looked at the monthly data, and used the Excel FORECAST.ETS function to achieve a MAPE of 1% in seconds. This time, there was no press release.
 
 When starting a data science project, be careful about the baseline you're using to determine success. Choosing a poor baseline (like the original analyst model) can result in thinking that fairly bad outcomes (like the one from the LSTM model) are good, just because they're better than horrible outcomes. I've seen a number of cases in which a simple heuristic handily beat a complicated ML model.
-
-#### LinkedIn
-
-This was posted to Linkedin at <https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712>

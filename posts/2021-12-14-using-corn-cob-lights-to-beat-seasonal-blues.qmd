@@ -3,6 +3,7 @@ author: "Lucas A. Meyer"
 title: "Using corn cob lights to beat seasonal blues"
 date: "2021-12-14"
 image: /images/rainy-day.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912
 ---
 
 There are a lot of tech companies in Seattle, always hiring (I will myself post a new position soon). And if you know something about Seattle, it's probably that it rains a lot.
@@ -17,6 +18,3 @@ One trick I learned is to use "corn cob lightbulbs" everywhere in my house. A 50
 
 If you're considering to move to Seattle, it's not about the umbrellas. It rarely rains hard enough to justify using one. It's more about finding a way of being outside when there's sunlight (and there are plenty of great things to do around Seattle what that's the case) and getting enough illumination when one can't go out.
 
-#### LinkedIn
-
-This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912>

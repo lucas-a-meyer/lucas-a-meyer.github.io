@@ -4,6 +4,7 @@ date: "2021-11-22"
 categories: data science
 author: "Lucas A. Meyer"
 image: /images/reverse-causation.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848
 ---
 
 Gather close as I tell you a cautionary tale about data science. 
@@ -30,6 +31,3 @@ The project was scrapped. The team decided that data science was all hype. The d
 
 It took a while (and a new data scientist) for that team to trust data science again: a few years later, a new data scientist started experimenting with assigning different strategies to randomized customers, and that improved collections a lot. But that's another tale.
 
-#### LinkedIn
-
-This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848>

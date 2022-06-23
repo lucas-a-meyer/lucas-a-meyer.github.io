@@ -5,6 +5,7 @@ date: "2021-07-31"
 categories: 
 - management
 image: /images/become-manager.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
 ---
 
 Nobody in their right mind would ask me about how to become a singer or dancer.
@@ -64,8 +65,5 @@ I found that I enjoyed helping others succeed through early experiences with men
 
 When you feel the same, it's worth it trying it out.
 
-#### LinkedIn
 
-This was posted on LinkedIn at: 
-<https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872>
 

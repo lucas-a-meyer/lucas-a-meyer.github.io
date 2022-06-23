@@ -5,6 +5,7 @@ categories:
 - career
 image: /images/goonies2.jpg
 author: "Lucas A. Meyer"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096
 ---
 
 When I write that I have a "decades-long" career, I'm stretching it a little bit: my career is just a little bit over 20 years. 
@@ -21,7 +22,3 @@ You should read his whole post. One of the key points is to develop your persona
 The tech market is simultaneously surprisingly large (sometimes you don't know people in your own company) and surprisingly small (someone you knew a decade ago reaches out with a new opportunity). As your career grows longer, the probability of knowing someone and being known increases.
 
 Also, being kind to people goes a long way, regardless of where you are in your career.
-
-#### LinkedIn
-
-This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096>

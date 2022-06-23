@@ -5,6 +5,7 @@ date: "2021-05-06"
 categories: 
     - career
     - interviews
+linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe
 ---
 
 When you are doing a code interview, it's possible (and even likely) that you're going to be nervous. Remember to document your thinking process.
@@ -20,7 +21,3 @@ If you're writing SQL, name your CTEs and columns you create with meaningful nam
 Format your code well if you have time. Your mind may be racing to finish the problem, this will help.
 
 Of course we want candidates that can solve the interview problem, but we also want candidates that write code that is easy to understand and maintain.
-
-#### LinkedIn
-This was also posted to LinkedIn: 
-<https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe>

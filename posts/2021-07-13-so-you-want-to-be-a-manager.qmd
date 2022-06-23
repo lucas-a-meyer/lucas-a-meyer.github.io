@@ -4,6 +4,7 @@ date: "2021-07-13"
 author: "Lucas A. Meyer"
 categories: 
     - management
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6820742108136120320
 ---
 This is what your calendar can look like. 
 
@@ -20,7 +21,3 @@ These would be *meetings with people*, not blocked time to do work. This may not
 - meetings with peers to ensure we're learning from each other
 
 I am an extreme introvert, and try really hard to avoid low-value meetings. But I still do 30+ hours. So if you want to be a manager, you need to like (or at least be able to endure) talking to people for a long time each week.
-
-
-#### LinkedIn
-This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6820742108136120320>

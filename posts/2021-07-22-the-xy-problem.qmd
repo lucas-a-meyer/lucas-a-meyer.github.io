@@ -4,6 +4,7 @@ date: "2021-07-22"
 author: "Lucas A. Meyer"
 categories: 
     - career
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?"
@@ -23,8 +24,3 @@ People spend time helping Jay. Jay spends time getting permissions, installing a
 State the problem you're trying to solve, rather than asking for help with a specific task. You may learn a lot more.
 
 Interestingly, Amazon provides training on asking good questions.
-
-#### LinkedIn
-
-This was posted to LinkedIn at
-<https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760>

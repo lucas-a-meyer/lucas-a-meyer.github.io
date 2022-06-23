@@ -5,6 +5,7 @@ date: "2021-09-11"
 categories: 
   - "data science"
 image: /images/bin-laden-compound.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
 ---
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 
@@ -20,7 +21,3 @@ A lot of #datascience is like that: technically correct, but not super helpful f
 Many practitioners (including myself) think that before you start thinking hard, and WAY before you start thinking about #machinelearning, you should start with a naïve model. Sometimes that's all you need. Sometimes that's all you have data for. Your model should at least beat that.
 
 (The Pacer was actually Bin Laden)
-
-#### LinkedIn
-This was posted to LinkedIn at:
-<https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784>

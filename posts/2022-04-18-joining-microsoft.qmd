@@ -5,6 +5,7 @@ date: "2022-04-18"
 categories:
     - career 
 image: /images/just-hired-microsoft.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424
 ---
 
 I’m extremely happy to share that I’m starting a new position as Principal Data Scientist at the AI for Good Research Lab at Microsoft!
@@ -25,6 +26,3 @@ I learn a lot from #writing, and from interacting with you. Thanks for making wr
 
 It's an exciting and energizing new beginning, and there's a lot of people and organizations to empower to achieve more.
 
-#### LinkedIn
-
-This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424>

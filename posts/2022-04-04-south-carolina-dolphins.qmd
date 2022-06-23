@@ -3,6 +3,7 @@ author: "Lucas A. Meyer"
 title: South Carolina dolphins!
 date: "2022-04-04"
 image: /images/lucas-in-charleston.jpg
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376
 ---
 
 After a long winter in Seattle, I finally got some vacations, which I used to visit the Isle of Palms, SC. 
@@ -22,7 +23,3 @@ Now everybody was looking at the sea, checking out the dolphins in the wild.
 After that, the day became “the day we saw the dolphins”. 
 
 I hope that your spring break is as enjoyable as mine.
-
-#### LinkedIn
-
-This was posted to LinkedIn at <https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376>
