@@ -1,0 +1,9 @@
+---
+title: 'Updating my blog automatically 2022-06-22'
+author: "Lucas A. Meyer"
+date: '2022-06-23'
+draft: true
+image: /images/nobody-reads-blog.jpg
+---
+
+This post is just an automatic post to test that I can automatically update my blog without needing to be logged in.
