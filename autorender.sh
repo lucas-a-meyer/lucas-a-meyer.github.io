@@ -1,4 +1,5 @@
 cd /home/lucasmeyer/personal/blog/
+git stash --include-untracked
 git pull
 /home/lucasmeyer/personal/blog/.venv/bin/activate
 /usr/bin/python3 -m pip install -r /home/lucasmeyer/personal/blog/requirements.txt
