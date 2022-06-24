@@ -286,12 +286,12 @@ def process_file(filepath):
 
     # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
     # and the article target date is at least today  and the article is not in draft
-    if not draft and li_post_date and not last_li_post and li_post_date >= datetime.date.today():
+    if not draft and li_post_date and not last_li_post and li_post_date <= datetime.date.today():
         img = front_matter_dict.get("image")
         post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict, yml)
         print(f"=====> Posted {filepath} to LinkedIn")
 
-    if not draft and twitter_post_date and not last_twitter_post and twitter_post_date >= datetime.date.today():
+    if not draft and twitter_post_date and not last_twitter_post and twitter_post_date <= datetime.date.today():
         twitter_text = front_matter_dict.get("twitter-description")
         twitter_url = filepath.replace(".qmd", ".html")
         twitter_post = post_twitter_link(twitter_text, twitter_url)
