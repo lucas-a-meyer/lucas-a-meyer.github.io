@@ -1,11 +1,11 @@
 ---
 title: "My review of the Farmer's Dog food service"
 author: "Lucas A. Meyer"
-date: '2022-06-28'
+date: '2022-06-30'
 draft: true
 image: /images/farmers-dog-logo.png
-linkedin-target-date: '2022-06-29'
-twitter-target-date: '2022-06-29'
+linkedin-target-date: '2022-07-01'
+twitter-target-date: '2022-07-01'
 twitter-description: "My review of the Farmer's Dog food service"
 linkedin-linkback: false
 ---

@@ -8,6 +8,7 @@ categories:
     - hiring
     - interviews
 linkedin-link: "https://www.linkedin.com/pulse/im-hiring-manager-why-i-didnt-answer-your-linkedin-message-meyer"
+twitter-description: "In 2021, I had several positions open, and I posted this guide about why I was not answering all messages I received on LinkedIn"
 ---
 ## "It's not you, it's me"
 Most managers become managers because they care about helping people succeed. That's my philosophy, and I would answer all the messages I receive if I had enough time.
@@ -26,6 +27,7 @@ I also have a very active but understanding dog that patiently lets my daughter 
 Finally, I have a lot of other weird and not-so-weird interests: constitutional law (especially relating to the first amendment), psychology of groups, cognitive biases, immigration law, British murder mysteries, video games, etc.
 
 ## How to get noticed (but not in the way you want)
+
 Whenever I post a position, I usually suggest to potential candidates: "if the position interests you and you have the basic qualifications, apply directly through the link."
 
 Invariably, many candidates reply to the post with "Interested", or send me a message asking to review their CV, or send me a message asking me to book time with them to discuss their fit to the position. This doesn't help these candidates, for reasons I explained before and that I'll summarize below.
@@ -38,13 +40,14 @@ By the time the manager finally answers, even if the answer is "yes, your basic 
 
 In addition, after all that effort, the hiring manager could observe that Candidate B didn't read instructions attentively, needs help with very simple tasks, and does not show "bias for action".
 
-**I have a keyboard shortcut that essentially types: "If you fit the basic qualifications and the position interests you, just apply directly through the link I provided".**
+_**I have a keyboard shortcut that essentially types: "If you fit the basic qualifications and the position interests you, just apply directly through the link I provided".**_
 
-That approach works for me because of my particular situation: many viable candidates, attractive company, lots of positions. In other situations (e.g., a smaller company) I'd probably have another approach (e.g., send resumes).
+That approach works for me because of my particular situation: many good candidates, attractive company, lots of positions. In other situations (e.g., a smaller company) I'd probably have another approach: for example, I might offer to review resumes.
 
-The key point is to interact with the hiring manager in the way they are suggesting. They are trying to help you succeed. If they're suggesting you should apply, then apply. If they're asking for you to send them a resume or reply with "Interested", then that's the best approach.
+**The key point is to interact with the hiring manager in the way they are suggesting**. They are trying to help you succeed. If they're suggesting you should apply, then apply. If they're asking for you to send them a resume or reply with "Interested", then that's the best approach.
 
 ## Messages that I like to receive (but might still not answer)
+
 I like when candidates connect and introduce themselves. I like when candidates tell me that they applied. I like when they tell me what interested them in the position, and maybe some other things that the CV can't capture. No need to send the CV again - you already sent it in the application and I don't need two copies in addition to your LinkedIn profile.
 
 I also like receiving message telling me why you **did not apply**. Maybe there's something in the position that is unintentionally blocking otherwise good candidates. Maybe I will post a position soon that actually fits your profile, and I will let you know in these cases.
@@ -56,16 +59,18 @@ Messages about why you did not apply are helpful to the extent that they are ill
 Note that these are my personal preferences, and the preferences of other hiring managers can vary.
 
 ## Messages that I like to receive (and may answer)
+
 A lot of the private messages that I receive and like could have been public.
 
 For example, sometimes I get messages about papers or research. While I understand that the purpose of sending those to me privately is possibly to make a you stand out as a candidate, you should post **publicly** about it. That will help people other than me see it and help you even more. Feel free to tag me if you really want to make sure that I see it.
 
-If I wrote something and you have opinions or questions about it, it may be helpful to start discussion. Maybe it will be a comment, and maybe it will be a direct private message. Sometimes the discussion works better in public, but there are times when a private discussion works better. I wish I knew how to always tell the best approach in all cases.
+If I wrote something and you have opinions or questions about it, it may be helpful to start a discussion. Maybe it will be a comment, and maybe it will be a direct private message. Sometimes the discussion works better in public, but there are times when a private discussion works better. I wish I knew how to always tell the best approach in all cases.
 
 I also like when people connect and say "hi". I may not be able to always answer, but I always read it, and often remember when I see your posts later, to the extent allowed by my memory and age.
 
 ## The golden rule
-Treat people as you would like to be treated or better. Job hunting is stressful and time consuming. Hiring is stressful and time consuming.
+
+Treat people as you would like to be treated (or better). Job hunting is stressful and time consuming. Hiring is stressful and time consuming.
 
 Always try to remember that we (candidates, recruiters, hiring managers, service providers, influencers, etc.) are all people, and we're all busy and fallible. Assume good intentions, but most of all, be kind.
 
