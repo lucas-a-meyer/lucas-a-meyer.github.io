@@ -84,11 +84,11 @@ def linkedin_text(txt, filepath):
         post = post[:2800]
         post += f"""...
         
-This post ended up being too long for LinkedIn but the remainder is at http://www.meyerperin.com/{linkpath}
+This post ended up being too long for LinkedIn but the remainder is at https://www.meyerperin.com/{linkpath}
 
         """
     else:
-        post += f"""\n\nThis post originally appeared at http://www.meyerperin.com/{linkpath}"""
+        post += f"""\n\nThis post originally appeared at https://www.meyerperin.com/{linkpath}"""
 
     post = post.replace("\n", "\\n")
     post = post.replace('"', '\\"')
@@ -294,7 +294,7 @@ def process_file(filepath):
 
     if not draft and twitter_post_date and not last_twitter_post and twitter_post_date <= datetime.date.today():
         twitter_text = front_matter_dict.get("twitter-description")
-        twitter_url = filepath.replace(".qmd", ".html")
+        twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
         twitter_post = post_twitter_link(twitter_text, twitter_url)
         front_matter_dict["posted-to-twitter"] = datetime.date.today().strftime("%Y-%m-%d")
         update_front_matter(filepath, front_matter_dict)
