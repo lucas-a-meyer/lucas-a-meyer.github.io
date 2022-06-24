@@ -94,39 +94,23 @@ This post ended up being too long for LinkedIn but the remainder is at http://ww
     post = post.replace('"', '\\"')
     return post
 
-
-def ensure_future_posts_is_draft(filepath, yml, front_matter):
-    
-    front_matter["draft"] = True
-    # If the file has a linkedin field, adjust the text 
-    # and check if I should post
+def get_md_content(filepath):
     with open(filepath, "r") as f:
-        md_content = f.read()
-    
-    new_yml = yaml.dump(front_matter)
-    new_yml = f"---\n{new_yml}---"
-    md_content = md_content.replace(yml, new_yml)
+        file_contents = f.read()
+
+    pos1 = file_contents.find("---\n")
+    pos2 = file_contents.find("---\n", pos1+1)
+    return file_contents[pos2+4:]
+
+def update_front_matter(filepath, new_front_matter_dict):
+    new_yml = yaml.dump(new_front_matter_dict)
+    new_yml = f"---\n{new_yml}---\n"
+    new_file_content = new_yml + get_md_content()
     with open(filepath, "w") as f:
-        f.write(md_content)
+        f.write(new_file_content)
 
-def remove_draft(filepath, yml, front_matter):
-    
-    front_matter["draft"] = False
-    # If the file has a linkedin field, adjust the text 
-    # and check if I should post
-    with open(filepath, "r") as f:
-        md_content = f.read()
-    
-    new_yml = yaml.dump(front_matter)
-    new_yml = f"---\n{new_yml}---"
-    md_content = md_content.replace(yml, new_yml)
-    with open(filepath, "w") as f:
-        f.write(md_content)
-
-
-
-def get_date(front_matter, field):
-    fm_date = front_matter.get(field)
+def get_date(front_matter_dict, field):
+    fm_date = front_matter_dict.get(field)
     if not fm_date:
         return None
 
@@ -160,37 +144,23 @@ def main():
 
 def get_upload_url(token, person_id):
 
-   headers = {
-      "Authorization": f"Bearer {token}",
-      "Content-Type": "application/json"
-   }
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
 
-   upload_json = """
-   {
-      "registerUploadRequest": {
-         "recipes": [
-               "urn:li:digitalmediaRecipe:feedshare-image"
-         ],
-         "owner": "PERSON_URN",
-         "serviceRelationships": [
-               {
-                  "relationshipType": "OWNER",
-                  "identifier": "urn:li:userGeneratedContent"
-               }
-         ]
-      }
-   }
-   """
+    with open("linkedin_upload_asset.json", "r") as f:
+        upload_json = f.read()
 
-   upload_json = upload_json.replace("PERSON_URN", person_id)
+    upload_json = upload_json.replace("PERSON_URN", person_id)
 
-   url = "https://api.linkedin.com/v2/assets?action=registerUpload"
-   response = requests.post(url, upload_json, headers=headers)
-   response_json = json.loads(response.text)
-   upload_url = response_json.get("value").get("uploadMechanism").get("com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest").get("uploadUrl")
-   asset = response_json.get("value").get("asset")
+    url = "https://api.linkedin.com/v2/assets?action=registerUpload"
+    response = requests.post(url, upload_json, headers=headers)
+    response_json = json.loads(response.text)
+    upload_url = response_json.get("value").get("uploadMechanism").get("com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest").get("uploadUrl")
+    asset = response_json.get("value").get("asset")
 
-   return asset, upload_url
+    return asset, upload_url
 
 def upload_image(filepath, upload_url, token):
    headers = {
@@ -201,51 +171,24 @@ def upload_image(filepath, upload_url, token):
    return resp.status_code
 
 def post_asset(token, person_id, asset, text):
-   headers = {
-      "Authorization": f"Bearer {token}",
-      "Content-Type": "application/json"
-   }
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
 
-   post_json = """
-   {
-      "author": "PERSON_URN",
-      "lifecycleState": "PUBLISHED",
-      "specificContent": {
-         "com.linkedin.ugc.ShareContent": {
-               "shareCommentary": {
-                  "text": "POST_TEXT"
-               },
-               "shareMediaCategory": "IMAGE",
-               "media": [
-                  {
-                     "status": "READY",
-                     "description": {
-                           "text": "Center stage!"
-                     },
-                     "media": "ASSET_URN",
-                     "title": {
-                           "text": "Where does the title go?"
-                     }
-                  }
-               ]
-         }
-      },
-      "visibility": {
-         "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-      }
-   }
-   """
+    with open("linkedin_post_image.json", "r") as f:
+        post_json = f.read()
 
-   post_json = post_json.replace("PERSON_URN", person_id)
-   post_json = post_json.replace("ASSET_URN", asset)
-   post_json = post_json.replace("POST_TEXT", text)
+    post_json = post_json.replace("PERSON_URN", person_id)
+    post_json = post_json.replace("ASSET_URN", asset)
+    post_json = post_json.replace("POST_TEXT", text)
 
-   url = "https://api.linkedin.com/v2/ugcPosts"
-   resp = requests.post(url, post_json, headers=headers)
+    url = "https://api.linkedin.com/v2/ugcPosts"
+    resp = requests.post(url, post_json, headers=headers)
 
-   return resp.status_code
+    return resp.status_code
 
-def post_to_linkedin(filepath, text, imagepath, front_matter, yml, link=None):
+def post_to_linkedin(filepath, text, imagepath, front_matter_dict, yml, link=None):
 
     person_id = os.getenv("LINKEDIN_PERSON_ID")
     token = os.getenv("LINKEDIN_TOKEN")
@@ -264,63 +207,41 @@ def post_to_linkedin(filepath, text, imagepath, front_matter, yml, link=None):
 
     # if posting was successful, update the front-matter so it won't post again
     if code == 201:
-        front_matter["posted-to-linkedin"] = datetime.date.today().strftime("%Y-%m-%d")
-        with open(filepath, "r") as f:
-            md_content = f.read()
-        
-        new_yml = yaml.dump(front_matter)
-        new_yml = f"---\n{new_yml}---"
-        md_content = md_content.replace(yml, new_yml)
-        with open(filepath, "w") as f:
-            f.write(md_content) 
-            print(f"\n==================> Posted {filepath} to LinkedIn \n\n")
+        front_matter_dict["posted-to-linkedin"] = datetime.date.today().strftime("%Y-%m-%d")
+        update_front_matter(filepath, front_matter_dict)
+        print(f"\n=====> Posted {filepath} to LinkedIn \n\n")
     else:
-            print(f"\n====={code}==========> Failed to post {filepath} to LinkedIn \n\n")
+        print(f"\n={code}=> Failed to post {filepath} to LinkedIn \n\n")
         
 
 def post_linkedin_text(txt, person_id, token):
-   headers = {
-      "Authorization": f"Bearer {token}",
-      "Content-Type": "application/json"
-   }
-
-   post_json = """
-   {
-        "author": "PERSON_URN",
-        "lifecycleState": "PUBLISHED",
-        "specificContent": {
-            "com.linkedin.ugc.ShareContent": {
-                "shareCommentary": {
-                    "text": "POST_TEXT"
-                },
-                "shareMediaCategory": "NONE"
-            }
-        },
-        "visibility": {
-            "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
-        }
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
     }
-   """
+   
+    with open("linkedin_post_text.json", "r") as f:
+        post_json = f.read()
 
-   post_json = post_json.replace("PERSON_URN", person_id)
-   post_json = post_json.replace("POST_TEXT", txt)
+    post_json = post_json.replace("PERSON_URN", person_id)
+    post_json = post_json.replace("POST_TEXT", txt)
 
-   print(post_json)
+    print(post_json)
 
-   url = "https://api.linkedin.com/v2/ugcPosts"
-   resp = requests.post(url, post_json, headers=headers)
+    url = "https://api.linkedin.com/v2/ugcPosts"
+    resp = requests.post(url, post_json, headers=headers)
 
-   return resp.status_code
+    return resp.status_code
 
 def post_linkedin_image(txt, img_path, person_id, token):
+        
+    asset, upload_url = get_upload_url(token, person_id)
 
-   asset, upload_url = get_upload_url(token, person_id)
+    resp_code = upload_image(img_path, upload_url, token)
+    if resp_code == 201:
+        resp_code = post_asset(token, person_id, asset, txt)
 
-   resp_code = upload_image(img_path, upload_url, token)
-   if resp_code == 201:
-      resp_code = post_asset(token, person_id, asset, txt)
-
-   return(resp_code)
+    return(resp_code)
 
 def post_twitter_link(txt, link):
 
@@ -328,7 +249,6 @@ def post_twitter_link(txt, link):
     api_key_secret = os.getenv("TWITTER_API_SECRET")
     access_token = os.getenv("TWITTER_ACESSS_TOKEN")
     access_token_secret = os.getenv("TWITTER_ACESS_TOKEN_SECRET")
-
 
     client = tweepy.Client(consumer_key=api_key, consumer_secret=api_key_secret, access_token=access_token, access_token_secret=access_token_secret)
 
@@ -343,32 +263,40 @@ def process_file(filepath):
     yml, txt = get_file_plaintext(filepath)
 
     # For all files, check if we need to adjust the draft field
-    front_matter = yaml.safe_load(yml.replace("---", ""))
-    post_date = get_date(front_matter, "date")
-    draft = front_matter.get("draft")
-    li_post_date = get_date(front_matter, "linkedin-target-date")
-    last_li_post = get_date(front_matter, "posted-to-linkedin")
-    twitter_post_date = get_date(front_matter, "twitter-target-date")
+    front_matter_dict = yaml.safe_load(yml.replace("---", ""))
+    
+    post_date = get_date(front_matter_dict, "date")
+    draft = front_matter_dict.get("draft")
+    
+    li_post_date = get_date(front_matter_dict, "linkedin-target-date")
+    last_li_post = get_date(front_matter_dict, "posted-to-linkedin")
+    
+    twitter_post_date = get_date(front_matter_dict, "twitter-target-date")
+    last_twitter_post = get_date(front_matter_dict, "posted-to-twitter")
 
     if draft and post_date <= datetime.date.today():
-        remove_draft(filepath, yml, front_matter)
+        front_matter_dict["draft"] = False
+        update_front_matter(filepath, front_matter_dict)
         print(f"=====> Removed {filepath} from draft")
 
     if not draft and post_date > datetime.date.today():
-        ensure_future_posts_is_draft(filepath, yml, front_matter)   
+        front_matter_dict["draft"] = True
+        update_front_matter(filepath, front_matter_dict)
         print(f"=====> Added {filepath} to draft")
 
     # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
     # and the article target date is at least today  and the article is not in draft
-    if not draft and li_post_date and not last_li_post and li_post_date <= datetime.date.today():
-        img = front_matter.get("image")
-        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter, yml)
+    if not draft and li_post_date and not last_li_post and li_post_date >= datetime.date.today():
+        img = front_matter_dict.get("image")
+        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict, yml)
         print(f"=====> Posted {filepath} to LinkedIn")
 
-    if not draft and twitter_post_date > datetime.date.today():
-        twitter_text = front_matter.get("twitter-description")
+    if not draft and twitter_post_date and not last_twitter_post and twitter_post_date >= datetime.date.today():
+        twitter_text = front_matter_dict.get("twitter-description")
         twitter_url = filepath.replace(".qmd", ".html")
         twitter_post = post_twitter_link(twitter_text, twitter_url)
+        front_matter_dict["posted-to-twitter"] = datetime.date.today().strftime("%Y-%m-%d")
+        update_front_matter(filepath, front_matter_dict)
         print(f"=====> Twitted: {twitter_post}")
 
 

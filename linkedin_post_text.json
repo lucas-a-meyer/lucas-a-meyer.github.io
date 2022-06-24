@@ -1,0 +1,15 @@
+{
+    "author": "PERSON_URN",
+    "lifecycleState": "PUBLISHED",
+    "specificContent": {
+        "com.linkedin.ugc.ShareContent": {
+            "shareCommentary": {
+                "text": "POST_TEXT"
+            },
+            "shareMediaCategory": "NONE"
+        }
+    },
+    "visibility": {
+        "com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC"
+    }
+}
