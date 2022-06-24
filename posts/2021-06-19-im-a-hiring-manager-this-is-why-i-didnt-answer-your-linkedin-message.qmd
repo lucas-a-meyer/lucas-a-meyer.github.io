@@ -7,6 +7,7 @@ categories:
 date: '2021-06-19'
 image: /images/linkedin-notifications.jpg
 linkedin-link: https://www.linkedin.com/pulse/im-hiring-manager-why-i-didnt-answer-your-linkedin-message-meyer
+posted-to-twitter: '2022-06-24'
 title: 'I''m a hiring manager: this is why I didn''t answer your LinkedIn message'
 twitter-description: 'In 2021, I had several positions open
 
