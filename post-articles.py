@@ -15,6 +15,9 @@ import datetime
 from distutils.command.upload import upload
 import requests
 import json
+from dotenv import load_dotenv
+import tweepy
+from twilio.rest import Client
 
 def markdown_to_text(markdown_string):
     """ Converts a markdown string to plaintext """
@@ -143,10 +146,16 @@ def process_directory(di):
                 process_file(filepath)
 
 def main():
+    # Takes variables from .env
+    load_dotenv()
+
+    # Configure directories with posts
     post_directories = ["posts"]
 
+    # For each directory, process it
     for di in post_directories:
         process_directory(di)
+    
     return 0
 
 def get_upload_url(token, person_id):
@@ -238,11 +247,8 @@ def post_asset(token, person_id, asset, text):
 
 def post_to_linkedin(filepath, text, imagepath, front_matter, yml, link=None):
 
-    cfg_file = open("/home/lucasmeyer/.linkedin/config.json")
-    li_cfg = json.load(cfg_file)
-
-    person_id = li_cfg.get("urn")
-    token = li_cfg.get("access_token")
+    person_id = os.getenv("LINKEDIN_PERSON_ID")
+    token = os.getenv("LINKEDIN_TOKEN")
 
     li_text = linkedin_text(text, filepath)
 
@@ -316,6 +322,22 @@ def post_linkedin_image(txt, img_path, person_id, token):
 
    return(resp_code)
 
+def post_twitter_link(txt, link):
+
+    api_key = os.getenv("TWITTER_API_KEY")
+    api_key_secret = os.getenv("TWITTER_API_SECRET")
+    access_token = os.getenv("TWITTER_ACESSS_TOKEN")
+    access_token_secret = os.getenv("TWITTER_ACESS_TOKEN_SECRET")
+
+
+    client = tweepy.Client(consumer_key=api_key, consumer_secret=api_key_secret, access_token=access_token, access_token_secret=access_token_secret)
+
+    response = client.create_tweet(
+         text=txt + " " + link,
+    )
+
+    return response
+
 def process_file(filepath):
     print(f"Processing {filepath}")
     yml, txt = get_file_plaintext(filepath)
@@ -324,28 +346,30 @@ def process_file(filepath):
     front_matter = yaml.safe_load(yml.replace("---", ""))
     post_date = get_date(front_matter, "date")
     draft = front_matter.get("draft")
+    li_post_date = get_date(front_matter, "linkedin-target-date")
+    last_li_post = get_date(front_matter, "posted-to-linkedin")
+    twitter_post_date = get_date(front_matter, "twitter-target-date")
 
     if draft and post_date <= datetime.date.today():
         remove_draft(filepath, yml, front_matter)
-        print(f"==========> Removed {filepath} from draft")
+        print(f"=====> Removed {filepath} from draft")
 
     if not draft and post_date > datetime.date.today():
         ensure_future_posts_is_draft(filepath, yml, front_matter)   
-        print(f"==========> Added {filepath} to draft")
+        print(f"=====> Added {filepath} to draft")
 
-    li_post_date = get_date(front_matter, "linkedin-target-date")
-    last_li_post = get_date(front_matter, "posted-to-linkedin")
-    
-    # If the article has a "linkedin-target-date"
-    # and the article has not been posted to linkedin yet
-    # and the article target date is at least today
-    # and the article is not in draft
+    # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
+    # and the article target date is at least today  and the article is not in draft
     if not draft and li_post_date and not last_li_post and li_post_date <= datetime.date.today():
         img = front_matter.get("image")
         post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter, yml)
+        print(f"=====> Posted {filepath} to LinkedIn")
 
-    # If the file has a linkedin field, adjust the text 
-    # and check if I should post
+    if not draft and twitter_post_date > datetime.date.today():
+        twitter_text = front_matter.get("twitter-description")
+        twitter_url = filepath.replace(".qmd", ".html")
+        twitter_post = post_twitter_link(twitter_text, twitter_url)
+        print(f"=====> Twitted: {twitter_post}")
 
 
 if __name__ == "__main__":
