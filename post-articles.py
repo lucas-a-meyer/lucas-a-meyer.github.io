@@ -105,7 +105,7 @@ def get_md_content(filepath):
 def update_front_matter(filepath, new_front_matter_dict):
     new_yml = yaml.dump(new_front_matter_dict)
     new_yml = f"---\n{new_yml}---\n"
-    new_file_content = new_yml + get_md_content()
+    new_file_content = new_yml + get_md_content(filepath)
     with open(filepath, "w") as f:
         f.write(new_file_content)
 
