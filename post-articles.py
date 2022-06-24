@@ -249,10 +249,9 @@ def post_twitter_link(txt, link):
     api_key_secret = os.getenv("TWITTER_API_SECRET")
     access_token = os.getenv("TWITTER_ACESSS_TOKEN")
     access_token_secret = os.getenv("TWITTER_ACESS_TOKEN_SECRET")
+    bearer_token  = os.getenv("TWITTER_BEARER_TOKEN")
 
-    print(api_key)
-    
-    client = tweepy.Client(consumer_key=api_key, consumer_secret=api_key_secret, access_token=access_token, access_token_secret=access_token_secret)
+    client = tweepy.Client(bearer_token=bearer_token)
 
     response = client.create_tweet(
          text=txt + " " + link,
