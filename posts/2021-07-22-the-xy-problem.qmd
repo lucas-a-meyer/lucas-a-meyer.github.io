@@ -7,6 +7,11 @@ linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:682400359619608
 linkedin-posted: '2021-07-22'
 title: The XY Problem
 twitter-posted: '2021-07-22'
+twitter-description: "I've frequently been asked what's the most important thing new hires should know"
+twitter-target-date: "2022-07-18"
+linkedin-target-date: "2022-07-18"
+twitter-repost: 180
+linkedin-repost: 180
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?"
