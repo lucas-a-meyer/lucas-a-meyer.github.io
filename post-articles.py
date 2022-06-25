@@ -19,6 +19,20 @@ from dotenv import load_dotenv
 import tweepy
 from twilio.rest import Client
 
+
+def update_lucas(body):
+
+    account_sid = os.getenv("TWILIO_ACCOUNT_ID")
+    auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+
+    client = Client(account_sid, auth_token)
+
+    client.api.account.messages.create(
+        to="+14258776991",
+        from_="+19783965634",
+        body=body
+    )
+
 def markdown_to_text(markdown_string):
     """ Converts a markdown string to plaintext """
 
@@ -201,9 +215,9 @@ def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=None):
 
     # if posting was successful, update the front-matter so it won't post again
     if code == 201:
-        print(f"\n=====> Posted {filepath} to LinkedIn \n\n")
+        update_lucas(f"Posted {filepath} to LinkedIn")
     else:
-        print(f"\n={code}=> Failed to post {filepath} to LinkedIn \n\n")
+        update_lucas(f"Failed to post {filepath} to LinkedIn with error {code}\n\n")
         
 
 def post_linkedin_text(txt, person_id, token):
@@ -217,8 +231,6 @@ def post_linkedin_text(txt, person_id, token):
 
     post_json = post_json.replace("PERSON_URN", person_id)
     post_json = post_json.replace("POST_TEXT", txt)
-
-    print(post_json)
 
     url = "https://api.linkedin.com/v2/ugcPosts"
     resp = requests.post(url, post_json, headers=headers)
@@ -270,12 +282,12 @@ def process_file(filepath):
     if draft and post_date <= datetime.date.today():
         front_matter_dict["draft"] = False
         draft = False
-        print(f"=====> Removed {filepath} from draft")
+        update_lucas(f"Removed {filepath} from draft")
 
     if not draft and post_date > datetime.date.today():
         front_matter_dict["draft"] = True
         draft = True
-        print(f"=====> Added {filepath} to draft")
+        update_lucas(f"Added {filepath} to draft")
 
     linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
     twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
@@ -296,7 +308,6 @@ def process_file(filepath):
     if twitter_target_date and twitter_posted and twitter_target_date > datetime.date.today():
         front_matter_dict.pop("twitter-posted")
 
-
     # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
     # and the article target date is at least today  and the article is not in draft
     if not draft and linkedin_target_date and linkedin_target_date <= datetime.date.today() and not linkedin_posted:
@@ -305,7 +316,7 @@ def process_file(filepath):
         linkedin_posted = datetime.date.today().strftime("%Y-%m-%d")
         front_matter_dict["linkedin-posted"] = linkedin_posted
         
-        print(f"=====> Posted {filepath} to LinkedIn {linkedin_post_result}")
+        update_lucas(f"Posted {filepath} to LinkedIn {linkedin_post_result}")
 
     if not draft and twitter_target_date and twitter_target_date <= datetime.date.today() and not twitter_posted:
         twitter_text = front_matter_dict.get("twitter-description")
@@ -313,7 +324,7 @@ def process_file(filepath):
         twitter_post_result = post_twitter_link(twitter_text, twitter_url)
         twitter_posted = datetime.date.today().strftime("%Y-%m-%d")
         front_matter_dict["twitter-posted"] = twitter_posted
-        print(f"=====> Twitted: https://twitter.com/user/status/{twitter_post_result.data['id']}")
+        update_lucas(f"Twitted: https://twitter.com/user/status/{twitter_post_result.data['id']}")
 
     update_front_matter(filepath, front_matter_dict)
 
