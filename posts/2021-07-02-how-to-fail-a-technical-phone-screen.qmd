@@ -1,12 +1,14 @@
 ---
-title: "How to fail a technical phone screen"
-author: "Lucas A. Meyer"
-date: "2021-07-02"
-categories: 
-    - career
-    - interviews
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: '2021-07-02'
 image: /images/fail-tech-interview.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:6816590001338486785"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6816590001338486785
+linkedin-posted: '2021-07-02'
+title: How to fail a technical phone screen
+twitter-posted: '2021-07-02'
 ---
 
 I wrote earlier about the hiring process for technical positions at big technology companies. The three main steps are: 1) resume review, 2) technical phone screen, 3) on-site interview (part technical, part behavioral). This article is about the technical phone screen and how to (not) fail it.

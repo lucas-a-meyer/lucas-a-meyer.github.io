@@ -1,12 +1,14 @@
 ---
-title: "Optimization algorithms for your career"
-author: "Lucas A. Meyer"
-date: "2021-10-05"
-categories: 
-    - career
-    - data science
+author: Lucas A. Meyer
+categories:
+- career
+- data science
+date: '2021-10-05'
 image: /images/optimization-career.png
-linkedin-link: "https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/"
+linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/
+linkedin-posted: '2021-10-05'
+title: Optimization algorithms for your career
+twitter-posted: '2021-10-05'
 ---
 
 Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization. 

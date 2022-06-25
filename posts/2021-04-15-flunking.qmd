@@ -1,11 +1,13 @@
 ---
-title: "Flunking a SQL interview with 20+ years of practice"
-author: "Lucas A. Meyer"
-date: "2021-04-15"
-categories: 
-    - career
-    - interviews
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448"
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: '2021-04-15'
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
+linkedin-posted: '2021-04-15'
+title: Flunking a SQL interview with 20+ years of practice
+twitter-posted: '2021-04-15'
 ---
 
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998.

@@ -1,11 +1,13 @@
 ---
-title: "Remember to document your code"
-author: "Lucas A. Meyer"
-date: "2021-05-06"
-categories: 
-    - career
-    - interviews
-linkedin-link: "https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe"
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: '2021-05-06'
+linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe
+linkedin-posted: '2021-05-06'
+title: Remember to document your code
+twitter-posted: '2021-05-06'
 ---
 
 When you are doing a code interview, it's possible (and even likely) that you're going to be nervous. Remember to document your thinking process.

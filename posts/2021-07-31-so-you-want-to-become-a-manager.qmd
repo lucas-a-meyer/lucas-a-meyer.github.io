@@ -1,11 +1,13 @@
 ---
-title: "So you want to become a manager"
-author: "Lucas A. Meyer"
-date: "2021-07-31"
-categories: 
+author: Lucas A. Meyer
+categories:
 - management
+date: '2021-07-31'
 image: /images/become-manager.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
+linkedin-posted: '2021-07-31'
+title: So you want to become a manager
+twitter-posted: '2021-07-31'
 ---
 
 Nobody in their right mind would ask me about how to become a singer or dancer.

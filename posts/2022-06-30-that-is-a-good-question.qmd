@@ -1,12 +1,12 @@
 ---
-title: "That's a good question"
-author: "Lucas A. Meyer"
-date: "2022-07-04"
+author: Lucas A. Meyer
+date: '2022-07-04'
 draft: true
 image: /images/good-question.jpg
 linkedin-target-date: '2022-07-05'
+title: That's a good question
+twitter-description: Is that really a good question?
 twitter-target-date: '2022-07-05'
-twitter-description: "Is that really a good question?"
 ---
 
 I sometimes cringe when people say "that's a good question" and it was not a good question. But even bad questions are good, because of pluralistic ignorance.

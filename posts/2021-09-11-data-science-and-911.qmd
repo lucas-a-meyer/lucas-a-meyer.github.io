@@ -1,11 +1,15 @@
 ---
-author: "Lucas A. Meyer"
-title: "Data science and 9/11"
-date: "2021-09-11"
-categories: 
-  - "data science"
+author: Lucas A. Meyer
+categories:
+- data science
+date: '2021-09-11'
 image: /images/bin-laden-compound.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
+linkedin-repost: 365
+linkedin-target-date: 2022-09-11
+title: Data science and 9/11
+twitter-repost: 365
+twitter-target-date: 2022-09-11
 ---
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 

@@ -1,10 +1,12 @@
 ---
-title: "Writing good emails"
-author: "Lucas A. Meyer"
-date: "2021-09-18"
+author: Lucas A. Meyer
 categories: career
+date: '2021-09-18'
 image: /images/grad-student-email.jpg
-linkedin-link: "https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746"
+linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746
+linkedin-posted: '2021-09-18'
+title: Writing good emails
+twitter-posted: '2021-09-18'
 ---
 
 Earlier in my career, I took quite a while writing emails. As most people earlier in their careers, my main concern was to "not be wrong" rather than actually "moving the discussion forward efficiently" (or ending it). That was especially true when senior people were in the thread.

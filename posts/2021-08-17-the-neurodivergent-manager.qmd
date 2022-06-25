@@ -1,11 +1,13 @@
 ---
-title: "The neurodivergent manager"
-date: "2021-08-17"
-author: "Lucas A. Meyer"
-categories: 
-    - management
+author: Lucas A. Meyer
+categories:
+- management
+date: '2021-08-17'
 image: /images/goonies.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6833403014171250688"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6833403014171250688
+linkedin-posted: '2021-08-17'
+title: The neurodivergent manager
+twitter-posted: '2021-08-17'
 ---
 You can be a people manager if you are #neurodivergent and an #introvert. I am.
 

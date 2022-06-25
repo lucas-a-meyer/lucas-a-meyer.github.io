@@ -1,9 +1,11 @@
 ---
-title: "Why you should blog if you are a data scientist"
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
 date: '2019-02-13'
-image: /images/useful-output.jpg
 draft: false
+image: /images/useful-output.jpg
+linkedin-posted: '2019-02-13'
+title: Why you should blog if you are a data scientist
+twitter-posted: '2019-02-13'
 ---
 
 A while back, David Robinson offered the following advice on Twitter:

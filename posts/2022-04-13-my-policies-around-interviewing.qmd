@@ -1,13 +1,15 @@
 ---
-author: "Lucas A. Meyer"
-title: "My policies on interviewing"
-date: "2022-04-13"
-categories: 
-    - career 
-    - hiring
-    - interviewing
+author: Lucas A. Meyer
+categories:
+- career
+- hiring
+- interviewing
+date: '2022-04-13'
 image: /images/offer-only.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816
+linkedin-posted: '2022-04-13'
+title: My policies on interviewing
+twitter-posted: '2022-04-13'
 ---
 
 I have recently announced that I'm leaving Amazon and starting a new job (yet to be announced) next week. This means that I have been on the interviewee side of the interview process somewhat recently. 

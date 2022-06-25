@@ -1,11 +1,13 @@
 ---
-title: "Getting nervous during an interview"
-author: "Lucas A. Meyer"
-date: "2021-05-06"
-categories: 
-    - career
-    - interviews
-linkedin-link: "https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir"
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: '2021-05-06'
+linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir
+linkedin-posted: '2021-05-06'
+title: Getting nervous during an interview
+twitter-posted: '2021-05-06'
 ---
 
 I do a lot of interviews, and they are high-pressure situations. 

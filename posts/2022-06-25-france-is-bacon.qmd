@@ -1,10 +1,10 @@
 ---
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
 date: '2022-06-26'
 draft: true
 image: /images/france-is-bacon.jpg
 linkedin-target-date: '2022-06-27'
-title: "France is bacon"
+title: France is bacon
 ---
 
 Although it's hard to know whether it's real or not, that's one of my favorite stories ever. Similar to a classic Greek tragedy, real or not, it shows a core truth about reality.

@@ -1,10 +1,10 @@
 ---
-title: "Work life balance is worth something"
-date: "2022-05-10"
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
+date: '2022-05-10'
 image: /images/money-gun.jpg
-posted-to-linkedin: "2022-05-10"
-
+linkedin-posted: '2022-05-10'
+title: Work life balance is worth something
+twitter-posted: '2022-05-10'
 ---
 
 Should you choose #Microsoft or #FAANG?

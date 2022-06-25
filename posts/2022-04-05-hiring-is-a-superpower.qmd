@@ -1,12 +1,14 @@
 ---
-author: "Lucas A. Meyer"
-title: "Hiring is a superpower"
-date: "2022-04-05"
-categories: 
-    - career
-    - hiring
+author: Lucas A. Meyer
+categories:
+- career
+- hiring
+date: '2022-04-05'
 image: /images/gladiator.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506
+linkedin-posted: '2022-04-05'
+title: Hiring is a superpower
+twitter-posted: '2022-04-05'
 ---
 One of my superpowers from my #Amazon review process this year was "Hire and Develop the Best". 
 

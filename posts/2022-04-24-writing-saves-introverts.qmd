@@ -1,13 +1,15 @@
 ---
-layout: post
-title: How writing can help introverts communicate
-date: "2022-04-22"
-categories: 
-    - career
-    - neurodiversity
-    - writing
+categories:
+- career
+- neurodiversity
+- writing
+date: '2022-04-22'
 image: /images/writing.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776"
+layout: post
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776
+linkedin-posted: '2022-04-22'
+title: How writing can help introverts communicate
+twitter-posted: '2022-04-22'
 ---
 
 I don't like talking to people, but I don't mind writing to them.

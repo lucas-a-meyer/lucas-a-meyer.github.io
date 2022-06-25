@@ -1,7 +1,9 @@
 ---
-title: "Yo, Stroop!"
+author: Lucas A. Meyer
 date: '2018-08-23'
-author: "Lucas A. Meyer"
+linkedin-posted: '2018-08-23'
+title: Yo, Stroop!
+twitter-posted: '2018-08-23'
 ---
 
 [YoStroop](https://github.com/RealLucasMeyer/yostroop) is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying "thank you" for help and valuable contributions. 

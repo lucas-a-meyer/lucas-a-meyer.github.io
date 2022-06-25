@@ -1,10 +1,12 @@
 ---
-title: "Cunningham's Law"
-date: "2021-11-04"
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
 categories: concepts
+date: '2021-11-04'
 image: /images/cunninghams-law.jpg
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769"
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769
+linkedin-posted: '2021-11-04'
+title: Cunningham's Law
+twitter-posted: '2021-11-04'
 ---
 
 Cunningham's Law states "the best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer." 

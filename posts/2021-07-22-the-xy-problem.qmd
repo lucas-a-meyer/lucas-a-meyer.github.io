@@ -1,10 +1,12 @@
 ---
-title: "The XY Problem"
-date: "2021-07-22"
-author: "Lucas A. Meyer"
-categories: 
-    - career
-linkedin-link: "https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760"
+author: Lucas A. Meyer
+categories:
+- career
+date: '2021-07-22'
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
+linkedin-posted: '2021-07-22'
+title: The XY Problem
+twitter-posted: '2021-07-22'
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?"

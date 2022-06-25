@@ -1,11 +1,13 @@
 ---
-author: "Lucas A. Meyer"
+author: Lucas A. Meyer
 date: '2022-06-21'
 draft: false
 image: /images/aiforgood.jpg
+linkedin-posted: '2022-06-24'
 linkedin-target-date: '2022-06-21'
-posted-to-linkedin: '2022-06-21'
-title: "Becoming Good at AI for Good"
+title: Becoming Good at AI for Good
+twitter-posted: 2022-06-21
+twitter-target-date: 2022-06-21
 ---
 
 The AI for Good Research Lab published an [article](https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good) last year about how to do AI projects in the #AI4Good domain. 

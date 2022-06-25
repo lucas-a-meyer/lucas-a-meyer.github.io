@@ -1,7 +1,9 @@
 ---
-title: "Hurricane Irma"
+author: Lucas A. Meyer
 date: '2017-09-11'
-author: "Lucas A. Meyer"
+linkedin-posted: 2017-09-11
+title: Hurricane Irma
+twitter-posted: '2017-09-11'
 ---
 
 

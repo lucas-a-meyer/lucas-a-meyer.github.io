@@ -1,7 +1,9 @@
 ---
-title: "Installing Arch Linux"
+author: Lucas A. Meyer
 date: '2019-01-29'
-author: "Lucas A. Meyer"
+linkedin-posted: '2019-01-29'
+title: Installing Arch Linux
+twitter-posted: '2019-01-29'
 ---
 
 Even though I work at Microsoft and really love Windows, I've recently installed Arch Linux as a dual boot. 

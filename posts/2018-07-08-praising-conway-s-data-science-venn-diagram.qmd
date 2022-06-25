@@ -1,7 +1,9 @@
 ---
-title: "Praising Conway's Data Science Venn Diagram"
+author: Lucas A. Meyer
 date: '2018-07-08'
-author: "Lucas A. Meyer"
+linkedin-posted: '2018-07-08'
+title: Praising Conway's Data Science Venn Diagram
+twitter-posted: '2018-07-08'
 ---
 
 Drew Conway's [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) is perhaps the most well-known description of data science.
