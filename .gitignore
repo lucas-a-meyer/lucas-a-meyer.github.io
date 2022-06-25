@@ -4,7 +4,5 @@
 .venv
 vendor
 .quarto
-
 /.quarto/
-render-logs/
 .env
