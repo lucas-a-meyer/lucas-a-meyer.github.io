@@ -9,9 +9,8 @@ linkedin-target-date: 2022-10-04
 title: Chesterton's Fence
 twitter-description: I once posted about the Chesterton's Fence, which is an important
   concept when starting something new
-twitter-posted: '2022-06-24'
 twitter-repost: 180
-twitter-target-date: 2022-06-24
+twitter-target-date: 2022-12-21
 ---
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 
