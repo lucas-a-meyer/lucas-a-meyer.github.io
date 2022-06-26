@@ -346,9 +346,12 @@ def process_directory(di):
 
     with open("calendar.qmd", "wt") as calendar_file:
         calendar_file.writelines(header)
+        calendar_file.write()
         calendar_file.write("# Future posts")
         calendar_file.write(calendar_md)
-        calendar_file.write("<br /><br /><hr /><br />")
+        calendar_file.write()
+        calendar_file.write("-----------------------------------")
+        calendar_file.write()     
         calendar_file.write("Generated on " + str(datetime.datetime.now())
 
 
