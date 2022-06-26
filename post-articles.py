@@ -338,7 +338,7 @@ def process_directory(di):
                 process_file(filepath)
                 calendar = pd.concat([calendar, add_to_calendar(filepath)])
     calendar.sort_values("Target date", inplace=True)
-    calendar_md = calendar.to_markdown(index=False, tablefmt="simple")
+    calendar_md = calendar.to_markdown(index=False, tablefmt="grid")
     
     header=""
     with open("calendar_front_matter.yaml") as f:
@@ -347,7 +347,7 @@ def process_directory(di):
     with open("calendar.qmd", "wt") as calendar_file:
         calendar_file.writelines(header)
         calendar_file.write("\n")
-        calendar_file.write("# Future posts")
+        calendar_file.write("# Future posts\n\n")
         calendar_file.write(calendar_md)
         calendar_file.write("\n")
         calendar_file.write("-----------------------------------")
