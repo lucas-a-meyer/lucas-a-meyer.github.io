@@ -1,16 +1,4 @@
 ---
 title: "Calendar"
-about:
-  template: jolla
-  links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/lucas_a_meyer
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/lucasameyer
-    - icon: github
-      text: Github
-      href: https://github.com/lucas-a-meyer
-
+template: jolla
 ---

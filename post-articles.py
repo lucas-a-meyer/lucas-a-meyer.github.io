@@ -352,7 +352,7 @@ def process_directory(di):
         calendar_file.write("\n")
         calendar_file.write("-----------------------------------")
         calendar_file.write("\n")     
-        calendar_file.write("Generated on " + str(datetime.datetime.now()))
+        calendar_file.write(f"Generated on {str(datetime.datetime.now())}\n")
 
 
 
