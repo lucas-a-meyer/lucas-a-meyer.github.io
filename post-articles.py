@@ -338,7 +338,7 @@ def process_directory(di):
                 process_file(filepath)
                 calendar = pd.concat([calendar, add_to_calendar(filepath)])
     calendar.sort_values("Target date", inplace=True)
-    print(f"Calendar:\n\n{calendar}")
+    calendar.to_html("calendar.html", index=False)
 
 def add_to_calendar(filepath):
     yml, dummy = get_file_plaintext(filepath)
