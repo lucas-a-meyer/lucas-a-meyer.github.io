@@ -338,20 +338,35 @@ def process_directory(di):
                 process_file(filepath)
                 calendar = pd.concat([calendar, add_to_calendar(filepath)])
     calendar.sort_values("Target date", inplace=True)
-    calendar.to_html("calendar.html", index=False)
+    calendar_md = calendar.to_markdown(index=False, tablefmt="simple")
+    with open("calendar.md", "wt") as calendar_file:
+        calendar_file.write("# Future posts")
+        calendar_file.write(calendar_md)
+        calendar_file.write("<br /><br /><hr /><br />")
+        calendar_file.write("Generated on " + datetime.datetime.now())
+
+
 
 def add_to_calendar(filepath):
     yml, dummy = get_file_plaintext(filepath)
     front_matter_dict = yaml.safe_load(yml.replace("---", ""))
 
     df = pd.DataFrame(columns=["Target date", "Platform", "Title"])
+    blog_date = get_date(front_matter_dict, "date")
     tw_date = get_date(front_matter_dict, "twitter-target-date")
     li_date = get_date(front_matter_dict, "linkedin-target-date")
     tw_posted = get_date(front_matter_dict, "twitter-posted")
     li_posted = get_date(front_matter_dict, "linkedin-posted")
     title = front_matter_dict.get("title")
+#    draft = front_matter_dict.get("draft")
 
+    # draft_txt = False
+    # if draft:
+    #     draft_txt = True
 
+    if blog_date > datetime.date.today():
+        list = [blog_date.strftime("%Y-%m-%d"), "Blog", title]
+        df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     if tw_date and not tw_posted:
         list = [tw_date.strftime("%Y-%m-%d"), "Twitter", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
