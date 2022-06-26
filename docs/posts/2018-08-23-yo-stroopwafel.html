@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.613">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2018-08-23">
+
+<title>Lucas A. Meyer - Yo, Stroop!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6KTZ853BN5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - Yo, Stroop!">
+<meta property="og:description" content="YoStroop is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying “thank you” for help and valuable contributions.">
+<meta property="og:site-name" content="Lucas A. Meyer">
+<meta name="twitter:title" content="Lucas A. Meyer - Yo, Stroop!">
+<meta name="twitter:description" content="YoStroop is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying “thank you” for help and valuable contributions.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Lucas A. Meyer</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../using-quarto">Using Quarto</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lucasameyer"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lucas-a-meyer"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/lucas_a_meyer"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Yo, Stroop!</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 23, 2018</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p><a href="https://github.com/RealLucasMeyer/yostroop">YoStroop</a> is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying “thank you” for help and valuable contributions.</p>
+<p>It was developed using Python, Azure Functions v2.0 and Cosmos DB.</p>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>One of the Data Science Slack channels I’m a member of tried several different tools to keep track of the valuable contributions of its members. Some of the tools that we used to to track contributions became quite expensive and we started looking for an alternative. Since most people in the channel can program in R and Python, I thought we might develop our own Slack bot. Developing a Slack Bot is really straightforward. You essentially need a HTTP server that will receive JSONs and call Web APIs. I wanted to create a Slack bot that was:</p>
+<ol type="1">
+<li>Written in a language that most Data Scientists are familiar with (e.g.&nbsp;Python or R)</li>
+<li>Virtually free to run</li>
+<li>Serverless</li>
+<li>Based on very well known technologies (e.g., <code>pyodbc</code> for databases)</li>
+<li>Easy to modify from GitHub with no hassle</li>
+<li>Developed and maintained in any major platform: Windows, macOS or Linux</li>
+</ol>
+<p>I have failed to achieve almost all of the goals above, but maybe will achieve most in the near future.</p>
+</section>
+<section id="azure-functions-v2" class="level2">
+<h2 class="anchored" data-anchor-id="azure-functions-v2">Azure Functions v2</h2>
+<p>Microsoft recently released a <a href="https://github.com/Azure/azure-functions-python-worker">Python worker</a> for the <a href="https://docs.microsoft.com/en-us/azure/azure-functions/functions-versions">Azure Functions runtime v2</a>. As of this writing (2018-08-23), both Azure Functions v2 and the python worker are in “preview mode”. The Azure Functions v1 runtime supports development and hosting only in the portal or on Windows. The v2 runtime runs on .NET Core, and therefore can run on Windows, macOS and Linux. Microsoft provides a <a href="https://github.com/Azure/azure-functions-core-tools">set of tools</a> based on Node.JS and .NET Core that make it easy to develop in any platform. That takes care of objectives #1, #3 and #6. Although knocking off three objectives simply by selecting Azure Functions v2 sounded very promising to begin with, that’s as many objectives as I could achieve.</p>
+<section id="linux-host" class="level3">
+<h3 class="anchored" data-anchor-id="linux-host">Linux host</h3>
+<p>Regardless of the platform you develop on, Python function apps need to be hosted on <a href="https://blogs.msdn.microsoft.com/appserviceteam/2017/11/15/functions-on-linux-preview/">Azure Functions on Linux</a>. Running on Linux has a couple downsides:</p>
+<ol type="1">
+<li><p>You have to access the Azure Portal using a <a href="https://ms.portal.azure.com/?websitesextension_pythonFunctions=true">secret code</a> to enable Azure to offer Linux hosts</p></li>
+<li><p>As of this writing (2018-08-23), Linux hosts can only be dedicated. Azure Functions can normally run in two modes: “Consumption” and “Dedicated”. Consumption is virtually free, but the “dedicated” mode costs approximately $35 per month for the cheapest version. According to the <a href="https://github.com/Azure/azure-functions-python-worker/blob/dev/README.md">README</a> the “Consumption” mode is upcoming, and I have a small allowance due to my MSDN subscription, so I caved.</p></li>
+</ol>
+<p>And there goes objective #2. But it seems temporary, so we’re probably good.</p>
+</section>
+<section id="developing-a-slack-bot" class="level3">
+<h3 class="anchored" data-anchor-id="developing-a-slack-bot">Developing a Slack Bot</h3>
+<p>A Slack bot is essentially an HTTP server that will receive JSONs and perform actions through HTTP requests. Azure Functions have an HTTP Trigger template, so this takes care of most of the plumbing. I created a Slack app using the instructions <a href="https://api.slack.com/bot-users">here</a>. This bot subscribes to events, which are sent to an URL. I’ve created the HTTP Server that provides that URL using the instructions on <a href="https://github.com/Azure/azure-functions-python-worker/wiki/Create-Function-(CLI)">how to create a function using the command line interface</a>, and creating a <a href="https://github.com/Azure/azure-functions-python-worker/tree/dev/tests/http_functions">sample based on the HttpTrigger</a>.</p>
+<p>Specifically, my Azure Function receives JSONs for each message, parses them to see if they have a <code>:stroopwafel:</code>, and if they do, parses the mentions (<span class="citation" data-cites="user">@user</span>) in the message. For each mention, we log a :stroopwafel: gift in a database, from which we can build reports at the end of a period.</p>
+</section>
+<section id="pyodbc" class="level3">
+<h3 class="anchored" data-anchor-id="pyodbc">PyODBC</h3>
+<p>The original idea was tha whenever a message mentioned a <code>:stroopwafel:</code>, the bot would use <code>pyodbc</code> to save the message in a database. Databases are usually not free, but Azure offers SQL Server for as low as $5 per month, and that seemed acceptable. The problem is that <code>pyodbc</code> does not have a linux wheel, and currently Azure Functions for Linux <a href="https://github.com/Azure/azure-functions-core-tools/issues/640">requires wheels</a>. There’s a way of compiling the package on the fly, but it currently has a bug. And I don’t know how long it will take to fix that bug.</p>
+<p>I searched for alternatives to PyODBC, and the best alternative was to use <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/introduction">Cosmos DB</a>, since its Python package <code>pydocumentdb</code> has a wheel. The downside is that the cheapest Cosmos DB plan as of this writing costs $25. And now we’re far away from objective #2, and we’re also not doing great with objective #4. However, I found Cosmos DB a pleasure to use.</p>
+</section>
+<section id="github" class="level3">
+<h3 class="anchored" data-anchor-id="github">GitHub</h3>
+<p>Once I was done with my development, which <a href="https://github.com/Azure/azure-functions-core-tools">Azure Functions Core Tools</a> made really convenient by setting a local test server whenever I run <code>func host start</code>, I pushed <a href="https://github.com/RealLucasMeyer/yostroop">my repository to GitHub</a> and configured the Azure Function app to consume it using Continuous Deployment, which is something that you can set up in Azure with just a few clicks. However, <a href="https://github.com/Azure/azure-functions-core-tools/issues/640">it doesn’t yet work</a> (sad trombone). Luckily, deploying without GitHub is not that bad. Again, Azure Functions Core Tools provides a command-line interface utility that pushes your application to the server: <code>func azure functionapp publish &lt;app-name&gt;</code>, and you’re done in a couple of minutes. But I also don’t fulfill objective #5.</p>
+</section>
+</section>
+<section id="verdict" class="level2">
+<h2 class="anchored" data-anchor-id="verdict">Verdict</h2>
+<p>Although I was so far unable to fulfill half of my initial objectives, it looks like I’ll get there soon. There’s something magical about Azure Functions. It does a lot of the hard work for you, and if you’re familiar with one of the many languages available, you can deploy your program to production really fast. I had never developed a Slack bot before, and I’ve started the bot during a sleepless night and finished it in an afternoon. All in, it took me less than two days of work to get an app to production. There are still some kinks to be worked out but Azure Functions v2 has already proved to be useful to me.</p>
+<p>I wrote about Azure Functions before, specifically about <a href="https://meyerperin.com/post/installing-python-packages-in-azure-functions/">using Python in Azure Functions v1</a>. Azure Functions can be very useful for Data Scientists: it’s an easy way to deploy a model to production, perform scheduled maintenance, update datasets on a schedule, etc. With v2, Python became a first class player. I’m sure I’ll use it a lot.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

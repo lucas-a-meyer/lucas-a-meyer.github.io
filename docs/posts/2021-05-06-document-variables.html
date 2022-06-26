@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2021-05-06">
 
-<title>Lucas A. Meyer – calendar</title>
+<title>Lucas A. Meyer - Remember to document your code</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,22 +20,22 @@ ul.task-list{list-style: none;}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,7 +66,13 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - Remember to document your code">
+<meta property="og:description" content="When you are doing a code interview, it’s possible (and even likely) that you’re going to be nervous. Remember to document your thinking process.">
+<meta property="og:site-name" content="Lucas A. Meyer">
+<meta name="twitter:title" content="Lucas A. Meyer - Remember to document your code">
+<meta name="twitter:description" content="When you are doing a code interview, it’s possible (and even likely) that you’re going to be nervous. Remember to document your thinking process.">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -73,7 +81,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Lucas A. Meyer</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -82,16 +90,16 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./using-quarto">Using Quarto</a>
+    <a class="nav-link" href="../using-quarto">Using Quarto</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./python-gnn">GNNs with Python</a>
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./econometrics-python">Econometrics with Python</a>
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -111,7 +119,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
+    <a class="nav-link" href="../about.html">About</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -127,17 +135,47 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Remember to document your code</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">career</div>
+    <div class="quarto-category">interviews</div>
+  </div>
+  </div>
 
 
-<section id="future-poststarget-date-platform-title" class="level1">
-<h1>Future postsTarget date Platform Title</h1>
-<hr>
-2022-06-27 LinkedIn France is bacon 2022-06-28 Blog Posting automatically from my blog to LinkedIn 2022-06-29 LinkedIn Posting automatically from my blog to LinkedIn 2022-06-30 Blog My review of the Farmer’s Dog food service 2022-07-01 LinkedIn My review of the Farmer’s Dog food service 2022-07-01 Twitter My review of the Farmer’s Dog food service 2022-07-04 Blog That’s a good question 2022-07-05 Twitter That’s a good question 2022-07-05 LinkedIn That’s a good question 2022-07-10 Twitter You’re applying to more positions than you think 2022-07-10 LinkedIn You’re applying to more positions than you think 2022-07-12 Twitter What happens when a hiring manager posts a position on LinkedIn 2022-07-12 LinkedIn What happens when a hiring manager posts a position on LinkedIn 2022-07-18 Twitter The XY Problem 2022-07-18 LinkedIn The XY Problem 2022-07-22 Twitter I’m a hiring manager: this is why I didn’t answer your LinkedIn message 2022-07-22 LinkedIn I’m a hiring manager: this is why I didn’t answer your LinkedIn message 2022-09-11 Twitter Data science and 9/11 2022-09-11 LinkedIn Data science and 9/11 2022-10-04 LinkedIn Chesterton’s Fence 2022-10-21 Twitter Chesterton’s Fence<br><br>
-<hr>
-<p><br></p>
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 6, 2021</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>When you are doing a code interview, it’s possible (and even likely) that you’re going to be nervous. Remember to document your thinking process.</p>
+<p>Remember to think out loud. But also don’t forget:</p>
+<p>Comment your code. Maybe even write a quick comment of what you’re going to do before you try to do it.</p>
+<p>Name your variables and functions carefully, with a name that explains what they’re going to do.</p>
+<p>If you’re writing SQL, name your CTEs and columns you create with meaningful names.</p>
+<p>Format your code well if you have time. Your mind may be racing to finish the problem, this will help.</p>
+<p>Of course we want candidates that can solve the interview problem, but we also want candidates that write code that is easy to understand and maintain.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
