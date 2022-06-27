@@ -14,6 +14,13 @@ website:
   open-graph: true
   site-url: https://www.meyerperin.com
   description: "Lucas A. Meyer's blog"
+  comments: 
+    hypothesis:
+      theme: clean
+      openSidebar: true
+      showHighlights: always
+
+  body-footer: "Posts on this blog are **not** sponsored. For an abundance of caution, if/when I link to a product/service that might compensate me for a referral, I use the tag #ad"  
   navbar:
     left:
         - text: "Home"
