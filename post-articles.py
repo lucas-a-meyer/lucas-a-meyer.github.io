@@ -312,11 +312,9 @@ def process_file(filepath):
     # and the article target date is at least today  and the article is not in draft
     if not draft and linkedin_target_date and linkedin_target_date <= datetime.date.today() and not linkedin_posted:
         img = front_matter_dict.get("image")
-        linkedin_post_result = post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict)
+        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict)
         linkedin_posted = datetime.date.today().strftime("%Y-%m-%d")
         front_matter_dict["linkedin-posted"] = linkedin_posted
-        
-        update_lucas(f"Posted {filepath} to LinkedIn {linkedin_post_result}")
 
     if not draft and twitter_target_date and twitter_target_date <= datetime.date.today() and not twitter_posted:
         twitter_text = front_matter_dict.get("twitter-description")

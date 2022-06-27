@@ -15,6 +15,6 @@ client = Client(account_sid, auth_token)
 client.api.account.messages.create(
     to="+14258776991",
     from_="+19783965634",
-    body="Blog rendered!"
+    body="Updated https://www.meyerperin.com. Calendar: https://www.meyerperin.com/calendar.html"
 )
 
