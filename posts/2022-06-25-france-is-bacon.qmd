@@ -3,6 +3,7 @@ author: Lucas A. Meyer
 date: '2022-06-26'
 draft: false
 image: /images/france-is-bacon.jpg
+linkedin-posted: '2022-06-27'
 linkedin-target-date: '2022-06-27'
 title: France is bacon
 ---
