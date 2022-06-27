@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-0.9.626">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2018-07-08">
+
+<title>Lucas A. Meyer - Praising Conway’s Data Science Venn Diagram</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/data-beaker.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6KTZ853BN5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
+</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false,
+  "showHighlights": "always"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - Praising Conway’s Data Science Venn Diagram">
+<meta property="og:description" content="Drew Conway’s Data Science Venn Diagram is perhaps the most well-known description of data science.">
+<meta property="og:site-name" content="Lucas A. Meyer">
+<meta name="twitter:title" content="Lucas A. Meyer - Praising Conway’s Data Science Venn Diagram">
+<meta name="twitter:description" content="Drew Conway’s Data Science Venn Diagram is perhaps the most well-known description of data science.">
+<meta name="twitter:card" content="summary">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Lucas A. Meyer</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../using-quarto">Using Quarto</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lucasameyer"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lucas-a-meyer"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/lucas_a_meyer"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">About</a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Praising Conway’s Data Science Venn Diagram</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 8, 2018</p>
+    </div>
+  </div>
+    
+  </div>
+  
+
+</header>
+
+<p>Drew Conway’s <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram">Data Science Venn Diagram</a> is perhaps the most well-known description of data science.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://static1.squarespace.com/static/5150aec6e4b0e340ec52710a/t/51525c33e4b0b3e0d10f77ab/1364352052403/Data_Science_VD.png?format=750w" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Data Science Venn Diagram</figcaption><p></p>
+</figure>
+</div>
+<p>Drew published it more than five years ago. Since then, a ridiculous number of Venn diagrams have been created, <a href="https://www.datasciencecentral.com/profiles/blogs/the-data-science-venn-diagram-revisited">one</a> <a href="https://whatsthebigdata.com/2016/07/08/the-new-data-scientist-venn-diagram/">worse</a> <a href="https://twitter.com/kirkdborne/status/961452846821597184">than</a> <a href="https://twitter.com/kirkdborne/status/739446818233327616">the</a> <a href="https://blog.zhaw.ch/datascience/files/2014/06/SkillSet.png">other</a>.</p>
+<p>Five years later, people still struggle with the definition of Data Science. A recent famous example was Lyft <a href="https://eng.lyft.com/whats-in-a-name-ce42f419d16c">changing the titles</a> of their Data Scientists, Data Analysts and Research Scientists.</p>
+<section id="should-we-care" class="level2">
+<h2 class="anchored" data-anchor-id="should-we-care">Should we care?</h2>
+<p>There’s a lot of information asymmetry in the Data Science market, the position being so new, and <a href="https://www.jstor.org/stable/1882010">“Michael Spence signaling”</a> matters. Having a “Data Scientist” title from a reputable company is an important signal. For example, a medium-sized company might not be aware that Lyft <a href="https://eng.lyft.com/whats-in-a-name-ce42f419d16c">recently changed</a> their data analysts title to “Data Scientist”</p>
+<p>Part of the problem is that the “Data Scientist” title is itself poorly defined, as shown by the litany of Venn and not-Venn diagrams listed above. A short, non-comprehensive list of alternative titles for Data Scientists I’ve met in the last month:</p>
+<ul>
+<li>Tableau/Power BI Report Designer</li>
+<li>Machine Learning Researcher</li>
+<li>Python Programmer who knows how to call scikit-learn functions</li>
+</ul>
+<p>Using the same name for vastly different abilities makes matching between employers and employees difficult. In addition, it may make career progression difficult. For example, job responsibilities and objectives are likely to be related to a company’s interpretation of the title of “Data Scientist”. Employees in that company may be “Data Scientists” under other interpretations, and may be really good, but may have their performance evaluated under different guidelines: <em>“I know your ML model saved $1B for our company, but the color scheme of your Tableau reports is horrible!”</em> As per the (not really) Albert Einstein’s quote “(…) if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.”</p>
+</section>
+<section id="conways-venn-to-the-rescue" class="level2">
+<h2 class="anchored" data-anchor-id="conways-venn-to-the-rescue">Conway’s Venn to the rescue!</h2>
+<p>Here’s where I think Conway’s Venn diagram comes to the rescue in a useful way. We could rule out the Tableau Designer if they lack programming or statistical skills. We could rule out the ML Researcher if they don’t have domain expertise. We could rule out the Python programmer if they don’t know Math and/or have domain expertise. Perhaps this makes Data Scientists hard to find (it would justify their salary)!</p>
+<p>Depending what the company you work for was before the Data Science profession started, a lot of people from different jobs may have re-branded themselves as data scientists. I think Conway’s diagram is helpful as it points to where people should focus their development in order to be more effective as data scientists. For example, former Economists most likely need more hacking skills, former computer scientists need more Statistics and domain expertise, and former management/technical consultants likely need more Statistics.</p>
+<p>It can also serve as a check for inclusiveness. For example, a team of former machine learning engineers is struggling to deliver meaningful projects because they lack domain expertise. However, they can’t hire domain experts because the domain experts keep failing the machine learning interviews. Comically, the machine learning engineers think that domain expertise “is easy”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/here_to_help.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Everything you don’t know is easy</figcaption><p></p>
+</figure>
+</div>
+<p>The most useful part of Conway’s diagram for me is that I’ve time and again observed projects that don’t have representatives that can communicate well with each other in all three areas to fail. Conway’s diagram even makes it easy to show how the project failed (“nobody with domain expertise”, “missing knowledge of statistics”). Having a single person that can do all three is difficult, but it certainly solves the communication problem. That being hard or impossible, having specialists that can communicate with each other will usually be sufficient.</p>
+</section>
+<section id="but-conways-venn-is-missing-something" class="level2">
+<h2 class="anchored" data-anchor-id="but-conways-venn-is-missing-something">But Conway’s Venn is missing something!!!</h2>
+<p>True to the famous Box aphorism that “all models are wrong but some are useful”, Conway’s Venn is not perfect. In my experience, one of the things that I usually miss is “intensity”. Someone that knows how to write a “Hello World!”, knows how to take averages, and know how to calculate compound interest has knowledge in all three areas of the Venn diagram, but is probably not the ideal person to lead a data science project in Finance. Conway’s is best used to tell you what’s missing for career development, for a team, for a project, but it will not solve all problems.</p>
+<p>It will, however, solve many problems that matter, and will provide useful information very elegantly. You can’t ask much more from a model.</p>
+
+
+</section>
+
+<center>
+<p>
+&nbsp;
+</p>
+<hr>
+<font size="2">Posts on this blog are <strong>not</strong> sponsored. Regardless, links to products or services that might compensate have the #ad tag</font>
+</center></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
