@@ -20,7 +20,7 @@ website:
       openSidebar: false
       showHighlights: always
 
-  body-footer: '------\n<center><font size="2">Posts on this blog are **not** sponsored. For an abundance of caution, if/when I link to a product/service that might compensate me for a referral, I use the tag #ad</font></center?'
+  body-footer: '------\n<center><font size="2">Posts on this blog are **not** sponsored. For an abundance of caution, if/when I link to a product/service that might compensate me for a referral, I use the tag #ad</font></center>'
   navbar:
     left:
         - text: "Home"
