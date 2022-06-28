@@ -6,6 +6,7 @@ linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:688708903174685
 linkedin-posted: '2021-12-14'
 title: Using corn cob lights to beat seasonal blues
 twitter-posted: '2021-12-14'
+include-in-header: _msft-clarity.html
 ---
 
 There are a lot of tech companies in Seattle, always hiring (I will myself post a new position soon). And if you know something about Seattle, it's probably that it rains a lot.

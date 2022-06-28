@@ -8,6 +8,7 @@ linkedin-target-date: '2022-06-21'
 title: Becoming Good at AI for Good
 twitter-posted: 2022-06-21
 twitter-target-date: 2022-06-21
+include-in-header: _msft-clarity.html
 ---
 
 The AI for Good Research Lab published an [article](https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good) last year about how to do AI projects in the #AI4Good domain. 

@@ -9,6 +9,7 @@ linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:691710532290600
 linkedin-posted: '2022-04-05'
 title: Hiring is a superpower
 twitter-posted: '2022-04-05'
+include-in-header: _msft-clarity.html
 ---
 One of my superpowers from my #Amazon review process this year was "Hire and Develop the Best". 
 

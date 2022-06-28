@@ -5,6 +5,7 @@ image: /images/money-gun.jpg
 linkedin-posted: '2022-05-10'
 title: Work life balance is worth something
 twitter-posted: '2022-05-10'
+include-in-header: _msft-clarity.html
 ---
 
 Should you choose #Microsoft or #FAANG?

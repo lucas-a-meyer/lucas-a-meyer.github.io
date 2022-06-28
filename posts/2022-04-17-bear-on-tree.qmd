@@ -8,6 +8,7 @@ linkedin-link: https://www.linkedin.com/posts/lucasameyer_during-a-couple-of-our
 linkedin-posted: '2022-04-17'
 title: Bear on tree
 twitter-posted: '2022-04-17'
+include-in-header: _msft-clarity.html
 ---
 
 During a couple of our conference calls, I told my team that I needed a moment because I needed to deal with a bear situation. Usually it was quick, just the dog barking a lot, or an overturned trash can. I’m not sure they believed me.

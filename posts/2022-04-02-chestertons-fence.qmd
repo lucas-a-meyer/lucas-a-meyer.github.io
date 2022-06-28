@@ -11,6 +11,7 @@ twitter-description: I once posted about the Chesterton's Fence, which is an imp
   concept when starting something new
 twitter-repost: 360
 twitter-target-date: 2022-10-21
+include-in-header: _msft-clarity.html
 ---
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 

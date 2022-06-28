@@ -8,6 +8,7 @@ linkedin-target-date: '2022-06-20'
 title: Computers and Urinals
 twitter-posted: 2022-06-20
 twitter-target-date: 2022-06-20
+include-in-header: _msft-clarity.html
 ---
 
 Years ago, in a tech conference, a researcher asked: "Isn't it embarrassing that the conference center urinals can detect when you're done and automatically flush, but your computer can't detect that you're not using it and automatically lock?"
