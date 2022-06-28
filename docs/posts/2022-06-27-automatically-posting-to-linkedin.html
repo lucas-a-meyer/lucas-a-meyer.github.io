@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.613">
+<meta name="generator" content="quarto-0.9.626">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -73,15 +73,23 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
+<!-- Clarity tracking code for https://meyerperin.com/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "cjhrvqb66a");
+</script>
 
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Posting automatically from my blog to LinkedIn">
-<meta property="og:description" content="Nobody reads my blog.">
+<meta property="og:description" content="Write once, use everywhere.">
 <meta property="og:image" content="https://www.meyerperin.com/images/nobody-reads-blog.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Posting automatically from my blog to LinkedIn">
-<meta name="twitter:description" content="Nobody reads my blog.">
+<meta name="twitter:description" content="Write once, use everywhere.">
 <meta name="twitter:image" content="https://www.meyerperin.com/images/nobody-reads-blog.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -174,23 +182,24 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
-<p>Nobody reads my blog.</p>
-<p>It’s not that I really care. It’s just that for some content, a blog post works a lot better than LinkedIn.</p>
-<p>To my knowledge, there are three ways to post technical content on LinkedIn:</p>
+<p>Write once, use everywhere.</p>
+<p>One of the things that felt very inneficient to me was to write using several different tools, but I recently solved that problem.</p>
+<p>Until very recently, I wrote in LinkedIn (I used Buffer), Twitter, my blog (I used GitHub Markdown), my work code (Python and Jupyter). That’s a lot to keep track of. Sometimes, I wanted to find something that I wrote and it would take me a while.</p>
+<p>Now, I use <a href="../using-quarto">Quarto for everything</a>.</p>
+<p>My biggest audience is on LinkedIn, but it’s not that easy to post technical content. To my knowledge, there are three ways to do it:</p>
 <ul>
 <li>You can write an article</li>
 <li>You can create a training</li>
 <li>You can post an external link</li>
 </ul>
-<p>The problem of writing an article on LinkedIn is that the editor is good for text pieces but unfriendly for technical content, especially for code and source control. In addition, the editor requires the writer to edit online all the time. In practice, I mostly copy and paste.</p>
+<p>The problem of writing an article on LinkedIn is that the editor is good for text pieces but unfriendly for technical content, especially for code and source control. In addition, the editor requires the writer to edit online all the time. In practice, I mostly copied and pasted.</p>
 <p>The problem of creating a training is that I think it’s a lot of work. I never tried, and maybe it’s easier than I think it is, but just getting started seems like a lot.</p>
 <p>Instead of using LinkedIn, a very popular option is to use Medium or, more specifically, “Towards Data Science” (TDS), a subset of Medium articles focused on data science. I frequently find articles I like in TDS, but it’s somewhat paywalled. You get just a few free articles for free. For authors, the advantages are that TDS is widely promoted in search results and that authors get paid. Not enough to quit a job and write for TDS, but enough to buy a couple books per year. Other options are newsletters, but it starts to feel too much like a job.</p>
 <p>The LinkedIn algorithm seems to punish posts that only point users to an external article. I can understand that: this type of post is unlikely to generate any engagement inside of LinkedIn: people just “click out”.</p>
-<p>In any case, the problem I wanted to solve was to be able to write more technical posts from time to time, but still be able to post those to LinkedIn automatically. To write technical posts in my blog, I started using #Quarto and loving it (I’m putting together some material about that). I just spent some time on the weekend figuring out how to configure Quarto to post automatically to LinkedIn. I still needed to solve the problem on how to push these to LinkedIn in a somewhat good way.</p>
-<p>So I wrote some code that scans my Quarto files and uses the LinkedIn API to post them.</p>
-<p>When I write a blog post (technical or non-technical), I can choose to automatically post it to LinkedIn by simply using a YAML field.</p>
-<p>This solves a large number of problems for me. With that, I now do all my writing in VS Code. I don’t need to use Buffer anymore. I have version control. If the post is too big, my tool will just cut the post short and link to the remainder.</p>
-<p>As always, the proof of the pudding is in the eating, so let’s see how that goes.</p>
+<p>In any case, the problem I wanted to solve was to be able to write more technical posts from time to time, but still be able to post those to LinkedIn automatically. To write technical posts in my blog, I started using <a href="https://www.quarto.org/">#Quarto</a> and loving it. Recently, I wrote some code to configure Quarto to post automatically to LinkedIn. The code scans my Quarto files and uses the LinkedIn API to post them. If they fit fully as text, it posts them as a normal post. If they’re too large, it posts the beginning of the article and a link to my blog.</p>
+<p>Now, when I write a blog post (technical or non-technical) or even real work code, I can choose to automatically post it to LinkedIn and Twitter by simply adding some front-matter to my file.</p>
+<p>This solves a large number of problems for me. With that, I now do all my writing in VS Code. I don’t need to use Buffer anymore. I even have version control.</p>
+<p>Now I just need to write interesting stuff!</p>
 
 
 

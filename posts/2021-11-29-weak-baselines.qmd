@@ -3,11 +3,11 @@ author: Lucas A. Meyer
 categories: data science
 date: '2021-11-29'
 image: /images/weak-baseline.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712
 linkedin-posted: '2021-11-29'
 title: Weak baselines
 twitter-posted: '2021-11-29'
-include-in-header: _msft-clarity.html
 ---
 
 Gather close as I tell you another cautionary tale about data science.

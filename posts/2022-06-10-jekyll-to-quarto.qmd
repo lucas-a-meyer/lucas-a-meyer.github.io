@@ -3,10 +3,10 @@ author: Lucas A. Meyer
 date: '2022-06-10'
 freeze: true
 image: /images/quarto.png
+include-in-header: _msft-clarity.html
 linkedin-posted: '2022-06-10'
 title: Converting my blog from Jekyll to Quarto
 twitter-posted: '2022-06-10'
-include-in-header: _msft-clarity.html
 ---
 
 I thought moving from Jekyll to Quarto was going to be hard. It was not.

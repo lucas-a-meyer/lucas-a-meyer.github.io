@@ -3,11 +3,12 @@ author: Lucas A. Meyer
 date: '2022-06-28'
 draft: false
 image: /images/nobody-reads-blog.jpg
+include-in-header: _msft-clarity.html
 linkedin-target-date: '2022-06-29'
 title: Posting automatically from my blog to LinkedIn
-include-in-header: _msft-clarity.html
+twitter-description: One of the things that felt very inneficient to me was to write
+  using several different tools, but I recently solved that problem.
 twitter-target-date: '2022-06-29'
-twitter-description: One of the things that felt very inneficient to me was to write using several different tools, but I recently solved that problem.
 ---
 
 Write once, use everywhere.

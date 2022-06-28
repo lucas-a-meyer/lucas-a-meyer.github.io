@@ -5,11 +5,11 @@ categories:
 - hiring
 date: '2022-04-11'
 image: /images/mac-power-off.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919333255288627200
 linkedin-posted: '2022-04-11'
 title: Leaving Amazon
 twitter-posted: '2022-04-11'
-include-in-header: _msft-clarity.html
 ---
 
 This is my last week at Amazon. I will announce my new position (which is beyond awesome) early next week. 

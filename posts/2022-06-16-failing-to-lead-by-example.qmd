@@ -2,11 +2,11 @@
 author: Lucas A. Meyer
 date: '2022-06-16'
 image: /images/failing-to-lead.jpg
+include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24
 linkedin-target-date: 2022-06-16
 title: Failing to lead by example
 twitter-posted: 2022-06-16
-include-in-header: _msft-clarity.html
 ---
 
 One of the worst things I have done as a manager was to go to a meeting. Luckily, I had a friend on that meeting (also a manager) that taught me something really important.
