@@ -4,10 +4,12 @@ date: '2022-06-28'
 draft: false
 image: /images/nobody-reads-blog.jpg
 include-in-header: _msft-clarity.html
+linkedin-posted: '2022-06-29'
 linkedin-target-date: '2022-06-29'
 title: Posting automatically from my blog to LinkedIn
 twitter-description: One of the things that felt very inneficient to me was to write
   using several different tools, but I recently solved that problem.
+twitter-posted: '2022-06-29'
 twitter-target-date: '2022-06-29'
 ---
 
