@@ -1,0 +1,4 @@
+If you're a data scientist, you're probably very much used to waiting for model training results.
+
+I wrote a tiny script that uses Twilio to text me when my model is done.
+
