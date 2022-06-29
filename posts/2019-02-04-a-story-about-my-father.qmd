@@ -1,6 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: '2019-02-04'
+include-in-header: _msft-clarity.html
 linkedin-posted: '2019-02-04'
 title: A story about my father
 twitter-posted: '2019-02-04'

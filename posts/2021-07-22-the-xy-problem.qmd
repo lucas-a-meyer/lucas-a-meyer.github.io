@@ -3,6 +3,7 @@ author: Lucas A. Meyer
 categories:
 - career
 date: '2021-07-22'
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
 linkedin-repost: 180
 linkedin-target-date: '2022-07-18'

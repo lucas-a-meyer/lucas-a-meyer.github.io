@@ -1,6 +1,5 @@
 ---
 title: "Calendar"
-include-in-header: _msft-clarity.html
 ---
 ## Future posts
 
@@ -40,4 +39,4 @@ include-in-header: _msft-clarity.html
 | 2022-10-21    | Twitter    | Chesterton's Fence                                                      |
 +---------------+------------+-------------------------------------------------------------------------+
 -----------------------------------
-Generated on 2022-06-29 07:00:09.253265
+Generated on 2022-06-29 10:09:15.837565

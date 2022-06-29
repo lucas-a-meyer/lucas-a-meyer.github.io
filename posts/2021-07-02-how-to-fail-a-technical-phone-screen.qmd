@@ -5,6 +5,7 @@ categories:
 - interviews
 date: '2021-07-02'
 image: /images/fail-tech-interview.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6816590001338486785
 linkedin-posted: '2021-07-02'
 title: How to fail a technical phone screen

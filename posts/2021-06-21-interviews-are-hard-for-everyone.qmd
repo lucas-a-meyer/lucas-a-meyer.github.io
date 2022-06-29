@@ -4,6 +4,7 @@ categories:
 - career
 - interviews
 date: '2021-06-21'
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6812769571775365120
 linkedin-posted: '2021-06-21'
 title: Interviews are hard for everyone

@@ -4,6 +4,7 @@ categories:
 - career
 - interviews
 date: '2021-05-06'
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe
 linkedin-posted: '2021-05-06'
 title: Remember to document your code

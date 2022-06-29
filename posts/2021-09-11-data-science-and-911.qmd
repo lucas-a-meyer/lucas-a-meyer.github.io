@@ -4,6 +4,7 @@ categories:
 - data science
 date: '2021-09-11'
 image: /images/bin-laden-compound.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
 linkedin-repost: 365
 linkedin-target-date: 2022-09-11

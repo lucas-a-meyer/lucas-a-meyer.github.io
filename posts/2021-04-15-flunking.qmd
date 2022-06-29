@@ -4,6 +4,7 @@ categories:
 - career
 - interviews
 date: '2021-04-15'
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
 linkedin-posted: '2021-04-15'
 title: Flunking a SQL interview with 20+ years of practice

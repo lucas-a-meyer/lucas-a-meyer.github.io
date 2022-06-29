@@ -4,6 +4,7 @@ categories:
 - management
 date: '2021-08-17'
 image: /images/goonies.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6833403014171250688
 linkedin-posted: '2021-08-17'
 title: The neurodivergent manager

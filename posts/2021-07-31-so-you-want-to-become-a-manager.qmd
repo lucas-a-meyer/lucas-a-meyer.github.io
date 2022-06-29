@@ -4,6 +4,7 @@ categories:
 - management
 date: '2021-07-31'
 image: /images/become-manager.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
 linkedin-posted: '2021-07-31'
 title: So you want to become a manager

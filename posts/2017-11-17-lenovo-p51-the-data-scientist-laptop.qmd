@@ -1,6 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: '2017-11-17'
+include-in-header: _msft-clarity.html
 linkedin-posted: 2017-11-17
 title: Lenovo P51 - the Data Scientist's laptop
 twitter-posted: '2017-11-17'

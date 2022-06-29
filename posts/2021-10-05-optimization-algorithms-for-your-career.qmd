@@ -5,6 +5,7 @@ categories:
 - data science
 date: '2021-10-05'
 image: /images/optimization-career.png
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/
 linkedin-posted: '2021-10-05'
 title: Optimization algorithms for your career

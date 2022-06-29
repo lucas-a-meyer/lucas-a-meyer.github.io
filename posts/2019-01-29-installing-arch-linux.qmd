@@ -1,6 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: '2019-01-29'
+include-in-header: _msft-clarity.html
 linkedin-posted: '2019-01-29'
 title: Installing Arch Linux
 twitter-posted: '2019-01-29'

@@ -6,6 +6,7 @@ categories:
 - interviews
 date: '2021-06-05'
 image: /images/interview-process.jpg
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-posts-position-linkedin-meyer
 linkedin-target-date: 2022-07-12
 title: What happens when a hiring manager posts a position on LinkedIn
