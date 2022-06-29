@@ -1,5 +1,6 @@
 ---
 title: "Calendar"
+include-in-header: _msft-clarity.html
 ---
 ## Future posts
 

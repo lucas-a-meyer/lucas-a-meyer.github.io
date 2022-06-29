@@ -1,6 +1,7 @@
 ---
 title: "About"
 image: bias.jpg
+include-in-header: _msft-clarity.html
 about:
   template: jolla
   links:

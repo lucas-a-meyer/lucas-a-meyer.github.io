@@ -324,6 +324,10 @@ def process_file(filepath):
         front_matter_dict["twitter-posted"] = twitter_posted
         update_lucas(f"Twitted: https://twitter.com/user/status/{twitter_post_result.data['id']}")
 
+    # Check that we have Microsoft Clarity installed in the page
+    if not front_matter_dict.get("include-in-header"):
+        front_matter_dict["include_in_header"] = "_msft-clarity.html"
+
     update_front_matter(filepath, front_matter_dict)
 
 def process_directory(di):
