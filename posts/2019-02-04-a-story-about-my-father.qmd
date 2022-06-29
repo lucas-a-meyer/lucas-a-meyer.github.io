@@ -1,7 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: '2019-02-04'
-include-after-body: '_disclaimer.html'
+include-after-body: _disclaimer.html
 include-in-header: _msft-clarity.html
 linkedin-posted: '2019-02-04'
 title: A story about my father
