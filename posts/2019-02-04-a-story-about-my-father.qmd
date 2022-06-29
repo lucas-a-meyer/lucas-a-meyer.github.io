@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-body-footer: '<center><p>&nbsp;</p><hr /><font size="2">Posts on this blog are **not**
+include-after-body: '<center><p>&nbsp;</p><hr /><font size="2">Posts on this blog are **not**
   sponsored. Regardless, links to products or services that might compensate have
   the #ad tag</font></center>'
 date: '2019-02-04'
