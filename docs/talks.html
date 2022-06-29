@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lucas A. Meyer - Calendar</title>
+<title>Lucas A. Meyer - Speaking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,6 +26,8 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href=".//images/data-beaker.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -54,6 +56,35 @@ ul.task-list{list-style: none;}
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6KTZ853BN5"></script>
 
 <script type="text/javascript">
@@ -72,17 +103,16 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Lucas A. Meyer - Calendar">
-<meta property="og:description" content="Generated on 2022-06-29 10:16:17.104856">
+<meta property="og:title" content="Lucas A. Meyer - Speaking">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta name="twitter:title" content="Lucas A. Meyer - Calendar">
-<meta name="twitter:description" content="Generated on 2022-06-29 10:16:17.104856">
+<meta name="twitter:title" content="Lucas A. Meyer - Speaking">
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -135,134 +165,43 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">Speaking</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Calendar</h1>
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-    
-  </div>
-  
-
-</header>
-
-<section id="future-posts" class="level2">
-<h2 class="anchored" data-anchor-id="future-posts">Future posts</h2>
-<table class="table">
-<colgroup>
-<col style="width: 15%">
-<col style="width: 12%">
-<col style="width: 71%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Target date</th>
-<th>Platform</th>
-<th>Title</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2022-06-30</td>
-<td>Blog</td>
-<td>My review of the Farmer’s Dog food service</td>
-</tr>
-<tr class="even">
-<td>2022-07-01</td>
-<td>Twitter</td>
-<td>My review of the Farmer’s Dog food service</td>
-</tr>
-<tr class="odd">
-<td>2022-07-01</td>
-<td>LinkedIn</td>
-<td>My review of the Farmer’s Dog food service</td>
-</tr>
-<tr class="even">
-<td>2022-07-04</td>
-<td>Blog</td>
-<td>That’s a good question</td>
-</tr>
-<tr class="odd">
-<td>2022-07-05</td>
-<td>Twitter</td>
-<td>That’s a good question</td>
-</tr>
-<tr class="even">
-<td>2022-07-05</td>
-<td>LinkedIn</td>
-<td>That’s a good question</td>
-</tr>
-<tr class="odd">
-<td>2022-07-12</td>
-<td>Twitter</td>
-<td>What happens when a hiring manager posts a position on LinkedIn</td>
-</tr>
-<tr class="even">
-<td>2022-07-12</td>
-<td>LinkedIn</td>
-<td>What happens when a hiring manager posts a position on LinkedIn</td>
-</tr>
-<tr class="odd">
-<td>2022-07-18</td>
-<td>Twitter</td>
-<td>The XY Problem</td>
-</tr>
-<tr class="even">
-<td>2022-07-18</td>
-<td>LinkedIn</td>
-<td>The XY Problem</td>
-</tr>
-<tr class="odd">
-<td>2022-07-22</td>
-<td>Twitter</td>
-<td>I’m a hiring manager: this is why I didn’t answer your LinkedIn message</td>
-</tr>
-<tr class="even">
-<td>2022-07-22</td>
-<td>LinkedIn</td>
-<td>I’m a hiring manager: this is why I didn’t answer your LinkedIn message</td>
-</tr>
-<tr class="odd">
-<td>2022-09-11</td>
-<td>Twitter</td>
-<td>Data science and 9/11</td>
-</tr>
-<tr class="even">
-<td>2022-09-11</td>
-<td>LinkedIn</td>
-<td>Data science and 9/11</td>
-</tr>
-<tr class="odd">
-<td>2022-10-04</td>
-<td>LinkedIn</td>
-<td>Chesterton’s Fence</td>
-</tr>
-<tr class="even">
-<td>2022-10-21</td>
-<td>Twitter</td>
-<td>Chesterton’s Fence</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Generated on 2022-06-29 10:16:17.104856</p>
-
-
-</section>
-
-</main> <!-- /main -->
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const icon = "";
