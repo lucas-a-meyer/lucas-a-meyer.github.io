@@ -94,16 +94,12 @@ def linkedin_text(txt, filepath):
         linkpath = filepath[:-2] + "html"
     if filepath.endswith(".qmd"):
         linkpath = filepath[:-3] + "html"
-    if size > 2900:
-        post = post[:2900]
+    if size > 3000:
+        post = post[:3000]
         post += f"""...
-        
+       
 This post ended up being too long for LinkedIn but the remainder is at https://www.meyerperin.com/{linkpath}
-
-        """
-    else:
-        post += f"""\n\nThis post originally appeared at https://www.meyerperin.com/{linkpath}"""
-
+"""
     post = post.replace("\n", "\\n")
     post = post.replace('"', '\\"')
     return post
@@ -196,12 +192,24 @@ def post_asset(token, person_id, asset, text):
 
     return resp.status_code
 
-def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=None):
+def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
 
     person_id = os.getenv("LINKEDIN_PERSON_ID")
     token = os.getenv("LINKEDIN_TOKEN")
 
-    li_text = linkedin_text(text, filepath)
+    li_text = linkedin_text(text, filepath) 
+
+    if filepath.endswith(".md"):
+        linkpath = filepath[:-2] + "html"
+    if filepath.endswith(".qmd"):
+        linkpath = filepath[:-3] + "html"    
+
+    if li_text.find("This post ended up being too long for LinkedIn") < 0:
+    # if we're inside here, the post was not cut-off 
+        if link:
+            li_text = li_text + f"\n\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
+        else:
+            li_text = li_text + f"\n\nThis post first appeared at my blog (link in bio) at {linkpath}"
 
     code = 505
 
