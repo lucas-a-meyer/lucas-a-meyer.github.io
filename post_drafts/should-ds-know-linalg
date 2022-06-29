@@ -1,0 +1,11 @@
+# Should Data Scientists Know Linear Algebra?
+
+To my surprise, if you do a web search for whether data scientists should know linear algebra, the general answer is a resounding "yes". 
+
+It's not that I disagree that knowing linear algebra is useful, but if you ask the same question about "sql", "statistics" and "endogeneity", the results are a lot more nuanced. Instead of a resounding "yes", we get the occasional "yes and no: SQL is nice but you can get by with pandas", or "how much statistics do data scientists _really_ need to know". 
+
+ ## What is a Data Scientist, really?
+ 
+ One of the problems may be related to the concept creep that happened to the data scientist profession. Different companies use names in conflicting ways. For example, a data scientist in one company may be called a data analyst in another. There is a wide array of sub-categories related to the data science profession, and they are used very inconsistently. 
+ 
+ Famously, at Amazon, the main difference between Data Scientists and Applied Scientists is that Applied Scientists (who, according to Blind, earn more) are expected to know coding at the same skill of a L4 engineer. The corollary is that Data Scientists at Amazon don't know how to write code at the L4 skill level.
