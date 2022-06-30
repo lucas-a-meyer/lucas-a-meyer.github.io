@@ -211,6 +211,8 @@ def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
         else:
             li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio) at {linkpath}"
 
+    print(li_text)
+    
     code = 505
 
     if os.path.exists(imagepath):
