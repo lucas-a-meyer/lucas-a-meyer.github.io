@@ -98,7 +98,7 @@ def linkedin_text(txt, filepath):
         post = post[:2800]
         post += f"""...
        
-This post ended up being too long for LinkedIn but the remainder is at https://www.meyerperin.com/{linkpath}
+This post ended up being too long for LinkedIn. It's in my blog at https://www.meyerperin.com/{linkpath}
 """
     post = post.replace("\n", "\\n")
     post = post.replace('"', '\\"')
