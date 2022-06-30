@@ -5,10 +5,10 @@ draft: false
 image: /images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: false
-linkedin-target-date: '2022-07-01'
+linkedin-target-date: '2022-06-30'
 title: My review of the Farmer's Dog food service
 twitter-description: My review of the Farmer's Dog food service
-twitter-target-date: '2022-07-01'
+twitter-target-date: '2022-06-30'
 ---
 
 I recently subscribed to the Farmer's Dog. I love it, even though I didn't expect to.
