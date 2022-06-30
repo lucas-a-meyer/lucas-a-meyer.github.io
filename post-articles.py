@@ -94,8 +94,8 @@ def linkedin_text(txt, filepath):
         linkpath = filepath[:-2] + "html"
     if filepath.endswith(".qmd"):
         linkpath = filepath[:-3] + "html"
-    if size > 2900:
-        post = post[:2900]
+    if size > 2800:
+        post = post[:2800]
         post += f"""...
        
 This post ended up being too long for LinkedIn but the remainder is at https://www.meyerperin.com/{linkpath}

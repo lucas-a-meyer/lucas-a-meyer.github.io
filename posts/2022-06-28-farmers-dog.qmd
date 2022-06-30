@@ -5,7 +5,6 @@ draft: false
 image: /images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-posted: '2022-06-30'
 linkedin-target-date: '2022-06-30'
 title: My review of the Farmer's Dog food service
 twitter-description: My review of the Farmer's Dog food service
@@ -17,7 +16,7 @@ I recently subscribed to the Farmer's Dog. I love it, even though I didn't expec
 
 ## The problem
 
-My dog, Gypsy Danger, is a standard schnauzer. She is very picky with her food, and would do very long hunger strikes to prove her point. She doesn't like dry food, and we have been feeding her wet food for a while. Even so, she resists: if she sees us eating human food, she will want to participate. To address that, we needed to feed her before we start cooking for ourselves, or she'll "protest".
+My dog, Gypsy Danger, is a standard schnauzer. She is very picky with her food, and would do very long hunger strikes to prove her point. She doesn't like dry food, and we have been feeding her wet food for a while. Even so, she resists: if she sees us eating human food, she will want to participate. To address that, we needed to feed her before we start cooking for ourselves, or she would "protest" with a hunger strike.
 
 ![](/images/GypsyLucas.jpg)
 
@@ -29,7 +28,7 @@ One day, I was listening to a [Freakonomics podcast on venture capital](https://
 
 ### Signing Up
 
-Signing up to the Farmer's Dog was, as expected from something backed by VC, very easy. I had to answer a (cute) questionnaire asking about my dog, her weight and her food preferences. The result was a recommended food plan with a calculated number of calories, and a discounted price for a few weeks (I don't remember if it was two or three). 
+Signing up to the Farmer's Dog, as expected from something backed by VC, was very easy. I had to answer a (cute) questionnaire asking about my dog, her weight and her food preferences. The result was a recommended food plan with a calculated number of calories, and a discounted price for a few weeks (I don't remember if it was two or three). 
 
 ### What I didn't like
 
@@ -39,7 +38,7 @@ The second thing was the price: after removing the initial discount, the price w
 
 The next thing was my own fault: I was counting on using the food right away, but it arrives deeply frozen, and I needed to wait about 36h for it to unfreeze. The package was a little unwieldly: the food comes as a paste in sealed plastic bag. I needed to use scissors to cut the top of the package and press out the paste into the bowl. It is hard to measure the exact quantity, and my hands got dirty. After some practice, I can now squeeze the food out without getting my hands dirty, but measuring is still tricky.
 
-The food needs to be frozen, defrosted and kept refrigerated. That makes it inconvenient to use it in travel, 
+The food needs to be frozen, defrosted and kept refrigerated. That makes it inconvenient to use it in travel.
 
 Did I hate it? For the first few days I thought I would, but...
 
