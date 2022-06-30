@@ -94,8 +94,8 @@ def linkedin_text(txt, filepath):
         linkpath = filepath[:-2] + "html"
     if filepath.endswith(".qmd"):
         linkpath = filepath[:-3] + "html"
-    if size > 3000:
-        post = post[:3000]
+    if size > 2900:
+        post = post[:2900]
         post += f"""...
        
 This post ended up being too long for LinkedIn but the remainder is at https://www.meyerperin.com/{linkpath}
@@ -212,7 +212,7 @@ def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
             li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio) at {linkpath}"
 
     print(li_text)
-    
+
     code = 505
 
     if os.path.exists(imagepath):
