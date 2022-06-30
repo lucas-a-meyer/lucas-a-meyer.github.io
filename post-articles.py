@@ -207,9 +207,9 @@ def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
     if li_text.find("This post ended up being too long for LinkedIn") < 0:
     # if we're inside here, the post was not cut-off 
         if link:
-            li_text = li_text + f"\n\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
+            li_text = li_text + f"\\n\\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
         else:
-            li_text = li_text + f"\n\nThis post first appeared at my blog (link in bio) at {linkpath}"
+            li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio) at {linkpath}"
 
     code = 505
 
