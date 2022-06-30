@@ -281,12 +281,6 @@ def process_file(filepath):
     post_date = get_date(front_matter_dict, "date")
     draft = front_matter_dict.get("draft")
        
-    linkedin_posted = get_date(front_matter_dict, "linkedin-posted")
-    twitter_posted = get_date(front_matter_dict, "twitter-posted")
-
-    linkedin_repost = front_matter_dict.get("linkedin-repost")
-    twitter_repost = front_matter_dict.get("twitter-repost")
-
     if draft and post_date <= datetime.date.today():
         front_matter_dict["draft"] = False
         draft = False
@@ -297,8 +291,16 @@ def process_file(filepath):
         draft = True
         update_lucas(f"Added {filepath} to draft")
 
+    linkedin_posted = get_date(front_matter_dict, "linkedin-posted")
+    twitter_posted = get_date(front_matter_dict, "twitter-posted")
+
+    linkedin_repost = front_matter_dict.get("linkedin-repost")
+    twitter_repost = front_matter_dict.get("twitter-repost")
+    
     linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
     twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
+
+    linkedin_linkback = front_matter_dict.get("linkedin-linkback")
 
     # Check if I want to move a posting date to the future for LinkedIn
     if linkedin_repost and linkedin_posted and linkedin_target_date < datetime.date.today(): 
@@ -320,7 +322,7 @@ def process_file(filepath):
     # and the article target date is at least today  and the article is not in draft
     if not draft and linkedin_target_date and linkedin_target_date <= datetime.date.today() and not linkedin_posted:
         img = front_matter_dict.get("image")
-        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict)
+        post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict, linkedin_linkback)
         linkedin_posted = datetime.date.today().strftime("%Y-%m-%d")
         front_matter_dict["linkedin-posted"] = linkedin_posted
 
