@@ -7,7 +7,9 @@ include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: '2022-07-01'
 title: Happy new year, Microsoft
-twitter-description: I joined Microosoft in 2002. Since then, I missed only the 2011 (Ph.D. student) and 2021 (Amazon) fiscal year-ends. Thanks for welcoming me back, and happy new year.
+twitter-description: I joined Microosoft in 2002. Since then, I missed only the 2011
+  (Ph.D. student) and 2021 (Amazon) fiscal year-ends. Thanks for welcoming me back,
+  and happy new year.
 twitter-target-date: '2022-07-01'
 ---
 

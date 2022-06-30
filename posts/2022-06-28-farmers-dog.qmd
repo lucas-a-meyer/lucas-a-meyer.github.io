@@ -5,9 +5,11 @@ draft: false
 image: /images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
+linkedin-posted: '2022-06-30'
 linkedin-target-date: '2022-06-30'
 title: My review of the Farmer's Dog food service
 twitter-description: My review of the Farmer's Dog food service
+twitter-posted: '2022-06-30'
 twitter-target-date: '2022-06-30'
 ---
 
