@@ -4,18 +4,16 @@ date: '2022-06-30'
 draft: false
 image: /images/just-hired-microsoft.jpg
 include-in-header: _msft-clarity.html
-linkedin-linkback: true
+linkedin-linkback: false
 linkedin-target-date: '2022-07-01'
 title: Happy new year, Microsoft
 twitter-description: I joined Microosoft in 2002. Since then, I missed only the 2011
   (Ph.D. student) and 2021 (Amazon) fiscal year-ends. Thanks for welcoming me back,
-  and happy new year.
+  and happy new (fiscal) year.
 twitter-target-date: '2022-07-01'
 ---
 
-I joined Microosoft in 2002. 
-
-Since then, I missed only the FY11 (I was a Ph.D. student) and FY21 (I was working for Amazon) fiscal year-ends. 
+I joined Microosoft in 2002. Since then, I missed only the FY11 (I was a Ph.D. student) and FY21 (I was working for Amazon) fiscal year-ends. 
 
 If history is a guide, the next fiscal year-end I'll miss will come only in 2031, maybe because I'll be retired!
 
@@ -25,4 +23,6 @@ I have had excellent managers, and I have learned a ton from my colleagues. I ho
 
 I am extremely thankful for having the opportunity to work for #Microsoft for this long. If I'm lucky, I'll work here for at least 25 more years.
 
-Happy new year!
+Happy new (fiscal) year to all my Microsoft friends.
+
+
