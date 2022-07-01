@@ -342,11 +342,11 @@ def process_file(filepath):
     if not front_matter_dict.get("include-in-header"):
         front_matter_dict["include-in-header"] = "_msft-clarity.html"
 
-    front_matter_dict["date"] = post_date
-    front_matter_dict["linkedin-posted"] = linkedin_posted
-    front_matter_dict["twitter-posted"] = twitter_posted
-    front_matter_dict["linkedin-target-date"] = linkedin_target_date
-    front_matter_dict["twitter-target-date"] = twitter_target_date
+    if post_date: front_matter_dict["date"] = post_date
+    if linkedin_posted: front_matter_dict["linkedin-posted"] = linkedin_posted
+    if twitter_posted: front_matter_dict["twitter-posted"] = twitter_posted
+    if linkedin_target_date: front_matter_dict["linkedin-target-date"] = linkedin_target_date
+    if twitter_target_date: front_matter_dict["twitter-target-date"] = twitter_target_date
     
     update_front_matter(filepath, front_matter_dict)
 
