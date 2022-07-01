@@ -121,15 +121,17 @@ def update_front_matter(filepath, new_front_matter_dict):
 
 def get_date(front_matter_dict, field):
     fm_date = front_matter_dict.get(field)
+    
     if not fm_date:
         return None
 
     if isinstance(fm_date, datetime.datetime):
-        desired_date = fm_date.date()
-    elif isinstance(fm_date, datetime.date):
         desired_date = fm_date
+    elif isinstance(fm_date, datetime.date):
+        desired_date = datetime.datetime.combine(fm_date, datetime.datetime.min.time()) + datetime.timedelta(hours=6)
     else: # assuming it's a string
         desired_date = datetime.datetime.strptime(fm_date[:10], "%Y-%m-%d").date()
+        desired_date = datetime.datetime.combine(desired_date, datetime.datetime.min.time()) + datetime.timedelta(hours=6)
 
     return desired_date
 
@@ -283,12 +285,12 @@ def process_file(filepath):
     post_date = get_date(front_matter_dict, "date")
     draft = front_matter_dict.get("draft")
        
-    if draft and post_date <= datetime.date.today():
+    if draft and post_date <= datetime.datetime.now():
         front_matter_dict["draft"] = False
         draft = False
         update_lucas(f"Removed {filepath} from draft")
 
-    if not draft and post_date > datetime.date.today():
+    if not draft and post_date > datetime.datetime.now():
         front_matter_dict["draft"] = True
         draft = True
         update_lucas(f"Added {filepath} to draft")
@@ -305,34 +307,34 @@ def process_file(filepath):
     linkedin_linkback = front_matter_dict.get("linkedin-linkback")
 
     # Check if I want to move a posting date to the future for LinkedIn
-    if linkedin_repost and linkedin_posted and linkedin_target_date < datetime.date.today(): 
+    if linkedin_repost and linkedin_posted and linkedin_target_date < datetime.datetime.now(): 
         front_matter_dict["linkedin-target-date"] = linkedin_posted + datetime.timedelta(days=linkedin_repost)
         linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
 
-    if twitter_repost and twitter_posted and twitter_target_date < datetime.date.today(): 
+    if twitter_repost and twitter_posted and twitter_target_date < datetime.datetime.now(): 
         front_matter_dict["twitter-target-date"] = twitter_posted + datetime.timedelta(days=twitter_repost)
         twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
 
     # If target posting date is in the future, remove last posted date
-    if linkedin_target_date and linkedin_posted and linkedin_target_date > datetime.date.today():
+    if linkedin_target_date and linkedin_posted and linkedin_target_date > datetime.datetime.now():
         front_matter_dict.pop("linkedin-posted")
 
-    if twitter_target_date and twitter_posted and twitter_target_date > datetime.date.today():
+    if twitter_target_date and twitter_posted and twitter_target_date > datetime.datetime.now():
         front_matter_dict.pop("twitter-posted")
 
     # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
     # and the article target date is at least today  and the article is not in draft
-    if not draft and linkedin_target_date and linkedin_target_date <= datetime.date.today() and not linkedin_posted:
+    if not draft and linkedin_target_date and linkedin_target_date <= datetime.datetime.now() and not linkedin_posted:
         img = front_matter_dict.get("image")
         post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict, linkedin_linkback)
-        linkedin_posted = datetime.date.today().strftime("%Y-%m-%d")
+        linkedin_posted = datetime.datetime.now()
         front_matter_dict["linkedin-posted"] = linkedin_posted
 
-    if not draft and twitter_target_date and twitter_target_date <= datetime.date.today() and not twitter_posted:
+    if not draft and twitter_target_date and twitter_target_date <= datetime.datetime.now() and not twitter_posted:
         twitter_text = front_matter_dict.get("twitter-description")
         twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
         twitter_post_result = post_twitter_link(twitter_text, twitter_url)
-        twitter_posted = datetime.date.today().strftime("%Y-%m-%d")
+        twitter_posted = datetime.datetime.now()
         front_matter_dict["twitter-posted"] = twitter_posted
         update_lucas(f"Twitted: https://twitter.com/user/status/{twitter_post_result.data['id']}")
 
@@ -387,14 +389,14 @@ def add_to_calendar(filepath):
     # if draft:
     #     draft_txt = True
 
-    if blog_date > datetime.date.today():
-        list = [blog_date.strftime("%Y-%m-%d"), "Blog", title]
+    if blog_date > datetime.datetime.now():
+        list = [blog_date.strftime("%Y-%m-%dT%H:%M:%S"), "Blog", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     if tw_date and not tw_posted:
-        list = [tw_date.strftime("%Y-%m-%d"), "Twitter", title]
+        list = [tw_date.strftime("%Y-%m-%dT%H:%M:%S"), "Twitter", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     if li_date and not li_posted:
-        list = [li_date.strftime("%Y-%m-%d"), "LinkedIn", title]
+        list = [li_date.strftime("%Y-%m-%dT%H:%M:%S"), "LinkedIn", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     
     return df

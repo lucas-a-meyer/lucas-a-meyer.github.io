@@ -137,7 +137,7 @@
     "href": "posts/2022-06-30-happy-new-year-msft.html",
     "title": "Happy new year, Microsoft",
     "section": "",
-    "text": "Since then, I missed only the FY11 (I was a Ph.D. student) and FY21 (I was working for Amazon) fiscal year-ends.\nIf history is a guide, the next fiscal year-end I’ll miss will come only in 2031, maybe because I’ll be retired!\nIn these 20 years, I have worked in Brazil, in Florida and in Redmond, WA. I visited numerous countries for work. I have worked in sales, technical support, finance and now at the AI for Good Research lab. I have worked full-time, then as a vendor (during my grad school), then part-time and then full-time again. I have always appreciated the flexibility, but first and foremost, I appreciate the people. I have had excellent managers, and I have learned a ton from my colleagues. I hope some of them learned something from me, too.\nI am extremely thankful for having the opportunity to work for #Microsoft for this long. If I’m lucky, I’ll work here for at least 25 more years.\nHappy new year!"
+    "text": "If history is a guide, the next fiscal year-end I’ll miss will come only in 2031, maybe because I’ll be retired!\nIn these 20 years, I have worked in Brazil, in Florida and in Redmond, WA. I visited numerous countries for work. I have worked in sales, technical support, finance and now at the AI for Good Research lab. I have worked full-time, then as a vendor (during my grad school), then part-time and then full-time again. I have always appreciated the flexibility, but first and foremost, I appreciate the people. I have had excellent managers, and I have learned a ton from my colleagues. I hope some of them learned something from me, too.\nI am extremely thankful for having the opportunity to work for #Microsoft for this long. If I’m lucky, I’ll work here for at least 25 more years.\nHappy new (fiscal) year to all my Microsoft friends."
   },
   {
     "objectID": "posts/2022-06-23-charleston-vacations.html",
@@ -714,6 +714,13 @@
     "text": "(f you want to see how people are using a website, Microsoft Clarity is great, free and very easy to set up."
   },
   {
+    "objectID": "post_drafts/should-ds-know-linalg.html",
+    "href": "post_drafts/should-ds-know-linalg.html",
+    "title": "Lucas A. Meyer",
+    "section": "",
+    "text": "To my surprise, if you do a web search for whether data scientists should know linear algebra, the general answer is a resounding “yes”.\nIt’s not that I disagree that knowing linear algebra is useful, but if you ask the same question about “sql”, “statistics” and “endogeneity”, the results are a lot more nuanced. Instead of a resounding “yes”, we get the occasional “yes and no: SQL is nice but you can get by with pandas”, or “how much statistics do data scientists really need to know”.\n## What is a Data Scientist, really?\nOne of the problems may be related to the concept creep that happened to the data scientist profession. Different companies use names in conflicting ways. For example, a data scientist in one company may be called a data analyst in another. There is a wide array of sub-categories related to the data science profession, and they are used very inconsistently.\nFamously, at Amazon, the main difference between Data Scientists and Applied Scientists is that Applied Scientists (who, according to Blind, earn more) are expected to know coding at the same skill of a L4 engineer. The corollary is that Data Scientists at Amazon don’t know how to write code at the L4 skill level."
+  },
+  {
     "objectID": "post_drafts/my-code-is-compiling.html",
     "href": "post_drafts/my-code-is-compiling.html",
     "title": "Lucas A. Meyer",
@@ -725,6 +732,6 @@
     "href": "calendar.html",
     "title": "Calendar",
     "section": "",
-    "text": "Target date\nPlatform\nTitle\n\n\n\n\n2022-07-01\nTwitter\nHappy new year, Microsoft\n\n\n2022-07-01\nLinkedIn\nHappy new year, Microsoft\n\n\n2022-07-04\nBlog\nThat’s a good question\n\n\n2022-07-05\nTwitter\nThat’s a good question\n\n\n2022-07-05\nLinkedIn\nThat’s a good question\n\n\n2022-07-12\nTwitter\nWhat happens when a hiring manager posts a position on LinkedIn\n\n\n2022-07-12\nLinkedIn\nWhat happens when a hiring manager posts a position on LinkedIn\n\n\n2022-07-18\nTwitter\nThe XY Problem\n\n\n2022-07-18\nLinkedIn\nThe XY Problem\n\n\n2022-07-22\nTwitter\nI’m a hiring manager: this is why I didn’t answer your LinkedIn message\n\n\n2022-07-22\nLinkedIn\nI’m a hiring manager: this is why I didn’t answer your LinkedIn message\n\n\n2022-09-11\nTwitter\nData science and 9/11\n\n\n2022-09-11\nLinkedIn\nData science and 9/11\n\n\n2022-10-04\nLinkedIn\nChesterton’s Fence\n\n\n2022-10-21\nTwitter\nChesterton’s Fence\n\n\n\n\nGenerated on 2022-06-30 20:00:05.398534"
+    "text": "Target date\nPlatform\nTitle\n\n\n\n\n2022-07-01T06:00:00\nTwitter\nHappy new year, Microsoft\n\n\n2022-07-01T06:00:00\nLinkedIn\nHappy new year, Microsoft\n\n\n2022-07-04T06:00:00\nBlog\nThat’s a good question\n\n\n2022-07-05T06:00:00\nTwitter\nThat’s a good question\n\n\n2022-07-05T06:00:00\nLinkedIn\nThat’s a good question\n\n\n2022-07-12T06:00:00\nTwitter\nWhat happens when a hiring manager posts a position on LinkedIn\n\n\n2022-07-12T06:00:00\nLinkedIn\nWhat happens when a hiring manager posts a position on LinkedIn\n\n\n2022-07-18T06:00:00\nTwitter\nThe XY Problem\n\n\n2022-07-18T06:00:00\nLinkedIn\nThe XY Problem\n\n\n2022-07-22T06:00:00\nTwitter\nI’m a hiring manager: this is why I didn’t answer your LinkedIn message\n\n\n2022-07-22T06:00:00\nLinkedIn\nI’m a hiring manager: this is why I didn’t answer your LinkedIn message\n\n\n2022-09-11T06:00:00\nTwitter\nData science and 9/11\n\n\n2022-09-11T06:00:00\nLinkedIn\nData science and 9/11\n\n\n2022-10-04T06:00:00\nLinkedIn\nChesterton’s Fence\n\n\n2022-10-21T06:00:00\nTwitter\nChesterton’s Fence\n\n\n\n\nGenerated on 2022-06-30 21:22:22.410673"
   }
 ]

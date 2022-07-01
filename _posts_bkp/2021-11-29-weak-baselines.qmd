@@ -1,0 +1,27 @@
+---
+author: Lucas A. Meyer
+categories: data science
+date: '2021-11-29'
+image: /images/weak-baseline.jpg
+include-in-header: _msft-clarity.html
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712
+linkedin-posted: '2021-11-29'
+title: Weak baselines
+twitter-posted: '2021-11-29'
+---
+
+Gather close as I tell you another cautionary tale about data science.
+
+The finance team of a company was trying to forecast their monthly cash. An analyst had been doing that for about ten years, and had a record of cash actually received per month going back all those years. He realized that some months, like December, received a lot more cash than others, like February.
+
+The analyst used Excel to calculate the percentage change for each month. For example, if the company received $100M in October 2009 and $80M in November 2009, he recorded -20% for Nov 2009. To calculate November 2021, he would take the average of the percentage changes for November over the last 10 years (2011 to 2020) and apply it to the October 2020 number.
+
+It didn't work too well. The mean absolute percentage error (MAPE) was around 20%. For some months, the forecast missed by a lot, causing significant problems, including having to urgently borrow cash at significant cost. Eventually, the company decided to hire a data science consulting company.
+
+The consulting company immediately concluded that the problem was due to lack of data. Ten years of monthly data resulted in just 120 data points. To do data science, they said, they needed more than that. Luckily, the analyst had also been recording the daily data. Now, with thousands of data points, the consulting company used an LSTM deep learning model to forecast cash by day. It also didn't work too well, but when they aggregated it by month, it did a lot better than the analyst's original forecast: MAPE was closer to 10%.
+
+The project was celebrated as a success. A press release was issued, promoting the benefits of using cloud technologies and deep learning for more accurate financial forecasting. The person who hired the consultants was promoted.
+
+A few months later, a new data scientist joined the company, looked at the monthly data, and used the Excel FORECAST.ETS function to achieve a MAPE of 1% in seconds. This time, there was no press release.
+
+When starting a data science project, be careful about the baseline you're using to determine success. Choosing a poor baseline (like the original analyst model) can result in thinking that fairly bad outcomes (like the one from the LSTM model) are good, just because they're better than horrible outcomes. I've seen a number of cases in which a simple heuristic handily beat a complicated ML model.

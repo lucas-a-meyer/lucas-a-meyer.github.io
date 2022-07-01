@@ -1,0 +1,27 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+- hiring
+- interviewing
+date: '2022-04-13'
+image: /images/offer-only.jpg
+include-in-header: _msft-clarity.html
+linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816
+linkedin-posted: '2022-04-13'
+title: My policies on interviewing
+twitter-posted: '2022-04-13'
+---
+
+I have recently announced that I'm leaving Amazon and starting a new job (yet to be announced) next week. This means that I have been on the interviewee side of the interview process somewhat recently. 
+
+One of the most important things to know is that the way of getting better at interviewing is... well, interviewing! It's good to be on both sides of the table, both as an interviewer and as an interviewee. Practice helps you to do better, but it also helps you see where you're not doing well.
+
+I have two policies about interviewing. The first policy is that I will accept an invitation to interview at least once a year, even if I'm happy with my job, which I frequently am. I don't like wasting people's time, so it has to be a place that I would really consider going to if the process worked out. The reason for that policy is that I once spent many years without interviewing and when a good opportunity showed up, I was very out of practice, and I think a lot of me not getting it was because I barely understood how the process worked in other companies. I'm not sure I'll keep this policy.
+
+The second policy, which I'm even less sure of its helpfulness, is that once I decide that I'm willing to change jobs, I will be fairly open to interview for lots of different things. For example, if I get invited to interview for my dream job and decide that I would leave my current job for it, I'll interview for lots of other jobs as well. This gives me a lot of extra work and stress (interviewing is hard), but it also allows me to practice a lot and find my weaker spots, and to have a backup in case things don't work out.
+
+One of the hardest questions for me is "why do you want to leave your current job and join us". I tend to like the job I have, and also tend to be more forthcoming than the average interviewee. My sincere answer is usually far away from "this is my dream job". It's possible that I have only succeeded in my latest interview because it's a place that I really, really, really love and admire in a company that I love and admire, too. It was sincerely my dream job and team. In any case, after some practice in interviews (and lots of help from Katie Baird, PCC) I started to get better at answering that question, while still being sincere, which led to far more offers/quasi-offers.
+
+To wrap this up, I want to recognize that my experience above is one of extreme privilege: I have been around for a long time, and I'm extremely fortunate to be invited to interview. A large number of people are in earlier stages, when even getting an interview is hard. If you are in that situation, I think the takeaway is to still try to get as much practice as you can (by being open even after you're far into some process, by doing mock interviews in both sides of the table, etc.). I hope your time will come and I hope that I can help.
+

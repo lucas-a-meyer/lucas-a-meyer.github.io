@@ -1,0 +1,25 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: '2021-05-06'
+include-in-header: _msft-clarity.html
+linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir
+linkedin-posted: '2021-05-06'
+title: Getting nervous during an interview
+twitter-posted: '2021-05-06'
+---
+
+I do a lot of interviews, and they are high-pressure situations. 
+
+It's very common for people to get nervous during them. When I'm doing a technical interview and I see a candidate getting nervous:
+
+- I ask them if they need a hint
+- I write a "helper function" to make the problem easier to solve
+- I reduce the complexity of the problem to a simpler case
+- I try to reassure them by telling them that understanding how they're thinking about the problem is as important as solving the problem: this helps me see where they are stuck.
+
+Frankly, I'm not that sure if what I do helps. Does it?
+
+What would you like interviewers to do if they realize you're stuck and getting nervous?
