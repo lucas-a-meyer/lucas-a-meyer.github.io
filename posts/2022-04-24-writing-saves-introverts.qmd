@@ -9,10 +9,8 @@ include-in-header: _msft-clarity.html
 layout: post
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776
 linkedin-posted: 2022-04-22 06:00:00
-linkedin-target-date: null
 title: How writing can help introverts communicate
 twitter-posted: 2022-04-22 06:00:00
-twitter-target-date: null
 ---
 
 I don't like talking to people, but I don't mind writing to them.

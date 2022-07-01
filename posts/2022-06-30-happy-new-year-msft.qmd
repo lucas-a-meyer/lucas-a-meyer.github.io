@@ -1,7 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: 2022-06-30 03:00:00
-draft: true
+draft: false
 image: /images/just-hired-microsoft.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: false

@@ -4,10 +4,8 @@ date: 2022-05-10 06:00:00
 image: /images/money-gun.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-05-10 06:00:00
-linkedin-target-date: null
 title: Work life balance is worth something
 twitter-posted: 2022-05-10 06:00:00
-twitter-target-date: null
 ---
 
 Should you choose #Microsoft or #FAANG?

@@ -6,11 +6,9 @@ image: /images/good-question.jpg
 include-after-body: _disclaimer.html
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-posted: null
 linkedin-target-date: 2022-07-05 06:00:00
 title: That's a good question
 twitter-description: Is that really a good question?
-twitter-posted: null
 twitter-target-date: 2022-07-05 06:00:00
 ---
 
