@@ -6,9 +6,11 @@ date: 2021-07-31 06:00:00
 image: /images/become-manager.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
-linkedin-posted: '2021-07-31'
+linkedin-posted: 2021-07-31 06:00:00
+linkedin-target-date: null
 title: So you want to become a manager
-twitter-posted: '2021-07-31'
+twitter-posted: 2021-07-31 06:00:00
+twitter-target-date: null
 ---
 
 Nobody in their right mind would ask me about how to become a singer or dancer.

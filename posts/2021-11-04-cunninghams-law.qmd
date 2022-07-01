@@ -5,9 +5,11 @@ date: 2021-11-04 06:00:00
 image: /images/cunninghams-law.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769
-linkedin-posted: '2021-11-04'
+linkedin-posted: 2021-11-04 06:00:00
+linkedin-target-date: null
 title: Cunningham's Law
-twitter-posted: '2021-11-04'
+twitter-posted: 2021-11-04 06:00:00
+twitter-target-date: null
 ---
 
 Cunningham's Law states "the best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer." 

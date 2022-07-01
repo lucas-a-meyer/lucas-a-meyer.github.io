@@ -6,9 +6,11 @@ date: 2021-09-06 06:00:00
 image: /images/goonies2.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096
-linkedin-posted: '2021-09-06'
+linkedin-posted: 2021-09-06 06:00:00
+linkedin-target-date: null
 title: Mad Ned's career advice
-twitter-posted: '2021-09-06'
+twitter-posted: 2021-09-06 06:00:00
+twitter-target-date: null
 ---
 
 When I write that I have a "decades-long" career, I'm stretching it a little bit: my career is just a little bit over 20 years. 

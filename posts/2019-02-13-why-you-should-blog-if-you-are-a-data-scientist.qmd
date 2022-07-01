@@ -4,9 +4,11 @@ date: 2019-02-13 06:00:00
 draft: false
 image: /images/useful-output.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: '2019-02-13'
+linkedin-posted: 2019-02-13 06:00:00
+linkedin-target-date: null
 title: Why you should blog if you are a data scientist
-twitter-posted: '2019-02-13'
+twitter-posted: 2019-02-13 06:00:00
+twitter-target-date: null
 ---
 
 A while back, David Robinson offered the following advice on Twitter:

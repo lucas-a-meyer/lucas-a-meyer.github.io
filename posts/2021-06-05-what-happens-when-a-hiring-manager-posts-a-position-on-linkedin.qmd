@@ -8,9 +8,11 @@ date: 2021-06-05 06:00:00
 image: /images/interview-process.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-posts-position-linkedin-meyer
-linkedin-target-date: 2022-07-12
+linkedin-posted: null
+linkedin-target-date: 2022-07-12 06:00:00
 title: What happens when a hiring manager posts a position on LinkedIn
-twitter-target-date: 2022-07-12
+twitter-posted: null
+twitter-target-date: 2022-07-12 06:00:00
 ---
 
 As of June 2021, I manage a technical team at Amazon, and I have some positions open. And when you have a position open, it's pretty standard to post it to LinkedIn. 

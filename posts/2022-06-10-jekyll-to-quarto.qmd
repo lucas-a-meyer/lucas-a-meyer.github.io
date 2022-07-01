@@ -4,9 +4,11 @@ date: 2022-06-10 06:00:00
 freeze: true
 image: /images/quarto.png
 include-in-header: _msft-clarity.html
-linkedin-posted: '2022-06-10'
+linkedin-posted: 2022-06-10 06:00:00
+linkedin-target-date: null
 title: Converting my blog from Jekyll to Quarto
-twitter-posted: '2022-06-10'
+twitter-posted: 2022-06-10 06:00:00
+twitter-target-date: null
 ---
 
 I thought moving from Jekyll to Quarto was going to be hard. It was not.

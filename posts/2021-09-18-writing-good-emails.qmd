@@ -5,9 +5,11 @@ date: 2021-09-18 06:00:00
 image: /images/grad-student-email.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746
-linkedin-posted: '2021-09-18'
+linkedin-posted: 2021-09-18 06:00:00
+linkedin-target-date: null
 title: Writing good emails
-twitter-posted: '2021-09-18'
+twitter-posted: 2021-09-18 06:00:00
+twitter-target-date: null
 ---
 
 Earlier in my career, I took quite a while writing emails. As most people earlier in their careers, my main concern was to "not be wrong" rather than actually "moving the discussion forward efficiently" (or ending it). That was especially true when senior people were in the thread.

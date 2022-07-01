@@ -6,9 +6,11 @@ categories:
 date: 2021-04-15 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
-linkedin-posted: '2021-04-15'
+linkedin-posted: 2021-04-15 06:00:00
+linkedin-target-date: null
 title: Flunking a SQL interview with 20+ years of practice
-twitter-posted: '2021-04-15'
+twitter-posted: 2021-04-15 06:00:00
+twitter-target-date: null
 ---
 
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998.

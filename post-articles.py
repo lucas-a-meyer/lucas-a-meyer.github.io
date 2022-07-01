@@ -344,7 +344,11 @@ def process_file(filepath):
         front_matter_dict["include-in-header"] = "_msft-clarity.html"
 
     front_matter_dict["date"] = post_date
-
+    front_matter_dict["linkedin-posted"] = linkedin_posted
+    front_matter_dict["twitter-posted"] = twitter_posted
+    front_matter_dict["linkedin-target-date"] = linkedin_target_date
+    front_matter_dict["twitter-target-date"] = twitter_target_date
+    
     update_front_matter(filepath, front_matter_dict)
 
 def process_directory(di):
@@ -393,13 +397,13 @@ def add_to_calendar(filepath):
     #     draft_txt = True
 
     if blog_date > datetime.datetime.now():
-        list = [blog_date.strftime("%Y-%m-%dT%H:%M:%S"), "Blog", title]
+        list = [blog_date.strftime("%Y-%m-%d %H:%M:%S"), "Blog", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     if tw_date and not tw_posted:
-        list = [tw_date.strftime("%Y-%m-%dT%H:%M:%S"), "Twitter", title]
+        list = [tw_date.strftime("%Y-%m-%d %H:%M:%S"), "Twitter", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     if li_date and not li_posted:
-        list = [li_date.strftime("%Y-%m-%dT%H:%M:%S"), "LinkedIn", title]
+        list = [li_date.strftime("%Y-%m-%d %H:%M:%S"), "LinkedIn", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     
     return df

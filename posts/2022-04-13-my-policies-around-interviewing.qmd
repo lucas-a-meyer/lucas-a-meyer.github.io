@@ -8,9 +8,11 @@ date: 2022-04-13 06:00:00
 image: /images/offer-only.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816
-linkedin-posted: '2022-04-13'
+linkedin-posted: 2022-04-13 06:00:00
+linkedin-target-date: null
 title: My policies on interviewing
-twitter-posted: '2022-04-13'
+twitter-posted: 2022-04-13 06:00:00
+twitter-target-date: null
 ---
 
 I have recently announced that I'm leaving Amazon and starting a new job (yet to be announced) next week. This means that I have been on the interviewee side of the interview process somewhat recently. 

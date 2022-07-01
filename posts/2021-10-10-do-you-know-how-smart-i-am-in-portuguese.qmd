@@ -5,9 +5,11 @@ date: 2021-10-10 06:00:00
 image: /images/smart-portuguese.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6853333112810815488
-linkedin-posted: '2021-10-10'
+linkedin-posted: 2021-10-10 06:00:00
+linkedin-target-date: null
 title: Do you know how smart I am in Portuguese?
-twitter-posted: '2021-10-10'
+twitter-posted: 2021-10-10 06:00:00
+twitter-target-date: null
 ---
 
 Recently, several people at work said they liked my #writing. 

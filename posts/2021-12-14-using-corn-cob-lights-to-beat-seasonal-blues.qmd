@@ -4,9 +4,11 @@ date: 2021-12-14 06:00:00
 image: /images/rainy-day.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912
-linkedin-posted: '2021-12-14'
+linkedin-posted: 2021-12-14 06:00:00
+linkedin-target-date: null
 title: Using corn cob lights to beat seasonal blues
-twitter-posted: '2021-12-14'
+twitter-posted: 2021-12-14 06:00:00
+twitter-target-date: null
 ---
 
 There are a lot of tech companies in Seattle, always hiring (I will myself post a new position soon). And if you know something about Seattle, it's probably that it rains a lot.

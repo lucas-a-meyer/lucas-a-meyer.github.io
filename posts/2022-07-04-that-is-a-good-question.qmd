@@ -6,10 +6,12 @@ image: /images/good-question.jpg
 include-after-body: _disclaimer.html
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-target-date: '2022-07-05'
+linkedin-posted: null
+linkedin-target-date: 2022-07-05 06:00:00
 title: That's a good question
 twitter-description: Is that really a good question?
-twitter-target-date: '2022-07-05'
+twitter-posted: null
+twitter-target-date: 2022-07-05 06:00:00
 ---
 
 I sometimes cringe when people say "that's a good question" and it was not a good question. But even bad questions are good, because of pluralistic ignorance.

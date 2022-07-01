@@ -4,9 +4,11 @@ date: 2022-04-04 06:00:00
 image: /images/lucas-in-charleston.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376
-linkedin-posted: '2022-04-04'
+linkedin-posted: 2022-04-04 06:00:00
+linkedin-target-date: null
 title: South Carolina dolphins!
-twitter-posted: '2022-04-04'
+twitter-posted: 2022-04-04 06:00:00
+twitter-target-date: null
 ---
 
 After a long winter in Seattle, I finally got some vacations, which I used to visit the Isle of Palms, SC. 

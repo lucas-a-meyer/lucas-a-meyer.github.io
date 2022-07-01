@@ -5,9 +5,11 @@ date: 2021-11-22 06:00:00
 image: /images/reverse-causation.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848
-linkedin-posted: '2021-11-22'
+linkedin-posted: 2021-11-22 06:00:00
+linkedin-target-date: null
 title: Reverse causation
-twitter-posted: '2021-11-22'
+twitter-posted: 2021-11-22 06:00:00
+twitter-target-date: null
 ---
 
 Gather close as I tell you a cautionary tale about data science. 

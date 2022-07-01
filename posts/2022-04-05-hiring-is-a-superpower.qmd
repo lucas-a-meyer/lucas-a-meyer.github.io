@@ -7,9 +7,11 @@ date: 2022-04-05 06:00:00
 image: /images/gladiator.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506
-linkedin-posted: '2022-04-05'
+linkedin-posted: 2022-04-05 06:00:00
+linkedin-target-date: null
 title: Hiring is a superpower
-twitter-posted: '2022-04-05'
+twitter-posted: 2022-04-05 06:00:00
+twitter-target-date: null
 ---
 One of my superpowers from my #Amazon review process this year was "Hire and Develop the Best". 
 

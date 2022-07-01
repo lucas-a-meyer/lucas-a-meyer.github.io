@@ -5,13 +5,15 @@ categories:
 date: 2021-07-22 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
+linkedin-posted: null
 linkedin-repost: 180
-linkedin-target-date: '2022-07-18'
+linkedin-target-date: 2022-07-18 06:00:00
 title: The XY Problem
 twitter-description: I've frequently been asked what's the most important thing new
   hires should know
+twitter-posted: null
 twitter-repost: 180
-twitter-target-date: '2022-07-18'
+twitter-target-date: 2022-07-18 06:00:00
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?"
