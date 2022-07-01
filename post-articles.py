@@ -349,8 +349,19 @@ def process_file(filepath):
         front_matter_dict["linkedin-posted"] = linkedin_posted
 
     if not draft and twitter_target_date and twitter_target_date <= datetime.datetime.now() and not twitter_posted:
-        twitter_text = front_matter_dict.get("twitter-description")
+
         post_type = front_matter_dict.get("post-type")
+
+        twitter_text = ""
+        if front_matter_dict.get("twitter-description"):
+            twitter_text = front_matter_dict.get("twitter-description")
+        else: # doesn't have a description, let's get it from the text
+            if not post_type or post_type == "link": # need to leave some characters for the link
+                last_break = txt[:240].rfind("\\n")
+                twitter_text = txt[:last_break] + "(...) "
+            if post_type == "text":
+                last_break = txt[:280].rfind("\\n")
+                twitter_text = txt[:last_break]
         
         if not post_type or post_type == "link":
             twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
