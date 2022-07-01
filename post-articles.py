@@ -140,7 +140,7 @@ def main():
     load_dotenv()
 
     # Configure directories with posts
-    post_directories = ["posts"]
+    post_directories = ["posts", "tweets"]
 
     # For each directory, process it
     for di in post_directories:
@@ -284,16 +284,17 @@ def process_file(filepath):
     
     post_date = get_date(front_matter_dict, "date")
     draft = front_matter_dict.get("draft")
-       
-    if draft and post_date <= datetime.datetime.now():
-        front_matter_dict["draft"] = False
-        draft = False
-        update_lucas(f"Removed {filepath} from draft")
 
-    if not draft and post_date > datetime.datetime.now():
-        front_matter_dict["draft"] = True
-        draft = True
-        update_lucas(f"Added {filepath} to draft")
+    if post_date:       
+        if draft and post_date <= datetime.datetime.now():
+            front_matter_dict["draft"] = False
+            draft = False
+            update_lucas(f"Removed {filepath} from draft")
+
+        if not draft and post_date > datetime.datetime.now():
+            front_matter_dict["draft"] = True
+            draft = True
+            update_lucas(f"Added {filepath} to draft")
 
     linkedin_posted = get_date(front_matter_dict, "linkedin-posted")
     twitter_posted = get_date(front_matter_dict, "twitter-posted")
@@ -310,7 +311,6 @@ def process_file(filepath):
     if linkedin_repost and linkedin_posted and linkedin_target_date < datetime.datetime.now(): 
         front_matter_dict["linkedin-target-date"] = linkedin_posted + datetime.timedelta(days=linkedin_repost)
         linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
-
     if twitter_repost and twitter_posted and twitter_target_date < datetime.datetime.now(): 
         front_matter_dict["twitter-target-date"] = twitter_posted + datetime.timedelta(days=twitter_repost)
         twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
@@ -318,7 +318,6 @@ def process_file(filepath):
     # If target posting date is in the future, remove last posted date
     if linkedin_target_date and linkedin_posted and linkedin_target_date > datetime.datetime.now():
         front_matter_dict.pop("linkedin-posted")
-
     if twitter_target_date and twitter_posted and twitter_target_date > datetime.datetime.now():
         front_matter_dict.pop("twitter-posted")
 
@@ -332,8 +331,15 @@ def process_file(filepath):
 
     if not draft and twitter_target_date and twitter_target_date <= datetime.datetime.now() and not twitter_posted:
         twitter_text = front_matter_dict.get("twitter-description")
-        twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
-        twitter_post_result = post_twitter_link(twitter_text, twitter_url)
+        post_type = front_matter_dict.get("post-type")
+        
+        if not post_type or post_type == "link":
+            twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
+            twitter_post_result = post_twitter_link(twitter_text, twitter_url)
+
+        if post_type == "text":
+            twitter_post_result = post_twitter_link(twitter_text, "")
+    
         twitter_posted = datetime.datetime.now()
         front_matter_dict["twitter-posted"] = twitter_posted
         update_lucas(f"Twitted: https://twitter.com/user/status/{twitter_post_result.data['id']}")
@@ -395,7 +401,7 @@ def add_to_calendar(filepath):
     # if draft:
     #     draft_txt = True
 
-    if blog_date > datetime.datetime.now():
+    if blog_date and blog_date > datetime.datetime.now():
         list = [blog_date.strftime("%Y-%m-%d %H:%M:%S"), "Blog", title]
         df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
     if tw_date and not tw_posted:
