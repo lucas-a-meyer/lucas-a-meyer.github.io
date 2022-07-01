@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-date: '2018-07-08'
+date: 2018-07-08 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-posted: '2018-07-08'
 title: Praising Conway's Data Science Venn Diagram

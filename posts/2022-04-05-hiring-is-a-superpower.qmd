@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 categories:
 - career
 - hiring
-date: '2022-04-05'
+date: 2022-04-05 06:00:00
 image: /images/gladiator.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506

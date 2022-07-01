@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-date: '2018-06-25'
+date: 2018-06-25 06:00:00
 image: https://cdn-images-1.medium.com/max/2000/1*YfxWi5QZkShNHS0XLuKlMQ.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2018-06-25

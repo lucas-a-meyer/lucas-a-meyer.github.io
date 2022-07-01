@@ -4,7 +4,7 @@ categories:
 - career
 - hiring
 - interviews
-date: '2021-06-05'
+date: 2021-06-05 06:00:00
 image: /images/interview-process.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-posts-position-linkedin-meyer

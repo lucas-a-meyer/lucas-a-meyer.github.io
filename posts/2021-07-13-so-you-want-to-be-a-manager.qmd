@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories:
 - management
-date: '2021-07-13'
+date: 2021-07-13 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6820742108136120320
 linkedin-posted: '2021-07-13'

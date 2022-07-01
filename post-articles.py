@@ -343,6 +343,8 @@ def process_file(filepath):
     if not front_matter_dict.get("include-in-header"):
         front_matter_dict["include-in-header"] = "_msft-clarity.html"
 
+    front_matter_dict["date"] = post_date
+
     update_front_matter(filepath, front_matter_dict)
 
 def process_directory(di):

@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-date: '2019-02-13'
+date: 2019-02-13 06:00:00
 draft: false
 image: /images/useful-output.jpg
 include-in-header: _msft-clarity.html

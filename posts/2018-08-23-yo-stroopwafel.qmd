@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-date: '2018-08-23'
+date: 2018-08-23 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-posted: '2018-08-23'
 title: Yo, Stroop!

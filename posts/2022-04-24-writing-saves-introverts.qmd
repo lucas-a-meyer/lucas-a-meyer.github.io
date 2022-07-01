@@ -3,7 +3,7 @@ categories:
 - career
 - neurodiversity
 - writing
-date: '2022-04-22'
+date: 2022-04-22 06:00:00
 image: /images/writing.jpg
 include-in-header: _msft-clarity.html
 layout: post

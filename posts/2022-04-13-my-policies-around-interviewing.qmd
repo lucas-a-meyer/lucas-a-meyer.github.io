@@ -4,7 +4,7 @@ categories:
 - career
 - hiring
 - interviewing
-date: '2022-04-13'
+date: 2022-04-13 06:00:00
 image: /images/offer-only.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816

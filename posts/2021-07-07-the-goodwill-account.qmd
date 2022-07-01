@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories:
 - career
-date: '2021-07-07'
+date: 2021-07-07 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6818567778430275584
 linkedin-posted: '2021-07-07'

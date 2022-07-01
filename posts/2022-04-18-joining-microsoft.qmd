@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories:
 - career
-date: '2022-04-18'
+date: 2022-04-18 06:00:00
 image: /images/just-hired-microsoft.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424

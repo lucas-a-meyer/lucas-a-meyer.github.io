@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-date: '2022-06-20'
+date: 2022-06-20 06:00:00
 draft: false
 image: /images/computer-urinal.jpg
 include-in-header: _msft-clarity.html

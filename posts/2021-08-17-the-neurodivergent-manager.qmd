@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories:
 - management
-date: '2021-08-17'
+date: 2021-08-17 06:00:00
 image: /images/goonies.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6833403014171250688

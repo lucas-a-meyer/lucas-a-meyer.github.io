@@ -1,6 +1,6 @@
 ---
 author: Lucas A. Meyer
-date: '2021-12-14'
+date: 2021-12-14 06:00:00
 image: /images/rainy-day.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912
