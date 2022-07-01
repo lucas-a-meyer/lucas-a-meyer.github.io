@@ -142,10 +142,28 @@ def main():
     # Configure directories with posts
     post_directories = ["posts", "tweets"]
 
+    calendar = pd.DataFrame(columns=["Target date", "Platform", "Title"])
     # For each directory, process it
     for di in post_directories:
-        process_directory(di)
-    
+        calendar = pd.concat([calendar, process_directory(di)])
+
+    calendar_md = calendar.to_markdown(index=False, tablefmt="grid")
+
+    header=""
+    with open("calendar_front_matter.yaml") as f:
+        header = f.readlines()
+
+    with open("calendar.qmd", "wt") as calendar_file:
+        calendar_file.writelines(header)
+        calendar_file.write("\n")
+        calendar_file.write("## Future posts\n\n")
+        calendar_file.write(calendar_md)
+        calendar_file.write("\n")
+        calendar_file.write("-----------------------------------")
+        calendar_file.write("\n")     
+        calendar_file.write(f"Generated on {str(datetime.datetime.now())}\n")
+            
+        
     return 0
 
 def get_upload_url(token, person_id):
@@ -366,23 +384,7 @@ def process_directory(di):
                 process_file(filepath)
                 calendar = pd.concat([calendar, add_to_calendar(filepath)])
     calendar.sort_values("Target date", inplace=True)
-    calendar_md = calendar.to_markdown(index=False, tablefmt="grid")
-    
-    header=""
-    with open("calendar_front_matter.yaml") as f:
-        header = f.readlines()
-
-    with open("calendar.qmd", "wt") as calendar_file:
-        calendar_file.writelines(header)
-        calendar_file.write("\n")
-        calendar_file.write("## Future posts\n\n")
-        calendar_file.write(calendar_md)
-        calendar_file.write("\n")
-        calendar_file.write("-----------------------------------")
-        calendar_file.write("\n")     
-        calendar_file.write(f"Generated on {str(datetime.datetime.now())}\n")
-
-
+    return calendar
 
 def add_to_calendar(filepath):
     yml, dummy = get_file_plaintext(filepath)
