@@ -147,6 +147,7 @@ def main():
     for di in post_directories:
         calendar = pd.concat([calendar, process_directory(di)])
 
+    calendar.sort_values("Target date", inplace=True)
     calendar_md = calendar.to_markdown(index=False, tablefmt="grid")
 
     header=""
@@ -383,7 +384,6 @@ def process_directory(di):
                 filepath = os.path.join(root, filename)
                 process_file(filepath)
                 calendar = pd.concat([calendar, add_to_calendar(filepath)])
-    calendar.sort_values("Target date", inplace=True)
     return calendar
 
 def add_to_calendar(filepath):

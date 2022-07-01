@@ -1,0 +1,7 @@
+---
+include-in-header: _msft-clarity.html
+post-type: text
+title: Changing Quarto's PPT font size
+twitter-description: When creating PowerPoint presentations from @quarto_pub, I couldn't find how to change the size of the monospace font. So I wrote a little script for it https://github.com/quarto-dev/quarto-cli/discussions/1272
+twitter-target-date: 2022-07-01 14:00:00
+---
