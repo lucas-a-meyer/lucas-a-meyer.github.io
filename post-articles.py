@@ -229,7 +229,7 @@ def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
         if link:
             li_text = li_text + f"\\n\\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
         else:
-            li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio) at {linkpath}"
+            li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio)."
 
     print(li_text)
 
