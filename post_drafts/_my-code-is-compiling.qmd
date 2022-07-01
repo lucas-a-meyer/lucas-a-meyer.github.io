@@ -1,4 +1,7 @@
 If you're a data scientist, you're probably very much used to waiting for model training results.
 
-I wrote a tiny script that uses Twilio to text me when my model is done.
+Sometimes I wait for so long that I forget to check back. To prevent that, I wrote a tiny script that uses [Twilio](https://www.twilio.com) to _text_ me when my model is done training. 
 
+Twilio is inexpensive. At the time I'm writing this, [it costs $1 per month for a phone number](https://www.twilio.com/sms/pricing/us). You can also use your own phone for 50 cents per month, but I didn't try that yet. Each text costs less than 1 cent. Even in a month when I am getting lots of notifications, I usually spend less than $2.
+
+The code is really a one-liner.
