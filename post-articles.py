@@ -118,7 +118,6 @@ def update_front_matter(filepath, new_front_matter_dict):
     new_file_content = new_yml + get_md_content(filepath)
     with open(filepath, "w") as f:
         f.write(new_file_content)
-    print(new_front_matter_dict)
 
 def get_date(front_matter_dict, field):
     fm_date = front_matter_dict.get(field)
