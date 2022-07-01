@@ -4,4 +4,4 @@ post-type: text
 title: Automatically upgrading Quarto
 twitter-target-date: 2022-07-05 06:00:00
 ---
-@quarto_pub is already great, but there are a lot of minor builds happening daily. I wrote a quick shell script to install the latest version: https://github.com/quarto-dev/quarto-cli/discussions/1232
+@quarto_pub is already great, but there are a lot of minor builds happening daily. I wrote a quick shell script to install the latest version: https://links.meyerperin.com/tnk
