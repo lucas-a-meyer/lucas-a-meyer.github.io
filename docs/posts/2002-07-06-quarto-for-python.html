@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2022-07-07">
 
-<title>Lucas A. Meyer - Calendar</title>
+<title>Lucas A. Meyer - Quarto with Python</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,23 +20,23 @@ ul.task-list{list-style: none;}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/data-beaker.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//images/data-beaker.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,15 +73,29 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 }
 </script>
 <script async="" src="https://hypothes.is/embed.js"></script>
+<!-- Clarity tracking code for https://meyerperin.com/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "cjhrvqb66a");
+</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Lucas A. Meyer - Calendar">
-<meta property="og:description" content="Generated on 2022-07-04 14:45:03.263394">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - Quarto with Python">
+<meta property="og:description" content="I am a firm believer in “learning out loud”, that is, writing about what you learned.">
+<meta property="og:image" content="https://www.meyerperin.com/images/quarto.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta name="twitter:title" content="Lucas A. Meyer - Calendar">
-<meta name="twitter:description" content="Generated on 2022-07-04 14:45:03.263394">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:height" content="77">
+<meta property="og:image:width" content="320">
+<meta name="twitter:title" content="Lucas A. Meyer - Quarto with Python">
+<meta name="twitter:description" content="I am a firm believer in “learning out loud”, that is, writing about what you learned.">
+<meta name="twitter:image" content="https://www.meyerperin.com/images/quarto.png">
+<meta name="twitter:image-height" content="77">
+<meta name="twitter:image-width" content="320">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -88,7 +104,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Lucas A. Meyer</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -97,16 +113,16 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">Home</a>
+    <a class="nav-link" href="../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./using-quarto">Quarto with Python</a>
+    <a class="nav-link" href="../using-quarto">Quarto with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./python-gnn">GNNs with Python</a>
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./econometrics-python">Econometrics with Python</a>
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -126,7 +142,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">About</a>
+    <a class="nav-link" href="../about.html">About</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -144,127 +160,49 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Calendar</h1>
+<h1 class="title">Quarto with Python</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 7, 2022</p>
+    </div>
+  </div>
     
   </div>
   
 
 </header>
 
-<section id="future-posts" class="level2">
-<h2 class="anchored" data-anchor-id="future-posts">Future posts</h2>
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 11%">
-<col style="width: 67%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Target date</th>
-<th>Platform</th>
-<th>Title</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2022-07-05 06:00:00</td>
-<td>Twitter</td>
-<td>That’s a good question</td>
-</tr>
-<tr class="even">
-<td>2022-07-05 06:00:00</td>
-<td>LinkedIn</td>
-<td>That’s a good question</td>
-</tr>
-<tr class="odd">
-<td>2022-07-06 06:00:00</td>
-<td>Twitter</td>
-<td>Automatically upgrading Quarto</td>
-</tr>
-<tr class="even">
-<td>2022-07-06 06:00:00</td>
-<td>Blog</td>
-<td>Automatically upgrading Quarto</td>
-</tr>
-<tr class="odd">
-<td>2022-07-07 04:00:00</td>
-<td>Blog</td>
-<td>Quarto with Python</td>
-</tr>
-<tr class="even">
-<td>2022-07-07 06:00:00</td>
-<td>Twitter</td>
-<td>Quarto with Python</td>
-</tr>
-<tr class="odd">
-<td>2022-07-07 06:00:00</td>
-<td>LinkedIn</td>
-<td>Quarto with Python</td>
-</tr>
-<tr class="even">
-<td>2022-07-12 06:00:00</td>
-<td>Twitter</td>
-<td>What happens when a hiring manager posts a position on LinkedIn</td>
-</tr>
-<tr class="odd">
-<td>2022-07-12 06:00:00</td>
-<td>LinkedIn</td>
-<td>What happens when a hiring manager posts a position on LinkedIn</td>
-</tr>
-<tr class="even">
-<td>2022-07-18 06:00:00</td>
-<td>Twitter</td>
-<td>The XY Problem</td>
-</tr>
-<tr class="odd">
-<td>2022-07-18 06:00:00</td>
-<td>LinkedIn</td>
-<td>The XY Problem</td>
-</tr>
-<tr class="even">
-<td>2022-07-22 06:00:00</td>
-<td>Twitter</td>
-<td>I’m a hiring manager: this is why I didn’t answer your LinkedIn message</td>
-</tr>
-<tr class="odd">
-<td>2022-07-22 06:00:00</td>
-<td>LinkedIn</td>
-<td>I’m a hiring manager: this is why I didn’t answer your LinkedIn message</td>
-</tr>
-<tr class="even">
-<td>2022-09-11 06:00:00</td>
-<td>LinkedIn</td>
-<td>Data science and 9/11</td>
-</tr>
-<tr class="odd">
-<td>2022-09-11 06:00:00</td>
-<td>Twitter</td>
-<td>Data science and 9/11</td>
-</tr>
-<tr class="even">
-<td>2022-10-04 06:00:00</td>
-<td>LinkedIn</td>
-<td>Chesterton’s Fence</td>
-</tr>
-<tr class="odd">
-<td>2022-10-21 06:00:00</td>
-<td>Twitter</td>
-<td>Chesterton’s Fence</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<p>Generated on 2022-07-04 14:45:03.263394</p>
+<p>I am a firm believer in “learning out loud”, that is, writing about what you learned.</p>
+<p>In the last few weeks, I have been learning how to use Quarto with Python, while creating a <a href="https://links.meyerperin.com/quarto-pres">presentation</a> and a <a href="https://links.meyerperin.com/quarto">website</a> using it.</p>
+<section id="what-is-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
+<p>Quarto builds on top of RMarkdown and adds netive support to Python. It integrates extremely well with VS Code and Jupyter notebooks. It allows you to write code for computers while also generating content that is fit for humans to read. My blog, my Twitter and my LinkedIn posts in the last month have all been written in Quarto, including this one. Most do not contain any code, but many do. I wrote code to automatically publish new posts to social media.</p>
+<p>Quarto is from the same authors that wrote RMarkdown. New features for RMarkdown will be added to Quarto.</p>
+</section>
+<section id="should-you-learn-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="should-you-learn-quarto">Should you learn Quarto?</h2>
+<p>if you produce data-based content for humans, like data journalism, reports that include data analysis or scientific articles, Quarto is an excellent choice. It’s scriptable and reproducible. Quarto source code is text-based, so it can be saved to git.</p>
+<p>You can generate PDFs, PowerPoints, Word documents and interactive websites. Quarto can also be the start of an workflow that automatically generates a Word document or PowerPoint, which will then get further refinement, like commentary.</p>
+<section id="how-to-learn-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-learn-quarto">How to learn Quarto?</h3>
+<p>Quarto has an <a href="https://www.quarto.org/docs/get-started">excellent tutorial</a> to get you started. I also wrote <a href="https://links.meyerperin.com/quarto">my own guide</a> as I learned it.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
