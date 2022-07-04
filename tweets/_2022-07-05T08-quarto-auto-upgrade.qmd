@@ -1,7 +1,8 @@
 ---
+date: 2022-07-05 06:00:00
+draft: true
 include-in-header: _msft-clarity.html
 post-type: text
-date: 2022-07-05 06:00:00
 title: Automatically upgrading Quarto
 twitter-target-date: 2022-07-05 06:00:00
 ---
