@@ -1,0 +1,37 @@
+---
+author: Lucas A. Meyer
+date: 2022-07-11 04:00:00
+draft: true
+image: /images/interview-crying.jpg
+include-in-header: _msft-clarity.html
+linkedin-linkback: true
+linkedin-target-date: 2022-07-11 06:00:00
+title: Quarto with Python
+twitter-description: The two interview questions I hate
+twitter-target-date: 2022-07-11 06:00:00
+---
+
+There are two interview questions that I hate, and they appear a lot.
+
+The first is "let's ask something ambiguous to see how they deal with ambiguity". The second is "let's give them something unsolved to see if we learn something". A typical version of the latter is using an analytical project as an interview.
+
+## When interviewers don't know the answer
+
+Of these two types of questions, I have a bigger problem with "interviewers not knowing the answer". When interviewers give out a project, they get unpaid labor. However, the part I have more of a problem with is the "_unsolved_ problem" part. There's usually a reason why the problem is unsolved. The worst type of reason is when the interviewer is incapable of solving the problems themselves. Sadly, I've seen that a few times.
+
+In that case, the worst case scenario is when the candidate gives the right answer, but the interviewer can't even recognize it. That's not very common, but I've seen it happen. In that case, the candidate is probably lucky if they don't get the job.
+
+Some slightly better scenarios are when the interviewer _could_ know the answer, but they don't because the anwswer hasn't been a priority. In these cases, the data is usually bad and question is not well-defined. All those cases are clearly problematic for the candidate to solve under pressure.
+
+## Ambiguity
+
+Interviewers sometimes try to assess ambiguity by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's hard to pull off.
+
+Even if the interviwer is skilled enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand of this type of question, this is likely to work out poorly.
+
+## It can be done
+
+If they are *really* necessary, oth these types of questions _can_ work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data. 
+
+
+
