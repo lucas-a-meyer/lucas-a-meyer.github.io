@@ -356,15 +356,9 @@ def process_file(filepath):
         if front_matter_dict.get("twitter-description"):
             twitter_text = front_matter_dict.get("twitter-description")
         else: # doesn't have a description, let's get it from the text
-            if not post_type or post_type == "link": # need to leave some characters for the link
-                last_break = txt[:240].rfind("\\n")
-                if last_break == -1:
-                    last_break = 240
-                twitter_text = txt[:last_break] + "(...) "
-            if post_type == "text":
-                last_break = txt[:280].rfind("\\n")
-                if last_break == -1:
-                    last_break = 280
+            last_break = txt[:240].rfind("\\n")
+            if last_break == -1:
+                last_break = 240            
                 twitter_text = txt[:last_break]
         
         if not post_type or post_type == "link":
@@ -372,6 +366,7 @@ def process_file(filepath):
             twitter_post_result = post_twitter_link(twitter_text, twitter_url)
 
         if post_type == "text":
+            print(f"Gonna tweet: {twitter_text}")
             twitter_post_result = post_twitter_link(twitter_text, "")
     
         twitter_posted = datetime.datetime.now()
