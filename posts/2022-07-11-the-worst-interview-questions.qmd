@@ -6,7 +6,7 @@ image: /images/interview-crying.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-11 06:00:00
-title: Quarto with Python
+title: Two interview questions I hate
 twitter-description: The two interview questions I hate
 twitter-target-date: 2022-07-11 06:00:00
 ---
