@@ -358,9 +358,13 @@ def process_file(filepath):
         else: # doesn't have a description, let's get it from the text
             if not post_type or post_type == "link": # need to leave some characters for the link
                 last_break = txt[:240].rfind("\\n")
+                if last_break == -1:
+                    last_break = 240
                 twitter_text = txt[:last_break] + "(...) "
             if post_type == "text":
                 last_break = txt[:280].rfind("\\n")
+                if last_break == -1:
+                    last_break = 280
                 twitter_text = txt[:last_break]
         
         if not post_type or post_type == "link":
