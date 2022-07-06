@@ -4,6 +4,7 @@ draft: false
 include-in-header: _msft-clarity.html
 post-type: text
 title: Automatically upgrading Quarto
+twitter-posted: 2022-07-06 10:13:04.589611
 twitter-target-date: 2022-07-06 06:00:00
 ---
 I love @quarto_pub, and it's getting a lot of updates daily. I wrote a script to install the latest version https://links.meyerperin.com/tnk
