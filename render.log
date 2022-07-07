@@ -1,5 +1,5 @@
 ./pre-render.sh
-Started rendering on Thu Jul  7 13:51:38 PDT 2022
+Started rendering on Thu Jul  7 13:52:55 PDT 2022
 Processing directory: posts
 Processing posts/2022-06-10-jekyll-to-quarto.qmd
 Processing posts/2021-11-04-cunninghams-law.qmd
@@ -120,19 +120,4 @@ Processing tweets/_2022-07-05T08-quarto-auto-upgrade.qmd
 [58/58] calendar.qmd
 
 ./post-render.sh
-Finished rendering on Thu Jul  7 13:51:52 PDT 2022
-[main 4cdd1f9] Rendered on Thu Jul  7 13:51:52 PDT 2022
- 22 files changed, 128 insertions(+), 163 deletions(-)
- delete mode 100644 docs/images/GypsyLucas.jpg
- delete mode 100644 docs/images/blurred-calendar.jpg
- delete mode 100644 docs/images/cheating.png
- delete mode 100644 docs/images/computer-urinal.jpg
- delete mode 100644 docs/images/cunninghams-law.jpg
- delete mode 100644 docs/images/grad-student-email.jpg
- delete mode 100644 docs/images/linkedin-notifications.jpg
- delete mode 100644 docs/images/smart-portuguese.jpg
-To github.com:lucas-a-meyer/lucas-a-meyer.github.io.git
-   328f66f..4cdd1f9  main -> main
-
-Output created: docs/index.html
-
+Finished rendering on Thu Jul  7 13:53:09 PDT 2022
