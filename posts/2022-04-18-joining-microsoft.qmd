@@ -13,7 +13,7 @@ twitter-posted: 2022-04-18 06:00:00
 
 I’m extremely happy to share that I’m starting a new position as Principal Data Scientist at the AI for Good Research Lab at Microsoft!
 
-![](/images/just-hired-microsoft.jpg)
+![](https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.jpg)
 
 This is an amazing team led by Juan M. Lavista Ferres, and I frequently still pinch myself to make sure it's not just a dream, but instead, that it's a dream come true.
 
