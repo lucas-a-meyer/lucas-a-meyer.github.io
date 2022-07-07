@@ -18,7 +18,7 @@ I wrote earlier about the hiring process for technical positions at big technolo
 
 While usually disappointing, failing is not necessarily bad: it's sometimes better to fail fast. You may get more time to focus on positions that you're better suited for. I have myself failed several phone screens.
 
-![](/images/sql-tweet.png)
+![](https://mpsocial.blob.core.windows.net/blog-images/sql-tweet.png)
 
 ## Why we do technical phone screens
 Imagine you come back hungry from a longer-than-expected trip, open the fridge and find an open bottle of milk. Do you sniff it first to make sure it's not spoiled or drink it outright?
@@ -45,7 +45,7 @@ I have no scientific basis or good data for my next statement, but I think that 
 ### Cheating
 One of the defining characteristics of phone screens is that they are remote. Therefore, it's easier to cheat on them. The whole interviewing process is grueling, and the benefits of passing are pretty great, so I do understand why people want to cheat. I imagine it even works for some people. When it doesn't work, however, it's pretty bad.
 
-![](/images/cheating.png)
+![](https://mpsocial.blob.core.windows.net/blog-images/cheating.png)
 
 As is widely known, lot of technical interview questions and their answers are available on LeetCode. Some interviewers use LeetCode questions, but adapt them for the phone screen interview, usually with good intentions: adding simplifying conditions to make the question easier and therefore making it possible to complete the question during a phone screen.
 
