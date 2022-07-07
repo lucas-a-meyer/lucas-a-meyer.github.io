@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories: concepts
 date: 2021-10-27 06:00:00
-image: /images/reverse-laziness.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/reverse-laziness.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6859131315925721088
 linkedin-posted: 2021-10-27 06:00:00

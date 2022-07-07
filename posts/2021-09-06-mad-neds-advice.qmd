@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 categories:
 - career
 date: 2021-09-06 06:00:00
-image: /images/goonies2.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/goonies2.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096
 linkedin-posted: 2021-09-06 06:00:00

@@ -4,7 +4,7 @@ categories:
 - career
 - interviews
 date: 2021-07-02 06:00:00
-image: /images/fail-tech-interview.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/fail-tech-interview.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6816590001338486785
 linkedin-posted: 2021-07-02 06:00:00

@@ -4,7 +4,7 @@ categories:
 - neurodiversity
 - writing
 date: 2022-04-22 06:00:00
-image: /images/writing.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/writing.jpg
 include-in-header: _msft-clarity.html
 layout: post
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776

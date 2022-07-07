@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories: concepts
 date: 2022-04-02 06:00:00
-image: /images/fence.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816
 linkedin-posted: null

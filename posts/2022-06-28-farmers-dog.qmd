@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 date: 2022-06-30 06:00:00
 draft: false
-image: /images/farmers-dog-logo.png
+image: https://mpsocial.blob.core.windows.net/blog-images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-06-30 06:00:00

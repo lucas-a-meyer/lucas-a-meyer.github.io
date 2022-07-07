@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories: career
 date: 2021-09-18 06:00:00
-image: /images/grad-student-email.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/grad-student-email.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746
 linkedin-posted: 2021-09-18 06:00:00

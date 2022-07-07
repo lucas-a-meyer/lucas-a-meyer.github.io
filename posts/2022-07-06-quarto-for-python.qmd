@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 date: 2022-07-07 04:00:00
 draft: false
-image: /images/quarto.png
+image: https://mpsocial.blob.core.windows.net/blog-images/quarto.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-07 07:21:59.813335
