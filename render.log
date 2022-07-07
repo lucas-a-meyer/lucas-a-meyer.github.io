@@ -1,5 +1,5 @@
 ./pre-render.sh
-Started rendering on Thu Jul  7 13:48:19 PDT 2022
+Started rendering on Thu Jul  7 13:51:38 PDT 2022
 Processing directory: posts
 Processing posts/2022-06-10-jekyll-to-quarto.qmd
 Processing posts/2021-11-04-cunninghams-law.qmd
@@ -120,39 +120,4 @@ Processing tweets/_2022-07-05T08-quarto-auto-upgrade.qmd
 [58/58] calendar.qmd
 
 ./post-render.sh
-Finished rendering on Thu Jul  7 13:48:33 PDT 2022
-[main 670787d] Rendered on Thu Jul  7 13:48:33 PDT 2022
- 71 files changed, 229 insertions(+), 253 deletions(-)
- delete mode 100644 docs/images/aiforgood.jpg
- delete mode 100644 docs/images/bear-tree-2.jpg
- delete mode 100644 docs/images/become-manager.jpg
- delete mode 100644 docs/images/bin-laden-compound.jpg
- delete mode 100644 docs/images/fail-tech-interview.jpg
- delete mode 100644 docs/images/failing-to-lead.jpg
- delete mode 100644 docs/images/farmers-dog-logo.png
- delete mode 100644 docs/images/fence.jpg
- delete mode 100644 docs/images/france-is-bacon.jpg
- delete mode 100644 docs/images/good-question.jpg
- delete mode 100644 docs/images/goonies.jpg
- delete mode 100644 docs/images/goonies2.jpg
- delete mode 100644 docs/images/interview-process.jpg
- delete mode 100644 docs/images/local-minima.jpg
- delete mode 100644 docs/images/lucas-in-charleston.jpg
- delete mode 100644 docs/images/mac-power-off.jpg
- delete mode 100644 docs/images/money-gun.jpg
- delete mode 100644 docs/images/nobody-reads-blog.jpg
- delete mode 100644 docs/images/offer-only.jpg
- delete mode 100644 docs/images/optimization-career.png
- delete mode 100644 docs/images/quarto.png
- delete mode 100644 docs/images/rainy-day.jpg
- delete mode 100644 docs/images/reverse-causation.jpg
- delete mode 100644 docs/images/reverse-laziness.jpg
- delete mode 100644 docs/images/useful-output.jpg
- delete mode 100644 docs/images/weak-baseline.jpg
- delete mode 100644 docs/images/wild-dunes.jpg
- delete mode 100644 docs/images/writing.jpg
-To github.com:lucas-a-meyer/lucas-a-meyer.github.io.git
-   5d80a7b..670787d  main -> main
-
-Output created: docs/index.html
-
+Finished rendering on Thu Jul  7 13:51:52 PDT 2022
