@@ -1,0 +1,123 @@
+./pre-render.sh
+Started rendering on Thu Jul  7 07:36:37 PDT 2022
+Processing directory: posts
+Processing posts/2022-06-10-jekyll-to-quarto.qmd
+Processing posts/2021-11-04-cunninghams-law.qmd
+Processing posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.qmd
+Processing posts/2022-06-25-france-is-bacon.qmd
+Processing posts/2022-06-21-becoming-good-ai-for-good.qmd
+Processing posts/2022-06-20-computer-urinal.qmd
+Processing posts/2022-04-17-bear-on-tree.qmd
+Processing posts/2022-04-05-hiring-is-a-superpower.qmd
+Processing posts/2017-09-11-hurricane-irma.qmd
+Processing posts/2022-04-02-chestertons-fence.qmd
+Processing posts/2022-04-15-farewell-lunch.qmd
+Processing posts/2021-10-27-reverse-laziness.qmd
+Processing posts/2019-02-04-a-story-about-my-father.qmd
+Processing posts/2022-06-30-happy-new-year-msft.qmd
+Processing posts/2022-06-23-charleston-vacations.qmd
+Processing posts/2021-07-07-the-goodwill-account.qmd
+Processing posts/2021-09-06-mad-neds-advice.qmd
+Processing posts/2021-04-15-flunking.qmd
+Processing posts/2022-04-18-joining-microsoft.qmd
+Processing posts/2021-05-06-document-variables.qmd
+Processing posts/2022-07-04-that-is-a-good-question.qmd
+Processing posts/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.qmd
+Processing posts/2022-05-10-work-life-balance.qmd
+Processing posts/2019-02-12-the-day-somebody-stole-my-work.qmd
+Processing posts/2018-07-08-praising-conway-s-data-science-venn-diagram.qmd
+Processing posts/2021-06-21-interviews-are-hard-for-everyone.qmd
+Processing posts/2018-06-25-centralized-vs-distributed-data-teams.qmd
+Processing posts/2021-09-11-data-science-and-911.qmd
+Processing posts/2022-04-24-writing-saves-introverts.qmd
+Processing posts/2021-07-13-so-you-want-to-be-a-manager.qmd
+Processing posts/2022-04-04-south-carolina-dolphins.qmd
+Processing posts/2019-01-29-installing-arch-linux.qmd
+Processing posts/2022-07-11-the-worst-interview-questions.qmd
+Processing posts/2022-04-13-my-policies-around-interviewing.qmd
+Processing posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.qmd
+Processing posts/2021-11-29-weak-baselines.qmd
+Processing posts/2022-06-28-farmers-dog.qmd
+Processing posts/2021-04-30-some-tips-for-technical-interviews.qmd
+Processing posts/2021-08-17-the-neurodivergent-manager.qmd
+Processing posts/2022-06-27-automatically-posting-to-linkedin.qmd
+Processing posts/2021-09-18-writing-good-emails.qmd
+Processing posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.qmd
+Processing posts/2021-07-02-how-to-fail-a-technical-phone-screen.qmd
+Processing posts/2021-10-05-optimization-algorithms-for-your-career.qmd
+Processing posts/2021-07-22-the-xy-problem.qmd
+Processing posts/2018-08-23-yo-stroopwafel.qmd
+Processing posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.qmd
+Processing posts/2021-10-10-do-you-know-how-smart-i-am-in-portuguese.qmd
+Processing posts/2022-04-11-leaving-amazon.qmd
+Processing posts/2022-07-06-quarto-for-python.qmd
+Processing posts/2021-07-31-so-you-want-to-become-a-manager.qmd
+Processing posts/2021-11-22-reverse-causation.qmd
+Processing posts/2021-05-12-getting-nervous.qmd
+Processing posts/2022-06-16-failing-to-lead-by-example.qmd
+Processing directory: tweets
+Processing tweets/_2022-07-01T04-quarto.qmd
+Processing tweets/_2022-07-01T14-quarto-change-font.qmd
+Processing tweets/_2022-07-05T08-quarto-auto-upgrade.qmd
+
+[ 1/58] about.qmd
+[ 2/58] talks.qmd
+[ 3/58] index.qmd
+[ 4/58] posts/2022-06-10-jekyll-to-quarto.qmd
+[ 5/58] posts/2021-11-04-cunninghams-law.qmd
+[ 6/58] posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.qmd
+[ 7/58] posts/2022-06-25-france-is-bacon.qmd
+[ 8/58] posts/2022-06-21-becoming-good-ai-for-good.qmd
+[ 9/58] posts/2022-06-20-computer-urinal.qmd
+[10/58] posts/2022-04-17-bear-on-tree.qmd
+[11/58] posts/2022-04-05-hiring-is-a-superpower.qmd
+[12/58] posts/2017-09-11-hurricane-irma.qmd
+[13/58] posts/2022-04-02-chestertons-fence.qmd
+[14/58] posts/2022-04-15-farewell-lunch.qmd
+[15/58] posts/2021-10-27-reverse-laziness.qmd
+[16/58] posts/2019-02-04-a-story-about-my-father.qmd
+[17/58] posts/2022-06-30-happy-new-year-msft.qmd
+[18/58] posts/2022-06-23-charleston-vacations.qmd
+[19/58] posts/2021-07-07-the-goodwill-account.qmd
+[20/58] posts/2021-09-06-mad-neds-advice.qmd
+[21/58] posts/2021-04-15-flunking.qmd
+[22/58] posts/2022-04-18-joining-microsoft.qmd
+[23/58] posts/2021-05-06-document-variables.qmd
+[24/58] posts/2022-07-04-that-is-a-good-question.qmd
+[25/58] posts/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.qmd
+[26/58] posts/2022-05-10-work-life-balance.qmd
+[27/58] posts/2019-02-12-the-day-somebody-stole-my-work.qmd
+[28/58] posts/2018-07-08-praising-conway-s-data-science-venn-diagram.qmd
+[29/58] posts/2021-06-21-interviews-are-hard-for-everyone.qmd
+[30/58] posts/2018-06-25-centralized-vs-distributed-data-teams.qmd
+[31/58] posts/2021-09-11-data-science-and-911.qmd
+[32/58] posts/2022-04-24-writing-saves-introverts.qmd
+[33/58] posts/2021-07-13-so-you-want-to-be-a-manager.qmd
+[34/58] posts/2022-04-04-south-carolina-dolphins.qmd
+[35/58] posts/2019-01-29-installing-arch-linux.qmd
+[36/58] posts/2022-07-11-the-worst-interview-questions.qmd
+[37/58] posts/2022-04-13-my-policies-around-interviewing.qmd
+[38/58] posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.qmd
+[39/58] posts/2021-11-29-weak-baselines.qmd
+[40/58] posts/2022-06-28-farmers-dog.qmd
+[41/58] posts/2021-04-30-some-tips-for-technical-interviews.qmd
+[42/58] posts/2021-08-17-the-neurodivergent-manager.qmd
+[43/58] posts/2022-06-27-automatically-posting-to-linkedin.qmd
+[44/58] posts/2021-09-18-writing-good-emails.qmd
+[45/58] posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.qmd
+[46/58] posts/2021-07-02-how-to-fail-a-technical-phone-screen.qmd
+[47/58] posts/2021-10-05-optimization-algorithms-for-your-career.qmd
+[48/58] posts/2021-07-22-the-xy-problem.qmd
+[49/58] posts/2018-08-23-yo-stroopwafel.qmd
+[50/58] posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.qmd
+[51/58] posts/2021-10-10-do-you-know-how-smart-i-am-in-portuguese.qmd
+[52/58] posts/2022-04-11-leaving-amazon.qmd
+[53/58] posts/2022-07-06-quarto-for-python.qmd
+[54/58] posts/2021-07-31-so-you-want-to-become-a-manager.qmd
+[55/58] posts/2021-11-22-reverse-causation.qmd
+[56/58] posts/2021-05-12-getting-nervous.qmd
+[57/58] posts/2022-06-16-failing-to-lead-by-example.qmd
+[58/58] calendar.qmd
+
+./post-render.sh
+Finished rendering on Thu Jul  7 07:36:50 PDT 2022
