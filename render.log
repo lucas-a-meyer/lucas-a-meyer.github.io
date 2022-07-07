@@ -1,5 +1,5 @@
 ./pre-render.sh
-Started rendering on Thu Jul  7 13:40:36 PDT 2022
+Started rendering on Thu Jul  7 13:48:19 PDT 2022
 Processing directory: posts
 Processing posts/2022-06-10-jekyll-to-quarto.qmd
 Processing posts/2021-11-04-cunninghams-law.qmd
@@ -120,12 +120,4 @@ Processing tweets/_2022-07-05T08-quarto-auto-upgrade.qmd
 [58/58] calendar.qmd
 
 ./post-render.sh
-Finished rendering on Thu Jul  7 13:40:49 PDT 2022
-[main f785673] Rendered on Thu Jul  7 13:40:49 PDT 2022
- 8 files changed, 120 insertions(+), 127 deletions(-)
- delete mode 100644 docs/images/farewell-lunch.jpg
-To github.com:lucas-a-meyer/lucas-a-meyer.github.io.git
-   b0476ca..f785673  main -> main
-
-Output created: docs/index.html
-
+Finished rendering on Thu Jul  7 13:48:33 PDT 2022

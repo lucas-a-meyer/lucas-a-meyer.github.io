@@ -86,15 +86,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Optimization algorithms for your career">
 <meta property="og:description" content="Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization.">
-<meta property="og:image" content="https://www.meyerperin.com/images/optimization-career.png">
+<meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta property="og:image:height" content="429">
-<meta property="og:image:width" content="954">
 <meta name="twitter:title" content="Lucas A. Meyer - Optimization algorithms for your career">
 <meta name="twitter:description" content="Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization.">
-<meta name="twitter:image" content="https://www.meyerperin.com/images/optimization-career.png">
-<meta name="twitter:image-height" content="429">
-<meta name="twitter:image-width" content="954">
+<meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -191,14 +187,14 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </header>
 
 <p>Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization.</p>
-<p><img src="../images/optimization-career.png" class="img-fluid"></p>
+<p><img src="https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png" class="img-fluid"></p>
 <p>We are also familiar with the traps of local versus global optimization and how to protect our code and models against those traps. However, we frequently fail to realize that the same concepts can be applied to our careers.</p>
 <section id="the-trap" class="level2">
 <h2 class="anchored" data-anchor-id="the-trap">The Trap</h2>
 <p>It’s usually not hard to find what’s required to progress on your current job. You might have access to “career stage profile” documents that describe the characteristics of that job for different levels and what’s required to move from one level to another. Your colleagues or your manager can tell you what it takes to get promoted. Getting promoted is a good thing: it will give you a better salary and sometimes an expanded scope that will allow you to have opportunities to grow even further.</p>
 <p>I had many career conversations in my tenure, and in a large proportion of cases, “getting promoted on the job I currently hold” is not a typical lifelong objective, but it’s typically an objective that people have a plan for. On the other hand, people frequently tell me about major goals/objectives (change professions, open their own company, get a Ph.D., etc.) for which they don’t have an action plan.</p>
 <p>It’s like their algorithm is stuck near a local maxima (in this text, optimizing will mean maximizing) and the only thing they can see is the short-term objective, so they can only trace paths to get to the local maxima.</p>
-<p><img src="../images/local-minima.jpg" class="img-fluid"></p>
+<p><img src="https://mpsocial.blob.core.windows.net/blog-images/local-minima.jpg" class="img-fluid"></p>
 <p>Eventually, people reach a local maxima and realize it’s not their global objective. They may not know what their global objective is, they just know “it’s not this”. Interestingly, the way that people solve that problem is not that different from what an algorithm would do if it realized it got stuck in a local maxima: take a big step, and start again from someplace else.</p>
 </section>
 <section id="a-simple-fix" class="level2">
@@ -213,7 +209,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <p>The concept comes from slot machines in casinos. Because a slot machine has one lever that people pull to activate it and people usually lose money on it, it’s called an “one-armed bandit”.</p>
 <p>Imagine a slot machine that has multiple levers, therefore a “multi-armed bandit”. When pulled, each lever gives a prize based on a statistical distribution that is unknown to the player. You pull the first lever and get $100. Should you pull the same lever again or switch? Maybe one of the other levers has a constant payoff of $1,000. Maybe that lever you just pulled is actually the best one.</p>
 <p>Without knowing the distributions, you can’t know the optimal action to take. In real life, not only one doesn’t know the distributions, but the distributions for each lever can change over time. If that was not complicated enough, you also have infinite levers to choose from. Nobody said it was supposed to be easy.</p>
-<p><img src="../images/multi-armed-bandit.jpg" class="img-fluid"></p>
+<p><img src="https://mpsocial.blob.core.windows.net/blog-images/multi-armed-bandit.jpg" class="img-fluid"></p>
 <p>The multi-armed bandit problem doesn’t have a general optimal solution, but has several strategies that achieve approximate solutions. It is a classical reinforcement learning problem.</p>
 <p>Many strategies are very simple “epsilon” strategies, for which one decides a proportion epsilon (between 0 and 1) of exploration (trying to figure out the distributions of the available actions), and the remainder of the time is used for exploitation (performing the action that is expected to yield the best results).</p>
 <p>In career conversations, I always suggest that people take the time to explore new things, especially things that are in the (conceptual) neighborhood of what they think they want. Because I’m older than the average tech person, they may think this is some form of ancient wisdom, but I’m just pointing them towards a classical (and somewhat modern) reinforcement learning algorithm.</p>
