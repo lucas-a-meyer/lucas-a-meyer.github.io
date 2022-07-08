@@ -283,7 +283,7 @@ def convert_to_utc(local_time: datetime.datetime) -> datetime:
     return datetime.datetime.utcfromtimestamp(ts)
 
 def cosmos_date_format(dt: datetime.datetime) -> str:
-    return str(dt.isoformat()) + "0Z"
+    return dt.strftime("%Y-%m-%dT%H-%M-%S.%f0Z")
 
 def my_cosmos_client(db, container):
     COSMOS_URI = os.environ["COSMOS_URI"]
