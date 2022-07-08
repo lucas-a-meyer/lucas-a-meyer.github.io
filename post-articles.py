@@ -371,7 +371,7 @@ def process_file(filepath):
         linkedin_posted = datetime.datetime.now()
         front_matter_dict["linkedin-posted"] = linkedin_posted
 
-    if not draft and twitter_target_date and twitter_target_date <= datetime.datetime.now() and not twitter_posted:
+    if not draft and twitter_target_date and not twitter_posted:
 
         post_type = front_matter_dict.get("post-type")
 
