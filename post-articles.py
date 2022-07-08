@@ -392,7 +392,7 @@ def process_file(filepath):
 
         if post_type == "text":
             print(f"Gonna tweet: {twitter_text}")
-            queue_twitter_post(twitter_target_date, twitter_text, twitter_url)
+            queue_twitter_post(twitter_target_date, twitter_text)
             twitter_posted = datetime.datetime.now()
     
         front_matter_dict["twitter-posted"] = twitter_posted

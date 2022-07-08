@@ -3,6 +3,7 @@ date: 2022-07-01 04:00:00
 include-in-header: _msft-clarity.html
 post-type: text
 title: Posting to Twitter from Quarto
+twitter-posted: 2022-07-01 04:00:06.738179
 twitter-target-date: 2022-07-01 04:00:00
 ---
 I love that I can post directly to Twitter from Quarto!
