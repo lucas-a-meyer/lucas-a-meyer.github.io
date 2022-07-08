@@ -1,0 +1,7 @@
+---
+date: 2022-07-01 04:00:00
+post-type: text
+title: Population aging
+twitter-target-date: 2022-07-08 00:00:01
+---
+Although Elon is concerned about a declining population (and taking steps to correct it), population aging is a much more pressing problem.

@@ -1,0 +1,8 @@
+---
+date: 2022-07-01 04:00:00
+include-in-header: _msft-clarity.html
+post-type: text
+title: Clarity
+twitter-target-date: 2022-07-07 23:00:00
+---
+I am utterly amazed as how wonderful Microsoft Clarity is to understand how people use a website, and even better - it's absolutely free https://clarity.microsoft.com/

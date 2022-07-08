@@ -16,8 +16,8 @@ import datetime
 import requests
 import json
 from dotenv import load_dotenv
-import tweepy
 from twilio.rest import Client
+from azure.cosmos import CosmosClient
 
 
 def update_lucas(body):
@@ -278,21 +278,44 @@ def post_linkedin_image(txt, img_path, person_id, token):
 
     return(resp_code)
 
-def post_twitter_link(txt, link):
+def convert_to_utc(local_time: datetime.datetime) -> datetime: 
+    ts = datetime.datetime.timestamp(local_time)
+    return datetime.datetime.utcfromtimestamp(ts)
 
-    api_key = os.getenv("TWITTER_API_KEY")
-    api_key_secret = os.getenv("TWITTER_API_SECRET")
-    access_token = os.getenv("TWITTER_ACESSS_TOKEN")
-    access_token_secret = os.getenv("TWITTER_ACCESS_SECRET")
-    # bearer_token  = os.getenv("TWITTER_BEARER_TOKEN")
-   
-    client = tweepy.Client(consumer_key=api_key, consumer_secret=api_key_secret, access_token=access_token, access_token_secret=access_token_secret)
+def cosmos_date_format(dt: datetime.datetime) -> str:
+    return str(dt.isoformat()) + "0Z"
 
-    response = client.create_tweet(
-         text=txt + " " + link,
-    )
+def my_cosmos_client(db, container):
+    COSMOS_URI = os.environ["COSMOS_URI"]
+    COSMOS_KEY = os.environ["COSMOS_KEY"]
 
-    return response
+    client = CosmosClient(COSMOS_URI, credential=COSMOS_KEY)
+    database = client.get_database_client(db)
+    return database.get_container_client(container)
+    
+
+def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str = None, image_url:str = None, repeat:int = None):
+
+    cc = my_cosmos_client("social-media", "tweets")
+
+    target_time_utc = cosmos_date_format(convert_to_utc(target_time_local))
+    id = target_time_local.strptime(f"%Y-%m-%d-%H%M%S-{text[:30].replace(' ', '')}")
+    
+    if link:
+        text = text + " " + link
+
+    record = {
+        "id": id,
+        "body": text,
+        "twitter_target_date_utc": target_time_utc
+    }
+
+    if image_url:
+        record['image_url'] = image_url   
+    if repeat:
+        record['repeat'] = repeat
+
+    cc.upsert_item(record)
 
 def process_file(filepath):
     print(f"Processing {filepath}")
@@ -363,15 +386,16 @@ def process_file(filepath):
         
         if not post_type or post_type == "link":
             twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
-            twitter_post_result = post_twitter_link(twitter_text, twitter_url)
+            queue_twitter_post(twitter_target_date, twitter_text, twitter_url)
+            twitter_posted = datetime.datetime.now()
 
         if post_type == "text":
             print(f"Gonna tweet: {twitter_text}")
-            twitter_post_result = post_twitter_link(twitter_text, "")
+            queue_twitter_post(twitter_target_date, twitter_text, twitter_url)
+            twitter_posted = datetime.datetime.now()
     
-        twitter_posted = datetime.datetime.now()
         front_matter_dict["twitter-posted"] = twitter_posted
-        update_lucas(f"Twitted: https://twitter.com/user/status/{twitter_post_result.data['id']}")
+        update_lucas(f"Queued Twitter post")
 
     # Check that we have Microsoft Clarity installed in the page
     if not front_matter_dict.get("include-in-header"):

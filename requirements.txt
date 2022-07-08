@@ -7,6 +7,8 @@ asttokens==2.0.5
 async-timeout==4.0.2
 asyncio==3.4.3
 attrs==21.4.0
+azure-core==1.24.2
+azure-cosmos==4.3.0
 backcall==0.2.0
 beautifulsoup4==4.11.1
 bleach==5.0.0
@@ -90,6 +92,7 @@ tornado==6.1
 traitlets==5.2.2.post1
 tweepy==4.10.0
 twilio==7.9.3
+typing-extensions==4.3.0
 urllib3==1.26.9
 wcwidth==0.2.5
 webencodings==0.5.1
