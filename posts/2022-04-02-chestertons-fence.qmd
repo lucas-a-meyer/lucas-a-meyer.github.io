@@ -11,7 +11,7 @@ linkedin-target-date: 2022-10-04 06:00:00
 title: Chesterton's Fence
 twitter-description: I once posted about the Chesterton's Fence, which is an important
   concept when starting something new
-twitter-posted: null
+twitter-posted: 2022-07-07 22:54:41.753291
 twitter-repost: 360
 twitter-target-date: 2022-10-21 06:00:00
 ---
