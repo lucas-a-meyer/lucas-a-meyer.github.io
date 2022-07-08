@@ -11,7 +11,7 @@ linkedin-target-date: 2022-07-18 06:00:00
 title: The XY Problem
 twitter-description: I've frequently been asked what's the most important thing new
   hires should know
-twitter-posted: null
+twitter-posted: 2022-07-07 22:59:23.171522
 twitter-repost: 180
 twitter-target-date: 2022-07-18 06:00:00
 ---

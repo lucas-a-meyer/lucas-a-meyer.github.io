@@ -297,9 +297,10 @@ def my_cosmos_client(db, container):
 def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str = None, image_url:str = None, repeat:int = None):
 
     cc = my_cosmos_client("social-media", "tweets")
+    now = datetime.datetime.now()
 
     target_time_utc = cosmos_date_format(convert_to_utc(target_time_local))
-    id = target_time_local.strftime(f"%Y-%m-%d-%H%M%S-{text[:30].replace(' ', '')}")
+    id = (f"{target_time_local.strftime('%Y-%m-%d-%H-%M-%S')}-{now.strftime('%Y-%m-%d-%H-%M-%S-%f')}")
     
     if link:
         text = text + " " + link

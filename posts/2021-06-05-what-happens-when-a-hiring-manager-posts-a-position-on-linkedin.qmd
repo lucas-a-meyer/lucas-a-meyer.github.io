@@ -11,7 +11,7 @@ linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-p
 linkedin-posted: null
 linkedin-target-date: 2022-07-12 06:00:00
 title: What happens when a hiring manager posts a position on LinkedIn
-twitter-posted: null
+twitter-posted: 2022-07-07 22:59:22.119553
 twitter-target-date: 2022-07-12 06:00:00
 ---
 

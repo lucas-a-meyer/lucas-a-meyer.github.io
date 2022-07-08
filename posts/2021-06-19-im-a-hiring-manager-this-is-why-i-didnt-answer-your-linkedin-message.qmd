@@ -18,7 +18,7 @@ title: 'I''m a hiring manager: this is why I didn''t answer your LinkedIn messag
 twitter-description: 'In 2021, I had several positions open
 
   I posted this guide about why I was not answering all messages I received on LinkedIn'
-twitter-posted: null
+twitter-posted: 2022-07-07 22:59:21.127667
 twitter-repost: 360
 twitter-target-date: 2022-07-22 06:00:00
 ---

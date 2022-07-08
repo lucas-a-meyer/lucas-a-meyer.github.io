@@ -10,7 +10,7 @@ linkedin-posted: null
 linkedin-repost: 365
 linkedin-target-date: 2022-09-11 06:00:00
 title: Data science and 9/11
-twitter-posted: null
+twitter-posted: 2022-07-07 22:59:20.072193
 twitter-repost: 365
 twitter-target-date: 2022-09-11 06:00:00
 ---
