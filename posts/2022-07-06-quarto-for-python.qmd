@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 date: 2022-07-07 04:00:00
 draft: false
-image: https://mpsocial.blob.core.windows.net/blog-images/quarto.png
+image: https://quarto.org/quarto.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-07 07:21:59.813335
@@ -21,6 +21,8 @@ In the last few weeks, I have been learning how to use Quarto with Python, while
 ## What is Quarto?
 
 Quarto builds on top of RMarkdown and adds netive support to Python. It integrates extremely well with VS Code and Jupyter notebooks. It allows you to write code for computers while also generating content that is fit for humans to read. My blog, my Twitter and my LinkedIn posts in the last month have all been written in Quarto, including this one. Most do not contain any code, but many do. I wrote code to automatically publish new posts to social media.
+
+![](https://quarto.org/quarto.png)
 
 Quarto is from the same authors that wrote RMarkdown. New features for RMarkdown will be added to Quarto. 
 
