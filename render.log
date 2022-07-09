@@ -123,3 +123,97 @@ Processing tweets/_2022-07-08T05-testing-azure-3.qmd
 [58/58] calendar.qmd
 
 ./post-render.sh
+Finished rendering on Sat Jul  9 00:51:41 PDT 2022
+[main 56538f5] Rendered on Sat Jul  9 00:51:41 PDT 2022
+ 88 files changed, 23687 insertions(+), 3 deletions(-)
+ create mode 100644 docs/.nojekyll
+ create mode 100644 docs/CNAME
+ create mode 100644 docs/about.html
+ create mode 100644 docs/bias.jpg
+ create mode 100644 docs/calendar.html
+ create mode 100644 docs/images/data-beaker.png
+ create mode 100644 docs/index.html
+ create mode 100644 docs/listings.json
+ create mode 100644 docs/posts/2017-09-11-hurricane-irma.html
+ create mode 100644 docs/posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html
+ create mode 100644 docs/posts/2018-06-25-centralized-vs-distributed-data-teams.html
+ create mode 100644 docs/posts/2018-07-08-praising-conway-s-data-science-venn-diagram.html
+ create mode 100644 docs/posts/2018-08-23-yo-stroopwafel.html
+ create mode 100644 docs/posts/2019-01-29-installing-arch-linux.html
+ create mode 100644 docs/posts/2019-02-04-a-story-about-my-father.html
+ create mode 100644 docs/posts/2019-02-12-the-day-somebody-stole-my-work.html
+ create mode 100644 docs/posts/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.html
+ create mode 100644 docs/posts/2021-04-15-flunking.html
+ create mode 100644 docs/posts/2021-04-30-some-tips-for-technical-interviews.html
+ create mode 100644 docs/posts/2021-05-06-document-variables.html
+ create mode 100644 docs/posts/2021-05-12-getting-nervous.html
+ create mode 100644 docs/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.html
+ create mode 100644 docs/posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.html
+ create mode 100644 docs/posts/2021-06-21-interviews-are-hard-for-everyone.html
+ create mode 100644 docs/posts/2021-07-02-how-to-fail-a-technical-phone-screen.html
+ create mode 100644 docs/posts/2021-07-07-the-goodwill-account.html
+ create mode 100644 docs/posts/2021-07-13-so-you-want-to-be-a-manager.html
+ create mode 100644 docs/posts/2021-07-22-the-xy-problem.html
+ create mode 100644 docs/posts/2021-07-31-so-you-want-to-become-a-manager.html
+ create mode 100644 docs/posts/2021-08-17-the-neurodivergent-manager.html
+ create mode 100644 docs/posts/2021-09-06-mad-neds-advice.html
+ create mode 100644 docs/posts/2021-09-11-data-science-and-911.html
+ create mode 100644 docs/posts/2021-09-18-writing-good-emails.html
+ create mode 100644 docs/posts/2021-10-05-optimization-algorithms-for-your-career.html
+ create mode 100644 docs/posts/2021-10-10-do-you-know-how-smart-i-am-in-portuguese.html
+ create mode 100644 docs/posts/2021-10-27-reverse-laziness.html
+ create mode 100644 docs/posts/2021-11-04-cunninghams-law.html
+ create mode 100644 docs/posts/2021-11-22-reverse-causation.html
+ create mode 100644 docs/posts/2021-11-29-weak-baselines.html
+ create mode 100644 docs/posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.html
+ create mode 100644 docs/posts/2022-04-02-chestertons-fence.html
+ create mode 100644 docs/posts/2022-04-04-south-carolina-dolphins.html
+ create mode 100644 docs/posts/2022-04-05-hiring-is-a-superpower.html
+ create mode 100644 docs/posts/2022-04-11-leaving-amazon.html
+ create mode 100644 docs/posts/2022-04-13-my-policies-around-interviewing.html
+ create mode 100644 docs/posts/2022-04-15-farewell-lunch.html
+ create mode 100644 docs/posts/2022-04-17-bear-on-tree.html
+ create mode 100644 docs/posts/2022-04-18-joining-microsoft.html
+ create mode 100644 docs/posts/2022-04-24-writing-saves-introverts.html
+ create mode 100644 docs/posts/2022-05-10-work-life-balance.html
+ create mode 100644 docs/posts/2022-06-10-jekyll-to-quarto.html
+ create mode 100644 docs/posts/2022-06-10-jekyll-to-quarto_files/figure-html/fig-polar-output-1.png
+ create mode 100644 docs/posts/2022-06-16-failing-to-lead-by-example.html
+ create mode 100644 docs/posts/2022-06-20-computer-urinal.html
+ create mode 100644 docs/posts/2022-06-21-becoming-good-ai-for-good.html
+ create mode 100644 docs/posts/2022-06-23-charleston-vacations.html
+ create mode 100644 docs/posts/2022-06-25-france-is-bacon.html
+ create mode 100644 docs/posts/2022-06-27-automatically-posting-to-linkedin.html
+ create mode 100644 docs/posts/2022-06-28-farmers-dog.html
+ create mode 100644 docs/posts/2022-06-30-happy-new-year-msft.html
+ create mode 100644 docs/posts/2022-07-04-that-is-a-good-question.html
+ create mode 100644 docs/posts/2022-07-06-quarto-for-python.html
+ create mode 100644 docs/posts/2022-07-11-the-worst-interview-questions.html
+ create mode 100644 docs/robots.txt
+ create mode 100644 docs/search.json
+ create mode 100644 docs/site_libs/bootstrap/bootstrap-icons.css
+ create mode 100644 docs/site_libs/bootstrap/bootstrap-icons.woff
+ create mode 100644 docs/site_libs/bootstrap/bootstrap.min.css
+ create mode 100644 docs/site_libs/bootstrap/bootstrap.min.js
+ create mode 100644 docs/site_libs/clipboard/clipboard.min.js
+ create mode 100644 docs/site_libs/quarto-html/anchor.min.js
+ create mode 100644 docs/site_libs/quarto-html/popper.min.js
+ create mode 100644 docs/site_libs/quarto-html/quarto-syntax-highlighting.css
+ create mode 100644 docs/site_libs/quarto-html/quarto.js
+ create mode 100644 docs/site_libs/quarto-html/tippy.css
+ create mode 100644 docs/site_libs/quarto-html/tippy.umd.min.js
+ create mode 100644 docs/site_libs/quarto-listing/list.min.js
+ create mode 100644 docs/site_libs/quarto-listing/quarto-listing.js
+ create mode 100644 docs/site_libs/quarto-nav/headroom.min.js
+ create mode 100644 docs/site_libs/quarto-nav/quarto-nav.js
+ create mode 100644 docs/site_libs/quarto-search/autocomplete.umd.js
+ create mode 100644 docs/site_libs/quarto-search/fuse.min.js
+ create mode 100644 docs/site_libs/quarto-search/quarto-search.js
+ create mode 100644 docs/sitemap.xml
+ create mode 100644 docs/styles.css
+ create mode 100644 docs/talks.html
+To github.com:lucas-a-meyer/lucas-a-meyer.github.io.git
+   c263235..56538f5  main -> main
+
+Output created: docs/index.html
+
