@@ -13,27 +13,25 @@ twitter-posted: 2022-07-11 04:00:06.554047
 twitter-target-date: 2022-07-11 06:00:00
 ---
 
-There are two interview questions that I hate, and they appear a lot.
+There are two interview questions that I hate, and I see them a lot.
 
-The first is "let's ask something ambiguous to see how they deal with ambiguity". The second is "let's give them something unsolved to see if we learn something". A typical version of the latter is using an analytical project as an interview.
+The first is "let's ask the candidate something ambiguous to see how they deal with ambiguity". The second is "let's give them something unsolved to see if we learn something". A typical version of the latter is using an analytical project as an interview.
 
 ## When interviewers don't know the answer
 
-Of these two types of questions, I have a bigger problem with "interviewers not knowing the answer". When interviewers give out a project, they get unpaid labor. However, the part I have more of a problem with is the "_unsolved_ problem" part. There's usually a reason why the problem is unsolved. The worst type of reason is when the interviewer is incapable of solving the problems themselves. Sadly, I've seen that a few times.
+Of these two types of questions, I have a bigger problem with the latter. The worst part is that the problem is _unsolved_. There's usually a reason why the problem is still unsolved. The worst type of reason is when the interviewers are incapable of solving the problems themselves. In that case, it's possible that the candidate will give the right answer and the interviewers won't recognize it. That's not very common, but I've seen it happen. The candidate is lucky if they don't get the job.
 
-In that case, the worst case scenario is when the candidate gives the right answer, but the interviewer can't even recognize it. That's not very common, but I've seen it happen. In that case, the candidate is probably lucky if they don't get the job.
-
-Some slightly better scenarios are when the interviewer _could_ know the answer, but they don't because the anwswer hasn't been a priority. In these cases, the data is usually bad and question is not well-defined. All those cases are clearly problematic for the candidate to solve under pressure.
+Some slightly better scenarios are when the interviewer _could_ know the answer, but they don't because answering that question hasn't been a priority. In these cases, data is usually bad and/or the question is not well-defined. All those cases are clearly problematic for the candidate to solve under the pressure they face in the interview.
 
 ## Ambiguity
 
-Interviewers sometimes try to assess ambiguity by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's hard to pull off.
+Occasionally, interviewers try to assess a candidate's ability to "deal with ambiguity" by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's also hard to pull off - the candidate is nervous, and the interview has the "curse of knowledge" - questions that are obvious to the interviewer may not be obvious to the candidate.
 
-Even if the interviwer is skilled enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand of this type of question, this is likely to work out poorly.
+Even if the interviwer is skilled and experienced enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. Time is ticking. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand that they will get this type of question, this is likely to work out poorly.
 
 ## It can be done
 
-If they are *really* necessary, oth these types of questions _can_ work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data. 
+If they are *really* necessary, both these types of questions _can_ work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data. 
 
 
 
