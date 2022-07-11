@@ -1,5 +1,5 @@
 ./pre-render.sh
-Started rendering on Mon Jul 11 09:50:10 PDT 2022
+Started rendering on Mon Jul 11 09:51:00 PDT 2022
 Processing directory: posts
 Processing posts/2022-06-10-jekyll-to-quarto.qmd
 Processing posts/2021-11-04-cunninghams-law.qmd
@@ -34,34 +34,33 @@ Processing posts/2021-07-13-so-you-want-to-be-a-manager.qmd
 Processing posts/2022-04-04-south-carolina-dolphins.qmd
 Processing posts/2019-01-29-installing-arch-linux.qmd
 Processing posts/2022-07-11-the-worst-interview-questions.qmd
-Processing posts/2022-04-13-my-policies-around-interviewing.qmd
-Processing posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.qmd
-Processing posts/2021-11-29-weak-baselines.qmd
-Processing posts/2022-06-28-farmers-dog.qmd
-Processing posts/2021-04-30-some-tips-for-technical-interviews.qmd
-Processing posts/2021-08-17-the-neurodivergent-manager.qmd
-Processing posts/2022-06-27-automatically-posting-to-linkedin.qmd
-Processing posts/2021-09-18-writing-good-emails.qmd
-Processing posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.qmd
-Processing posts/2021-07-02-how-to-fail-a-technical-phone-screen.qmd
-Processing posts/2021-10-05-optimization-algorithms-for-your-career.qmd
-Processing posts/2021-07-22-the-xy-problem.qmd
-Processing posts/2018-08-23-yo-stroopwafel.qmd
-Processing posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.qmd
-Processing posts/2021-10-10-do-you-know-how-smart-i-am-in-portuguese.qmd
-Processing posts/2022-04-11-leaving-amazon.qmd
-Processing posts/2022-07-06-quarto-for-python.qmd
-Processing posts/2021-07-31-so-you-want-to-become-a-manager.qmd
-Processing posts/2021-11-22-reverse-causation.qmd
-Processing posts/2021-05-12-getting-nervous.qmd
-Processing posts/2022-06-16-failing-to-lead-by-example.qmd
-Processing directory: tweets
-Processing tweets/_2022-07-01T04-quarto.qmd
-Processing tweets/_2022-07-01T14-quarto-change-font.qmd
-Processing tweets/_2022-07-08T05-testing-azure-2.qmd
-Processing tweets/_2022-07-08T04-testing-azure.qmd
-Processing tweets/_2022-07-05T08-quarto-auto-upgrade.qmd
-Processing tweets/_2022-07-08T05-testing-azure-3.qmd
+There are two interview questions that I hate, and they appear a lot.\n\nThe first is \"let's ask something ambiguous to see how they deal with ambiguity\". The second is \"let's give them something unsolved to see if we learn something\". A typical version of the latter is using an analytical project as an interview.\n\nOf these two types of questions, I have a bigger problem with \"interviewers not knowing the answer\". When interviewers give out a project, they get unpaid labor. However, the part I have more of a problem with is the \"unsolved problem\" part. There's usually a reason why the problem is unsolved. The worst type of reason is when the interviewer is incapable of solving the problems themselves. Sadly, I've seen that a few times.\n\nIn that case, the worst case scenario is when the candidate gives the right answer, but the interviewer can't even recognize it. That's not very common, but I've seen it happen. In that case, the candidate is probably lucky if they don't get the job.\n\nSome slightly better scenarios are when the interviewer could know the answer, but they don't because the anwswer hasn't been a priority. In these cases, the data is usually bad and question is not well-defined. All those cases are clearly problematic for the candidate to solve under pressure.\n\nInterviewers sometimes try to assess ambiguity by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's hard to pull off.\n\nEven if the interviwer is skilled enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand of this type of question, this is likely to work out poorly.\n\nIf they are really necessary, oth these types of questions can work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data. \n\nThis post first appeared at https://www.meyerperin.com/posts/2022-07-11-the-worst-interview-questions.html
+Traceback (most recent call last):
+  File "post-articles.py", line 465, in <module>
+    sys.exit(main())
+  File "post-articles.py", line 148, in main
+    calendar = pd.concat([calendar, process_directory(di)])
+  File "post-articles.py", line 431, in process_directory
+    process_file(filepath)
+  File "post-articles.py", line 382, in process_file
+    post_to_linkedin(filepath, txt, f"/home/lucasmeyer/personal/blog{img}", front_matter_dict, linkedin_linkback)
+  File "post-articles.py", line 256, in post_to_linkedin
+    code = post_linkedin_image(li_text, imagepath, person_id, token)
+  File "post-articles.py", line 286, in post_linkedin_image
+    resp_code = upload_image(img_path, upload_url, token)
+  File "post-articles.py", line 200, in upload_image
+    response = requests.get(filepath)
+  File "/home/lucasmeyer/personal/blog/.venv/lib/python3.8/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/lucasmeyer/personal/blog/.venv/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/lucasmeyer/personal/blog/.venv/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lucasmeyer/personal/blog/.venv/lib/python3.8/site-packages/requests/sessions.py", line 695, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/home/lucasmeyer/personal/blog/.venv/lib/python3.8/site-packages/requests/sessions.py", line 792, in get_adapter
+    raise InvalidSchema(f"No connection adapters were found for {url!r}")
+requests.exceptions.InvalidSchema: No connection adapters were found for '/home/lucasmeyer/personal/bloghttps://mpsocial.blob.core.windows.net/blog-images/interview-crying.jpg'
 
 [ 1/58] about.qmd
 [ 2/58] talks.qmd
@@ -123,11 +122,4 @@ Processing tweets/_2022-07-08T05-testing-azure-3.qmd
 [58/58] calendar.qmd
 
 ./post-render.sh
-Finished rendering on Mon Jul 11 09:50:23 PDT 2022
-[main 2340db1] Rendered on Mon Jul 11 09:50:23 PDT 2022
- 6 files changed, 119 insertions(+), 127 deletions(-)
-To github.com:lucas-a-meyer/lucas-a-meyer.github.io.git
-   3cd73e5..2340db1  main -> main
-
-Output created: docs/index.html
-
+Finished rendering on Mon Jul 11 09:51:13 PDT 2022
