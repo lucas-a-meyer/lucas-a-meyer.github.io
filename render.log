@@ -1,5 +1,5 @@
 ./pre-render.sh
-Started rendering on Mon Jul 11 09:53:24 PDT 2022
+Started rendering on Mon Jul 11 10:00:05 PDT 2022
 Processing directory: posts
 Processing posts/2022-06-10-jekyll-to-quarto.qmd
 Processing posts/2021-11-04-cunninghams-law.qmd
@@ -34,7 +34,6 @@ Processing posts/2021-07-13-so-you-want-to-be-a-manager.qmd
 Processing posts/2022-04-04-south-carolina-dolphins.qmd
 Processing posts/2019-01-29-installing-arch-linux.qmd
 Processing posts/2022-07-11-the-worst-interview-questions.qmd
-There are two interview questions that I hate, and they appear a lot.\n\nThe first is \"let's ask something ambiguous to see how they deal with ambiguity\". The second is \"let's give them something unsolved to see if we learn something\". A typical version of the latter is using an analytical project as an interview.\n\nOf these two types of questions, I have a bigger problem with \"interviewers not knowing the answer\". When interviewers give out a project, they get unpaid labor. However, the part I have more of a problem with is the \"unsolved problem\" part. There's usually a reason why the problem is unsolved. The worst type of reason is when the interviewer is incapable of solving the problems themselves. Sadly, I've seen that a few times.\n\nIn that case, the worst case scenario is when the candidate gives the right answer, but the interviewer can't even recognize it. That's not very common, but I've seen it happen. In that case, the candidate is probably lucky if they don't get the job.\n\nSome slightly better scenarios are when the interviewer could know the answer, but they don't because the anwswer hasn't been a priority. In these cases, the data is usually bad and question is not well-defined. All those cases are clearly problematic for the candidate to solve under pressure.\n\nInterviewers sometimes try to assess ambiguity by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's hard to pull off.\n\nEven if the interviwer is skilled enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand of this type of question, this is likely to work out poorly.\n\nIf they are really necessary, oth these types of questions can work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data. \n\nThis post first appeared at https://www.meyerperin.com/posts/2022-07-11-the-worst-interview-questions.html
 Processing posts/2022-04-13-my-policies-around-interviewing.qmd
 Processing posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.qmd
 Processing posts/2021-11-29-weak-baselines.qmd
@@ -124,11 +123,4 @@ Processing tweets/_2022-07-08T05-testing-azure-3.qmd
 [58/58] calendar.qmd
 
 ./post-render.sh
-Finished rendering on Mon Jul 11 09:53:41 PDT 2022
-[main 5508827] Rendered on Mon Jul 11 09:53:41 PDT 2022
- 7 files changed, 148 insertions(+), 152 deletions(-)
-To github.com:lucas-a-meyer/lucas-a-meyer.github.io.git
-   e6b82f8..5508827  main -> main
-
-Output created: docs/index.html
-
+Finished rendering on Mon Jul 11 10:00:21 PDT 2022
