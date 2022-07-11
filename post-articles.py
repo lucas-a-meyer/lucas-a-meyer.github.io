@@ -253,15 +253,7 @@ def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
 
     print(li_text)
 
-    code = 505
-
-    if os.path.exists(imagepath):
-        code = post_linkedin_image(li_text, imagepath, person_id, token)
-    elif link:
-        code = 505
-    else:
-        # li_text = li_text[:1300]
-        code = post_linkedin_text(li_text, person_id, token)
+    code = post_linkedin_image(li_text, imagepath, person_id, token)
 
     # if posting was successful, update the front-matter so it won't post again
     if code == 201:
