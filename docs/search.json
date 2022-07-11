@@ -382,28 +382,28 @@
     "href": "posts/2022-07-11-the-worst-interview-questions.html",
     "title": "Two interview questions I hate",
     "section": "",
-    "text": "There are two interview questions that I hate, and they appear a lot.\nThe first is “let’s ask something ambiguous to see how they deal with ambiguity”. The second is “let’s give them something unsolved to see if we learn something”. A typical version of the latter is using an analytical project as an interview."
+    "text": "There are two interview questions that I hate, and I see them a lot.\nThe first is “let’s ask the candidate something ambiguous to see how they deal with ambiguity”. The second is “let’s give them something unsolved to see if we learn something”. A typical version of the latter is using an analytical project as an interview."
   },
   {
     "objectID": "posts/2022-07-11-the-worst-interview-questions.html#when-interviewers-dont-know-the-answer",
     "href": "posts/2022-07-11-the-worst-interview-questions.html#when-interviewers-dont-know-the-answer",
     "title": "Two interview questions I hate",
     "section": "When interviewers don’t know the answer",
-    "text": "When interviewers don’t know the answer\nOf these two types of questions, I have a bigger problem with “interviewers not knowing the answer”. When interviewers give out a project, they get unpaid labor. However, the part I have more of a problem with is the “unsolved problem” part. There’s usually a reason why the problem is unsolved. The worst type of reason is when the interviewer is incapable of solving the problems themselves. Sadly, I’ve seen that a few times.\nIn that case, the worst case scenario is when the candidate gives the right answer, but the interviewer can’t even recognize it. That’s not very common, but I’ve seen it happen. In that case, the candidate is probably lucky if they don’t get the job.\nSome slightly better scenarios are when the interviewer could know the answer, but they don’t because the anwswer hasn’t been a priority. In these cases, the data is usually bad and question is not well-defined. All those cases are clearly problematic for the candidate to solve under pressure."
+    "text": "When interviewers don’t know the answer\nOf these two types of questions, I have a bigger problem with the latter. The worst part is that the problem is unsolved. There’s usually a reason why the problem is still unsolved. The worst type of reason is when the interviewers are incapable of solving the problems themselves. In that case, it’s possible that the candidate will give the right answer and the interviewers won’t recognize it. That’s not very common, but I’ve seen it happen. The candidate is lucky if they don’t get the job.\nSome slightly better scenarios are when the interviewer could know the answer, but they don’t because answering that question hasn’t been a priority. In these cases, data is usually bad and/or the question is not well-defined. All those cases are clearly problematic for the candidate to solve under the pressure they face in the interview."
   },
   {
     "objectID": "posts/2022-07-11-the-worst-interview-questions.html#ambiguity",
     "href": "posts/2022-07-11-the-worst-interview-questions.html#ambiguity",
     "title": "Two interview questions I hate",
     "section": "Ambiguity",
-    "text": "Ambiguity\nInterviewers sometimes try to assess ambiguity by asking the candidate a question that can’t be answered unless the candidate asks further probing questions. That’s hard to pull off.\nEven if the interviwer is skilled enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. It’s understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand of this type of question, this is likely to work out poorly."
+    "text": "Ambiguity\nOccasionally, interviewers try to assess a candidate’s ability to “deal with ambiguity” by asking the candidate a question that can’t be answered unless the candidate asks further probing questions. That’s also hard to pull off - the candidate is nervous, and the interview has the “curse of knowledge” - questions that are obvious to the interviewer may not be obvious to the candidate.\nEven if the interviwer is skilled and experienced enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. Time is ticking. It’s understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand that they will get this type of question, this is likely to work out poorly."
   },
   {
     "objectID": "posts/2022-07-11-the-worst-interview-questions.html#it-can-be-done",
     "href": "posts/2022-07-11-the-worst-interview-questions.html#it-can-be-done",
     "title": "Two interview questions I hate",
     "section": "It can be done",
-    "text": "It can be done\nIf they are really necessary, oth these types of questions can work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data."
+    "text": "It can be done\nIf they are really necessary, both these types of questions can work out, but they need preparation and experienced interviwers. Sometimes, interviewers create these problems completely unnecessarily, and end up making decisions with bad data."
   },
   {
     "objectID": "posts/2022-04-13-my-policies-around-interviewing.html",
@@ -795,6 +795,6 @@
     "href": "calendar.html",
     "title": "Calendar",
     "section": "",
-    "text": "Target date\nPlatform\nTitle\n\n\n\n\n2022-07-12 06:00:00\nLinkedIn\nWhat happens when a hiring manager posts a position on LinkedIn\n\n\n2022-07-18 06:00:00\nLinkedIn\nThe XY Problem\n\n\n2022-07-22 06:00:00\nLinkedIn\nI’m a hiring manager: this is why I didn’t answer your LinkedIn message\n\n\n2022-09-11 06:00:00\nLinkedIn\nData science and 9/11\n\n\n2022-10-04 06:00:00\nLinkedIn\nChesterton’s Fence\n\n\n\n\nGenerated on 2022-07-11 10:00:05.966601"
+    "text": "Target date\nPlatform\nTitle\n\n\n\n\n2022-07-12 06:00:00\nLinkedIn\nWhat happens when a hiring manager posts a position on LinkedIn\n\n\n2022-07-13 04:00:00\nBlog\nInterview question: Musky vs Tweety\n\n\n2022-07-13 06:00:00\nTwitter\nInterview question: Musky vs Tweety\n\n\n2022-07-13 06:00:00\nLinkedIn\nInterview question: Musky vs Tweety\n\n\n2022-07-18 06:00:00\nLinkedIn\nThe XY Problem\n\n\n2022-07-22 06:00:00\nLinkedIn\nI’m a hiring manager: this is why I didn’t answer your LinkedIn message\n\n\n2022-09-11 06:00:00\nLinkedIn\nData science and 9/11\n\n\n2022-10-04 06:00:00\nLinkedIn\nChesterton’s Fence\n\n\n\n\nGenerated on 2022-07-11 12:00:05.907283"
   }
 ]
