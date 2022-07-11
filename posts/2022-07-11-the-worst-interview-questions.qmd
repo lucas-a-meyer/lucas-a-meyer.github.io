@@ -5,6 +5,7 @@ draft: false
 image: https://mpsocial.blob.core.windows.net/blog-images/interview-crying.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
+linkedin-posted: 2022-07-11 09:48:25.834575
 linkedin-target-date: 2022-07-11 06:00:00
 title: Two interview questions I hate
 twitter-description: The two interview questions I hate
