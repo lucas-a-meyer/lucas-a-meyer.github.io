@@ -188,12 +188,31 @@ def get_upload_url(token, person_id):
     return asset, upload_url
 
 def upload_image(filepath, upload_url, token):
-   headers = {
-      "Authorization": f"Bearer {token}"
-   }
+    headers = {"Authorization": f"Bearer {token}"}
 
-   resp = requests.put(upload_url, headers=headers, data=open(filepath,'rb').read())
-   return resp.status_code
+    is_url = False
+    
+    # download a file if it is a URL
+    if not os.path.exists(filepath):
+        # for now, assuming it's a URL
+        is_url = True
+
+        response = requests.get(filepath)
+        filename_pos = filepath.rfind("/")
+        local_img_path = filepath[filename_pos+1:]
+
+        file = open(local_img_path, "wb")
+        file.write(response.content)
+        file.close()
+
+        filepath = local_img_path
+
+    resp = requests.put(upload_url, headers=headers, data=open(filepath,'rb').read())
+
+    if is_url:
+        os.remove(filepath)
+
+    return resp.status_code
 
 def post_asset(token, person_id, asset, text):
     headers = {
