@@ -5,7 +5,6 @@ draft: true
 image: https://mpsocial.blob.core.windows.net/blog-images/pregnancy-test.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-posted: 2022-07-11 22:16:16.382445
 linkedin-target-date: 2022-07-13 06:00:00
 title: 'Interview question: Musky vs Tweety'
 twitter-description: 'Interview question: Musky vs Tweety'
