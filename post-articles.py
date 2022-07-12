@@ -4,21 +4,16 @@
 ###    - Determines whether to post them to LinkedIn and/or Twitter
 ###    - Posts them to LinkedIn/Twitter
 
-from pydoc import plain
 import sys
 import os
-import pandas as pd
 from bs4 import BeautifulSoup
 from markdown import markdown
 import re
 import yaml
 import datetime
-import requests
-import json
 from dotenv import load_dotenv
 from twilio.rest import Client
 from azure.cosmos import CosmosClient
-
 
 def update_lucas(body):
 
@@ -75,7 +70,6 @@ def markdown_to_text(markdown_string):
 
     return yml, text
 
-
 def get_file_plaintext(filepath):
     with open(filepath) as f:
         yml, plaintext = markdown_to_text(f.read())
@@ -86,23 +80,6 @@ def get_file_plaintext(filepath):
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         return yml, plaintext
-
-def linkedin_text(txt, filepath):
-    post = txt
-    size = len(post)
-    if filepath.endswith(".md"):
-        linkpath = filepath[:-2] + "html"
-    if filepath.endswith(".qmd"):
-        linkpath = filepath[:-3] + "html"
-    if size > 2800:
-        post = post[:2800]
-        post += f"""...
-       
-This post ended up being too long for LinkedIn. It's in my blog at https://www.meyerperin.com/{linkpath}
-"""
-    post = post.replace("\n", "\\n")
-    post = post.replace('"', '\\"')
-    return post
 
 def get_md_content(filepath):
     with open(filepath, "r") as f:
@@ -135,160 +112,6 @@ def get_date(front_matter_dict, field):
 
     return desired_date
 
-def main():
-    # Takes variables from .env
-    load_dotenv()
-
-    # Configure directories with posts
-    post_directories = ["posts", "tweets"]
-
-    calendar = pd.DataFrame(columns=["Target date", "Platform", "Title"])
-    # For each directory, process it
-    for di in post_directories:
-        calendar = pd.concat([calendar, process_directory(di)])
-
-    calendar.sort_values("Target date", inplace=True)
-    calendar_md = calendar.to_markdown(index=False, tablefmt="grid")
-
-    header=""
-    with open("calendar_front_matter.yaml") as f:
-        header = f.readlines()
-
-    with open("calendar.qmd", "wt") as calendar_file:
-        calendar_file.writelines(header)
-        calendar_file.write("\n")
-        calendar_file.write("## Future posts\n\n")
-        calendar_file.write(calendar_md)
-        calendar_file.write("\n")
-        calendar_file.write("-----------------------------------")
-        calendar_file.write("\n")     
-        calendar_file.write(f"Generated on {str(datetime.datetime.now())}\n")
-            
-        
-    return 0
-
-def get_upload_url(token, person_id):
-
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json"
-    }
-
-    with open("linkedin_upload_asset.json", "r") as f:
-        upload_json = f.read()
-
-    upload_json = upload_json.replace("PERSON_URN", person_id)
-
-    url = "https://api.linkedin.com/v2/assets?action=registerUpload"
-    response = requests.post(url, upload_json, headers=headers)
-    response_json = json.loads(response.text)
-    upload_url = response_json.get("value").get("uploadMechanism").get("com.linkedin.digitalmedia.uploading.MediaUploadHttpRequest").get("uploadUrl")
-    asset = response_json.get("value").get("asset")
-
-    return asset, upload_url
-
-def upload_image(filepath, upload_url, token):
-    headers = {"Authorization": f"Bearer {token}"}
-
-    is_url = False
-    
-    # download a file if it is a URL
-    if not os.path.exists(filepath):
-        # for now, assuming it's a URL
-        is_url = True
-
-        response = requests.get(filepath)
-        filename_pos = filepath.rfind("/")
-        local_img_path = filepath[filename_pos+1:]
-
-        file = open(local_img_path, "wb")
-        file.write(response.content)
-        file.close()
-
-        filepath = local_img_path
-
-    resp = requests.put(upload_url, headers=headers, data=open(filepath,'rb').read())
-
-    if is_url:
-        os.remove(filepath)
-
-    return resp.status_code
-
-def post_asset(token, person_id, asset, text):
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json"
-    }
-
-    with open("linkedin_post_image.json", "r") as f:
-        post_json = f.read()
-
-    post_json = post_json.replace("PERSON_URN", person_id)
-    post_json = post_json.replace("ASSET_URN", asset)
-    post_json = post_json.replace("POST_TEXT", text)
-
-    url = "https://api.linkedin.com/v2/ugcPosts"
-    resp = requests.post(url, post_json, headers=headers)
-
-    return resp.status_code
-
-def post_to_linkedin(filepath, text, imagepath, front_matter_dict, link=False):
-
-    person_id = os.getenv("LINKEDIN_PERSON_ID")
-    token = os.getenv("LINKEDIN_TOKEN")
-
-    li_text = linkedin_text(text, filepath) 
-
-    if filepath.endswith(".md"):
-        linkpath = filepath[:-2] + "html"
-    if filepath.endswith(".qmd"):
-        linkpath = filepath[:-3] + "html"    
-
-    if li_text.find("This post ended up being too long for LinkedIn") < 0:
-    # if we're inside here, the post was not cut-off 
-        if link:
-            li_text = li_text + f"\\n\\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
-        else:
-            li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio)."
-
-    print(li_text)
-
-    code = post_linkedin_image(li_text, imagepath, person_id, token)
-
-    # if posting was successful, update the front-matter so it won't post again
-    if code == 201:
-        update_lucas(f"Posted {filepath} to LinkedIn")
-    else:
-        update_lucas(f"Failed to post {filepath} to LinkedIn with error {code}\n\n")
-        
-
-def post_linkedin_text(txt, person_id, token):
-    headers = {
-        "Authorization": f"Bearer {token}",
-        "Content-Type": "application/json"
-    }
-   
-    with open("linkedin_post_text.json", "r") as f:
-        post_json = f.read()
-
-    post_json = post_json.replace("PERSON_URN", person_id)
-    post_json = post_json.replace("POST_TEXT", txt)
-
-    url = "https://api.linkedin.com/v2/ugcPosts"
-    resp = requests.post(url, post_json, headers=headers)
-
-    return resp.status_code
-
-def post_linkedin_image(txt, img_path, person_id, token):
-        
-    asset, upload_url = get_upload_url(token, person_id)
-
-    resp_code = upload_image(img_path, upload_url, token)
-    if resp_code == 201:
-        resp_code = post_asset(token, person_id, asset, txt)
-
-    return(resp_code)
-
 def convert_to_utc(local_time: datetime.datetime) -> datetime: 
     ts = datetime.datetime.timestamp(local_time)
     return datetime.datetime.utcfromtimestamp(ts)
@@ -304,7 +127,6 @@ def my_cosmos_client(db, container):
     database = client.get_database_client(db)
     return database.get_container_client(container)
     
-
 def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str = None, image_url:str = None, repeat:int = None):
 
     cc = my_cosmos_client("social-media", "tweets")
@@ -329,21 +151,10 @@ def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str
 
     cc.upsert_item(record)
 
-def queue_linkedin_post(filepath, text, img_path, front_matter_dict, linkedin_linkback):
+def queue_linkedin_post(filepath: str, text, img_path, front_matter_dict, linkedin_linkback):
     print("Queueing LinkedIn post")
-    li_text = linkedin_text(text, filepath) 
 
-    if filepath.endswith(".md"):
-        linkpath = filepath[:-2] + "html"
-    if filepath.endswith(".qmd"):
-        linkpath = filepath[:-3] + "html"    
-
-    if li_text.find("This post ended up being too long for LinkedIn") < 0:
-    # if we're inside here, the post was not cut-off 
-        if linkedin_linkback:
-            li_text = li_text + f"\\n\\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
-        else:
-            li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio)."
+    post_url = f'https://www.meyerperin.com/{filepath.replace(".qmd", ".html")}'
 
     cc = my_cosmos_client("social-media", "linkedin_posts")
     now = datetime.datetime.now()
@@ -353,13 +164,14 @@ def queue_linkedin_post(filepath, text, img_path, front_matter_dict, linkedin_li
     
     record = {
         "id": id,
-        "body": li_text,
+        "body": text,
         "image_url": img_path,
-        "linkedin_target_date_utc": target_time_utc
+        "linkedin_target_date_utc": target_time_utc,
+        "linkback": linkedin_linkback,
+        "post_url": post_url
     }
 
     cc.upsert_item(record)
-
 
 def process_file(filepath):
     print(f"Processing {filepath}")
@@ -450,43 +262,24 @@ def process_file(filepath):
 
 def process_directory(di):
     print(f"Processing directory: {di}")
-    calendar = pd.DataFrame(columns=["Target date", "Platform", "Title"])
     for root, dirs, files in os.walk(di):
         for filename in files:
             if filename.endswith("qmd") or filename.endswith("md"):
                 filepath = os.path.join(root, filename)
                 process_file(filepath)
-                calendar = pd.concat([calendar, add_to_calendar(filepath)])
-    return calendar
 
-def add_to_calendar(filepath):
-    yml, dummy = get_file_plaintext(filepath)
-    front_matter_dict = yaml.safe_load(yml.replace("---", ""))
+def main():
+    # Takes variables from .env
+    load_dotenv()
 
-    df = pd.DataFrame(columns=["Target date", "Platform", "Title"])
-    blog_date = get_date(front_matter_dict, "date")
-    tw_date = get_date(front_matter_dict, "twitter-target-date")
-    li_date = get_date(front_matter_dict, "linkedin-target-date")
-    tw_posted = get_date(front_matter_dict, "twitter-posted")
-    li_posted = get_date(front_matter_dict, "linkedin-posted")
-    title = front_matter_dict.get("title")
-#    draft = front_matter_dict.get("draft")
+    # Configure directories with posts
+    post_directories = ["posts", "tweets"]
 
-    # draft_txt = False
-    # if draft:
-    #     draft_txt = True
-
-    if blog_date and blog_date > datetime.datetime.now():
-        list = [blog_date.strftime("%Y-%m-%d %H:%M:%S"), "Blog", title]
-        df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
-    if tw_date and not tw_posted:
-        list = [tw_date.strftime("%Y-%m-%d %H:%M:%S"), "Twitter", title]
-        df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
-    if li_date and not li_posted:
-        list = [li_date.strftime("%Y-%m-%d %H:%M:%S"), "LinkedIn", title]
-        df = pd.concat([df, pd.DataFrame([list], columns=["Target date", "Platform", "Title"])])
-    
-    return df
+    for di in post_directories:
+        process_directory(di)
+                    
+    return 0
 
 if __name__ == "__main__":
     sys.exit(main())
+
