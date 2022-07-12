@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"38037e9e-0000-0700-0000-62cdb75c0000"'
+_rid: y90DAIjYJsA0AAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA0AAAAAAAAAA==/
+_ts: 1657648988
 author: Lucas A. Meyer
 categories:
 - management

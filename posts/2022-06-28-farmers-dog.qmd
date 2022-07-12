@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803d99d-0000-0700-0000-62cdb7540000"'
+_rid: y90DAIjYJsAmAAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAmAAAAAAAAAA==/
+_ts: 1657648980
 author: Lucas A. Meyer
 date: 2022-06-30 06:00:00
 draft: false
@@ -7,12 +12,14 @@ image: https://mpsocial.blob.core.windows.net/blog-images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-06-30 06:00:00
+linkedin-posted-utc: 2022-06-30T13-00-00.0000000Z
 linkedin-target-date: 2022-06-30 06:00:00
 linkedin-target-date-utc: 2022-06-30T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2022-06-28-farmers-dog.html
 title: My review of the Farmer's Dog food service
 twitter-description: My review of the Farmer's Dog food service
 twitter-posted: 2022-06-30 06:00:00
+twitter-posted-utc: 2022-06-30T13-00-00.0000000Z
 twitter-target-date: 2022-06-30 06:00:00
 twitter-target-date-utc: 2022-06-30T13-00-00.0000000Z
 ---

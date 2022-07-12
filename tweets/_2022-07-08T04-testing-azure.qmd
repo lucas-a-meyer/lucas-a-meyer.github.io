@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803bc9e-0000-0700-0000-62cdb75f0000"'
+_rid: y90DAIjYJsA7AAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA7AAAAAAAAAA==/
+_ts: 1657648991
 date: 2022-07-01 04:00:00
 id: b306f47e497b3546c473adc732cc008d
 include-in-header: _msft-clarity.html
@@ -6,6 +11,7 @@ post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-08T04-testing-azure.html
 title: Population aging
 twitter-posted: 2022-07-07 23:07:25.576157
+twitter-posted-utc: 2022-07-08T07-00-01.0000000Z
 twitter-target-date: 2022-07-08 00:00:01
 twitter-target-date-utc: 2022-07-08T07-00-01.0000000Z
 ---

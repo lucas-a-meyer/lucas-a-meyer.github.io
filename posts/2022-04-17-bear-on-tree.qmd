@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"38032c9c-0000-0700-0000-62cdb7440000"'
+_rid: y90DAIjYJsAHAAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAHAAAAAAAAAA==/
+_ts: 1657648964
 author: Lucas A. Meyer
 categories:
 - home

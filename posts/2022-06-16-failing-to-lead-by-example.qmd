@@ -1,10 +1,16 @@
 ---
+_attachments: attachments/
+_etag: '"3803959e-0000-0700-0000-62cdb75d0000"'
+_rid: y90DAIjYJsA3AAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA3AAAAAAAAAA==/
+_ts: 1657648989
 author: Lucas A. Meyer
 date: 2022-06-16 06:00:00
 id: 82574b804c0e20792badcf6714fda9db
 image: https://mpsocial.blob.core.windows.net/blog-images/failing-to-lead.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00
+linkedin-posted-utc: 2022-06-16T13-00-00.0000000Z
 linkedin-target-date: 2022-06-16 06:00:00
 linkedin-target-date-utc: 2022-06-16T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2022-06-16-failing-to-lead-by-example.html

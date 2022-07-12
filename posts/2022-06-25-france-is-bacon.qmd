@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803059c-0000-0700-0000-62cdb7430000"'
+_rid: y90DAIjYJsAEAAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAEAAAAAAAAAA==/
+_ts: 1657648963
 author: Lucas A. Meyer
 date: 2022-06-26 06:00:00
 draft: false
@@ -6,6 +11,7 @@ id: c4cd78b61469fc0d5f35f2a57e2331b0
 image: https://mpsocial.blob.core.windows.net/blog-images/france-is-bacon.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-27 06:00:00
+linkedin-posted-utc: 2022-06-27T13-00-00.0000000Z
 linkedin-target-date: 2022-06-27 06:00:00
 linkedin-target-date-utc: 2022-06-27T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2022-06-25-france-is-bacon.html

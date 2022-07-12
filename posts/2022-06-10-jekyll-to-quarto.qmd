@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803de9b-0000-0700-0000-62cdb7410000"'
+_rid: y90DAIjYJsABAAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsABAAAAAAAAAA==/
+_ts: 1657648961
 author: Lucas A. Meyer
 date: 2022-06-10 06:00:00
 freeze: true

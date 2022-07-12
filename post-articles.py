@@ -168,8 +168,15 @@ def process_file(filepath):
     # Add the UTC fields to cosmos
     if "twitter-target-date" in front_matter_dict and front_matter_dict["twitter-target-date"]: 
         cosmos_record["twitter-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
+        cosmos_record["twitter-posted-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
+    elif "twitter-target-date" in front_matter_dict:
+        front_matter_dict.pop("twitter-target-date")
+
     if "linkedin-target-date" in front_matter_dict and front_matter_dict["linkedin-target-date"]: 
         cosmos_record["linkedin-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
+        cosmos_record["linkedin-posted-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
+    elif "linkedin-target-date" in front_matter_dict:
+        front_matter_dict.pop("linkedin-target-date")
 
     # Add the body to cosmos (since the body is part of the .qmd file but not the YAML front-matter)
     cosmos_record["body"] = txt

@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803bf9e-0000-0700-0000-62cdb7600000"'
+_rid: y90DAIjYJsA8AAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA8AAAAAAAAAA==/
+_ts: 1657648992
 date: 2022-07-06 06:00:00
 draft: false
 id: 46efd9c98eec1a42991d46928506160f
@@ -7,6 +12,7 @@ post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-05T08-quarto-auto-upgrade.html
 title: Automatically upgrading Quarto
 twitter-posted: 2022-07-06 10:13:04.589611
+twitter-posted-utc: 2022-07-06T13-00-00.0000000Z
 twitter-target-date: 2022-07-06 06:00:00
 twitter-target-date-utc: 2022-07-06T13-00-00.0000000Z
 ---

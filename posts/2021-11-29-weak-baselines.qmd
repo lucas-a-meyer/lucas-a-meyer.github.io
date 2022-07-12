@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803d09d-0000-0700-0000-62cdb7530000"'
+_rid: y90DAIjYJsAlAAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAlAAAAAAAAAA==/
+_ts: 1657648979
 author: Lucas A. Meyer
 categories: data science
 date: 2021-11-29 06:00:00

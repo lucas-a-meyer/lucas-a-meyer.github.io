@@ -1,4 +1,9 @@
 ---
+_attachments: attachments/
+_etag: '"3803b59e-0000-0700-0000-62cdb75f0000"'
+_rid: y90DAIjYJsA6AAAAAAAAAA==
+_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA6AAAAAAAAAA==/
+_ts: 1657648991
 date: 2022-07-01 04:00:00
 id: ed544800609c8d16ec00412f312b5500
 include-in-header: _msft-clarity.html
@@ -6,6 +11,7 @@ post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-08T05-testing-azure-2.html
 title: Clarity
 twitter-posted: 2022-07-07 23:00:37.674005
+twitter-posted-utc: 2022-07-08T06-00-00.0000000Z
 twitter-target-date: 2022-07-07 23:00:00
 twitter-target-date-utc: 2022-07-08T06-00-00.0000000Z
 ---
