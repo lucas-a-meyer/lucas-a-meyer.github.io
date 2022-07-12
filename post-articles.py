@@ -184,45 +184,17 @@ def process_file(filepath):
     post_date = get_date(front_matter_dict, "date")
     draft = front_matter_dict.get("draft")
 
-    if post_date:       
-        if draft and post_date <= datetime.datetime.now():
-            front_matter_dict["draft"] = False
-            draft = False
-            update_lucas(f"Removed {filepath} from draft")
-
-        if not draft and post_date > datetime.datetime.now():
-            front_matter_dict["draft"] = True
-            draft = True
-            update_lucas(f"Added {filepath} to draft")
-
     linkedin_posted = get_date(front_matter_dict, "linkedin-posted")
     twitter_posted = get_date(front_matter_dict, "twitter-posted")
-
-    linkedin_repost = front_matter_dict.get("linkedin-repost")
-    twitter_repost = front_matter_dict.get("twitter-repost")
     
     linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
     twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
 
     linkedin_linkback = front_matter_dict.get("linkedin-linkback")
 
-    # Check if I want to move a posting date to the future for LinkedIn
-    if linkedin_repost and linkedin_posted and linkedin_target_date < datetime.datetime.now(): 
-        front_matter_dict["linkedin-target-date"] = linkedin_posted + datetime.timedelta(days=linkedin_repost)
-        linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
-    if twitter_repost and twitter_posted and twitter_target_date < datetime.datetime.now(): 
-        front_matter_dict["twitter-target-date"] = twitter_posted + datetime.timedelta(days=twitter_repost)
-        twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
-
-    # If target posting date is in the future, remove last posted date
-    if linkedin_target_date and linkedin_posted and linkedin_target_date > datetime.datetime.now():
-        front_matter_dict.pop("linkedin-posted")
-    if twitter_target_date and twitter_posted and twitter_target_date > datetime.datetime.now():
-        front_matter_dict.pop("twitter-posted")
-
     # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
     # and the article target date is at least today  and the article is not in draft
-    if linkedin_target_date and not linkedin_posted: # and not draft
+    if not draft and linkedin_target_date and not linkedin_posted: 
         img = front_matter_dict.get("image")
         # post_to_linkedin(filepath, txt, img, front_matter_dict, linkedin_linkback)
         queue_linkedin_post(filepath, txt, img, front_matter_dict, linkedin_linkback)

@@ -1,3 +1,16 @@
+---
+author: Lucas A. Meyer
+date: 2022-07-15 04:00:00
+draft: true
+image: https://mpsocial.blob.core.windows.net/blog-images/pregnancy-test.jpg
+include-in-header: _msft-clarity.html
+linkedin-linkback: true
+linkedin-target-date: 2022-07-15 06:00:00
+title: 'My model is training'
+twitter-description: 'Getting Twilio to call me when my model finishes training'
+twitter-target-date: 2022-07-15 06:00:00
+---
+
 If you're a data scientist, you're probably very much used to wait for model training results.
 
 Sometimes I wait for so long that I forget to check back. To help me with that, I wrote a tiny script that uses [Twilio](https://www.twilio.com) to _text_ me when my model is done training. 
@@ -6,6 +19,7 @@ Twilio is inexpensive. At the time I'm writing this, it costs [$1 per month](htt
 
 The code to send an update is an one-liner:     
 
+```python
 client.api.account.messages.create(to=<my_phone_number>, from_=<twilio_number>, body="Done!")
-
+```
 
