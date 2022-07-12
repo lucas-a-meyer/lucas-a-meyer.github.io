@@ -1,5 +1,5 @@
 ./pre-render.sh
-Started rendering on Tue Jul 12 08:00:04 PDT 2022
+Started rendering on Tue Jul 12 10:00:04 PDT 2022
 Processing directory: posts
 Processing posts/2022-06-10-jekyll-to-quarto.qmd
 Processing posts/2021-11-04-cunninghams-law.qmd
@@ -125,4 +125,4 @@ Processing tweets/_2022-07-08T05-testing-azure-3.qmd
 [59/59] calendar.qmd
 
 ./post-render.sh
-Finished rendering on Tue Jul 12 08:00:20 PDT 2022
+Finished rendering on Tue Jul 12 10:00:20 PDT 2022
