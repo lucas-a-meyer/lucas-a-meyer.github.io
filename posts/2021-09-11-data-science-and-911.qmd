@@ -6,7 +6,7 @@ date: 2021-09-11 06:00:00
 image: https://mpsocial.blob.core.windows.net/blog-images/bin-laden-compound.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
-linkedin-posted: null
+linkedin-posted: 2022-07-11 19:22:10.789397
 linkedin-repost: 365
 linkedin-target-date: 2022-09-11 06:00:00
 title: Data science and 9/11

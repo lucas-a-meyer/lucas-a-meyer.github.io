@@ -329,6 +329,38 @@ def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str
 
     cc.upsert_item(record)
 
+def queue_linkedin_post(filepath, text, img_path, front_matter_dict, linkedin_linkback):
+    li_text = linkedin_text(text, filepath) 
+
+    if filepath.endswith(".md"):
+        linkpath = filepath[:-2] + "html"
+    if filepath.endswith(".qmd"):
+        linkpath = filepath[:-3] + "html"    
+
+    if li_text.find("This post ended up being too long for LinkedIn") < 0:
+    # if we're inside here, the post was not cut-off 
+        if linkedin_linkback:
+            li_text = li_text + f"\\n\\nThis post first appeared at https://www.meyerperin.com/{linkpath}"
+        else:
+            li_text = li_text + f"\\n\\nThis post first appeared at my blog (link in bio)."
+
+    cc = my_cosmos_client("social-media", "linkedin_posts")
+    now = datetime.datetime.now()
+
+    target_time_utc = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
+    id = f'{front_matter_dict["linkedin-target-date"].strftime("%Y-%m-%d-%H-%M-%S")}-{now.strftime("%Y-%m-%d-%H-%M-%S-%f")}'
+    
+
+    record = {
+        "id": id,
+        "body": li_text,
+        "image_url": img_path,
+        "linkedin_target_date_utc": target_time_utc
+    }
+
+    cc.upsert_item(record)
+
+
 def process_file(filepath):
     print(f"Processing {filepath}")
     yml, txt = get_file_plaintext(filepath)
@@ -377,16 +409,15 @@ def process_file(filepath):
 
     # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
     # and the article target date is at least today  and the article is not in draft
-    if not draft and linkedin_target_date and linkedin_target_date <= datetime.datetime.now() and not linkedin_posted:
+    if linkedin_target_date and not linkedin_posted: # and not draft
         img = front_matter_dict.get("image")
-        post_to_linkedin(filepath, txt, img, front_matter_dict, linkedin_linkback)
+        # post_to_linkedin(filepath, txt, img, front_matter_dict, linkedin_linkback)
+        queue_linkedin_post(filepath, txt, img, front_matter_dict, linkedin_linkback)
         linkedin_posted = datetime.datetime.now()
         front_matter_dict["linkedin-posted"] = linkedin_posted
 
     if not draft and twitter_target_date and not twitter_posted:
-
         post_type = front_matter_dict.get("post-type")
-
         twitter_text = ""
         if front_matter_dict.get("twitter-description"):
             twitter_text = front_matter_dict.get("twitter-description")
@@ -394,20 +425,16 @@ def process_file(filepath):
             last_break = txt[:240].rfind("\\n")
             if last_break == -1:
                 last_break = 240            
-                twitter_text = txt[:last_break]
-        
+                twitter_text = txt[:last_break]       
         if not post_type or post_type == "link":
             twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
             queue_twitter_post(twitter_target_date, twitter_text, twitter_url)
             twitter_posted = datetime.datetime.now()
-
         if post_type == "text":
             print(f"Gonna tweet: {twitter_text}")
             queue_twitter_post(twitter_target_date, twitter_text)
             twitter_posted = datetime.datetime.now()
-    
         front_matter_dict["twitter-posted"] = twitter_posted
-        update_lucas(f"Queued Twitter post")
 
     # Check that we have Microsoft Clarity installed in the page
     if not front_matter_dict.get("include-in-header"):

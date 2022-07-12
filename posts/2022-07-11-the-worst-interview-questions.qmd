@@ -25,9 +25,9 @@ Some slightly better scenarios are when the interviewer _could_ know the answer,
 
 ## Ambiguity
 
-Occasionally, interviewers try to assess a candidate's ability to "deal with ambiguity" by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's also hard to pull off - the candidate is nervous, and the interview has the "curse of knowledge" - questions that are obvious to the interviewer may not be obvious to the candidate.
+Occasionally, interviewers try to assess a candidate's ability to "deal with ambiguity" by asking the candidate a question that can't be answered unless the candidate asks further probing questions. That's also hard to pull off - the candidate is nervous, and the interviewer has the "curse of knowledge" - questions that are obvious to the interviewer may not be obvious to the candidate.
 
-Even if the interviwer is skilled and experienced enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. Time is ticking. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand that they will get this type of question, this is likely to work out poorly.
+Even if the interviewer is skilled and experienced enough to pull off something like that, the high-pressure setting of the interview also presents a problem for dealing with ambiguity. Time is ticking. It's understandable that candidates will sometimes apply for jobs that require solving ambiguous problems under pressure, but those situations are usually different from interviews. When a person gets into a high-pressure situation at work, they usually have a lot of context and at least some preparation. Unless the candidate is aware beforehand that they will get this type of question, this is likely to work out poorly.
 
 ## It can be done
 

@@ -5,7 +5,7 @@ categories:
 date: 2021-07-22 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
-linkedin-posted: null
+linkedin-posted: 2022-07-11 19:22:12.908570
 linkedin-repost: 180
 linkedin-target-date: 2022-07-18 06:00:00
 title: The XY Problem

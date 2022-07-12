@@ -5,7 +5,7 @@ date: 2022-04-02 06:00:00
 image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816
-linkedin-posted: null
+linkedin-posted: 2022-07-11 19:22:10.227648
 linkedin-repost: 360
 linkedin-target-date: 2022-10-04 06:00:00
 title: Chesterton's Fence

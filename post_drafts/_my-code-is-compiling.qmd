@@ -1,7 +1,11 @@
-If you're a data scientist, you're probably very much used to waiting for model training results.
+If you're a data scientist, you're probably very much used to wait for model training results.
 
-Sometimes I wait for so long that I forget to check back. To prevent that, I wrote a tiny script that uses [Twilio](https://www.twilio.com) to _text_ me when my model is done training. 
+Sometimes I wait for so long that I forget to check back. To help me with that, I wrote a tiny script that uses [Twilio](https://www.twilio.com) to _text_ me when my model is done training. 
 
-Twilio is inexpensive. At the time I'm writing this, [it costs $1 per month for a phone number](https://www.twilio.com/sms/pricing/us). You can also use your own phone for 50 cents per month, but I didn't try that yet. Each text costs less than 1 cent. Even in a month when I am getting lots of notifications, I usually spend less than $2.
+Twilio is inexpensive. At the time I'm writing this, it costs [$1 per month](https://www.twilio.com/sms/pricing/us) for a phone number. You can also use your own phone for 50 cents per month, but I didn't try that yet. Each text costs less than 1 cent. Even in a month when I am getting lots of notifications, I usually spend less than $2.
 
-The code is really a one-liner.
+The code to send an update is an one-liner:     
+
+client.api.account.messages.create(to=<my_phone_number>, from_=<twilio_number>, body="Done!")
+
+
