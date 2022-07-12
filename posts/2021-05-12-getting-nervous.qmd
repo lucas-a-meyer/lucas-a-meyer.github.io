@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 - interviews
@@ -8,6 +9,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir
 linkedin-posted: 2021-05-06 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2021-05-12-getting-nervous.html
 title: Getting nervous during an interview
 twitter-posted: 2021-05-06 06:00:00
 twitter-target-date: null

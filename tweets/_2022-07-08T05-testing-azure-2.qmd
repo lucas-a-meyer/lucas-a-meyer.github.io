@@ -1,9 +1,12 @@
 ---
+body: null
 date: 2022-07-01 04:00:00
 include-in-header: _msft-clarity.html
 post-type: text
+post-url: https://www.meyerperin.com/tweets/_2022-07-08T05-testing-azure-2.html
 title: Clarity
 twitter-posted: 2022-07-07 23:00:37.674005
 twitter-target-date: 2022-07-07 23:00:00
+twitter-target-date-utc: 2022-07-08T06-00-00.0000000Z
 ---
 I am utterly amazed as how wonderful Microsoft Clarity is to understand how people use a website, and even better - it's absolutely free https://clarity.microsoft.com/

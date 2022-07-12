@@ -1,9 +1,12 @@
 ---
+body: null
 date: 2022-07-01 04:00:00
 include-in-header: _msft-clarity.html
 post-type: text
+post-url: https://www.meyerperin.com/tweets/_2022-07-08T05-testing-azure-3.html
 title: Testing that server is working for now
 twitter-posted: 2022-07-08 04:00:09.486122
 twitter-target-date: 2022-07-08 08:00:00
+twitter-target-date-utc: 2022-07-08T15-00-00.0000000Z
 ---
 One of the features I really wanted in Quarto blogs is for posts to become invisible while their date is in the future.

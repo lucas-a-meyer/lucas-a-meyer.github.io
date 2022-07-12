@@ -1,10 +1,13 @@
 ---
+body: null
 date: 2022-07-06 06:00:00
 draft: false
 include-in-header: _msft-clarity.html
 post-type: text
+post-url: https://www.meyerperin.com/tweets/_2022-07-05T08-quarto-auto-upgrade.html
 title: Automatically upgrading Quarto
 twitter-posted: 2022-07-06 10:13:04.589611
 twitter-target-date: 2022-07-06 06:00:00
+twitter-target-date-utc: 2022-07-06T13-00-00.0000000Z
 ---
 I love @quarto_pub, and it's getting a lot of updates daily. I wrote a script to install the latest version https://links.meyerperin.com/tnk

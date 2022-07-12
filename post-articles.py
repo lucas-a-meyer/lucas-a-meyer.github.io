@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 from twilio.rest import Client
 from azure.cosmos import CosmosClient
 import hashlib
+import json
 
 def update_lucas(body):
 
@@ -172,13 +173,7 @@ def process_file(filepath):
 
     # Add the body to cosmos (since the body is part of the .qmd file but not the YAML front-matter)
     cosmos_record["body"] = txt
-    cosmos_record["date"] = None
-    cosmos_record["twitter-target-date"] = None
-    cosmos_record["linkedin-target-date"] = None
-    cosmos_record["twitter-posted"] = None
-    cosmos_record["linkedin-posted"] = None    
-
-    cc.upsert_item(cosmos_record)
+    cosmos_str = json.dumps(cosmos_record, default=str)
 
     front_matter_dict.update(cosmos_record)
     
