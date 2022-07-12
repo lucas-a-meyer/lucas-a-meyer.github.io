@@ -50,6 +50,7 @@ def markdown_to_text(markdown_string):
     # remove code snippets
     html = re.sub(r'<pre>(.*?)</pre>', r'\g<1>', html)
     html = re.sub(r'<code>(.*?)</code>', r'\g<1>', html)
+    html = re.sub(r'$$(.*?)$$', r'\g<1>', html)
 
     # Remove headings
     html = re.sub(r'<h1>(.*?)</h1>', ' ', html)
