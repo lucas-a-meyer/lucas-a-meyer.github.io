@@ -7,15 +7,15 @@ include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-29 06:00:00
 linkedin-target-date: 2022-06-29 06:00:00
 title: Posting automatically from my blog to LinkedIn
-twitter-description: One of the things that felt very inneficient to me was to write
-  using several different tools, but I recently solved that problem.
+twitter-description: One of the things that felt very inefficient to me was to write
+  using several tools, but I recently solved that problem.
 twitter-posted: 2022-06-29 06:00:00
 twitter-target-date: 2022-06-29 06:00:00
 ---
 
 Write once, use everywhere.
 
-One of the things that felt very inneficient to me was to write using several different tools, but I recently solved that problem.
+One of the things that felt very inefficient to me was to write using several tools, but I recently solved that problem.
 
 Until very recently, I wrote in LinkedIn (I used Buffer), Twitter, my blog (I used GitHub Markdown), my work code (Python and Jupyter). That's a lot to keep track of. Sometimes, I wanted to find something that I wrote and it would take me a while.
 
@@ -31,15 +31,15 @@ The problem of writing an article on LinkedIn is that the editor is good for tex
 
 The problem of creating a training is that I think it's a lot of work. I never tried, and maybe it's easier than I think it is, but just getting started seems like a lot.
 
-Instead of using LinkedIn, a very popular option is to use Medium or, more specifically, "Towards Data Science" (TDS), a subset of Medium articles focused on data science. I frequently find articles I like in TDS, but it's somewhat paywalled. You get just a few free articles for free. For authors, the advantages are that TDS is widely promoted in search results and that authors get paid. Not enough to quit a job and write for TDS, but enough to buy a couple books per year. Other options are newsletters, but it starts to feel too much like a job.
+Instead of using LinkedIn, a very popular option is to use Medium or, more specifically, "Towards Data Science" (TDS), a subset of Medium articles focused on data science. I frequently find articles I like in TDS, but it's somewhat pay-walled. You get just a few free articles for free. For authors, the advantages are that TDS is widely promoted in search results and that authors get paid. Not enough to quit a job and write for TDS, but enough to buy a couple books per year. Other options are newsletters, but it starts to feel too much like a job.
 
 The LinkedIn algorithm seems to punish posts that only point users to an external article. I can understand that: this type of post is unlikely to generate any engagement inside of LinkedIn: people just "click out".
 
-In any case, the problem I wanted to solve was to be able to write more technical posts from time to time, but still be able to post those to LinkedIn automatically. To write technical posts in my blog, I started using [#Quarto](https://www.quarto.org/) and loving it. Recently, I wrote some code to configure Quarto to post automatically to LinkedIn. The code scans my Quarto files and uses the LinkedIn API to post them. If they fit fully as text, it posts them as a normal post. If they're too large, it posts the beginning of the article and a link to my blog.
+In any case, the problem I wanted to solve was to be able to write more technical posts from time to time, but still be able to post those to LinkedIn automatically. To write technical posts on my blog, I started using [#Quarto](https://www.quarto.org/) and loving it. Recently, I wrote some code to configure Quarto to post automatically to LinkedIn. The code scans my Quarto files and uses the LinkedIn API to post them. If they fit fully as text, it posts them as a normal post. If they're too large, it posts the beginning of the article and a link to my blog.
 
 Now, when I write a blog post (technical or non-technical) or even real work code, I can choose to automatically post it to LinkedIn and Twitter by simply adding some front-matter to my file. 
 
-This solves a large number of problems for me. With that, I now do all my writing in VS Code. I don't need to use Buffer anymore. I even have version control. 
+This solves many problems for me. With that, I now do all my writing in VS Code. I don't need to use Buffer anymore. I even have version control. 
 
 Now I just need to write interesting stuff!
 

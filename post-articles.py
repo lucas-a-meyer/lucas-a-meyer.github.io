@@ -330,6 +330,7 @@ def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str
     cc.upsert_item(record)
 
 def queue_linkedin_post(filepath, text, img_path, front_matter_dict, linkedin_linkback):
+    print("Queueing LinkedIn post")
     li_text = linkedin_text(text, filepath) 
 
     if filepath.endswith(".md"):
@@ -350,7 +351,6 @@ def queue_linkedin_post(filepath, text, img_path, front_matter_dict, linkedin_li
     target_time_utc = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
     id = f'{front_matter_dict["linkedin-target-date"].strftime("%Y-%m-%d-%H-%M-%S")}-{now.strftime("%Y-%m-%d-%H-%M-%S-%f")}'
     
-
     record = {
         "id": id,
         "body": li_text,
