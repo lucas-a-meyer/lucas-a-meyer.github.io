@@ -2,10 +2,10 @@
 author: Lucas A. Meyer
 date: 2022-07-13 04:00:00
 draft: true
-image: https://mpsocial.blob.core.windows.net/blog-images/interview-crying.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/pregnancy-test.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-posted: 2022-07-11 20:16:28.945233
+linkedin-posted: 2022-07-11 20:19:20.871530
 linkedin-target-date: 2022-07-13 06:00:00
 title: 'Interview question: Musky vs Tweety'
 twitter-description: 'Interview question: Musky vs Tweety'
