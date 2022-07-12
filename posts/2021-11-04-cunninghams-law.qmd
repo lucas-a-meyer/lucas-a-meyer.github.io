@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories: concepts
 date: 2021-11-04 06:00:00
 image: https://mpsocial.blob.core.windows.net/blog-images/cunninghams-law.jpg
@@ -7,6 +8,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769
 linkedin-posted: 2021-11-04 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2021-11-04-cunninghams-law.html
 title: Cunningham's Law
 twitter-posted: 2021-11-04 06:00:00
 twitter-target-date: null

@@ -1,11 +1,14 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-06-23 06:00:00
 draft: false
 image: https://mpsocial.blob.core.windows.net/blog-images/wild-dunes.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00
 linkedin-target-date: 2022-06-24 06:00:00
+linkedin-target-date-utc: 2022-06-24T13-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-06-23-charleston-vacations.html
 title: Vacations at Wild Dunes
 twitter-posted: 2022-06-23 06:00:00
 twitter-target-date: null

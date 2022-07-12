@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 - hiring
@@ -9,6 +10,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919333255288627200
 linkedin-posted: 2022-04-11 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2022-04-11-leaving-amazon.html
 title: Leaving Amazon
 twitter-posted: 2022-04-11 06:00:00
 twitter-target-date: null

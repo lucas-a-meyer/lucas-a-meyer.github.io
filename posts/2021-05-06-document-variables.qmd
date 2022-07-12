@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 - interviews
@@ -8,6 +9,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe
 linkedin-posted: 2021-05-06 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2021-05-06-document-variables.html
 title: Remember to document your code
 twitter-posted: 2021-05-06 06:00:00
 twitter-target-date: null

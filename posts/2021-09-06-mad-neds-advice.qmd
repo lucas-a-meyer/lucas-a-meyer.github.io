@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 date: 2021-09-06 06:00:00
@@ -8,6 +9,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6840649034512900096
 linkedin-posted: 2021-09-06 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2021-09-06-mad-neds-advice.html
 title: Mad Ned's career advice
 twitter-posted: 2021-09-06 06:00:00
 twitter-target-date: null

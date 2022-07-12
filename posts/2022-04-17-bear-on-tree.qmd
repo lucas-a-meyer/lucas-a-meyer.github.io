@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - home
 date: 2022-04-17 06:00:00
@@ -8,6 +9,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_during-a-couple-of-our-conference-calls-activity-6921261803536560128-JJ1z
 linkedin-posted: 2022-04-17 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2022-04-17-bear-on-tree.html
 title: Bear on tree
 twitter-posted: 2022-04-17 06:00:00
 twitter-target-date: null

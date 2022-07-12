@@ -1,9 +1,11 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2019-01-29 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-posted: 2019-01-29 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2019-01-29-installing-arch-linux.html
 title: Installing Arch Linux
 twitter-posted: 2019-01-29 06:00:00
 twitter-target-date: null

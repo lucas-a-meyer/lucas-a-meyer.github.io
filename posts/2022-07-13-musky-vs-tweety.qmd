@@ -1,15 +1,19 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-07-13 04:00:00
 draft: true
 image: https://mpsocial.blob.core.windows.net/blog-images/pregnancy-test.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-13 06:00:00
+linkedin-target-date-utc: 2022-07-13T13-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-07-13-musky-vs-tweety.html
 title: 'Interview question: Musky vs Tweety'
 twitter-description: 'Interview question: Musky vs Tweety'
 twitter-posted: 2022-07-11 22:35:03.408881
 twitter-target-date: 2022-07-13 06:00:00
+twitter-target-date-utc: 2022-07-13T13-00-00.0000000Z
 ---
 
 One thing I find in my interviews is that data scientists are a lot better at calculating expectations than they are at defining loss functions. 

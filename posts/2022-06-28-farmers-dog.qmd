@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-06-30 06:00:00
 draft: false
 image: https://mpsocial.blob.core.windows.net/blog-images/farmers-dog-logo.png
@@ -7,10 +8,13 @@ include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-06-30 06:00:00
+linkedin-target-date-utc: 2022-06-30T13-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-06-28-farmers-dog.html
 title: My review of the Farmer's Dog food service
 twitter-description: My review of the Farmer's Dog food service
 twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2022-06-30 06:00:00
+twitter-target-date-utc: 2022-06-30T13-00-00.0000000Z
 ---
 
 I recently subscribed to the Farmer's Dog. I love it, even though I didn't expect to.

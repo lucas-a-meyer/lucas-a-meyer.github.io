@@ -1,9 +1,11 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-05-10 06:00:00
 image: https://mpsocial.blob.core.windows.net/blog-images/money-gun.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-05-10 06:00:00
+post-url: https://www.meyerperin.com/posts/2022-05-10-work-life-balance.html
 title: Work life balance is worth something
 twitter-posted: 2022-05-10 06:00:00
 ---

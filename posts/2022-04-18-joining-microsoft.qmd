@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 date: 2022-04-18 06:00:00
@@ -7,6 +8,7 @@ image: https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.j
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424
 linkedin-posted: 2022-04-18 06:00:00
+post-url: https://www.meyerperin.com/posts/2022-04-18-joining-microsoft.html
 title: Joining Microsoft
 twitter-posted: 2022-04-18 06:00:00
 ---

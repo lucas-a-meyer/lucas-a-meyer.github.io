@@ -9,7 +9,7 @@
 <meta name="author" content="Lucas A. Meyer">
 <meta name="dcterms.date" content="2021-11-29">
 
-<title>Lucas A. Meyer - Weak baselines</title>
+<title>Lucas A. Meyer – Weak baselines</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,11 +85,9 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Weak baselines">
-<meta property="og:description" content="Gather close as I tell you another cautionary tale about data science.">
 <meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/weak-baseline.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Weak baselines">
-<meta name="twitter:description" content="Gather close as I tell you another cautionary tale about data science.">
 <meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/weak-baseline.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -109,16 +107,20 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html">
+ Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../using-quarto">Quarto with Python</a>
+    <a class="nav-link" href="../using-quarto">
+ Quarto with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
+    <a class="nav-link" href="../python-gnn">
+ GNNs with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
+    <a class="nav-link" href="../econometrics-python">
+ Econometrics with Python</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -138,7 +140,8 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">About</a>
+    <a class="nav-link" href="../about.html">
+ About</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -184,15 +187,6 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   
 
 </header>
-
-<p>Gather close as I tell you another cautionary tale about data science.</p>
-<p>The finance team of a company was trying to forecast their monthly cash. An analyst had been doing that for about ten years, and had a record of cash actually received per month going back all those years. He realized that some months, like December, received a lot more cash than others, like February.</p>
-<p>The analyst used Excel to calculate the percentage change for each month. For example, if the company received $100M in October 2009 and $80M in November 2009, he recorded -20% for Nov 2009. To calculate November 2021, he would take the average of the percentage changes for November over the last 10 years (2011 to 2020) and apply it to the October 2020 number.</p>
-<p>It didn’t work too well. The mean absolute percentage error (MAPE) was around 20%. For some months, the forecast missed by a lot, causing significant problems, including having to urgently borrow cash at significant cost. Eventually, the company decided to hire a data science consulting company.</p>
-<p>The consulting company immediately concluded that the problem was due to lack of data. Ten years of monthly data resulted in just 120 data points. To do data science, they said, they needed more than that. Luckily, the analyst had also been recording the daily data. Now, with thousands of data points, the consulting company used an LSTM deep learning model to forecast cash by day. It also didn’t work too well, but when they aggregated it by month, it did a lot better than the analyst’s original forecast: MAPE was closer to 10%.</p>
-<p>The project was celebrated as a success. A press release was issued, promoting the benefits of using cloud technologies and deep learning for more accurate financial forecasting. The person who hired the consultants was promoted.</p>
-<p>A few months later, a new data scientist joined the company, looked at the monthly data, and used the Excel FORECAST.ETS function to achieve a MAPE of 1% in seconds. This time, there was no press release.</p>
-<p>When starting a data science project, be careful about the baseline you’re using to determine success. Choosing a poor baseline (like the original analyst model) can result in thinking that fairly bad outcomes (like the one from the LSTM model) are good, just because they’re better than horrible outcomes. I’ve seen a number of cases in which a simple heuristic handily beat a complicated ML model.</p>
 
 
 

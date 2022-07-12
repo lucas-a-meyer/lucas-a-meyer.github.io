@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-07-07 04:00:00
 draft: false
 image: https://quarto.org/quarto.png
@@ -7,11 +8,14 @@ include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-07 07:21:59.813335
 linkedin-target-date: 2022-07-07 06:00:00
+linkedin-target-date-utc: 2022-07-07T13-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-07-06-quarto-for-python.html
 title: Quarto with Python
 twitter-description: I created a presentation about @quarto_pub for my team and posted
   it on my blog
 twitter-posted: 2022-07-07 07:22:00.141672
 twitter-target-date: 2022-07-07 06:00:00
+twitter-target-date-utc: 2022-07-07T13-00-00.0000000Z
 ---
 
 I am a firm believer in "learning out loud", that is, writing about what you learned.

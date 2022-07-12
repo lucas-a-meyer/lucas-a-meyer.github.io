@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 - hiring
@@ -10,6 +11,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816
 linkedin-posted: 2022-04-13 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2022-04-13-my-policies-around-interviewing.html
 title: My policies on interviewing
 twitter-posted: 2022-04-13 06:00:00
 twitter-target-date: null

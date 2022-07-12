@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-07-01 03:00:00
 draft: false
 image: https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.jpg
@@ -7,12 +8,15 @@ include-in-header: _msft-clarity.html
 linkedin-linkback: false
 linkedin-posted: 2022-07-01 06:00:06.977230
 linkedin-target-date: 2022-07-01 05:00:00
+linkedin-target-date-utc: 2022-07-01T12-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-06-30-happy-new-year-msft.html
 title: Happy new year, Microsoft
 twitter-description: I joined Microosoft in 2002. Since then, I missed only the 2011
   (Ph.D. student) and 2021 (Amazon) fiscal year-ends. Thanks for welcoming me back,
   and happy new (fiscal) year.
 twitter-posted: 2022-07-01 06:00:07.322699
 twitter-target-date: 2022-07-01 05:00:00
+twitter-target-date-utc: 2022-07-01T12-00-00.0000000Z
 ---
 
 I joined Microsoft in 2002. Since then, I missed only the FY11 (I was a Ph.D. student) and FY21 (I was working for Amazon) fiscal year-ends. 

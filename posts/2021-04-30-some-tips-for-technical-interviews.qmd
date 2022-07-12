@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 categories:
 - career
 - interviews
@@ -8,6 +9,7 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_recruitment-interview-activity-6790036166214336512-CSHt
 linkedin-posted: null
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2021-04-30-some-tips-for-technical-interviews.html
 title: You're applying to more positions than you think
 twitter-posted: null
 twitter-target-date: null

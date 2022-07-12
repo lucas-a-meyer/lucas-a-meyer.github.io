@@ -125,13 +125,13 @@ def my_cosmos_client(db, container):
     
 
 def process_file(filepath):
-    status_message = f"Processing {filepath}"
+    print(f"Processing {filepath}")
 
     yml, txt = get_file_plaintext(filepath)
     cc = my_cosmos_client("social-media", "blog-posts")
     id = generate_cosmos_id(filepath)
 
-    q = "SELECT * FROM blog-posts where id = {id}"
+    q = f"SELECT * FROM container c where c.id = '{id}'"
     
     item_count = 0
     cosmos_record = {}
@@ -157,19 +157,28 @@ def process_file(filepath):
     front_matter_dict['post-url'] = f'https://www.meyerperin.com/{filepath.replace(".qmd", ".html")}'
 
     # In case Cosmos had an update pushing the dates forward (e.g., automatic reposts)
-    if cosmos_record["twitter-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"])):
+    if "twitter-target-date-utc" in cosmos_record and cosmos_record["twitter-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"])):
         front_matter_dict["twitter-target-date"] = convert_cosmos_utc_to_local(cosmos_record["twitter-target-date-utc"])
-    if cosmos_record["linkedin-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"])):
+    if "linkedin-target-date-utc" in cosmos_record and cosmos_record["linkedin-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"])):
         front_matter_dict["linkedin-target-date"] = convert_cosmos_utc_to_local(cosmos_record["linkedin-target-date-utc"])
 
     cosmos_record.update(front_matter_dict)
 
     # Add the UTC fields to cosmos
-    cosmos_record["twitter-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
-    cosmos_record["linkedin-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
+    if "twitter-target-date" in front_matter_dict and front_matter_dict["twitter-target-date"]: 
+        cosmos_record["twitter-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
+    if "linkedin-target-date" in front_matter_dict and front_matter_dict["linkedin-target-date"]: 
+        cosmos_record["linkedin-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
 
     # Add the body to cosmos (since the body is part of the .qmd file but not the YAML front-matter)
     cosmos_record["body"] = txt
+    cosmos_record["date"] = None
+    cosmos_record["twitter-target-date"] = None
+    cosmos_record["linkedin-target-date"] = None
+    cosmos_record["twitter-posted"] = None
+    cosmos_record["linkedin-posted"] = None    
+
+    cc.upsert_item(cosmos_record)
 
     front_matter_dict.update(cosmos_record)
     

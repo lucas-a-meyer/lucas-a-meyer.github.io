@@ -1,9 +1,11 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2017-09-11 06:00:00
 include-in-header: _msft-clarity.html
 linkedin-posted: 2017-09-11 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2017-09-11-hurricane-irma.html
 title: Hurricane Irma
 twitter-posted: 2017-09-11 06:00:00
 twitter-target-date: null

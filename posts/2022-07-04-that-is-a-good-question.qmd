@@ -1,5 +1,6 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-07-04 06:00:00
 draft: false
 image: https://mpsocial.blob.core.windows.net/blog-images/good-question.jpg
@@ -8,10 +9,13 @@ include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-05 07:02:10.515590
 linkedin-target-date: 2022-07-05 06:00:00
+linkedin-target-date-utc: 2022-07-05T13-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-07-04-that-is-a-good-question.html
 title: That's a good question
 twitter-description: Is that really a good question?
 twitter-posted: 2022-07-05 07:02:10.905257
 twitter-target-date: 2022-07-05 06:00:00
+twitter-target-date-utc: 2022-07-05T13-00-00.0000000Z
 ---
 
 I sometimes cringe when people say "that's a good question" and it was not a good question. But even bad questions are good, because of pluralistic ignorance.

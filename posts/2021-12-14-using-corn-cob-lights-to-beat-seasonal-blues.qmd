@@ -1,11 +1,13 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2021-12-14 06:00:00
 image: https://mpsocial.blob.core.windows.net/blog-images/rainy-day.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912
 linkedin-posted: 2021-12-14 06:00:00
 linkedin-target-date: null
+post-url: https://www.meyerperin.com/posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.html
 title: Using corn cob lights to beat seasonal blues
 twitter-posted: 2021-12-14 06:00:00
 twitter-target-date: null

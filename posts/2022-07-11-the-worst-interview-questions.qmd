@@ -1,16 +1,20 @@
 ---
 author: Lucas A. Meyer
+body: null
 date: 2022-07-11 04:00:00
 draft: false
-title: Two interview questions I hate
 image: https://mpsocial.blob.core.windows.net/blog-images/interview-crying.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-11 09:53:28.359673
 linkedin-target-date: 2022-07-11 06:00:00
+linkedin-target-date-utc: 2022-07-11T13-00-00.0000000Z
+post-url: https://www.meyerperin.com/posts/2022-07-11-the-worst-interview-questions.html
+title: Two interview questions I hate
 twitter-description: The two interview questions I hate
 twitter-posted: 2022-07-11 04:00:06.554047
 twitter-target-date: 2022-07-11 06:00:00
+twitter-target-date-utc: 2022-07-11T13-00-00.0000000Z
 ---
 
 There are two interview questions that I hate, and I see them a lot.

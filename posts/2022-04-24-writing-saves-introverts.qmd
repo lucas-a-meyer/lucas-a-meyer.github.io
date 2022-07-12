@@ -1,4 +1,5 @@
 ---
+body: null
 categories:
 - career
 - neurodiversity
@@ -9,6 +10,7 @@ include-in-header: _msft-clarity.html
 layout: post
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6924371471754571776
 linkedin-posted: 2022-04-22 06:00:00
+post-url: https://www.meyerperin.com/posts/2022-04-24-writing-saves-introverts.html
 title: How writing can help introverts communicate
 twitter-posted: 2022-04-22 06:00:00
 ---
