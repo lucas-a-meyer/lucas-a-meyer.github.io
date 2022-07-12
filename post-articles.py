@@ -14,6 +14,7 @@ import datetime
 from dotenv import load_dotenv
 from twilio.rest import Client
 from azure.cosmos import CosmosClient
+import hashlib
 
 def update_lucas(body):
 
@@ -27,6 +28,10 @@ def update_lucas(body):
         from_="+19783965634",
         body=body
     )
+
+def generate_cosmos_id(filepath):
+    h = hashlib.md5(filepath.encode())
+    return h.hexdigest()
 
 def markdown_to_text(markdown_string):
     """ Converts a markdown string to plaintext """
@@ -97,25 +102,15 @@ def update_front_matter(filepath, new_front_matter_dict):
     with open(filepath, "w") as f:
         f.write(new_file_content)
 
-def get_date(front_matter_dict, field):
-    fm_date = front_matter_dict.get(field)
-    
-    if not fm_date:
-        return None
-
-    if isinstance(fm_date, datetime.datetime):
-        desired_date = fm_date
-    elif isinstance(fm_date, datetime.date):
-        desired_date = datetime.datetime.combine(fm_date, datetime.datetime.min.time()) + datetime.timedelta(hours=6)
-    else: # assuming it's a string
-        desired_date = datetime.datetime.strptime(fm_date[:10], "%Y-%m-%d").date()
-        desired_date = datetime.datetime.combine(desired_date, datetime.datetime.min.time()) + datetime.timedelta(hours=6)
-
-    return desired_date
-
 def convert_to_utc(local_time: datetime.datetime) -> datetime: 
     ts = datetime.datetime.timestamp(local_time)
-    return datetime.datetime.utcfromtimestamp(ts)
+    return datetime.datetime.utcfromtimestamp(ts) # This is the old way
+
+def convert_cosmos_utc_to_local(cosmos_utc_time: str) -> datetime:
+    dtUTC = datetime.datetime.fromisoformat(cosmos_utc_time[:-2])
+    dtZone = dtUTC.replace(tzinfo = datetime.timezone.utc)
+    dtLocal = dtZone.astimezone()
+    return dtLocal
 
 def cosmos_date_format(dt: datetime.datetime) -> str:
     return dt.strftime("%Y-%m-%dT%H-%M-%S.%f0Z")
@@ -128,109 +123,59 @@ def my_cosmos_client(db, container):
     database = client.get_database_client(db)
     return database.get_container_client(container)
     
-def queue_twitter_post(target_time_local: datetime.datetime, text: str, link:str = None, image_url:str = None, repeat:int = None):
-
-    cc = my_cosmos_client("social-media", "tweets")
-    now = datetime.datetime.now()
-
-    target_time_utc = cosmos_date_format(convert_to_utc(target_time_local))
-    id = (f"{target_time_local.strftime('%Y-%m-%d-%H-%M-%S')}-{now.strftime('%Y-%m-%d-%H-%M-%S-%f')}")
-    
-    if link:
-        text = text + " " + link
-
-    record = {
-        "id": id,
-        "body": text,
-        "twitter_target_date_utc": target_time_utc
-    }
-
-    if image_url:
-        record['image_url'] = image_url   
-    if repeat:
-        record['repeat'] = repeat
-
-    cc.upsert_item(record)
-
-def queue_linkedin_post(filepath: str, text, img_path, front_matter_dict, linkedin_linkback):
-    print("Queueing LinkedIn post")
-
-    post_url = f'https://www.meyerperin.com/{filepath.replace(".qmd", ".html")}'
-
-    cc = my_cosmos_client("social-media", "linkedin_posts")
-    now = datetime.datetime.now()
-
-    target_time_utc = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
-    id = f'{front_matter_dict["linkedin-target-date"].strftime("%Y-%m-%d-%H-%M-%S")}-{now.strftime("%Y-%m-%d-%H-%M-%S-%f")}'
-    
-    record = {
-        "id": id,
-        "body": text,
-        "image_url": img_path,
-        "linkedin_target_date_utc": target_time_utc,
-        "linkback": linkedin_linkback,
-        "post_url": post_url
-    }
-
-    cc.upsert_item(record)
 
 def process_file(filepath):
-    print(f"Processing {filepath}")
-    yml, txt = get_file_plaintext(filepath)
+    status_message = f"Processing {filepath}"
 
-    # For all files, check if we need to adjust the draft field
+    yml, txt = get_file_plaintext(filepath)
+    cc = my_cosmos_client("social-media", "blog-posts")
+    id = generate_cosmos_id(filepath)
+
+    q = "SELECT * FROM blog-posts where id = {id}"
+    
+    item_count = 0
+    cosmos_record = {}
+    for item in cc.query_items(query=q, enable_cross_partition_query=True):
+        item_count = item_count + 1
+        cosmos_record = item
+
+    if item_count > 1:
+        print("Warning: duplicate id keys in database: {id}")
+
     front_matter_dict = yaml.safe_load(yml.replace("---", ""))
     
-    post_date = get_date(front_matter_dict, "date")
-    draft = front_matter_dict.get("draft")
-
-    linkedin_posted = get_date(front_matter_dict, "linkedin-posted")
-    twitter_posted = get_date(front_matter_dict, "twitter-posted")
-    
-    linkedin_target_date = get_date(front_matter_dict, "linkedin-target-date")
-    twitter_target_date = get_date(front_matter_dict, "twitter-target-date")
-
-    linkedin_linkback = front_matter_dict.get("linkedin-linkback")
-
-    # If the article has a "linkedin-target-date" and the article has not been posted to linkedin yet
-    # and the article target date is at least today  and the article is not in draft
-    if not draft and linkedin_target_date and not linkedin_posted: 
-        img = front_matter_dict.get("image")
-        # post_to_linkedin(filepath, txt, img, front_matter_dict, linkedin_linkback)
-        queue_linkedin_post(filepath, txt, img, front_matter_dict, linkedin_linkback)
-        linkedin_posted = datetime.datetime.now()
-        front_matter_dict["linkedin-posted"] = linkedin_posted
-
-    if not draft and twitter_target_date and not twitter_posted:
-        post_type = front_matter_dict.get("post-type")
-        twitter_text = ""
-        if front_matter_dict.get("twitter-description"):
-            twitter_text = front_matter_dict.get("twitter-description")
-        else: # doesn't have a description, let's get it from the text
-            last_break = txt[:240].rfind("\\n")
-            if last_break == -1:
-                last_break = 240            
-                twitter_text = txt[:last_break]       
-        if not post_type or post_type == "link":
-            twitter_url = f"https://www.meyerperin.com/{filepath.replace('.qmd', '.html')}"
-            queue_twitter_post(twitter_target_date, twitter_text, twitter_url)
-            twitter_posted = datetime.datetime.now()
-        if post_type == "text":
-            print(f"Gonna tweet: {twitter_text}")
-            queue_twitter_post(twitter_target_date, twitter_text)
-            twitter_posted = datetime.datetime.now()
-        front_matter_dict["twitter-posted"] = twitter_posted
-
     # Check that we have Microsoft Clarity installed in the page
     if not front_matter_dict.get("include-in-header"):
-        front_matter_dict["include-in-header"] = "_msft-clarity.html"
+        front_matter_dict["include-in-header"] = "_msft-clarity.html"    
 
-    if post_date: front_matter_dict["date"] = post_date
-    if linkedin_posted: front_matter_dict["linkedin-posted"] = linkedin_posted
-    if twitter_posted: front_matter_dict["twitter-posted"] = twitter_posted
-    if linkedin_target_date: front_matter_dict["linkedin-target-date"] = linkedin_target_date
-    if twitter_target_date: front_matter_dict["twitter-target-date"] = twitter_target_date
+    # Now I have two dicts: cosmos_record with the remote data, front_matter_dict with the local data
+    # rules: 
+    #   - cosmos_record dates should be in UTC
+    #   - front_matter_dict dates should be local
+    #   - front_matter_dict shouldn't have the 'linkedin-body' and the 'twitter-body' fields
+
+    front_matter_dict['post-url'] = f'https://www.meyerperin.com/{filepath.replace(".qmd", ".html")}'
+
+    # In case Cosmos had an update pushing the dates forward (e.g., automatic reposts)
+    if cosmos_record["twitter-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"])):
+        front_matter_dict["twitter-target-date"] = convert_cosmos_utc_to_local(cosmos_record["twitter-target-date-utc"])
+    if cosmos_record["linkedin-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"])):
+        front_matter_dict["linkedin-target-date"] = convert_cosmos_utc_to_local(cosmos_record["linkedin-target-date-utc"])
+
+    cosmos_record.update(front_matter_dict)
+
+    # Add the UTC fields to cosmos
+    cosmos_record["twitter-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
+    cosmos_record["linkedin-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
+
+    # Add the body to cosmos (since the body is part of the .qmd file but not the YAML front-matter)
+    cosmos_record["body"] = txt
+
+    front_matter_dict.update(cosmos_record)
     
+    # Remove the body from the front matter (since it's in the .qmd file)
+    front_matter_dict["body"] = None
+
     update_front_matter(filepath, front_matter_dict)
 
 def process_directory(di):
