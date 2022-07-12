@@ -187,7 +187,9 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <p>Using some recent (July 2022) events, I wrote a question that requires setting up and optimizing a loss function.</p>
 <p>“Musky promised to pay his friend Tweety US$ 1,000. Musky refused to pay, and now Tweety is suing Musky. Musky can either pay $1000 (Tweety won’t settle) or go to court. If Musky goes to court, he needs to pay lawyers. Good lawyers are costly, and don’t guarantee that Musky will win. The probability of Musky prevailing is a function of cost of his lawyers: ln(C)/7, where C is the amount Musky pays, and ln is the natural log function. Should Musky pay or go to court? If he goes to court, how much should Musky pay his lawyers? Assume Musky only cares about money.”</p>
 <p>The first step is to set up the loss function in case Musky goes to trial. Going to trial requires paying C to the lawyers, and that gives Musky a probability to win of ln(C)/7, which means that his probability of losing is 1-ln(C)/7.</p>
-<p><span class="math display">\[L = -C - (1- \frac{ln(C)}{7}) \times 1000\]</span></p>
+<p><span class="math display">\[
+L = -C - (1- \frac{ln(C)}{7}) \times 1000
+\]</span></p>
 <p>Since he only cares about money, Musky objective is to minimize his loss. To find the minimum of the loss function, we need to take the first derivative of this function and making it equal to zero. Luckily, natural logs have a simple derivative (1/x) and that’s not too hard to do. Regardless, I’d let candidates use <a href="https://www.wolframalpha.com/">Wolfram Alpha</a> to take derivatives, or whatever calculator they want to.</p>
 <p>Since the derivative ends up being 1000/7C - 1, the next steps are simple, and the result is 1000/7, meaning that to minimize his losses, Musky should pay $143.86 to his lawyers.</p>
 <p><span class="math display">\[

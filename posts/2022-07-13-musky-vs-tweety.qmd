@@ -5,7 +5,7 @@ draft: true
 image: https://mpsocial.blob.core.windows.net/blog-images/pregnancy-test.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-posted: 2022-07-11 22:13:07.324762
+linkedin-posted: 2022-07-11 22:16:16.382445
 linkedin-target-date: 2022-07-13 06:00:00
 title: 'Interview question: Musky vs Tweety'
 twitter-description: 'Interview question: Musky vs Tweety'
@@ -20,7 +20,9 @@ Using some recent (July 2022) events, I wrote a question that requires setting u
 
 The first step is to set up the loss function in case Musky goes to trial. Going to trial requires paying C to the lawyers, and that gives Musky a probability to win of ln(C)/7, which means that his probability of losing is 1-ln(C)/7.
 
-$$L = -C - (1- \frac{ln(C)}{7}) \times 1000$$
+$$
+L = -C - (1- \frac{ln(C)}{7}) \times 1000
+$$
 
 Since he only cares about money, Musky objective is to minimize his loss. To find the minimum of the loss function, we need to take the first derivative of this function and making it equal to zero. Luckily, natural logs have a simple derivative (1/x) and that's not too hard to do. Regardless, I'd let candidates use [Wolfram Alpha](https://www.wolframalpha.com/) to take derivatives, or whatever calculator they want to.
 
