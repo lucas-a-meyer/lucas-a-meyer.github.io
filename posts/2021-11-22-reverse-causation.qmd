@@ -1,8 +1,8 @@
 ---
 author: Lucas A. Meyer
-body: null
 categories: data science
 date: 2021-11-22 06:00:00
+id: e6cb33d9bc21fd7ee7d8de6767a902fe
 image: https://mpsocial.blob.core.windows.net/blog-images/reverse-causation.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848

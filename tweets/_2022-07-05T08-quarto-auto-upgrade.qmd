@@ -1,7 +1,7 @@
 ---
-body: null
 date: 2022-07-06 06:00:00
 draft: false
+id: 46efd9c98eec1a42991d46928506160f
 include-in-header: _msft-clarity.html
 post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-05T08-quarto-auto-upgrade.html

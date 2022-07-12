@@ -1,6 +1,6 @@
 ---
-body: null
 date: 2022-07-01 04:00:00
+id: ed544800609c8d16ec00412f312b5500
 include-in-header: _msft-clarity.html
 post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-08T05-testing-azure-2.html

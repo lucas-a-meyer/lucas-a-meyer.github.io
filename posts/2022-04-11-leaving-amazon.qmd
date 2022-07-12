@@ -1,10 +1,10 @@
 ---
 author: Lucas A. Meyer
-body: null
 categories:
 - career
 - hiring
 date: 2022-04-11 06:00:00
+id: 19af7a85dff71034048c456f083dd5f3
 image: https://mpsocial.blob.core.windows.net/blog-images/mac-power-off.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919333255288627200

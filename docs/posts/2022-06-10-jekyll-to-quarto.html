@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.640">
+<meta name="generator" content="quarto-1.0.8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
 <meta name="dcterms.date" content="2022-06-10">
 
-<title>Lucas A. Meyer – Converting my blog from Jekyll to Quarto</title>
+<title>Lucas A. Meyer - Converting my blog from Jekyll to Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,9 +148,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Converting my blog from Jekyll to Quarto">
+<meta property="og:description" content="I thought moving from Jekyll to Quarto was going to be hard. It was not.">
 <meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/quarto.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Converting my blog from Jekyll to Quarto">
+<meta name="twitter:description" content="I thought moving from Jekyll to Quarto was going to be hard. It was not.">
 <meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/quarto.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -170,20 +172,16 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">
- Home</a>
+    <a class="nav-link" href="../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../using-quarto">
- Quarto with Python</a>
+    <a class="nav-link" href="../using-quarto">Quarto with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../python-gnn">
- GNNs with Python</a>
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../econometrics-python">
- Econometrics with Python</a>
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -203,8 +201,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">
- About</a>
+    <a class="nav-link" href="../about.html">About</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -248,7 +245,50 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
+<p>I thought moving from Jekyll to Quarto was going to be hard. It was not.</p>
+<section id="what-i-wanted-in-a-blog-platform" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-wanted-in-a-blog-platform">What I wanted in a blog platform</h3>
+<p>For a long time, I had an unfulfilled wish list for a blog platform:</p>
+<ul>
+<li>Can write posts in Markdown</li>
+<li>Easy to deploy to Github</li>
+<li>Can script in Python</li>
+</ul>
+<p>A large number of platforms fulfills the first two items, but I struggled to find one that fulfilled the last item. I finally found Pelican, but I found it too clunky and started to worry that it was not going to be maintained for long. Therefore, I oscillated between Jekyll and Hugo (using blogdown) for a long time. I liked blogdown a lot, but whenever I’m switching a lot between R and Python, my brain gets really unhappy.</p>
+</section>
+<section id="quarto-has-everything-and-more" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-has-everything-and-more">Quarto has everything, and more</h3>
+<p>Recently, I found <a href="https://quarto.org">Quarto</a> that ticks all my boxes and solves a lot of other problems. My feeling when using Quarto must be similar to the feeling of Python programmers when they started using Jupyter (because they never used RStudio) or similar to what I felt when, as an analyst, started using RStudio. Things just work.</p>
+<p>When I was initially switching between Jekyll and Hugo, one of the most annoying things was Jekyll preferred posts as files, while blogdown preferred posts as directories. RStudio even provides a function <code>bundle_site()</code> to convert files to directories. Now, when I’m converting to Quarto, I thought I needed to write such a function in Python.</p>
+<p>Again, it turns out that “things just work”. Quarto accepts both directores and files as posts and rendered everything correctly. So I’m going to draw the “Quarto Spiral” instead, just to celebrate!</p>
+</section>
+<section id="example-from-hello-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="example-from-hello-quarto">Example from Hello, Quarto!</h3>
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>} </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>ax.plot(theta, r)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="fig-polar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="2022-06-10-jekyll-to-quarto_files/figure-html/fig-polar-output-1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figure 1: A line plot on a polar axis</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

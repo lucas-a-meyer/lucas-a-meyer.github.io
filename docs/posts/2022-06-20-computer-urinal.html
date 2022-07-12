@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.640">
+<meta name="generator" content="quarto-1.0.8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
 <meta name="dcterms.date" content="2022-06-20">
 
-<title>Lucas A. Meyer – Computers and Urinals</title>
+<title>Lucas A. Meyer - Computers and Urinals</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,9 +85,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Computers and Urinals">
+<meta property="og:description" content="Years ago, in a tech conference, a researcher asked: “Isn’t it embarrassing that the conference center urinals can detect when you’re done and automatically flush, but your computer can’t detect…">
 <meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/computer-urinal.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Computers and Urinals">
+<meta name="twitter:description" content="Years ago, in a tech conference, a researcher asked: “Isn’t it embarrassing that the conference center urinals can detect when you’re done and automatically flush, but your computer can’t detect…">
 <meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/computer-urinal.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -107,20 +109,16 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">
- Home</a>
+    <a class="nav-link" href="../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../using-quarto">
- Quarto with Python</a>
+    <a class="nav-link" href="../using-quarto">Quarto with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../python-gnn">
- GNNs with Python</a>
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../econometrics-python">
- Econometrics with Python</a>
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -140,8 +138,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">
- About</a>
+    <a class="nav-link" href="../about.html">About</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -184,6 +181,19 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   
 
 </header>
+
+<p>Years ago, in a tech conference, a researcher asked: “Isn’t it embarrassing that the conference center urinals can detect when you’re done and automatically flush, but your computer can’t detect that you’re not using it and automatically lock?”</p>
+<center>
+<img src="https://mpsocial.blob.core.windows.net/blog-images/computer-urinal.jpg" class="img-fluid" style="width:40.0%">
+</center>
+<p>This seemingly simple problem is harder than it looks. People don’t (normally) quietly stare at urinals for several minutes, but that can happen to computer screens (e.g., watching a movie or presentation, reading a document).</p>
+<p>Newer phones and tablets use eye tracking to save battery. They can figure out whether you’re looking at a screen, and if you’re not, lock. It works well, but these are devices that you almost always hold close to your face, so they can keep a camera pointing at you all the time. If you cover the camera or use an external monitor, you start having problems. With computers, I have a very strong preference for using external monitors, so I’m already in the problem situation to begin with. The solution could be to add a sensor to each monitor or camera, but given the <em>thousands</em> of models available, that could get complicated.</p>
+<p>During my long career, I’ve seen many pranks on people that left their computers unlocked. Some places look down at the person who left the computer unlocked, but I actually prefer the places that chastise the pranksters: instead of pranking, it would be better if they locked the computer and kindly had a word with the forgetful person.</p>
+<p>In any case, one of my favorite Windows 11 features (apparently also present in Windows 10) is the ability to lock my computer automatically when I move away from it.</p>
+<p>The way to do that is a little convoluted: you need to pair your Bluetooth phone with your computer (which, of course, also needs to have Bluetooth), and when your computer, using Bluetooth, detects that your phone moved away from your computer, it will automatically lock.</p>
+<p>From my description above, you probably already appreciate how a seemingly simple problem that we can solve for a urinal can be hard to solve even if your device has a lot more features.</p>
+<p>The people who implemented the feature still couldn’t solve all problems. What to do if the user doesn’t have their phone today? Current solution: just show an error message. What to do if the user moves away but leaves the phone nearby? We detect phones, not users, so it will leave it unlocked.</p>
+<p>In any case, I’m glad to see that computers of 2020s are inching closer to the toilets of the early 2000s.</p>
 
 
 

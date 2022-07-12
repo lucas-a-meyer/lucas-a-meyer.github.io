@@ -1,9 +1,9 @@
 ---
 author: Lucas A. Meyer
-body: null
 categories:
 - career
 date: 2021-07-22 06:00:00
+id: 02888e2d5f584f9662e357e4441e5416
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
 linkedin-posted: 2022-07-11 19:22:12.908570

@@ -1,8 +1,8 @@
 ---
 author: Lucas A. Meyer
-body: null
 date: 2022-06-20 06:00:00
 draft: false
+id: f5c769a0f772960a2f8a01225c59c9a8
 image: https://mpsocial.blob.core.windows.net/blog-images/computer-urinal.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00

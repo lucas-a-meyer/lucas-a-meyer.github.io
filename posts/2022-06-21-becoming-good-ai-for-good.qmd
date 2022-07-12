@@ -1,8 +1,8 @@
 ---
 author: Lucas A. Meyer
-body: null
 date: 2022-06-21 06:00:00
 draft: false
+id: a84268e38ef6dccb44393685c21c853b
 image: https://mpsocial.blob.core.windows.net/blog-images/aiforgood.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00

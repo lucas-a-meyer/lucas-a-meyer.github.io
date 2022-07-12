@@ -1,9 +1,9 @@
 ---
 author: Lucas A. Meyer
-body: null
 categories:
 - home
 date: 2022-04-17 06:00:00
+id: d71e026cbfe39587325e86eeb2229240
 image: https://mpsocial.blob.core.windows.net/blog-images/bear-tree-2.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_during-a-couple-of-our-conference-calls-activity-6921261803536560128-JJ1z

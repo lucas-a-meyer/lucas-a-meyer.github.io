@@ -173,12 +173,19 @@ def process_file(filepath):
 
     # Add the body to cosmos (since the body is part of the .qmd file but not the YAML front-matter)
     cosmos_record["body"] = txt
+    cosmos_record["id"] = id
     cosmos_str = json.dumps(cosmos_record, default=str)
+    fixed_cosmos_record = json.loads(cosmos_str)
+
+    print(fixed_cosmos_record)
+    cc.upsert_item(fixed_cosmos_record)
+    
 
     front_matter_dict.update(cosmos_record)
     
     # Remove the body from the front matter (since it's in the .qmd file)
-    front_matter_dict["body"] = None
+    if "body" in front_matter_dict:
+        front_matter_dict.pop("body")
 
     update_front_matter(filepath, front_matter_dict)
 

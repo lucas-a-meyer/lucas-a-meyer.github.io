@@ -1,10 +1,10 @@
 ---
-body: null
 categories:
 - career
 - neurodiversity
 - writing
 date: 2022-04-22 06:00:00
+id: 6f0f90cbb88ace4e442d100eba697a63
 image: https://mpsocial.blob.core.windows.net/blog-images/writing.jpg
 include-in-header: _msft-clarity.html
 layout: post

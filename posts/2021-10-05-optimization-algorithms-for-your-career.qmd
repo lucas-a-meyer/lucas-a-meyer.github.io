@@ -1,10 +1,10 @@
 ---
 author: Lucas A. Meyer
-body: null
 categories:
 - career
 - data science
 date: 2021-10-05 06:00:00
+id: 32f1f75574bcaf7d26c9780d3b0c2204
 image: https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/

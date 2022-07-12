@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.640">
+<meta name="generator" content="quarto-1.0.8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
 <meta name="dcterms.date" content="2021-11-22">
 
-<title>Lucas A. Meyer – Reverse causation</title>
+<title>Lucas A. Meyer - Reverse causation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,9 +85,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Reverse causation">
+<meta property="og:description" content="Gather close as I tell you a cautionary tale about data science.">
 <meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/reverse-causation.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Reverse causation">
+<meta name="twitter:description" content="Gather close as I tell you a cautionary tale about data science.">
 <meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/reverse-causation.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -107,20 +109,16 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">
- Home</a>
+    <a class="nav-link" href="../index.html">Home</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../using-quarto">
- Quarto with Python</a>
+    <a class="nav-link" href="../using-quarto">Quarto with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../python-gnn">
- GNNs with Python</a>
+    <a class="nav-link" href="../python-gnn">GNNs with Python</a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../econometrics-python">
- Econometrics with Python</a>
+    <a class="nav-link" href="../econometrics-python">Econometrics with Python</a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -140,8 +138,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  </a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html">
- About</a>
+    <a class="nav-link" href="../about.html">About</a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -187,6 +184,19 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   
 
 </header>
+
+<p>Gather close as I tell you a cautionary tale about data science.</p>
+<p>A new data scientist had just started working on the collections team for a large company. One of the problems they wanted to solve was “does contacting customers help at all?”</p>
+<p>It’s an important question. After all, the cost of collections is directly related to the number of contacts. The more contacts, the more people.</p>
+<p>The DS had a table with of invoices and payment dates, and a table with a history of contacts by invoice. Using the invoice issue date and invoice payment date, he created a payment delay metric. Then, he joined the contact history and created a metric for number of contacts. Finally, he calculated the correlation between the number of contacts and payment delay.</p>
+<p>He was startled by the results: the more contacts per invoice, the <em>longer</em> it took customers to pay.</p>
+<p>He told the collections manager, who got very excited. He long suspected that the contact center had too many people. Now he had some proof.</p>
+<p>The DS carefully separated the data in a training and a test sample, and trained a regression model using XGBoost. Given inputs such as the invoice country and amount, the model predicted the delay in days given an estimated number of contacts. The model had a very low error (&lt;0.5d) in the training dataset. When using the unseen test dataset, the error was also minimal.</p>
+<p>The DS and the collections manager made a plan to deploy a tool to collectors. When assigned an invoice, collectors should enter the characteristics of the invoice in the tool and add 1 contact. For example, if a collector was assigned an invoice with 10 days delay and 2 contacts, they should enter 3 as the number of contacts. If the model returned a number larger than the current delay, the collector should not make the contact. They should just wait.</p>
+<p>Once the tool was deployed, the number of contacts initially dropped a lot. To the collections manager surprise, however, the payment delays also increased. Customers were paying much later than usual, and ended up having to be contacted anyway.</p>
+<p>As you may already have realized, the problem with the idea was that customers were not delaying because they were annoyed with too many contacts. The relation went in the other direction: customers were being contacted because they were late. While contacts and lateness was very correlated, lateness caused contacts, not the other way around.</p>
+<p>The project was scrapped. The team decided that data science was all hype. The data scientist moved on to another team. The collections team went back to the old way of contacting customers: about once per week until they paid.</p>
+<p>It took a while (and a new data scientist) for that team to trust data science again: a few years later, a new data scientist started experimenting with assigning different strategies to randomized customers, and that improved collections a lot. But that’s another tale.</p>
 
 
 

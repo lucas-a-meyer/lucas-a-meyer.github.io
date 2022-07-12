@@ -1,10 +1,10 @@
 ---
 author: Lucas A. Meyer
-body: null
 categories:
 - career
 - interviews
 date: 2021-04-15 06:00:00
+id: 7e55c20ba72ab8c18e9d6fceed78e611
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
 linkedin-posted: 2021-04-15 06:00:00

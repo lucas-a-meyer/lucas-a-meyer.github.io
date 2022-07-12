@@ -1,8 +1,8 @@
 ---
 author: Lucas A. Meyer
-body: null
 date: 2022-07-01 03:00:00
 draft: false
+id: 2853b2818f9cdf62a662787fab4580d7
 image: https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: false
