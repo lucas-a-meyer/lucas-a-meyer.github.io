@@ -216,7 +216,7 @@ def process_file(filepath):
     # Remove the body from the front matter (since it's in the .qmd file)
     local_unwanted_fields = [
         "_attachments", "_etag", "_rid", "_self", "_ts", "body", "linkedin-posted-text", "linkedin-posted-utc", 
-        "twitter-posted-utc", "twitter-target-date-utc", "linkedin-target-date-utc"]
+        "twitter-posted-utc", "twitter-target-date-utc", "linkedin-target-date-utc", "reset"]
     front_matter_dict = remove_fields_from_dict(front_matter_dict, local_unwanted_fields)
     update_front_matter(filepath, front_matter_dict)
 

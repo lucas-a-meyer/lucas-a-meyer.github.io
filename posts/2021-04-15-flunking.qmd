@@ -5,18 +5,24 @@ categories:
 - interviews
 date: 2021-04-15 06:00:00
 id: 7e55c20ba72ab8c18e9d6fceed78e611
+image: https://mpsocial.blob.core.windows.net/blog-images/sql-fail.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
-linkedin-posted: 2021-04-15 06:00:00
-linkedin-target-date: null
+linkedin-target-date: 2022-07-20 06:02:00
 post-url: https://www.meyerperin.com/posts/2021-04-15-flunking.html
 title: Flunking a SQL interview with 20+ years of practice
-twitter-posted: 2021-04-15 06:00:00
-twitter-target-date: null
+twitter-description: Even though I have written SQL daily for over 20 years, I still
+  failed a SQL test in an interview for a manager position.
+twitter-target-date: 2022-07-20 06:02:00
 ---
 
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998.
 
-I have written SQL almost daily for over 20 years. A few months ago, I flunked a SQL interview for a *manager* position. 
+I have written SQL almost daily for over 20 years. A few years ago, I flunked a SQL interview for a *manager* position. 
 
-Interviewing is hard, be kind.
+The problem was that it had been too many years since my last interview. I didn't know _anything_ about interviewing recently, like, for example, the remote CoderPad. Even though I was prepared for the non-technical parts of the interview, since I had not done a technical interview for long, I was nervous. Not knowing how things worked made me more nervous.
+
+Since then, I have always volunteered to be an interviewer. I have occasionally interviewed ["just in case"](https://www.meyerperin.com/posts/2022-04-13-my-policies-around-interviewing.html). That helped, and when the [perfect job](https://www.meyerperin.com/posts/2022-04-18-joining-microsoft.html) appeared for me, I was ready.
+
+
+

@@ -8,6 +8,8 @@ include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-15 06:00:00
 post-url: https://www.meyerperin.com/posts/2022-07-15-my-code-is-compiling.html
+response:
+  id: urn:li:share:6952756995246493696
 title: My model is training
 tweet-url: https://twitter.com/user/status/1546996097763217408
 twitter-description: Getting Twilio to call me when my model finishes training
@@ -18,13 +20,9 @@ If you're a data scientist, you're probably very much used to wait for model tra
 
 Sometimes I wait for so long that I forget to check back. To help me with that, I wrote a tiny script that uses [Twilio](https://www.twilio.com) to _text_ me when my model is done training. 
 
-Twilio is inexpensive. At the time I'm writing this, it costs [$1 per month](https://www.twilio.com/sms/pricing/us) for a phone number. You can also use your own phone for 50 cents per month, but I didn't try that yet. Each text costs less than 1 cent. Even in a month when I am getting lots of notifications, I usually spend less than $2.
+Twilio is inexpensive. At the time I'm writing this, it costs [$1 per month](https://www.twilio.com/sms/pricing/us) for a phone number. You can also use your own phone number for 50 cents per month, but I didn't try that yet. Each text costs less than 1 cent. Even in a month when I am getting lots of notifications, I usually spend less than $2.
 
 The code to send an update is an one-liner:     
 
-```python
-client.api.account.messages.create(to=<my_phone_number>, from_=<twilio_number>, body="Done!")
-```
-
-client.api.account.messages.create(to=<my_phone_number>, from_=<twilio_number>, body="Done!")
+client.api.account.messages.create(to=<my_phone_number>, from_=<twilio_number>, body="Training done!")
 

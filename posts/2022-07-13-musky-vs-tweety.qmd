@@ -7,13 +7,12 @@ image: https://mpsocial.blob.core.windows.net/blog-images/owning-twitter.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-11 07:00:00-07:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6952824185693896704
 post-url: https://www.meyerperin.com/posts/2022-07-13-musky-vs-tweety.html
 title: 'Interview question: Musky vs Tweety'
 tweet-url: https://twitter.com/user/status/1546996090603536386
 twitter-description: 'Interview question: Musky vs Tweety'
 twitter-target-date: 2022-07-11 07:05:00-07:00
-reset: true
 ---
 
 One thing I find in my interviews is that data scientists are a lot better at calculating expectations than they are at defining loss functions. 
