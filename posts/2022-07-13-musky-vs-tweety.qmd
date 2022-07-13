@@ -39,7 +39,7 @@ $$
 \frac{1000}{7C} - 1 = 0 \implies C = \frac{1000}{7} = 142.86
 $$
 
-That results in an expected loss of $434.02 (of which $142.86 goes to the lawyers). It's bad, but it's a lot better than losing $1000.
+This results in an expected loss of $434.02 (of which $142.86 goes to the lawyers). It's bad, but it's a lot better than losing $1000.
 
 If you like data science interview questions, my friend Nirmal Budhathoki has been posting 30 days of them on LinkedIn. His questions are great (certainly better than mine above), and you should follow his series.
 
