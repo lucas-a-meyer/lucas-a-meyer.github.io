@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803579d-0000-0700-0000-62cdb74f0000"'
-_rid: y90DAIjYJsAcAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAcAAAAAAAAAA==/
-_ts: 1657648975
 author: Lucas A. Meyer
 categories:
 - data science
@@ -13,17 +8,13 @@ image: https://mpsocial.blob.core.windows.net/blog-images/bin-laden-compound.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
 linkedin-posted: 2022-07-11 19:22:10.789397
-linkedin-posted-utc: 2022-09-11T13-00-00.0000000Z
 linkedin-repost: 365
 linkedin-target-date: 2022-09-11 06:00:00
-linkedin-target-date-utc: 2022-09-11T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2021-09-11-data-science-and-911.html
 title: Data science and 9/11
 twitter-posted: 2022-07-07 22:59:20.072193
-twitter-posted-utc: 2022-09-11T13-00-00.0000000Z
 twitter-repost: 365
 twitter-target-date: 2022-09-11 06:00:00
-twitter-target-date-utc: 2022-09-11T13-00-00.0000000Z
 ---
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 

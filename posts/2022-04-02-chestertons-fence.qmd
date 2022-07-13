@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"38036f9c-0000-0700-0000-62cdb7460000"'
-_rid: y90DAIjYJsAKAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAKAAAAAAAAAA==/
-_ts: 1657648966
 author: Lucas A. Meyer
 categories: concepts
 date: 2022-04-02 06:00:00
@@ -12,19 +7,15 @@ image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6915688739935522816
 linkedin-posted: 2022-07-11 19:22:10.227648
-linkedin-posted-utc: 2022-10-04T13-00-00.0000000Z
 linkedin-repost: 360
 linkedin-target-date: 2022-10-04 06:00:00
-linkedin-target-date-utc: 2022-10-04T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2022-04-02-chestertons-fence.html
 title: Chesterton's Fence
 twitter-description: I once posted about the Chesterton's Fence, which is an important
   concept when starting something new
 twitter-posted: 2022-07-07 22:54:41.753291
-twitter-posted-utc: 2022-10-21T13-00-00.0000000Z
 twitter-repost: 360
 twitter-target-date: 2022-10-21 06:00:00
-twitter-target-date-utc: 2022-10-21T13-00-00.0000000Z
 ---
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 

@@ -16,6 +16,7 @@ from twilio.rest import Client
 from azure.cosmos import CosmosClient
 import hashlib
 import json
+from typing import List
 
 def update_lucas(body):
 
@@ -108,7 +109,8 @@ def convert_to_utc(local_time: datetime.datetime) -> datetime:
     return datetime.datetime.utcfromtimestamp(ts) # This is the old way
 
 def convert_cosmos_utc_to_local(cosmos_utc_time: str) -> datetime:
-    dtUTC = datetime.datetime.fromisoformat(cosmos_utc_time[:-2])
+    input_time = cosmos_utc_time[:-2]
+    dtUTC = datetime.datetime.strptime(input_time, "%Y-%m-%dT%H-%M-%S.%f")
     dtZone = dtUTC.replace(tzinfo = datetime.timezone.utc)
     dtLocal = dtZone.astimezone()
     return dtLocal
@@ -124,43 +126,70 @@ def my_cosmos_client(db, container):
     database = client.get_database_client(db)
     return database.get_container_client(container)
     
+def get_cosmos_record(cc, id):
 
-def process_file(filepath):
-    print(f"Processing {filepath}")
-
-    yml, txt = get_file_plaintext(filepath)
-    cc = my_cosmos_client("social-media", "blog-posts")
-    id = generate_cosmos_id(filepath)
-
-    q = f"SELECT * FROM container c where c.id = '{id}'"
-    
     item_count = 0
     cosmos_record = {}
+ 
+    q = f"SELECT * FROM container c where c.id = '{id}'"
+
     for item in cc.query_items(query=q, enable_cross_partition_query=True):
         item_count = item_count + 1
         cosmos_record = item
 
     if item_count > 1:
-        print("Warning: duplicate id keys in database: {id}")
+        raise IndexError
+    else:
+        return cosmos_record
 
-    front_matter_dict = yaml.safe_load(yml.replace("---", ""))
+def remove_fields_from_dict(d: dict, list_of_fields: List[str]) -> dict:
+    for field in list_of_fields:
+        if field in d: d.pop(field)
+    return d
+
+
+def process_file(filepath):
+    print(f"Processing {filepath}")
+
+    # Get local configuration from YAML file
+    yml, txt = get_file_plaintext(filepath)
+    front_matter_dict = yaml.safe_load(yml.replace("---", ""))   
+
+    # ID is a hash
+    id = generate_cosmos_id(filepath)
     
-    # Check that we have Microsoft Clarity installed in the page
-    if not front_matter_dict.get("include-in-header"):
-        front_matter_dict["include-in-header"] = "_msft-clarity.html"    
+    # Get the cosmos record with that ID
+    cc = my_cosmos_client("social-media", "blog-posts")
 
+    # If there's a key called reset, we'll rewrite the remote data
+    reset = front_matter_dict.get("reset")
+    if reset:
+        cosmos_record = {}
+    else:
+        cosmos_record = get_cosmos_record(cc, id)
+    
     # Now I have two dicts: cosmos_record with the remote data, front_matter_dict with the local data
     # rules: 
     #   - cosmos_record dates should be in UTC
     #   - front_matter_dict dates should be local
     #   - front_matter_dict shouldn't have the 'linkedin-body' and the 'twitter-body' fields
 
-    front_matter_dict['post-url'] = f'https://www.meyerperin.com/{filepath.replace(".qmd", ".html")}'
+    # Check that we have Microsoft Clarity installed in the page
+    if not front_matter_dict.get("include-in-header"):
+        front_matter_dict["include-in-header"] = "_msft-clarity.html"    
 
-    # In case Cosmos had an update pushing the dates forward (e.g., automatic reposts)
-    if "twitter-target-date-utc" in cosmos_record and cosmos_record["twitter-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"])):
+    front_matter_dict['post-url'] = f'https://www.meyerperin.com/{filepath.replace(".qmd", ".html")}'
+    
+    # TODO: if YAML doesn't have repost but cosmos does, need to remove repost from COSMOS
+
+    # In case Cosmos had an update pushing the dates forward because of automatic reposts
+    if "twitter-target-date-utc" in cosmos_record\
+        and cosmos_record["twitter-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))\
+        and "twitter-repost" in cosmos_record and cosmos_record["twitter-repost"] > 0:
         front_matter_dict["twitter-target-date"] = convert_cosmos_utc_to_local(cosmos_record["twitter-target-date-utc"])
-    if "linkedin-target-date-utc" in cosmos_record and cosmos_record["linkedin-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"])):
+    if "linkedin-target-date-utc" in cosmos_record\
+        and cosmos_record["linkedin-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))\
+        and "linkedin-repost" in cosmos_record and cosmos_record["linkedin-repost"] > 0:
         front_matter_dict["linkedin-target-date"] = convert_cosmos_utc_to_local(cosmos_record["linkedin-target-date-utc"])
 
     cosmos_record.update(front_matter_dict)
@@ -168,15 +197,9 @@ def process_file(filepath):
     # Add the UTC fields to cosmos
     if "twitter-target-date" in front_matter_dict and front_matter_dict["twitter-target-date"]: 
         cosmos_record["twitter-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
-        cosmos_record["twitter-posted-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))
-    elif "twitter-target-date" in front_matter_dict:
-        front_matter_dict.pop("twitter-target-date")
 
     if "linkedin-target-date" in front_matter_dict and front_matter_dict["linkedin-target-date"]: 
         cosmos_record["linkedin-target-date-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
-        cosmos_record["linkedin-posted-utc"] = cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))
-    elif "linkedin-target-date" in front_matter_dict:
-        front_matter_dict.pop("linkedin-target-date")
 
     # Add the body to cosmos (since the body is part of the .qmd file but not the YAML front-matter)
     cosmos_record["body"] = txt
@@ -184,23 +207,24 @@ def process_file(filepath):
     cosmos_str = json.dumps(cosmos_record, default=str)
     fixed_cosmos_record = json.loads(cosmos_str)
 
-    print(fixed_cosmos_record)
-    cc.upsert_item(fixed_cosmos_record)
-    
-
     front_matter_dict.update(cosmos_record)
+
+    remote_unwanted_fields = ["include-in-header", "twitter-posted", "linkedin-posted", "reset"]
+    fixed_cosmos_record = remove_fields_from_dict(fixed_cosmos_record, remote_unwanted_fields)
+    cc.upsert_item(fixed_cosmos_record)  
     
     # Remove the body from the front matter (since it's in the .qmd file)
-    if "body" in front_matter_dict:
-        front_matter_dict.pop("body")
-
+    local_unwanted_fields = [
+        "_attachments", "_etag", "_rid", "_self", "_ts", "body", "linkedin-posted-text", "linkedin-posted-utc", 
+        "twitter-posted-utc", "twitter-target-date-utc", "linkedin-target-date-utc"]
+    front_matter_dict = remove_fields_from_dict(front_matter_dict, local_unwanted_fields)
     update_front_matter(filepath, front_matter_dict)
 
 def process_directory(di):
     print(f"Processing directory: {di}")
     for root, dirs, files in os.walk(di):
         for filename in files:
-            if filename.endswith("qmd") or filename.endswith("md"):
+            if filename.endswith("qmd"):# and filename > "2022-07":
                 filepath = os.path.join(root, filename)
                 process_file(filepath)
 

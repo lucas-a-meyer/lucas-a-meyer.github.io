@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803459c-0000-0700-0000-62cdb7450000"'
-_rid: y90DAIjYJsAIAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAIAAAAAAAAAA==/
-_ts: 1657648965
 author: Lucas A. Meyer
 categories:
 - career

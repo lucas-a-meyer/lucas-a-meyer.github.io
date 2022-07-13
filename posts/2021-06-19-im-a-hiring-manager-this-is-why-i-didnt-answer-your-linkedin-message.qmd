@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803c29d-0000-0700-0000-62cdb7530000"'
-_rid: y90DAIjYJsAkAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAkAAAAAAAAAA==/
-_ts: 1657648979
 author: Lucas A. Meyer
 body-footer: '<center><p>&nbsp;</p><hr /><font size="2">Posts on this blog are **not**
   sponsored. Regardless, links to products or services that might compensate have
@@ -18,20 +13,16 @@ image: https://mpsocial.blob.core.windows.net/blog-images/linkedin-notifications
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/im-hiring-manager-why-i-didnt-answer-your-linkedin-message-meyer
 linkedin-posted: 2022-07-11 19:22:11.949565
-linkedin-posted-utc: 2022-07-22T13-00-00.0000000Z
 linkedin-repost: 360
 linkedin-target-date: 2022-07-22 06:00:00
-linkedin-target-date-utc: 2022-07-22T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.html
 title: 'I''m a hiring manager: this is why I didn''t answer your LinkedIn message'
 twitter-description: 'In 2021, I had several positions open
 
   I posted this guide about why I was not answering all messages I received on LinkedIn'
 twitter-posted: 2022-07-07 22:59:21.127667
-twitter-posted-utc: 2022-07-22T13-00-00.0000000Z
 twitter-repost: 360
 twitter-target-date: 2022-07-22 06:00:00
-twitter-target-date-utc: 2022-07-22T13-00-00.0000000Z
 ---
 ## "It's not you, it's me"
 Most managers become managers because they care about helping people succeed. That's my philosophy, and I would answer all the messages I receive if I had enough time.

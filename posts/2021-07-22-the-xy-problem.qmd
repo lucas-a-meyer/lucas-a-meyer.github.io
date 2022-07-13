@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803259e-0000-0700-0000-62cdb7580000"'
-_rid: y90DAIjYJsAuAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAuAAAAAAAAAA==/
-_ts: 1657648984
 author: Lucas A. Meyer
 categories:
 - career
@@ -12,19 +7,15 @@ id: 02888e2d5f584f9662e357e4441e5416
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
 linkedin-posted: 2022-07-11 19:22:12.908570
-linkedin-posted-utc: 2022-07-18T13-00-00.0000000Z
 linkedin-repost: 180
 linkedin-target-date: 2022-07-18 06:00:00
-linkedin-target-date-utc: 2022-07-18T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2021-07-22-the-xy-problem.html
 title: The XY Problem
 twitter-description: I've frequently been asked what's the most important thing new
   hires should know
 twitter-posted: 2022-07-07 22:59:23.171522
-twitter-posted-utc: 2022-07-18T13-00-00.0000000Z
 twitter-repost: 180
 twitter-target-date: 2022-07-18 06:00:00
-twitter-target-date-utc: 2022-07-18T13-00-00.0000000Z
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?"

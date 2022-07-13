@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"38033b9e-0000-0700-0000-62cdb7590000"'
-_rid: y90DAIjYJsAwAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAwAAAAAAAAAA==/
-_ts: 1657648985
 author: Lucas A. Meyer
 date: 2021-12-14 06:00:00
 id: a69173d848f537c40958f461cb7db3e0

@@ -1,18 +1,12 @@
 ---
-_attachments: attachments/
-_etag: '"3803a29e-0000-0700-0000-62cdb75e0000"'
-_rid: y90DAIjYJsA4AAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA4AAAAAAAAAA==/
-_ts: 1657648990
 date: 2022-07-01 04:00:00
 id: d2dd15fb4801df277f1187d0d3acd111
 include-in-header: _msft-clarity.html
 post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-01T04-quarto.html
 title: Posting to Twitter from Quarto
+tweet-url: https://twitter.com/user/status/1547036724588601345
 twitter-posted: 2022-07-01 04:00:06.738179
-twitter-posted-utc: 2022-07-01T11-00-00.0000000Z
 twitter-target-date: 2022-07-01 04:00:00
-twitter-target-date-utc: 2022-07-01T11-00-00.0000000Z
 ---
 I love that I can post directly to Twitter from Quarto!

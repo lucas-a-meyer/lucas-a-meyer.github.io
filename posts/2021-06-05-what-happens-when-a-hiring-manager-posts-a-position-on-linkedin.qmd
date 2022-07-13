@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803079e-0000-0700-0000-62cdb7560000"'
-_rid: y90DAIjYJsArAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsArAAAAAAAAAA==/
-_ts: 1657648982
 author: Lucas A. Meyer
 categories:
 - career
@@ -15,15 +10,12 @@ image: https://mpsocial.blob.core.windows.net/blog-images/interview-process.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-posts-position-linkedin-meyer
 linkedin-posted: 2022-07-11 19:22:12.465819
-linkedin-posted-utc: 2022-07-12T13-00-00.0000000Z
 linkedin-target-date: 2022-07-12 06:00:00
-linkedin-target-date-utc: 2022-07-12T13-00-00.0000000Z
 post-url: https://www.meyerperin.com/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.html
 title: What happens when a hiring manager posts a position on LinkedIn
+tweet-url: https://twitter.com/user/status/1547036719643594754
 twitter-posted: 2022-07-07 22:59:22.119553
-twitter-posted-utc: 2022-07-12T13-00-00.0000000Z
 twitter-target-date: 2022-07-12 06:00:00
-twitter-target-date-utc: 2022-07-12T13-00-00.0000000Z
 ---
 
 As of June 2021, I manage a technical team at Amazon, and I have some positions open. And when you have a position open, it's pretty standard to post it to LinkedIn. 
@@ -36,18 +28,18 @@ Candidate Pool -> Deduplication -> CV Review -> Phone Screen -> On-site intervie
 The candidate pool is intentionally very broad, and as such, it's easier to describe who is **not** in the talent pool:
 
 1. People outside of the position's geographic area. For large companies, the geographic area can mean a whole country. This also usually means that international candidates can't be considered. Some positions are more restricted, for example, requiring a specific city.
-2. People without the **basic** qualifications. In many companies, positions will have both basic and preferred qualifications listed. Read them - if you meet the basic qualifications, you're fine. If you don't meet the basic qualifications, you'll get “desk rejected" and won't even be considered. The best next step is to consider other positions - this will save you (and everyone) time.
-3. People who are already in an active application process with the company (more details in the “deduplication” step below).
+2. People without the **basic** qualifications. In many companies, positions will have both basic and preferred qualifications listed. Read them - if you meet the basic qualifications, you're fine. If you don't meet the basic qualifications, you'll get "desk rejected" and won't even be considered. The best next step is to consider other positions - this will save you (and everyone) time.
+3. People who are already in an active application process with the company (more details in the "deduplication" step below).
 
 If the exclusions above don't apply to you, you're in the candidate pool and should apply to the position using the process posted by the hiring manager or recruiter.
 
 <center>_In large companies, it's usually better to apply rather than ask whether you should apply. Large companies have processes, and if you wait to apply until the hiring manager replies (if they ever do), you may start at a disadvantage._</center>
 <p>&nbsp;</p>
 
-Also, in large companies, the candidate pool also includes applicants that didn't get selected to other positions. This will be important in the “CV Review” step.
+Also, in large companies, the candidate pool also includes applicants that didn't get selected to other positions. This will be important in the "CV Review" step.
 
 ## Deduplication
-Once you apply to a position, the first group that sees your position is the recruiting team. You should not be surprised that their goal is the same as the hiring manager's: they want to get to the “offer accepted” stage. 
+Once you apply to a position, the first group that sees your position is the recruiting team. You should not be surprised that their goal is the same as the hiring manager's: they want to get to the "offer accepted" stage. 
 
 The first thing they do is to check if you're not already in an active process with another recruiter. If you are, they're going to let that process finish first, and you would probably be better served by waiting until that process ends before applying. 
 
@@ -62,7 +54,7 @@ In summary, I would personally suggest that you don't apply to multiple position
 If you are not applying to multiple positions and you have not recently been rejected, we move to the next step.
 
 ## CV Review
-At this point, a recruiter will look into your CV and check it matches the basic qualifications. If it does, the recruiter will likely also “stack rank” your CV against the CVs of other candidates that are already in the process. Remember, the goal is to get a candidate to “offer accepted". 
+At this point, a recruiter will look into your CV and check it matches the basic qualifications. If it does, the recruiter will likely also "stack rank" your CV against the CVs of other candidates that are already in the process. Remember, the goal is to get a candidate to "offer accepted". 
 
 For example, if you have a really strong CV that exceeds all the basic and preferred qualifications and is also better than all other candidates at this point, you'll likely move to the phone screen phase right away. On the other hand, if there is already a large number of candidates in further stages and your CV barely meets the basic qualifications, you'll probably sit in a queue for a while.
 
@@ -83,13 +75,13 @@ In many large companies, the recruiter will offer you some coaching on how to su
 
 In behavioral questions, it's useful to structure your answer in a way that gives a lot of information to the interviewer in a short amount of time. Amazon prefers a method called STAR, which is described in this [web page](https://www.amazon.jobs/en/landing_pages/in-person-interview). I find that method to be useful to when interviewing for other companies as well.
 
-If you're interviewing for a technical position, besides a behavioral question, at this point you will be asked to solve a technical problem. In most cases, this will usually be something equivalent to a Leetcode “hard easy” or “easy medium". If the position that you're interviewing for is a senior position, the question may be considerably harder.
+If you're interviewing for a technical position, besides a behavioral question, at this point you will be asked to solve a technical problem. In most cases, this will usually be something equivalent to a Leetcode "hard easy" or "easy medium". If the position that you're interviewing for is a senior position, the question may be considerably harder.
 
 There are a lot of books and sites talking about how to prepare for a phone screen. The most famous one is Cracking the Code Interview. You should prepare the best you can for the phone screen. You should prepare even more if you see that your phone screen is with the hiring manager.
 
 It's not hard to fail phone screens. I have failed phone screens. I have programmed in SQL for 20+ years, and I have failed SQL phone screens. In a recent phone screen, an interviewer asked about MVC models (Model-View-Controller) and the interviewee answered about NBCs (Naive Bayes’ Classifiers) because the sound quality of the call was not so good. That could have been a disaster, but both interviewer and interviewee realized that something was wrong and recovered. 
 
-In most processes, the phone screen is pass/recycle/fail, instead of just pass/fail. If you don't pass but you got close, you may get recycled to the “CV Review” phase of a similar position. When hiring managers are hiring for multiple positions (for example, SDE I and SDE II), if you fail the “higher” phone screen (e.g., SDE II) you can still be recycled for the “lower” (e.g. SDE I) phone screen and proceed to the next phase.
+In most processes, the phone screen is pass/recycle/fail, instead of just pass/fail. If you don't pass but you got close, you may get recycled to the "CV Review" phase of a similar position. When hiring managers are hiring for multiple positions (for example, SDE I and SDE II), if you fail the "higher" phone screen (e.g., SDE II) you can still be recycled for the "lower" (e.g. SDE I) phone screen and proceed to the next phase.
 
 Finally, hiring managers band together, because hiring managers need a lot of experienced interviewers for the on-site interview. If you barely fail a phone screen with one hiring manager but would have passed the phone screen for a different position with with another hiring manager (that would mean a different position or a lower level position), it's possible that he will refer you to another hiring manager.
 
@@ -107,13 +99,13 @@ If you got here, congratulations. We think you're a good fit and want you to be 
 
 Most companies have somewhat strict offer ranges for their positions and levels. That's less true about very high levels (ranges tend to be broad), but very common for lower levels (ranges tend to be narrow). The vast majority of offers will start in the midpoint of that strict range.
 
-Companies want to make an offer that a candidate will accept, because they want a candidate they liked to start sooner rather than later. I have heard about “low ball” offers inviting negotiation (especially on Blind), but I have never personally seen one. 
+Companies want to make an offer that a candidate will accept, because they want a candidate they liked to start sooner rather than later. I have heard about "low ball" offers inviting negotiation (especially on Blind), but I have never personally seen one. 
 
 That doesn't mean you shouldn't negotiate. If you don't like the offer, you should certainly negotiate. If you don't like the offer even after the negotiation, it's time to decline and walk away. I have done this several times in my life and even regretted a few, but in general, it's for the best.
 
 That also doesn't mean that you should always negotiate. Companies want you to accept offers and be happy you did, so it's not uncommon for the first offer to be really good. If you are already happy, there's some risk in negotiating. It's important to be careful to not be final when negotiating, especially for small amounts. You don't want to risk painting yourself in a corner for a very small potential gain. 
 
-For example, if you currently have a total compensation of $160k and are offered $199k (which you secretly love), it would be unproductive to go to a position of “it's either $203k or I walk away". That small difference may put you out of the range (e.g., the range may be 160k-200k), and even if you receive a counter of $200k (the maximum that can be offered for that position) you may feel like you have to walk away because your demands have not been met. When walking into a negotiation, know what you want, be firm but flexible. And if you love the first offer, take it. Remember that every week you delay your start can cost you approximately 2% of your first year's salary: a year has 52 weeks.
+For example, if you currently have a total compensation of $160k and are offered $199k (which you secretly love), it would be unproductive to go to a position of "it's either $203k or I walk away". That small difference may put you out of the range (e.g., the range may be 160k-200k), and even if you receive a counter of $200k (the maximum that can be offered for that position) you may feel like you have to walk away because your demands have not been met. When walking into a negotiation, know what you want, be firm but flexible. And if you love the first offer, take it. Remember that every week you delay your start can cost you approximately 2% of your first year's salary: a year has 52 weeks.
 
 ## Offer Accepted
 If you got here, you are probably very happy. A lot of other people will also be happy: the hiring manager, the recruiter, your new colleagues, your new internal clients. 

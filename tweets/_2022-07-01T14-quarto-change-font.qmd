@@ -1,18 +1,12 @@
 ---
-_attachments: attachments/
-_etag: '"3803a79e-0000-0700-0000-62cdb75e0000"'
-_rid: y90DAIjYJsA5AAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA5AAAAAAAAAA==/
-_ts: 1657648990
 date: 2022-07-01 10:00:00
 id: 6aaca6c546db54fe9648688e6fff45a4
 include-in-header: _msft-clarity.html
 post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-01T14-quarto-change-font.html
 title: Changing Quarto's PPT font size
+tweet-url: https://twitter.com/user/status/1547036726681653250
 twitter-posted: 2022-07-01 16:00:06.222739
-twitter-posted-utc: 2022-07-01T21-00-00.0000000Z
 twitter-target-date: 2022-07-01 14:00:00
-twitter-target-date-utc: 2022-07-01T21-00-00.0000000Z
 ---
 When creating PowerPoint presentations from @quarto_pub, I couldn't find how to change the size of the monospace font. So I wrote a little script for it: https://links.meyerperin.com/dte 

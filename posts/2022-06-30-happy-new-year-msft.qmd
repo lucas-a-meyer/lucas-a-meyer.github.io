@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803a39c-0000-0700-0000-62cdb7480000"'
-_rid: y90DAIjYJsAOAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAOAAAAAAAAAA==/
-_ts: 1657648968
 author: Lucas A. Meyer
 date: 2022-07-01 03:00:00
 draft: false
@@ -12,18 +7,16 @@ image: https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.j
 include-in-header: _msft-clarity.html
 linkedin-linkback: false
 linkedin-posted: 2022-07-01 06:00:06.977230
-linkedin-posted-utc: 2022-07-01T12-00-00.0000000Z
 linkedin-target-date: 2022-07-01 05:00:00
-linkedin-target-date-utc: 2022-07-01T12-00-00.0000000Z
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
 post-url: https://www.meyerperin.com/posts/2022-06-30-happy-new-year-msft.html
 title: Happy new year, Microsoft
-twitter-description: I joined Microosoft in 2002. Since then, I missed only the 2011
+tweet-url: https://twitter.com/user/status/1547036699510947842
+twitter-description: I joined Microsoft in 2002. Since then, I missed only the 2011
   (Ph.D. student) and 2021 (Amazon) fiscal year-ends. Thanks for welcoming me back,
   and happy new (fiscal) year.
 twitter-posted: 2022-07-01 06:00:07.322699
-twitter-posted-utc: 2022-07-01T12-00-00.0000000Z
 twitter-target-date: 2022-07-01 05:00:00
-twitter-target-date-utc: 2022-07-01T12-00-00.0000000Z
 ---
 
 I joined Microsoft in 2002. Since then, I missed only the FY11 (I was a Ph.D. student) and FY21 (I was working for Amazon) fiscal year-ends. 

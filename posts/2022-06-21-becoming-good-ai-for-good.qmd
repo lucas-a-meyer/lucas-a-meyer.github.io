@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"38030f9c-0000-0700-0000-62cdb7440000"'
-_rid: y90DAIjYJsAFAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAFAAAAAAAAAA==/
-_ts: 1657648964
 author: Lucas A. Meyer
 date: 2022-06-21 06:00:00
 draft: false
@@ -11,15 +6,13 @@ id: a84268e38ef6dccb44393685c21c853b
 image: https://mpsocial.blob.core.windows.net/blog-images/aiforgood.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00
-linkedin-posted-utc: 2022-06-21T13-00-00.0000000Z
 linkedin-target-date: 2022-06-21 06:00:00
-linkedin-target-date-utc: 2022-06-21T13-00-00.0000000Z
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
 post-url: https://www.meyerperin.com/posts/2022-06-21-becoming-good-ai-for-good.html
 title: Becoming Good at AI for Good
+tweet-url: https://twitter.com/user/status/1547036088862212102
 twitter-posted: 2022-06-21 06:00:00
-twitter-posted-utc: 2022-06-21T13-00-00.0000000Z
 twitter-target-date: 2022-06-21 06:00:00
-twitter-target-date-utc: 2022-06-21T13-00-00.0000000Z
 ---
 
 The AI for Good Research Lab published an [article](https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good) last year about how to do AI projects in the #AI4Good domain. 

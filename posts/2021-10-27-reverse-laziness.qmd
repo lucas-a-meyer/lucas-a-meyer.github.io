@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803989c-0000-0700-0000-62cdb7470000"'
-_rid: y90DAIjYJsAMAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAMAAAAAAAAAA==/
-_ts: 1657648967
 author: Lucas A. Meyer
 categories: concepts
 date: 2021-10-27 06:00:00

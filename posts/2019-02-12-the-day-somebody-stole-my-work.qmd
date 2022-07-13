@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803329d-0000-0700-0000-62cdb74d0000"'
-_rid: y90DAIjYJsAYAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAYAAAAAAAAAA==/
-_ts: 1657648973
 author: Lucas A. Meyer
 date: 2019-02-12 06:00:00
 id: 0f3600cf31fbecf625e4808895221329

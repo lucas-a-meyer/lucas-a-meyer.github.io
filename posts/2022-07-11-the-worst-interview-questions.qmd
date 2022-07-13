@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803ae9d-0000-0700-0000-62cdb7520000"'
-_rid: y90DAIjYJsAiAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAiAAAAAAAAAA==/
-_ts: 1657648978
 author: Lucas A. Meyer
 date: 2022-07-11 04:00:00
 draft: false
@@ -12,16 +7,14 @@ image: https://mpsocial.blob.core.windows.net/blog-images/interview-crying.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-11 09:53:28.359673
-linkedin-posted-utc: 2022-07-11T13-00-00.0000000Z
 linkedin-target-date: 2022-07-11 06:00:00
-linkedin-target-date-utc: 2022-07-11T13-00-00.0000000Z
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
 post-url: https://www.meyerperin.com/posts/2022-07-11-the-worst-interview-questions.html
 title: Two interview questions I hate
+tweet-url: https://twitter.com/user/status/1547036712039317507
 twitter-description: The two interview questions I hate
 twitter-posted: 2022-07-11 04:00:06.554047
-twitter-posted-utc: 2022-07-11T13-00-00.0000000Z
 twitter-target-date: 2022-07-11 06:00:00
-twitter-target-date-utc: 2022-07-11T13-00-00.0000000Z
 ---
 
 There are two interview questions that I hate, and I see them a lot.

@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"3803009e-0000-0700-0000-62cdb7560000"'
-_rid: y90DAIjYJsAqAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAqAAAAAAAAAA==/
-_ts: 1657648982
 author: Lucas A. Meyer
 categories: career
 date: 2021-09-18 06:00:00

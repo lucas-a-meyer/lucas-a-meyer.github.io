@@ -1,9 +1,4 @@
 ---
-_attachments: attachments/
-_etag: '"38035e9e-0000-0700-0000-62cdb75a0000"'
-_rid: y90DAIjYJsAxAAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsAxAAAAAAAAAA==/
-_ts: 1657648986
 author: Lucas A. Meyer
 categories: writing
 date: 2021-10-10 06:00:00

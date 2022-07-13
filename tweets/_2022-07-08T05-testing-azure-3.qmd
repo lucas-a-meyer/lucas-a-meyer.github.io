@@ -1,18 +1,12 @@
 ---
-_attachments: attachments/
-_etag: '"3803c99e-0000-0700-0000-62cdb7600000"'
-_rid: y90DAIjYJsA9AAAAAAAAAA==
-_self: dbs/y90DAA==/colls/y90DAIjYJsA=/docs/y90DAIjYJsA9AAAAAAAAAA==/
-_ts: 1657648992
 date: 2022-07-01 04:00:00
 id: 98ac6614010c494858bfb60dc670b3fb
 include-in-header: _msft-clarity.html
 post-type: text
 post-url: https://www.meyerperin.com/tweets/_2022-07-08T05-testing-azure-3.html
 title: Testing that server is working for now
+tweet-url: https://twitter.com/user/status/1547036735741300736
 twitter-posted: 2022-07-08 04:00:09.486122
-twitter-posted-utc: 2022-07-08T15-00-00.0000000Z
 twitter-target-date: 2022-07-08 08:00:00
-twitter-target-date-utc: 2022-07-08T15-00-00.0000000Z
 ---
 One of the features I really wanted in Quarto blogs is for posts to become invisible while their date is in the future.
