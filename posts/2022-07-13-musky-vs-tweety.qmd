@@ -13,6 +13,7 @@ title: 'Interview question: Musky vs Tweety'
 tweet-url: https://twitter.com/user/status/1546996090603536386
 twitter-description: 'Interview question: Musky vs Tweety'
 twitter-target-date: 2022-07-11 07:05:00-07:00
+reset: true
 ---
 
 One thing I find in my interviews is that data scientists are a lot better at calculating expectations than they are at defining loss functions. 
