@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.8">
+<meta name="generator" content="quarto-1.0.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,7 +36,7 @@ ul.task-list{list-style: none;}
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -190,7 +190,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://static1.squarespace.com/static/5150aec6e4b0e340ec52710a/t/51525c33e4b0b3e0d10f77ab/1364352052403/Data_Science_VD.png?format=750w" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Data Science Venn Diagram</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Data Science Venn Diagram</figcaption><p></p>
 </figure>
 </div>
 <p>Assigning data scientists to a client area will help build the “Substantive Expertise” part of the diagram. A common trap here is “Well, we can do the same if we keep the data scientists centralized and give them specializations that match the client areas.”</p>
@@ -201,7 +201,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://cdn-images-1.medium.com/max/2000/1*YfxWi5QZkShNHS0XLuKlMQ.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Overengineering</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Overengineering</figcaption><p></p>
 </figure>
 </div>
 <p>It may be simply that client areas are more mature and battle worn than centralized data science groups, at least in my experience. I think that if a data scientist is assigned to a client area and there’s downtime, they’ll put the data scientist to work in business intelligence or decision analysis. On the other hand, if the data scientist is assigned to a centralized data science group, they’ll be pulled into a project away from their “client area specialization” or will find a way to work in something novel that’s cool (as of 2018, autoencoders, GANs or something with “Bayesian” in its name).</p>
@@ -236,6 +236,21 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

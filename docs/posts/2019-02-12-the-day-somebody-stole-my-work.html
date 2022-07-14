@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.8">
+<meta name="generator" content="quarto-1.0.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,7 +36,7 @@ ul.task-list{list-style: none;}
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -188,7 +188,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Rube_Goldberg%27s_%22Self-Operating_Napkin%22_%28cropped%29.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Rube Goldberg Self-Operating Napkin</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Rube Goldberg Self-Operating Napkin</figcaption><p></p>
 </figure>
 </div>
 <p>Because of its success, my chatbot got a lot of use and it started to be shown to customers as an example of our usage of technology. “Some guy in some place”, let’s call him G, became a specialist in demonstrating the chatbot I wrote, and he would do so very well.</p>
@@ -196,7 +196,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="chatbot.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">chatbot</figcaption><p></p>
+<p></p><figcaption class="figure-caption">chatbot</figcaption><p></p>
 </figure>
 </div>
 <p>That made me realize that G was not putting a lot of effort in attributing my work.</p>
@@ -208,7 +208,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="rec.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Recommendation System</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Recommendation System</figcaption><p></p>
 </figure>
 </div>
 <p>At this point, people from C came back asking for an “X Recommender”, and they also wanted to learn how to build one. I told them how to build one, step-by-step. They did not succeed in building it for production, but built it enough for a presentation and scheduled time for us to work together to make it ready for production.</p>
@@ -226,7 +226,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="math.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Complicated math</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Complicated math</figcaption><p></p>
 </figure>
 </div>
 <p>The problem is that selling the work takes time, and that will sometimes result in less time to do high-quality data science work. It may also result in wider than optimal adoption, which will require extra support, also detracting to high-quality data science work. Perhaps it pays better, but higher-quality also generally pays better than lower-quality, so it’s not that simple.</p>
@@ -238,6 +238,21 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
