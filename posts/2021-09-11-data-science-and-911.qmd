@@ -7,6 +7,7 @@ id: aacf28c81e284c87397e32165fbad49f
 image: https://mpsocial.blob.core.windows.net/blog-images/bin-laden-compound.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
+linkedin-linkback: true
 linkedin-repost: 365
 linkedin-target-date: 2022-09-11 06:00:00
 post-url: https://www.meyerperin.com/posts/2021-09-11-data-science-and-911.html

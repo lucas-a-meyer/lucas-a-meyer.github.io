@@ -7,6 +7,7 @@ id: 02888e2d5f584f9662e357e4441e5416
 image: https://mpsocial.blob.core.windows.net/blog-images/xy-problem.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
+linkedin-linkback: true
 linkedin-repost: 180
 linkedin-target-date: 2022-07-24 06:02:00
 post-url: https://www.meyerperin.com/posts/2021-07-22-the-xy-problem.html

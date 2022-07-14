@@ -6,6 +6,7 @@ draft: false
 id: f2ce9236e6beb8f6f1bca262ea9c0c6b
 image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
+linkedin-linkback: true
 linkedin-repost: 180
 linkedin-target-date: 2022-07-18 06:00:00
 post-url: https://www.meyerperin.com/posts/2022-04-02-chestertons-fence.html

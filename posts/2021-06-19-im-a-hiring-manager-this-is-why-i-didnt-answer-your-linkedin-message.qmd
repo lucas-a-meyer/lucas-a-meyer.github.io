@@ -12,17 +12,16 @@ id: 4c3b1d8825457cf2fb3f1a21fa7ca99e
 image: https://mpsocial.blob.core.windows.net/blog-images/linkedin-notifications.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/im-hiring-manager-why-i-didnt-answer-your-linkedin-message-meyer
-linkedin-posted: 2022-07-11 19:22:11.949565
-linkedin-repost: 360
-linkedin-target-date: 2022-07-22 06:00:00
+linkedin-linkback: true
+linkedin-posted: 2021-07-11 19:22:11.949565
+linkedin-target-date: 2021-07-22 06:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6953453107464855553
 post-url: https://www.meyerperin.com/posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.html
 title: 'I''m a hiring manager: this is why I didn''t answer your LinkedIn message'
 twitter-description: 'In 2021, I had several positions open
 
   I posted this guide about why I was not answering all messages I received on LinkedIn'
 twitter-posted: 2022-07-07 22:59:21.127667
-twitter-repost: 360
-twitter-target-date: 2022-07-22 06:00:00
 ---
 ## "It's not you, it's me"
 Most managers become managers because they care about helping people succeed. That's my philosophy, and I would answer all the messages I receive if I had enough time.
