@@ -2,7 +2,7 @@ import os
 from re import L
 import pandas as pd
 import datetime as dt
-import requests
+
 
 posts_dir = "docs/posts"
 
