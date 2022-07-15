@@ -6,10 +6,10 @@ id: 25886796503952d9ed680f98bdff2d01
 image: https://mpsocial.blob.core.windows.net/blog-images/leetcode.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-target-date: 2022-07-22 06:02:00
+linkedin-target-date: 2022-07-19 06:02:00
 post-url: https://www.meyerperin.com/posts/2022-07-22-leetcode.html
 title: Separating LeetCode grinders from people that know algorithms
-twitter-target-date: 2022-07-22 06:02:00
+twitter-target-date: 2022-07-19 06:02:00
 ---
 
 My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting. 

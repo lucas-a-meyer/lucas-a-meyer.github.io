@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.18">
+<meta name="generator" content="quarto-1.0.28">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -186,7 +186,8 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </header>
 
 <p>After the 9/11 attacks, the CIA was looking for Bin Laden all over the world.</p>
-<p>One promising lead was a figure that lived in a compound in Pakistan that always shielded his face when walking outside. The spies named this mysterious figure “The Pacer”, and got several aerial pictures of him.</p>
+<p>One promising lead was a figure that lived in a compound in Pakistan that always shielded his face when walking outside.</p>
+<p>The spies named this mysterious figure “The Pacer”, and got several aerial pictures of him.</p>
 <p>In order to try to find out whether this was really Bin Laden, they tried to figure out the the person’s height from the pictures, since Bin Laden was quite tall at 205 cm (6’5”).</p>
 <p>The National Geospatial Intelligence Agency examined the images, and their photo analysts proudly reported that the man was “somewhere between five feet (150 cm) and seven feet (210 cm) tall”.</p>
 <p>A lot of #datascience is like that: technically correct, but not super helpful for decision-making. What we are really looking for is the “lift”: how does some piece of analysis bring us closer to a decision? Does your model provide better result than a naïve baseline that someone can quickly put together?</p>
@@ -210,7 +211,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   const toggleBodyColorPrimary = () => {
-    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
   }
   toggleBodyColorPrimary();  
   const icon = "";

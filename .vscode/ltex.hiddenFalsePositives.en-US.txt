@@ -1,0 +1,1 @@
+{"rule":"PASSIVE_VOICE","sentence":"^\\QMaking the reasonable assumption that people are somewhat distracted on the day of their birthday, they find the effect that being operated on the day of your surgeon's birh\\E$"}

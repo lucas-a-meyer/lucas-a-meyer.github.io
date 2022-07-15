@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.18">
+<meta name="generator" content="quarto-1.0.28">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -85,11 +85,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Separating LeetCode grinders from people that know algorithms">
-<meta property="og:description" content="My preferred interview type is the technical phone screen. I like it because I can track my performance, even without sophisticated reporting.">
+<meta property="og:description" content="My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting.">
 <meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/leetcode.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Separating LeetCode grinders from people that know algorithms">
-<meta name="twitter:description" content="My preferred interview type is the technical phone screen. I like it because I can track my performance, even without sophisticated reporting.">
+<meta name="twitter:description" content="My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting.">
 <meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/leetcode.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -182,8 +182,8 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
-<p>My preferred interview type is the technical phone screen. I like it because I can track my performance, even without sophisticated reporting.</p>
-<p>I also get to try to solve an interesting problem: how to separate LeetCode “grinders” from people who know algorithms.</p>
+<p>My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting.</p>
+<p>I also face an interesting problem: how to separate LeetCode “grinders” from people who know algorithms.</p>
 <section id="measuring-screener-performance" class="level2">
 <h2 class="anchored" data-anchor-id="measuring-screener-performance">Measuring screener performance</h2>
 <p>I wrote before about the <a href="https://www.meyerperin.com/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.html">many steps in an interview process</a>. The last few steps of the process are: technical phone screen, on-site interview (now done remotely as well), and offer.</p>
@@ -218,7 +218,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   const toggleBodyColorPrimary = () => {
-    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
   }
   toggleBodyColorPrimary();  
   const icon = "";

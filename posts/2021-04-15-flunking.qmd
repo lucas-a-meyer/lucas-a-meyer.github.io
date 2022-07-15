@@ -9,10 +9,10 @@ image: https://mpsocial.blob.core.windows.net/blog-images/sql-fail.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
 linkedin-linkback: true
-linkedin-target-date: 2022-07-20 06:02:00
+linkedin-target-date: 2022-07-19 06:02:00
 post-url: https://www.meyerperin.com/posts/2021-04-15-flunking.html
 title: Flunking a SQL interview with 20+ years of practice
-twitter-target-date: 2022-07-20 06:02:00
+twitter-target-date: 2022-07-19 06:02:00
 ---
 
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998. 

@@ -8,11 +8,11 @@ image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-repost: 180
-linkedin-target-date: 2022-07-18 06:00:00
+linkedin-target-date: 2022-07-21 06:00:00
 post-url: https://www.meyerperin.com/posts/2022-04-02-chestertons-fence.html
 title: Chesterton's Fence
 twitter-repost: 180
-twitter-target-date: 2022-07-18 06:00:00
+twitter-target-date: 2022-07-21 06:00:00
 ---
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 
