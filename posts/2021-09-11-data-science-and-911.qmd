@@ -18,7 +18,9 @@ twitter-target-date: 2022-09-11 06:00:00
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 
 
-One promising lead was a figure that lived in a compound in Pakistan that always shielded his face when walking outside. The spies named this mysterious figure "The Pacer", and got several aerial pictures of him.
+One promising lead was a figure that lived in a compound in Pakistan that always shielded his face when walking outside. 
+
+The spies named this mysterious figure "The Pacer", and got several aerial pictures of him.
 
 In order to try to find out whether this was really Bin Laden, they tried to figure out the the person's height from the pictures, since Bin Laden was quite tall at 205 cm (6'5"). 
 

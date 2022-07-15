@@ -12,17 +12,13 @@ linkedin-repost: 180
 linkedin-target-date: 2022-07-24 06:02:00
 post-url: https://www.meyerperin.com/posts/2021-07-22-the-xy-problem.html
 title: The XY Problem
-twitter-description: I've frequently been asked what's the most important thing new
-  hires should know... I think it's to know about the XY problem.
 twitter-repost: 180
 twitter-target-date: 2022-07-24 06:02:00
 ---
 
-During a recent presentation, I've been asked: "What do you wish new hires knew?"
+During a recent presentation, I've been asked: "What do you wish new hires knew?" 
 
-My (incorrect - sorry UW MSBA) answer: "I wish they knew that we don't expect them to know everything". 
-
-But what I really wished people knew about was "The XY problem", or "how to properly ask technical questions".
+What I really wished people knew about was "The XY problem", or "how to properly ask technical questions".
 
 The classic guide for asking technical questions can be [found on the web](https://buff.ly/3efqRVR), but the most important part for me is the ["XY Problem"](https://buff.ly/3yTtEvE).
 

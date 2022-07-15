@@ -12,9 +12,9 @@ title: Separating LeetCode grinders from people that know algorithms
 twitter-target-date: 2022-07-22 06:02:00
 ---
 
-My preferred interview type is the technical phone screen. I like it because I can track my performance, even without sophisticated reporting. 
+My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting. 
 
-I also get to try to solve an interesting problem: how to separate LeetCode "grinders" from people who know algorithms.
+I also face an interesting problem: how to separate LeetCode "grinders" from people who know algorithms.
 
 ## Measuring screener performance
 
