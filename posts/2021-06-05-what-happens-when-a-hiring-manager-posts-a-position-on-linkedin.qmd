@@ -22,7 +22,7 @@ As of June 2021, I manage a technical team at Amazon, and I have some positions 
 
 Here's an overview of the process that job applications go through:
 
-Candidate Pool -> Deduplication -> CV Review -> Phone Screen -> On-site interview -> Offer -> Offer Accepted.
+Candidate Pool -> Deduplication -> CV Review -> Technical Phone Screen -> On-site interview -> Offer -> Offer Accepted.
 
 ## Candidate pool
 The candidate pool is intentionally very broad, and as such, it's easier to describe who is **not** in the talent pool:
