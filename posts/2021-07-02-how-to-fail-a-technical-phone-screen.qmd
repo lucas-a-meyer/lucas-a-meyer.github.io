@@ -20,7 +20,7 @@ I wrote earlier about the hiring process for technical positions at big technolo
 
 While usually disappointing, failing is not necessarily bad: it's sometimes better to fail fast. You may get more time to focus on positions that you're better suited for. I have myself failed several phone screens.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/sql-tweet.png)
+![](https://mpsocial.blob.core.windows.net/blog-images/sql-fail.png)
 
 ## Why we do technical phone screens
 Imagine you come back hungry from a longer-than-expected trip, open the fridge and find an open bottle of milk. Do you sniff it first to make sure it's not spoiled or drink it outright?
