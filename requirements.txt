@@ -30,6 +30,7 @@ jupyter-console==6.4.4
 jupyter-core==4.11.1
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==1.1.1
+lxml==4.9.1
 Markdown==3.3.7
 MarkupSafe==2.1.1
 matplotlib-inline==0.1.3
