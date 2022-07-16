@@ -11,6 +11,8 @@ linkedin-repost: 180
 linkedin-target-date: 2022-07-21 06:00:00
 post-url: https://www.meyerperin.com/posts/2022-04-02-chestertons-fence.html
 title: Chesterton's Fence
+twitter-description: I once posted about the Chesterton's Fence, which is an important
+  concept when starting something new
 twitter-repost: 180
 twitter-target-date: 2022-07-21 06:00:00
 ---

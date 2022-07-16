@@ -1,20 +1,23 @@
 ---
 author: Lucas A. Meyer
-date: 2022-07-17 07:00:00
-image: https://mpsocial.blob.core.windows.net/blog-images/freakonomics-md.jpg
-title: 'Freakonomics M.D. and experiment design'
 categories:
-    - podcasts
-    - ConversationsWithMyDog
-    - economics
-    - econometrics
-    - healthcare
+- podcasts
+- ConversationsWithMyDog
+- economics
+- econometrics
+- healthcare
+date: 2022-07-17 07:00:00
 draft: false
-twitter-description: "Congratulations to Dr. Bapu Jena @AnupamBJena @DrBapuPod on his birthday! I hope you don't perform any surgeries today! https://freakonomics.com/podcast/bad-news-its-your-surgeons-birthday/"
-twitter-target-date: 2022-07-17 07:00:00
-linkedin-target-date: 2022-07-17 07:00:00
+id: c2c4821ee122193303c3be8d77b9b570
+image: https://mpsocial.blob.core.windows.net/blog-images/freakonomics-md.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
+linkedin-target-date: 2022-07-17 07:00:00
+post-url: https://www.meyerperin.com/posts/2022-07-17-freakonomics-md.html
+title: Freakonomics M.D. and experiment design
+twitter-description: Congratulations to Dr. Bapu Jena @AnupamBJena @DrBapuPod on his
+  birthday! I hope you don't perform any surgeries today! https://freakonomics.com/podcast/bad-news-its-your-surgeons-birthday/
+twitter-target-date: 2022-07-17 07:00:00
 ---
 
 Data science degrees teach students a lot about how to _perform_ an experiment, but very little about how to _set an experiment up_. 

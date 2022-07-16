@@ -12,6 +12,8 @@ linkedin-repost: 180
 linkedin-target-date: 2022-07-26 06:02:00
 post-url: https://www.meyerperin.com/posts/2021-07-22-the-xy-problem.html
 title: The XY Problem
+twitter-description: I've frequently been asked what's the most important thing new
+  hires should know... I think it's to know about the XY problem.
 twitter-repost: 180
 twitter-target-date: 2022-07-26 06:02:00
 ---

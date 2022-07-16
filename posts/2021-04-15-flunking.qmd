@@ -12,6 +12,8 @@ linkedin-linkback: true
 linkedin-target-date: 2022-07-19 06:02:00
 post-url: https://www.meyerperin.com/posts/2021-04-15-flunking.html
 title: Flunking a SQL interview with 20+ years of practice
+twitter-description: Even though I have written SQL daily for over 20 years, I still
+  failed a SQL test in an interview for a manager position.
 twitter-target-date: 2022-07-19 06:02:00
 ---
 
