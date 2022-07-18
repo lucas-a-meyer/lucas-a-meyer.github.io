@@ -14,6 +14,8 @@ about:
     - icon: github
       text: Github
       href: https://github.com/lucas-a-meyer
+    - icon: StackOverflow
+      href: https://stackoverflow.com/users/1850561/lucas-a-meyer
 
 ---
 I am a Data Scientist at the AI for Good Research Lab at Microsoft. 
