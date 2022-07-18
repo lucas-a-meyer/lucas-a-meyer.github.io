@@ -3,21 +3,21 @@ title: "About"
 image: bias.jpg
 include-in-header: _msft-clarity.html
 about:
-  template: jolla
+  template: solana
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/lucas_a_meyer
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/lucasameyer
     - icon: github
       text: Github
       href: https://github.com/lucas-a-meyer
-    - icon: StackOverflow
+    - icon: stack-overflow
+      text: Stack Overflow
       href: https://stackoverflow.com/users/1850561/lucas-a-meyer
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/lucas_a_meyer
 
 ---
-I am a Data Scientist at the AI for Good Research Lab at Microsoft. 
+I am a Data Scientist at the AI for Good Research Lab at Microsoft, focusing on economics, financial misconduct and cybercrime.
 
-[Quarto](https://quarto.org) is awesome.
