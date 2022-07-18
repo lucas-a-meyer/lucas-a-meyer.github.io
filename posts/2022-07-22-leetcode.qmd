@@ -1,20 +1,20 @@
 ---
 author: Lucas A. Meyer
 date: 2022-07-22 04:00:00
-draft: true
+draft: false
 id: 25886796503952d9ed680f98bdff2d01
 image: https://mpsocial.blob.core.windows.net/blog-images/leetcode.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-19 06:02:00
 post-url: https://www.meyerperin.com/posts/2022-07-22-leetcode.html
-title: Separating LeetCode grinders from people that know algorithms
+title: Separating LeetCode grinders from coders
 twitter-target-date: 2022-07-19 06:02:00
 ---
 
 My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting. 
 
-I also face an interesting problem: how to separate LeetCode "grinders" from people who know algorithms.
+I also face an interesting problem: how to separate LeetCode "grinders" from people who can code.
 
 ## Measuring screener performance
 

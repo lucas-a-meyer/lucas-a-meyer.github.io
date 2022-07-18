@@ -4,6 +4,7 @@ image: bias.jpg
 include-in-header: _msft-clarity.html
 about:
   template: solana
+  image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
