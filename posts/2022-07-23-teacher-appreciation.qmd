@@ -1,13 +1,13 @@
 ---
 title: Learning from others
 author: Lucas A. Meyer
-date: 2022-07-22 04:00:00
+date: 2022-08-02 04:00:00
 draft: true
 image: https://mpsocial.blob.core.windows.net/blog-images/teacher-appreciation.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
-linkedin-target-date: 2022-07-27 07:01:00
-twitter-target-date: 2022-07-27 07:01:00
+linkedin-target-date: 2022-08-02 07:01:00
+twitter-target-date: 2022-08-02 07:01:00
 ---
 
 How much of what you do is borrowed from other people? When you realized you learned something from someone, did you tell them?
