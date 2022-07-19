@@ -1,0 +1,29 @@
+---
+title: Learning from others
+author: Lucas A. Meyer
+date: 2022-07-22 04:00:00
+draft: true
+image: https://mpsocial.blob.core.windows.net/blog-images/teacher-appreciation.jpg
+include-in-header: _msft-clarity.html
+linkedin-linkback: true
+linkedin-target-date: 2022-07-27 07:01:00
+twitter-target-date: 2022-07-27 07:01:00
+---
+
+How much of what you do is borrowed from other people? When you realized you learned something from someone, did you tell them?
+
+If you come from a disadvantaged background, there's a possibility that the adults around youy didn't have much to teach you, or worse, taught you self-limiting behaviors. This is not always true, and many people from disadvantaged backgrounds have a lot of support from their family. However, the ones that don't may distrust learning from other people. When they find themselves in a supportive environment, that's a serious impediment.
+
+I had to learn to learn from other people myself. I recently realized that I haven't told these people what I learned from them. I don't think it's actually that common. So I'll get started.
+
+Early in my career, Michal Panowicz taught me about the importance of basic work skills: scheduling meetings, running meetings, writing emails, naming documents, using meaningful titles on slides, setting goals for work activities, etc. It's incredible how useful this was to me, and how many people don't have these basic skills: at least once a week someone will book a 1:1 with me without checking my availability. 
+
+I borrow a lot from Ed Rice, a professor at the UW Foster School of Business. Because of him, I start a lot of my sentences with "You know...". He also taught me how to think like an economist, and sent me to a bunch of algebra classes to improve my argumentation skills.
+
+I borrowed a lot of managerial skills from Matt Fingerhut. I noticed that he blocked time to do email. I do so myself. He once said in a meeting that without managers, people would have trouble communicating and coordinating. When I became a manager, I realized that my main job was communicating and coordinating, and that was a successful strategy. Whenever people complained about a problem that involved other teams, he would ask: "do we already have an email thread with everyone that needs to know about this?". The email thread doesn't always solve things, we frequently need meetings for that, but it certainly gets things started. I still do these threads today.
+
+Urzsula Chajewska once reminded me that science already knows the answer to a lot of questions. I reinvented a lot less wheels after that.
+
+Jorge Pulido taught me that, when I meet some other team that I need to collaborate with, I should (politely) ask about their incentives. That never failed: I often understand their actions and questions much better after understanding their incentives.
+
+This is not an exaustive list, it's just my first list of many. There are many other people who taught me useful things that I didn't thank yet. I'll get to it.
