@@ -1,15 +1,15 @@
 ---
 author: Lucas A. Meyer
 categories: concepts
-date: 2022-07-26 06:00:00
+date: 2022-07-27 06:00:00
 draft: false
 image: https://mpsocial.blob.core.windows.net/blog-images/professor.jpeg
 include-in-header: _msft-clarity.html
-title: Shortcuts and the smell of rain
+title: Teaching Economics vs. teaching Physics
 linkedin-target-date: 2022-08-04 07:24:00
 twitter-target-date: 2022-08-04 07:24:00
 ---
-Ed Rice, one of my former Finance professors, was once telling me how teaching Economics is different from teaching Physics.
+[Ed Rice](https://foster.uw.edu/faculty-research/directory/edward-rice/), [one of my former Finance professors](/posts/2022-07-23-teacher-appreciation.qmd), was once telling me how teaching Economics is different from teaching Physics.
 
 Not exactly about how the _science_ differs, but about how people react when being taught.
 
