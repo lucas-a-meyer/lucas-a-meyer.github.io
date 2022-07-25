@@ -9,27 +9,30 @@ include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
 linkedin-linkback: true
 linkedin-repost: 180
-linkedin-target-date: 2022-07-26 06:02:00
+linkedin-target-date: 2022-08-09 07:24:00
 post-url: https://www.meyerperin.com/posts/2021-07-22-the-xy-problem.html
 title: The XY Problem
 twitter-description: I've frequently been asked what's the most important thing new
   hires should know... I think it's to know about the XY problem.
 twitter-repost: 180
-twitter-target-date: 2022-07-26 06:02:00
+twitter-target-date: 2022-08-09 07:24:00
 ---
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?" 
 
-What I really wished people knew about was "The XY problem", or "how to properly ask technical questions".
+To me, the answer is "the XY problem", or "how to properly ask technical questions".
 
 The classic guide for asking technical questions can be [found on the web](https://buff.ly/3efqRVR), but the most important part for me is the ["XY Problem"](https://buff.ly/3yTtEvE).
 
-The common mistake is to ask "how can I do X to solve Y". The also common and more dangerous version is asking "how can I do X" and omitting "to solve Y".
+The common mistake is to ask "how can I do X to solve Y". The "to solve Y" part is frequently omitted, wasting time for everyone.
 
-For example, let's say Jay urgently needs to get some data that exists in a database. Jay recently used pandas in Jupyter for a different project and decides to ask "How can I connect a Jupyter notebook to the corporate database?" (omitting the reason why). What Jay doesn't is that a report already exists.
+Let me do an example to illustrate the problem. Jay is a new hire, recently hired from a prestigious school, to be the data analyst for a Finance team in a big tech company. The fiscal year is ending, and the company's accountant asks Jay for a report that aggregates tax expenses by country. Jay recently used pandas in Jupyter for a different project, and the graphs that the accountant wants are similar to what Jay just did. Jay decides to ask "How can I connect a Jupyter notebook to the corporate database?", so that Jay can use pandas to do fulfill the accountant's request. When asking for help, Jay didn't state why they want to connect their Jupyter notebook to the corporate database 
 
-People spend time helping Jay. Jay spends time getting permissions, installing and configuring packages, etc. to solve a problem that was already solved.
+What Jay doesn't know (and the accountant also doesn't know) is that a Power BI report that does what the accountant needs already exists, and everybody in Finance has access to it.
 
-State the problem you're trying to solve, rather than asking for help with a specific task. You may learn a lot more.
+People spend time helping Jay connect to the corporate database. Jay spends time getting permissions, installing and configuring packages, etc. to solve a problem that was already solved. All this time is invested in something that is unnecessary, instead of being invested in improving the onboarding experience and documentation so that Jay and the accountant could learn that the report they needed already existed.
 
-Interestingly, Amazon provides training on asking good questions.
+Don't be like Jay! State the problem you're trying to solve, rather than asking for help with a specific task. You may learn a lot more.
+
+I love shortcuts such as "the XY problem" to explain complex concepts. I have a [list in my blog](/posts/2022-07-25-concepts.qmd).
+
