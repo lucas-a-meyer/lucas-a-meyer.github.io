@@ -7,8 +7,10 @@ image: https://mpsocial.blob.core.windows.net/blog-images/leetcode.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-19 06:02:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6955144233498394624
 post-url: https://www.meyerperin.com/posts/2022-07-22-leetcode.html
 title: Separating LeetCode grinders from coders
+tweet-url: https://twitter.com/user/status/1549378524334669824
 twitter-target-date: 2022-07-19 06:02:00
 ---
 

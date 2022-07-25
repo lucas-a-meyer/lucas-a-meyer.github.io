@@ -3,10 +3,12 @@ author: Lucas A. Meyer
 categories: concepts
 date: 2022-07-26 06:00:00
 draft: false
+id: e36ff613ce551f9d84d137f16d924a70
 image: https://mpsocial.blob.core.windows.net/blog-images/shortcut.jpg
 include-in-header: _msft-clarity.html
-title: Shortcuts and the smell of rain
 linkedin-target-date: 2022-07-26 07:24:00
+post-url: https://www.meyerperin.com/posts/2022-07-25-concepts.html
+title: Shortcuts and the smell of rain
 twitter-target-date: 2022-07-26 07:24:00
 ---
 
