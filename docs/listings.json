@@ -6,6 +6,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2022-07-26-teaching-economics-vs-physics.html",
+      "/posts/2022-07-25-concepts.html",
       "/posts/2022-07-22-leetcode.html",
       "/posts/2022-07-17-freakonomics-md.html",
       "/posts/2022-07-15-my-code-is-compiling.html",
@@ -50,7 +52,7 @@
       "/posts/2021-07-02-how-to-fail-a-technical-phone-screen.html",
       "/posts/2021-06-21-interviews-are-hard-for-everyone.html",
       "/posts/2021-06-19-im-a-hiring-manager-this-is-why-i-didnt-answer-your-linkedin-message.html",
-      "/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.html",
+      "/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin copy.html",
       "/posts/2021-05-06-document-variables.html",
       "/posts/2021-05-12-getting-nervous.html",
       "/posts/2021-04-30-some-tips-for-technical-interviews.html",
