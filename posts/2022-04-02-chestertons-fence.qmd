@@ -31,4 +31,4 @@ I frequently learn a lot when trying to understand the reasons why the original 
 
 When I was less experienced and less careful, I brought down plenty of fences unnecessarily, and was later surprised to find escaped sheep on the road and farmers yelling at me.
 
-I also posted about other concepts, such as the [XY Problem](/posts/2021-07-22-the-xy-problem.qmd) and [Cunningham's Law](/posts/2021-11-04-cunninghams-law.qmd).
+I also posted about other concepts, such as the [XY Problem](/posts/2021-07-22-the-xy-problem.qmd) and [Cunningham's Law](/posts/2021-11-04-cunninghams-law.qmd). I even keep [a list of my favorite concepts](/posts/2022-07-25-concepts.qmd)!
