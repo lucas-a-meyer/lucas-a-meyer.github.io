@@ -1,0 +1,25 @@
+---
+author: Lucas A. Meyer
+categories: hiring
+date: 2022-08-09 06:00:00
+draft: false
+image: https://mpsocial.blob.core.windows.net/blog-images/help-wanted.jpg
+include-in-header: _msft-clarity.html
+linkedin-linkback: false
+linkedin-target-date: 2022-08-08 07:24:00
+post-url: https://www.meyerperin.com/posts/2022-07-26-teaching-economics-vs-physics.html
+title: The AI for Good Lab is expanding to Kenya
+twitter-target-date: 2022-08-08 07:24:00
+---
+
+The Microsoft AI for Good Lab is expanding to Nairobi, Kenya! We're searching for candidates with high priority: I'm posting this even before the position is available to apply online.
+
+We're looking for data science and machine learning professionals to join a newly created office in Nairobi. The lab’s mission is to use AI and data to address some of the greatest challenges facing humanity. We work on issues that will improve societies and environments with a focus on climate change, food security, and public health.  
+ 
+We're looking for candidates with experience in geospatial imagery, computer vision, statistics, and artificial intelligence. This is a fantastic opportunity to join the AI for Good team that is led by Microsoft’s Chief Data Scientist. As a member of the AI for Good Lab, you will work knowing you are helping save lives, alleviate suffering, and restore human dignity. Your work will be a fusion of analytical modeling, data engineering and collaboration with NGOs and government institutions. You will also have access to Microsoft’s technological resources and global scale to generate solutions to some of the most demanding and defining challenges of our time.
+
+These positions require an unusual mix of skills, but you will have awesome colleagues that are world-class applied researchers who have a genuine commitment to AI for Good. 
+
+We still don't have the position available for online application. If you are an experienced data scientist or researcher that already works in Nairobi or wants to relocate there, let's talk. My direct messages are open.
+
+I will be posting more positions soon, so feel free to follow me on LinkedIn even if these positions are not a great fit for you at this point.

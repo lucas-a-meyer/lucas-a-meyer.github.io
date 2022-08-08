@@ -24,6 +24,8 @@ website:
     left:
         - text: "Home"
           file: index.qmd
+        - text: "Hiring"
+          file: hiring.qmd
         - text: "Quarto with Python"
           href: /using-quarto
         - text: "GNNs with Python"
