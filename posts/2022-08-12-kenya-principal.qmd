@@ -8,8 +8,10 @@ image: https://mpsocial.blob.core.windows.net/blog-images/nairobi.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: false
 linkedin-target-date: 2022-08-12 07:24:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6964118470007427072
 post-url: https://www.meyerperin.com/posts/2022-08-12-kenya-principal.html
 title: AI for Good Lab expanding to Kenya
+tweet-url: https://twitter.com/user/status/1558211728059637760
 twitter-target-date: 2022-08-12 07:24:00
 ---
 
@@ -21,9 +23,9 @@ We're preferably looking for candidates with experience in academic research and
 
 We currently three positions open:
 
-- [Principal Research Scientist](https://careers.microsoft.com/us/en/job/1441697/Principal-Research-Scientist)
-- [Senior Research Scientist](https://careers.microsoft.com/us/en/job/1441600/Senior-Research-Scientist)
-- [Research Scientist II](https://careers.microsoft.com/us/en/job/1441597/Research-Scientist-ll)
+- Principal Research Scientist: <https://careers.microsoft.com/us/en/job/1441697/Principal-Research-Scientist>
+- Senior Research Scientist: <https://careers.microsoft.com/us/en/job/1441600/Senior-Research-Scientist>
+- Research Scientist II: <https://careers.microsoft.com/us/en/job/1441597/Research-Scientist-ll>
 
 The fastest way to be considered is to apply directly through the links.
 
