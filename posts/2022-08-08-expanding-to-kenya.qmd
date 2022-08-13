@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 categories: hiring
 date: 2022-08-09 06:00:00
-draft: false
+draft: true
 id: 1cd1b63122b9b17c5f58a0144b04dbd8
 image: https://mpsocial.blob.core.windows.net/blog-images/help-wanted.jpg
 include-in-header: _msft-clarity.html
