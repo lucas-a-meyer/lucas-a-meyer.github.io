@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
-<meta name="dcterms.date" content="2022-08-12">
+<meta name="dcterms.date" content="2022-08-14">
 
-<title>Lucas A. Meyer - AI for Good Lab expanding to Kenya</title>
+<title>Lucas A. Meyer - Economics of bad phishing emails</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,13 +84,13 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Lucas A. Meyer - AI for Good Lab expanding to Kenya">
-<meta property="og:description" content="The Microsoft AI for Good Lab is expanding to Nairobi, Kenya, and we’re looking for data science and machine learning professionals to join our new office.">
-<meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/nairobi.jpg">
+<meta property="og:title" content="Lucas A. Meyer - Economics of bad phishing emails">
+<meta property="og:description" content="You may have been taught to avoid emails that are full of errors and absurd claims (such a prince wanting your help).">
+<meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/scam-emai.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta name="twitter:title" content="Lucas A. Meyer - AI for Good Lab expanding to Kenya">
-<meta name="twitter:description" content="The Microsoft AI for Good Lab is expanding to Nairobi, Kenya, and we’re looking for data science and machine learning professionals to join our new office.">
-<meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/nairobi.jpg">
+<meta name="twitter:title" content="Lucas A. Meyer - Economics of bad phishing emails">
+<meta name="twitter:description" content="You may have been taught to avoid emails that are full of errors and absurd claims (such a prince wanting your help).">
+<meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/scam-emai.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -164,9 +164,9 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">AI for Good Lab expanding to Kenya</h1>
+<h1 class="title">Economics of bad phishing emails</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">hiring</div>
+    <div class="quarto-category">interviewing</div>
   </div>
   </div>
 
@@ -184,7 +184,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 12, 2022</p>
+      <p class="date">August 14, 2022</p>
     </div>
   </div>
     
@@ -193,17 +193,14 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
-<p>The Microsoft AI for Good Lab is expanding to Nairobi, Kenya, and we’re looking for data science and machine learning professionals to join our new office.</p>
-<p>The lab’s mission is to use data and AI to address some of the greatest challenges facing humanity. At this office, we will work on issues that will improve societies and environments with a focus on climate change, food security, and public health.</p>
-<p>We’re preferably looking for candidates with experience in academic research and knowledge about deep learning applied to computer vision and satellite imagery.</p>
-<p>We currently three positions open:</p>
-<ul>
-<li>Principal Research Scientist: <a href="https://careers.microsoft.com/us/en/job/1441697/Principal-Research-Scientist" class="uri">https://careers.microsoft.com/us/en/job/1441697/Principal-Research-Scientist</a></li>
-<li>Senior Research Scientist: <a href="https://careers.microsoft.com/us/en/job/1441600/Senior-Research-Scientist" class="uri">https://careers.microsoft.com/us/en/job/1441600/Senior-Research-Scientist</a></li>
-<li>Research Scientist II: <a href="https://careers.microsoft.com/us/en/job/1441597/Research-Scientist-ll" class="uri">https://careers.microsoft.com/us/en/job/1441597/Research-Scientist-ll</a></li>
-</ul>
-<p>The fastest way to be considered is to apply directly through the links.</p>
-<p>If you’re looking for positions in data science, I have a <a href="../hiring.html">list of positions</a> I know about in my blog.</p>
+<p>You may have been taught to avoid emails that are full of errors and absurd claims (such a prince wanting your help). You may think that the fraudsters that use such emails are lazy or uneducated, and that the emails have errors because the fraudsters are not good at English. The truth is a lot more fun.</p>
+<p>We start by assuming that the “fraudster”/“bad actor” is a profit maximizer, and that their cost per hour is $10. Let’s assume it costs $50 to create an email with errors, and $200 to craft an error-free email. They pay this cost only once.</p>
+<p>Let’s also assume that they can send that email for free to 1 million people, of which 10% (100,000) are “gullible” (easy to trick), and the remaining 900,000 are “skeptical” (hard to trick). When a potential victim responds, the bad actor has to invest some time with them to get their financial information. If they’re gullible, the bad actor has to invest 5 hours ($50) on average, and they get $1,000. If they’re skeptical, the bad actor will invest 10 hours on average to realize that they’re skeptical, and will get no financial information (profit = $0).</p>
+<p>The email with errors gets a 2 out of 10 response from gullible people and no response from skeptical people. If the bad actor uses this email, the victim pool will have 20,000 gullible people. The well-crafted email gets a 8 out of 10 response from gullible people and a 1 out of 9 response from skeptical people. In this case, the victim pool will have 80,000 gullible and 90,000 skeptical people.</p>
+<p>After sending the e-mail, the bad actor has a 1,000-hour budget (that’s about 6 months of work) to work with the pool of respondents. When they choose a new potential victim from the pool of respondents, assume the draw is uniformly distributed over the proportions of the pool. That is, for the error-free email, they get a gullible person with probability 8/17 and a skeptical with probability 9/17. For the email with errors, it’s always a gullible person.</p>
+<p>Which of the two emails should the bad actor send in order to maximize their profits?</p>
+<p>Follow-up: should the bad actor invest in an even better email that everyone (gullible and skeptical) responds to?</p>
+<p>If you work through the example, you’ll find that the email with errors performs better, because it filters out time-wasting smart people. Real scammers use bad emails on purpose: only the very gullible will respond, making the scammer job easier.</p>
 
 
 

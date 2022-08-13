@@ -23,6 +23,6 @@ We're looking for candidates with experience in geospatial imagery, computer vis
 
 These positions require an unusual mix of skills, but you will have awesome colleagues that are world-class applied researchers who have a genuine commitment to AI for Good. 
 
-We still don't have the position available for online application. If you are an experienced data scientist or researcher that already works in Nairobi or wants to relocate there, let's talk. My direct messages are open.
+I have an [updated version of this post with the application links](/posts/2022-08-12-kenya-principal.qmd).
 
-I will be posting more positions soon, so feel free to follow me on LinkedIn even if these positions are not a great fit for you at this point.
+If you're looking for positions in data science, I have a [list of positions](/hiring.qmd) I know about in my blog.

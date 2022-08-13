@@ -27,4 +27,4 @@ We currently three positions open:
 
 The fastest way to be considered is to apply directly through the links.
 
-Follow me for future openings.
+If you're looking for positions in data science, I have a [list of positions](/hiring.qmd) I know about in my blog.
