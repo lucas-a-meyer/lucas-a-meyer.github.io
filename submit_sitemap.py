@@ -2,7 +2,7 @@ import requests
 import time
 import json
 
-wait = 60
+wait = 1
 url = "https://www.meyerperin.com/sitemap.xml"
 print(f"Waiting {wait} seconds to submit sitemap...")
 time.sleep(wait)
