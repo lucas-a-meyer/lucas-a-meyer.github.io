@@ -1,0 +1,48 @@
+---
+author: Lucas A. Meyer
+categories: 
+    - data science
+date: 2022-08-25 06:00:00
+draft: false
+image: https://mpsocial.blob.core.windows.net/blog-images/jason-arch.jpg
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2022-08-25 08:01:00
+title: I use Arch, btw
+twitter-target-date: 2022-08-25 08:01:00
+---
+
+# I use Arch, btw
+
+While not a representative sample, most data scientists I know use MacOS. I have used MacOS at Amazon, but for most of my career, I have used Linux. Arch Linux. Yes... I use Arch, btw.
+
+Arch has a fame of being difficult to install. That is not _necessarily_ fair, since all one needs to do is to follow the installation instructions on the wonderful ArchWiki. The difficulty is that Arch would not make any choices for you: to install it, you needed to understand and choose things that most people just "take the default". For example, network driver, disk filesystem, even your text editor. Yes, Arch won't even install vi for you. Or a WiFi driver. The user needs to read and understand the Wiki really well, or things won't work.
+
+Furthermore, once done with the installation instructions, a user has only a command-line interface system. If the user wants a graphical desktop environment they have to install it, which means making another choice, which means having to learn about all the options and think about them, which means more reading and time commitment.
+
+Arch is like that for everything. The result is a system that only has software that the user needs and understands. Other Linux distributions like Ubuntu get users up and running with just a few clicks. Most decisions are made on behalf of the users. The default installation comes with a lot of stuff that is not needed nor understood. The user doesn't need to care about all their options, so they don't. Arch is better if you're optimizing for those dimensions, but in many (most?) cases, it's better to optimize for time and get something more user-friendly. I use Arch, btw.
+
+![](https://mpsocial.blob.core.windows.net/blog-images/arch-fly.webp)
+
+"I use Arch btw" is about users becoming so proud of being able to install their Arch systems that they can't help telling everyone, finding ways to drop the hint even when it's not a good time.
+
+![](https://mpsocial.blob.core.windows.net/blog-images/arch-bathroom.webp)
+
+## I use WSL2, btw
+
+The major constraint of using Arch is that it has all the setbacks of a Linux desktop. It's not great for gaming, although it's getting much better. It misses some useful work software such as Microsoft Office. The alternatives (e.g., LibreOffice) are not that great for my use cases. For my work, I also need Visual Studio 2022, which is also not available. The solution was to install a Windows VM, but to use your computer for games, one would need to either dual-boot or have a different machine. 
+
+Recently, I am trying a new approach: the Windows Subsystem for Linux v2 (WSL2). Arch is not one of the default options, but [it can be done](https://gist.github.com/slavistan/53c8e2627bf9ca202ab6c56ef4d5c497).  The advantage of using WSL2 instead of a VM is that WSL2 has a great user experience. It feels like having a Linux command-line system with a desktop environment (Windows) that can run commercial software. I think that this is what people like about MacOS.
+
+For example, When I run my VS Code editor from the Arch CLI, it opens VS Code in #Windows 11. It saves the files to #Arch. I can render with #Quarto on Arch and upload the blog to #Github Pages using the shell commands I'm used to. The only difference is that instead of having a VSCode window in KDE, it's in Windows 11. I can do that while waiting for my jobs to run in Visual Studio and replying to my email in Outlook 365. I can create Power BIs from the CSVs that are on my Arch file system, because the WSL filesystem integrates well with Windows. It's pretty great. I can even [run XServer software](https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps) on Windows. The most impressive thing is that I can still use CUDA in Arch and run models that take advantage of my laptop's GPU, because the Windows Nvidia driver supports my Arch-based WSL2 installation.
+
+![](https://mpsocial.blob.core.windows.net/blog-images/wsl-gui-screenshot.png)
+
+## Is this... using Arch?
+
+Is this really using Arch? Probably not. My [audio works](https://thelinuxcast.org/posts/0004/), my [network configuration](https://wiki.archlinux.org/title/Network_configuration) worked out of the box, I can even print. Someone who starts using Arch in WSL doesn't have to go through the trouble of understanding and overcoming these issues. Maybe it's an Arch-lite experience... like Manjaro? 
+
+![](https://mpsocial.blob.core.windows.net/blog-images/i-use-arch-btw.png)
+
+I think people worry too much about gatekeeping. You should use whatever makes you productive. I use Arch, btw.
+
+![](https://mpsocial.blob.core.windows.net/blog-images/arch-merits.jpg)
