@@ -150,6 +150,8 @@ def remove_fields_from_dict(d: dict, list_of_fields: List[str]) -> dict:
 
 
 def process_file(filepath):
+
+    filepath = filepath.replace("\\", "/")
     print(f"Processing {filepath}")
 
     # Get local configuration from YAML file

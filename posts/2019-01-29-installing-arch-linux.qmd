@@ -1,14 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2019-01-29 06:00:00
-id: bdbd8d05143d4addb29fc0d57935a49b
+id: 9d033842eca2dddf06293a2af7905321
 include-in-header: _msft-clarity.html
 linkedin-posted: 2019-01-29 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2019-01-29-installing-arch-linux.html
+linkedin-target-date: 2019-01-29 06:00:00
+post-url: https://www.meyerperin.com/posts/2019-01-29-installing-arch-linux.html
 title: Installing Arch Linux
 twitter-posted: 2019-01-29 06:00:00
-twitter-target-date: null
+twitter-target-date: 2019-01-29 06:00:00
 ---
 
 Even though I work at Microsoft and really love Windows, I've recently installed Arch Linux as a dual boot. 

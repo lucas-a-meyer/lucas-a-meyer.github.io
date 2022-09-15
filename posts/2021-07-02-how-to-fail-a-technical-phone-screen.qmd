@@ -4,13 +4,13 @@ categories:
 - career
 - interviews
 date: 2021-07-02 06:00:00
-id: 108846704d1a3fbe74ba7282327cd738
+id: af99c3425251dced1ec35a6b62bedd02
 image: https://mpsocial.blob.core.windows.net/blog-images/fail-tech-interview.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6816590001338486785
 linkedin-posted: 2021-07-02 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-07-02-how-to-fail-a-technical-phone-screen.html
+post-url: https://www.meyerperin.com/posts/2021-07-02-how-to-fail-a-technical-phone-screen.html
 title: How to fail a technical phone screen
 twitter-posted: 2021-07-02 06:00:00
 twitter-target-date: null

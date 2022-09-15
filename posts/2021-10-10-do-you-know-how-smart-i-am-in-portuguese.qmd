@@ -2,13 +2,13 @@
 author: Lucas A. Meyer
 categories: writing
 date: 2021-10-10 06:00:00
-id: d4984cee119adc72b3962d9f7cff7b4b
+id: 8e27678574beb3eba35981d7be2472be
 image: https://mpsocial.blob.core.windows.net/blog-images/smart-portuguese.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6853333112810815488
 linkedin-posted: 2021-10-10 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-10-10-do-you-know-how-smart-i-am-in-portuguese.html
+post-url: https://www.meyerperin.com/posts/2021-10-10-do-you-know-how-smart-i-am-in-portuguese.html
 title: Do you know how smart I am in Portuguese?
 twitter-posted: 2021-10-10 06:00:00
 twitter-target-date: null

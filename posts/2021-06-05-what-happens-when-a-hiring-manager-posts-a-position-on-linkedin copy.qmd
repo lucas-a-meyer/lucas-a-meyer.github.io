@@ -5,14 +5,14 @@ categories:
 - hiring
 - interviews
 date: 2021-06-05 06:00:00
-id: 2fb06bec41088dc92090614df8a99c57
+id: 57272fce6dc2b0d67c66ca0e5a22523d
 image: https://mpsocial.blob.core.windows.net/blog-images/interview-process.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-posts-position-linkedin-meyer
 linkedin-posted: 2022-07-11 19:22:12.465819
 linkedin-target-date: 2022-07-12 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6957383981961007104
-post-url: https://www.meyerperin.com/posts\2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin
+post-url: https://www.meyerperin.com/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin
   copy.html
 title: What happens when a hiring manager posts a position on LinkedIn
 tweet-url: https://twitter.com/user/status/1547036719643594754

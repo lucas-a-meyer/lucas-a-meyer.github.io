@@ -2,7 +2,7 @@
 author: Lucas A. Meyer
 date: 2022-07-04 06:00:00
 draft: false
-id: 245da7c0876250ff0782cd54785dab63
+id: 7b43b7c2c8ace9f0cf0bfd7566c6e2ac
 image: https://mpsocial.blob.core.windows.net/blog-images/good-question.jpg
 include-after-body: _disclaimer.html
 include-in-header: _msft-clarity.html
@@ -10,7 +10,7 @@ linkedin-linkback: true
 linkedin-posted: 2022-07-05 07:02:10.515590
 linkedin-target-date: 2022-07-05 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts\2022-07-04-that-is-a-good-question.html
+post-url: https://www.meyerperin.com/posts/2022-07-04-that-is-a-good-question.html
 title: That's a good question
 tweet-url: https://twitter.com/user/status/1547036707211677697
 twitter-description: Is that really a good question?

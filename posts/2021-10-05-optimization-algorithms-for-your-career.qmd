@@ -4,13 +4,13 @@ categories:
 - career
 - data science
 date: 2021-10-05 06:00:00
-id: 5cc34b148705da343e919f2a71bd169c
+id: 32f1f75574bcaf7d26c9780d3b0c2204
 image: https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/
 linkedin-posted: 2021-10-05 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-10-05-optimization-algorithms-for-your-career.html
+post-url: https://www.meyerperin.com/posts/2021-10-05-optimization-algorithms-for-your-career.html
 title: Optimization algorithms for your career
 twitter-posted: 2021-10-05 06:00:00
 twitter-target-date: null

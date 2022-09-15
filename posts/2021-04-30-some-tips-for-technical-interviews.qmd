@@ -4,14 +4,14 @@ categories:
 - career
 - interviews
 date: 2021-04-30 06:00:00
-id: 283c6c0897c4518bf945f1dacc075f29
+id: 68410ba15c4d810c138f72b8f86fa263
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_recruitment-interview-activity-6790036166214336512-CSHt
-linkedin-posted: null
+linkedin-posted: 2021-01-01 01:01:01
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-04-30-some-tips-for-technical-interviews.html
+post-url: https://www.meyerperin.com/posts/2021-04-30-some-tips-for-technical-interviews.html
 title: You're applying to more positions than you think
-twitter-posted: null
+twitter-posted: 2021-01-01 01:01:01
 twitter-target-date: null
 ---
 

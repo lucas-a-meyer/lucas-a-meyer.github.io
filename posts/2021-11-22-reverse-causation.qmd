@@ -2,13 +2,13 @@
 author: Lucas A. Meyer
 categories: data science
 date: 2021-11-22 06:00:00
-id: 32576e0ca6ef582b8f3cfa4f9880b710
+id: e6cb33d9bc21fd7ee7d8de6767a902fe
 image: https://mpsocial.blob.core.windows.net/blog-images/reverse-causation.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6868560453447118848
 linkedin-posted: 2021-11-22 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-11-22-reverse-causation.html
+post-url: https://www.meyerperin.com/posts/2021-11-22-reverse-causation.html
 title: Reverse causation
 twitter-posted: 2021-11-22 06:00:00
 twitter-target-date: null

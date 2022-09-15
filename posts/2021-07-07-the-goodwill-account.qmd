@@ -3,12 +3,12 @@ author: Lucas A. Meyer
 categories:
 - career
 date: 2021-07-07 06:00:00
-id: 7a087d2420983d8e26597932f8e146f6
+id: 30e71a422a02f276c2c339ce456e8cb3
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6818567778430275584
 linkedin-posted: 2021-07-07 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-07-07-the-goodwill-account.html
+post-url: https://www.meyerperin.com/posts/2021-07-07-the-goodwill-account.html
 title: The goodwill account
 twitter-posted: 2021-07-07 06:00:00
 twitter-target-date: null

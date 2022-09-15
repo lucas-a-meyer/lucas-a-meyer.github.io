@@ -8,13 +8,13 @@ categories:
 - healthcare
 date: 2022-07-17 07:00:00
 draft: false
-id: 4f5d1a7c2b16e0319b9c577173424c39
+id: c2c4821ee122193303c3be8d77b9b570
 image: https://mpsocial.blob.core.windows.net/blog-images/freakonomics-md.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-07-17 07:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6954434548935921664
-post-url: https://www.meyerperin.com/posts\2022-07-17-freakonomics-md.html
+post-url: https://www.meyerperin.com/posts/2022-07-17-freakonomics-md.html
 title: Freakonomics M.D. and experiment design
 tweet-url: https://twitter.com/user/status/1548668847917498370
 twitter-description: Congratulations to Dr. Bapu Jena @AnupamBJena @DrBapuPod on his

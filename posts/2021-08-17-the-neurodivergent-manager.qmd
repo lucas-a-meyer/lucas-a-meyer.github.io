@@ -3,13 +3,13 @@ author: Lucas A. Meyer
 categories:
 - management
 date: 2021-08-17 06:00:00
-id: 489e07fb20d56c238ce31d8245bddfb9
+id: cabf3df89a0c2c2f6c2ee838dd56a8fd
 image: https://mpsocial.blob.core.windows.net/blog-images/goonies.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6833403014171250688
 linkedin-posted: 2021-08-17 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-08-17-the-neurodivergent-manager.html
+post-url: https://www.meyerperin.com/posts/2021-08-17-the-neurodivergent-manager.html
 title: The neurodivergent manager
 twitter-posted: 2021-08-17 06:00:00
 twitter-target-date: null

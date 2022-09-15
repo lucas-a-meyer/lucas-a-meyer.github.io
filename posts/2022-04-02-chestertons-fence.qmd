@@ -3,14 +3,14 @@ author: Lucas A. Meyer
 categories: concepts
 date: 2022-04-02 06:00:00
 draft: false
-id: e17d9af1bd024b4f086c83b939ff6a6b
+id: f2ce9236e6beb8f6f1bca262ea9c0c6b
 image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-repost: 180
 linkedin-target-date: 2022-07-21 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6956096747974643712
-post-url: https://www.meyerperin.com/posts\2022-04-02-chestertons-fence.html
+post-url: https://www.meyerperin.com/posts/2022-04-02-chestertons-fence.html
 title: Chesterton's Fence
 tweet-url: https://twitter.com/user/status/1550103299872940037
 twitter-description: I once posted about the Chesterton's Fence, which is an important

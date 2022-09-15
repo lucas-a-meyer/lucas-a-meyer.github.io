@@ -4,12 +4,12 @@ categories:
 - career
 - interviews
 date: 2021-05-06 06:00:00
-id: 0a3f85f6f1c48235b8c2bc41d62717dc
+id: 35bcf100f2769cff63086a063c33db27
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir
 linkedin-posted: 2021-05-06 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-05-12-getting-nervous.html
+post-url: https://www.meyerperin.com/posts/2021-05-12-getting-nervous.html
 title: Getting nervous during an interview
 twitter-posted: 2021-05-06 06:00:00
 twitter-target-date: null

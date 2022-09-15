@@ -4,12 +4,12 @@ categories:
 - career
 - interviews
 date: 2021-06-21 06:00:00
-id: 0b1f35a3553822b0e49dc76bebd89157
+id: aa8d6b88981f010b1ca4bcd2e9589310
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6812769571775365120
 linkedin-posted: 2021-06-21 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts\2021-06-21-interviews-are-hard-for-everyone.html
+post-url: https://www.meyerperin.com/posts/2021-06-21-interviews-are-hard-for-everyone.html
 title: Interviews are hard for everyone
 twitter-posted: 2021-06-21 06:00:00
 twitter-target-date: null

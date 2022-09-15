@@ -3,13 +3,13 @@ author: Lucas A. Meyer
 categories: hiring
 date: 2022-08-09 06:00:00
 draft: true
-id: b1af18b61f1513b64cfdc06762037e98
+id: 1cd1b63122b9b17c5f58a0144b04dbd8
 image: https://mpsocial.blob.core.windows.net/blog-images/help-wanted.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: false
 linkedin-target-date: 2022-08-08 07:24:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6962497678417027072
-post-url: https://www.meyerperin.com/posts\2022-08-08-expanding-to-kenya.html
+post-url: https://www.meyerperin.com/posts/2022-08-08-expanding-to-kenya.html
 title: The AI for Good Lab is expanding to Kenya
 tweet-url: https://twitter.com/user/status/1556731977876766721
 twitter-target-date: 2022-08-08 07:24:00

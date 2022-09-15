@@ -4,18 +4,20 @@ categories:
 - career
 - interviews
 date: 2021-04-15 06:00:00
-id: 9e27810d4f0fef3c0c9e30ba0c54641e
+id: 7e55c20ba72ab8c18e9d6fceed78e611
 image: https://mpsocial.blob.core.windows.net/blog-images/sql-fail.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
 linkedin-linkback: true
+linkedin-posted: 2021-01-01 01:01:01
 linkedin-target-date: 2022-07-28 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6958420820410982400
-post-url: https://www.meyerperin.com/posts\2021-04-15-flunking.html
+post-url: https://www.meyerperin.com/posts/2021-04-15-flunking.html
 title: Flunking a SQL interview with 20+ years of practice
 tweet-url: https://twitter.com/user/status/1552655120390795268
 twitter-description: Even though I have written SQL daily for over 20 years, I still
   failed a SQL test in an interview for a manager position.
+twitter-posted: 2021-01-01 01:01:01
 twitter-target-date: 2022-07-28 07:01:00
 ---
 
