@@ -2,14 +2,14 @@
 author: Lucas A. Meyer
 date: 2022-07-07 04:00:00
 draft: false
-id: f402a27b0c99d4727957b65cdcfa486c
+id: 3f2269a1500a94a1204d5937c1fe5aa1
 image: https://quarto.org/quarto.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-07 07:21:59.813335
 linkedin-target-date: 2022-07-07 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-07-06-quarto-for-python.html
+post-url: https://www.meyerperin.com/posts\2022-07-06-quarto-for-python.html
 title: Quarto with Python
 tweet-url: https://twitter.com/user/status/1547036722286010370
 twitter-description: I created a presentation about @quarto_pub for my team and posted

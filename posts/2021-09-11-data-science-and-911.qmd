@@ -3,14 +3,14 @@ author: Lucas A. Meyer
 categories:
 - data science
 date: 2021-09-11 06:00:00
-id: aacf28c81e284c87397e32165fbad49f
+id: 7656f1f2cf0cf331db13b93c72d77f54
 image: https://mpsocial.blob.core.windows.net/blog-images/bin-laden-compound.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
 linkedin-linkback: true
 linkedin-repost: 365
 linkedin-target-date: 2022-09-11 06:00:00
-post-url: https://www.meyerperin.com/posts/2021-09-11-data-science-and-911.html
+post-url: https://www.meyerperin.com/posts\2021-09-11-data-science-and-911.html
 title: Data science and 9/11
 twitter-repost: 365
 twitter-target-date: 2022-09-11 06:00:00

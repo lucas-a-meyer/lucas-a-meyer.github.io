@@ -3,12 +3,12 @@ author: Lucas A. Meyer
 categories: interviewing
 date: 2022-08-14 06:00:00
 draft: false
-id: ac2a430b3be4b789a6cc1562aaed04a6
+id: 5a66eb32d2d6a0eebda1a64eef7a1743
 image: https://mpsocial.blob.core.windows.net/blog-images/scam-email.jpg
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-08-14 08:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6964596517324161024
-post-url: https://www.meyerperin.com/posts/2022-08-14-phishing-fraud-question.html
+post-url: https://www.meyerperin.com/posts\2022-08-14-phishing-fraud-question.html
 title: Economics of bad phishing emails
 tweet-url: https://twitter.com/user/status/1558830808340783113
 twitter-target-date: 2022-08-14 08:01:00

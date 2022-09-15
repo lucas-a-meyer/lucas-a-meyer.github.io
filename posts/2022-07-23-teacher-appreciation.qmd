@@ -2,13 +2,13 @@
 author: Lucas A. Meyer
 date: 2022-08-02 04:00:00
 draft: false
-id: cecdf93f4afc9e12fa1967212425c4bc
+id: 71e05d5e40c7f7b59a7a07067a5e8bd3
 image: https://mpsocial.blob.core.windows.net/blog-images/teacher-appreciation.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-target-date: 2022-08-02 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6960232777350860801
-post-url: https://www.meyerperin.com/posts/2022-07-23-teacher-appreciation.html
+post-url: https://www.meyerperin.com/posts\2022-07-23-teacher-appreciation.html
 title: Learning from others
 tweet-url: https://twitter.com/user/status/1554467075627925504
 twitter-target-date: 2022-08-02 07:01:00

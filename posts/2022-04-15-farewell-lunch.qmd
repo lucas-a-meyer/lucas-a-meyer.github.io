@@ -3,13 +3,13 @@ author: Lucas A. Meyer
 categories:
 - career
 date: 2022-04-15 06:00:00
-id: 5e80bebd5ae81b252b37f442ab95caa3
+id: c0a5c7a8a93bfb1784669d0a5c4b1273
 image: https://mpsocial.blob.core.windows.net/blog-images/farewell-lunch.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_amazon-seattle-leadership-activity-6920874431531618304-nxUL
 linkedin-posted: 2022-04-15 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2022-04-15-farewell-lunch.html
+post-url: https://www.meyerperin.com/posts\2022-04-15-farewell-lunch.html
 title: Farewell Lunch
 twitter-posted: 2022-04-15 06:00:00
 twitter-target-date: null

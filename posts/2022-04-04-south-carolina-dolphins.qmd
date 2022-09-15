@@ -1,13 +1,13 @@
 ---
 author: Lucas A. Meyer
 date: 2022-04-04 06:00:00
-id: 40deb83b0eded5c65bbbcea70fa685eb
+id: 47c8db134b2bac354c0fe8f269f6e9e4
 image: https://mpsocial.blob.core.windows.net/blog-images/lucas-in-charleston.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6916579598633701376
 linkedin-posted: 2022-04-04 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2022-04-04-south-carolina-dolphins.html
+post-url: https://www.meyerperin.com/posts\2022-04-04-south-carolina-dolphins.html
 title: South Carolina dolphins!
 twitter-posted: 2022-04-04 06:00:00
 twitter-target-date: null

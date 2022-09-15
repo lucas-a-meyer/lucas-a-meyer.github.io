@@ -4,9 +4,11 @@ categories:
 - disinformation
 date: 2022-09-15 06:00:00
 draft: false
+id: 14efc635fcbc8597e0608771cdc9bc6f
 image: https://mpsocial.blob.core.windows.net/blog-images/newsguard.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-09-15 08:01:00
+post-url: https://www.meyerperin.com/posts\2022-09-15_newsguard.html
 title: NewsGuard is free for Microsoft Edge users
 twitter-target-date: 2022-09-15 08:01:00
 ---

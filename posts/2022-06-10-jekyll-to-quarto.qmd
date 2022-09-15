@@ -2,11 +2,11 @@
 author: Lucas A. Meyer
 date: 2022-06-10 06:00:00
 freeze: true
-id: ea1523be2ecbe9fc445d06484d42ecd4
+id: 13d0085fe193471895275712537b690d
 image: https://mpsocial.blob.core.windows.net/blog-images/quarto.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-10 06:00:00
-post-url: https://www.meyerperin.com/posts/2022-06-10-jekyll-to-quarto.html
+post-url: https://www.meyerperin.com/posts\2022-06-10-jekyll-to-quarto.html
 title: Converting my blog from Jekyll to Quarto
 twitter-posted: 2022-06-10 06:00:00
 ---

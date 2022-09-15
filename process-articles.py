@@ -79,8 +79,9 @@ def markdown_to_text(markdown_string):
     return yml, text
 
 def get_file_plaintext(filepath):
-    with open(filepath) as f:
-        yml, plaintext = markdown_to_text(f.read())
+    with open(filepath, encoding='utf-8') as f:
+        article_text = f.read()
+        yml, plaintext = markdown_to_text(article_text)
         plaintext = re.sub(r"\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n\n", '\n\n', plaintext, 0, re.DOTALL)
         plaintext = re.sub(r"\n\n-", '\n-', plaintext, 0, re.DOTALL)
@@ -90,7 +91,7 @@ def get_file_plaintext(filepath):
         return yml, plaintext
 
 def get_md_content(filepath):
-    with open(filepath, "r") as f:
+    with open(filepath, "r", encoding='utf-8') as f:
         file_contents = f.read()
 
     pos1 = file_contents.find("---\n")
@@ -101,7 +102,7 @@ def update_front_matter(filepath, new_front_matter_dict):
     new_yml = yaml.dump(new_front_matter_dict)
     new_yml = f"---\n{new_yml}---\n"
     new_file_content = new_yml + get_md_content(filepath)
-    with open(filepath, "w") as f:
+    with open(filepath, "w", encoding='utf-8') as f:
         f.write(new_file_content)
 
 def convert_to_utc(local_time: datetime.datetime) -> datetime: 

@@ -1,11 +1,11 @@
 ---
 author: Lucas A. Meyer
 date: 2022-05-10 06:00:00
-id: 3b6ac950c96468d2c386f064ca657207
+id: 9c6b5a63092a4b7c913deccb6e5108da
 image: https://mpsocial.blob.core.windows.net/blog-images/money-gun.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-05-10 06:00:00
-post-url: https://www.meyerperin.com/posts/2022-05-10-work-life-balance.html
+post-url: https://www.meyerperin.com/posts\2022-05-10-work-life-balance.html
 title: Work life balance is worth something
 twitter-posted: 2022-05-10 06:00:00
 ---
