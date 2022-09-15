@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 categories:
 - career
 date: 2021-07-22 06:00:00
-id: 02888e2d5f584f9662e357e4441e5416
+id: 514a7d98bec7bdba9c827909166cfbac
 image: https://mpsocial.blob.core.windows.net/blog-images/xy-problem.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
@@ -11,7 +11,7 @@ linkedin-linkback: true
 linkedin-repost: 180
 linkedin-target-date: 2022-08-16 07:24:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6965306183985369088
-post-url: https://www.meyerperin.com/posts/2021-07-22-the-xy-problem.html
+post-url: https://www.meyerperin.com/posts\2021-07-22-the-xy-problem.html
 title: The XY Problem
 tweet-url: https://twitter.com/user/status/1559540483780743173
 twitter-description: I've frequently been asked what's the most important thing new

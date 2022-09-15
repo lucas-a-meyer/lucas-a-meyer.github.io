@@ -3,13 +3,13 @@ author: Lucas A. Meyer
 categories:
 - management
 date: 2021-07-31 06:00:00
-id: a783c5e17f78d3a870d59f346a113f2f
+id: 7f3809b1c0ea010e72c2e502d842ac1a
 image: https://mpsocial.blob.core.windows.net/blog-images/become-manager.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
 linkedin-posted: 2021-07-31 06:00:00
 linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-07-31-so-you-want-to-become-a-manager.html
+post-url: https://www.meyerperin.com/posts\2021-07-31-so-you-want-to-become-a-manager.html
 title: So you want to become a manager
 twitter-posted: 2021-07-31 06:00:00
 twitter-target-date: null

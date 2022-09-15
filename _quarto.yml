@@ -1,8 +1,8 @@
 project:
   type: website
   output-dir: docs
-  pre-render: ./pre-render.sh
-  post-render: ./post-render.sh
+  # pre-render: ./pre-render.sh
+  # post-render: ./post-render.sh
   preview:
     port: 4200
     browser: false

@@ -1,0 +1,24 @@
+---
+author: Lucas A. Meyer
+categories:
+- disinformation
+date: 2022-09-15 06:00:00
+draft: false
+image: https://mpsocial.blob.core.windows.net/blog-images/newsguard.png
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2022-09-15 08:01:00
+title: NewsGuard is free for Microsoft Edge users
+twitter-target-date: 2022-09-15 08:01:00
+---
+
+If you have been following the news for the last few years, you have seen how much the prevalence of misinformation, disinformation (intentional misinformation), and propaganda (intentional misinformation by state actors) has increased a lot. Most topics of interest online have a shocking proportion of misinformation: Ukraine, COVID, elections, etc. 
+
+Determining whether a news article is fake or not is a difficult problem for both people and computer models. This ACM survey paper (<https://dl.acm.org/doi/abs/10.1145/3395046>) gives a good idea about the state of the art around 2020. It is far from a solved problem. 
+
+As you would expect, computer scientists break difficult problems into parts, and even the subtasks for fake news detection are hard. A few examples of subtasks are detecting if the headline matches the content of the news, evaluating the reputation of who is sharing the news, evaluating the reputation of the news website, etc.
+
+For this latter task, a product I have found to be useful is NewsGuard <https://www.newsguardtech.com/>. Although NewsGuard has been (in my opinion, fairly) criticized a few years ago for having a bias towards the left, it has been improving continuously. These days, I find it very helpful, especially since I study disinformation and fraud for a living, and therefore my browsing patterns are... atypical.
+
+It helps that NewsGuard is free for users of Microsoft Edge. You can install a NewsGuard extension and it will show whether the site you are seeing is trustworthy. It will also integrate with Bing when used in Edge, and show a badge next to each result.
+
+If you want to try it out, the following link has the instructions: <https://support.microsoft.com/en-us/topic/newsguard-b28e453e-568c-4d57-98ef-c61056f99462>. Note that it's only free for Microsoft Edge, which is a great browser that runs in a number of platforms such as Linux, Mac, etc. 
