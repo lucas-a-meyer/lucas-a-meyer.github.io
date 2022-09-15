@@ -187,10 +187,12 @@ def process_file(filepath):
 
     # In case Cosmos had an update pushing the dates forward because of automatic reposts
     if "twitter-target-date-utc" in cosmos_record\
+        and front_matter_dict["twitter-target-date"]\
         and cosmos_record["twitter-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["twitter-target-date"]))\
         and "twitter-repost" in cosmos_record and cosmos_record["twitter-repost"] > 0:
         front_matter_dict["twitter-target-date"] = convert_cosmos_utc_to_local(cosmos_record["twitter-target-date-utc"])
     if "linkedin-target-date-utc" in cosmos_record\
+        and front_matter_dict["linkedin-target-date"]\
         and cosmos_record["linkedin-target-date-utc"] > cosmos_date_format(convert_to_utc(front_matter_dict["linkedin-target-date"]))\
         and "linkedin-repost" in cosmos_record and cosmos_record["linkedin-repost"] > 0:
         front_matter_dict["linkedin-target-date"] = convert_cosmos_utc_to_local(cosmos_record["linkedin-target-date-utc"])

@@ -5,8 +5,10 @@ id: 9d033842eca2dddf06293a2af7905321
 include-in-header: _msft-clarity.html
 linkedin-posted: 2019-01-29 06:00:00
 linkedin-target-date: 2019-01-29 06:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268474423660544
 post-url: https://www.meyerperin.com/posts/2019-01-29-installing-arch-linux.html
 title: Installing Arch Linux
+tweet-url: https://twitter.com/user/status/1570502737564925953
 twitter-posted: 2019-01-29 06:00:00
 twitter-target-date: 2019-01-29 06:00:00
 ---

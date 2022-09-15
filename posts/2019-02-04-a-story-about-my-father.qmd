@@ -6,8 +6,10 @@ include-after-body: _disclaimer.html
 include-in-header: _msft-clarity.html
 linkedin-posted: 2019-02-04 06:00:00
 linkedin-target-date: 2019-02-04 06:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268447051628545
 post-url: https://www.meyerperin.com/posts/2019-02-04-a-story-about-my-father.html
 title: A story about my father
+tweet-url: https://twitter.com/user/status/1570502723614789632
 twitter-posted: 2019-02-04 06:00:00
 twitter-target-date: 2019-02-04 06:00:00
 ---

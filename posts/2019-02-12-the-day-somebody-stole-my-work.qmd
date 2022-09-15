@@ -5,8 +5,10 @@ id: 0f3600cf31fbecf625e4808895221329
 include-in-header: _msft-clarity.html
 linkedin-posted: 2019-02-12 06:00:00
 linkedin-target-date: 2019-02-12 06:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268457264762882
 post-url: https://www.meyerperin.com/posts/2019-02-12-the-day-somebody-stole-my-work.html
 title: The day somebody stole my work
+tweet-url: https://twitter.com/user/status/1570502729117696002
 twitter-posted: 2019-02-12 06:00:00
 twitter-target-date: 2019-02-12 06:00:00
 ---

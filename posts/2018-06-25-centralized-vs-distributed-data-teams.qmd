@@ -6,8 +6,10 @@ image: https://cdn-images-1.medium.com/max/2000/1*YfxWi5QZkShNHS0XLuKlMQ.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2018-06-25 06:00:00
 linkedin-target-date: 2018-06-25 06:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268468870414336
 post-url: https://www.meyerperin.com/posts/2018-06-25-centralized-vs-distributed-data-teams.html
 title: Centralized vs. Distributed Data Science Teams
+tweet-url: https://twitter.com/user/status/1570502734503182337
 twitter-posted: 2018-06-25 06:00:00
 twitter-target-date: 2018-06-25 06:00:00
 ---
