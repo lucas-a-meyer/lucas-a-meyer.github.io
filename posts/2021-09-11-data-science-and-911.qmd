@@ -12,6 +12,7 @@ linkedin-repost: 365
 linkedin-target-date: 2022-09-11 06:00:00
 post-url: https://www.meyerperin.com/posts\2021-09-11-data-science-and-911.html
 title: Data science and 9/11
+tweet-url: https://twitter.com/user/status/1570472528690253825
 twitter-repost: 365
 twitter-target-date: 2022-09-11 06:00:00
 ---
