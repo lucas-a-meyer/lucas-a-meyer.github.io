@@ -7,6 +7,7 @@ id: f2ce9236e6beb8f6f1bca262ea9c0c6b
 image: https://mpsocial.blob.core.windows.net/blog-images/fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
+linkedin-posted: 2022-07-21 06:00:00
 linkedin-repost: 180
 linkedin-target-date: 2022-07-21 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6956096747974643712
@@ -15,6 +16,7 @@ title: Chesterton's Fence
 tweet-url: https://twitter.com/user/status/1550103299872940037
 twitter-description: I once posted about the Chesterton's Fence, which is an important
   concept when starting something new
+twitter-posted: 2022-07-21 06:00:00
 twitter-repost: 180
 twitter-target-date: 2022-07-21 06:00:00
 ---

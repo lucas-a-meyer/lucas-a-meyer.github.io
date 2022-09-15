@@ -6,12 +6,14 @@ id: 55f161c9f488a98151a80b22c0b03182
 image: https://mpsocial.blob.core.windows.net/blog-images/owning-twitter.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
+linkedin-posted: 2022-07-11 07:05:00-07:00
 linkedin-target-date: 2022-07-11 07:00:00-07:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6952824185693896704
 post-url: https://www.meyerperin.com/posts/2022-07-13-musky-vs-tweety.html
 title: 'Interview question: Musky vs Tweety'
 tweet-url: https://twitter.com/user/status/1546996090603536386
 twitter-description: 'Interview question: Musky vs Tweety'
+twitter-posted: 2022-07-11 07:05:00-07:00
 twitter-target-date: 2022-07-11 07:05:00-07:00
 ---
 
