@@ -12,7 +12,7 @@ linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6964118470
 post-url: https://www.meyerperin.com/posts/2022-08-12-kenya-principal.html
 title: AI for Good Lab expanding to Kenya
 tweet-url: https://twitter.com/user/status/1566184261413228544
-twitter-target-date: '2022-08-12 07:24:00'
+twitter-target-date: 2022-08-12 07:24:00
 ---
 
 The Microsoft AI for Good Lab is expanding to Nairobi, Kenya, and we're looking for data science and machine learning professionals to join our new office. 
