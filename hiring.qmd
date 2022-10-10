@@ -7,10 +7,4 @@ include-in-header: _msft-clarity.html
 
 # List of positions that I know are still looking for candidates
 
-These positions either come from my own group or from people I know. If you're interested in any of these positions, your best bet is to read the instructions from each link below. 
-
-- [AI for Good Lab in Nairobi, Kenya](/posts/2022-08-12-kenya-principal.qmd)
-    - [Principal Research Scientist](https://careers.microsoft.com/us/en/job/1441697/Principal-Research-Scientist)
-    - [Senior Research Scientist](https://careers.microsoft.com/us/en/job/1441600/Senior-Research-Scientist)
-    - [Research Scientist II](https://careers.microsoft.com/us/en/job/1441597/Research-Scientist-ll)
-
+Nothing to show now...
