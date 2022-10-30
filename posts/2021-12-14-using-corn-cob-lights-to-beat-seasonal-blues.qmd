@@ -5,14 +5,13 @@ draft: false
 id: a69173d848f537c40958f461cb7db3e0
 image: https://mpsocial.blob.core.windows.net/blog-images/rainy-day.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6887089031746854912
-linkedin-target-date: 2022-10-30 08:01:00
+linkedin-target-date: 2022-10-30 07:00:00
 post-url: https://www.meyerperin.com/posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.html
 title: Using corn cob lights to beat seasonal blues
-twitter-target-date: 2022-10-30 08:01:00
+twitter-target-date: 2022-10-30 07:00:00
 ---
 
-There are a lot of tech companies in Seattle, always hiring (I will myself post a new position soon). And if you know something about Seattle, it's probably that it rains a lot.
+There are a lot of tech companies in Seattle, and if you know something about Seattle, it's probably that it rains a lot. Here's how I deal with the big dark.
 
 For all its fame, #Seattle gets 37 inches of rain per year. Sunny Miami gets 62 inches. Of course, measuring things is tricky, and an art that we #DataScientists are (or at least should be) very familiar with. Measuring things differently, Seattle has around 150 "sunny days" per year, and Miami has around 250. That's almost three months less.
 

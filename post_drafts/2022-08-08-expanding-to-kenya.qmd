@@ -23,6 +23,6 @@ We're looking for candidates with experience in geospatial imagery, computer vis
 
 These positions require an unusual mix of skills, but you will have awesome colleagues that are world-class applied researchers who have a genuine commitment to AI for Good. 
 
-I have an [updated version of this post with the application links](/posts/2022-08-12-kenya-principal.qmd).
+I have an [updated version of this post with the application links](/post_drafts/2022-08-12-kenya-principal.qmd).
 
 If you're looking for positions in data science, I have a [list of positions](/hiring.qmd) I know about in my blog.
