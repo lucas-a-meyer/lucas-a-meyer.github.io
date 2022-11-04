@@ -1,14 +1,16 @@
 ---
 author: Lucas A. Meyer
-date: 2022-11-04 06:00:00
 categories:
 - management
 - hiring
+date: 2022-11-04 06:00:00
+id: c7f190686a4c1cce83a37f2365b720a4
 image: https://mpsocial.blob.core.windows.net/blog-images/money-gun.jpg
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-11-04 08:00:00
-twitter-target-date: 2022-11-04 08:00:00
+post-url: https://www.meyerperin.com/posts/2022-11-04-prices-values.html
 title: What are you optimizing for?
+twitter-target-date: 2022-11-04 08:00:00
 ---
 
 This post is revisiting an [earlier post from May](https://www.meyerperin.com/posts/2022-05-10-work-life-balance.html) about salaries in tech companies, especially after the recent layoffs.
