@@ -5,9 +5,11 @@ categories:
 - technology
 date: 2022-11-09 06:00:00
 draft: false
+id: fbfcf863404ffb16ba458b528ee85a7b
 image: https://mpsocial.blob.core.windows.net/blog-images/fail-whale.webp
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-11-09 08:00:00
+post-url: https://www.meyerperin.com/posts/2022-11-09-quiet-quitting-twitter.html
 title: Quiet(ly) quitting Twitter
 twitter-target-date: 2022-11-09 08:00:00
 ---
