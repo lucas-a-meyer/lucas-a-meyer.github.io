@@ -1,0 +1,28 @@
+---
+author: Lucas A. Meyer
+date: 2022-11-04 06:00:00
+categories:
+- management
+- hiring
+image: https://mpsocial.blob.core.windows.net/blog-images/money-gun.jpg
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2022-11-04 08:00:00
+twitter-target-date: 2022-11-04 08:00:00
+title: What are you optimizing for?
+---
+
+This post is revisiting an [earlier post from May](https://www.meyerperin.com/posts/2022-05-10-work-life-balance.html) about salaries in tech companies, especially after the recent layoffs.
+
+ When I wrote that post, I had just left Amazon to come to Microsoft. I was discussing the argument that FAANGs and many other tech companies such as AirBnB, Uber, and #Twitter paid a lot better than Microsoft. The market was starting to cool down after being super hot for a couple of years. Other data scientists I knew were still getting very generous offers from tech companies. Back then, Microsoft was seen as having a compensation problem, such that just a week later, on May 16th 2022, Microsoft [announced that it was increasing its compensation to retain employees](https://fortune.com/2022/05/16/microsoft-boost-worker-pay-stock-compensation-retain-employees/).
+
+The conversations around that time were usually like this: someone would tell me that they got an offer from a tech company for 50% more their current total compensation. Then they would boldly ask me if my recent Microsoft package was as big as theirs, and if I thought they should take the offer.
+
+My answer is super boring: "compensation is important but it's not the only thing, maybe you want to optimize for other things like job security, a mission that you believe in, work-life balance, etc."
+
+At around the time, I also started suggesting that people look at how much of their pay would be coming from stocks. It was a lot, in some cases as much as 80%. I would ask them if they were comfortable with taking all that risk. Most people were.
+
+For my own example, when I left Amazon, about 40% of my compensation was salary and 60% stock. Before leaving, I sold my vested Amazon stock at a (split-adjusted) price of $177. Today's (November 4th 2022) market price is $89, almost exactly half. That would have been a 30% pay cut for me. Of course this works both ways - had the price doubled instead of halved, I would have gotten a 60% increase on my total compensation. 
+
+The above is only considering compensation risk, but you can take even **_more_** risk. I know plenty of people that never sell their RSUs. Besides taking risk with their compensation, they are also taking risks with their wealth. When their company is doing well, stocks go up and both their compensation and wealth go up. But when the company is not doing well, they may lose their job at the exact time their wealth is taking a big hit.
+
+As I got older, I got more risk averse. For the last 10+ years, I have religiously diversified from my RSUs using a 10b5-1 plan, which I implemented manually. These plans are becoming more mainstream: there's a company called Candor that automates the RSU diversification process. Although I have myself never used their services, I am a regular reader of Niya Dragova's newsletter and I have also talked to David Chouinard abut RSUs. It's definitely worth checking them out.

@@ -6,3 +6,5 @@ vendor
 .quarto
 /.quarto/
 .env
+/_site/
+/docs/
