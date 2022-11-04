@@ -7,4 +7,4 @@ vendor
 /.quarto/
 .env
 /_site/
-/docs/
+docs/
