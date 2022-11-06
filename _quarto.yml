@@ -40,7 +40,7 @@ website:
       - icon: stack-overflow
         href: https://stackoverflow.com/users/1850561/lucas-a-meyer
       - icon: mastodon
-        href: https://mastodon.world/web/@lucasmeyer
+        href: https://data-folks.masto.host/@lucasmeyer
       - icon: twitter
         href: https://twitter.com/lucas_a_meyer
       - about.qmd
