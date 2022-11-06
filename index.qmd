@@ -17,6 +17,4 @@ include-in-header: _msft-clarity.html
 :::{#posts}
 :::
 
-<hr>
-
-<p>You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a></p>.
+<!--- <hr><p>You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a></p>. --->

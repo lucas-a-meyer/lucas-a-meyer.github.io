@@ -3,18 +3,21 @@ author: Lucas A. Meyer
 categories:
 - social media
 - technology
-date: 2022-11-09 06:00:00
+date: 2022-11-06 06:00:00
 draft: false
+reset: true
 id: fbfcf863404ffb16ba458b528ee85a7b
 image: https://mpsocial.blob.core.windows.net/blog-images/fail-whale.webp
 include-in-header: _msft-clarity.html
-linkedin-target-date: 2022-11-09 08:00:00
+linkedin-target-date: 2022-11-06 08:00:00
 post-url: https://www.meyerperin.com/posts/2022-11-09-quiet-quitting-twitter.html
 title: Quiet(ly) quitting Twitter
-twitter-target-date: 2022-11-09 08:00:00
+twitter-target-date: 2022-11-06 08:00:00
 ---
 
 I have "quietly left" Twitter. I've configured my devices in a way that I can only see Twitter if I use a specific device, and that usually takes more effort that it's worth. That's also how I tamed several other digital habits.
+
+![](https://mpsocial.blob.core.windows.net/blog-images/fail-whale.webp)
 
 A few years ago, I used the same method to quit Facebook and its properties. It is really hard to leave these platforms completely, so I'm not deleting my account. You may even be reading this on Twitter, because I'm also not changing the tool I use to cross-post between Twitter and LinkedIn. 
 
@@ -22,6 +25,6 @@ My Twitter ride was great. For a long time it really sucked, but then I realized
 
 Vicki has several posts that changed how I think about the world. The reason why I left facebook was because of [Vicki's post about the data facebook collects](https://vickiboykis.com/2017/02/01/what-should-you-think-about-when-using-facebook/). I learned to be grateful about the privilege that entitled me to leave facebook due to [her post about digital noise](https://vickiboykis.com/essays/2019-04-25-digital-noise/). If you're reading this on LinkedIn, the links to her posts will not appear, you need to see this post in my blog.
 
-Right now, I'm [trying Mastodon](https://mastodon.world/@lucasmeyer) and it's not going super well. Social media apps need to leverage a network effect, and for now my network there is super small, so I'm still not seeing much. In addition, it has been hard to find people to follow, and everything is super slow, probably because of the incredible and unexpected influx of users they're getting now. The main feed/timeline is full of content I don't want. It feels very much like Twitter felt for me in 2015, and I keep expecting to see the 'fail whale' pop up.
+Right now, I'm [trying Mastodon](https://data-folks.masto.host/@lucasmeyer) and it's going super well. It took about a day for things to really catch up, but it did. Most of the people I followed on Twitter and LinkedIn already showed up.  It's glorious. If you are in Mastodon, come say hi. 
 
-If you are in Mastodon, come say hi. Of course I'll be around here, too. Somehow the LinkedIn algorithm found a way of hiding all the "inspirational posts" from me, and my "return on investment" on the time I spend on LinkedIn has been very positive.
+Even though Twitter is a dumpster fire right now, I think it will survive. I think the specialized niches that thrived on Twitter will leave to Mastodon, where there will be less noise. I think the "pop culture" aspect of Twitter will remain. The way I'm thinking of this is: I don't expect a Kardashian to show up on Mastodon, and I don't expect scientists to move back to Twitter. It's probably for the best.

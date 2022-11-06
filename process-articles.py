@@ -32,6 +32,7 @@ def update_lucas(body):
     )
 
 def generate_cosmos_id(filepath):
+    # The cosmos ID is just an MD5 hash from the filepath
     h = hashlib.md5(filepath.encode())
     return h.hexdigest()
 
