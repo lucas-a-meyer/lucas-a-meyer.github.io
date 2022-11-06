@@ -11,6 +11,7 @@ include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-11-06 08:00:00
 post-url: https://www.meyerperin.com/posts/2022-11-09-quiet-quitting-twitter.html
 title: Quiet(ly) quitting Twitter
+tweet-url: https://twitter.com/user/status/1589358957810053121
 twitter-target-date: 2022-11-06 08:00:00
 ---
 
