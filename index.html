@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-posts .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-posts'] = new List('listing-posts', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -121,10 +121,10 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Lucas A. Meyer’s Blog">
-<meta property="og:description" content="You can find me on Mastodon">
+<meta property="og:description" content="You can also find me on Mastodon">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Lucas A. Meyer’s Blog">
-<meta name="twitter:description" content="You can find me on Mastodon">
+<meta name="twitter:description" content="You can also find me on Mastodon">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -228,16 +228,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 
 
-<hr>
-<p>
-You can find <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">me on Mastodon</a>
-</p>
-<p>.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div id="listing-posts" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="social media,technology" data-listing-date-sort="1668002400000" data-listing-file-modified-sort="1667600170154" data-listing-reading-time-sort="1.905">
 <div class="thumbnail">
@@ -2156,10 +2147,20 @@ Lucas A. Meyer
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
+<nav id="posts-pagination" class="listing-pagination" aria-label="Page Navigation">
   <ul class="pagination"></ul>
 </nav>
-</div></main> <!-- /main -->
+</div>
+<hr>
+<p>
+You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a>
+</p>
+<p>.</p>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
