@@ -5,7 +5,6 @@ categories:
 - technology
 date: 2022-11-06 06:00:00
 draft: false
-reset: true
 id: fbfcf863404ffb16ba458b528ee85a7b
 image: https://mpsocial.blob.core.windows.net/blog-images/fail-whale.webp
 include-in-header: _msft-clarity.html
