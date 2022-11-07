@@ -10,7 +10,7 @@ image: https://mpsocial.blob.core.windows.net/blog-images/mizuho-post.jpg
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-12-08 08:00:00
 post-url: https://www.meyerperin.com/posts/2022-12-08-mizuho-securities.html
-title: Quiet(ly) quitting Twitter
+title: The data entry error that cost hundreds of millions
 twitter-target-date: 2022-12-08 08:00:00
 ---
 
