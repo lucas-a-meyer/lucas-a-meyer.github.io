@@ -1,0 +1,16 @@
+---
+author: Lucas A. Meyer
+categories:
+- concepts
+- technology
+- management
+date: 2022-12-16 06:00:00
+draft: true
+id: 535f225088145079c4906cd45a07f381
+image: https://mpsocial.blob.core.windows.net/blog-images
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2022-11-16 10:00:00
+post-url: https://www.meyerperin.com/posts/2022-11-16-my-first-week-at-mastodon.html
+title: My first week at Mastodon
+twitter-target-date: 2022-11-16 08:00:00
+---
