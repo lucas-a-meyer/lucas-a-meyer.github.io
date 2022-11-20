@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.253">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2022-11-20">
+
+<title>Lucas A. Meyer - My first few weeks with Mastodon</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//images/data-beaker.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6KTZ853BN5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
+</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false,
+  "showHighlights": "always"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<!-- Clarity tracking code for https://meyerperin.com/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "cjhrvqb66a");
+</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - My first few weeks with Mastodon">
+<meta property="og:description" content="A couple of weeks ago, I moved to Mastodon, mostly abandoning Twitter. It has worked beautifully for me, and it may work well for you, too.">
+<meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/mastodon.jpg">
+<meta property="og:site-name" content="Lucas A. Meyer">
+<meta name="twitter:title" content="Lucas A. Meyer - My first few weeks with Mastodon">
+<meta name="twitter:description" content="A couple of weeks ago, I moved to Mastodon, mostly abandoning Twitter. It has worked beautifully for me, and it may work well for you, too.">
+<meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/mastodon.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Lucas A. Meyer</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../hiring.html">
+ <span class="menu-text">Hiring</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../using-quarto">
+ <span class="menu-text">Quarto with Python</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../python-gnn">
+ <span class="menu-text">GNNs with Python</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../econometrics-python">
+ <span class="menu-text">Econometrics with Python</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lucasameyer"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lucas-a-meyer"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://stackoverflow.com/users/1850561/lucas-a-meyer"><i class="bi bi-stack-overflow" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://data-folks.masto.host/@lucasmeyer"><i class="bi bi-mastodon" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/lucas_a_meyer"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">My first few weeks with Mastodon</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">technology</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 20, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>A couple of weeks ago, I moved to Mastodon, mostly abandoning Twitter. It has worked beautifully for me, and it may work well for you, too.</p>
+<section id="the-multiple-twitters" class="level2">
+<h2 class="anchored" data-anchor-id="the-multiple-twitters">The multiple Twitters</h2>
+<p>Twitter was multiple spaces rolled into one. We had the “core Twitter”, where people with tons of followers like Donald Trump, Elon Musk and Kim Kardashian communicated with their followers. Then there was the “Twitter for brands”, where companies like Steak-Umm could make themselves known by reaching directly to conumers. There was also the “Twitter for Government”: I got a lot of information about my local government from Twitter. And then there was the more niche Twitter subspaces, like #EconTwitter, #ScienceTwitter, #DataTwitter, where we formed professional commnunities. The latter was brilliant, I met many people that taught me a lot. I’ve learned of many useful papers and tools through the “professional” Twitter.</p>
+<p>I think the latter Twitter is mostly gone. Most of it seem to have gone to Mastodon. Predicting the future is hard, but I think this is going to stick: the professional conversations will happen on Mastodon. It’s hard to make a bet about whether the other Twitter audiences will survive. I actually think it will. Maybe it will have to compete heavily with Gab and Truth Social, and maybe it will continue to be relevant for consumers and brands even without having to compete with those. Given all the engineers leaving Twitter, it’s also very possible that it will stop working in such a way that everybody will just move away.</p>
+</section>
+<section id="the-mastodon-experience" class="level2">
+<h2 class="anchored" data-anchor-id="the-mastodon-experience">The Mastodon experience</h2>
+<p>I see people complaining that Mastodon has a steep learning curve. I’d be surprised if people who follow me (who are usually in technology) had any trouble with it. The problem I see the most is people thinking that Mastodon is a Twitter replacement and try to do Twitter things on it. There’s no “Quote Tweet” functionality, and there’s also no search. These are intentional. In any case, the search on Twitter sucked. On the positive side, there’s an edit button and you can follow hashtags.</p>
+<p>On Mastodon, there are multiple servers, and the server you join makes a little difference. It is easier to see posts from people in the same server, and the moderation policies are also server-specific. Some servers might prevent you from seeing certain content that the server moderation team judges its harmful. On Twitter, if the moderation team decides some content is harmful, you’re out of luck. On Mastodon, you can just switch servers.</p>
+<p>Regardless of the server you join, you will be able to see posts of people in other servers, as long as your administrator team has not blocked them. It usually takes a lot for a server to be blocked. It’s just easier to see content from people in your server: you can see it even if you don’t follow them and even if none of the people you follow repost them. Seeing content from people in other servers is a little harder, but it’s still easy. You can see their content if you follow them directly, if one of the people you follow reposts it, or if people in your server have that content, although you need to go to a separate timeline, called the Federated timeline, to see it in this latter case.</p>
+<p>Most of the people I interacted with in a semi-professional capacity on Twitter made the move to Mastodon. The other options seem to be using Discord and Slack. I love both, but they tend to be more fragmented. I have the “people I know from Boston” Slack, the “people from Florida” Slack, the “people of a cool conference” Slack. Almost everyone on each of those is on Mastodon, so it works better as a place to hang out.</p>
+</section>
+<section id="potential-problems" class="level2">
+<h2 class="anchored" data-anchor-id="potential-problems">Potential problems</h2>
+<p>As Twitter gets more unstable, lots of people migrate in droves to Mastodon, frequently causing Mastodon to be laggy.</p>
+<p>Also, as Mastodon becomes more popular, it may become a bigger target for attacks, and most admins and moderators are volunteers. Although that may be a challenge, the mods and admins are very accomplished volunteers, and I think it will work better than most people expect. Eventually, famous people will move to Mastodon. The ones I’ve seen around so far are more on the nerdy side: James Gunn, George Takei, Neil Gaiman, Stephen Fry. I’m not sure Mastodon is ready for a Kardashian.</p>
+</section>
+<section id="should-you-make-the-move" class="level2">
+<h2 class="anchored" data-anchor-id="should-you-make-the-move">Should you make the move?</h2>
+<p>Professionally, I think it’s a good idea. You can probably find a server and a tech clique that is full of people that you can learn from. The server I use is called data-folks.masto.host, and I love it. The relevance of my timeline increased substantially - I find most of the posts in my timeline interesting and insightful, which required a lot of muting and blocking on Twitter.</p>
+<p>My personal preference would have been for LinkedIn to become what Mastodon is becoming, but I think people tend to be a little more “real” on Mastodon. Maybe it’s because LinkedIn allows giant posts like this one that makes it hard to engage. Maybe people want to take less risks on LinkedIn because it’s so linked to employment, which is one of its strengths.</p>
+<p>In any case, I suggest giving Mastodon a try, I think you’ll like it.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
