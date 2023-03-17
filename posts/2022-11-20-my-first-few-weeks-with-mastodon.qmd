@@ -8,8 +8,10 @@ id: 399164133730297ede570b5cd9fdf327
 image: https://mpsocial.blob.core.windows.net/blog-images/mastodon.jpg
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-11-20 15:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7000231322061332480
 post-url: https://www.meyerperin.com/posts/2022-11-20-my-first-few-weeks-with-mastodon.html
 title: My first few weeks with Mastodon
+tweet-url: https://twitter.com/user/status/1594465622112485381
 twitter-target-date: 2022-11-20 15:00:00
 ---
 
