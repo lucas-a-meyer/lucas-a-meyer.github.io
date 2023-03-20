@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
-<meta name="dcterms.date" content="2023-03-17">
+<meta name="dcterms.date" content="2023-03-20">
 
-<title>Lucas A. Meyer - Feeling overwhelmed? Me too!</title>
+<title>Lucas A. Meyer - How to Use Stable Diffusion from Hugging Face</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -89,13 +152,13 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Lucas A. Meyer - Feeling overwhelmed? Me too!">
-<meta property="og:description" content="Are you feeling overwhelmed by the sheer number of new AI launches happening every day? Don’t worry, you’re not alone!">
-<meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/chatbot.png">
+<meta property="og:title" content="Lucas A. Meyer - How to Use Stable Diffusion from Hugging Face">
+<meta property="og:description" content="Recently, I started to automate a lot of what I do on LinkedIn. I am using AI generators to improve my text and to generate images for my blog posts.">
+<meta property="og:image" content="https://mpsocial.blob.core.windows.net/blog-images/ai_schnauzer.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta name="twitter:title" content="Lucas A. Meyer - Feeling overwhelmed? Me too!">
-<meta name="twitter:description" content="Are you feeling overwhelmed by the sheer number of new AI launches happening every day? Don’t worry, you’re not alone!">
-<meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/chatbot.png">
+<meta name="twitter:title" content="Lucas A. Meyer - How to Use Stable Diffusion from Hugging Face">
+<meta name="twitter:description" content="Recently, I started to automate a lot of what I do on LinkedIn. I am using AI generators to improve my text and to generate images for my blog posts.">
+<meta name="twitter:image" content="https://mpsocial.blob.core.windows.net/blog-images/ai_schnauzer.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -182,7 +245,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Feeling overwhelmed? Me too!</h1>
+<h1 class="title">How to Use Stable Diffusion from Hugging Face</h1>
   <div class="quarto-categories">
     <div class="quarto-category">technology</div>
   </div>
@@ -202,7 +265,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 17, 2023</p>
+      <p class="date">March 20, 2023</p>
     </div>
   </div>
   
@@ -212,12 +275,51 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
-<p>Are you feeling overwhelmed by the sheer number of new AI launches happening every day? Don’t worry, you’re not alone! As a tech enthusiast, I often find myself feeling a little bit like a deer caught in the headlights when it comes to the latest and greatest AI developments. But here’s the thing: AI isn’t going to replace us. People who use AI will.</p>
-<p>Think about it: with AI-powered assistants, we’ll be able to automate all sorts of tedious tasks that currently eat up our time and energy. And with AI-powered analytics, we’ll be able to make better decisions based on more accurate data.</p>
-<p>Of course, in order to reap the benefits of AI, we need to be willing to learn how to use it. That’s why I’m making a conscious effort to stay up-to-date on the latest developments in AI, and to learn as much as I can about how to integrate it into my life and work. Whether it’s taking online courses, attending conferences, or just reading up on the latest news, I’m making sure that I’m ready to embrace the AI revolution. I’m even experimenting with automating my digital presence.</p>
-<p>So if you’re feeling overwhelmed by all the new AI launches happening around you, take a deep breath and remember: AI isn’t the enemy. It’s just a tool that we can use to make our lives better. And by learning as much as we can about it, we’ll be able to harness its power and create a brighter, more hopeful future.</p>
+<p>Recently, I started to automate a lot of what I do on LinkedIn. I am using AI generators to improve my text and to generate images for my blog posts. In this post, I’ll show how I am generating images for my blog and for LinkedIn with Stable Diffusion v2.1.</p>
+<section id="how-to-use-stable-diffusion-from-hugging-face" class="level1">
+<h1>How to Use Stable Diffusion from Hugging Face</h1>
+<p>Stable Diffusion is a text-to-image model that can, among other things, generate high-resolution and photo-realistic images from any text input. It uses a diffusion process to gradually refine an image from noise, guided by the text condition.</p>
+<p>Hugging Face is an open-source provider of machine learning technologies. Their platform offers a variety of tools that allow developers to build and train AI models. One of these tools is Diffusers, a library that enables easy access and inference with diffusion models such as Stable Diffusion.</p>
+<p>In this tutorial, I will show you how to use Stable Diffusion from Hugging Face in a few simple steps.</p>
+<section id="step-0-optional-install-pytorch-and-log-in-to-hugging-face" class="level2">
+<h2 class="anchored" data-anchor-id="step-0-optional-install-pytorch-and-log-in-to-hugging-face">Step 0 (optional): Install PyTorch and log in to Hugging Face</h2>
+<p>If you haven’t already, you need to install PyTorch and log in to Hugging Face. I’m installing on Windows 11:</p>
+<pre><code>pip3 install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117</code></pre>
+<p>You need to have a Hugging Face account to download models. To login to hugging face, create an account on the hugging face website and then use:</p>
+<pre><code>huggingface-cli login</code></pre>
+</section>
+<section id="step-1-install-diffusers" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-install-diffusers">Step 1: Install Diffusers</h2>
+<p>To use Stable Diffusion, you need to install Diffusers, which is available on PyPI. You can install it with pip. I usually suggest that you create a new virtual environment with <code>python -m venv .venv</code> before installing the library.</p>
+<pre><code>pip install diffusers</code></pre>
+</section>
+<section id="step-2-load-stable-diffusion" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-load-stable-diffusion">Step 2: Load Stable Diffusion</h2>
+<p>Next, you need to load the Stable Diffusion model from Hugging Face Hub. You can choose from several checkpoints that have been trained on different datasets and for different durations. For example, you can load the stable-diffusion-2-1 checkpoint with:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> diffusers <span class="im">import</span> StableDiffusionPipeline</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># you can also download the model manually</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>pipeline <span class="op">=</span> StableDiffusionPipeline.from_pretrained(<span class="st">"stabilityai/stable-diffusion-2-1-base"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># if you have a CUDA-enabled GPU, you can use it to speed up image generation quite a lot</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>pipeline <span class="op">=</span> pipeline.to(<span class="st">"cuda"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will download the model weights and configuration to your local cache.</p>
+</section>
+<section id="step-3-generate-images" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-generate-images">Step 3: Generate Images</h2>
+<p>Now you are ready to generate images with Stable Diffusion. You just need to provide a text prompt as input. For example, the following code will generate an image of a “jedi schnauzer”:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="st">"jedi schnauzer"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> pipeline(prompt<span class="op">=</span>prompt, height<span class="op">=</span><span class="dv">512</span>, width<span class="op">=</span><span class="dv">512</span>, num_inference_steps<span class="op">=</span><span class="dv">80</span>, guidance_scale<span class="op">=</span><span class="fl">7.5</span>).images[<span class="dv">0</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The pipeline method will return an image object that you can display or save as you wish. You can also customize some parameters of the generation process, such as the number of samples, the resolution, and the number of diffusion steps. For more details, please refer to the documentation of Diffusers (https://huggingface.co/docs/diffusers/index).</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In this tutorial, we have shown you how to use Stable Diffusion from Hugging Face with Diffusers library. We hope you enjoyed this tutorial and found it useful for your projects. If you have any questions or feedback, please feel free to contact us or open an issue on GitHub.</p>
+<p>My code is available on GitHub (https://github.com/lucas-a-meyer/diffusers-experiments/).</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
