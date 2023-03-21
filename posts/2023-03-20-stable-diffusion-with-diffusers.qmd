@@ -8,8 +8,10 @@ id: c061c4e0242fd305a2d66309169073cc
 image: https://mpsocial.blob.core.windows.net/blog-images/ai_schnauzer.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-03-21 06:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7043929257814724608
 post-url: https://www.meyerperin.com/posts/2023-03-20-stable-diffusion-with-diffusers.html
 title: How to Use Stable Diffusion from Hugging Face
+tweet-url: https://twitter.com/user/status/1638163555827449856
 twitter-target-date: 2023-03-21 06:00:00
 ---
 

@@ -1,0 +1,26 @@
+---
+author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+categories:
+- technology
+date: 2023-03-23 06:00:00
+draft: false
+id: a0bcb6ab2cf7c2d4a5064b822bebb0b2
+image: https://mpsocial.blob.core.windows.net/blog-images/robot_cow.png
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2023-03-23 06:00:00
+post-url: https://www.meyerperin.com/posts/2023-03-23-ceding-control-to-llms.html
+title: Delegating more, this time to LLMs
+twitter-target-date: 2023-03-23 06:00:00
+---
+
+In my career, I have worked as an individual contributor and as a manager. Now in the large language models (LLM) era, I have learned that the most important skill a programmer or analyst can develop is the ability to delegate tasks effectively.
+
+The rise of LLMs has revolutionized the way we approach programming and analysis. These models have the ability to process vast amounts of data and generate insights that would be impossible for a human to quickly produce on their own. However, to fully leverage the power of LLMs, programmers and analysts must learn how to delegate tasks effectively to them.
+
+Delegating tasks to LLMs requires a deep understanding of the model's capabilities and limitations. To obtain good results, like when you are a manager, you need to understand the capabilities of the resources you are working with, and you need to put effort into crafting the appropriate instructions. In the most recent versions of GPT, you can improve your ouput a lot by giving context to your requests, asking for reasoning, and giving examples of the output you want. 
+
+A simple request like "write a blog post about delegation" will not yield good results. You need to give the model a lot of context, like "write a blog post about delegation, and explain why it is important for programmers and analysts to delegate tasks to LLMs, use the style of <some famous writer>, be detailed in your arguments, use short paragraphs, include the word 'cow' somewhere near the end of the text".
+
+Effective delegation also requires a high degree of trust in the LLM. Many programmers and analysts are used to doing everything themselves, and may be hesitant to cede control to a machine. However, by building a strong understanding of the model and its outputs, and by carefully selecting inputs and parameters, programmers and analysts can confidently delegate tasks to LLMs and focus their energies on higher-level tasks. 
+
+Of course, part of the problem is that if you cede too much control, the word 'cow' may appear in your text unexpectedly. By being very explicit in your instructions, you can minimize the chance of surprises, and maximize the benefits of delegating tasks.
