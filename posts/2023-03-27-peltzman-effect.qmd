@@ -8,8 +8,10 @@ id: 928a4eed4d050e3f56c7c1a0f0ec439e
 image: https://mpsocial.blob.core.windows.net/blog-images/peltzman.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-03-28 07:00:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7046481072729042945
 post-url: https://www.meyerperin.com/posts/2023-03-27-peltzman-effect.html
 title: 'The Peltzman Effect: How Regulations Can Encourage Risky Behavior'
+tweet-url: https://twitter.com/user/status/1640715371111137282
 twitter-target-date: 2023-03-28 07:00:00
 ---
 

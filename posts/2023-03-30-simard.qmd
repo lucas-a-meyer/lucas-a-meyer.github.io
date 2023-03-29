@@ -7,7 +7,7 @@ categories:
 date: 2023-03-30 06:00:00
 draft: false
 id: 10752c49739ee9e8c0da4713703436ae
-image: https://mpsocial.blob.core.windows.net/blog-images/diffused_tree_network.png
+image: https://mpsocial.blob.core.windows.net/blog-images/diffused_network_of_trees.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-03-30 07:00:00
 post-url: https://www.meyerperin.com/posts/2023-03-30-simard.html
@@ -15,16 +15,12 @@ title: 'Networking Lessons from Trees: How Suzanne Simard''s Discoveries Can Hel
   You Connect Better'
 twitter-target-date: 2023-03-30 07:00:00
 ---
-## Networking Lessons from Trees: How Suzanne Simard's Discoveries Can Help You Connect Better
+Recently, I stumbled upon an intriguing interview on "People I mostly admire" podcast with Suzanne Simard, a professor of forest ecology at the University of British Columbia. In this interview, she shared a fascinating perspective on trees that I had never considered before. She argued that trees are social beings that communicate with each other, and they share nutrients using fungi networks. 
 
-I recently came across an inspiring interview with Suzanne Simard, a professor of forest ecology at the University of British Columbia. In this interview, Simard shared her groundbreaking research on the social behavior of trees, which taught me a valuable lesson on networking.
+Simard's insights about trees communicating with each other were stunning. She explained that when a tree is under stress, it sends out chemical signals to warn nearby trees. These signals prompt the other trees to adjust their behavior to avoid the same stressor. Additionally, the trees prefer to help other trees that are related to them, indicating that they have a sense of community and kinship.
 
-According to Simard, trees are not just individual organisms; they are social beings that communicate with each other. They share nutrients and information through a vast network of fungi that connect the roots of different trees. This Wood Wide Web, allows trees to exchange resources and help each other grow.
+I found this perspective on trees to be enlightening and thought-provoking for several reasons. For one, it suggests that the notion of individual success is often overblown. Just like trees, we can accomplish much more when we work together and support each other. Building and nurturing professional relationships is crucial for success in today's world.
 
-But what struck me the most was that trees prefer to help trees that are related to them. They recognize and remember their kin and prioritize their needs over strangers. 
+Moreover, Simard's insights about the interconnectedness of trees through fungi networks highlighted the importance of networking. Just like trees, we too can benefit from networks in our professional lives. It is essential to create and maintain lasting relationships with colleagues and industry peers.
 
-Networking is not just about meeting new people; it's also about nurturing existing relationships and helping those in your network. Like trees, we should not forget those who are close to us and help them succeed. It's not just good karma; it's also good business. 
-
-Simard's research teaches us that connections matter, and building strong relationships is crucial to success. Just like trees need each other to thrive, we need a supportive network to help us grow and reach our goals. So, if even trees can network, why shouldn't we?
-
-We can all take a leaf out of Simard's book!
+In conclusion, if trees can go so far as to network, then we should be doing the same. Suzanne Simard provides us with a new perspective on trees that can be applied to our professional lives. We can learn a lot from trees and their social interactions.
