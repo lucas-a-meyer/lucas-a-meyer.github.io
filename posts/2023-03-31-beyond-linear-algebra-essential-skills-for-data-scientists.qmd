@@ -6,8 +6,10 @@ id: 1b6b44d595416d6f74d4669ac154af47
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_linear_algebra_prof.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-03-31 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7047568235843522561
 post-url: https://www.meyerperin.com/posts/2023-03-31-beyond-linear-algebra-essential-skills-for-data-scientists.html
 title: 'Beyond Linear Algebra: Essential Skills for Data Scientists'
+tweet-url: https://twitter.com/user/status/1641802534384726016
 twitter-target-date: 2023-03-31 07:01:00
 ---
 
