@@ -20,10 +20,10 @@ openai.api_key = os.getenv("OPENAI_API_PERSONAL_KEY")
 
 def generate_image(image_prompt, image_path, image_filename):
     pipeline = StableDiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-2-1-base").to("cuda")
-    # style = """illustration, high detail, realistic shaded lighting by ilya kuvshinov and michael garmash and rob rey, 
+    style = """illustration, high detail, realistic shaded lighting by ilya kuvshinov and michael garmash and rob rey, 
         # iamag premiere, wlop matte print, 8k resolution, a masterpiece"""
-    style = """high quality photography,
-        3 point lighting, flash with softbox, by Annie Leibovitz, 80mm, hasselblad, Canon EOS R3"""
+    # style = """high quality photography,
+    #     3 point lighting, flash with softbox, by Annie Leibovitz, 80mm, hasselblad, Canon EOS R3"""
     negative_prompt = """ugly, low detail, extra limbs, malformed limbs, poorly drawn hands"""
     image = pipeline(prompt=f"{image_prompt}, {style}", negative_prompt=negative_prompt, height=512, width=512, num_inference_steps=72, guidance_scale=6.5).images[0]
     image_filename = f"diffused_{image_filename}.png"
@@ -153,9 +153,11 @@ for outline in outlines:
 
         # The next line contains the verb explaining what we are supposed to do with the file
         verb = f.readline()
+        print(f"Verb: {verb}")
+        verb = verb.strip()
 
         # The fifth line has the main text
-        text = f.readlines()
+        text = f.read()
 
         post_text = ""
 

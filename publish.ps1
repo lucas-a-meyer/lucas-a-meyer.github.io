@@ -1,5 +1,7 @@
 Write-Output "Starting post expansion process"
-python utils/expand_posts.py
+cd utils
+python expand_posts.py
+cd ..
 Write-Output "Started publish process"
 quarto publish gh-pages
 python process-articles.py
