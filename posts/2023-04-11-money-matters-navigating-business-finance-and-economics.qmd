@@ -2,12 +2,12 @@
 author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
 date: 2023-04-11 06:00:00
 draft: false
-id: 59b7c7c4a6718bb8daa594f3c3509893
+id: 4acdb23c72f2ecb2534f73abe956769f
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_doggo_spy.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-04-11 07:01:00
-post-url: https://www.meyerperin.com/posts/2023-04-11-mastering-the-art-of-financial-writing.html
-title: Mastering the Art of Financial Writing
+post-url: https://www.meyerperin.com/posts/2023-04-11-money-matters-navigating-business-finance-and-economics.html
+title: 'Money Matters: Navigating Business, Finance and Economics'
 twitter-target-date: 2023-04-11 07:01:00
 ---
 

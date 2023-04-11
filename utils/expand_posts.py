@@ -155,7 +155,7 @@ for outline in outlines:
         verb = f.readline()
 
         # The fifth line has the main text
-        text = f.read()
+        text = f.readlines()
 
         post_text = ""
 
@@ -167,6 +167,7 @@ for outline in outlines:
             print("Improving article")
             post_text = improve_text(text)
     
+        print(f"Generated text:\n{post_text}")
         title = create_title_from_post_text(post_text)
 
         # remove quotes and newlines from title
