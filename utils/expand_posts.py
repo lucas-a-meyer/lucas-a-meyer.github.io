@@ -61,7 +61,7 @@ def outline_to_post_text(outline):
     response = openai.ChatCompletion.create(
         engine="gpt-35-turbo",
         messages = message_list, 
-        temperature = 0.6
+        temperature = 0.4
     )
 
     return response.choices[0].message.content
