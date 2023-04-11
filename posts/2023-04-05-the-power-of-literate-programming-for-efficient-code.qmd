@@ -6,8 +6,10 @@ id: 5fe59ff5c4ff0503c1dbee797b540563
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_literate_programming.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-04-05 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7049380180871544832
 post-url: https://www.meyerperin.com/posts/2023-04-05-the-power-of-literate-programming-for-efficient-code.html
 title: The Power of Literate Programming for Efficient Code
+tweet-url: https://twitter.com/user/status/1643614479043776516
 twitter-target-date: 2023-04-05 07:01:00
 ---
 

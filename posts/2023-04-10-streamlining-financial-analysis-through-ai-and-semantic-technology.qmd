@@ -6,8 +6,10 @@ id: 60852f0a0f43b602d39332da6391ef85
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_schnauzer_eating_money.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-04-10 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7051192114872791040
 post-url: https://www.meyerperin.com/posts/2023-04-10-streamlining-financial-analysis-through-ai-and-semantic-technology.html
 title: Streamlining Financial Analysis through AI and Semantic Technology
+tweet-url: https://twitter.com/user/status/1645426412457795588
 twitter-target-date: 2023-04-10 07:01:00
 ---
 
