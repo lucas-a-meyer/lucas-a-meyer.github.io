@@ -6,8 +6,10 @@ id: d7b3dd0f9af45e930da618b1f3c3ffce
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_dont_create_bots.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-04-19 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7054453605717721088
 post-url: https://www.meyerperin.com/posts/2023-04-19-staying-ahead-of-the-curve-in-ai-development.html
 title: Staying Ahead of the Curve in AI Development
+tweet-url: https://twitter.com/user/status/1648687903030095874
 twitter-target-date: 2023-04-19 07:01:00
 ---
 
