@@ -26,7 +26,7 @@ def generate_image(image_prompt, image_path, image_name):
     # Check if the image already exists
     if os.path.exists(os.path.join(image_path, image_filename)):
         print(f"Image {image_filename} already exists, skipping...")
-        return
+        return None
     else:
         print(f"Generating image {image_filename} with prompt {image_prompt}...")
     
@@ -62,10 +62,11 @@ def upload_image_to_azure_storage(image_path, image_filename):
 def outline_to_post_text(openai_model, outline, temperature=0.4):
     message_list = [
         {"role":"system","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
+        {"role":"user","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
         {"role":"user","content":"Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested."},
         {"role":"user","content":"Use metaphors, and other literary tools to make your points easier to understand and remember."},
-        {"role":"user","content":" Write in a way that is both educational and fun, but keep it professional."},
-        {"role":"user","content":"Don't talk about yourself"},
+        {"role":"user","content":"Keep it lightweight and fun, but also informative and educational."},
+        {"role":"user","content":"Don't write about yourself"},
         {"role":"user","content":"The first paragraph should be short and catchy"},
         {"role":"user","content":"Expand the following outline into a LinkedIn post:"},
         {"role":"user","content": outline},
@@ -83,10 +84,11 @@ def outline_to_post_text(openai_model, outline, temperature=0.4):
 def improve_text(openai_model, text, temperature=0.4):
     message_list = [
         {"role":"system","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
+        {"role":"user","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
         {"role":"user","content":"Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested."},
         {"role":"user","content":"Use metaphors, and other literary tools to make your points easier to understand and remember."},
-        {"role":"user","content":" Write in a way that is both educational and fun, but keep it professional."},
-        {"role":"user","content":"Don't talk about yourself"},
+        {"role":"user","content":"Keep it lightweight and fun, but also informative and educational."},
+        {"role":"user","content":"Don't write about yourself"},
         {"role":"user","content":"Improve the text below and make it a better blog post that can be posted to LinkedIn:"},
         {"role":"user","content": text},
         {"role":"assistant","content":""},
@@ -119,6 +121,7 @@ def create_title_from_post_text(openai_model, post_text, temperature=0.4):
     # remove quotes and newlines from title
     title = title.replace('\n', '')
     title = title.replace('"', '')
+    title = title.replace(':', '-')
 
     return title   
 
@@ -208,8 +211,8 @@ for outline in outlines:
         # Generate the image
         image_file_name = generate_image(image_prompt, images_dir, image_name)
 
-        # Upload the image to Azure
-        upload_image_to_azure_storage(images_dir, image_file_name)        
+        if image_file_name:
+            upload_image_to_azure_storage(images_dir, image_file_name)        
 
         # The next line contains the verb explaining what we are supposed to do with the file
         verb = f.readline().strip()
