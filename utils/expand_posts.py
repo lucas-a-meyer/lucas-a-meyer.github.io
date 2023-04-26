@@ -26,7 +26,7 @@ def generate_image(image_prompt, image_path, image_name):
     # Check if the image already exists
     if os.path.exists(os.path.join(image_path, image_filename)):
         print(f"Image {image_filename} already exists, skipping...")
-        return None
+        return image_filename
     else:
         print(f"Generating image {image_filename} with prompt {image_prompt}...")
     
@@ -211,8 +211,7 @@ for outline in outlines:
         # Generate the image
         image_file_name = generate_image(image_prompt, images_dir, image_name)
 
-        if image_file_name:
-            upload_image_to_azure_storage(images_dir, image_file_name)        
+        upload_image_to_azure_storage(images_dir, image_file_name)        
 
         # The next line contains the verb explaining what we are supposed to do with the file
         verb = f.readline().strip()
