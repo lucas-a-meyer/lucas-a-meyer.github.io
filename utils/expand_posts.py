@@ -62,7 +62,9 @@ def upload_image_to_azure_storage(image_path, image_filename):
 def outline_to_post_text(openai_model, outline, temperature=0.4):
     message_list = [
         {"role":"system","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
-        {"role":"user","content":"[Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested. Use metaphors, and other literary tools to make your points easier to understand and remember. [Write in a way that is both educational and fun.]]"},
+        {"role":"user","content":"Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested."},
+        {"role":"user","content":"Use metaphors, and other literary tools to make your points easier to understand and remember."},
+        {"role":"user","content":" Write in a way that is both educational and fun, but keep it professional."},
         {"role":"user","content":"Don't talk about yourself"},
         {"role":"user","content":"The first paragraph should be short and catchy"},
         {"role":"user","content":"Expand the following outline into a LinkedIn post:"},
@@ -81,7 +83,9 @@ def outline_to_post_text(openai_model, outline, temperature=0.4):
 def improve_text(openai_model, text, temperature=0.4):
     message_list = [
         {"role":"system","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
-        {"role":"user","content":"[Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested. Use metaphors, and other literary tools to make your points easier to understand and remember. [Write in a way that is both educational and fun.]]"},
+        {"role":"user","content":"Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested."},
+        {"role":"user","content":"Use metaphors, and other literary tools to make your points easier to understand and remember."},
+        {"role":"user","content":" Write in a way that is both educational and fun, but keep it professional."},
         {"role":"user","content":"Don't talk about yourself"},
         {"role":"user","content":"Improve the text below and make it a better blog post that can be posted to LinkedIn:"},
         {"role":"user","content": text},
@@ -132,6 +136,7 @@ def generate_slug_from_title(title):
     return slug
 
 def get_directories():
+    
     # Get the current directory
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -149,6 +154,30 @@ def get_directories():
 
     return outlines_dir, posts_dir, images_dir
 
+def delete_processed_files():
+    # delete all files from the outlines directory
+    for outline in outlines:
+
+        # Skip the README file
+        if outline.startswith('TEMPLATE'):
+            continue
+
+        outline_path = os.path.join(outlines_dir, outline)
+        os.remove(outline_path)
+
+def create_header(title, date, image_file_name):
+    header = f"""---
+author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+title: {title}
+date: {date} 06:00:00
+linkedin-target-date: {date} 07:01:00
+twitter-target-date: {date} 07:01:00
+draft: false
+image: https://mpsocial.blob.core.windows.net/blog-images/{image_file_name}
+include-in-header: _msft-clarity.html
+---\n\n"""
+    return header
+ 
 outlines_dir, posts_dir, images_dir = get_directories()
 
 # Get the list of files in the outlines directory
@@ -183,29 +212,21 @@ for outline in outlines:
         upload_image_to_azure_storage(images_dir, image_file_name)        
 
         # The next line contains the verb explaining what we are supposed to do with the file
-        verb = f.readline()
-        print(f"Verb: {verb}")
-        verb = verb.strip()
+        verb = f.readline().strip()
 
         # The fifth line has the main text
         text = f.read()
 
-        post_text = ""
-
         if verb.lower() == 'expand':
-            # Expand the outline
-            print("Expanding outline")
             post_text = outline_to_post_text(openai_model, text, 0.2)
         elif verb.lower() == 'improve':
-            print("Improving article")
             post_text = improve_text(openai_model, text)
     
         print(f"Generated text:\n{post_text}")
+
+        # File name
         title = create_title_from_post_text("gpt-35-turbo", post_text)      
-
-        # Generate the slug
         slug = generate_slug_from_title(title)
-
         filename = f"{date}-{slug}.qmd"
 
         # Get the full path to the file
@@ -219,27 +240,10 @@ for outline in outlines:
         # Create the post
         with open(post_path, 'w') as f:
             # Write the post
-            header = f"""---
-            author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
-            title: {title}
-            date: {date} 06:00:00
-            linkedin-target-date: {date} 07:01:00
-            twitter-target-date: {date} 07:01:00
-            draft: false
-            image: https://mpsocial.blob.core.windows.net/blog-images/{image_file_name}
-            include-in-header: _msft-clarity.html
-            ---\n\n"""            
+            header = create_header(title, date, image_file_name)
+
             f.write(header)
             f.write(post_text)
 
-# delete all files from the outlines directory
-for outline in outlines:
-
-    # Skip the README file
-    if outline == 'README':
-        continue
-
-    outline_path = os.path.join(outlines_dir, outline)
-    os.remove(outline_path)
-
-
+    # Clean up
+    delete_processed_files()

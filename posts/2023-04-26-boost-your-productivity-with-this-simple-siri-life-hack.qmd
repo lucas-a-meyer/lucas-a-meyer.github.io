@@ -1,19 +1,21 @@
 ---
-            author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
-            title: Boost Your Productivity with This Simple Siri Life Hack
-            date: 2023-04-26 06:00:00
-            linkedin-target-date: 2023-04-26 07:01:00
-            twitter-target-date: 2023-04-26 07:01:00
-            draft: false
-            image: https://mpsocial.blob.core.windows.net/blog-images/diffused_todo-list.png
-            include-in-header: _msft-clarity.html
-            ---
+author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+date: 2023-04-26 06:00:00
+draft: false
+id: 85c0e235b3bab3f192a3428f5589cc75
+image: https://mpsocial.blob.core.windows.net/blog-images/diffused_todo-list.png
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2023-04-26 07:01:00
+post-url: https://www.meyerperin.com/posts/2023-04-26-boost-your-productivity-with-this-simple-siri-life-hack.html
+title: Boost Your Productivity with This Simple Siri Life Hack
+twitter-target-date: 2023-04-26 07:01:00
+---
 
 Once upon a time, as I got older and busier, I stumbled upon a life hack that has kept me on top of things like a superhero on caffeine. You see, in the realm of productivity, people can be as passionate about their to-do applications as sports fans are about their favorite teams. Personally, I've become a Microsoft To-Do devotee (even during my Amazonian days), but fear not, my trick works for all.
 
 Picture this: every time a task pops into my head, before I even start, I add it to my to-do list. It's as easy as pie, thanks to my trusty sidekick, Siri. With a simple "Hey Siri, remind me to...", my task is whisked away to my digital list, ready for action.
 
-Now, you might be wondering how Siri and Microsoft To-Do became such fast friends. The secret lies in setting the default tasks list to one that resides in Microsoft To-Do. Voilà! A match made in productivity heaven.
+Now, you might be wondering how Siri and Microsoft To-Do became such fast friends. The secret lies in setting the default tasks list to one that resides in Microsoft To-Do. Voilï¿½! A match made in productivity heaven.
 
 I can't even begin to count the times I've remembered a task, only to be interrupted and then forget about it entirely. But with the magic words "Hey Siri, remind me to...", I can rest assured that my to-do list has my back.
 
