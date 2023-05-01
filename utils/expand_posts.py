@@ -61,14 +61,11 @@ def upload_image_to_azure_storage(image_path, image_filename):
 
 def outline_to_post_text(openai_model, outline, temperature=0.4):
     message_list = [
-        {"role":"system","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
-        {"role":"user","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
+        {"role":"system","content":"You are an English professor with a PhD in English Literature"},
         {"role":"user","content":"Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested."},
         {"role":"user","content":"Use metaphors, and other literary tools to make your points easier to understand and remember."},
-        {"role":"user","content":"Keep it lightweight and fun, but also informative and educational."},
-        {"role":"user","content":"Don't write about yourself"},
-        {"role":"user","content":"The first paragraph should be short and catchy"},
-        {"role":"user","content":"Expand the following outline into a LinkedIn post:"},
+        {"role":"user","content":"Expand the following outline into a Markdown blog post. If you find the sequence **examples**, provide applicable examples. The post should be ready to publish to social media."},
+        {"role":"user","content":"\n\nOutline:\n\n"},
         {"role":"user","content": outline},
         {"role":"assistant","content":""},
     ]
@@ -83,13 +80,11 @@ def outline_to_post_text(openai_model, outline, temperature=0.4):
 
 def improve_text(openai_model, text, temperature=0.4):
     message_list = [
-        {"role":"system","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
-        {"role":"user","content":"You are a Wall Street Journal reporter that also knows technology and finance, like Walt Mossberg"},
+        {"role":"system","content":"You are an English professor with a PhD in English Literature"},
         {"role":"user","content":"Voice and style guide: Use a convincing tone, similes, and stories to keep the reader interested."},
         {"role":"user","content":"Use metaphors, and other literary tools to make your points easier to understand and remember."},
-        {"role":"user","content":"Keep it lightweight and fun, but also informative and educational."},
-        {"role":"user","content":"Don't write about yourself"},
-        {"role":"user","content":"Improve the text below and make it a better blog post that can be posted to LinkedIn:"},
+
+        {"role":"user","content":"Improve the text below and make it a better blog post:"},
         {"role":"user","content": text},
         {"role":"assistant","content":""},
     ]

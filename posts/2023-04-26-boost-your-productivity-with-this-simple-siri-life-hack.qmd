@@ -6,8 +6,10 @@ id: 85c0e235b3bab3f192a3428f5589cc75
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_todo-list.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-04-26 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7056990327919808512
 post-url: https://www.meyerperin.com/posts/2023-04-26-boost-your-productivity-with-this-simple-siri-life-hack.html
 title: Boost Your Productivity with This Simple Siri Life Hack
+tweet-url: https://twitter.com/user/status/1651224625303412737
 twitter-target-date: 2023-04-26 07:01:00
 ---
 

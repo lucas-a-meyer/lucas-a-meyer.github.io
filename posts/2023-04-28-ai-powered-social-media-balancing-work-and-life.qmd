@@ -6,8 +6,10 @@ id: 79ab5ec1bda76d43a3ddb4ecb0fd174c
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_robot-blog-post.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-04-28 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7057715096080322560
 post-url: https://www.meyerperin.com/posts/2023-04-28-ai-powered-social-media-balancing-work-and-life.html
 title: AI-Powered Social Media- Balancing Work and Life
+tweet-url: https://twitter.com/user/status/1651949395003297794
 twitter-target-date: 2023-04-28 07:01:00
 ---
 
