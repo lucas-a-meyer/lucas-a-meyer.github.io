@@ -6,8 +6,10 @@ id: 048f6b1dfb2df44f66f46659cda574a6
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_terms-of-art-david.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-02 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7059527036653993984
 post-url: https://www.meyerperin.com/posts/2023-05-02-mastering-terms-of-art-with-language-models.html
 title: Mastering Terms of Art with Language Models
+tweet-url: https://twitter.com/user/status/1653761333530177542
 twitter-target-date: 2023-05-02 07:01:00
 ---
 
