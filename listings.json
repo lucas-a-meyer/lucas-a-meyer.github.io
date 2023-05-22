@@ -2,6 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2023-05-25-happy-towel-day.html",
+      "/posts/2023-05-24-google-duplex-was-going-to-change-the-world-five-years-ago.html",
+      "/posts/2023-05-23-my-experience-using-large-language-models-to-write-blog-posts.html",
       "/posts/2023-05-09-the-mystery-of-bitcoin-anonymity-pseudonymity-and-crime.html",
       "/posts/2023-05-04-riding-the-wave-of-large-language-models.html",
       "/posts/2023-05-02-mastering-terms-of-art-with-language-models.html",
@@ -14,7 +17,6 @@
       "/posts/2023-04-07-copilot-s-ai-weaknesses-highlight-early-days-of-ai.html",
       "/posts/2023-04-06-the-curious-case-of-blogging-finding-purpose-through-experimentation.html",
       "/posts/2023-04-05-the-power-of-literate-programming-for-efficient-code.html",
-      "/posts/2023-04-04-the-productivity-of-patience-what-gardening-taught-me-about-career-growth.html",
       "/posts/2023-04-01-the-fading-trend-of-tech-industry-pranks.html",
       "/posts/2023-03-31-beyond-linear-algebra-essential-skills-for-data-scientists.html",
       "/posts/2023-03-30-simard.html",
@@ -61,6 +63,7 @@
       "/posts/2022-04-11-leaving-amazon.html",
       "/posts/2022-04-05-hiring-is-a-superpower.html",
       "/posts/2022-04-04-south-carolina-dolphins.html",
+      "/posts/2023-04-04-the-productivity-of-patience-what-gardening-taught-me-about-career-growth.html",
       "/posts/2022-04-02-chestertons-fence.html",
       "/posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.html",
       "/posts/2021-11-29-weak-baselines.html",
