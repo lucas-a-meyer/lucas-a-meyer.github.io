@@ -1,0 +1,13 @@
+I recently did an experiement using large language models to write blog posts. Using LLMs should be particularly helpful to me, because English is not my first language.
+
+I didn't like it very much. One of the main problems is that I lost my "voice", the articles didn't seem like things I would write. Even though the final versions were at least 70% mine, 
+they didn't feel like mine. Another problem were the fabrications (which used to be called hallucinations): LLMs tend to create plausible, but false, examples. Those were time-consuming to review and remove. 
+I wanted to leave them in because they were interesting, if true, but usually the ones I didn't know about were not true.
+
+Some things worked really well. Generating images for blog posts using Stable Diffusion is something that I'll definitely continue doing.
+
+The way I'm using AI now is by using the Microsoft Semantic Kernel to improve my articles. The Semantic Kernel allows me to chain prompts and different AIs to accomplish an objective. 
+I use it in four ways: 1) to transform my initial writing into a more structured Quarto Markdown file that will look better in my website, 2) to generate a catchy title, 3) to fix my grammar and 4) to generate images.
+
+I'll soon write a blog post teaching how to use the semantic Kernel in Python. If you can't wait, you can see how I'm using it by looking at the source code for my blog in GitHub.
+

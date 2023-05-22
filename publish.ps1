@@ -1,13 +1,17 @@
-Write-Output "Starting post expansion process"
-cd utils
-python expand_posts.py
-cd ..
-Write-Output "Started publish process"
+# Print that we started the publish process at the current time
+$now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+Write-Output "Publish started at $now"
+
+# Build the site
 quarto publish gh-pages
-python process-articles.py
-python create_sitemap.py
+python utils/process-articles.py
+python utils/create_sitemap.py
+
 git add .
-git commit -m "New rendering"
+git commit -m "New rendering as of $now"
 git push   
-python submit_sitemap.py
-Write-Output "Publish completed"
+
+python utils/submit_sitemap.py
+
+$now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+Write-Output "Publish started at $now"

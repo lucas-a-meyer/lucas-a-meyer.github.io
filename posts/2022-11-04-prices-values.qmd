@@ -7,11 +7,13 @@ date: 2022-11-04 06:00:00
 id: c7f190686a4c1cce83a37f2365b720a4
 image: https://mpsocial.blob.core.windows.net/blog-images/money-gun.jpg
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-11-04 08:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6994350060490682368
 post-url: https://www.meyerperin.com/posts/2022-11-04-prices-values.html
 title: What are you optimizing for?
 tweet-url: https://twitter.com/user/status/1588584361095581699
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2022-11-04 08:00:00
 ---
 

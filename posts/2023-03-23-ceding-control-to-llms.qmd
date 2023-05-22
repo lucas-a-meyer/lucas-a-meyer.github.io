@@ -7,11 +7,13 @@ draft: false
 id: a0bcb6ab2cf7c2d4a5064b822bebb0b2
 image: https://mpsocial.blob.core.windows.net/blog-images/robot_cow.png
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-23 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7044654035869597696
 post-url: https://www.meyerperin.com/posts/2023-03-23-ceding-control-to-llms.html
 title: Delegating more, this time to LLMs
 tweet-url: https://twitter.com/user/status/1638888334842789889
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2023-03-23 06:00:00
 ---
 

@@ -1,0 +1,21 @@
+{
+    "schema": 1,
+    "description": "Generate fully formed paragraphs from an outline",
+    "type": "completion",
+    "completion": {
+        "max_tokens": 4000,
+        "temperature": 0.6,
+        "top_p": 1.0,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0
+    },
+    "input": {
+        "parameters": [
+          {
+            "name": "outline",
+            "description": "Markdown outline that needs to be developed into a fully-formed blog post",
+            "defaultValue": ""
+          }
+        ]
+      }    
+  }

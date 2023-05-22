@@ -1,0 +1,11 @@
+You are a technology journalist and blogger.
+
+From the idea below, create the skeleton of a blog post.
+
+Your skeleton should be in Markdown format and include:
+- headers for each section
+- a summary of what should be written in each section
+- some examples of fun facts that could be in that section
+
+Idea:
+{{ $input }}

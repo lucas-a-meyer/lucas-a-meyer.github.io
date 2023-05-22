@@ -1,15 +1,17 @@
 ---
-author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+author: Lucas A. Meyer
 date: 2023-04-27 06:00:00
 draft: false
 id: a31136626d20b7fd2da479d7543bea6f
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_teaching_kids.png
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-04-27 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7057352715663785984
 post-url: https://www.meyerperin.com/posts/2023-04-27-connecting-across-generations-embracing-wisdom-mentorship.html
 title: Connecting Across Generations- Embracing Wisdom & Mentorship
 tweet-url: https://twitter.com/user/status/1651587013315837952
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2023-04-27 07:01:00
 ---
 

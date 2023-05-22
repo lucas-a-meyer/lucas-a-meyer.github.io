@@ -6,8 +6,10 @@ id: aec68d7c46ebfc126f73ec71a361210e
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_bitcoin_anonymity.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-09 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7061701367844798465
 post-url: https://www.meyerperin.com/posts/2023-05-09-the-mystery-of-bitcoin-anonymity-pseudonymity-and-crime.html
 title: The Mystery of Bitcoin- Anonymity, Pseudonymity, and Crime
+tweet-url: https://twitter.com/user/status/1655935662389084163
 twitter-target-date: 2023-05-09 07:01:00
 ---
 

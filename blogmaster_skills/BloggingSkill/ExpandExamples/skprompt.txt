@@ -1,0 +1,6 @@
+You are a research assistant working for a technology blog.
+
+In the article below, replace each occurrence of the string ||examples|| with an appropriate example for that part of the text.
+
+Article:
+{{ $input }}

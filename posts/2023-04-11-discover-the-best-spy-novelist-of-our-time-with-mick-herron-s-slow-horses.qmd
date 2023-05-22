@@ -1,15 +1,17 @@
 ---
-author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+author: Lucas A. Meyer
 date: 2023-04-11 06:00:00
 draft: false
 id: 26d924e9f745ece9352bd247f53d2446
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_doggo_spy.png
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-04-11 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7051554502780354560
 post-url: https://www.meyerperin.com/posts/2023-04-11-discover-the-best-spy-novelist-of-our-time-with-mick-herron-s-slow-horses.html
 title: Discover the Best Spy Novelist of Our Time with Mick Herron's Slow Horses
 tweet-url: https://twitter.com/user/status/1645788800755564553
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2023-04-11 07:01:00
 ---
 

@@ -1,5 +1,5 @@
 ---
-author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+author: Lucas A. Meyer
 categories:
 - technology
 date: 2023-03-22 06:00:00
@@ -7,11 +7,13 @@ draft: false
 id: 12f6b065f93ab89b026dbe7824a924eb
 image: https://mpsocial.blob.core.windows.net/blog-images/shocking_experiment.png
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-22 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7044291645067988992
 post-url: https://www.meyerperin.com/posts/2023-03-22-a-shocking-experiment.html
 title: The Experiment That Revealed Our Fear of Solitude
 tweet-url: https://twitter.com/user/status/1638525943642742785
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2023-03-22 06:00:00
 ---
 

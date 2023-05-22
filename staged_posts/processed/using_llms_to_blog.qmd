@@ -1,0 +1,33 @@
+---
+author: Lucas A. Meyer
+date: 2023-05-23 06:00:00
+draft: true
+image: staged_images/openai_blogging.jpg
+include-in-header: _msft-clarity.html
+title: My Experience Using Large Language Models to Write Blog Posts
+---
+# My Experience Using Large Language Models to Write Blog Posts
+
+I recently did an experiment using large language models to write blog post, but I didn't like it very much, even though they should help me a lot, since English is not my first language.
+
+## The Problems of Using LLMs to Write for You
+
+One of the main problems is that I lost my "voice", the articles didn't seem like things I would write. Even though the final versions were at least 70% written by me, something felt off. Sometimes it was too happy, sometimes too full of comparisons that I wouldn't be able to make. It didn't feel like me.
+
+Another problem were the "fabrications" (which used to be called "hallucinations"): LLMs tend to create plausible, but false, examples. Recently, I was writing about Alice in Wonderland for an upcoming post. GPT-4 made up a fact that would be wonderful for my story if it were true: that Alice goes through a door that has the number 42 on it. She doesn't. These fabrications are time-consuming to review and remove.
+They were interesting and plausible, and it takes a while to verify them, costing me rather than saving me time.
+
+## What Worked Well
+
+Some things worked really well. Generating images for blog posts using Stable Diffusion is something that I'll definitely continue doing. Looking for suitable, free to use images takes time. Generating images using AI is much faster and the results are usually good enough, and often much better than I expected, especially when I use my dog.
+
+Another thing that worked well was to convert a text post into a more structured Quarto Markdown file with a header and sections. It's not a great time saver, but it makes things better with almost no effort, and therefore, it's worth it.
+
+Another thing that worked pretty well was to create titles for my posts. I am used to write posts for LinkedIn, and those have no titles. An LLM can read a text and create a suitable title in seconds, and it usually does a much better job than I would. That's another time saver.
+
+Finally, LLMs can check my grammar. I'm not a native English speaker, and I make a lot of mistakes, and a single pass of an LLM makes things a lot better without making me lose my "voice".
+
+## Using the Semantic Kernel
+
+This weekend, I started using the Microsoft Semantic Kernel to chain several LLM actions together. I'm still learning how to use it, but I'm already impressed. I'm using it to generate titles, fix my grammar, generate images and convert my text into a Quarto Markdown file. I'll soon write a blog post teaching how to use the semantic Kernel in Python. If you can't wait, you can see how I'm using it by looking at the source code for my blog in GitHub.
+

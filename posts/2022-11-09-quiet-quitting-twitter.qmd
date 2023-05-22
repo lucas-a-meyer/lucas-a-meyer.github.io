@@ -8,11 +8,13 @@ draft: false
 id: fbfcf863404ffb16ba458b528ee85a7b
 image: https://mpsocial.blob.core.windows.net/blog-images/fail-whale.jpg
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-11-06 08:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6995150339763056640
 post-url: https://www.meyerperin.com/posts/2022-11-09-quiet-quitting-twitter.html
 title: Quiet(ly) quitting Twitter
 tweet-url: https://twitter.com/user/status/1589358957810053121
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2022-11-06 08:00:00
 ---
 

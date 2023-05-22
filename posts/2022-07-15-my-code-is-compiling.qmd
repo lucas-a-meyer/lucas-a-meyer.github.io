@@ -6,6 +6,7 @@ id: 7d9c22eace2befa58d912d982348b169
 image: https://mpsocial.blob.core.windows.net/blog-images/compiling.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-07-15 06:02:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6953694682245713920
 post-url: https://www.meyerperin.com/posts/2022-07-15-my-code-is-compiling.html
@@ -14,6 +15,7 @@ response:
 title: My model is training
 tweet-url: https://twitter.com/user/status/1546996097763217408
 twitter-description: Getting Twilio to call me when my model finishes training
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2022-07-15 06:02:00
 ---
 

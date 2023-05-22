@@ -1,5 +1,5 @@
 ---
-author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
+author: Lucas A. Meyer
 categories:
 - technology
 date: 2023-03-29 06:00:00
@@ -7,11 +7,13 @@ draft: false
 id: 406a01bdb16f27a842c0acc88e03fabc
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_professor.png
 include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-29 07:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7046843458929520641
 post-url: https://www.meyerperin.com/posts/2023-03-29-zotero.html
 title: Zotero for Citation Management and Bibliography Creation
 tweet-url: https://twitter.com/user/status/1641077758229979137
+twitter-posted: 2022-06-30 06:00:00
 twitter-target-date: 2023-03-29 07:00:00
 ---
 ## Zotero vs Mendeley: A Comprehensive Comparison

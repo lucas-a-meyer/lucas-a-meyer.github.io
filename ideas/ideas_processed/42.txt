@@ -1,0 +1,5 @@
+I want to write about the number forty two. Why is it used so often in computer science?
+Can you provide examples about it being used as a seed for random numbers?
+How did Douglas Adams come up with it for the Hitchhikers Guide to the Galaxy? 
+Do people know that it also appears in Lewis Carroll's Alice in Wonderland? 
+Do people know that Lewis Carroll is in reality a mathematication named Charles Lutwidge Dodgson?
