@@ -8,6 +8,7 @@ include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-23 07:01:00
 post-url: https://www.meyerperin.com/posts/2023-05-23-my-experience-using-large-language-models-to-write-blog-posts.html
 title: My Experience Using Large Language Models to Write Blog Posts
+tweet-url: https://twitter.com/user/status/1661009110069018624
 twitter-target-date: 2023-05-23 07:01:00
 ---
 # My Experience Using Large Language Models to Write Blog Posts
