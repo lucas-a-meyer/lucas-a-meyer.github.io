@@ -12,10 +12,16 @@
     "input": {
         "parameters": [
           {
-            "name": "outline",
+            "name": "input",
             "description": "Markdown outline that needs to be developed into a fully-formed blog post",
             "defaultValue": ""
+          },
+          {
+            "name": "notes",
+            "description": "Notes that should be used as guidance for writing the blog post",
+            "defaultValue": ""
           }
+
         ]
       }    
   }

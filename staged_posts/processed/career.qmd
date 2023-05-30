@@ -1,0 +1,59 @@
+---
+author: Lucas A. Meyer
+date: 2023-05-31 06:00:00
+draft: false
+image: staged_images/schnauzer_banker.jpg
+include-in-header: _msft-clarity.html
+title: You should not base your career plan on mine
+---
+I started writing code when I was 9 years old. I ended up going to Law school. Maybe you should not follow my career path.
+
+## Early promises
+
+I was never a great student. I got easily distracted. I could do extremely well if the subject interested me, but it frequently did not. Sometimes, some aspect of a subject interested me much more than what the academic program wanted from students. For example, when we were studying the expansion of the Portuguese and Spanish in the 1500s, I really wanted to understand the science of sailing. My teacher wanted me to memorize dates. My saving grace was that I did well in tests, especially standardized tests. And in the country I'm from, Brazil, you can get into a good university if you do well in standardized tests.
+
+## Family matters
+
+Realizing that, my family decided I was going to be a medical doctor. Back then, it was a pathway to riches in Brazil. My family's thinking went like this: most people that want to be doctors can't because can't get into medical school. Since presumably I could pass the test and get in, I got that idea drilled into me from a young age. I was going to be a doctor. 
+
+In a comic twist of fate, people in my family start fighting over an inheritance that was not very big (maybe equivalent to $100k USD today). People started getting divorced. They needed lawyers. The campaign to make me a lawyer started.
+
+Ultimately, when I was 17, I needed to decided what career to pursue. I actually applied for Law, Medicine and Engineering in the three top universities from my state. Maybe fate would decide where I was going to go. Fate had other plans: I got into all three. One of my friends wanted to be a lawyer, so I followed him.
+
+## Law school
+
+I hated law school. Not the school itself, but who I thought I needed to become in order to be a successful lawyer in Brazil in the early 2000s. At some point in the second year, we were asked to do a subject completely outside of Law. I took long to find one and only had slim pickings. I ended up doing Assembly programming. Not only I loved it, but I did super well. I quit Law school, did the standardized tests again and got into Computer Science.
+
+I kept having the same problems I have always had as a student: in Computer Science, I was interested in databases, graph theory and statistics, but not in compilers or linear algebra. Really loved abstract algebra and proofs, operating systems and programming languages, but hated computer architecture. Again, not a great student, with some bright spots, enough to graduate.
+
+## Happily ever after?
+
+You'd think this was the end of the story, but when I graduated, I found that it was very hard to find a job as a computer scientist in Brazil. I ended up working in Technical Sales, and I really did not like it, mostly because of the way the incentives for my position were set up. So I made a plan to move to the US. My company needed people to work in Finance, so I learned Finance and transferred to the US. When I could, I would transfer back to software engineering.
+
+## Not that easy
+
+It turns out that transferring from Finance into software engineering was not easy. First, I needed to wait several years because of immigration restrictions. By the time I could change job families, I had been out of Computer Science school for a while. Interviews were today's equivalent of Leetcode, but I had no practice. Also, I started to really like Finance: I was good at it. I went back to school to learn more Finance and get really, really good at it. At some point, I started thinking that going back into a software engineering position would not make me happy: I would have to go back a lot in my career to start again.
+
+I lucked out. Suddenly, there was this new thing called Data Science that required technical skills, statistics and expertise in a subject-matter. Given my background, I could claim to have an expertise in Finance. Even though my department didn't have a data science career, I started doing a lot of data science.
+
+## You are what your numbers say you are
+
+In american football, there's this saying: "You are what your numbers say you are." Even though I had worked in Finance for a decade and built some cool models where the Finance was the feature, not the tech, everybody saw me as a "tech person". One day, I was in my kitchen talking to my sister-in-law, who works in Finance had only knew me as somebody who worked in Finance. At some point, she called me "a tech person". It was then that I decided to embrace it. I started working hard to convert my position from Finance to engineering. At this point I was lucky to have a visionary manager that supported that and enabled me (and I hope both of us) to be very successful.
+
+## Ikegai
+
+The Japanese have a principle of career happiness called Ikigai: the best career is at the midpoint between four things: what you are good at, what the world needs, what can get you paid, what makes you happy. For a decade, I had thought that going back to engineering would be a problem for either getting paid or making me happy, and I settled for being happy with Finance. It turns out that I could do a lot with Data Science, whether it was related to Finance or not. I ended up doing a lot of fun Data Science projects that I'm very proud of.
+
+At this point in my career, I hired a career coach. I wish I had done that a lot sooner. She helped me document what was important to me. It was also during a period where the Data Science market was super hot and I had lots of competing offers (those were the days...). Knowing a little bit more about the impact I wanted to have in the world while still providing for the needs of my family helped me think what I would love to have in a position. Again, I lucked out - among several competing offers, an old friend reached out with an opportunity that was a perfect fit for me.
+
+## The end of the beginning
+
+While I lucked out in some points of my career, I also had my share of bad luck. For one, immigration restrictions held me back. Sometimes, reorgs at work required me to prove myself all over again. Some personal things made me realize that you never know what someone is going through in life. You only see a small facet of what they choose to let on.
+
+But maybe this whole experience was worthwhile. I've been exposed to a lot of things, and I have a great opportunity to help the world be a better place through my work. I'm not sure I would have gotten here if I had followed a more traditional path. In any case, it doesn't matter. What matters is that I'm here now and that I can do it now. 
+
+## What about you?
+
+I don't know what your Ikigai is. I know that sometimes you can get far off-path. I needed help to find my bearings. You shouldn't follow my career path, as I was lost for a long time. But you can learn from my mistakes, and learn what you're good at and what makes you happy sooner rather than later, and start driving towards that. I hope your road to happiness is shorter than mine, and that it has at least as many beautiful sights along the way.
+
+

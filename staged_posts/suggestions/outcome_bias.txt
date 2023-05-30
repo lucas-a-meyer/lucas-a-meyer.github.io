@@ -1,0 +1,21 @@
+# Title: Outcome Bias: Distinguishing Between Good Decisions and Good Outcomes
+
+## Introduction
+
+Outcome bias is a psychological phenomenon that occurs when people judge the quality of a decision based on its outcome, rather than on the process and information that informed the decision. While this may seem like a harmless cognitive shortcut, it can be quite dangerous in a business context, as it can lead to the misallocation of resources, overconfidence in certain decision-makers, and a lack of accountability for poor decisions. A favorite example of outcome bias in action is the 2001 academic article "Are CEOs rewarded for luck?" by Marianne Bertrand and Sendhil Mullainathan, which investigates the relationship between CEO compensation and factors outside their control.
+
+## Outcome Bias in CEO Compensation
+
+The article by Bertrand and Mullainathan found that CEO compensation is often influenced by factors that are entirely outside of their control, such as economic conditions, industry trends, and even the weather. This suggests that outcome bias plays a significant role in determining CEO pay, as boards of directors may be rewarding CEOs for good outcomes that are not necessarily the result of good decisions. Poor corporate governance can contribute to this problem, as boards may not have the necessary information or expertise to evaluate the quality of a CEO's decision-making process. For example, a CEO of an oil company may receive a huge bonus due to a war pushing up oil prices, even though their strategic decisions had little to do with the company's success.
+
+## The Illusion of Competence
+
+Outcome bias can create the illusion of competence, as individuals who are well-rewarded for good outcomes may be perceived as being highly competent, even if their decision-making processes are flawed. This can lead to bad decision making and poor management, as these individuals may be given more responsibility and authority based on their perceived competence. For example, businesses that depend on favorable exchange rates may see their decision-makers praised for their strategic genius when, in reality, they were simply lucky with the timing of their decisions. This can reinforce the belief in the infallibility of these decision-makers, leading to even riskier decisions in the future.
+
+## A Framework for Rewarding Well-Founded Decisions
+
+To avoid outcome bias, it is crucial to develop a framework for rewarding decision-makers based on well-founded decisions, rather than just good outcomes. This involves documenting measurable risks, assessing expected outcomes and their probabilities, and understanding the inherent uncertainty in any decision-making process. By focusing on these factors, managers can be rewarded and assessed based on the quality of their decisions, rather than just the outcomes they produce. This is similar to how forecasters are evaluated based on their ability to accurately predict future events, rather than just the events themselves.
+
+## Conclusion
+
+Distinguishing between good decisions and good outcomes is essential to avoid outcome bias and ensure that competent decision-makers are rewarded and recognized. By implementing better governance and decision-making frameworks that focus on the quality of the decision-making process, rather than just the outcomes, businesses can reduce the influence of outcome bias and make more informed, strategic decisions. Ultimately, this will lead to better management, more effective resource allocation, and a greater likelihood of long-term success for organizations.

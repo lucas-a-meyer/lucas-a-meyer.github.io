@@ -2,19 +2,46 @@ import os
 import argparse     
 import time
 from datetime import datetime
-from typing import Tuple, Callable
+from typing import Tuple
 import logging
+import asyncio
 
 from dotenv import load_dotenv
 import yaml
+
 import semantic_kernel as sk
-from semantic_kernel.connectors.ai.open_ai.services.azure_chat_completion import AzureChatCompletion
+from blogmaster.kernel import initialize_kernel
 
 # Modules I've created 
 from quarto_blog_utils.headers import check_header, update_header_dates
 from quarto_blog_utils.blog_images import upload_image_to_azure_storage
 from quarto_blog_utils.posts import generate_slug_from_title
 from quarto_blog_utils.quarto import upgrade_quarto
+from semantic_kernel.planning.basic_planner import BasicPlanner
+
+def openai_call(func):
+    def wrapper_func(*args, **kwargs):
+        logger.info('Calling something that depends on OpenAI')
+        max_attempts = 5
+        attempts = 0
+        while attempts < max_attempts:
+            try:        
+                logger.info(f'Attempt {attempts+1} of {max_attempts} of reviewing post grammar')                  
+                result = func(*args, **kwargs)
+                logger.info('Sleeping 60')
+                time.sleep(60)
+                break
+            except:
+                attempts += 1
+                logger.info(f'Attempt {attempts} failed. Retrying.')
+                time.sleep(60)
+        return result
+    return wrapper_func
+
+@openai_call
+def review_post_grammar(kernel: sk.Kernel, article_body) -> str:
+    return str(kernel.review_post(article_body))
+
 
 def init_argparse() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -72,6 +99,8 @@ def main() -> None:
 
     ## If the user doesn't want to update quarto, let's do everything we can to update the blog
     kernel = initialize_kernel()
+    kernel.set_default_text_completion_service("gpt4")
+
     process_ideas(kernel)
     process_staged_posts(kernel)
 
@@ -106,9 +135,15 @@ def process_staged_posts(kernel: sk.Kernel) -> None:
             # get the yaml header and the post content
             file_contents = f.read()
 
-            article_yaml_header = file_contents.split('---')[1]
-            dict_header = yaml.load(article_yaml_header, Loader=yaml.FullLoader)
-            article_body = file_contents.split('---')[2]
+        # Split the file contents into the yaml header and the post content
+        article_yaml_header = file_contents.split('---')[1]
+        dict_header = yaml.load(article_yaml_header, Loader=yaml.FullLoader)
+        article_body = file_contents.split('---')[2]
+
+        # If the article is a draft, skip it
+        if dict_header['draft']:
+            logger.info(f'{fname} is a draft. Skipping.')
+            continue
 
         # Copy the file to the staged_posts_processed folder
         logger.info(f'Copying {fname} to staged_posts_processed folder')
@@ -136,20 +171,14 @@ def process_staged_posts(kernel: sk.Kernel) -> None:
 
         dict_header = update_header_dates(dict_header)
 
-        # change draft to false
-        dict_header['draft'] = False
-
         # change the field reset to true
         dict_header['reset'] = True
 
-        # Review grammar
-        kernel.set_default_text_completion_service("gpt4")
-        review_function = get_review_function(kernel)
-        article_body = str(review_function(article_body))
-        time.sleep(60)
+        # Review grammar      
+        article_body = review_post_grammar(kernel, article_body)
 
         # generate the final post by writing the yaml header and the post content to a file in the posts directory
-        logger.info(f'Generating final post {file_name}')
+        logger.info(f'Writing final post to posts directory: {file_name}')
         with open(f'posts/{file_name}', 'w', encoding='utf-8') as f:
             f.write('---\n')
             yaml.dump(dict_header, f)
@@ -188,83 +217,25 @@ def process_ideas(kernel: sk.Kernel) -> None:
 
             # read the idea into a variable
             idea = f.read()
-    
-        # generate a skeleton post from the idea
-        kernel.set_default_text_completion_service("gpt4")
-        generate_skeleton = get_skeleton_function(kernel)
+           
         logger.info(f'Generating skeleton post from idea {fname}')
-        post_skeleton = str(generate_skeleton(idea))
-        time.sleep(60)
+        post_skeleton = str((openai_call(kernel.generate_skeleton(idea))))
         logger.info(f'Skeleton post generated from idea {fname}')
 
-        # generate a title from the skeleton
-        logger.info(f'Generating title from skeleton post {fname}')
-        kernel.set_default_text_completion_service("gpt3")
-        generate_title = get_title_function(kernel)
-        post_title = str(generate_title(post_skeleton))
-        logger.info(f'Title generated from skeleton post {fname}')
-
-        # write the skeleton post to the staging folder
-        with open(f'staged_posts/{fname}', 'w', encoding='utf-8') as f:
-            f.write(f"Title: {post_title}")
-            f.write(post_skeleton)
-            logger.info(f'Skeleton post written to staged_posts folder {fname}')
-
-        kernel.set_default_text_completion_service("gpt4")
-        generate_function = get_generate_function(kernel)
-        logger.info(f'Generating post content from skeleton post {fname}')
-        post_content = str(generate_function(post_skeleton))
-        logger.info(f'Post content generated from skeleton post {fname}')
+        logger.info(f'Generating content from skeleton {fname}')
+        post_content = str((openai_call(kernel.generate_post(post_skeleton))))
+        logger.info(f'Generating content from skeleton {fname}')
 
         # write the skeleton post to the staging folder
         with open(f'staged_posts/suggestions/{fname}', 'w', encoding='utf-8') as f:
-            f.write(f"Title: {post_title}")
             f.write(post_content)
             logger.info(f'Post content written to staged_posts/suggestions folder {fname}')
 
-        logger.info("Sleeping to avoid rate errors")
-        time.sleep(60)
-
-    
         # move the file to the ideas processed folder
         os.rename(f'ideas/{fname}', f'ideas/ideas_processed/{fname}')    
         logger.info(f'Finished processing idea from file {fname}')
     
     logger.info('Processing ideas completed')
-
-def add_completion_service(kernel: sk.Kernel, service_id: str, engine: str, key: str, endpoint: str) -> sk.Kernel:
-    kernel = kernel.add_text_completion_service(service_id, AzureChatCompletion(deployment_name=engine, api_key=key, endpoint=endpoint), overwrite=False)
-    return kernel
-
-def get_openai_config(config_name: str) -> Tuple[str, str]:
-    # Get the API key and endpoint from the environment variables
-    openai_key = os.getenv(f"{config_name}_API_KEY")
-    openai_endpoint = os.getenv(f"{config_name}_ENDPOINT")
-    return openai_key, openai_endpoint
-
-def initialize_kernel() -> sk.Kernel:
-    kernel = sk.Kernel()
-
-    # Initialize SK
-    key_ms, env_ms = get_openai_config("OPENAI_MS")
-    key_eu, env_eu = get_openai_config("OPENAI_EUROPE")
-
-    kernel = add_completion_service(kernel, service_id="gpt3", engine="gpt-35-turbo", key=key_eu, endpoint=env_eu)
-    kernel = add_completion_service(kernel, service_id="gpt4", engine="gpt-4", key=key_ms, endpoint=env_ms)
-
-    return kernel
-
-def get_skeleton_function(kernel: sk.Kernel) -> Callable:
-    return kernel.import_semantic_skill_from_directory("blogmaster_skills", "BloggingSkill")["CreateSkeleton"]
-
-def get_generate_function(kernel: sk.Kernel) -> Callable:
-    return kernel.import_semantic_skill_from_directory("blogmaster_skills", "BloggingSkill")["ExpandOutline"]
-
-def get_review_function(kernel: sk.Kernel) -> Callable:
-    return kernel.import_semantic_skill_from_directory("blogmaster_skills", "BloggingSkill")["ReviewGrammar"]
-
-def get_title_function(kernel: sk.Kernel) -> Callable:
-    return kernel.import_semantic_skill_from_directory("blogmaster_skills", "BloggingSkill")["MakeTitle"]
 
 def check_headers(start_date: str, end_date: str) -> None:
     """
@@ -305,7 +276,9 @@ def check_headers(start_date: str, end_date: str) -> None:
 
     logger.info(f'Finished checking headers at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
 
+
 if __name__ == '__main__':
+
     GLOBAL_VERSION = "2023-05-20"
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger = logging.getLogger("blogmaster")
@@ -316,7 +289,6 @@ if __name__ == '__main__':
 
     for module in logger_blocklist:
         logging.getLogger(module).setLevel(logging.WARNING)
-
 
     load_dotenv()
     main()

@@ -8,6 +8,7 @@ include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-24 07:01:00
 post-url: https://www.meyerperin.com/posts/2023-05-24-google-duplex-was-going-to-change-the-world-five-years-ago.html
 title: Google Duplex was going to change the world five years ago
+tweet-url: https://twitter.com/user/status/1661371485720551424
 twitter-target-date: 2023-05-24 07:01:00
 ---
 # Google Duplex was going to change the world five years ago

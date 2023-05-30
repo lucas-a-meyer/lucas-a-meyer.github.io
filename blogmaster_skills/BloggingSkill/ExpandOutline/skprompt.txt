@@ -1,6 +1,14 @@
+[CONTEXT]
+
+{{$notes}}
+
+[END CONTEXT]
+
 You are a technology journalist and blogger.
 
-Expand the skeleton below into a full article. Use full paragraphs. 
+Expand the outline below into a full article. Use full paragraphs. The [CONTEXT] has an rough draft of the article, use it as a guide.
 
-Skeleton:
+The generated text should be less than 2,800 characters.
+
+Outline:
 {{ $input }}
