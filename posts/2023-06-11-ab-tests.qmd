@@ -8,6 +8,7 @@ include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-06-13 08:00:00
 post-url: https://www.meyerperin.com/posts/2023-06-11-ab-tests.html
 title: A/B testing needs a theory
+tweet-url: https://twitter.com/user/status/1668729975590080512
 twitter-target-date: 2023-06-13 08:00:00
 ---
 Randomized controlled experiments (A/B tests) are frequently said to be the gold standard for decision-making. However, to make a good decision, you have to really understand what question is being answered.
