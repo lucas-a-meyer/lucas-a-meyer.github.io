@@ -1,23 +1,21 @@
+import argparse
+import logging
 import os
-import argparse     
 import time
 from datetime import datetime
 from typing import Tuple
-import logging
-import asyncio
-
-from dotenv import load_dotenv
-import yaml
 
 import semantic_kernel as sk
-from blogmaster.kernel import initialize_kernel
+import yaml
+from dotenv import load_dotenv
+from semantic_kernel.planning.basic_planner import BasicPlanner
 
-# Modules I've created 
-from quarto_blog_utils.headers import check_header, update_header_dates
+from blogmaster.kernel import initialize_kernel
 from quarto_blog_utils.blog_images import upload_image_to_azure_storage
+from quarto_blog_utils.headers import check_header, update_header_dates
 from quarto_blog_utils.posts import generate_slug_from_title
 from quarto_blog_utils.quarto import upgrade_quarto
-from semantic_kernel.planning.basic_planner import BasicPlanner
+
 
 def openai_call(func):
     def wrapper_func(*args, **kwargs):
@@ -58,6 +56,47 @@ def init_argparse() -> argparse.ArgumentParser:
     parser.add_argument('-u', '--update_quarto', dest='update_quarto', help='Update quarto to the latest version', action="store_true")
     return parser
 
+
+def check_headers(start_date: str, end_date: str) -> None:
+    """
+    Check the headers of all posts between start_date and end_date.
+    Parameters:
+        start_date (str): The start date in YYYY-MM-DD format
+        end_date (str): The end date in YYYY-MM-DD format
+    """
+
+    logger.info(f'Started checking headers at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+    # List all files in the posts directory between start_date and end_date
+    # For each file, print the name of the file and the date in the file
+    for fname in os.listdir('posts'):
+        logger.info(f'Started processing {fname} at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+
+        if fname.endswith('.qmd'):
+            # get the first 10 characters of fname, which will be the post date
+            post_date = fname[:10]
+            if post_date >= start_date and post_date <= end_date:
+
+                # split the file into header and body
+                with open(f'posts/{fname}', 'r', encoding='utf-8') as f:
+                    file_contents = f.read()
+                    article_yaml_header = file_contents.split('---')[1]
+                    # article_body = file_contents.split('---')[2]
+
+                    # print(f"Article YAML header: {article_yaml_header}")
+                    if check_header(article_yaml_header):
+                        logger.info(f"Header is valid")
+                    else:
+                        logger.error(f"Header is invalid")
+
+                time.sleep(0.1)
+            else:
+                logger.info("Skipping file {fname} because it's not in the date range")
+        else:
+            logger.info("Skipping file {fname} because it's not a .qmd file")
+
+    logger.info(f'Finished checking headers at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+
+
 def parse_args() -> Tuple[bool, str, str]:
 
     argp = init_argparse()
@@ -81,31 +120,6 @@ def parse_args() -> Tuple[bool, str, str]:
 
     return update_quarto, start_date, end_date
 
-def main() -> None:
-    # Initialize the logger
-    logger.info(f'BlogMaster version {GLOBAL_VERSION} started')
-       
-    update_quarto, start_date, end_date = parse_args()
-    logger.info('Arguments received:')
-    logger.info(f'\tupdate_quarto: {update_quarto}')
-    logger.info(f'\tstart_date: {start_date}')
-    logger.info(f'\tend_date: {end_date}')
-    
-    # If the user wants to update quarto, let's do that and exit
-    if update_quarto:
-        logger.info('Updating Quarto')
-        upgrade_quarto()
-        exit(0)
-
-    ## If the user doesn't want to update quarto, let's do everything we can to update the blog
-    kernel = initialize_kernel()
-    kernel.set_default_text_completion_service("gpt4")
-
-    process_ideas(kernel)
-    process_staged_posts(kernel)
-
-    logger.info(f'Processing blog completed')
-    exit(0)
 
 def process_staged_posts(kernel: sk.Kernel) -> None:
     """
@@ -194,6 +208,7 @@ def process_staged_posts(kernel: sk.Kernel) -> None:
 
     logger.info('Processing staged posts completed')
 
+
 def process_ideas(kernel: sk.Kernel) -> None:
     """
     Process the ideas in the ideas folder and generate skeleton posts
@@ -237,45 +252,36 @@ def process_ideas(kernel: sk.Kernel) -> None:
     
     logger.info('Processing ideas completed')
 
-def check_headers(start_date: str, end_date: str) -> None:
-    """
-    Check the headers of all posts between start_date and end_date.
-    Parameters:
-        start_date (str): The start date in YYYY-MM-DD format
-        end_date (str): The end date in YYYY-MM-DD format
-    """
 
-    logger.info(f'Started checking headers at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
-    # List all files in the posts directory between start_date and end_date
-    # For each file, print the name of the file and the date in the file
-    for fname in os.listdir('posts'):
-        logger.info(f'Started processing {fname} at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
+def main() -> None:
+    # Initialize the logger
+    logger.info(f'BlogMaster version {GLOBAL_VERSION} started')
+       
+    update_quarto, start_date, end_date = parse_args()
+    logger.info('Arguments received:')
+    logger.info(f'\tupdate_quarto: {update_quarto}')
+    logger.info(f'\tstart_date: {start_date}')
+    logger.info(f'\tend_date: {end_date}')
+    
+    # If the user wants to update quarto, let's do that and exit
+    if update_quarto:
+        logger.info('Updating Quarto')
+        upgrade_quarto()
+        exit(0)
 
-        if fname.endswith('.qmd'):
-            # get the first 10 characters of fname, which will be the post date
-            post_date = fname[:10]
-            if post_date >= start_date and post_date <= end_date:
+    ## If the user doesn't want to update Quarto, let's do everything we can to update the blog
+    kernel = initialize_kernel()
+    kernel.set_default_text_completion_service("gpt4")
 
-                # split the file into header and body
-                with open(f'posts/{fname}', 'r', encoding='utf-8') as f:
-                    file_contents = f.read()
-                    article_yaml_header = file_contents.split('---')[1]
-                    # article_body = file_contents.split('---')[2]
+    # process_ideas looks into the /ideas folder and generates skeleton posts
+    # The generated posts are saved in the /staged_posts/suggestions folder
+    process_ideas(kernel)
 
-                    # print(f"Article YAML header: {article_yaml_header}")
-                    if check_header(article_yaml_header):
-                        logger.info(f"Header is valid")
-                    else:
-                        logger.error(f"Header is invalid")
+    # process_staged_posts looks into the /staged_posts folder and generates final posts
+    process_staged_posts(kernel)
 
-                time.sleep(0.1)
-            else:
-                logger.info("Skipping file {fname} because it's not in the date range")
-        else:
-            logger.info("Skipping file {fname} because it's not a .qmd file")
-
-    logger.info(f'Finished checking headers at {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
-
+    logger.info(f'Processing blog completed')
+    exit(0)
 
 if __name__ == '__main__':
 
@@ -290,6 +296,6 @@ if __name__ == '__main__':
     for module in logger_blocklist:
         logging.getLogger(module).setLevel(logging.WARNING)
 
-    load_dotenv()
+    load_dotenv("~/.env")
     main()
 

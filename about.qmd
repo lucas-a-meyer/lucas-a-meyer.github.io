@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: bias.jpg
+image: https://mpsocial.blob.core.windows.net/blog-images/lucas_batman.png
 include-in-header: _msft-clarity.html
 about:
   template: solana

@@ -49,8 +49,8 @@ def initialize_kernel() -> sk.Kernel:
     kernel = sk.Kernel()
 
     # Initialize SK
-    key_ms, env_ms = get_openai_config("OPENAI_USEAST2")
-    key_eu, env_eu = get_openai_config("OPENAI_EUROPE")
+    key_ms, env_ms = get_openai_config("OPENAI_USEAST3")
+    key_eu, env_eu = get_openai_config("OPENAI_FRANCE")
 
     kernel = add_completion_service(kernel, service_id="gpt3", engine="gpt-35-turbo", key=key_eu, endpoint=env_eu)
     kernel = add_completion_service(kernel, service_id="gpt4", engine="gpt-4", key=key_ms, endpoint=env_ms)
