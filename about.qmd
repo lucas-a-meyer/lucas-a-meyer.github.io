@@ -20,5 +20,5 @@ about:
       href: https://twitter.com/lucas_a_meyer
 
 ---
-I am a Data Scientist at the AI for Good Research Lab at Microsoft, focusing on economics, financial misconduct and cybercrime.
+I am a Principal Research Scientist at the AI for Good Research Lab at Microsoft, focusing on AI, large language models, and cybercrime.
 
