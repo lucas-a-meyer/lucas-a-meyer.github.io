@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/talks.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/2023-06-18-fathers-day.html",
@@ -101,9 +105,5 @@
       "/posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html",
       "/posts/2017-09-11-hurricane-irma.html"
     ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": []
   }
 ]
