@@ -1,7 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: 2022-07-13 04:00:00
-draft: false
+draft: true
 id: 55f161c9f488a98151a80b22c0b03182
 image: https://mpsocial.blob.core.windows.net/blog-images/owning-twitter.jpg
 include-in-header: _msft-clarity.html

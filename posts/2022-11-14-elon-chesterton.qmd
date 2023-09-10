@@ -5,7 +5,7 @@ categories:
 - technology
 - management
 date: 2022-11-14 06:00:00
-draft: false
+draft: true
 id: 3d1a39404a74eb97401fdc180eaa906f
 image: https://mpsocial.blob.core.windows.net/blog-images/twitter-bird-fence.jpg
 include-in-header: _msft-clarity.html

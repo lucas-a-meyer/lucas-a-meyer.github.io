@@ -7,7 +7,7 @@ categories:
 - econometrics
 - healthcare
 date: 2022-07-17 07:00:00
-draft: false
+draft: true
 id: c2c4821ee122193303c3be8d77b9b570
 image: https://mpsocial.blob.core.windows.net/blog-images/freakonomics-md.jpg
 include-in-header: _msft-clarity.html

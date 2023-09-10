@@ -1,6 +1,9 @@
 ---
 author: Lucas A. Meyer
 date: 2023-06-18 06:00:00
+description: I didn't have a good father. But my mother showed up. Happy Father's
+  Day to all fathers that show up, and to all non-dads and single moms that do so
+  much every day to fill in that giant void.
 draft: false
 id: 5b121a96aca382965066448ee6a45596
 image: https://mpsocial.blob.core.windows.net/blog-images/calvin-father.jpg
@@ -8,6 +11,7 @@ include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-06-18 08:00:00
 post-url: https://www.meyerperin.com/posts/2023-06-18-fathers-day.html
 title: Father's Day 2023
+tweet-url: https://twitter.com/user/status/1670487800582402048
 twitter-target-date: 2023-06-18 08:00:00
 ---
 I didn't have a good father. But my mother showed up. Happy Father's Day to all fathers that show up, and to all non-dads and single moms that do so much every day to fill in that giant void.

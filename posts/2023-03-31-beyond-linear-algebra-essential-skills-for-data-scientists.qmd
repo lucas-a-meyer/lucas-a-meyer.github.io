@@ -1,7 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: 2023-03-31 06:00:00
-draft: false
+draft: true
 id: 1b6b44d595416d6f74d4669ac154af47
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_linear_algebra_prof.png
 include-in-header: _msft-clarity.html

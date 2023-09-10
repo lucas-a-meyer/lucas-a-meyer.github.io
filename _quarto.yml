@@ -30,21 +30,15 @@ website:
           file: index.qmd
         - text: "Quarto with Python"
           href: /using-quarto
-        - text: "GNNs with Python"
-          href: /python-gnn
-        - text: "Econometrics with Python"
-          href: /econometrics-python
     right:
+      - text: "{{< iconify fa6-brands threads >}}"
+        href: https://threads.net/@lucas_a_meyer
       - icon: linkedin
         href: https://www.linkedin.com/in/lucasameyer      
       - icon: github
         href: https://github.com/lucas-a-meyer
       - icon: stack-overflow
         href: https://stackoverflow.com/users/1850561/lucas-a-meyer
-      - icon: mastodon
-        href: https://data-folks.masto.host/@lucasmeyer
-      - icon: twitter
-        href: https://twitter.com/lucas_a_meyer
       - about.qmd
 
 

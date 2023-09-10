@@ -6,6 +6,9 @@ about:
   template: solana
   image-shape: round
   links:
+    - icon: "{{< iconify fa6-brands threads >}}"
+      text: "{{< iconify fa6-brands threads >}} Threads"
+      href: https://threads.net/@lucas_a_meyer
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/lucasameyer
@@ -15,10 +18,7 @@ about:
     - icon: stack-overflow
       text: Stack Overflow
       href: https://stackoverflow.com/users/1850561/lucas-a-meyer
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/lucas_a_meyer
 
 ---
-I am a Principal Research Scientist at the AI for Good Research Lab at Microsoft, focusing on AI, large language models, and cybercrime.
+I am a Principal Research Scientist at the AI for Good Research Lab at Microsoft, focusing on AI, large language models, and cybercrime. 
 
