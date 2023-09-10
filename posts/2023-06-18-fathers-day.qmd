@@ -5,6 +5,7 @@ description: I didn't have a good father. But my mother showed up. Happy Father'
   Day to all fathers that show up, and to all non-dads and single moms that do so
   much every day to fill in that giant void.
 draft: false
+freeze: true
 id: 5b121a96aca382965066448ee6a45596
 image: https://mpsocial.blob.core.windows.net/blog-images/calvin-father.jpg
 include-in-header: _msft-clarity.html
