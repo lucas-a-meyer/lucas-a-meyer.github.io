@@ -1,0 +1,18 @@
+---
+title: "Getting Started with the Microsoft Semantic Kernel"
+page-layout: full
+---
+
+# Getting Started with the Microsoft Semantic Kernel
+
+The Microsoft Semantic Kernel is a semantic search engine that enables you to
+search for information in your organization based on concepts, rather than
+keywords. The Microsoft Semantic Kernel is a component of the Microsoft
+Enterprise Search Platform.
+
+The Microsoft Semantic Kernel is a semantic search engine that enables you to
+search for information in your organization based on concepts, rather than
+keywords. The Microsoft Semantic Kernel is a component of the Microsoft
+Enterprise Search Platform.
+
+

@@ -23,13 +23,17 @@ website:
       theme: clean
       openSidebar: false
       showHighlights: always
-  favicon: /images/data-beaker.png
+  favicon: /favicon-32x32.png
   navbar:
     left:
         - text: "Home"
           file: index.qmd
         - text: "Quarto with Python"
           href: /using-quarto
+        - text: "Midjourney Tour"
+          href: /midjourney
+        - text: "Semantic Kernel"
+          href: /semantic-kernel
     right:
       - text: "{{< iconify fa6-brands threads >}}"
         href: https://threads.net/@lucas_a_meyer
