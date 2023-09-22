@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -83,10 +117,12 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Getting Started with the Microsoft Semantic Kernel">
 <meta property="og:description" content="">
+<meta property="og:image" content="http://2.bp.blogspot.com/-tG6z7DOsHNc/T6Z1DuzXs9I/AAAAAAAAGfY/YTmFDxw0Qxg/s320/animal+pictures+%2812%29.jpg">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta name="twitter:title" content="Lucas A. Meyer - Getting Started with the Microsoft Semantic Kernel">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://2.bp.blogspot.com/-tG6z7DOsHNc/T6Z1DuzXs9I/AAAAAAAAGfY/YTmFDxw0Qxg/s320/animal+pictures+%2812%29.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -116,11 +152,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../midjourney" rel="" target="">
- <span class="menu-text">Midjourney Tour</span></a>
+ <span class="menu-text">Quick tour of Midjourney</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../semantic-kernel" rel="" target="">
- <span class="menu-text">Semantic Kernel</span></a>
+ <span class="menu-text">Quick tour of Semantic Kernel</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -158,9 +194,39 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#code-for-this-post" id="toc-code-for-this-post" class="nav-link" data-scroll-target="#code-for-this-post">Code for this post</a></li>
+  <li><a href="#differences-from-langchain" id="toc-differences-from-langchain" class="nav-link" data-scroll-target="#differences-from-langchain">Differences from LangChain</a></li>
+  </ul></li>
+  <li><a href="#a-whirlwind-tour-through-semantic-kernel-in-python" id="toc-a-whirlwind-tour-through-semantic-kernel-in-python" class="nav-link" data-scroll-target="#a-whirlwind-tour-through-semantic-kernel-in-python">A whirlwind tour through Semantic Kernel in Python</a>
+  <ul class="collapse">
+  <li><a href="#the-kernel" id="toc-the-kernel" class="nav-link" data-scroll-target="#the-kernel">The Kernel</a></li>
+  <li><a href="#connectors" id="toc-connectors" class="nav-link" data-scroll-target="#connectors">Connectors</a></li>
+  <li><a href="#semantic-functions" id="toc-semantic-functions" class="nav-link" data-scroll-target="#semantic-functions">Semantic functions</a></li>
+  <li><a href="#native-functions" id="toc-native-functions" class="nav-link" data-scroll-target="#native-functions">Native functions</a>
+  <ul class="collapse">
+  <li><a href="#loading-a-native-function-into-the-kernel" id="toc-loading-a-native-function-into-the-kernel" class="nav-link" data-scroll-target="#loading-a-native-function-into-the-kernel">Loading a native function into the kernel</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#plug-ins" id="toc-plug-ins" class="nav-link" data-scroll-target="#plug-ins">Plug-ins</a>
+  <ul class="collapse">
+  <li><a href="#example-directory-structure" id="toc-example-directory-structure" class="nav-link" data-scroll-target="#example-directory-structure">Example directory structure</a></li>
+  <li><a href="#an-example-config.json-file" id="toc-an-example-config.json-file" class="nav-link" data-scroll-target="#an-example-config.json-file">An example config.json file</a></li>
+  <li><a href="#an-example-skprompt.txt-file" id="toc-an-example-skprompt.txt-file" class="nav-link" data-scroll-target="#an-example-skprompt.txt-file">An example skprompt.txt file</a></li>
+  <li><a href="#loading-the-plugin-into-the-kernel" id="toc-loading-the-plugin-into-the-kernel" class="nav-link" data-scroll-target="#loading-the-plugin-into-the-kernel">Loading the plugin into the kernel</a></li>
+  </ul></li>
+  <li><a href="#calling-multiple-functions-in-sequence" id="toc-calling-multiple-functions-in-sequence" class="nav-link" data-scroll-target="#calling-multiple-functions-in-sequence">Calling multiple functions in sequence</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -179,10 +245,195 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
-<section id="getting-started-with-the-microsoft-semantic-kernel" class="level1">
-<h1>Getting Started with the Microsoft Semantic Kernel</h1>
-<p>The Microsoft Semantic Kernel is a semantic search engine that enables you to search for information in your organization based on concepts, rather than keywords. The Microsoft Semantic Kernel is a component of the Microsoft Enterprise Search Platform.</p>
-<p>The Microsoft Semantic Kernel is a semantic search engine that enables you to search for information in your organization based on concepts, rather than keywords. The Microsoft Semantic Kernel is a component of the Microsoft Enterprise Search Platform.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>The Microsoft Semantic Kernel is a thin, open-source, Software Development Toolkit to interact with AI services, mostly LLMs, and for now, mostly OpenAI.</p>
+<p>It was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing, initially in C#, but now extended to Python and Java and released to the developer community.</p>
+<p>In C#, Semantic Kernel has a few more features than Python, but Python is catching up fast. There are some features that only exist in Python at the moment (notably, HuggingFace models).</p>
+<section id="code-for-this-post" class="level2">
+<h2 class="anchored" data-anchor-id="code-for-this-post">Code for this post</h2>
+<p>The code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub).</p>
+</section>
+<section id="differences-from-langchain" class="level2">
+<h2 class="anchored" data-anchor-id="differences-from-langchain">Differences from LangChain</h2>
+<ul>
+<li>Semantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.</li>
+<li>If you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker.</li>
+<li>Semantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.</li>
+<li>If you use Python, you can use both.</li>
+<li>If you use JavaScript, you can use LangChain, but not Semantic Kernel.</li>
+<li>If you use Java or .NET, you can use Semantic Kernel, but not LangChain.</li>
+</ul>
+</section>
+</section>
+<section id="a-whirlwind-tour-through-semantic-kernel-in-python" class="level1">
+<h1>A whirlwind tour through Semantic Kernel in Python</h1>
+<p>In the post below, I’ll quickly show how to get started with Semantic Kernel in Python using an Azure subscription.</p>
+<section id="the-kernel" class="level2">
+<h2 class="anchored" data-anchor-id="the-kernel">The Kernel</h2>
+<p>The Semantic Kernel is just a lightweight object where you will attach everything you need to complete your AI tasks.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> semantic_kernel <span class="im">as</span> sk</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>kernel <span class="op">=</span> sk.Kernel()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="connectors" class="level2">
+<h2 class="anchored" data-anchor-id="connectors">Connectors</h2>
+<p>Connectors are the way you connect to AI services. You can connect multiple services to the same kernel, which allows you to perform a complex task using different services for each step.</p>
+<p>For example, my subscription has two models deployed: one deployment named <code>gpt35</code> the GPT 3.5 Turbo model and one deployment named <code>gpt4</code> for a deployment of the GPT-4 model. I can load both of them into the kernel with the code below:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> semantic_kernel.connectors.ai.open_ai <span class="im">import</span> AzureChatCompletion</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>gpt35 <span class="op">=</span> AzureChatCompletion(deployment_name<span class="op">=</span><span class="st">"gpt35"</span>, <span class="co"># yours may be different</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>endpoint<span class="op">=</span>OPENAI_ENDPOINT,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>api_key<span class="op">=</span>OPENAI_API_KEY)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>gpt4 <span class="op">=</span> AzureChatCompletion(</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    deployment_name<span class="op">=</span><span class="st">"gpt4"</span>, <span class="co"># yours may be different</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>endpoint<span class="op">=</span>OPENAI_ENDPOINT,</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>api_key<span class="op">=</span>OPENAI_API_KEY)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>kernel.add_chat_service(<span class="st">"gpt35"</span>, gpt35)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>kernel.add_chat_service(<span class="st">"gpt4"</span>, gpt4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="semantic-functions" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-functions">Semantic functions</h2>
+<p>Semantic functions are functions that use large language models to perform a task. The simple example below shows how to create a semantic function that tells a knock-knock joke.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="st">"""knock, knock? Who’s there? </span><span class="sc">{{</span><span class="st">$input</span><span class="sc">}}</span><span class="st">. </span><span class="sc">{{</span><span class="st">$input</span><span class="sc">}}</span><span class="st"> who?"""</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>knock <span class="op">=</span> kernel.create_semantic_function(prompt, temperature<span class="op">=</span><span class="fl">0.8</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> knock(“Dishes<span class="st">")</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="er">print</span>(response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The response will be something like <code>Dishes the police, open up!</code>.</p>
+</section>
+<section id="native-functions" class="level2">
+<h2 class="anchored" data-anchor-id="native-functions">Native functions</h2>
+<p>Native functions are regular Python functions. They can be used to perform any task that doesn’t require a large language model. For example, the code below classifies an image given a URL.</p>
+<p>The function uses the <code>timm</code> library to download a pre-trained model and classify the image. The <code>@sk_function</code> decorator tags the following function <code>classify_image</code> as a function that can be imported by the Semantic Kernel.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> PIL <span class="im">import</span> Image</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> timm</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> timm.data.imagenet_info <span class="im">import</span> ImageNetInfo</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> semantic_kernel.skill_definition <span class="im">import</span> sk_function</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> semantic_kernel.orchestration.sk_context <span class="im">import</span> SKContext</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ImageClassifierPlugin:</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="va">self</span>.model <span class="op">=</span> timm.create_model(<span class="st">"convnext_tiny.in12k_ft_in1k"</span>, pretrained<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="va">self</span>.model.<span class="bu">eval</span>()</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; data_config <span class="op">=</span> timm.data.resolve_model_data_config(<span class="va">self</span>.model)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="va">self</span>.transforms <span class="op">=</span> timm.data.create_transform(<span class="op">**</span>data_config, is_training<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="va">self</span>.imagenet_info <span class="op">=</span> ImageNetInfo()</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">@sk_function</span>(</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; description<span class="op">=</span><span class="st">"Takes a url as an input and classifies the image"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; name<span class="op">=</span><span class="st">"classify_image"</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; input_description<span class="op">=</span><span class="st">"The url of the image to classify"</span>,</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; <span class="kw">def</span> classify_image(<span class="va">self</span>, url: <span class="bu">str</span>) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; image <span class="op">=</span> <span class="va">self</span>.download_image(url)</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; pred <span class="op">=</span> <span class="va">self</span>.model(<span class="va">self</span>.transforms(image)[<span class="va">None</span>])</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; cls <span class="op">=</span> <span class="va">self</span>.imagenet_info.index_to_description(pred.argmax())</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; </span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> cls.split(<span class="st">","</span>)[<span class="dv">0</span>]</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; </span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  &nbsp; <span class="kw">def</span> download_image(<span class="va">self</span>, url):</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf">return</span> Image.<span class="bu">open</span>(requests.get(url, stream<span class="op">=</span><span class="va">True</span>).raw).convert(<span class="st">"RGB"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="loading-a-native-function-into-the-kernel" class="level3">
+<h3 class="anchored" data-anchor-id="loading-a-native-function-into-the-kernel">Loading a native function into the kernel</h3>
+<p>You can load native functions into the kernel with the <code>import_skill</code> method of the Kernel object.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>classify_plugin <span class="op">=</span> kernel.import_skill(image_classifier, skill_name<span class="op">=</span><span class="st">"classify_image"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The <code>classify_plugin</code> is a collection of functions. To call the <code>classify_image</code> function, you can use the code below:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>answer <span class="op">=</span> classify_plugin.classify_image(<span class="st">"https://links.meyerperin.com/tiger_jpg"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(answer)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For example, if I use the URL below as the parameter:</p>
+<p><code>https://links.meyerperin.com/tiger_jpg</code></p>
+<p><img src="http://2.bp.blogspot.com/-tG6z7DOsHNc/T6Z1DuzXs9I/AAAAAAAAGfY/YTmFDxw0Qxg/s320/animal+pictures+%252812%2529.jpg" class="img-fluid"></p>
+<p>The answer will be <code>tiger</code>.</p>
+</section>
+</section>
+</section>
+<section id="plug-ins" class="level1">
+<h1>Plug-ins</h1>
+<p>One of the greatest strengths of the Microsoft Semantic Kernel is the ability of creating plugins. Plugins are collections of functions that can be imported into the kernel.</p>
+<p>A semantic plugin is a collection of semantic functions. Each function should be in its own directory. Each directory should have two files: <code>config.json</code> and <code>skprompt.txt</code>.</p>
+<p>The <code>config.json</code> file contains the configuration of the semantic function: which is the preferred engine to use, the temperature, etc.</p>
+<p>The <code>skprompt.txt</code> file contains the prompt of the semantic function. The prompt is the text that will be sent to the engine to generate the response.</p>
+<section id="example-directory-structure" class="level2">
+<h2 class="anchored" data-anchor-id="example-directory-structure">Example directory structure</h2>
+<pre><code>└───plugins
+    └───jokes
+        ├───cross_the_road_joke
+        |   ├───config.json
+        |   └───skprompt.txt
+        └───knock_knock_joke
+            ├───config.json
+            └───skprompt.txt</code></pre>
+</section>
+<section id="an-example-config.json-file" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-config.json-file">An example config.json file</h2>
+<p>The configuration file below shows a possible configuration for a semantic function that generates knock-knock jokes. The <code>default_services</code> property is an array of the preferred engines to use. The <code>completion</code> property contains the parameters that will be sent to the engine. The <code>input</code> property contains the parameters that will be sent to the semantic function.</p>
+<p>I frequently use the <code>default_services</code> property to send simple tasks to cheaper services like GPT-3.5 and more complex tasks to more expensive services like GPT-4.</p>
+<p>The <code>description</code> field is important, because it can be used by the <code>Planner</code> function of the kernel, if you want to let the kernel itself select which functions to call.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"schema"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"type"</span><span class="fu">:</span> <span class="st">"completion"</span><span class="fu">,</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"description"</span><span class="fu">:</span> <span class="st">"Generates a knock-knock joke based on user input"</span><span class="fu">,</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"default_services"</span><span class="fu">:</span> <span class="ot">[</span><span class="st">"gpt35"</span><span class="ot">]</span><span class="fu">,</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">"completion"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"temperature"</span><span class="fu">:</span> <span class="fl">0.8</span><span class="fu">,</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"number_of_responses"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"top_p"</span><span class="fu">:</span> <span class="dv">1</span><span class="fu">,</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"max_tokens"</span><span class="fu">:</span> <span class="dv">4000</span><span class="fu">,</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"presence_penalty"</span><span class="fu">:</span> <span class="fl">0.0</span><span class="fu">,</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        <span class="dt">"frequency_penalty"</span><span class="fu">:</span> <span class="fl">0.0</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>       <span class="fu">},</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>       <span class="dt">"input"</span><span class="fu">:</span> <span class="fu">{</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>     <span class="dt">"parameters"</span><span class="fu">:</span> <span class="ot">[</span><span class="fu">{</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>      <span class="dt">"name"</span><span class="fu">:</span> <span class="st">"input"</span><span class="fu">,</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">"description"</span><span class="fu">:</span> <span class="st">"The topic that the joke should be written about"</span><span class="fu">,</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>      <span class="dt">"defaultValue"</span><span class="fu">:</span> <span class="st">"Dishes"</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>     <span class="fu">}</span><span class="ot">]</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="an-example-skprompt.txt-file" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-skprompt.txt-file">An example skprompt.txt file</h2>
+<p>The prompt below is the prompt for the semantic function that generates knock-knock jokes. The <code>{{$input}}</code> placeholder will be replaced by the value of the <code>input</code> parameter.</p>
+<pre class="text"><code>knock, knock? 
+Who's there? 
+{{$input}}. 
+{{$input}} who?
+
+
+Repeat the whole setup and finish the joke.</code></pre>
+</section>
+<section id="loading-the-plugin-into-the-kernel" class="level2">
+<h2 class="anchored" data-anchor-id="loading-the-plugin-into-the-kernel">Loading the plugin into the kernel</h2>
+<p>You can load all the functions that are inside a plugin directory with the <code>import_semantic_skill_from_directory</code> method of the kernel object.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>jokes_plugin <span class="op">=</span> kernel.import_semantic_skill_from_directory(<span class="st">"plugins"</span>, <span class="st">"jokes"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The resulting object is a dictionary of functions. You can load the functions into variables or call them directly.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>knock <span class="op">=</span> jokes_plugin[<span class="st">"knock_knock_joke"</span>]</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span> (knock(<span class="st">"Dishes"</span>))</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Dishes the police, open up!</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(jokes_plugin[<span class="st">"cross_the_road_joke"</span>](<span class="st">"Tiger"</span>))</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Why did the tiger cross the road? To show the chicken it can be done.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="calling-multiple-functions-in-sequence" class="level1">
+<h1>Calling multiple functions in sequence</h1>
+<p>As you saw before, we loaded the native function classify_image into the kernel. And in the block above, we loaded the jokes plugin into the kernel. We can call both functions in sequence with the code below:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>context <span class="op">=</span> kernel.create_new_context()</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>context[<span class="st">"input"</span>] <span class="op">=</span> url</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> <span class="cf">await</span> kernel.run_async(</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>    classify_plugin[<span class="st">"classify_image"</span>],</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>    jokes_plugin[<span class="st">"cross_the_road_joke"</span>],</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>    input_context<span class="op">=</span>context</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This code will call the first (native) function that classifies an image, and then call the second (semantic) function that generates a joke about the image. Since we loaded the image of a tiger, the response will be something like:</p>
+<p><code>Why did the tiger cross the road? To show the chicken it can be done.</code></p>
 
 
 </section>
