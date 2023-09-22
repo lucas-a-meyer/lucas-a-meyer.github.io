@@ -30,9 +30,9 @@ website:
           file: index.qmd
         - text: "Quarto with Python"
           href: /using-quarto
-        - text: "Midjourney Tour"
+        - text: "Quick tour of Midjourney"
           href: /midjourney
-        - text: "Semantic Kernel"
+        - text: "Quick tour of Semantic Kernel"
           href: /semantic-kernel
     right:
       - text: "{{< iconify fa6-brands threads >}}"

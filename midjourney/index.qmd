@@ -18,28 +18,26 @@ This is a tutorial on how to get started with Midjourney. While it's mostly base
 
 If you don't have a Discord account, you will have to [create one](https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started). Discord has apps for all major operating systems, mobile devices, and also a web app. Install all apps you think you're going to use. I frequently use the desktop app the most, but the mobile app is also very convenient and works surprisingly well for chatting with the Midjourney bot.
 
-## Step 2: Create your own Discord server
+## Step 2: An easier way: create your own server
 
 This is where my instructions are **very different** from the official guide. The official guide asks you to join the [Midjourney Discord server](https://discord.gg/2YJYJQ6Z) and chat with the Midjourney bot there. I don't recommend doing that. The Midjourney Discord server is very active and noisy, and you will get **a lot** of notifications from other people's conversations. It's also very easy to get lost in the sea of messages. You can work around that by [directly messaging the Midjourney bot](https://docs.midjourney.com/docs/direct-messages), but you will still have to configure the server settings to mute all channels and notifications.
 
-### An easier way: create your own server
-
 Although it may sound intimidating, creating your own server is very easy and it's mostly click-based. You can create a server for free, and you can create as many servers as you want. You can see detailed instructions [here](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-). Here's a quick summary:
 
-#### 1. Click the `+` button on the left sidebar to `Add a Server`
+### 1. Click the `+` button on the left sidebar to `Add a Server`
 
 ![](https://support.discord.com/hc/article_attachments/360058897831/Screen_Shot_2020-06-04_at_1.11.06_PM.png)
    
    
-#### 2. Select `Create a server`
+### 2. Select `Create a server`
 
 ![](https://support.discord.com/hc/article_attachments/360058273791/Capture.JPG)
    
-#### 3. Give your server a name and optionally an icon, and click `Create`
+### 3. Give your server a name and optionally an icon, and click `Create`
 
 ![](https://support.discord.com/hc/article_attachments/360058897871/Screen_Shot_2020-06-04_at_1.40.12_PM.png)
 
-#### 4. That's it!
+### 4. That's it!
 
 You have created your own server. Now you need to subscribe to Midjourney and invite the Midjourney bot to your server.
 

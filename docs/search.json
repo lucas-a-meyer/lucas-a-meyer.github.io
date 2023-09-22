@@ -1061,6 +1061,90 @@
     "href": "semantic-kernel/index.html",
     "title": "Getting Started with the Microsoft Semantic Kernel",
     "section": "",
-    "text": "Getting Started with the Microsoft Semantic Kernel\nThe Microsoft Semantic Kernel is a semantic search engine that enables you to search for information in your organization based on concepts, rather than keywords. The Microsoft Semantic Kernel is a component of the Microsoft Enterprise Search Platform.\nThe Microsoft Semantic Kernel is a semantic search engine that enables you to search for information in your organization based on concepts, rather than keywords. The Microsoft Semantic Kernel is a component of the Microsoft Enterprise Search Platform."
+    "text": "The Microsoft Semantic Kernel is a thin, open-source, Software Development Toolkit to interact with AI services, mostly LLMs, and for now, mostly OpenAI.\nIt was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing, initially in C#, but now extended to Python and Java and released to the developer community.\nIn C#, Semantic Kernel has a few more features than Python, but Python is catching up fast. There are some features that only exist in Python at the moment (notably, HuggingFace models).\n\n\nThe code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub).\n\n\n\n\nSemantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.\nIf you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#what-is-the-microsoft-semantic-kernel",
+    "href": "semantic-kernel/index.html#what-is-the-microsoft-semantic-kernel",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "",
+    "text": "It’s a thin, open-source, Software Development Toolkit to interact with AI services, mostly LLMs, and for now, mostly OpenAI.\nIt was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing, initially in C#, but now extended to Python and Java and released to the developer community.\nSK in C# has a few more features than Python, but Python is catching up fast. There are some features that only exist in Python at the moment (notably, HuggingFace models)."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#differences-from-langchain",
+    "href": "semantic-kernel/index.html#differences-from-langchain",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "",
+    "text": "Semantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.\nIf you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#the-kernel",
+    "href": "semantic-kernel/index.html#the-kernel",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "The Kernel",
+    "text": "The Kernel\nThe Semantic Kernel is just a lightweight object where you will attach everything you need to complete your AI tasks.\nimport semantic_kernel as sk\nkernel = sk.Kernel()"
+  },
+  {
+    "objectID": "semantic-kernel/index.html#connectors",
+    "href": "semantic-kernel/index.html#connectors",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "Connectors",
+    "text": "Connectors\nConnectors are the way you connect to AI services. You can connect multiple services to the same kernel, which allows you to perform a complex task using different services for each step.\nFor example, my subscription has two models deployed: one deployment named gpt35 the GPT 3.5 Turbo model and one deployment named gpt4 for a deployment of the GPT-4 model. I can load both of them into the kernel with the code below:\nfrom semantic_kernel.connectors.ai.open_ai import AzureChatCompletion\n\ngpt35 = AzureChatCompletion(deployment_name=\"gpt35\", # yours may be different\nendpoint=OPENAI_ENDPOINT,\napi_key=OPENAI_API_KEY)\n\ngpt4 = AzureChatCompletion(\n    deployment_name=\"gpt4\", # yours may be different\nendpoint=OPENAI_ENDPOINT,\napi_key=OPENAI_API_KEY)\n\nkernel.add_chat_service(\"gpt35\", gpt35)\nkernel.add_chat_service(\"gpt4\", gpt4)"
+  },
+  {
+    "objectID": "midjourney/index.html#step-2-an-easier-way-create-your-own-server",
+    "href": "midjourney/index.html#step-2-an-easier-way-create-your-own-server",
+    "title": "Getting Started with Midjourney",
+    "section": "Step 2: An easier way: create your own server",
+    "text": "Step 2: An easier way: create your own server\nThis is where my instructions are very different from the official guide. The official guide asks you to join the Midjourney Discord server and chat with the Midjourney bot there. I don’t recommend doing that. The Midjourney Discord server is very active and noisy, and you will get a lot of notifications from other people’s conversations. It’s also very easy to get lost in the sea of messages. You can work around that by directly messaging the Midjourney bot, but you will still have to configure the server settings to mute all channels and notifications.\nAlthough it may sound intimidating, creating your own server is very easy and it’s mostly click-based. You can create a server for free, and you can create as many servers as you want. You can see detailed instructions here. Here’s a quick summary:\n\n1. Click the + button on the left sidebar to Add a Server\n\n\n\n2. Select Create a server\n\n\n\n3. Give your server a name and optionally an icon, and click Create\n\n\n\n4. That’s it!\nYou have created your own server. Now you need to subscribe to Midjourney and invite the Midjourney bot to your server."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#semantic-functions",
+    "href": "semantic-kernel/index.html#semantic-functions",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "Semantic functions",
+    "text": "Semantic functions\nSemantic functions are functions that use large language models to perform a task. The simple example below shows how to create a semantic function that tells a knock-knock joke.\nprompt = \"\"\"knock, knock? Who’s there? {{$input}}. {{$input}} who?\"\"\"\n\nknock = kernel.create_semantic_function(prompt, temperature=0.8)\n\nresponse = knock(“Dishes\")\nprint(response)\nThe response will be something like Dishes the police, open up!."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#native-functions",
+    "href": "semantic-kernel/index.html#native-functions",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "Native functions",
+    "text": "Native functions\nNative functions are regular Python functions. They can be used to perform any task that doesn’t require a large language model. For example, the code below classifies an image given a URL.\nThe function uses the timm library to download a pre-trained model and classify the image. The @sk_function decorator tags the following function classify_image as a function that can be imported by the Semantic Kernel.\nimport requests\nfrom PIL import Image\nimport timm\nfrom timm.data.imagenet_info import ImageNetInfo\nfrom semantic_kernel.skill_definition import sk_function\nfrom semantic_kernel.orchestration.sk_context import SKContext\n\nclass ImageClassifierPlugin:\n    def __init__(self):\n        self.model = timm.create_model(\"convnext_tiny.in12k_ft_in1k\", pretrained=True)\n        self.model.eval()\n        data_config = timm.data.resolve_model_data_config(self.model)\n        self.transforms = timm.data.create_transform(**data_config, is_training=False)\n        self.imagenet_info = ImageNetInfo()\n\n    @sk_function(\n        description=\"Takes a url as an input and classifies the image\",\n        name=\"classify_image\",\n        input_description=\"The url of the image to classify\",\n    )\n    def classify_image(self, url: str) -&gt; str:\n        image = self.download_image(url)\n        pred = self.model(self.transforms(image)[None])\n        cls = self.imagenet_info.index_to_description(pred.argmax())\n        \n        return cls.split(\",\")[0]\n        \n    def download_image(self, url):\n        return Image.open(requests.get(url, stream=True).raw).convert(\"RGB\")\n\nLoading a native function into the kernel\nYou can load native functions into the kernel with the import_skill method of the Kernel object.\nclassify_plugin = kernel.import_skill(image_classifier, skill_name=\"classify_image\")\nThe classify_plugin is a collection of functions. To call the classify_image function, you can use the code below:\nanswer = classify_plugin.classify_image(\"https://links.meyerperin.com/tiger_jpg\")\nprint(answer)\nFor example, if I use the URL below as the parameter:\nhttps://links.meyerperin.com/tiger_jpg\n\nThe answer will be tiger."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#example-directory-structure",
+    "href": "semantic-kernel/index.html#example-directory-structure",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "Example directory structure",
+    "text": "Example directory structure\n└───plugins\n    └───jokes\n        ├───cross_the_road_joke\n        |   ├───config.json\n        |   └───skprompt.txt\n        └───knock_knock_joke\n            ├───config.json\n            └───skprompt.txt"
+  },
+  {
+    "objectID": "semantic-kernel/index.html#an-example-config.json-file",
+    "href": "semantic-kernel/index.html#an-example-config.json-file",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "An example config.json file",
+    "text": "An example config.json file\nThe configuration file below shows a possible configuration for a semantic function that generates knock-knock jokes. The default_services property is an array of the preferred engines to use. The completion property contains the parameters that will be sent to the engine. The input property contains the parameters that will be sent to the semantic function.\nI frequently use the default_services property to send simple tasks to cheaper services like GPT-3.5 and more complex tasks to more expensive services like GPT-4.\nThe description field is important, because it can be used by the Planner function of the kernel, if you want to let the kernel itself select which functions to call.\n{\n    \"schema\": 1,\n    \"type\": \"completion\",\n    \"description\": \"Generates a knock-knock joke based on user input\",\n    \"default_services\": [\"gpt35\"],\n    \"completion\": {\n        \"temperature\": 0.8,\n        \"number_of_responses\": 1,\n        \"top_p\": 1,\n        \"max_tokens\": 4000,\n        \"presence_penalty\": 0.0,\n        \"frequency_penalty\": 0.0\n       },\n       \"input\": {\n     \"parameters\": [{\n      \"name\": \"input\",\n      \"description\": \"The topic that the joke should be written about\",\n      \"defaultValue\": \"Dishes\"\n     }]\n    }\n}"
+  },
+  {
+    "objectID": "semantic-kernel/index.html#code-for-this-post",
+    "href": "semantic-kernel/index.html#code-for-this-post",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "",
+    "text": "The code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub)."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#an-example-skprompt.txt-file",
+    "href": "semantic-kernel/index.html#an-example-skprompt.txt-file",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "An example skprompt.txt file",
+    "text": "An example skprompt.txt file\nThe prompt below is the prompt for the semantic function that generates knock-knock jokes. The {{$input}} placeholder will be replaced by the value of the input parameter.\nknock, knock? \nWho's there? \n{{$input}}. \n{{$input}} who?\n\n\nRepeat the whole setup and finish the joke."
+  },
+  {
+    "objectID": "semantic-kernel/index.html#loading-the-plugin-into-the-kernel",
+    "href": "semantic-kernel/index.html#loading-the-plugin-into-the-kernel",
+    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "section": "Loading the plugin into the kernel",
+    "text": "Loading the plugin into the kernel\nYou can load all the functions that are inside a plugin directory with the import_semantic_skill_from_directory method of the kernel object.\njokes_plugin = kernel.import_semantic_skill_from_directory(\"plugins\", \"jokes\")\nThe resulting object is a dictionary of functions. You can load the functions into variables or call them directly.\nknock = jokes_plugin[\"knock_knock_joke\"]\nprint (knock(\"Dishes\"))\n# Dishes the police, open up!\n\nprint(jokes_plugin[\"cross_the_road_joke\"](\"Tiger\"))\n# Why did the tiger cross the road? To show the chicken it can be done."
   }
 ]
