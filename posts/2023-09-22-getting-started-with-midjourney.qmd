@@ -1,0 +1,19 @@
+---
+author: Lucas A. Meyer
+date: 2023-09-22 06:00:00
+description: How to get started with Midjourney, an Generative AI tool that is great
+  at creating photorealistic images.
+draft: false
+id: 50b3e21bac3b5df765df31fecb8ec77d
+image: https://mpsocial.blob.core.windows.net/blog-images/lucas-mj.png
+include-in-header: _msft-clarity.html
+linkedin-target-date: 2023-09-22 08:00:00
+post-url: https://www.meyerperin.com/posts/2023-09-22-getting-started-with-midjourney.html
+title: Getting started with Midjourney
+---
+I've added a new section to the blog, called [A Quick Tour of Midjourney](https://links.meyerperin.com/mj). 
+
+If you never used Midjourney before, or if you tried to use it but got quickly intimidated by the volume of messages in their Discord server, this will probably help.
+
+An important note: Midjourney is now a paid service, so you have to pay for a subscription (currently $10/month) to use it. There are no trials anymore.
+
