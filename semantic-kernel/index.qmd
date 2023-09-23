@@ -7,24 +7,25 @@ toc-expand: true
 
 # Introduction
 
-The Microsoft Semantic Kernel is a thin, open-source, Software Development Toolkit to interact with AI services, mostly LLMs, and for now, mostly OpenAI.
+The [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel) is a thin, open-source, software development toolkit that makes it easier for applications to interact with AI services.
 
-It was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing, initially in C#, but now extended to Python and Java and released to the developer community.
+It was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing. The initial version was in C#, but it has now been extended to Python and Java, and released to the developer community as an open-source package.
 
-In C#, Semantic Kernel has a few more features than Python, but Python is catching up fast. There are some features that only exist in Python at the moment (notably, HuggingFace models). 
+## Python code for this post
 
-## Code for this post
+The Python code for this post is [available in a notebook on GitHub](https://links.meyerperin.com/sktour).
 
-The code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub).
+In order to run the code of this post, you will need an [Azure subscription with access to the OpenAI API](https://azure.microsoft.com/en-us/products/ai-services/openai-service), or an OpenAI subscription. 
+
+Although you can get a [free trial for Azure](https://azure.microsoft.com/en-us/free/ai-services) that gives you many services, the OpenAI services in Azure are not free. You can see the prices [here](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/).
 
 
 ## Differences from LangChain
 
-- Semantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.
-- If you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker. 
+- Semantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.
 - Semantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.
-- If you use Python, you can use both. 
-- If you use JavaScript, you can use LangChain, but not Semantic Kernel.
+- If you use Python, you can use both LangChain and Semantic Kernel.
+- If you use JavaScript, you can use LangChain, but not Semantic Kernel. There's a community-supported TypeScript API for Semantic Kernel, but it's not officially supported by Microsoft.
 - If you use Java or .NET, you can use Semantic Kernel, but not LangChain.
 
 # A whirlwind tour through Semantic Kernel in Python
@@ -245,5 +246,10 @@ print(response)
 
 This code will call the first (native) function that classifies an image, and then call the second (semantic) function that generates a joke about the image. Since we loaded the image of a tiger, the response will be something like:
 
-`Why did the tiger cross the road? To show the chicken it can be done.`
+`Why did the tiger cross the road? To show the chicken it could be done.`
 
+# Conclusion
+
+I hope this brief tour helps you get started. If you want to learn more, you can check the [official documentation](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide/getting-started?tabs=python).
+
+You can also join the community [Discord server](https://aka.ms/SKDiscord).
