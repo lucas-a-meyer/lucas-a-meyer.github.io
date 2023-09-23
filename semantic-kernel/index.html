@@ -201,7 +201,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#code-for-this-post" id="toc-code-for-this-post" class="nav-link" data-scroll-target="#code-for-this-post">Code for this post</a></li>
+  <li><a href="#python-code-for-this-post" id="toc-python-code-for-this-post" class="nav-link" data-scroll-target="#python-code-for-this-post">Python code for this post</a></li>
   <li><a href="#differences-from-langchain" id="toc-differences-from-langchain" class="nav-link" data-scroll-target="#differences-from-langchain">Differences from LangChain</a></li>
   </ul></li>
   <li><a href="#a-whirlwind-tour-through-semantic-kernel-in-python" id="toc-a-whirlwind-tour-through-semantic-kernel-in-python" class="nav-link" data-scroll-target="#a-whirlwind-tour-through-semantic-kernel-in-python">A whirlwind tour through Semantic Kernel in Python</a>
@@ -222,6 +222,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   <li><a href="#loading-the-plugin-into-the-kernel" id="toc-loading-the-plugin-into-the-kernel" class="nav-link" data-scroll-target="#loading-the-plugin-into-the-kernel">Loading the plugin into the kernel</a></li>
   </ul></li>
   <li><a href="#calling-multiple-functions-in-sequence" id="toc-calling-multiple-functions-in-sequence" class="nav-link" data-scroll-target="#calling-multiple-functions-in-sequence">Calling multiple functions in sequence</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -247,21 +248,21 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The Microsoft Semantic Kernel is a thin, open-source, Software Development Toolkit to interact with AI services, mostly LLMs, and for now, mostly OpenAI.</p>
-<p>It was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing, initially in C#, but now extended to Python and Java and released to the developer community.</p>
-<p>In C#, Semantic Kernel has a few more features than Python, but Python is catching up fast. There are some features that only exist in Python at the moment (notably, HuggingFace models).</p>
-<section id="code-for-this-post" class="level2">
-<h2 class="anchored" data-anchor-id="code-for-this-post">Code for this post</h2>
-<p>The code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub).</p>
+<p>The <a href="https://github.com/microsoft/semantic-kernel">Microsoft Semantic Kernel</a> is a thin, open-source, software development toolkit that makes it easier for applications to interact with AI services.</p>
+<p>It was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing. The initial version was in C#, but it has now been extended to Python and Java, and released to the developer community as an open-source package.</p>
+<section id="python-code-for-this-post" class="level2">
+<h2 class="anchored" data-anchor-id="python-code-for-this-post">Python code for this post</h2>
+<p>The Python code for this post is <a href="https://links.meyerperin.com/sktour">available in a notebook on GitHub</a>.</p>
+<p>In order to run the code of this post, you will need an <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service">Azure subscription with access to the OpenAI API</a>, or an OpenAI subscription.</p>
+<p>Although you can get a <a href="https://azure.microsoft.com/en-us/free/ai-services">free trial for Azure</a> that gives you many services, the OpenAI services in Azure are not free. You can see the prices <a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/">here</a>.</p>
 </section>
 <section id="differences-from-langchain" class="level2">
 <h2 class="anchored" data-anchor-id="differences-from-langchain">Differences from LangChain</h2>
 <ul>
-<li>Semantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.</li>
-<li>If you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker.</li>
+<li>Semantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.</li>
 <li>Semantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.</li>
-<li>If you use Python, you can use both.</li>
-<li>If you use JavaScript, you can use LangChain, but not Semantic Kernel.</li>
+<li>If you use Python, you can use both LangChain and Semantic Kernel.</li>
+<li>If you use JavaScript, you can use LangChain, but not Semantic Kernel. There’s a community-supported TypeScript API for Semantic Kernel, but it’s not officially supported by Microsoft.</li>
 <li>If you use Java or .NET, you can use Semantic Kernel, but not LangChain.</li>
 </ul>
 </section>
@@ -433,7 +434,12 @@ Repeat the whole setup and finish the joke.</code></pre>
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This code will call the first (native) function that classifies an image, and then call the second (semantic) function that generates a joke about the image. Since we loaded the image of a tiger, the response will be something like:</p>
-<p><code>Why did the tiger cross the road? To show the chicken it can be done.</code></p>
+<p><code>Why did the tiger cross the road? To show the chicken it could be done.</code></p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>I hope this brief tour helps you get started. If you want to learn more, you can check the <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide/getting-started?tabs=python">official documentation</a>.</p>
+<p>You can also join the community <a href="https://aka.ms/SKDiscord">Discord server</a>.</p>
 
 
 </section>

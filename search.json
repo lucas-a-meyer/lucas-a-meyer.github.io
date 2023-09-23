@@ -1061,21 +1061,21 @@
     "href": "semantic-kernel/index.html",
     "title": "Getting Started with the Microsoft Semantic Kernel",
     "section": "",
-    "text": "The Microsoft Semantic Kernel is a thin, open-source, Software Development Toolkit to interact with AI services, mostly LLMs, and for now, mostly OpenAI.\nIt was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing, initially in C#, but now extended to Python and Java and released to the developer community.\nIn C#, Semantic Kernel has a few more features than Python, but Python is catching up fast. There are some features that only exist in Python at the moment (notably, HuggingFace models).\n\n\nThe code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub).\n\n\n\n\nSemantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.\nIf you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
+    "text": "The Microsoft Semantic Kernel is a thin, open-source, software development toolkit that makes it easier for applications to interact with AI services.\nIt was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing. The initial version was in C#, but it has now been extended to Python and Java, and released to the developer community as an open-source package.\n\n\nThe Python code for this post is available in a notebook on GitHub.\nIn order to run the code of this post, you will need an Azure subscription with access to the OpenAI API, or an OpenAI subscription.\nAlthough you can get a free trial for Azure that gives you many services, the OpenAI services in Azure are not free. You can see the prices here.\n\n\n\n\nSemantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both LangChain and Semantic Kernel.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel. There’s a community-supported TypeScript API for Semantic Kernel, but it’s not officially supported by Microsoft.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
   },
   {
-    "objectID": "semantic-kernel/index.html#code-for-this-post",
-    "href": "semantic-kernel/index.html#code-for-this-post",
+    "objectID": "semantic-kernel/index.html#python-code-for-this-post",
+    "href": "semantic-kernel/index.html#python-code-for-this-post",
     "title": "Getting Started with the Microsoft Semantic Kernel",
     "section": "",
-    "text": "The code for this post is available on GitHub at https://links.meyerperin.com/sktour (this link redirects to GitHub)."
+    "text": "The Python code for this post is available in a notebook on GitHub.\nIn order to run the code of this post, you will need an Azure subscription with access to the OpenAI API, or an OpenAI subscription.\nAlthough you can get a free trial for Azure that gives you many services, the OpenAI services in Azure are not free. You can see the prices here."
   },
   {
     "objectID": "semantic-kernel/index.html#differences-from-langchain",
     "href": "semantic-kernel/index.html#differences-from-langchain",
     "title": "Getting Started with the Microsoft Semantic Kernel",
     "section": "",
-    "text": "Semantic Kernel was designed to be more customizable than LangChain. This gives you more control but requires more coding.\nIf you only need LLM functionality, LangChain will probably get you to a prototype or MVP quicker.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
+    "text": "Semantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both LangChain and Semantic Kernel.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel. There’s a community-supported TypeScript API for Semantic Kernel, but it’s not officially supported by Microsoft.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
   },
   {
     "objectID": "semantic-kernel/index.html#the-kernel",
