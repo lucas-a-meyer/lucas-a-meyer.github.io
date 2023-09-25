@@ -3,6 +3,7 @@ title: "Getting Started with the Microsoft Semantic Kernel"
 page-layout: full
 toc: true
 toc-expand: true
+include-in-header: _msft-clarity.html
 ---
 
 # Introduction
