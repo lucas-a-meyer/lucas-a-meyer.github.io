@@ -6,6 +6,13 @@
   {
     "listing": "/index.html",
     "items": [
+      "/pages/midjourney.html",
+      "/pages/semantic_kernel.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
       "/posts/2023-09-22-getting-started-with-midjourney.html",
       "/posts/2023-06-18-fathers-day.html",
       "/posts/2023-06-11-ab-tests.html",

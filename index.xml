@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Lucas A. Meyer</title>
+<link>https://www.meyerperin.com/index.html</link>
+<atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
+<description>Lucas A. Meyer&#39;s blog</description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Thu, 21 Dec 2023 05:45:39 GMT</lastBuildDate>
+<item>
+  <title>Getting Started with Midjourney</title>
+  <link>https://www.meyerperin.com/pages/midjourney.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p><a href="https://www.midjourney.com/">Midjourney</a> is a generative AI tool that can generate high quality images from text prompts. It is particularly good at generating photorealistic images, and also good at blending an existing picture with a prompt. Lots of people use Midjourney as a digital diary, or to quickly create images for their social media and blog posts.</p>
+<p>One unique characteristic of Midjourney is that its interface is only available on <a href="https://discord.com/">Discord</a>, a popular chat app. In order to create images, you have to chat with the Midjourney bot on a Discord server.</p>
+<p>This is a tutorial on how to get started with Midjourney. While it’s mostly based on the <a href="https://docs.midjourney.com/docs/quick-start">official Midjourney getting started guide</a>, I have added a few suggestions that made my life much easier, especially my Step 2. Hopefully will help you, too.</p>
+</section>
+<section id="installing-midjourney" class="level1">
+<h1>Installing Midjourney</h1>
+<section id="step-1-log-in-to-discord" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-log-in-to-discord">Step 1: Log in to Discord</h2>
+<p>If you don’t have a Discord account, you will have to <a href="https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started">create one</a>. Discord has apps for all major operating systems, mobile devices, and also a web app. Install all apps you think you’re going to use. I frequently use the desktop app the most, but the mobile app is also very convenient and works surprisingly well for chatting with the Midjourney bot.</p>
+</section>
+<section id="step-2-an-easier-way-create-your-own-server" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-an-easier-way-create-your-own-server">Step 2: An easier way: create your own server</h2>
+<p>This is where my instructions are <strong>very different</strong> from the official guide. The official guide asks you to join the <a href="https://discord.gg/2YJYJQ6Z">Midjourney Discord server</a> and chat with the Midjourney bot there. I don’t recommend doing that. The Midjourney Discord server is very active and noisy, and you will get <strong>a lot</strong> of notifications from other people’s conversations. It’s also very easy to get lost in the sea of messages. You can work around that by <a href="https://docs.midjourney.com/docs/direct-messages">directly messaging the Midjourney bot</a>, but you will still have to configure the server settings to mute all channels and notifications.</p>
+<p>Although it may sound intimidating, creating your own server is very easy and it’s mostly click-based. You can create a server for free, and you can create as many servers as you want. You can see detailed instructions <a href="https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-">here</a>. Here’s a quick summary:</p>
+<section id="click-the-button-on-the-left-sidebar-to-add-a-server" class="level3">
+<h3 class="anchored" data-anchor-id="click-the-button-on-the-left-sidebar-to-add-a-server">1. Click the <code>+</code> button on the left sidebar to <code>Add a Server</code></h3>
+<p><img src="https://www.meyerperin.com/pages/https:/support.discord.com/hc/article_attachments/360058897831/Screen_Shot_2020-06-04_at_1.11.06_PM.png" class="img-fluid"></p>
+</section>
+<section id="select-create-a-server" class="level3">
+<h3 class="anchored" data-anchor-id="select-create-a-server">2. Select <code>Create a server</code></h3>
+<p><img src="https://www.meyerperin.com/pages/https:/support.discord.com/hc/article_attachments/360058273791/Capture.JPG" class="img-fluid"></p>
+</section>
+<section id="give-your-server-a-name-and-optionally-an-icon-and-click-create" class="level3">
+<h3 class="anchored" data-anchor-id="give-your-server-a-name-and-optionally-an-icon-and-click-create">3. Give your server a name and optionally an icon, and click <code>Create</code></h3>
+<p><img src="https://www.meyerperin.com/pages/https:/support.discord.com/hc/article_attachments/360058897871/Screen_Shot_2020-06-04_at_1.40.12_PM.png" class="img-fluid"></p>
+</section>
+<section id="thats-it" class="level3">
+<h3 class="anchored" data-anchor-id="thats-it">4. That’s it!</h3>
+<p>You have created your own server. Now you need to subscribe to Midjourney and invite the Midjourney bot to your server.</p>
+</section>
+</section>
+<section id="step-3-subscribe-to-midjourney" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-subscribe-to-midjourney">Step 3: Subscribe to Midjourney</h2>
+<p>This is the hard part. There are no free trials anymore, and you need a paid subscription in order to use Midjourney.</p>
+<ul>
+<li>Visit <a href="https://midjourney.com/account">Midjourney.com/account</a>.</li>
+<li>Sign in using your <strong>verified</strong> Discord account.</li>
+<li>Select a subscription tier and click <code>Subscribe</code>.</li>
+</ul>
+<p>The least expensive subscription is good for most purposes, and I suggest you use that one to get started. This will give you about three hours of server time per month, and you lose what you don’t use. Even though I use Midjourney a lot, I rarely use up all my server time. You <strong>can</strong> top off if you need.</p>
+<p><img src="https://www.meyerperin.com/pages/https:/cdn.document360.io/3040c2b6-fead-4744-a3a9-d56d621c6c7e/Images/Documentation/MJ_SubscriptionTiers.png" class="img-fluid"></p>
+</section>
+<section id="step-4-invite-the-midjourney-bot-to-your-server" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-invite-the-midjourney-bot-to-your-server">Step 4: Invite the Midjourney bot to your server</h2>
+<p>Now that you have a server and a subscription, you need to invite the Midjourney bot to your server. This is also very easy, and done mostly by clicking.</p>
+<ol type="1">
+<li><p>In the left sidebar, right-click your server and select <code>App catalog</code> <img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-1.png" class="img-fluid"></p></li>
+<li><p>Search for <code>Midjourney</code>, select <code>Midjourney Bot</code>, and click <code>Add to server</code> <img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-2.png" class="img-fluid"></p></li>
+</ol>
+<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-3.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Select your server from the dropdown, and click <code>Continue</code>, and then <code>Authorize</code>. <img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-4.png" class="img-fluid"></li>
+</ol>
+<p>You can now start using Midjourney in your own.</p>
+</section>
+</section>
+<section id="basic-usage-of-midjourney" class="level1">
+<h1>Basic usage of Midjourney</h1>
+<p>Now that Midjourney is installed on your server, you can start using it. I just send direct messages to it by right-clicking it and selecting <code>Message</code>.</p>
+<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-5.png" class="img-fluid"></p>
+<p>The official guide has a <a href="https://docs.midjourney.com/docs/quick-start">very good introduction</a> to the basic usage of Midjourney, starting on step 5. I will just summarize the main command <code>imagine</code> here, and show you an example of how you can use your own image as a starting point.</p>
+<section id="the-imagine-command" class="level2">
+<h2 class="anchored" data-anchor-id="the-imagine-command">The <code>imagine</code> command</h2>
+<p>The <code>imagine</code> command is the main command you will use to generate images. It takes a prompt as input, and generates an image based on the prompt. The prompt can be a few words, a sentence, or even a paragraph. The longer the prompt, the more specific the image will be.</p>
+<p>There are a lot of prompting techniques, and I will not go into details here. You can find a lot of examples in the <a href="https://docs.midjourney.com/docs/explore-prompting">official guide</a>.</p>
+<p>Here’s a quick example:</p>
+<p><code>/imagine standard schnauzer sleeping on a computer keyboard</code></p>
+<p>Midjourney by default will reply with four suggestions. Their numbers start on the top left and go clockwise. There will be some buttons under the suggestions, labeled U1, U2, U3, U4 and V1, V2, V3, V4.</p>
+<p>You can click on the U buttons to upscale (increase the resolution) of a picture you liked, and click on the V buttons to see more variations of the current suggestion. If you’re going to use the image for social media, I suggest you upscale it before downloading.</p>
+<p>There’s also a button to regenerate all images if you don’t like any of the suggestions. Here’s what I got:</p>
+<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-6.png" class="img-fluid"></p>
+<p>I like the second one, so I clicked on the U2 button to upscale it. Then I clicked on the download button to download the image. Here’s the final result:</p>
+<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-7.png" class="img-fluid"></p>
+</section>
+<section id="using-an-existing-image" class="level2">
+<h2 class="anchored" data-anchor-id="using-an-existing-image">Using an existing image</h2>
+<p>You can use an existing image with the <code>/imagine</code> command. I frequently use my own headshot and ask Midjourney to put me in some weird place or situation. In order for Midjourney to use your image, you need to upload it to the web first and give Midjourney the URL. I have my own server, but you can also upload your image to Discord and use the URL Discord gives you, or upload it to GitHub. There are plenty of other services you can use, too, like <a href="https://imgur.com/">Imgur</a>.</p>
+<p>My headshot is at <code>https://links.meyerperin.com/headshot</code>.</p>
+<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/lucas_new_headshot.png" class="img-fluid"></p>
+<p>I can use it with the <code>/imagine</code> command like this:</p>
+<p><code>/imagine https://links.meyerperin.com/headshot as Batman in Gotham City</code></p>
+<p>And here is the final result:</p>
+<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/another-lucas-batman.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>I hope this tutorial helped you get started with Midjourney. If you have any questions, please feel free to drop me a message using my socials above (LinkedIn and Threads are my preferred ones).</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/pages/midjourney.html</guid>
+  <pubDate>Thu, 21 Dec 2023 05:45:39 GMT</pubDate>
+</item>
+<item>
+  <title>Getting Started with the Microsoft Semantic Kernel</title>
+  <link>https://www.meyerperin.com/pages/semantic_kernel.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>The <a href="https://github.com/microsoft/semantic-kernel">Microsoft Semantic Kernel</a> is a thin, open-source, software development toolkit that makes it easier for applications to interact with AI services.</p>
+<p>It was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing. The initial version was in C#, but it has now been extended to Python and Java, and released to the developer community as an open-source package.</p>
+<section id="python-code-for-this-post" class="level2">
+<h2 class="anchored" data-anchor-id="python-code-for-this-post">Python code for this post</h2>
+<p>The Python code for this post is <a href="https://links.meyerperin.com/sktour">available in a notebook on GitHub</a>.</p>
+<p>In order to run the code of this post, you will need an <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service">Azure subscription with access to the OpenAI API</a>, or an OpenAI subscription.</p>
+<p>Although you can get a <a href="https://azure.microsoft.com/en-us/free/ai-services">free trial for Azure</a> that gives you many services, the OpenAI services in Azure are not free. You can see the prices <a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/">here</a>.</p>
+</section>
+<section id="differences-from-langchain" class="level2">
+<h2 class="anchored" data-anchor-id="differences-from-langchain">Differences from LangChain</h2>
+<ul>
+<li>Semantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.</li>
+<li>Semantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.</li>
+<li>If you use Python, you can use both LangChain and Semantic Kernel.</li>
+<li>If you use JavaScript, you can use LangChain, but not Semantic Kernel. There’s a community-supported TypeScript API for Semantic Kernel, but it’s not officially supported by Microsoft.</li>
+<li>If you use Java or .NET, you can use Semantic Kernel, but not LangChain.</li>
+</ul>
+</section>
+</section>
+<section id="a-whirlwind-tour-through-semantic-kernel-in-python" class="level1">
+<h1>A whirlwind tour through Semantic Kernel in Python</h1>
+<p>In the post below, I’ll quickly show how to get started with Semantic Kernel in Python using an Azure subscription.</p>
+<section id="the-kernel" class="level2">
+<h2 class="anchored" data-anchor-id="the-kernel">The Kernel</h2>
+<p>The Semantic Kernel is just a lightweight object where you will attach everything you need to complete your AI tasks.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> semantic_kernel <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> sk</span>
+<span id="cb1-2">kernel <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sk.Kernel()</span></code></pre></div>
+</section>
+<section id="connectors" class="level2">
+<h2 class="anchored" data-anchor-id="connectors">Connectors</h2>
+<p>Connectors are the way you connect to AI services. You can connect multiple services to the same kernel, which allows you to perform a complex task using different services for each step.</p>
+<p>For example, my subscription has two models deployed: one deployment named <code>gpt35</code> the GPT 3.5 Turbo model and one deployment named <code>gpt4</code> for a deployment of the GPT-4 model. I can load both of them into the kernel with the code below:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> semantic_kernel.connectors.ai.open_ai <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> AzureChatCompletion</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">gpt35 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> AzureChatCompletion(deployment_name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt35"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># yours may be different</span></span>
+<span id="cb2-4">endpoint<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>OPENAI_ENDPOINT,</span>
+<span id="cb2-5">api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>OPENAI_API_KEY)</span>
+<span id="cb2-6"></span>
+<span id="cb2-7">gpt4 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> AzureChatCompletion(</span>
+<span id="cb2-8">    deployment_name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt4"</span>, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># yours may be different</span></span>
+<span id="cb2-9">endpoint<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>OPENAI_ENDPOINT,</span>
+<span id="cb2-10">api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>OPENAI_API_KEY)</span>
+<span id="cb2-11"></span>
+<span id="cb2-12">kernel.add_chat_service(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt35"</span>, gpt35)</span>
+<span id="cb2-13">kernel.add_chat_service(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt4"</span>, gpt4)</span></code></pre></div>
+</section>
+<section id="semantic-functions" class="level2">
+<h2 class="anchored" data-anchor-id="semantic-functions">Semantic functions</h2>
+<p>Semantic functions are functions that use large language models to perform a task. The simple example below shows how to create a semantic function that tells a knock-knock joke.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">prompt <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"""knock, knock? Who’s there? </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{{</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">$input</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}}</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">. </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{{</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">$input</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}}</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;"> who?"""</span></span>
+<span id="cb3-2"></span>
+<span id="cb3-3">knock <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.create_semantic_function(prompt, temperature<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.8</span>)</span>
+<span id="cb3-4"></span>
+<span id="cb3-5">response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> knock(“Dishes<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">")</span></span>
+<span id="cb3-6"><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">print</span>(response)</span></code></pre></div>
+<p>The response will be something like <code>Dishes the police, open up!</code>.</p>
+</section>
+<section id="native-functions" class="level2">
+<h2 class="anchored" data-anchor-id="native-functions">Native functions</h2>
+<p>Native functions are regular Python functions. They can be used to perform any task that doesn’t require a large language model. For example, the code below classifies an image given a URL.</p>
+<p>The function uses the <code>timm</code> library to download a pre-trained model and classify the image. The <code>@sk_function</code> decorator tags the following function <code>classify_image</code> as a function that can be imported by the Semantic Kernel.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb4-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> PIL <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> Image</span>
+<span id="cb4-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> timm</span>
+<span id="cb4-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> timm.data.imagenet_info <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> ImageNetInfo</span>
+<span id="cb4-5"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> semantic_kernel.skill_definition <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> sk_function</span>
+<span id="cb4-6"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> semantic_kernel.orchestration.sk_context <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> SKContext</span>
+<span id="cb4-7"></span>
+<span id="cb4-8"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">class</span> ImageClassifierPlugin:</span>
+<span id="cb4-9">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">__init__</span>(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>):</span>
+<span id="cb4-10">&nbsp; &nbsp; &nbsp; &nbsp; <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.model <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> timm.create_model(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"convnext_tiny.in12k_ft_in1k"</span>, pretrained<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>)</span>
+<span id="cb4-11">&nbsp; &nbsp; &nbsp; &nbsp; <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.model.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">eval</span>()</span>
+<span id="cb4-12">&nbsp; &nbsp; &nbsp; &nbsp; data_config <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> timm.data.resolve_model_data_config(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.model)</span>
+<span id="cb4-13">&nbsp; &nbsp; &nbsp; &nbsp; <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.transforms <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> timm.data.create_transform(<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span>data_config, is_training<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>)</span>
+<span id="cb4-14">&nbsp; &nbsp; &nbsp; &nbsp; <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.imagenet_info <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> ImageNetInfo()</span>
+<span id="cb4-15"></span>
+<span id="cb4-16">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@sk_function</span>(</span>
+<span id="cb4-17">&nbsp; &nbsp; &nbsp; &nbsp; description<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Takes a url as an input and classifies the image"</span>,</span>
+<span id="cb4-18">&nbsp; &nbsp; &nbsp; &nbsp; name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"classify_image"</span>,</span>
+<span id="cb4-19">&nbsp; &nbsp; &nbsp; &nbsp; input_description<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The url of the image to classify"</span>,</span>
+<span id="cb4-20">    )</span>
+<span id="cb4-21">&nbsp; &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> classify_image(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, url: <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>:</span>
+<span id="cb4-22">&nbsp; &nbsp; &nbsp; &nbsp; image <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.download_image(url)</span>
+<span id="cb4-23">&nbsp; &nbsp; &nbsp; &nbsp; pred <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.model(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.transforms(image)[<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>])</span>
+<span id="cb4-24">&nbsp; &nbsp; &nbsp; &nbsp; cls <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>.imagenet_info.index_to_description(pred.argmax())</span>
+<span id="cb4-25">&nbsp; &nbsp; &nbsp; &nbsp; </span>
+<span id="cb4-26">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> cls.split(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">","</span>)[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>]</span>
+<span id="cb4-27">&nbsp; &nbsp; &nbsp; &nbsp; </span>
+<span id="cb4-28">  &nbsp; <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> download_image(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, url):</span>
+<span id="cb4-29">&nbsp; &nbsp; &nbsp; &nbsp; <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> Image.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">open</span>(requests.get(url, stream<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>).raw).convert(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"RGB"</span>)</span></code></pre></div>
+<section id="loading-a-native-function-into-the-kernel" class="level3">
+<h3 class="anchored" data-anchor-id="loading-a-native-function-into-the-kernel">Loading a native function into the kernel</h3>
+<p>You can load native functions into the kernel with the <code>import_skill</code> method of the Kernel object.</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1">classify_plugin <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.import_skill(image_classifier, skill_name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"classify_image"</span>)</span></code></pre></div>
+<p>The <code>classify_plugin</code> is a collection of functions. To call the <code>classify_image</code> function, you can use the code below:</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">answer <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> classify_plugin.classify_image(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://links.meyerperin.com/tiger_jpg"</span>)</span>
+<span id="cb6-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(answer)</span></code></pre></div>
+<p>For example, if I use the URL below as the parameter:</p>
+<p><code>https://links.meyerperin.com/tiger_jpg</code></p>
+<p><img src="https://www.meyerperin.com/pages/http:/2.bp.blogspot.com/-tG6z7DOsHNc/T6Z1DuzXs9I/AAAAAAAAGfY/YTmFDxw0Qxg/s320/animal+pictures+%252812%2529.jpg" class="img-fluid"></p>
+<p>The answer will be <code>tiger</code>.</p>
+</section>
+</section>
+</section>
+<section id="plug-ins" class="level1">
+<h1>Plug-ins</h1>
+<p>One of the greatest strengths of the Microsoft Semantic Kernel is the ability of creating plugins. Plugins are collections of functions that can be imported into the kernel.</p>
+<p>A semantic plugin is a collection of semantic functions. Each function should be in its own directory. Each directory should have two files: <code>config.json</code> and <code>skprompt.txt</code>.</p>
+<p>The <code>config.json</code> file contains the configuration of the semantic function: which is the preferred engine to use, the temperature, etc.</p>
+<p>The <code>skprompt.txt</code> file contains the prompt of the semantic function. The prompt is the text that will be sent to the engine to generate the response.</p>
+<section id="example-directory-structure" class="level2">
+<h2 class="anchored" data-anchor-id="example-directory-structure">Example directory structure</h2>
+<pre><code>└───plugins
+    └───jokes
+        ├───cross_the_road_joke
+        |   ├───config.json
+        |   └───skprompt.txt
+        └───knock_knock_joke
+            ├───config.json
+            └───skprompt.txt</code></pre>
+</section>
+<section id="an-example-config.json-file" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-config.json-file">An example config.json file</h2>
+<p>The configuration file below shows a possible configuration for a semantic function that generates knock-knock jokes. The <code>default_services</code> property is an array of the preferred engines to use. The <code>completion</code> property contains the parameters that will be sent to the engine. The <code>input</code> property contains the parameters that will be sent to the semantic function.</p>
+<p>I frequently use the <code>default_services</code> property to send simple tasks to cheaper services like GPT-3.5 and more complex tasks to more expensive services like GPT-4.</p>
+<p>The <code>description</code> field is important, because it can be used by the <code>Planner</code> function of the kernel, if you want to let the kernel itself select which functions to call.</p>
+<div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb8-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">{</span></span>
+<span id="cb8-2">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"schema"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-3">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"type"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"completion"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-4">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"description"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Generates a knock-knock joke based on user input"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-5">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"default_services"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">[</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt35"</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">]</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-6">    <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"completion"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">{</span></span>
+<span id="cb8-7">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"temperature"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.8</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-8">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"number_of_responses"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-9">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"top_p"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-10">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"max_tokens"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4000</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-11">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"presence_penalty"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.0</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-12">        <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"frequency_penalty"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.0</span></span>
+<span id="cb8-13">       <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">},</span></span>
+<span id="cb8-14">       <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"input"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">{</span></span>
+<span id="cb8-15">     <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"parameters"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">[</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">{</span></span>
+<span id="cb8-16">      <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"name"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"input"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-17">      <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"description"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The topic that the joke should be written about"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb8-18">      <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">"defaultValue"</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">:</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Dishes"</span></span>
+<span id="cb8-19">     <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">}</span><span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">]</span></span>
+<span id="cb8-20">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb8-21"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">}</span></span></code></pre></div>
+</section>
+<section id="an-example-skprompt.txt-file" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-skprompt.txt-file">An example skprompt.txt file</h2>
+<p>The prompt below is the prompt for the semantic function that generates knock-knock jokes. The <code>{{$input}}</code> placeholder will be replaced by the value of the <code>input</code> parameter.</p>
+<pre class="text"><code>knock, knock? 
+Who's there? 
+{{$input}}. 
+{{$input}} who?
+
+
+Repeat the whole setup and finish the joke.</code></pre>
+</section>
+<section id="loading-the-plugin-into-the-kernel" class="level2">
+<h2 class="anchored" data-anchor-id="loading-the-plugin-into-the-kernel">Loading the plugin into the kernel</h2>
+<p>You can load all the functions that are inside a plugin directory with the <code>import_semantic_skill_from_directory</code> method of the kernel object.</p>
+<div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1">jokes_plugin <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.import_semantic_skill_from_directory(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"plugins"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"jokes"</span>)</span></code></pre></div>
+<p>The resulting object is a dictionary of functions. You can load the functions into variables or call them directly.</p>
+<div class="sourceCode" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1">knock <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> jokes_plugin[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"knock_knock_joke"</span>]</span>
+<span id="cb11-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span> (knock(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Dishes"</span>))</span>
+<span id="cb11-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Dishes the police, open up!</span></span>
+<span id="cb11-4"></span>
+<span id="cb11-5"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(jokes_plugin[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"cross_the_road_joke"</span>](<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Tiger"</span>))</span>
+<span id="cb11-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Why did the tiger cross the road? To show the chicken it can be done.</span></span></code></pre></div>
+</section>
+</section>
+<section id="calling-multiple-functions-in-sequence" class="level1">
+<h1>Calling multiple functions in sequence</h1>
+<p>As you saw before, we loaded the native function classify_image into the kernel. And in the block above, we loaded the jokes plugin into the kernel. We can call both functions in sequence with the code below:</p>
+<div class="sourceCode" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1">context <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.create_new_context()</span>
+<span id="cb12-2">context[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"input"</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> url</span>
+<span id="cb12-3"></span>
+<span id="cb12-4">response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">await</span> kernel.run_async(</span>
+<span id="cb12-5">    classify_plugin[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"classify_image"</span>],</span>
+<span id="cb12-6">    jokes_plugin[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"cross_the_road_joke"</span>],</span>
+<span id="cb12-7">    input_context<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>context</span>
+<span id="cb12-8">)</span>
+<span id="cb12-9"></span>
+<span id="cb12-10"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(response)</span></code></pre></div>
+<p>This code will call the first (native) function that classifies an image, and then call the second (semantic) function that generates a joke about the image. Since we loaded the image of a tiger, the response will be something like:</p>
+<p><code>Why did the tiger cross the road? To show the chicken it could be done.</code></p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>I hope this brief tour helps you get started. If you want to learn more, you can check the <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide/getting-started?tabs=python">official documentation</a>.</p>
+<p>You can also join the community <a href="https://aka.ms/SKDiscord">Discord server</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/pages/semantic_kernel.html</guid>
+  <pubDate>Thu, 21 Dec 2023 05:45:39 GMT</pubDate>
+</item>
+</channel>
+</rss>
