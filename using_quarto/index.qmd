@@ -20,14 +20,12 @@ Folowing the spirit of ["learning out loud"](https://www.meyerperin.com/2019-02-
 
 I created one main content file [(source)](https://github.com/lucas-a-meyer/using-quarto/blob/main/_presentation-content.qmd) that imports lots of other topic-based [files](https://github.com/lucas-a-meyer/using-quarto/tree/main/slides), to create:
 
-- A RevealJS [presentation](/presentation.html)
-- A [PowerPoint presentation](/presentation.pptx) that uses my team's template
+- A RevealJS [presentation](presentation.html)
+- A [PowerPoint presentation](presentation.pptx) that uses my team's template
 - This website, starting after the "Why Quarto" header below [(source)](https://github.com/lucas-a-meyer/using-quarto/blob/main/index.qmd)
 
-I also reused some of the content above in another Quarto file [(source)](https://github.com/lucas-a-meyer/using-quarto/blob/main/article.qmd) to create:
+I also reused some of the content above in another Quarto file [(source)](https://github.com/lucas-a-meyer/using-quarto/blob/main/article.qmd) to create a scholarly-looking [article](article.pdf) in PDF using LaTeX
 
-- A scholarly-looking [article](/article.pdf) in PDF using LaTeX
-- A scholarly-looking [document](/article.docx) using Microsoft Word
 
 The content below tells why I chose Quarto and how I use it with Python.
 

@@ -32,7 +32,7 @@ website:
       - text: "Blog"
         file: blog.qmd
       - text: "Using Quarto"
-        file: using_quarto/using-quarto.qmd
+        file: using_quarto/index.qmd
     right:
       - text: "{{< iconify fa6-brands threads >}}"
         href: https://threads.net/@lucas_a_meyer

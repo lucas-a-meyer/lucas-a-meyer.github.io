@@ -1,0 +1,67 @@
+---
+title: "Using Quarto for reproducible article writing"
+format:
+    pdf:
+        documentclass: scrartcl
+    docx:
+        number-sections: true
+bibliography: references.bib
+csl: nature.csl
+author: Lucas A. Meyer
+date: 2022-07-07
+---
+
+```{python}
+#| echo: false
+from IPython.display import display, Markdown
+from itertools import chain
+import pandas as pd
+```
+
+# Introduction
+
+The purpose of this article is to show how to use Quarto to generate an article just like this, hopefully with better content. 
+This is just a demonstration of how powerful Quarto is to generate multiple artifacts from substantially the same content/code.
+
+You can see how I have done this in <https://www.meyerperin.com/using-quarto>.
+
+# Population changes
+
+Over the last few decades, the number of children per woman has been declining and overall longevity has been increasing.
+
+This has been markedly the case in Asia. Although Japan is frequently remembered as a country with low fertility rates, several other countries now have a fertility rate at or below Japan's levels, even China, as shown in @fig-fertility.
+
+![Fertility rates in Asia](images/asia-fertility.png){#fig-fertility}
+
+The outcome of these changes is that over the next few decades, the proportion of children and working adults will go down in many countries,
+and the proportion of older adults will increase. This is detailed in @sec-dependency-ratio and the projected status for several countries is shown in @sec-world-tour.
+
+## Dependency ratio {#sec-dependency-ratio}
+
+Demographers use a metric called **Dependency Ratio** (@eq-dep-ratio) to evaluate how many non-working people are supported by 100 working people.
+
+$$
+\text{Dependency Ratio} = 100 \times \frac{\text{Non-working population}}{\text{Working population}}
+$$ {#eq-dep-ratio}
+
+# World tour {#sec-world-tour}
+
+In the figures below, I further decompose the dependency ratio into Young (0-20 years-old), Old (65-79 years-old) and Very Old (80+ years-old). 
+Note that Young, Old and Very Old are terms used by demographers. 
+
+I don't mean any personal judgment when using this classification of "young", "old" and "very old". One of my favorite writers,
+Jared Diamond, who wrote _Guns, Germs and Steel_ [@diamond97] and _Collapse_ @diamond11, is currently 84-years old and I hope to have his 
+disposition at that age.
+
+{{< include _graph_functions.qmd >}}
+
+{{< pagebreak >}}
+
+{{< include _dynamic-content.qmd >}}
+
+{{< pagebreak >}}
+
+# References
+
+:::{#refs}
+:::
