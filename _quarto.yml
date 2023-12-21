@@ -1,16 +1,14 @@
 project:
   type: website
-  output-dir: docs
-  # pre-render: ./pre-render.sh
-  # post-render: ./post-render.sh
+
   preview:
     port: 4200
     browser: false
-
+    
   render:
     - '*.qmd'
     - '!staged_posts/'
-
+      
 website:
   title: "Lucas A. Meyer"
   google-analytics: "G-6KTZ853BN5"
@@ -24,16 +22,17 @@ website:
       openSidebar: false
       showHighlights: always
   favicon: /favicon-32x32.png
+
   navbar:
     left:
-        - text: "Home"
-          file: index.qmd
-        - text: "Quarto with Python"
-          href: /using-quarto
-        - text: "Quick tour of Midjourney"
-          href: /midjourney
-        - text: "Quick tour of Semantic Kernel"
-          href: /semantic-kernel
+      - text: "Articles"
+        menu:
+          - articles/midjourney.qmd
+          - articles/semantic_kernel.qmd
+      - text: "Blog"
+        file: blog.qmd
+      - text: "Using Quarto"
+        file: using_quarto/using-quarto.qmd
     right:
       - text: "{{< iconify fa6-brands threads >}}"
         href: https://threads.net/@lucas_a_meyer
@@ -46,7 +45,10 @@ website:
       - about.qmd
 
 
+
 format:
   html:
     theme: pulse
     css: styles.css
+    grid:
+      sidebar-width: 500px

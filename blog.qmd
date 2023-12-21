@@ -1,0 +1,18 @@
+---
+title: "Lucas A. Meyer's Blog"
+listing:
+  id: posts
+  contents: blog_posts
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+#  feed: true
+page-layout: full
+---
+---
+:::{#posts}
+:::
+
+<!--- <hr><p>You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a></p>. --->

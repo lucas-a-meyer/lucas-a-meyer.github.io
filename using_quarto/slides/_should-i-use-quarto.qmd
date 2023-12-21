@@ -1,0 +1,32 @@
+## Where Quarto excels (July 2022)
+
+:::: {.columns}
+::: {.column}
+
+### Articles: maybe
+
+I think Quarto® is more helpful for a team that already uses Git **with** Python notebooks or LaTeX to write articles. 
+
+Microsoft Word collaboration through SharePoint and Teams is easier than Git and Quarto... but it's not reproducible.
+
+### Python notebook: excellent
+
+Quarto adds features to Python notebooks without detracting anything. You just need a few YAML lines.
+:::
+
+::: {.column}
+
+### Blog: excellent
+
+Quarto allowed me to have a scriptable, Python-based [blog](https://www.meyerperin.com). I wrote code to post new articles to Twitter and LinkedIn.
+
+### Presentations: maybe
+
+Great for RevealJS. For PPT, render process -> long edit cycle. Useful for:
+
+- *a lot* of dynamic content
+- Reproducibility needs
+- Collaborators used to Git/Beamer 
+
+:::
+::::

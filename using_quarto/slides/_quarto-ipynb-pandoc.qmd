@@ -1,0 +1,36 @@
+
+## Quarto in Python, in a nutshell
+:::: {.columns}
+::: {.column width="34%"}
+All you need to use Quarto is to add some YAML (mostly simplified Pandoc configurations) to a `.qmd` file. 
+
+`ipynb` + YAML = `.qmd`. 
+
+This keeps the configuration and content in the same file. You can then render the outputs using `quarto render <file.qmd>` in the command line.
+
+::: {.content-visible when-format="revealjs"}
+Refresh the page to see the diagram on the right.
+:::
+
+:::
+::: {.column width="66%"}
+```{mermaid}
+graph TD
+Q[.qmd] --> A
+subgraph Quarto
+    A[.ipynb] --> B(("Pandoc"))
+    B --> C[.md]
+    B --> D[.tex] 
+    D --> F((Xetex))
+    C --> I((Hugo))
+    style B fill:#FF6655AA
+    style F fill:#88ffFF
+    style I fill:#88ffFF
+end
+    B ----> E[.doc]
+    B ----> H[.pptx]
+    F --> G[.pdf]
+    I --> J[.html]
+```
+:::
+::::

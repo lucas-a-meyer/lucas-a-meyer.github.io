@@ -4,7 +4,7 @@ Write-Output "Publish started at $now"
 
 # Build the site
 quarto publish gh-pages
-python utils/process-articles.py
+# python utils/process-articles.py
 python utils/create_sitemap.py
 
 git add .
@@ -14,4 +14,4 @@ git push
 python utils/submit_sitemap.py
 
 $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-Write-Output "Publish started at $now"
+Write-Output "Publish finished at $now"

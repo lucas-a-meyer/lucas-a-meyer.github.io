@@ -1,0 +1,40 @@
+---
+author: Lucas A. Meyer
+date: 2022-08-02 04:00:00
+draft: true
+id: cecdf93f4afc9e12fa1967212425c4bc
+image: https://mpsocial.blob.core.windows.net/blog-images/teacher-appreciation.jpg
+include-in-header: _msft-clarity.html
+linkedin-linkback: true
+linkedin-posted: 2022-07-11 07:05:00-07:00
+linkedin-target-date: 2022-08-02 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6960232777350860801
+post-url: https://www.meyerperin.com/posts/2022-07-23-teacher-appreciation.html
+title: Learning from others
+tweet-url: https://twitter.com/user/status/1554467075627925504
+twitter-posted: 2022-07-11 07:05:00-07:00
+twitter-target-date: 2022-08-02 07:01:00
+---
+
+How much of what you do is borrowed from other people? When you realized you learned something from someone, did you tell them?
+
+If you come from a disadvantaged background, there's a possibility that the adults around you didn't have much to teach you, or worse, taught you self-limiting behaviors. This is not always true, and many people from disadvantaged backgrounds have a lot of support from their family. However, the ones that don't may distrust learning from other people. When they find themselves in a supportive environment, that's a serious impediment.
+
+I had to learn how to learn from other people myself. I recently realized that I haven't told these people what I learned from them. Here's my list of amazing people, and the amazing things they taught me. It's not complete yet, and it may never be.
+
+- Michal Panowicz taught me about the importance of work skills. I am still surprised at how many people don't know those things.
+    - Setting career goals
+    - Naming files to avoid conflicts and confusion, naming documents, titling slides, having a sensible presentation flow
+    - Writing good emails, including the appropriate people, sending them on appropriate times, ensure they have clear action items.
+
+- Ed Rice taught me a lot of Economics, especially how to translate a real-world problem to an economic model. He also taught me how to be a better teacher. Because of him, I still start a lot of sentences with "you know..."
+
+- Matt Fingerhut taught me a lot about how to be a manager:
+    - Protecting time for email and focused work
+    - Prioritizing coordination and communication - if the manager doesn't do this for the team, who would?
+
+- Urszula Chajewska taught me that science already know the answer to a lot of questions, and how to do better literature reviews
+
+- Jorge Pulido taught me to (very politely) learn about the incentives of people in teams I collaborate with. This helped me understand collaborators better and made my life substantially easier.
+
+There are a ton of other people that helped me be better. Some I did not include because I still work with them. It would feel sycophantic. Some I didn't have time to organize how to write about them yet. But I'll get there!

@@ -1,19 +1,22 @@
 ---
-title: "Lucas A. Meyer's Blog"
+title: "Articles"
 listing:
-  id: posts
-  contents: posts
-  sort: "date desc"
-  type: default
+- id: articles
+  contents: articles
+  sort: False
+  type: grid
   categories: false
   sort-ui: false
   filter-ui: false
-#  feed: true
+  fields: [image, title, subtitle, description]
+  feed: true
+
 page-layout: full
-title-block-banner: true
+title-block-banner: false
 ---
 
-:::{#posts}
+:::{#pages}
 :::
+
 
 <!--- <hr><p>You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a></p>. --->

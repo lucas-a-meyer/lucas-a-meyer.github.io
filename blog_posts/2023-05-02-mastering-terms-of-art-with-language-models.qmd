@@ -1,0 +1,36 @@
+---
+author: Lucas A. Meyer
+date: 2023-05-02 06:00:00
+draft: true
+id: 048f6b1dfb2df44f66f46659cda574a6
+image: https://mpsocial.blob.core.windows.net/blog-images/diffused_terms-of-art-david.png
+include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
+linkedin-target-date: 2023-05-02 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7059527036653993984
+post-url: https://www.meyerperin.com/posts/2023-05-02-mastering-terms-of-art-with-language-models.html
+title: Mastering Terms of Art with Language Models
+tweet-url: https://twitter.com/user/status/1653761333530177542
+twitter-posted: 2022-06-30 06:00:00
+twitter-target-date: 2023-05-02 07:01:00
+---
+
+# The Art of Navigating "Terms of Art" with Language Models
+
+Language models (LLMs) have become increasingly sophisticated, but they still struggle with certain aspects of language, particularly when it comes to "terms of art." These are words or phrases that have a special meaning in a specific context, often different from their day-to-day meaning. For LLMs, understanding and preserving these terms can be a challenge.
+
+## The Challenge of "Terms of Art" in Law and Beyond
+
+"Terms of art" are especially common in fields like law, where specific phrases carry unique meanings that are crucial to understanding the context. For example, "tort" refers to a civil wrong that causes harm to another, while "habeas corpus" is a legal action that requires a person under arrest to be brought before a judge. These terms may be unfamiliar to those outside the legal profession, but they are essential for accurate communication within it.
+
+This weekend, I encountered a perfect illustration of the LLM's struggle with "terms of art" while reviewing a cybersecurity text. The document contained the term "bad actor," which is commonly used in the field to describe a malicious entity or individual. However, even the most advanced LLMs kept replacing this term with various synonyms, such as "evil actor," "maleficent actor," and "nefarious actor."
+
+## The Importance of Supervising LLMs
+
+While LLMs can be incredibly helpful, especially for non-native English speakers like myself, they must be used with caution. In addition to mangling "terms of art," they may also add unnecessary adjectives or alter the intended meaning of a sentence.
+
+Using an LLM is like relying on a GPS for navigation: if the GPS tells you to drive your car into a lake, it doesn't mean you should. In most cases, LLMs serve as excellent co-pilots, guiding us through the complexities of language and helping us craft clear, engaging prose. However, they cannot be left unsupervised.
+
+## Conclusion
+
+As we continue to develop and refine LLMs, it's important to remember their limitations. By understanding the challenges they face with "terms of art" and other linguistic nuances, we can use these tools more effectively and ensure that our writing remains accurate, engaging, and true to our intended meaning. So, let your LLM be your co-pilot, but always keep a watchful eye on the road ahead.

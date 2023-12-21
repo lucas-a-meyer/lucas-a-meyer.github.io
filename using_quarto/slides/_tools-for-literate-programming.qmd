@@ -1,0 +1,36 @@
+## I tried many tools for Literate Programming
+
+:::: {.columns}
+::: {.column}
+
+### LaTeX
+
+- Needs extra tools like CWeb
+- Great for PDFs... Beamer for slides
+- Not great for websites
+- Dynamic content -> code in Latex
+    - `\usepackage{ifthen}`
+    - `@for`, `@while`
+
+### Python notebooks
+
+- Great, with Pandoc
+- Config separated from files
+
+:::
+::: {.column}
+
+### Word/PPT
+
+- Hard to collaborate before O365
+- Hard to reproduce / auto-generate 
+  - code and writing separate
+
+### RMarkdown
+
+- Great for everything
+- Heavily dependent on R
+- New features in Quarto
+
+:::
+::::

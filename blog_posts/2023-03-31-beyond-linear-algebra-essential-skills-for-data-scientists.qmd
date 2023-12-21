@@ -1,0 +1,28 @@
+---
+author: Lucas A. Meyer
+date: 2023-03-31 06:00:00
+draft: true
+id: 1b6b44d595416d6f74d4669ac154af47
+image: https://mpsocial.blob.core.windows.net/blog-images/diffused_linear_algebra_prof.png
+include-in-header: _msft-clarity.html
+linkedin-posted: 2022-06-30 06:00:00
+linkedin-target-date: 2023-03-31 07:01:00
+linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7047568235843522561
+post-url: https://www.meyerperin.com/posts/2023-03-31-beyond-linear-algebra-essential-skills-for-data-scientists.html
+title: 'Beyond Linear Algebra: Essential Skills for Data Scientists'
+tweet-url: https://twitter.com/user/status/1641802534384726016
+twitter-posted: 2022-06-30 06:00:00
+twitter-target-date: 2023-03-31 07:01:00
+---
+
+As a data scientist, you've probably heard it before: you need to know linear algebra to succeed in this field. And while it's true that a deep understanding of linear algebra can be incredibly useful, it's not necessarily the most important skill for every data scientist to have.
+
+Yes, knowing things is better than not knowing them. But there are other skills that can be more important than linear algebra when it comes to making meaningful contributions in the field of data science. Here are a few examples:
+
+Firstly, it's important to understand how datasets were collected. If a dataset is poorly collected or contains biases, even the most advanced machine learning models won't be able to make accurate predictions from it. If a data scientist doesn't understand how the dataset was created, they might make assumptions that render their analysis irrelevant.
+
+Secondly, it's important to know the assumptions behind the models being used. Linear algebra may be key to understanding certain models, but if a data scientist doesn't understand the assumptions being made, their analysis may not be meaningful. For example, if a model assumes that the data is normally distributed but it isn't, then the results that the model returns may be misleading.
+
+Ultimately, the point is that it's no use knowing a lot of linear algebra if your data has been poorly collected and violates the assumptions made by the model you want to use. As data science is a profession that now covers a lot of different activities, some skills may be more important for certain areas than others. For some data scientists, linear algebra may be critical, but for others, it may not be as important.
+
+In conclusion, while it's important to have a solid understanding of linear algebra, it's not the only skill that's necessary to be a successful data scientist. Understanding how datasets are collected, and the assumptions behind the models being used are equally important. The broader your skillset, the better a data scientist you will become.

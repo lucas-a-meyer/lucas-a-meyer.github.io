@@ -1,0 +1,26 @@
+## Creating PowerPoint slides
+
+:::: {.columns}
+::: {.column}
+To generate a presentation from a `.qmd` file, add `format: pptx` to the YAML front-matter.
+
+Quarto will use the 
+[pandoc PowerPoint rules](https://pandoc.org/MANUAL.html#powerpoint-layout-choice) 
+to render the content from the `.qmd` into `.pptx`.
+
+The "pandoc rules" limit the flexibility to create PowerPoint presentations. 
+Quarto has better presentation support for `revealjs` and `beamer`. 
+:::
+
+::: {.column}
+- PowerPoint can use a **template** with _only_ these layouts:
+    - Title Slide
+    - Title and Content
+    - Section Header
+    - Two Content
+    - Comparison
+    - Content with Caption
+    - Blank
+
+:::
+::::

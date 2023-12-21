@@ -1,0 +1,24 @@
+## The content value chain
+
+:::: {.columns}
+
+::: {.column}
+
+Content stuck in my computer is nearly worthless.
+
+### Goal
+
+- Move good content out of my computer **as fast as possible**
+- Reproducible
+- Git-based collaboration
+- Write once, generate:
+  - Code
+  - Paper
+  - PowerPoint
+  - Site/documentation
+:::
+
+::: {.column}
+![The content value chain by David Robinson (@drrob) captured by Amelia McNamara](images/content-value-chain.jpg)
+:::
+::::
