@@ -10,10 +10,10 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 21 Dec 2023 06:10:55 GMT</lastBuildDate>
+<lastBuildDate>Thu, 21 Dec 2023 08:41:05 GMT</lastBuildDate>
 <item>
   <title>Getting Started with Midjourney</title>
-  <link>https://www.meyerperin.com/pages/midjourney.html</link>
+  <link>https://www.meyerperin.com/articles/midjourney.html</link>
   <description><![CDATA[ 
 
 
@@ -36,15 +36,15 @@
 <p>Although it may sound intimidating, creating your own server is very easy and it’s mostly click-based. You can create a server for free, and you can create as many servers as you want. You can see detailed instructions <a href="https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-">here</a>. Here’s a quick summary:</p>
 <section id="click-the-button-on-the-left-sidebar-to-add-a-server" class="level3">
 <h3 class="anchored" data-anchor-id="click-the-button-on-the-left-sidebar-to-add-a-server">1. Click the <code>+</code> button on the left sidebar to <code>Add a Server</code></h3>
-<p><img src="https://www.meyerperin.com/pages/https:/support.discord.com/hc/article_attachments/360058897831/Screen_Shot_2020-06-04_at_1.11.06_PM.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/support.discord.com/hc/article_attachments/360058897831/Screen_Shot_2020-06-04_at_1.11.06_PM.png" class="img-fluid"></p>
 </section>
 <section id="select-create-a-server" class="level3">
 <h3 class="anchored" data-anchor-id="select-create-a-server">2. Select <code>Create a server</code></h3>
-<p><img src="https://www.meyerperin.com/pages/https:/support.discord.com/hc/article_attachments/360058273791/Capture.JPG" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/support.discord.com/hc/article_attachments/360058273791/Capture.JPG" class="img-fluid"></p>
 </section>
 <section id="give-your-server-a-name-and-optionally-an-icon-and-click-create" class="level3">
 <h3 class="anchored" data-anchor-id="give-your-server-a-name-and-optionally-an-icon-and-click-create">3. Give your server a name and optionally an icon, and click <code>Create</code></h3>
-<p><img src="https://www.meyerperin.com/pages/https:/support.discord.com/hc/article_attachments/360058897871/Screen_Shot_2020-06-04_at_1.40.12_PM.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/support.discord.com/hc/article_attachments/360058897871/Screen_Shot_2020-06-04_at_1.40.12_PM.png" class="img-fluid"></p>
 </section>
 <section id="thats-it" class="level3">
 <h3 class="anchored" data-anchor-id="thats-it">4. That’s it!</h3>
@@ -60,18 +60,18 @@
 <li>Select a subscription tier and click <code>Subscribe</code>.</li>
 </ul>
 <p>The least expensive subscription is good for most purposes, and I suggest you use that one to get started. This will give you about three hours of server time per month, and you lose what you don’t use. Even though I use Midjourney a lot, I rarely use up all my server time. You <strong>can</strong> top off if you need.</p>
-<p><img src="https://www.meyerperin.com/pages/https:/cdn.document360.io/3040c2b6-fead-4744-a3a9-d56d621c6c7e/Images/Documentation/MJ_SubscriptionTiers.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/cdn.document360.io/3040c2b6-fead-4744-a3a9-d56d621c6c7e/Images/Documentation/MJ_SubscriptionTiers.png" class="img-fluid"></p>
 </section>
 <section id="step-4-invite-the-midjourney-bot-to-your-server" class="level2">
 <h2 class="anchored" data-anchor-id="step-4-invite-the-midjourney-bot-to-your-server">Step 4: Invite the Midjourney bot to your server</h2>
 <p>Now that you have a server and a subscription, you need to invite the Midjourney bot to your server. This is also very easy, and done mostly by clicking.</p>
 <ol type="1">
-<li><p>In the left sidebar, right-click your server and select <code>App catalog</code> <img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-1.png" class="img-fluid"></p></li>
-<li><p>Search for <code>Midjourney</code>, select <code>Midjourney Bot</code>, and click <code>Add to server</code> <img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-2.png" class="img-fluid"></p></li>
+<li><p>In the left sidebar, right-click your server and select <code>App catalog</code> <img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-1.png" class="img-fluid"></p></li>
+<li><p>Search for <code>Midjourney</code>, select <code>Midjourney Bot</code>, and click <code>Add to server</code> <img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-2.png" class="img-fluid"></p></li>
 </ol>
-<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-3.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-3.png" class="img-fluid"></p>
 <ol start="3" type="1">
-<li>Select your server from the dropdown, and click <code>Continue</code>, and then <code>Authorize</code>. <img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-4.png" class="img-fluid"></li>
+<li>Select your server from the dropdown, and click <code>Continue</code>, and then <code>Authorize</code>. <img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-4.png" class="img-fluid"></li>
 </ol>
 <p>You can now start using Midjourney in your own.</p>
 </section>
@@ -79,7 +79,7 @@
 <section id="basic-usage-of-midjourney" class="level1">
 <h1>Basic usage of Midjourney</h1>
 <p>Now that Midjourney is installed on your server, you can start using it. I just send direct messages to it by right-clicking it and selecting <code>Message</code>.</p>
-<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-5.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-5.png" class="img-fluid"></p>
 <p>The official guide has a <a href="https://docs.midjourney.com/docs/quick-start">very good introduction</a> to the basic usage of Midjourney, starting on step 5. I will just summarize the main command <code>imagine</code> here, and show you an example of how you can use your own image as a starting point.</p>
 <section id="the-imagine-command" class="level2">
 <h2 class="anchored" data-anchor-id="the-imagine-command">The <code>imagine</code> command</h2>
@@ -90,19 +90,19 @@
 <p>Midjourney by default will reply with four suggestions. Their numbers start on the top left and go clockwise. There will be some buttons under the suggestions, labeled U1, U2, U3, U4 and V1, V2, V3, V4.</p>
 <p>You can click on the U buttons to upscale (increase the resolution) of a picture you liked, and click on the V buttons to see more variations of the current suggestion. If you’re going to use the image for social media, I suggest you upscale it before downloading.</p>
 <p>There’s also a button to regenerate all images if you don’t like any of the suggestions. Here’s what I got:</p>
-<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-6.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-6.png" class="img-fluid"></p>
 <p>I like the second one, so I clicked on the U2 button to upscale it. Then I clicked on the download button to download the image. Here’s the final result:</p>
-<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/MJ-7.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/MJ-7.png" class="img-fluid"></p>
 </section>
 <section id="using-an-existing-image" class="level2">
 <h2 class="anchored" data-anchor-id="using-an-existing-image">Using an existing image</h2>
 <p>You can use an existing image with the <code>/imagine</code> command. I frequently use my own headshot and ask Midjourney to put me in some weird place or situation. In order for Midjourney to use your image, you need to upload it to the web first and give Midjourney the URL. I have my own server, but you can also upload your image to Discord and use the URL Discord gives you, or upload it to GitHub. There are plenty of other services you can use, too, like <a href="https://imgur.com/">Imgur</a>.</p>
 <p>My headshot is at <code>https://links.meyerperin.com/headshot</code>.</p>
-<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/lucas_new_headshot.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/lucas_new_headshot.png" class="img-fluid"></p>
 <p>I can use it with the <code>/imagine</code> command like this:</p>
 <p><code>/imagine https://links.meyerperin.com/headshot as Batman in Gotham City</code></p>
 <p>And here is the final result:</p>
-<p><img src="https://www.meyerperin.com/pages/https:/mpsocial.blob.core.windows.net/blog-images/another-lucas-batman.png" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/https:/mpsocial.blob.core.windows.net/blog-images/another-lucas-batman.png" class="img-fluid"></p>
 </section>
 </section>
 <section id="conclusion" class="level1">
@@ -113,12 +113,12 @@
 </section>
 
  ]]></description>
-  <guid>https://www.meyerperin.com/pages/midjourney.html</guid>
-  <pubDate>Thu, 21 Dec 2023 06:10:55 GMT</pubDate>
+  <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
+  <pubDate>Thu, 21 Dec 2023 08:41:05 GMT</pubDate>
 </item>
 <item>
   <title>Getting Started with the Microsoft Semantic Kernel</title>
-  <link>https://www.meyerperin.com/pages/semantic_kernel.html</link>
+  <link>https://www.meyerperin.com/articles/semantic_kernel.html</link>
   <description><![CDATA[ 
 
 
@@ -426,7 +426,7 @@ background-color: null;
 font-style: inherit;">print</span>(answer)</span></code></pre></div>
 <p>For example, if I use the URL below as the parameter:</p>
 <p><code>https://links.meyerperin.com/tiger_jpg</code></p>
-<p><img src="https://www.meyerperin.com/pages/http:/2.bp.blogspot.com/-tG6z7DOsHNc/T6Z1DuzXs9I/AAAAAAAAGfY/YTmFDxw0Qxg/s320/animal+pictures+%252812%2529.jpg" class="img-fluid"></p>
+<p><img src="https://www.meyerperin.com/articles/http:/2.bp.blogspot.com/-tG6z7DOsHNc/T6Z1DuzXs9I/AAAAAAAAGfY/YTmFDxw0Qxg/s320/animal+pictures+%252812%2529.jpg" class="img-fluid"></p>
 <p>The answer will be <code>tiger</code>.</p>
 </section>
 </section>
@@ -702,8 +702,8 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 </section>
 
  ]]></description>
-  <guid>https://www.meyerperin.com/pages/semantic_kernel.html</guid>
-  <pubDate>Thu, 21 Dec 2023 06:10:55 GMT</pubDate>
+  <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
+  <pubDate>Thu, 21 Dec 2023 08:41:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
