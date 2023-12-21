@@ -10,7 +10,7 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Thu, 21 Dec 2023 05:45:39 GMT</lastBuildDate>
+<lastBuildDate>Thu, 21 Dec 2023 06:00:28 GMT</lastBuildDate>
 <item>
   <title>Getting Started with Midjourney</title>
   <link>https://www.meyerperin.com/pages/midjourney.html</link>
@@ -114,7 +114,7 @@
 
  ]]></description>
   <guid>https://www.meyerperin.com/pages/midjourney.html</guid>
-  <pubDate>Thu, 21 Dec 2023 05:45:39 GMT</pubDate>
+  <pubDate>Thu, 21 Dec 2023 06:00:28 GMT</pubDate>
 </item>
 <item>
   <title>Getting Started with the Microsoft Semantic Kernel</title>
@@ -703,7 +703,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/pages/semantic_kernel.html</guid>
-  <pubDate>Thu, 21 Dec 2023 05:45:39 GMT</pubDate>
+  <pubDate>Thu, 21 Dec 2023 06:00:28 GMT</pubDate>
 </item>
 </channel>
 </rss>
