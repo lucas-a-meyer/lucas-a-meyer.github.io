@@ -10,35 +10,7 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 22 Dec 2023 13:26:05 GMT</lastBuildDate>
-<item>
-  <title>My Experience with ADHD (draft)</title>
-  <link>https://www.meyerperin.com/articles/adhd.html</link>
-  <description><![CDATA[ 
-
-
-
-<section id="my-adhd-journey" class="level1">
-<h1>My ADHD journey</h1>
-<p>As of December 2023, I don’t know whether I have ADHD (Attention Deficit Hyperactivity Disorder) or not. But I decided to chronicle my journey in case it’s helpful to other people. This is still a work in progress.</p>
-<p><strong>Important:</strong> I’m not a medical doctor. I’m a computer scientist and economist. I cannot diagnose you with ADHD or not. If you suspect you have it, talk to a medical professional.</p>
-<section id="childhood-signs" class="level2">
-<h2 class="anchored" data-anchor-id="childhood-signs">Childhood signs</h2>
-<p>I’m originally from Brazil, and I was born in the 70s. The people that raised me think that if you need help with your mental health, you are weak.</p>
-<p>As it’s common in these situations, lots of people in my family have had undiagnosed and untreated mental illnesses.</p>
-<p>When I was a kid, one common way that people used to describe me was “he won’t lose his head only because it’s attached to his body.” Most kids lose things, but I lost an extraordinary amount of things.</p>
-<p>Although I was a good student in some subjects, the more my grade depended on structured activities, like a lot of homework, the worse I did. Back then, teachers were more strict with dates. A late homework usually meant a zero. A few times, I had to ace exams to get a passing grade, and most times I did.</p>
-<p>I must have been confusing to my teachers. I was in general a good student that knew things but was frequently distracted. I did poorly on homework but great at exams and standardized tests. Sometimes I’d do amazing and detailed projects way above what was required. Sometimes I’d be in History class doing all the problems of a Math book two grades above mine while not doing the Histor work of that class, and getting punished for it.</p>
-<p>I muddled through high school. Luckily for me, in Brazil university acceptance is decided by an admissions exam that is hard and stressful for most people.</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <guid>https://www.meyerperin.com/articles/adhd.html</guid>
-  <pubDate>Fri, 22 Dec 2023 13:26:05 GMT</pubDate>
-</item>
+<lastBuildDate>Fri, 22 Dec 2023 14:43:23 GMT</lastBuildDate>
 <item>
   <title>Getting Started with Midjourney</title>
   <link>https://www.meyerperin.com/articles/midjourney.html</link>
@@ -142,7 +114,7 @@
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Fri, 22 Dec 2023 13:26:05 GMT</pubDate>
+  <pubDate>Fri, 22 Dec 2023 14:43:23 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -731,7 +703,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Fri, 22 Dec 2023 13:26:05 GMT</pubDate>
+  <pubDate>Fri, 22 Dec 2023 14:43:23 GMT</pubDate>
 </item>
 </channel>
 </rss>
