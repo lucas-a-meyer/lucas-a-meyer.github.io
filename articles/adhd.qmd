@@ -1,14 +1,13 @@
-#  My ADHD journey
-
-As of December 2023, I don’t know whether I have ADHD (Attention Deficit Hyperactivity Disorder) or not.  But I decided to chronicle my journey in case it’s helpful to other people.  This is still a work in progress. 
 ---
-title: "My Experience with ADHD (draft)"
+title: "My Experience Figuring Out If I Have ADHD"
 page-layout: full
 toc: true
 draft: true
 toc-expand: true
 include-in-header: _msft-clarity.html
 ---
+
+As of December 2023, I don’t know whether I have ADHD (Attention Deficit Hyperactivity Disorder) or not.  But I decided to chronicle my journey in case it’s helpful to other people.  This is still a work in progress. 
 
 **Important:** I’m not a medical doctor. I’m a computer scientist and economist. I cannot diagnose you with ADHD or not. If you suspect you have it, talk to a medical professional. 
 
