@@ -249,7 +249,7 @@
     "href": "index.html",
     "title": "Articles",
     "section": "",
-    "text": "Getting Started with Midjourney\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with the Microsoft Semantic Kernel\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "My Experience with ADHD (draft)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Midjourney\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Quick Tour of the Semantic Kernel\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog_posts/2023-06-18-fathers-day.html",
@@ -842,77 +842,77 @@
   {
     "objectID": "articles/semantic_kernel.html",
     "href": "articles/semantic_kernel.html",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "",
     "text": "The Microsoft Semantic Kernel is a thin, open-source, software development toolkit that makes it easier for applications to interact with AI services.\nIt was originally designed to power the Microsoft Copilots, such as Microsoft 365 and Bing. The initial version was in C#, but it has now been extended to Python and Java, and released to the developer community as an open-source package.\n\n\nThe Python code for this post is available in a notebook on GitHub.\nIn order to run the code of this post, you will need an Azure subscription with access to the OpenAI API, or an OpenAI subscription.\nAlthough you can get a free trial for Azure that gives you many services, the OpenAI services in Azure are not free. You can see the prices here.\n\n\n\n\nSemantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both LangChain and Semantic Kernel.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel. There’s a community-supported TypeScript API for Semantic Kernel, but it’s not officially supported by Microsoft.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
   },
   {
     "objectID": "articles/semantic_kernel.html#python-code-for-this-post",
     "href": "articles/semantic_kernel.html#python-code-for-this-post",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "",
     "text": "The Python code for this post is available in a notebook on GitHub.\nIn order to run the code of this post, you will need an Azure subscription with access to the OpenAI API, or an OpenAI subscription.\nAlthough you can get a free trial for Azure that gives you many services, the OpenAI services in Azure are not free. You can see the prices here."
   },
   {
     "objectID": "articles/semantic_kernel.html#differences-from-langchain",
     "href": "articles/semantic_kernel.html#differences-from-langchain",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "",
     "text": "Semantic Kernel was designed to be more customizable than LangChain. It gives you more control but requires more coding.\nSemantic Kernel was designed to help easily add LLM features to enterprise or large-scale consumer applications.\nIf you use Python, you can use both LangChain and Semantic Kernel.\nIf you use JavaScript, you can use LangChain, but not Semantic Kernel. There’s a community-supported TypeScript API for Semantic Kernel, but it’s not officially supported by Microsoft.\nIf you use Java or .NET, you can use Semantic Kernel, but not LangChain."
   },
   {
     "objectID": "articles/semantic_kernel.html#the-kernel",
     "href": "articles/semantic_kernel.html#the-kernel",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "The Kernel",
     "text": "The Kernel\nThe Semantic Kernel is just a lightweight object where you will attach everything you need to complete your AI tasks.\nimport semantic_kernel as sk\nkernel = sk.Kernel()"
   },
   {
     "objectID": "articles/semantic_kernel.html#connectors",
     "href": "articles/semantic_kernel.html#connectors",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "Connectors",
     "text": "Connectors\nConnectors are the way you connect to AI services. You can connect multiple services to the same kernel, which allows you to perform a complex task using different services for each step.\nFor example, my subscription has two models deployed: one deployment named gpt35 the GPT 3.5 Turbo model and one deployment named gpt4 for a deployment of the GPT-4 model. I can load both of them into the kernel with the code below:\nfrom semantic_kernel.connectors.ai.open_ai import AzureChatCompletion\n\ngpt35 = AzureChatCompletion(deployment_name=\"gpt35\", # yours may be different\nendpoint=OPENAI_ENDPOINT,\napi_key=OPENAI_API_KEY)\n\ngpt4 = AzureChatCompletion(\n    deployment_name=\"gpt4\", # yours may be different\nendpoint=OPENAI_ENDPOINT,\napi_key=OPENAI_API_KEY)\n\nkernel.add_chat_service(\"gpt35\", gpt35)\nkernel.add_chat_service(\"gpt4\", gpt4)"
   },
   {
     "objectID": "articles/semantic_kernel.html#semantic-functions",
     "href": "articles/semantic_kernel.html#semantic-functions",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "Semantic functions",
     "text": "Semantic functions\nSemantic functions are functions that use large language models to perform a task. The simple example below shows how to create a semantic function that tells a knock-knock joke.\nprompt = \"\"\"knock, knock? Who’s there? {{$input}}. {{$input}} who?\"\"\"\n\nknock = kernel.create_semantic_function(prompt, temperature=0.8)\n\nresponse = knock(“Dishes\")\nprint(response)\nThe response will be something like Dishes the police, open up!."
   },
   {
     "objectID": "articles/semantic_kernel.html#native-functions",
     "href": "articles/semantic_kernel.html#native-functions",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "Native functions",
     "text": "Native functions\nNative functions are regular Python functions. They can be used to perform any task that doesn’t require a large language model. For example, the code below classifies an image given a URL.\nThe function uses the timm library to download a pre-trained model and classify the image. The @sk_function decorator tags the following function classify_image as a function that can be imported by the Semantic Kernel.\nimport requests\nfrom PIL import Image\nimport timm\nfrom timm.data.imagenet_info import ImageNetInfo\nfrom semantic_kernel.skill_definition import sk_function\nfrom semantic_kernel.orchestration.sk_context import SKContext\n\nclass ImageClassifierPlugin:\n    def __init__(self):\n        self.model = timm.create_model(\"convnext_tiny.in12k_ft_in1k\", pretrained=True)\n        self.model.eval()\n        data_config = timm.data.resolve_model_data_config(self.model)\n        self.transforms = timm.data.create_transform(**data_config, is_training=False)\n        self.imagenet_info = ImageNetInfo()\n\n    @sk_function(\n        description=\"Takes a url as an input and classifies the image\",\n        name=\"classify_image\",\n        input_description=\"The url of the image to classify\",\n    )\n    def classify_image(self, url: str) -&gt; str:\n        image = self.download_image(url)\n        pred = self.model(self.transforms(image)[None])\n        cls = self.imagenet_info.index_to_description(pred.argmax())\n        \n        return cls.split(\",\")[0]\n        \n    def download_image(self, url):\n        return Image.open(requests.get(url, stream=True).raw).convert(\"RGB\")\n\nLoading a native function into the kernel\nYou can load native functions into the kernel with the import_skill method of the Kernel object.\nclassify_plugin = kernel.import_skill(image_classifier, skill_name=\"classify_image\")\nThe classify_plugin is a collection of functions. To call the classify_image function, you can use the code below:\nanswer = classify_plugin.classify_image(\"https://links.meyerperin.com/tiger_jpg\")\nprint(answer)\nFor example, if I use the URL below as the parameter:\nhttps://links.meyerperin.com/tiger_jpg\n\nThe answer will be tiger."
   },
   {
     "objectID": "articles/semantic_kernel.html#example-directory-structure",
     "href": "articles/semantic_kernel.html#example-directory-structure",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "Example directory structure",
     "text": "Example directory structure\n└───plugins\n    └───jokes\n        ├───cross_the_road_joke\n        |   ├───config.json\n        |   └───skprompt.txt\n        └───knock_knock_joke\n            ├───config.json\n            └───skprompt.txt"
   },
   {
     "objectID": "articles/semantic_kernel.html#an-example-config.json-file",
     "href": "articles/semantic_kernel.html#an-example-config.json-file",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "An example config.json file",
     "text": "An example config.json file\nThe configuration file below shows a possible configuration for a semantic function that generates knock-knock jokes. The default_services property is an array of the preferred engines to use. The completion property contains the parameters that will be sent to the engine. The input property contains the parameters that will be sent to the semantic function.\nI frequently use the default_services property to send simple tasks to cheaper services like GPT-3.5 and more complex tasks to more expensive services like GPT-4.\nThe description field is important, because it can be used by the Planner function of the kernel, if you want to let the kernel itself select which functions to call.\n{\n    \"schema\": 1,\n    \"type\": \"completion\",\n    \"description\": \"Generates a knock-knock joke based on user input\",\n    \"default_services\": [\"gpt35\"],\n    \"completion\": {\n        \"temperature\": 0.8,\n        \"number_of_responses\": 1,\n        \"top_p\": 1,\n        \"max_tokens\": 4000,\n        \"presence_penalty\": 0.0,\n        \"frequency_penalty\": 0.0\n       },\n       \"input\": {\n     \"parameters\": [{\n      \"name\": \"input\",\n      \"description\": \"The topic that the joke should be written about\",\n      \"defaultValue\": \"Dishes\"\n     }]\n    }\n}"
   },
   {
     "objectID": "articles/semantic_kernel.html#an-example-skprompt.txt-file",
     "href": "articles/semantic_kernel.html#an-example-skprompt.txt-file",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "An example skprompt.txt file",
     "text": "An example skprompt.txt file\nThe prompt below is the prompt for the semantic function that generates knock-knock jokes. The {{$input}} placeholder will be replaced by the value of the input parameter.\nknock, knock? \nWho's there? \n{{$input}}. \n{{$input}} who?\n\n\nRepeat the whole setup and finish the joke."
   },
   {
     "objectID": "articles/semantic_kernel.html#loading-the-plugin-into-the-kernel",
     "href": "articles/semantic_kernel.html#loading-the-plugin-into-the-kernel",
-    "title": "Getting Started with the Microsoft Semantic Kernel",
+    "title": "A Quick Tour of the Semantic Kernel",
     "section": "Loading the plugin into the kernel",
     "text": "Loading the plugin into the kernel\nYou can load all the functions that are inside a plugin directory with the import_semantic_skill_from_directory method of the kernel object.\njokes_plugin = kernel.import_semantic_skill_from_directory(\"plugins\", \"jokes\")\nThe resulting object is a dictionary of functions. You can load the functions into variables or call them directly.\nknock = jokes_plugin[\"knock_knock_joke\"]\nprint (knock(\"Dishes\"))\n# Dishes the police, open up!\n\nprint(jokes_plugin[\"cross_the_road_joke\"](\"Tiger\"))\n# Why did the tiger cross the road? To show the chicken it can be done."
   },
@@ -1474,7 +1474,7 @@
     "href": "using_quarto/index.html#regression-and-results",
     "title": "Quarto with Python",
     "section": "Regression and results",
-    "text": "Regression and results\n\n\nThis code runs the first simple regression in Wooldridge’s Econometrics book.\n\\(\\text{wage} = \\alpha + \\beta_1 \\text{educ} + \\epsilon\\)\n\n\nC:\\Users\\lucasmeyer\\AppData\\Local\\Temp\\ipykernel_76140\\4246996135.py:13: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.\n  reg_table = pd.read_html(res.summary().\n\n\n\n\n\nvar\ncoef\ns.e.\nt\np-val\n\n\n\n\nint\n-0.9\n0.68\n-1.32\n0.19\n\n\neduc\n0.54\n0.05\n10.17\n0\n\n\n\n\n\n\n# Load the data\ndf_wage = pd.read_csv(\"data/wage1.csv\")\n\n# Create an OLS model using R syntax\nmod = smf.ols(formula=\"wage ~ educ\",\n              data=df_wage)\n\n# Fit the model\nres = mod.fit()\n\n# Show the results\nreg_table = pd.read_html(res.summary().\n  tables[1].as_html(), header=0)[0]\ndisplay(Markdown(reg_table.\n  to_markdown(index=False)))"
+    "text": "Regression and results\n\n\nThis code runs the first simple regression in Wooldridge’s Econometrics book.\n\\(\\text{wage} = \\alpha + \\beta_1 \\text{educ} + \\epsilon\\)\n\n\nC:\\Users\\lucasmeyer\\AppData\\Local\\Temp\\ipykernel_58788\\4246996135.py:13: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.\n  reg_table = pd.read_html(res.summary().\n\n\n\n\n\nvar\ncoef\ns.e.\nt\np-val\n\n\n\n\nint\n-0.9\n0.68\n-1.32\n0.19\n\n\neduc\n0.54\n0.05\n10.17\n0\n\n\n\n\n\n\n# Load the data\ndf_wage = pd.read_csv(\"data/wage1.csv\")\n\n# Create an OLS model using R syntax\nmod = smf.ols(formula=\"wage ~ educ\",\n              data=df_wage)\n\n# Fit the model\nres = mod.fit()\n\n# Show the results\nreg_table = pd.read_html(res.summary().\n  tables[1].as_html(), header=0)[0]\ndisplay(Markdown(reg_table.\n  to_markdown(index=False)))"
   },
   {
     "objectID": "using_quarto/index.html#basic-slide-syntax",
