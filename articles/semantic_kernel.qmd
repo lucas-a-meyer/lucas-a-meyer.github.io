@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with the Microsoft Semantic Kernel"
+title: "A Quick Tour of the Semantic Kernel"
 page-layout: full
 toc: true
 toc-expand: true

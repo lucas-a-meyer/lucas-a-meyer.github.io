@@ -8,6 +8,9 @@ project:
   render:
     - '*.qmd'
     - '!staged_posts/'
+
+execute: 
+  freeze: auto
       
 website:
   title: "Lucas A. Meyer"
