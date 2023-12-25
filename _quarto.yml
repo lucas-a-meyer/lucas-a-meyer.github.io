@@ -32,6 +32,7 @@ website:
         menu:
           - articles/midjourney.qmd
           - articles/semantic_kernel.qmd
+          - articles/adhd.qmd
       - text: "Blog"
         file: blog.qmd
       - text: "Using Quarto"

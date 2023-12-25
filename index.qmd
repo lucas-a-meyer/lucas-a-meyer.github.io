@@ -5,7 +5,7 @@ listing:
   contents: 
   - articles/midjourney.qmd
   - articles/semantic_kernel.qmd
-  - articles/ahdh.qmd
+  - articles/adhd.qmd
   sort: False
   type: grid
   categories: false

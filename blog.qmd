@@ -2,7 +2,7 @@
 title: "Lucas A. Meyer's Blog"
 listing:
   id: posts
-  contents: blog_posts
+  contents: posts
   sort: "date desc"
   type: default
   categories: false
