@@ -71,9 +71,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/articles/adhd.html",
+      "/articles/skv_py.html",
       "/articles/midjourney.html",
-      "/articles/semantic_kernel.html",
-      "/articles/adhd.html"
+      "/articles/semantic_kernel.html"
     ]
   },
   {

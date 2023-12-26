@@ -10,7 +10,261 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 22 Dec 2023 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 26 Dec 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>OpenAI Vision plugin for the Semantic Kernel</title>
+  <link>https://www.meyerperin.com/articles/skv_py.html</link>
+  <description><![CDATA[ 
+
+
+
+<section id="a-plugin-for-the-semantic-kernel-to-use-the-openai-vision-api" class="level1">
+<h1>A plugin for the Semantic Kernel to use the OpenAI vision API</h1>
+<p>The Microsoft Semantic Kernel is great for creating AI agents and chaining several functions together. Recently, OpenAI released a beta version of their Vision model, a model that can generate text from images. I created a plugin for the Semantic Kernel that allows you to use the OpenAI Vision model as part of your AI agent.</p>
+<p>In this article, I’ll explain how to use the plugin as part of a chain of functions: I’ll use the vision plugin to identify an animal, and then use the result to ask OpenAI for three interesting facts about that animal. The code for this example can be found in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py">demo.py</a> source file in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
+<p>The example is intentionally simple. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs, or whether a person is wearing a mask.</p>
+</section>
+<section id="identifying-images" class="level1">
+<h1>Identifying images</h1>
+<p>The plugin has a single function, <code>ApplyPromptToImage</code>, which takes a prompt and an image URL as input, and returns the generated text. In the example below, I show how to use the function to identify an animal in an image. The prompt is <code>What animal is this? Please respond in one word.</code> and the image is a picture of an owl.</p>
+<center>
+<img src="https://www.meyerperin.com/articles/https:/images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg" height="400">
+</center>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">kernel <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sk.Kernel()</span>
+<span id="cb1-2">vision <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.import_skill(Vision())</span>
+<span id="cb1-3">variables <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sk.ContextVariables()</span>
+<span id="cb1-4">variables[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'prompt'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"What animal is this? Please respond in one word."</span></span>
+<span id="cb1-5">variables[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'url'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg"</span></span>
+<span id="cb1-6">animal <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">await</span> kernel.run_async(vision[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ApplyPromptToImage'</span>], input_vars<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>variables)</span></code></pre></div>
+<p>The output will be simply <code>owl</code>.</p>
+</section>
+<section id="chaining-the-plugin-answer-to-another-function" class="level1">
+<h1>Chaining the plugin answer to another function</h1>
+<p>The plugin returns the generated text as a string. In the example below, I use the result of the plugin to ask OpenAI for three interesting facts about the animal. I have createad a semantic function with the prompt <code>Provide three interesting and unusual facts about the animal {{$input}}</code> and called it <code>AnimalFacts</code>. I then use the result of the vision plugin as the input for the <code>AnimalFacts</code> function.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">facts <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">await</span> kernel.run_async(plugins[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'AnimalFacts'</span>], input_str<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>(animal))</span></code></pre></div>
+<p>This is what I learned about owls from the output of my AI agent:</p>
+<pre><code>1. Owls have specialized feathers with fringes of varying softness that help muffle 
+sound when they fly. Their broad wings and light bodies also make them practically 
+silent fliers, which helps them stalk prey more easily.
+
+2. Unlike most birds, owls have both eyes facing forward which gives them better
+ depth perception for hunting.
+
+3. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
+underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
+ with one ear being higher than the other, which helps them locate sounds in 
+ multiple dimensions.</code></pre>
+</section>
+<section id="writing-a-native-plugin-to-wrap-the-openai-api" class="level1">
+<h1>Writing a native plugin to wrap the OpenAI API</h1>
+<p>The plugin is a native plugin, written in Python. The plugin code is in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/VisionPlugin.py">GitHub repository</a>. The code is very simple.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb4-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> openai <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> OpenAI</span>
+<span id="cb4-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> semantic_kernel.skill_definition <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> sk_function, sk_function_context_parameter</span>
+<span id="cb4-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> semantic_kernel.orchestration.sk_context <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> SKContext</span>
+<span id="cb4-5"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> os</span></code></pre></div>
+<p>We need to import the OpenAI library, the SKContext class because our function has multiple parameters (the prompt and the image URL), and the decorators that will allow us to make the Python function visible to the semantic Kernel.</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">class</span> Vision:</span>
+<span id="cb5-2">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@sk_function</span>(</span>
+<span id="cb5-3">        description<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"""Asks the GPT-4 Vision API to perform an operation described by the prompt</span></span>
+<span id="cb5-4"><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">        on an image given its url"""</span>,</span>
+<span id="cb5-5">        name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"ApplyPromptToImage"</span></span>
+<span id="cb5-6">    )</span>
+<span id="cb5-7">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@sk_function_context_parameter</span>(</span>
+<span id="cb5-8">        name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"prompt"</span>,</span>
+<span id="cb5-9">        description<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"The prompt you want to send to the Vision API"</span>,</span>
+<span id="cb5-10">    )</span>
+<span id="cb5-11">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@sk_function_context_parameter</span>(</span>
+<span id="cb5-12">        name<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"url"</span>,</span>
+<span id="cb5-13">        description<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>,</span>
+<span id="cb5-14">    )</span></code></pre></div>
+<p>The function is below and it simply sends a message to the OpenAI API and returns the response.</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">        <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> ApplyPromptToImage(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">self</span>, context: SKContext) <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-&gt;</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">str</span>:</span>
+<span id="cb6-2">        load_dotenv()</span>
+<span id="cb6-3">        client <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> OpenAI(api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"OPENAI_API_KEY"</span>))</span>
+<span id="cb6-4"></span>
+<span id="cb6-5">        response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> client.chat.completions.create(</span>
+<span id="cb6-6">        model<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt-4-vision-preview"</span>,</span>
+<span id="cb6-7">        messages<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[</span>
+<span id="cb6-8">            {<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"role"</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"user"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"content"</span>: [</span>
+<span id="cb6-9">                {<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"type"</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"text"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"text"</span>: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>context[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'prompt'</span>]<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>},</span>
+<span id="cb6-10">                {<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"type"</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"image_url"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"image_url"</span>: {<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"url"</span>: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>context[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'url'</span>]<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>,</span>
+<span id="cb6-11">            },},],}],</span>
+<span id="cb6-12">        max_tokens<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">300</span>,</span>
+<span id="cb6-13">        )</span>
+<span id="cb6-14"></span>
+<span id="cb6-15">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> response.choices[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>].message.content</span></code></pre></div>
+</section>
+<section id="github-repository" class="level1">
+<h1>GitHub repository</h1>
+<p>The full code for the plugin and associated demo can be found in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/articles/skv_py.html</guid>
+  <pubDate>Tue, 26 Dec 2023 08:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/duckling.png" medium="image" type="image/png" height="54" width="144"/>
+</item>
 <item>
   <title>Do I Have ADHD? (Work In Progress)</title>
   <link>https://www.meyerperin.com/articles/adhd.html</link>
@@ -201,7 +455,7 @@ Important
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Mon, 25 Dec 2023 06:17:24 GMT</pubDate>
+  <pubDate>Tue, 26 Dec 2023 19:09:24 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -790,7 +1044,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Mon, 25 Dec 2023 06:17:24 GMT</pubDate>
+  <pubDate>Tue, 26 Dec 2023 19:09:24 GMT</pubDate>
 </item>
 </channel>
 </rss>
