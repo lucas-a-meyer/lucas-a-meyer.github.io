@@ -33,10 +33,17 @@ website:
           - articles/midjourney.qmd
           - articles/semantic_kernel.qmd
           - articles/adhd.qmd
+          - articles/skv_py.qmd
       - text: "Blog"
         file: blog.qmd
       - text: "Using Quarto"
         file: using_quarto/index.qmd
+      - text: "GitHub Repositories" 
+        menu:
+          - text: "OpenAI Vision API with the Semantic Kernel"
+            href: https://github.com/lucas-a-meyer/sk-vision-py
+          - text: "Pytly: Python client for the T.LY link shortener"
+            href: https://github.com/lucas-a-meyer/pytly     
     right:
       - text: "{{< iconify fa6-brands threads >}}"
         href: https://threads.net/@lucas_a_meyer

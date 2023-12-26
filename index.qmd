@@ -3,9 +3,10 @@ title: "Articles"
 listing:
 - id: articles
   contents: 
+  - articles/adhd.qmd
+  - articles/skv_py.qmd
   - articles/midjourney.qmd
   - articles/semantic_kernel.qmd
-  - articles/adhd.qmd
   sort: False
   type: grid
   categories: false

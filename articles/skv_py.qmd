@@ -1,0 +1,113 @@
+---
+title: "OpenAI Vision plugin for the Semantic Kernel"
+page-layout: full
+toc: True
+image: /images/duckling.png
+toc-expand: true
+include-in-header: _msft-clarity.html
+date: 2023-12-26
+---
+
+# A plugin for the Semantic Kernel to use the OpenAI vision API
+
+The Microsoft Semantic Kernel is great for creating AI agents and chaining several functions together. Recently, OpenAI released a beta version of their Vision model, a model that can generate text from images. I created a plugin for the Semantic Kernel that allows you to use the OpenAI Vision model as part of your AI agent.
+
+In this article, I'll explain how to use the plugin as part of a chain of functions: I'll use the vision plugin to identify an animal, and then use the result to ask OpenAI for three interesting facts about that animal. The code for this example can be found in the [demo.py](https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py) source file in the [GitHub repository](https://l.meyerperin.com/b_skvisionpy).
+
+The example is intentionally simple. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs, or whether a person is wearing a mask. 
+
+# Identifying images
+
+The plugin has a single function, `ApplyPromptToImage`, which takes a prompt and an image URL as input, and returns the generated text. In the example below, I show how to use the function to identify an animal in an image. The prompt is `What animal is this? Please respond in one word.` and the image is a picture of an owl.
+
+<center>
+![](https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg){height=400}
+</center>
+
+```python
+kernel = sk.Kernel()
+vision = kernel.import_skill(Vision())
+variables = sk.ContextVariables()
+variables['prompt'] = "What animal is this? Please respond in one word."
+variables['url'] = "https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg"
+animal = await kernel.run_async(vision['ApplyPromptToImage'], input_vars=variables)
+```
+
+The output will be simply `owl`.
+
+# Chaining the plugin answer to another function
+
+The plugin returns the generated text as a string. In the example below, I use the result of the plugin to ask OpenAI for three interesting facts about the animal. I have createad a semantic function with the prompt `Provide three interesting and unusual facts about the animal {{$input}}` and called it `AnimalFacts`. I then use the result of the vision plugin as the input for the `AnimalFacts` function.
+
+```python
+facts = await kernel.run_async(plugins['AnimalFacts'], input_str=str(animal))
+```
+
+This is what I learned about owls from the output of my AI agent:
+```
+1. Owls have specialized feathers with fringes of varying softness that help muffle 
+sound when they fly. Their broad wings and light bodies also make them practically 
+silent fliers, which helps them stalk prey more easily.
+
+2. Unlike most birds, owls have both eyes facing forward which gives them better
+ depth perception for hunting.
+
+3. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
+underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
+ with one ear being higher than the other, which helps them locate sounds in 
+ multiple dimensions.
+```
+
+# Writing a native plugin to wrap the OpenAI API
+
+The plugin is a native plugin, written in Python. The plugin code is in the [GitHub repository](https://github.com/lucas-a-meyer/sk-vision-py/blob/main/VisionPlugin.py). The code is very simple.
+
+```python
+from dotenv import load_dotenv
+from openai import OpenAI
+from semantic_kernel.skill_definition import sk_function, sk_function_context_parameter
+from semantic_kernel.orchestration.sk_context import SKContext
+import os
+```
+
+We need to import the OpenAI library, the SKContext class because our function has multiple parameters (the prompt and the image URL), and the decorators that will allow us to make the Python function visible to the semantic Kernel.
+
+```python
+class Vision:
+    @sk_function(
+        description="""Asks the GPT-4 Vision API to perform an operation described by the prompt
+        on an image given its url""",
+        name="ApplyPromptToImage"
+    )
+    @sk_function_context_parameter(
+        name="prompt",
+        description="The prompt you want to send to the Vision API",
+    )
+    @sk_function_context_parameter(
+        name="url",
+        description="",
+    )
+```
+The function is below and it simply sends a message to the OpenAI API and returns the response.
+
+
+```python
+        def ApplyPromptToImage(self, context: SKContext) -> str:
+        load_dotenv()
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+        response = client.chat.completions.create(
+        model="gpt-4-vision-preview",
+        messages=[
+            {"role": "user", "content": [
+                {"type": "text", "text": f"{context['prompt']}"},
+                {"type": "image_url","image_url": {"url": f"{context['url']}",
+            },},],}],
+        max_tokens=300,
+        )
+
+        return response.choices[0].message.content
+```
+# GitHub repository
+
+The full code for the plugin and associated demo can be found in the [GitHub repository](https://l.meyerperin.com/b_skvisionpy).
