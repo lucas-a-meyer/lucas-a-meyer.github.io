@@ -12,48 +12,64 @@
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Tue, 26 Dec 2023 08:00:00 GMT</lastBuildDate>
 <item>
-  <title>OpenAI Vision plugin for the Semantic Kernel</title>
+  <title>OpenAI Vision Plugin for the Microsoft Semantic Kernel</title>
   <link>https://www.meyerperin.com/articles/skv_py.html</link>
   <description><![CDATA[ 
 
 
 
-<section id="a-plugin-for-the-semantic-kernel-to-use-the-openai-vision-api" class="level1">
-<h1>A plugin for the Semantic Kernel to use the OpenAI vision API</h1>
 <p>The Microsoft Semantic Kernel is great for creating AI agents and chaining several functions together. Recently, OpenAI released a beta version of their Vision model, a model that can generate text from images. I created a plugin for the Semantic Kernel that allows you to use the OpenAI Vision model as part of your AI agent.</p>
 <p>In this article, I’ll explain how to use the plugin as part of a chain of functions: I’ll use the vision plugin to identify an animal, and then use the result to ask OpenAI for three interesting facts about that animal. The code for this example can be found in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py">demo.py</a> source file in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
-<p>The example is intentionally simple. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs, or whether a person is wearing a mask.</p>
-</section>
-<section id="identifying-images" class="level1">
-<h1>Identifying images</h1>
-<p>The plugin has a single function, <code>ApplyPromptToImage</code>, which takes a prompt and an image URL as input, and returns the generated text. In the example below, I show how to use the function to identify an animal in an image. The prompt is <code>What animal is this? Please respond in one word.</code> and the image is a picture of an owl.</p>
-<center>
-<img src="https://www.meyerperin.com/articles/https:/images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg" height="400">
-</center>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">kernel <span class="op" style="color: #5E5E5E;
+<p>The plugin has a single function, <code>ApplyPromptToImage</code>, which takes a prompt and an image URL as input, and returns the generated text. The examples are also intentionally simple and intended just to get you started. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs, or whether a person is wearing a mask.</p>
+<section id="explaining-why-memes-are-funny" class="level1">
+<h1>Explaining why memes are funny</h1>
+<p>In this first example, I will use the plugin to explain why a meme is funny. The prompt is simply <code>Why is this meme funny?</code></p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">    </span>
+<span id="cb1-2">    kernel <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> sk.Kernel()</span>
-<span id="cb1-2">vision <span class="op" style="color: #5E5E5E;
+<span id="cb1-3">    vision <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> kernel.import_skill(Vision())</span>
-<span id="cb1-3">variables <span class="op" style="color: #5E5E5E;
+<span id="cb1-4"></span>
+<span id="cb1-5">    meme_base_url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://raw.githubusercontent.com/lucas-a-meyer/lucas-a-meyer.github.io/main/images/"</span></span>
+<span id="cb1-6">    meme_url_list <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"meme1.jpg"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"meme2.png"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"meme3.jpg"</span>] </span>
+<span id="cb1-7"></span>
+<span id="cb1-8">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> url <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> meme_url_list:</span>
+<span id="cb1-9">        variables <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> sk.ContextVariables()</span>
-<span id="cb1-4">variables[<span class="st" style="color: #20794D;
+<span id="cb1-10">        variables[<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'prompt'</span>] <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"What animal is this? Please respond in one word."</span></span>
-<span id="cb1-5">variables[<span class="st" style="color: #20794D;
+font-style: inherit;">"Why is this meme funny?"</span></span>
+<span id="cb1-11">        variables[<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'url'</span>] <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+font-style: inherit;">=</span> meme_base_url <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">"https://images.pexels.com/photos/53977/eagle-owl-raptor-falconry-owl-53977.jpeg"</span></span>
-<span id="cb1-6">animal <span class="op" style="color: #5E5E5E;
+font-style: inherit;">+</span> url</span>
+<span id="cb1-12">        meme <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
@@ -61,13 +77,117 @@ font-style: inherit;">await</span> kernel.run_async(vision[<span class="st" styl
 background-color: null;
 font-style: inherit;">'ApplyPromptToImage'</span>], input_vars<span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">=</span>variables)</span></code></pre></div>
-<p>The output will be simply <code>owl</code>.</p>
+font-style: inherit;">=</span>variables)</span>
+<span id="cb1-13">        <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>meme<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n\n</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)     </span></code></pre></div>
+<p>Here are the results, I think they are very good.</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Meme</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://www.meyerperin.com/images/meme1.jpg" class="img-fluid" width="300"></td>
+<td>The humor in this meme comes from the irony and self-awareness of the situation. The person in the image is depicted as being awake at 3 AM, a time typically associated with sleep, while reading about the importance of sleep. The implication is that while they understand the value of sleep for health and well-being, they are not following this advice themselves. The relatable contradiction between what they’re doing (staying up late) and what they’re reading about (the importance of sleep) creates a humorous juxtaposition that many people can identify with, as it’s common for individuals to do things that go against their own better judgment or knowledge.</td>
+</tr>
+<tr class="even">
+<td><img src="https://www.meyerperin.com/images/meme2.png" class="img-fluid" width="300"></td>
+<td>This meme is humorous because it presents a situation where someone has comically circumvented a rule through a technicality. The text explains that while there’s a rule against having pumpkins in their dormitory, there’s no mention of pineapples. The images show a pineapple carved in a manner similar to a jack-o’-lantern, traditionally made from a pumpkin, often for Halloween. The humor arises from the person’s literal interpretation of the rules, exploiting the lack of specificity to create a loophole and do something in the spirit of what’s prohibited yet not technically against the rules. This kind of wit and playful rebellion against overly specific or seemingly arbitrary rules often resonates with people who enjoy clever ways to bend or skirt the rules without breaking them.</td>
+</tr>
+<tr class="odd">
+<td><img src="https://www.meyerperin.com/images/meme3.jpg" class="img-fluid" width="300"></td>
+<td>The humor in this meme arises from the juxtaposition of an inspirational saying typically found in areas of the home where food is prepared or consumed—like the kitchen—and placing it in a completely inappropriate context—the bathroom. Specifically, the framed quote says, “LIFE IS SHORT LICK THE BOWL,” which in a culinary context encourages people to enjoy life to the fullest, perhaps by savoring every last bit of their food. However, when placed in the bathroom, right next to a toilet bowl, the phrase takes on a literal and unpleasantly comical meaning. The idea of licking a toilet bowl is both absurd and humorous, evoking a reaction due to the drastic shift in the context of the phrase.</td>
+</tr>
+</tbody>
+</table>
+<p>In the next section, I’ll explain how to use the plugin to identify an animal in an image and pass the results to another function.</p>
 </section>
 <section id="chaining-the-plugin-answer-to-another-function" class="level1">
 <h1>Chaining the plugin answer to another function</h1>
-<p>The plugin returns the generated text as a string. In the example below, I use the result of the plugin to ask OpenAI for three interesting facts about the animal. I have createad a semantic function with the prompt <code>Provide three interesting and unusual facts about the animal {{$input}}</code> and called it <code>AnimalFacts</code>. I then use the result of the vision plugin as the input for the <code>AnimalFacts</code> function.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1">facts <span class="op" style="color: #5E5E5E;
+<p>In the example below, I first use the vision plugin to identify an animal, and then use the results to ask for three interesting facts about an animal. I have createad a semantic function with the prompt <code>Provide three interesting and unusual facts about the animal {{$input}}</code> and called it <code>AnimalFacts</code>. I then use the result of the vision plugin as the input for the <code>AnimalFacts</code> function.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Why is this useful?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In my example, I’m using the Vision API in the call that identifies the animal from the image, but GPT-3.5 in the call that generates the facts, because the GPT-4 Vision API can be <a href="https://platform.openai.com/docs/guides/vision/calculating-costs">expensive</a>.</p>
+</div>
+</div>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"></span>
+<span id="cb2-2">url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://l.meyerperin.com/skv_owl"</span></span>
+<span id="cb2-3">gpt35 <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> OpenAIChatCompletion(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt-3.5-turbo"</span>, api_key, org_id)</span>
+<span id="cb2-4">kernel.add_chat_service(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt35"</span>, gpt35)</span>
+<span id="cb2-5"></span>
+<span id="cb2-6">vision <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.import_skill(Vision())</span>
+<span id="cb2-7">plugins <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> kernel.import_semantic_skill_from_directory(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"."</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"plugins"</span>)</span>
+<span id="cb2-8"></span>
+<span id="cb2-9">variables <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> sk.ContextVariables()</span>
+<span id="cb2-10">variables[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'prompt'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"What animal is this? Please respond in one word."</span></span>
+<span id="cb2-11">variables[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'url'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> url</span>
+<span id="cb2-12"></span>
+<span id="cb2-13">animal <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">await</span> kernel.run_async(vision[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'ApplyPromptToImage'</span>], input_vars<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>variables)</span>
+<span id="cb2-14">facts <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="cf" style="color: #003B4F;
 background-color: null;
@@ -77,16 +197,40 @@ font-style: inherit;">'AnimalFacts'</span>], input_str<span class="op" style="co
 background-color: null;
 font-style: inherit;">=</span><span class="bu" style="color: null;
 background-color: null;
-font-style: inherit;">str</span>(animal))</span></code></pre></div>
-<p>This is what I learned about owls from the output of my AI agent:</p>
+font-style: inherit;">str</span>(animal))</span>
+<span id="cb2-15"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"The animal from the picture is a </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>animal<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)  </span>
+<span id="cb2-16"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>facts<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n\n</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span></code></pre></div>
+<p>Below are the results I learned about owls from the output of my AI agent:</p>
 <pre><code>1. Owls have specialized feathers with fringes of varying softness that help muffle 
 sound when they fly. Their broad wings and light bodies also make them practically 
 silent fliers, which helps them stalk prey more easily.
 
-2. Unlike most birds, owls have both eyes facing forward which gives them better
+1. Unlike most birds, owls have both eyes facing forward which gives them better
  depth perception for hunting.
 
-3. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
+1. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
 underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
  with one ear being higher than the other, which helps them locate sounds in 
  multiple dimensions.</code></pre>
@@ -256,6 +400,10 @@ font-style: inherit;">0</span>].message.content</span></code></pre></div>
 <section id="github-repository" class="level1">
 <h1>GitHub repository</h1>
 <p>The full code for the plugin and associated demo can be found in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
+</section>
+<section id="have-i-ever-thought-about-creating-an-app-that-does-this-as-a-service" class="level1">
+<h1>Have I ever thought about creating an app that does this as a service?</h1>
+<p>Yes, and with the blog post above, you can easily create one. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expenive very quickly.</p>
 
 
 </section>
@@ -263,7 +411,7 @@ font-style: inherit;">0</span>].message.content</span></code></pre></div>
  ]]></description>
   <guid>https://www.meyerperin.com/articles/skv_py.html</guid>
   <pubDate>Tue, 26 Dec 2023 08:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/duckling.png" medium="image" type="image/png" height="54" width="144"/>
+  <media:content url="https://www.meyerperin.com/images/meme3.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Do I Have ADHD? (Work In Progress)</title>
@@ -455,7 +603,7 @@ Important
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Tue, 26 Dec 2023 23:16:29 GMT</pubDate>
+  <pubDate>Wed, 27 Dec 2023 01:04:12 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -1044,7 +1192,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Tue, 26 Dec 2023 23:16:29 GMT</pubDate>
+  <pubDate>Wed, 27 Dec 2023 01:04:12 GMT</pubDate>
 </item>
 </channel>
 </rss>
