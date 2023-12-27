@@ -9,6 +9,7 @@ date: 2023-12-26
 ---
 
 In this article, I'll explain how to use the Semantic Kernel and the OpenAI Vision API to perform two tasks:
+
 1. Explain why a meme is funny
 2. Identify an animal in an image and pass the results to another function that generates three interesting facts about the animal.
 

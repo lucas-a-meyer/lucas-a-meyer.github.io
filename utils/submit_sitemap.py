@@ -13,7 +13,7 @@ headers = {"Content-Type": "application/json; charset=utf-8"}
 headers["Host"]="www.bing.com"
 
 indexnow_url = "https://www.bing.com/indexnow"
-with open ("docs/sitemap.json") as fj:
+with open ("_site/sitemap.json") as fj:
     indexnow_json = json.load(fj)
 
 response = requests.post(indexnow_url, json=indexnow_json, headers=headers)
