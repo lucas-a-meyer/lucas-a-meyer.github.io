@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2023-12-26">
 
-<title>Lucas A. Meyer - OpenAI Vision Plugin for the Microsoft Semantic Kernel</title>
+<title>Lucas A. Meyer - Explaining memes and images with the Semantic Kernel and the OpenAI Vision API</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -124,13 +124,13 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Lucas A. Meyer - OpenAI Vision Plugin for the Microsoft Semantic Kernel">
+<meta property="og:title" content="Lucas A. Meyer - Explaining memes and images with the Semantic Kernel and the OpenAI Vision API">
 <meta property="og:description" content="">
 <meta property="og:image" content="https://www.meyerperin.com/images/meme2.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta property="og:image:height" content="745">
 <meta property="og:image:width" content="889">
-<meta name="twitter:title" content="Lucas A. Meyer - OpenAI Vision Plugin for the Microsoft Semantic Kernel">
+<meta name="twitter:title" content="Lucas A. Meyer - Explaining memes and images with the Semantic Kernel and the OpenAI Vision API">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://www.meyerperin.com/images/meme2.png">
 <meta name="twitter:image-height" content="745">
@@ -174,7 +174,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   </li>  
         <li>
     <a class="dropdown-item" href="../articles/skv_py.html" rel="" target="">
- <span class="dropdown-text">OpenAI Vision Plugin for the Microsoft Semantic Kernel</span></a>
+ <span class="dropdown-text">Explaining memes and images with the Semantic Kernel and the OpenAI Vision API</span></a>
   </li>  
     </ul>
   </li>
@@ -244,8 +244,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
   <ul>
   <li><a href="#explaining-why-memes-are-funny" id="toc-explaining-why-memes-are-funny" class="nav-link active" data-scroll-target="#explaining-why-memes-are-funny">Explaining why memes are funny</a></li>
   <li><a href="#chaining-the-plugin-answer-to-another-function" id="toc-chaining-the-plugin-answer-to-another-function" class="nav-link" data-scroll-target="#chaining-the-plugin-answer-to-another-function">Chaining the plugin answer to another function</a></li>
-  <li><a href="#writing-a-native-plugin-to-wrap-the-openai-api" id="toc-writing-a-native-plugin-to-wrap-the-openai-api" class="nav-link" data-scroll-target="#writing-a-native-plugin-to-wrap-the-openai-api">Writing a native plugin to wrap the OpenAI API</a></li>
-  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">GitHub repository</a></li>
+  <li><a href="#how-to-write-native-plugin-to-wrap-the-openai-api" id="toc-how-to-write-native-plugin-to-wrap-the-openai-api" class="nav-link" data-scroll-target="#how-to-write-native-plugin-to-wrap-the-openai-api">How to write native plugin to wrap the OpenAI API</a></li>
   <li><a href="#have-i-ever-thought-about-creating-an-app-that-does-this-as-a-service" id="toc-have-i-ever-thought-about-creating-an-app-that-does-this-as-a-service" class="nav-link" data-scroll-target="#have-i-ever-thought-about-creating-an-app-that-does-this-as-a-service">Have I ever thought about creating an app that does this as a service?</a></li>
   </ul>
 </nav>
@@ -255,7 +254,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">OpenAI Vision Plugin for the Microsoft Semantic Kernel</h1>
+<h1 class="title">Explaining memes and images with the Semantic Kernel and the OpenAI Vision API</h1>
 </div>
 
 
@@ -276,12 +275,12 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
-<p>The Microsoft Semantic Kernel is great for creating AI agents and chaining several functions together. Recently, OpenAI released a beta version of their Vision model, a model that can generate text from images. I created a plugin for the Semantic Kernel that allows you to use the OpenAI Vision model as part of your AI agent.</p>
-<p>In this article, I’ll explain how to use the plugin as part of a chain of functions: I’ll use the vision plugin to identify an animal, and then use the result to ask OpenAI for three interesting facts about that animal. The code for this example can be found in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py">demo.py</a> source file in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
-<p>The plugin has a single function, <code>ApplyPromptToImage</code>, which takes a prompt and an image URL as input, and returns the generated text. The examples are also intentionally simple and intended just to get you started. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs, or whether a person is wearing a mask.</p>
+<p>In this article, I’ll explain how to use the Semantic Kernel and the OpenAI Vision API to perform two tasks: 1. Explain why a meme is funny 2. Identify an animal in an image and pass the results to another function that generates three interesting facts about the animal.</p>
+<p>The examples in this article are intentionally simple. The goal of the article is to give you a good idea of the capabilities of the Semantic Kernel and the OpenAI Vision API. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs,whether a person is wearing a mask, or to automatically generate accessible image descriptions.</p>
+<p>The code for all examples can be found in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py">demo.py</a> source file in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
 <section id="explaining-why-memes-are-funny" class="level1">
 <h1>Explaining why memes are funny</h1>
-<p>In this first example, I will use the plugin to explain why a meme is funny. The prompt is simply <code>Why is this meme funny?</code></p>
+<p>In this first example, I will use the plugin to explain why a meme is funny. My code instantiates and calls the <code>Vision</code> plugin. The plugin has a single function, <code>ApplyPromptToImage</code>, which takes a prompt and an image URL as input, and returns the generated text. In my example, the prompt is simply <code>Why is this meme funny?</code>, and I pass an URL of an image of a meme.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    kernel <span class="op">=</span> sk.Kernel()</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    vision <span class="op">=</span> kernel.import_skill(Vision())</span>
@@ -295,7 +294,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        variables[<span class="st">'url'</span>] <span class="op">=</span> meme_base_url <span class="op">+</span> url</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        meme <span class="op">=</span> <span class="cf">await</span> kernel.run_async(vision[<span class="st">'ApplyPromptToImage'</span>], input_vars<span class="op">=</span>variables)</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>meme<span class="sc">}</span><span class="ch">\n\n</span><span class="ss">"</span>)     </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Here are the results, I think they are very good.</p>
+<p>Here are the results. The Vision API does a good job of understanding the image and generating a good explanation of why the meme is funny.</p>
 <table class="table">
 <colgroup>
 <col style="width: 50%">
@@ -326,18 +325,21 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </section>
 <section id="chaining-the-plugin-answer-to-another-function" class="level1">
 <h1>Chaining the plugin answer to another function</h1>
-<p>In the example below, I first use the vision plugin to identify an animal, and then use the results to ask for three interesting facts about an animal. I have createad a semantic function with the prompt <code>Provide three interesting and unusual facts about the animal {{$input}}</code> and called it <code>AnimalFacts</code>. I then use the result of the vision plugin as the input for the <code>AnimalFacts</code> function.</p>
+<p>In the example below, I first use the Vision plugin to identify an animal, and then use the results to ask for three interesting facts about an animal. I have createad a semantic function with the prompt <code>Provide three interesting and unusual facts about the animal {{$input}}</code> and called it <code>AnimalFacts</code>.</p>
+<p>The URL I’m passing in the code below is a picture of an owl. The Vision API correctly identifies the animal as an owl, and the <code>AnimalFacts</code> function generates three interesting facts about owls.</p>
+<p><img src="https://l.meyerperin.com/skv_owl.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Why is this useful?
+Why do this in two steps?
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In my example, I’m using the Vision API in the call that identifies the animal from the image, but GPT-3.5 in the call that generates the facts, because the GPT-4 Vision API can be <a href="https://platform.openai.com/docs/guides/vision/calculating-costs">expensive</a>.</p>
+<p>In my example, I’m doing two steps. First I’m using the GPT-4 Vision API in the call that identifies the animal from the image, and then GPT-3.5 in the call that generates the facts.</p>
+<p>It would be possible to solve the problem with a single call to the Vision API, but it can be <a href="https://platform.openai.com/docs/guides/vision/calculating-costs">expensive</a>, so I get its results and pass it to a cheaper model for the text generation step.</p>
 </div>
 </div>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
@@ -356,28 +358,28 @@ Why is this useful?
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>facts <span class="op">=</span> <span class="cf">await</span> kernel.run_async(plugins[<span class="st">'AnimalFacts'</span>], input_str<span class="op">=</span><span class="bu">str</span>(animal))</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"The animal from the picture is a </span><span class="sc">{</span>animal<span class="sc">}</span><span class="ss">"</span>)  </span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>facts<span class="sc">}</span><span class="ch">\n\n</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Below are the results I learned about owls from the output of my AI agent:</p>
-<pre><code>1. Owls have specialized feathers with fringes of varying softness that help muffle 
+<p>From the call above, I got the following result about owls:</p>
+<pre class="text"><code>1. Owls have specialized feathers with fringes of varying softness that help muffle 
 sound when they fly. Their broad wings and light bodies also make them practically 
 silent fliers, which helps them stalk prey more easily.
 
-1. Unlike most birds, owls have both eyes facing forward which gives them better
+2. Unlike most birds, owls have both eyes facing forward which gives them better
  depth perception for hunting.
 
-1. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
+3. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
 underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
  with one ear being higher than the other, which helps them locate sounds in 
  multiple dimensions.</code></pre>
 </section>
-<section id="writing-a-native-plugin-to-wrap-the-openai-api" class="level1">
-<h1>Writing a native plugin to wrap the OpenAI API</h1>
-<p>The plugin is a native plugin, written in Python. The plugin code is in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/VisionPlugin.py">GitHub repository</a>. The code is very simple.</p>
+<section id="how-to-write-native-plugin-to-wrap-the-openai-api" class="level1">
+<h1>How to write native plugin to wrap the OpenAI API</h1>
+<p>In this section, I’ll explain all the steps involved in writing a Semantic Kernel native Python plugin to wrap the OpenAI API. I’ll use the <a href="https://beta.openai.com/docs/guides/vision">Vision API</a> as an example. The plugin code is in the <a href="https://github.com/lucas-a-meyer/sk-vision-py/blob/main/VisionPlugin.py">GitHub repository</a>.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dotenv <span class="im">import</span> load_dotenv</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> openai <span class="im">import</span> OpenAI</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> semantic_kernel.skill_definition <span class="im">import</span> sk_function, sk_function_context_parameter</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> semantic_kernel.orchestration.sk_context <span class="im">import</span> SKContext</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>We need to import the OpenAI library, the SKContext class because our function has multiple parameters (the prompt and the image URL), and the decorators that will allow us to make the Python function visible to the semantic Kernel.</p>
+<p>We need to import the OpenAI library, the SKContext class because our function has multiple parameters (the prompt and the image URL), and the decorators in <code>skill_definition</code> that will allow us to make the Python function visible to the semantic Kernel.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Vision:</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">@sk_function</span>(</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        description<span class="op">=</span><span class="st">"""Asks the GPT-4 Vision API to perform an operation described by the prompt</span></span>
@@ -392,7 +394,7 @@ underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        name<span class="op">=</span><span class="st">"url"</span>,</span>
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        description<span class="op">=</span><span class="st">""</span>,</span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The function is below and it simply sends a message to the OpenAI API and returns the response.</p>
+<p>The main code of the function consists in assembling a message that conforms to the <a href="https://beta.openai.com/docs/guides/vision">Vision API specification</a>. The message is then sent to the API, and the result is parsed and returned to the caller.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>        <span class="kw">def</span> ApplyPromptToImage(<span class="va">self</span>, context: SKContext) <span class="op">-&gt;</span> <span class="bu">str</span>:</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>        load_dotenv()</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        client <span class="op">=</span> OpenAI(api_key<span class="op">=</span>os.getenv(<span class="st">"OPENAI_API_KEY"</span>))</span>
@@ -408,14 +410,11 @@ underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        )</span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> response.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="github-repository" class="level1">
-<h1>GitHub repository</h1>
 <p>The full code for the plugin and associated demo can be found in the <a href="https://l.meyerperin.com/b_skvisionpy">GitHub repository</a>.</p>
 </section>
 <section id="have-i-ever-thought-about-creating-an-app-that-does-this-as-a-service" class="level1">
 <h1>Have I ever thought about creating an app that does this as a service?</h1>
-<p>Yes, and with the blog post above, you can easily create one. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expenive very quickly.</p>
+<p>Yes, and with the blog post above, you can easily create one yourself. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expensive very quickly.</p>
 
 
 </section>
