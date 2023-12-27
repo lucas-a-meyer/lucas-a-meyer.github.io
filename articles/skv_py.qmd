@@ -1,5 +1,5 @@
 ---
-title: "OpenAI Vision Plugin for the Microsoft Semantic Kernel"
+title: "Explaining memes and images with the Semantic Kernel and the OpenAI Vision API"
 page-layout: full
 toc: True
 image: /images/meme2.png
@@ -8,16 +8,17 @@ include-in-header: _msft-clarity.html
 date: 2023-12-26
 ---
 
+In this article, I'll explain how to use the Semantic Kernel and the OpenAI Vision API to perform two tasks:
+1. Explain why a meme is funny
+2. Identify an animal in an image and pass the results to another function that generates three interesting facts about the animal.
 
-The Microsoft Semantic Kernel is great for creating AI agents and chaining several functions together. Recently, OpenAI released a beta version of their Vision model, a model that can generate text from images. I created a plugin for the Semantic Kernel that allows you to use the OpenAI Vision model as part of your AI agent.
+The examples in this article are intentionally simple. The goal of the article is to give you a good idea of the capabilities of the Semantic Kernel and the OpenAI Vision API. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs,whether a person is wearing a mask, or to automatically generate accessible image descriptions.
 
-In this article, I'll explain how to use the plugin as part of a chain of functions: I'll use the vision plugin to identify an animal, and then use the result to ask OpenAI for three interesting facts about that animal. The code for this example can be found in the [demo.py](https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py) source file in the [GitHub repository](https://l.meyerperin.com/b_skvisionpy).
-
-The plugin has a single function, `ApplyPromptToImage`, which takes a prompt and an image URL as input, and returns the generated text. The examples are also intentionally simple and intended just to get you started. The plugin can be used for more complex tasks, such as figuring out whether a street intersection is accessible to wheelchairs, or whether a person is wearing a mask. 
+The code for all examples can be found in the [demo.py](https://github.com/lucas-a-meyer/sk-vision-py/blob/main/demo.py) source file in the [GitHub repository](https://l.meyerperin.com/b_skvisionpy). 
 
 # Explaining why memes are funny
 
-In this first example, I will use the plugin to explain why a meme is funny. The prompt is simply `Why is this meme funny?` 
+In this first example, I will use the plugin to explain why a meme is funny. My code instantiates and calls the `Vision` plugin. The plugin has a single function, `ApplyPromptToImage`, which takes a prompt and an image URL as input, and returns the generated text. In my example, the prompt is simply `Why is this meme funny?`, and I pass an URL of an image of a meme.  
 
 ```python
     
@@ -35,7 +36,7 @@ In this first example, I will use the plugin to explain why a meme is funny. The
         print(f"{meme}\n\n")     
 ```
 
-Here are the results, I think they are very good.
+Here are the results. The Vision API does a good job of understanding the image and generating a good explanation of why the meme is funny.
 
 | Meme      | Explanation |
 | ----------- | ----------- |
@@ -47,12 +48,18 @@ In the next section, I'll explain how to use the plugin to identify an animal in
 
 # Chaining the plugin answer to another function
 
-In the example below, I first use the vision plugin to identify an animal, and then use the results to ask for three interesting facts about an animal. I have createad a semantic function with the prompt `Provide three interesting and unusual facts about the animal {{$input}}` and called it `AnimalFacts`. I then use the result of the vision plugin as the input for the `AnimalFacts` function.
+In the example below, I first use the Vision plugin to identify an animal, and then use the results to ask for three interesting facts about an animal. I have createad a semantic function with the prompt `Provide three interesting and unusual facts about the animal {{$input}}` and called it `AnimalFacts`. 
+
+The URL I'm passing in the code below is a picture of an owl. The Vision API correctly identifies the animal as an owl, and the `AnimalFacts` function generates three interesting facts about owls.
+
+![](https://l.meyerperin.com/skv_owl)
 
 ::: {.callout-tip}
-## Why is this useful?
+## Why do this in two steps?
 
-In my example, I'm using the Vision API in the call that identifies the animal from the image, but GPT-3.5 in the call that generates the facts, because the GPT-4 Vision API can be [expensive](https://platform.openai.com/docs/guides/vision/calculating-costs).
+In my example, I'm doing two steps. First I'm using the GPT-4 Vision API in the call that identifies the animal from the image, and then GPT-3.5 in the call that generates the facts. 
+
+It would be possible to solve the problem with a single call to the Vision API, but it can be [expensive](https://platform.openai.com/docs/guides/vision/calculating-costs), so I get its results and pass it to a cheaper model for the text generation step.
 :::
 
 ```python
@@ -74,24 +81,26 @@ print(f"The animal from the picture is a {animal}")
 print(f"{facts}\n\n")
 
 ```
-Below are the results I learned about owls from the output of my AI agent:
-```
+
+From the call above, I got the following result about owls:
+
+```text
 1. Owls have specialized feathers with fringes of varying softness that help muffle 
 sound when they fly. Their broad wings and light bodies also make them practically 
 silent fliers, which helps them stalk prey more easily.
 
-1. Unlike most birds, owls have both eyes facing forward which gives them better
+2. Unlike most birds, owls have both eyes facing forward which gives them better
  depth perception for hunting.
 
-1. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
+3. Some species of owls, such as the Great Gray Owl, can hear a mouse moving 
 underneath a foot of snow from up to 60 feet away. Their ears are asymmetrical,
  with one ear being higher than the other, which helps them locate sounds in 
  multiple dimensions.
 ```
 
-# Writing a native plugin to wrap the OpenAI API
+# How to write native plugin to wrap the OpenAI API
 
-The plugin is a native plugin, written in Python. The plugin code is in the [GitHub repository](https://github.com/lucas-a-meyer/sk-vision-py/blob/main/VisionPlugin.py). The code is very simple.
+In this section, I'll explain all the steps involved in writing a Semantic Kernel native Python plugin to wrap the OpenAI API. I'll use the [Vision API](https://beta.openai.com/docs/guides/vision) as an example. The plugin code is in the [GitHub repository](https://github.com/lucas-a-meyer/sk-vision-py/blob/main/VisionPlugin.py).
 
 ```python
 from dotenv import load_dotenv
@@ -101,7 +110,7 @@ from semantic_kernel.orchestration.sk_context import SKContext
 import os
 ```
 
-We need to import the OpenAI library, the SKContext class because our function has multiple parameters (the prompt and the image URL), and the decorators that will allow us to make the Python function visible to the semantic Kernel.
+We need to import the OpenAI library, the SKContext class because our function has multiple parameters (the prompt and the image URL), and the decorators in `skill_definition` that will allow us to make the Python function visible to the semantic Kernel.
 
 ```python
 class Vision:
@@ -119,8 +128,7 @@ class Vision:
         description="",
     )
 ```
-The function is below and it simply sends a message to the OpenAI API and returns the response.
-
+The main code of the function consists in assembling a message that conforms to the [Vision API specification](https://beta.openai.com/docs/guides/vision). The message is then sent to the API, and the result is parsed and returned to the caller.  
 
 ```python
         def ApplyPromptToImage(self, context: SKContext) -> str:
@@ -139,11 +147,10 @@ The function is below and it simply sends a message to the OpenAI API and return
 
         return response.choices[0].message.content
 ```
-# GitHub repository
 
 The full code for the plugin and associated demo can be found in the [GitHub repository](https://l.meyerperin.com/b_skvisionpy).
 
 # Have I ever thought about creating an app that does this as a service?
 
-Yes, and with the blog post above, you can easily create one. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expenive very quickly.
+Yes, and with the blog post above, you can easily create one yourself. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expensive very quickly.
 

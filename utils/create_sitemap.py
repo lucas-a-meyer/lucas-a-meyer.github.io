@@ -27,12 +27,12 @@ for dir in posts_dir:
                 url_list.append(url_target)
 
 df_sites = pd.DataFrame(site_pages)
-df_sites.to_xml("docs/sitemap.xml", index=False, row_name="url", root_name="urlset", namespaces={"": "http://www.sitemaps.org/schemas/sitemap/0.9"})
+df_sites.to_xml("_site/sitemap.xml", index=False, row_name="url", root_name="urlset", namespaces={"": "http://www.sitemaps.org/schemas/sitemap/0.9"})
 
 json_dict = {}
 json_dict["host"] = "www.meyerperin.com"
 json_dict["key"] = "b2ef8541f4a041a0a2b32fff426e64d8"
 json_dict["keyLocation"] = "https://www.meyerperin.com/b2ef8541f4a041a0a2b32fff426e64d8.txt"
 json_dict["urlList"] = url_list
-with open("docs/sitemap.json", "w") as fj:
+with open("_site/sitemap.json", "w") as fj:
     json.dump(json_dict, fj, indent=4)
