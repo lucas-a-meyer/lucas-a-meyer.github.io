@@ -7,6 +7,7 @@ listing:
   - articles/skv_py.qmd
   - articles/midjourney.qmd
   - articles/semantic_kernel.qmd
+  - articles/badlands_ranch.qmd
   sort: False
   type: grid
   categories: false

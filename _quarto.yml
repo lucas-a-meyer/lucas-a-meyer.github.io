@@ -34,6 +34,7 @@ website:
           - articles/semantic_kernel.qmd
           - articles/adhd.qmd
           - articles/skv_py.qmd
+          - articles/badlands_ranch.qmd
       - text: "Blog"
         file: blog.qmd
       - text: "Using Quarto"
