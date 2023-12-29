@@ -1,5 +1,15 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/articles/adhd.html",
+      "/articles/skv_py.html",
+      "/articles/midjourney.html",
+      "/articles/semantic_kernel.html",
+      "/articles/badlands_ranch.html"
+    ]
+  },
+  {
     "listing": "/blog.html",
     "items": [
       "/posts/2023-09-22-getting-started-with-midjourney.html",
@@ -67,18 +77,5 @@
       "/posts/2018-06-25-centralized-vs-distributed-data-teams.html",
       "/posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html"
     ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/articles/adhd.html",
-      "/articles/skv_py.html",
-      "/articles/midjourney.html",
-      "/articles/semantic_kernel.html"
-    ]
-  },
-  {
-    "listing": "/talks.html",
-    "items": []
   }
 ]
