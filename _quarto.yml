@@ -7,7 +7,6 @@ project:
     
   render:
     - '*.qmd'
-    - '!staged_posts/'
 
 execute: 
   freeze: auto
@@ -35,6 +34,14 @@ website:
           - articles/adhd.qmd
           - articles/skv_py.qmd
           - articles/badlands_ranch.qmd
+          - articles/remarkable2.qmd
+      - text: "Reviews"
+        menu: 
+          - articles/remarkable2.qmd
+          - articles/badlands_ranch.qmd
+          - posts/2023-03-29-zotero.qmd
+          - posts/2022-09-15_newsguard.qmd
+          - posts/2022-06-28-farmers-dog.qmd
       - text: "Blog"
         file: blog.qmd
       - text: "Using Quarto"

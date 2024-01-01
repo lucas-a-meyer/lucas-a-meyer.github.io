@@ -5,7 +5,6 @@ toc: True
 image: /images/adhd_heading.png
 toc-expand: true
 include-in-header: _msft-clarity.html
-page-footer: "Some of the links in this page may be affiliate links. If you buy something through one of those links, I may get a small commission at no extra cost to you."
 date: 2023-12-22
 date-modified: 2023-12-24
 ---
@@ -63,6 +62,8 @@ I completed the forms December 8th. After all the forms are filled, there are th
 # Coping Technologies
 
 Over time I acquired a lot of products to help me cope with the [symptoms](#symptoms). I will list them below:
+
+{{< include _affiliate.qmd >}}
 
 - [**Apple AirTags**](https://l.meyerperin.com/airtags): I have these on everything since I lose something almost daily. The new AirTags have a feature called Precision Finding that allows me to find things a lot faster, and I use it a lot.
 - [**Wallet with keyring**](https://l.meyerperin.com/keyring_wallet): A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.

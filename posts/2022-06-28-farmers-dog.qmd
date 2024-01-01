@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2022-06-30 06:00:00
 draft: false
 id: 5da203149edf2caf144da73ac6a12db5
-image: https://mpsocial.blob.core.windows.net/blog-images/farmers-dog-logo.png
+image: /images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-06-30 06:00:00
@@ -24,7 +24,7 @@ As of November 2023, we have moved to [Badlands Ranch Dog Food](/articles/badlan
 
 :::
 
-The review below is about The Farmer's Dog, which we used for about six months. In November 2023, we moved to [Badlands Ranch dog food](/articles/badlands_ranch.qmd), which ended up being a lot more convenient for about the same price, and similarly appreciated by my dog. 
+The review below is about The Farmer's Dog, which we used for over a year. In November 2023, we moved to [Badlands Ranch dog food](/articles/badlands_ranch.qmd), which ended up being a lot more convenient for about the same price, and similarly appreciated by my dog. 
 
 I did not receive any compensation for this review, and I'm not affiliated with Badlands Ranch or The Farmer's Dog in any way. 
 

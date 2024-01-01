@@ -4,10 +4,14 @@ listing:
 - id: articles
   contents: 
   - articles/adhd.qmd
+  - articles/remarkable2.qmd
   - articles/skv_py.qmd
   - articles/midjourney.qmd
   - articles/semantic_kernel.qmd
   - articles/badlands_ranch.qmd
+  - posts/2023-03-29-zotero.qmd
+  - posts/2022-09-15_newsguard.qmd
+  - posts/2022-06-28-farmers-dog.qmd
   sort: False
   type: grid
   categories: false
