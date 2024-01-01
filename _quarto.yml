@@ -14,6 +14,7 @@ execute:
 website:
   title: "Lucas A. Meyer"
   google-analytics: "G-6KTZ853BN5"
+  
   twitter-card: true
   open-graph: true
   site-url: https://www.meyerperin.com
@@ -26,6 +27,7 @@ website:
   favicon: /favicon-32x32.png
 
   navbar:
+    logo: /images/mplogo.png
     left:
       - text: "Articles"
         menu:
@@ -67,7 +69,9 @@ website:
 
 format:
   html:
-    theme: pulse
+    theme: 
+      light: flatly
+      dark: darkly
     css: styles.css
     grid:
       sidebar-width: 500px
