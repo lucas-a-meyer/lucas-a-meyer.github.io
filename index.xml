@@ -10,7 +10,90 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Tue, 26 Dec 2023 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 31 Dec 2023 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>My experience with the reMarkable 2</title>
+  <link>https://www.meyerperin.com/articles/remarkable2.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Do you want to start journaling in the new year? Tired of carrying notebooks around? Maybe you just want your notes to be more organized?</p>
+<p>The reMarkable is a tablet with an e-ink display, similar to the Kindle. It is designed to be used with a stylus, and it is marketed as a paper replacement. Contrary to other tablets, if <em>feels</em> like paper.</p>
+<p>I got myself a reMarkable 2 in their Black Friday promotion, after having seen a colleague at work using it. Before having a reMarkable, I used a large number of disorganized Moleskines and loose paper sheets. A lot of loose paper sheets.</p>
+<p>I have been using the reMarkable 2 for a little over a month, and I am happy with it. I have used it for taking notes in meetings, for journaling, and for writing down ideas. I have also used it for reading PDFs and ebooks. But it’s not without its issues.</p>
+<section id="what-problems-i-want-to-solve" class="level1">
+<h1>What problems I want to solve?</h1>
+<p>These days, I can take handwritten notes in most of my devices. My main device is a Surface Laptop Studio 2, which folds into a tablet and has a stylus. I also have an iPad Pro 13” with a stylus, but my Surface mostly replaced it. However, I cannot do everything with my Surface Laptop Studio 2. Here are a few of its problems:</p>
+<ul>
+<li>It is a little on the heavy side. It is heavier than the iPad Pro 13”, that many people already find too heavy for handwritten notes.</li>
+<li>Battery life is not great. I can get about 2-3 hours of battery life out of it, which is not enough for a full day of meetings.</li>
+<li>It is easy to get distracted by notifications and other apps on the device.</li>
+</ul>
+</section>
+<section id="how-does-the-remarkable-2-solve-these-problems" class="level1">
+<h1>How does the reMarkable 2 solve these problems?</h1>
+<p>The reMarkable 2 solves these problems in the following ways:</p>
+<ul>
+<li>The reMarkable 2 is very light. It is 403 grams (0.9 pounds) and 4.7 mm (0.2 inches) thick. For comparison, my iPad Pro 13” is 682 grams (1.5 pounds) and 5.9 mm (0.23 inches) thick.</li>
+<li>It has no distractions. It is designed to be used for reading and writing, and it does not have a web browser or any other apps. It is very easy to focus on what you are doing.</li>
+<li>It has a very long battery life. I find myself charging it about once or twice a week depending on how much I use it. It charges via USB-C, which is easily available.</li>
+</ul>
+</section>
+<section id="what-is-the-remarkable-2-useful-for" class="level1">
+<h1>What is the reMarkable 2 useful for?</h1>
+<p>I have been using the reMarkable 2 for the following use cases:</p>
+<ul>
+<li><strong>Academic paper reading and annotation</strong>: This was my intended use case for the reMarkable 2. The reMarkable 2 works, but it’s not ideal. It has a 10.3” screen, smaller than A4 paper, so I find myself reading papers in landscape mode, which makes the text a little bigger, but requires scrolling. In addition, I don’t like the contrast of the reMarkable’s e-ink display very much. It works, but it doesn’t have contrast adjustments, and it’s not as good as the Kindle’s display.</li>
+<li><strong>Journaling</strong>: I have been using the reMarkable 2 for journaling almost every day. The writing experience is exceptional. It really feels like writing on paper, and the experience is very smooth.</li>
+<li><strong>Note-taking in meetings</strong>: I have taken the reMarkable 2 to meetings, and this allows me to focus a lot better on meetings. The note-taking is superb, and the lack of distractions is great. The apps in the phone and in the PC allows me to easily see and add to my notes.</li>
+<li><strong>Writing down ideas</strong>: I have been using the reMarkable 2 for writing down ideas and think about projects. It works well for that because it allows me to capture my ideas in a way that is easy to share and add to them later, without being distracted by technologies. This is specifically useful when I am in a plane or in a bus commuting.</li>
+<li><strong>Many templates</strong>: the reMarkable has many paper templates, including lined paper, grid paper, and even music sheets. You can even create your own templates. I used to have more than one notebook for different purposes, and now I can have them all in the same device.</li>
+</ul>
+</section>
+<section id="downsides" class="level1">
+<h1>Downsides</h1>
+<p>The reMarkable 2 is not perfect. Here are some of the downsides:</p>
+<ul>
+<li><p>The reMarkable 2 is expensive, starting at $299 for the barebones model. You need a pen, and you probably want a cover. You can save money by buying unnoficial pens and covers at Amazon. One of my colleagues likes a $20 pen he bought online. The official pen costs $79 without an eraser and $129 with one. Covers run between $79 (cloth) to $199 (leather, with a keyboard).</p></li>
+<li><p>You cannot sync Kindle e-books to it. You can read PDFs and e-books on it, but you cannot sync your Kindle library to it.</p></li>
+<li><p>Its 10” screen is a little small for reading PDFs. I have been reading a lot of academic papers on it, and it’s easier to do it on landscape mode, where it gets a little bigger, but requires scrolling.</p></li>
+<li><p>The lack of contrast is a little annoying. The reMarkable 2 does not have contrast adjustments, and it’s not as good as the Kindle’s display. I find myself looking for better lighting more than I expected.</p></li>
+</ul>
+</section>
+<section id="do-i-recommend-it" class="level1">
+<h1>Do I recommend it?</h1>
+<p>Although I’m moderately happy with my reMarkable 2, it’s not for everyone and not for every use case.</p>
+<p>It replaces my Moleskines and loose paper sheets, but it does not replace my iPad Pro completely: reading Kindle books and academic papers is still better on the iPad Pro.</p>
+<p>Reading online reviews, people with ADHD seem to like the reMarkable 2 a lot, because it allows them to focus on what they are doing without distractions. <a href="../articles/adhd.html">I am not sure yet whether I have ADHD or not</a>, but I likely do, and this may be biasing my opinion towards it.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>The reMarkable 2 is, to me, a good replacement for loose paper sheets and Moleskines. A good Moleskine costs $30, so the reMarkable 2, at $299, pays for itself after 10 Moleskines, which is not that far off. It also helps me be more organized, because I can have all my notes in one place, they are always with me and I can easily search them and add to them.</p>
+<p>The downsides are still problematic, and it may be better to wait for the next version of the reMarkable. It (barely) works for my use cases, but it may not be for everyone.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Links to Amazon.com are affiliate links. If you buy something through one of those links, I may get a small commission at no extra cost to you. The reason for affiliate links is to cover some of the infrastructure costs for this blog and help it keep running.</p>
+</div>
+</div>
+<p>You can buy the reMarkable 2 at <a href="https://l.meyerperin.com/rm2">Amazon</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/articles/remarkable2.html</guid>
+  <pubDate>Sun, 31 Dec 2023 08:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/rm2.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Explaining memes and images with the Semantic Kernel and the OpenAI Vision API</title>
   <link>https://www.meyerperin.com/articles/skv_py.html</link>
@@ -478,6 +561,19 @@ Important
 <section id="coping-technologies" class="level1">
 <h1>Coping Technologies</h1>
 <p>Over time I acquired a lot of products to help me cope with the symptoms. I will list them below:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Links to Amazon.com are affiliate links. If you buy something through one of those links, I may get a small commission at no extra cost to you. The reason for affiliate links is to cover some of the infrastructure costs for this blog and help it keep running.</p>
+</div>
+</div>
 <ul>
 <li><a href="https://l.meyerperin.com/airtags"><strong>Apple AirTags</strong></a>: I have these on everything since I lose something almost daily. The new AirTags have a feature called Precision Finding that allows me to find things a lot faster, and I use it a lot.</li>
 <li><a href="https://l.meyerperin.com/keyring_wallet"><strong>Wallet with keyring</strong></a>: A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.</li>
@@ -545,7 +641,94 @@ Note
  ]]></description>
   <guid>https://www.meyerperin.com/articles/badlands_ranch.html</guid>
   <pubDate>Fri, 03 Nov 2023 07:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/badlands.png" medium="image" type="image/png" height="119" width="144"/>
+  <media:content url="https://www.meyerperin.com/images/badlands.png" medium="image" type="image/png" height="85" width="144"/>
+</item>
+<item>
+  <title>NewsGuard is free for Microsoft Edge users</title>
+  <dc:creator>Lucas A. Meyer</dc:creator>
+  <link>https://www.meyerperin.com/posts/2022-09-15_newsguard.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>If you have been following the news for the last few years, you have seen how much the prevalence of misinformation, disinformation (intentional misinformation), and propaganda (intentional misinformation by state actors) has increased a lot. Most topics of interest online have a shocking proportion of misinformation: Ukraine, COVID, elections, etc.</p>
+<p>Determining whether a news article is fake or not is a difficult problem for both people and computer models. This ACM survey paper (<a href="https://dl.acm.org/doi/abs/10.1145/3395046" class="uri">https://dl.acm.org/doi/abs/10.1145/3395046</a>) gives a good idea about the state of the art around 2020. It is far from a solved problem.</p>
+<p>As you would expect, computer scientists break difficult problems into parts, and even the subtasks for fake news detection are hard. A few examples of subtasks are detecting if the headline matches the content of the news, evaluating the reputation of who is sharing the news, evaluating the reputation of the news website, etc.</p>
+<p>For this latter task, a product I have found to be useful is NewsGuard <a href="https://www.newsguardtech.com/" class="uri">https://www.newsguardtech.com/</a>. Although NewsGuard has been (in my opinion, fairly) criticized a few years ago for having a bias towards the left, it has been improving continuously. These days, I find it very helpful, especially since I study disinformation and fraud for a living, and therefore my browsing patterns are… atypical.</p>
+<p>It helps that NewsGuard is free for users of Microsoft Edge. You can install a NewsGuard extension and it will show whether the site you are seeing is trustworthy. It will also integrate with Bing when used in Edge, and show a badge next to each result.</p>
+<p>If you want to try it out, the following link has the instructions: <a href="https://support.microsoft.com/en-us/topic/newsguard-b28e453e-568c-4d57-98ef-c61056f99462" class="uri">https://support.microsoft.com/en-us/topic/newsguard-b28e453e-568c-4d57-98ef-c61056f99462</a>. Note that it’s only free for Microsoft Edge, which is a great browser that runs in a number of platforms such as Linux, Mac, etc.</p>
+
+
+
+ ]]></description>
+  <category>disinformation</category>
+  <guid>https://www.meyerperin.com/posts/2022-09-15_newsguard.html</guid>
+  <pubDate>Thu, 15 Sep 2022 13:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/newsguard.png" medium="image" type="image/png" height="125" width="144"/>
+</item>
+<item>
+  <title>My review of the Farmer’s Dog food service</title>
+  <dc:creator>Lucas A. Meyer</dc:creator>
+  <link>https://www.meyerperin.com/posts/2022-06-28-farmers-dog.html</link>
+  <description><![CDATA[ 
+
+
+
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Moved to Badlands Ranch Dog Food
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As of November 2023, we have moved to <a href="../articles/badlands_ranch.html">Badlands Ranch Dog Food</a>.</p>
+</div>
+</div>
+<p>The review below is about The Farmer’s Dog, which we used for over a year. In November 2023, we moved to <a href="../articles/badlands_ranch.html">Badlands Ranch dog food</a>, which ended up being a lot more convenient for about the same price, and similarly appreciated by my dog.</p>
+<p>I did not receive any compensation for this review, and I’m not affiliated with Badlands Ranch or The Farmer’s Dog in any way.</p>
+<p>If you want to read my earlier review of the Farmer’s Dog, read on. My new review of Badlands Ranch is <a href="../articles/badlands_ranch.html">here</a>.</p>
+<hr>
+<p>I recently subscribed to the Farmer’s Dog. I love it, even though I didn’t expect to.</p>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>My dog, TheFuzzy, is a standard schnauzer. She is very picky with her food, and would do very long hunger strikes to prove her point. She doesn’t like dry food, and we have been feeding her wet food for a while. Even so, she resists: if she sees us eating human food, she will want to participate. To address that, we needed to feed her before we start cooking for ourselves, or she would “protest” with a hunger strike.</p>
+<p><img src="https://www.meyerperin.com/posts/https:/mpsocial.blob.core.windows.net/blog-images/gyspy-batman.png" height="400"></p>
+</section>
+<section id="freakonomics-on-venture-capital" class="level2">
+<h2 class="anchored" data-anchor-id="freakonomics-on-venture-capital">Freakonomics on Venture Capital</h2>
+<p>One day, I was listening to a <a href="https://freakonomics.com/podcast/is-venture-capital-the-secret-sauce-of-the-american-economy/">Freakonomics podcast on venture capital</a>. In that episode, they interviewed Jonathan Regev, the founder of the <a href="https://www.thefarmersdog.com">Farmer’s Dog</a> who talked about how hard it would have been for their company to scale without venture capital. I was, at that very moment, about to feed my dog, and decided to give it a try.</p>
+</section>
+<section id="signing-up" class="level2">
+<h2 class="anchored" data-anchor-id="signing-up">Signing Up</h2>
+<p>Signing up to the Farmer’s Dog, as expected from something backed by VC, was very easy. I had to answer a (cute) questionnaire asking about my dog, her weight, and her food preferences. The result was a recommended food plan with a calculated number of calories, and a discounted price for a few weeks (I don’t remember if it was two or three).</p>
+</section>
+<section id="what-i-didnt-like" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-didnt-like">What I didn’t like</h2>
+<p>The first thing I didn’t like was that the number of calories was on the low side. Using <a href="https://vetcalculators.com/calories.html">another web calculator</a>, I found that my dog would need 946kcal/day. The Farmer’s Dog calculator gave me less than 500kcal/day, about half of what I thought I needed, and about half of what I was currently feeding her.</p>
+<p>The second thing was the price: after removing the initial discount, the price was about the same of the food I was currently using… but for half the calories.</p>
+<p>The next thing was my own fault: I was counting on using the food right away, but it arrives deeply frozen, and I needed to wait about 36h for it to unfreeze. The package was a little unwieldy: the food comes as a paste in sealed plastic bag. I needed to use scissors to cut the top of the package and press out the paste into the bowl. It is hard to measure the exact quantity, and easy to get one’s hand dirty, which makes it harder to convince my kids to do it. Measuring the right amount is also tricky.</p>
+<p>The food needs to be frozen, defrosted and kept refrigerated. That makes it inconvenient to use it in travel.</p>
+<p>Did I hate it? For the first few days I thought I would, but…</p>
+</section>
+<section id="what-i-liked" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-liked">What I liked</h2>
+<p>The Farmer’s Dog excels where it matters: the dog eats the food like there’s no tomorrow. I wouldn’t even need to clean the bowl. The only other case when I see her eating like that when she’s eating human food. Being a careful scientist, I thought this could be because she was hungry due to the lower calories, but I tested that she devours the food even after getting a lot of calories from other foods in prior meals. She really likes the food. I think it’s a staple of VC investments that they want to sell solutions rather than products, and this solved my main problem.</p>
+<p>The downside: I had to adjust the calorie count up, which meant that the Farmer’s Dog is now more expensive than my previous food.</p>
+</section>
+<section id="my-verdict" class="level2">
+<h2 class="anchored" data-anchor-id="my-verdict">My verdict</h2>
+<p>My final verdict: I think it’s worthwhile giving it a try.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/posts/2022-06-28-farmers-dog.html</guid>
+  <pubDate>Thu, 30 Jun 2022 13:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/farmers-dog-logo.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Getting Started with Midjourney</title>
@@ -650,7 +833,7 @@ Note
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Fri, 29 Dec 2023 06:30:53 GMT</pubDate>
+  <pubDate>Mon, 01 Jan 2024 21:40:48 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -1239,7 +1422,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Fri, 29 Dec 2023 06:30:53 GMT</pubDate>
+  <pubDate>Mon, 01 Jan 2024 21:40:48 GMT</pubDate>
 </item>
 </channel>
 </rss>

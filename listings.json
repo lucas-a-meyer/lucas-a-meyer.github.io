@@ -3,10 +3,13 @@
     "listing": "/index.html",
     "items": [
       "/articles/adhd.html",
+      "/articles/remarkable2.html",
       "/articles/skv_py.html",
       "/articles/midjourney.html",
       "/articles/semantic_kernel.html",
-      "/articles/badlands_ranch.html"
+      "/articles/badlands_ranch.html",
+      "/posts/2022-09-15_newsguard.html",
+      "/posts/2022-06-28-farmers-dog.html"
     ]
   },
   {
