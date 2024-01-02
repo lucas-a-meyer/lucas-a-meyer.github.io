@@ -4,7 +4,7 @@ categories:
 - career
 date: 2021-07-07 06:00:00
 id: 30e71a422a02f276c2c339ce456e8cb3
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6818567778430275584
 linkedin-posted: 2021-07-07 06:00:00
 linkedin-target-date: null

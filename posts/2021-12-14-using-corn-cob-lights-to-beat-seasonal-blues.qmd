@@ -4,7 +4,7 @@ date: 2021-12-14 06:00:00
 draft: false
 id: a69173d848f537c40958f461cb7db3e0
 image: https://mpsocial.blob.core.windows.net/blog-images/rainy-day.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-target-date: 2022-10-30 07:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6992560775244513280
 post-url: https://www.meyerperin.com/posts/2021-12-14-using-corn-cob-lights-to-beat-seasonal-blues.html

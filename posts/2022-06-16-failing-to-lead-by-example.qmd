@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2022-06-16 06:00:00
 id: 82574b804c0e20792badcf6714fda9db
 image: https://mpsocial.blob.core.windows.net/blog-images/failing-to-lead.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00
 linkedin-target-date: 2022-06-16 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}

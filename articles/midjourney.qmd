@@ -3,7 +3,7 @@ title: "Getting Started with Midjourney"
 page-layout: full
 toc: true
 toc-expand: true
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 ---
 
 # Introduction

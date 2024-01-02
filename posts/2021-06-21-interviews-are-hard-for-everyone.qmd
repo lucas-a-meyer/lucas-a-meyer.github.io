@@ -5,7 +5,7 @@ categories:
 - interviews
 date: 2021-06-21 06:00:00
 id: aa8d6b88981f010b1ca4bcd2e9589310
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6812769571775365120
 linkedin-posted: 2021-06-21 06:00:00
 linkedin-target-date: null

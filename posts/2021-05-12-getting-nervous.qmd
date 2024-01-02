@@ -5,7 +5,7 @@ categories:
 - interviews
 date: 2021-05-06 06:00:00
 id: 35bcf100f2769cff63086a063c33db27
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-career-activity-6791791375642951680-d9Ir
 linkedin-posted: 2021-05-06 06:00:00
 linkedin-target-date: null

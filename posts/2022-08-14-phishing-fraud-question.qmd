@@ -5,7 +5,7 @@ date: 2022-08-14 06:00:00
 draft: false
 id: ac2a430b3be4b789a6cc1562aaed04a6
 image: https://mpsocial.blob.core.windows.net/blog-images/scam-email.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-08-14 08:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6964596517324161024

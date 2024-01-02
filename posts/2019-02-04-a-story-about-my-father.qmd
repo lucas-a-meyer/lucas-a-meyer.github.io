@@ -3,8 +3,7 @@ author: Lucas A. Meyer
 date: 2019-02-04 06:00:00
 draft: true
 id: 508c841732f48f3844c2bc56bf5a4170
-include-after-body: _disclaimer.html
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2019-02-04 06:00:00
 linkedin-target-date: 2019-02-04 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268447051628545

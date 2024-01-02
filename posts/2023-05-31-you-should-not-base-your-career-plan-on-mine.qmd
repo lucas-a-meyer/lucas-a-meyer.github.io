@@ -4,7 +4,7 @@ date: 2023-05-31 06:00:00
 draft: false
 id: 99c6315472bd9988547441554609b0c1
 image: https://mpsocial.blob.core.windows.net/blog-images/schnauzer_banker.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 post-url: https://www.meyerperin.com/posts/2023-05-31-you-should-not-base-your-career-plan-on-mine.html
 title: You should not base your career plan on mine
 ---

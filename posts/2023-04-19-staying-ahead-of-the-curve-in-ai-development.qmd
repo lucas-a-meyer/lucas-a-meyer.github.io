@@ -4,7 +4,7 @@ date: 2023-04-19 06:00:00
 draft: true
 id: d7b3dd0f9af45e930da618b1f3c3ffce
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_dont_create_bots.png
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-04-19 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7054453605717721088

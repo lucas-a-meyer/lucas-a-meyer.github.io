@@ -7,7 +7,7 @@ categories:
 date: 2022-04-13 06:00:00
 id: 2244f6a7dca87dfffdff374be7fb6afe
 image: https://mpsocial.blob.core.windows.net/blog-images/offer-only.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816
 linkedin-posted: 2022-04-13 06:00:00
 linkedin-target-date: null

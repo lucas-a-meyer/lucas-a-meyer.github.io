@@ -4,7 +4,7 @@ date: 2023-04-01 06:00:00
 draft: true
 id: 0f6705b78035eeff76a649a764badb2f
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_pinocchio.png
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-04-01 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7047930646765187072

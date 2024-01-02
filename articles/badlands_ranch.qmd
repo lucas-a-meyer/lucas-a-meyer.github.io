@@ -4,7 +4,7 @@ page-layout: full
 toc: true
 toc-expand: true
 image: /images/badlands.png
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 date: 2023-11-03
 ---
 

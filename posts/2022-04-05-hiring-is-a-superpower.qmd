@@ -6,7 +6,7 @@ categories:
 date: 2022-04-05 06:00:00
 id: cdc28faa79291ebddb7217f7e8529171
 image: https://mpsocial.blob.core.windows.net/blog-images/gladiator.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506
 linkedin-posted: 2022-04-05 06:00:00
 linkedin-target-date: null

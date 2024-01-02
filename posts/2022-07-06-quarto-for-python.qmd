@@ -4,7 +4,7 @@ date: 2022-07-07 04:00:00
 draft: false
 id: f402a27b0c99d4727957b65cdcfa486c
 image: https://quarto.org/quarto.png
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-07 07:21:59.813335
 linkedin-target-date: 2022-07-07 06:00:00

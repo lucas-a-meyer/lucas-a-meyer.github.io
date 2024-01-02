@@ -4,7 +4,7 @@ date: 2022-06-26 06:00:00
 draft: true
 id: c4cd78b61469fc0d5f35f2a57e2331b0
 image: https://mpsocial.blob.core.windows.net/blog-images/france-is-bacon.jpg
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2022-06-27 06:00:00
 linkedin-target-date: 2022-06-27 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}

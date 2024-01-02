@@ -4,7 +4,7 @@ date: 2023-03-31 06:00:00
 draft: true
 id: 1b6b44d595416d6f74d4669ac154af47
 image: https://mpsocial.blob.core.windows.net/blog-images/diffused_linear_algebra_prof.png
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-31 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7047568235843522561

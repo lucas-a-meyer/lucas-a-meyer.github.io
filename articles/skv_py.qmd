@@ -4,7 +4,7 @@ page-layout: full
 toc: True
 image: /images/meme2.png
 toc-expand: true
-include-in-header: _msft-clarity.html
+include-in-header: /_msft-clarity.html
 date: 2023-12-26
 ---
 
