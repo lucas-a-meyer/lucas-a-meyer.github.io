@@ -1,18 +1,5 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/articles/adhd.html",
-      "/articles/remarkable2.html",
-      "/articles/skv_py.html",
-      "/articles/midjourney.html",
-      "/articles/semantic_kernel.html",
-      "/articles/badlands_ranch.html",
-      "/posts/2022-09-15_newsguard.html",
-      "/posts/2022-06-28-farmers-dog.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
       "/posts/2023-09-22-getting-started-with-midjourney.html",
@@ -79,6 +66,19 @@
       "/posts/2018-07-08-praising-conway-s-data-science-venn-diagram.html",
       "/posts/2018-06-25-centralized-vs-distributed-data-teams.html",
       "/posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/articles/adhd.html",
+      "/articles/remarkable2.html",
+      "/articles/skv_py.html",
+      "/articles/midjourney.html",
+      "/articles/semantic_kernel.html",
+      "/articles/badlands_ranch.html",
+      "/posts/2022-09-15_newsguard.html",
+      "/posts/2022-06-28-farmers-dog.html"
     ]
   }
 ]
