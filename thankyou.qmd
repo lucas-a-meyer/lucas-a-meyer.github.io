@@ -1,0 +1,18 @@
+---
+title: ""
+page-layout: full
+include-in-header: _redirect_home.html
+---
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+---
+
+<center>
+# Thank you for your submission.  
+# I will get back in touch soon.
+<p>&nbsp;</p>
+</center>
+
+---

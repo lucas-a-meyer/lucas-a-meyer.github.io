@@ -1,0 +1,27 @@
+---
+title: "Make Lucas talk"
+include-in-header: _msft-clarity.html
+---
+
+Thank you for your interest in contacting me. Please let me know how I can help you. 
+
+The most reasons to contact me are:
+
+- Invite me to be speaker to an event
+- Invite me to participate or moderate a panel
+- Ask for my help reviewing a book, article or paper
+- Ask for my help with an open source project
+- Give me general feedback on my blog or talks
+
+Please let me know what you need in the "message" field, and I'll get back to you.
+
+## Contact form
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44798468",
+    formId: "4d92f5dc-055b-47a5-964b-533620461282"
+  });
+</script>

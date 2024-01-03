@@ -63,8 +63,9 @@ website:
         href: https://github.com/lucas-a-meyer
       - icon: stack-overflow
         href: https://stackoverflow.com/users/1850561/lucas-a-meyer
+      - text: "Contact"
+        href: contact.qmd
       - about.qmd
-
 
 
 format:

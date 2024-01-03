@@ -22,3 +22,5 @@ about:
 ---
 I am a Principal Research Scientist at the AI for Good Research Lab at Microsoft, focusing on AI, large language models, and cybercrime. 
 
+You can [make me talk](contact.qmd) by filling [this form](contact.qmd).
+
