@@ -10,7 +10,7 @@ listing:
   filter-ui: false
 #  feed: true
 page-layout: full
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 ---
 :::{#posts}
 :::

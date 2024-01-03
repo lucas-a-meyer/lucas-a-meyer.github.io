@@ -6,7 +6,7 @@ date: 2022-08-25 06:00:00
 draft: false
 id: 805c6fa21d1633519a9e961920af223a
 image: https://mpsocial.blob.core.windows.net/blog-images/jason-arch.png
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-target-date: 2022-08-25 08:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6968635624555769856
 post-url: https://www.meyerperin.com/posts/2022-08-25-a-love-letter-to-wsl.html

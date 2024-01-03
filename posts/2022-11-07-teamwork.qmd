@@ -6,7 +6,7 @@ date: 2022-11-08 06:00:00
 draft: false
 id: 6b3ba1d63bcbe9332c9594241c236e06
 image: https://mpsocial.blob.core.windows.net/blog-images/teamwork-cogs.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-11-08 08:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6995776983603318785

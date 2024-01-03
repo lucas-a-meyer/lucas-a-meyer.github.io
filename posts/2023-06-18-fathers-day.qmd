@@ -8,7 +8,7 @@ draft: false
 freeze: true
 id: 5b121a96aca382965066448ee6a45596
 image: https://mpsocial.blob.core.windows.net/blog-images/calvin-father.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-06-18 08:00:00
 post-url: https://www.meyerperin.com/posts/2023-06-18-fathers-day.html
 title: Father's Day 2023

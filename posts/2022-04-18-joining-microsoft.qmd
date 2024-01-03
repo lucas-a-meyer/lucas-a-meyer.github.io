@@ -5,7 +5,7 @@ categories:
 date: 2022-04-18 06:00:00
 id: d9a5454d9a96485fb692edd4d3dcf6c5
 image: https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6921815848412135424
 linkedin-posted: 2022-04-18 06:00:00
 post-url: https://www.meyerperin.com/posts/2022-04-18-joining-microsoft.html

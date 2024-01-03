@@ -6,7 +6,7 @@ format:
        monofont: "Consolas"
        slide-level: 2
     revealjs:
-        include-in-header: /_msft-clarity.html
+        include-in-header: _msft-clarity.html
         incremental: false
         theme: [simple, revealjs-customizations.scss]
         title-slide-attributes:

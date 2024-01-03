@@ -4,7 +4,7 @@ date: 2023-05-24 06:00:00
 draft: false
 id: acbdf6d687f0ffd01fc8d0405c505cad
 image: https://mpsocial.blob.core.windows.net/blog-images/schnauzer_haircut.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-24 07:01:00
 post-url: https://www.meyerperin.com/posts/2023-05-24-google-duplex-was-going-to-change-the-world-five-years-ago.html
 title: Google Duplex was going to change the world five years ago

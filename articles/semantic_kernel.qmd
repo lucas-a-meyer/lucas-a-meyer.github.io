@@ -3,7 +3,7 @@ title: "A Quick Tour of the Semantic Kernel"
 page-layout: full
 toc: true
 toc-expand: true
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 ---
 
 # Introduction

@@ -4,7 +4,7 @@ date: 2023-06-13 06:00:00
 draft: false
 id: e83921b33131d12b250e0d818ff9a1f4
 image: https://mpsocial.blob.core.windows.net/blog-images/schnauzer_scientist.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-06-13 08:00:00
 post-url: https://www.meyerperin.com/posts/2023-06-11-ab-tests.html
 title: A/B testing needs a theory

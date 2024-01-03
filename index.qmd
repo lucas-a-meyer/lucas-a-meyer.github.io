@@ -22,7 +22,7 @@ listing:
 
 page-layout: full
 title-block-banner: false
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 ---
 
 :::{#pages}

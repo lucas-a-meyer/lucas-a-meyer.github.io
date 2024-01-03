@@ -4,7 +4,7 @@ date: 2022-07-01 03:00:00
 draft: false
 id: 2853b2818f9cdf62a662787fab4580d7
 image: https://mpsocial.blob.core.windows.net/blog-images/just-hired-microsoft.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-linkback: false
 linkedin-posted: 2022-07-01 06:00:06.977230
 linkedin-target-date: 2022-07-01 05:00:00

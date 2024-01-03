@@ -1,6 +1,6 @@
 ---
 title: "Quarto with Python"
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 author: Lucas A. Meyer
 date: 2022-07-07
 self-contained: true

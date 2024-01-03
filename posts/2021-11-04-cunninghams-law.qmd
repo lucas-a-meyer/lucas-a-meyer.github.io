@@ -4,7 +4,7 @@ categories: concepts
 date: 2021-11-04 06:00:00
 id: a3611547d0e5972a1e48ddc6f77ea2d6
 image: https://mpsocial.blob.core.windows.net/blog-images/cunninghams-law.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769
 linkedin-linkback: true
 linkedin-repost: 180

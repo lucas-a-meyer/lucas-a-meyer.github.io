@@ -4,7 +4,7 @@ date: 2022-06-20 06:00:00
 draft: true
 id: f5c769a0f772960a2f8a01225c59c9a8
 image: https://mpsocial.blob.core.windows.net/blog-images/computer-urinal.jpg
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-24 06:00:00
 linkedin-target-date: 2022-06-20 06:00:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}

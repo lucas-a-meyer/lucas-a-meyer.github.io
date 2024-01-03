@@ -1,7 +1,7 @@
 ---
 title: "About"
 image: /images/lucas_batman.png
-include-in-header: /_msft-clarity.html
+include-in-header: _msft-clarity.html
 about:
   template: solana
   image-shape: round

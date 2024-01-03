@@ -4,7 +4,10 @@ Write-Output "Publish started at $now"
 
 git add .
 git commit -m "New rendering as of $now"
-git push   
+git push
+
+Copy-Item .\_msft-clarity.html .\articles
+Copy-Item .\_msft-clarity.html .\posts
 
 # Build the site
 quarto publish gh-pages --no-prompt
