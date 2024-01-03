@@ -4,7 +4,6 @@ date: 2022-07-04 06:00:00
 draft: true
 id: 7b43b7c2c8ace9f0cf0bfd7566c6e2ac
 image: https://mpsocial.blob.core.windows.net/blog-images/good-question.jpg
-include-after-body: _disclaimer.html
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-05 07:02:10.515590
@@ -38,7 +37,4 @@ One way to break out of pluralistic ignorance is to have someone is brave enough
 
 Regardless, I would rarely say "that's a good question" unless I thought it was good. I realized that instead, I would say "thanks for asking that question". There was no reward for me to be pedantic, it was just an immature reflex. Now that I'm wiser, I say "that's a good question" far more often. If a question helps us break out of pluralistic ignorance, it's really a good question.
 
-## David has a new book
-
-By the way, David McRaney has a new book, called #ad ["How Minds Change"](https://amzn.to/3ngwPtH).
 
