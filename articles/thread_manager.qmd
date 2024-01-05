@@ -71,4 +71,6 @@ I navigated to the app URL and was able to sign in with my Microsoft account. I 
 
 ![Successful log in](/images/thread_manager/step1.png)
 
-Now that I have an app that can authenticate users, I can start building the app itself.
+Now that I have an app that can authenticate users, I need to work on authorization, so that only authorized users can access the app.
+
+
