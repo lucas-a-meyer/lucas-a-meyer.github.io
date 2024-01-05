@@ -6,7 +6,7 @@ image: /images/adhd_heading.png
 toc-expand: true
 include-in-header: _msft-clarity.html
 date: 2023-12-22
-date-modified: 2023-12-24
+date-modified: 2024-01-04
 ---
 
 In October 2023, lots of people with ADHD started posting about their experiences on [Threads](https://www.threads.net). Have you ever commuted to work and forgot to bring your laptop? Check. Do you frequently procrastinate a simple two-minute task for several days? Check. 

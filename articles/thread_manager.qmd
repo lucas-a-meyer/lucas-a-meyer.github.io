@@ -1,5 +1,5 @@
 ---
-title: "Thread Manager: Helping Me Manage Social Media"
+title: "Thread Manager - Building a Web App"
 page-layout: full
 toc: True
 image: /images/thread_manager_logo.png
@@ -8,7 +8,7 @@ include-in-header: _msft-clarity.html
 date: 2024-01-04
 ---
 
-Thread Manager is the web app I use to schedule posts to social media sites and run some basic analytics. **I'm starting from scratch** as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn. 
+Thread Manager is the web app I intend to use to schedule posts to social media sites and run some basic analytics. **I'm starting from scratch** as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn. 
 
 I intend to post my building experience on Threads. The [code for this app is on GitHub](https://github.com/lucas-a-meyer/thread-manager).
 
@@ -37,22 +37,38 @@ My intended technology stack is:
 
 # Building the App
 
-## Creating the App in Azure
+## Creating an authenticated App in Azure
 
 The first step was [creating a new App Service in Azure using the Azure Portal](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure).
 
-:::{.callout-note}
-I did not use the sample code in section 1 from the link above, because I will use the sample code for the Microsoft Identity Web library for Python later. I just created an empty app as described in section 2 of the link above.
+:::{.callout-important}
+I did not use the sample code in section 1 from the link above, because I intended to use the code that uses the Microsoft Authentication Library (MSAL) for Python. **I just created an empty app.**
 :::
 
 From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I'm using to develop.
 
-I then [configured the app to sync with GitHub](https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github), so that I can push code to GitHub and have it automatically deployed to the App Service. Instead of using the sample code in section 1 of the link above, I used the [sample code for the Microsoft Identity Web library for Python](https://github.com/Azure-Samples/ms-identity-python-webapp).
+I then [configured the app to sync with GitHub](https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github), so that I can push code to GitHub and have it automatically deployed to the App Service. 
 
-The next step was to enable authentication for the app in the Azure Portal. I followed the instructions on [this link](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service) but instead of choosing "Current Tenant — Single tenant", I chose "Personal Microsoft accounts only". 
+## Configuring Microsoft Entra ID and Linking the App
 
-The final step was to set up the environment variables `CLIENT_SECRET` and `CLIENT_ID` in the App Service. I followed the instructions on [this link](https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings) to set the environment variables. You can find the values for these variables in the Azure Portal. The `CLIENT_ID` is the Application (client) ID in the "Authentication" tab and the `CLIENT_SECRET` the `MICROSOFT_PROVIDER_AUTHENTICATION_SECRET` from the "Configuration" tab.
+I followed the instructions at [Quickstart: Sign in users and call the Microsoft Graph API from a Python web app](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in?tabs=windows). The instructions will tell you where to find the `CLIENT_ID` and how to generate a `CLIENT_SECRET` for the app. The `AUTHORITY` needs to be set to `AUTHORITY="https://login.microsoftonline.com/<tenant_id>"`. I obtained the `tenant_id` from the Azure Portal, in the Overview page of Microsoft Entra ID.
 
-Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service. I could then go to the URL for the App Service and see the sample app running.
+I downloaded the full code for the app, and the only change I had to make was to create an `.env` file with the variables described above. This is not required for the app to run on the web, but it helps when running locally.
 
-![](/images/thread_manager/step1.png)
+```bash
+CLIENT_ID=[client_id]
+CLIENT_SECRET=[client_secret]
+AUTHORITY=https://login.microsoftonline.com/[tenant_id]
+```
+
+The instructions don't mention this, but after finishing the instructions, you also have to link the Entra ID configuration to the Web App you created in the first step. To do this, go to the Azure Portal, open the App Service, go to the "Authentication" tab, and click on "Microsoft" under "Identity providers". Then, select the "Existing App" tab and select the app you created in the previous step.
+
+The final connection step was to set up the environment variables `CLIENT_ID`,  `CLIENT_SECRET` and `AUTHORITY` in the App Service. I followed the instructions on [this link](https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings) to set the environment variables in the Web App to the same values present in the .env file. 
+
+Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service. 
+
+I navigated to the app URL and was able to sign in with my Microsoft account. I was then redirected to the app, where I could see the information about my login.
+
+![Successful log in](/images/thread_manager/step1.png)
+
+Now that I have an app that can authenticate users, I can start building the app itself.
