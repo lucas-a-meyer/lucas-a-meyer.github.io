@@ -10,7 +10,81 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Sun, 31 Dec 2023 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 04 Jan 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Thread Manager: Helping Me Manage Social Media</title>
+  <link>https://www.meyerperin.com/articles/thread_manager.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Thread Manager is the web app I use to schedule posts to social media sites and run some basic analytics. <strong>I’m starting from scratch</strong> as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.</p>
+<p>I intend to post my building experience on Threads. The <a href="https://github.com/lucas-a-meyer/thread-manager">code for this app is on GitHub</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is purely a hobby project. I have a lot of personal commitments and I’ll build this very slowly, as time allows.</p>
+</div>
+</div>
+<section id="why-build-this" class="level1">
+<h1>Why build this?</h1>
+<p>In 2021, I was writing a lot on LinkedIn, but I was limited by LinkedIn’s post formatting being mostly text — no inline images, no code. To have images and code, I started writing more on my blog, but usually finished my posts in the middle of the night, and I wanted to schedule them to post the next morning. I also wanted to be able to post to multiple social media sites at once. I created a simple app to post to LinkedIn, Twitter and Mastodon, and it worked well enough for my needs.</p>
+<p>Now, in 2024, I’m using Threads a lot more, and an API is probably going to be available soon. I want to be able to schedule my blog posts to post to Threads, and I want to share my journey learning the Threads API.</p>
+</section>
+<section id="technology-choices" class="level1">
+<h1>Technology Choices</h1>
+<p>Since I work at Microsoft, I am more familiar with Azure than other cloud providers. And since I work in data science, I am more familiar with Python.</p>
+<p>My intended technology stack is:</p>
+<ul>
+<li>Azure App Service to host the app</li>
+<li>Azure Cosmos DB to host the data</li>
+<li>Azure Functions for the scheduled job (using Python)</li>
+<li>Python Flask for the web app, with Bootstrap helping make the UI better</li>
+<li><a href="https://www.quarto.org">Quarto</a> for the blog posts</li>
+<li>GitHub Pages to hold the blog posts</li>
+</ul>
+</section>
+<section id="building-the-app" class="level1">
+<h1>Building the App</h1>
+<section id="creating-the-app-in-azure" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-app-in-azure">Creating the App in Azure</h2>
+<p>The first step was <a href="https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure">creating a new App Service in Azure using the Azure Portal</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I did not use the sample code in section 1 from the link above, because I will use the sample code for the Microsoft Identity Web library for Python later. I just created an empty app as described in section 2 of the link above.</p>
+</div>
+</div>
+<p>From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.</p>
+<p>I then <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github">configured the app to sync with GitHub</a>, so that I can push code to GitHub and have it automatically deployed to the App Service. Instead of using the sample code in section 1 of the link above, I used the <a href="https://github.com/Azure-Samples/ms-identity-python-webapp">sample code for the Microsoft Identity Web library for Python</a>.</p>
+<p>The next step was to enable authentication for the app in the Azure Portal. I followed the instructions on <a href="https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service">this link</a> but instead of choosing “Current Tenant — Single tenant”, I chose “Personal Microsoft accounts only”.</p>
+<p>The final step was to set up the environment variables <code>CLIENT_SECRET</code> and <code>CLIENT_ID</code> in the App Service. I followed the instructions on <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings">this link</a> to set the environment variables. You can find the values for these variables in the Azure Portal. The <code>CLIENT_ID</code> is the Application (client) ID in the “Authentication” tab and the <code>CLIENT_SECRET</code> the <code>MICROSOFT_PROVIDER_AUTHENTICATION_SECRET</code> from the “Configuration” tab.</p>
+<p>Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service. I could then go to the URL for the App Service and see the sample app running.</p>
+<p><img src="https://www.meyerperin.com/images/thread_manager/step1.png" class="img-fluid"></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/articles/thread_manager.html</guid>
+  <pubDate>Thu, 04 Jan 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/thread_manager_logo.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>My experience with the reMarkable 2</title>
   <link>https://www.meyerperin.com/articles/remarkable2.html</link>
@@ -81,7 +155,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Links to Amazon.com are affiliate links. If you buy something through one of those links, I may get a small commission at no extra cost to you. The reason for affiliate links is to cover some of the infrastructure costs for this blog and help it keep running.</p>
+<p>Links to Amazon.com are affiliate links. These help the site stay online.</p>
 </div>
 </div>
 <p>You can buy the reMarkable 2 at <a href="https://l.meyerperin.com/rm2">Amazon</a>.</p>
@@ -547,8 +621,8 @@ Important
 <p>As mentioned above, the first step is to talk to a medical professional. I had a previously scheduled appointment for my annual physical just a few weeks after I decided to get tested, so I waited for that appointment in mid-October. Trying to schedule a separate appointment would have taken a lot longer.</p>
 <p>In the appointment, my PCP told me they would call me with a referral in a couple of days, but instead of calling me, they called my emergency contact, who forgot to tell me about it. Luckily, people in Threads kept reminding me to follow up, and I called my PCP office a few days later. I found the referral and called the psychologist office.</p>
 </section>
-<section id="the-evaluation" class="level1">
-<h1>The Evaluation</h1>
+<section id="the-initial-evaluation" class="level1">
+<h1>The Initial Evaluation</h1>
 <p>I called the psychologist’s office in early November. The first thing I needed to do was to set up an account in their system, which took a few days. Then, when the account was completed, they asked me to fill several standard medical forms, plus a two-page biography describing why I think I may have ADHD, and three questionnaires designed to assess whether I have ADHD and potentially autism, which tends to happen hand-in-hand. The questionnaires are below:</p>
 <ol type="1">
 <li><a href="https://l.meyerperin.com/asrs">Adult ADHD Self-Report Scale (ASRS)</a></li>
@@ -557,6 +631,18 @@ Important
 </ol>
 <p>The first questionnaire is a screening tool for ADHD. The second is a more detailed questionnaire about ADHD symptoms. The third is a screening tool for Autism Spectrum Disorder (ASD), a common comorbidity. The first six questions serve as a screening tool: if you score in the grey areas for four out of the six questions, you should definitely talk to a medical professional.</p>
 <p>I completed the forms December 8th. After all the forms are filled, there are three more appointments to go through, and the first can only be scheduled after the forms are completed. I received a message on the day after that I should schedule the first appointment. I only managed to call back on December 22nd, and scheduled the first evaluation for January 3rd, 2024.</p>
+</section>
+<section id="the-first-meeting" class="level1">
+<h1>The First Meeting</h1>
+<p>On Jan 3rd, 2024, I had the first meeting with the psychologist. We introduced ourselves and he asked me about the symptoms that resulted in me seeking a diagnosis. I described the symptoms I listed above, and he asked me to elaborate on each one of them. He also asked me about my childhood, and I described how I was a very good student, but I had a hard time focusing on things that were not interesting to me. I also described how I lost a lot of things, and how I had a hard time getting started with tasks.</p>
+<p>He asked about my family history. My mom is definitely not neurotypical, but she has never sought a diagnosis. I did not have enough contact with my dad to know if he was neurotypical or not. He also asked about my children, and I told him that their school has guided me to request accomodation arrangements for them (these are called 504s). I told him that I plan to get them through an ADHD and autism evaluation as well and that the school counselor had already suggested that earlier in the year.</p>
+<p>He then gave me three more tests to fill out on my own time, which I did later at night on that same day.</p>
+<ul>
+<li><strong>A personality test with over 250 questions</strong>. The test asked a lot about whether I can control other people’s minds, whether I think they control my mind, and how frequently I think about suicide. It also repeated several questions about the <a href="https://www.cdc.gov/ncbddd/adhd/diagnosis.html">usual ADHD symptoms</a>. It would ask “Do you always feel distracted?” and offer four options for me to choose (False, Slightly True, Mostly True, True). Later, it would ask “Do you frequently feel distracted?”, and show the four options again. This one took a while to get through.</li>
+<li><strong>[The Big Five personality test]</strong>(https://en.wikipedia.org/wiki/Big_Five_personality_traits): A standard personality test with about 50 questions, which was somewhat quick to get through.</li>
+<li><strong>An attention test called <a href="https://www.braintrain.com/ivaae2/">IVA-AE2</a></strong> that simultaneously shows an image of a number and speaks another number. For example, it can show 2 and speak “six”. You are assigned two different target numbers, one to click when you see it and another to click when you hear it. It then speaks and shows numbers for 20 minutes. I think it’s pretty normal to make the mistake of clicking when you hear the number you’re supposed to click only when you see and vice-versa, and I’m sure I made plenty of mistakes, but I think most people would. This test was very tiring.</li>
+</ul>
+<p>The whole meeting lasted about 40 minutes. We scheduled the appointment for the second meeting on January 8th, 2024.</p>
 </section>
 <section id="coping-technologies" class="level1">
 <h1>Coping Technologies</h1>
@@ -571,17 +657,17 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Links to Amazon.com are affiliate links. If you buy something through one of those links, I may get a small commission at no extra cost to you. The reason for affiliate links is to cover some of the infrastructure costs for this blog and help it keep running.</p>
+<p>Links to Amazon.com are affiliate links. These help the site stay online.</p>
 </div>
 </div>
 <ul>
-<li><a href="https://l.meyerperin.com/airtags"><strong>Apple AirTags</strong></a>: I have these on everything since I lose something almost daily. The new AirTags have a feature called Precision Finding that allows me to find things a lot faster, and I use it a lot.</li>
-<li><a href="https://l.meyerperin.com/keyring_wallet"><strong>Wallet with keyring</strong></a>: A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.</li>
-<li><a href="https://l.meyerperin.com/sbiner"><strong>S-biner carabiners</strong></a>: I use these to attach things to my backpack and to each other, so I have only one bundle of items to keep track of.</li>
-<li><a href="https://l.meyerperin.com/rayban_meta"><strong>Ray-Ban Meta</strong></a>: works as a headset and as reading glasses. It also has a camera, which I use quite a lot, and an AI that I don’t use as much yet.</li>
-<li><a href="https://l.meyerperin.com/ReMarkable2"><strong>ReMarkable 2</strong></a>: during the years, I had (and lost) many notebooks and loose sheets of paper. The ReMarkable2 is an e-ink notebook that feels like a real notebook, but has a lot of capacity. I can also carry academic papers on it.</li>
-<li><a href="https://l.meyerperin.com/pillbox"><strong>Pillbox</strong></a>: I use a pillbox to organize my vitamins and medications. I usually forget whether I took the medication or not a few hours after the time I was supposed to take it, so I use the pillbox to keep track of whether I took it or not.</li>
-<li><a href="https://l.meyerperin.com/todo"><strong>Microsoft To-Do</strong></a>: I use Microsoft To-Do to keep track of tasks. I like it because it’s <strong>very</strong> simple, it’s multiplatform, so I can see and check tasks from my phone, my computer and my watch. Since it integrates well with Siri, I can add tasks simply by saying ‘Hey Siri, remind me to X’, which helps me keep track of things. I specifically add tasks to my to-do list as I’m starting them, because that will help me remember to finish if I get distracted.</li>
+<li><strong><a href="https://l.meyerperin.com/todo">Microsoft To-Do</a>:</strong> I use Microsoft To-Do to keep track of tasks. I like it because it’s <strong>very</strong> simple, it’s multiplatform, so I can see and check tasks from my phone, my computer and my watch. Since it integrates well with Siri, I can add tasks simply by saying ‘Hey Siri, remind me to X’, which helps me keep track of things. I specifically add tasks to my to-do list as I’m starting them, because that will help me remember to finish if I get distracted.</li>
+<li><strong><a href="https://l.meyerperin.com/airtags">Apple AirTags</a>:</strong> I have these on everything since I lose something almost daily. The new AirTags have a feature called Precision Finding that allows me to find things a lot faster, and I use it a lot.</li>
+<li><strong><a href="https://l.meyerperin.com/keyring_wallet">Wallet with keyring</a></strong>: A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.</li>
+<li><strong><a href="https://l.meyerperin.com/sbiner">S-biner carabiners</a>:</strong> I use these to attach things to my backpack and to each other, so I have only one bundle of items to keep track of.</li>
+<li><strong><a href="https://l.meyerperin.com/rayban_meta">Ray-Ban Meta</a>:</strong> works as a headset and as reading glasses. It also has a camera, which I use quite a lot, and an AI that I don’t use as much yet.</li>
+<li><strong><a href="https://l.meyerperin.com/ReMarkable2">ReMarkable 2</a>:</strong> during the years, I had (and lost) many notebooks and loose sheets of paper. The ReMarkable2 is an e-ink notebook that feels like a real notebook, but has a lot of capacity. I can also carry academic papers on it.</li>
+<li><strong><a href="https://l.meyerperin.com/pillbox">Pillbox</a>:</strong> I use a pillbox to organize my vitamins and medications. I usually forget whether I took the medication or not a few hours after the time I was supposed to take it, so I use the pillbox to keep track of whether I took it or not.</li>
 </ul>
 </section>
 <section id="reactions" class="level1">
@@ -833,7 +919,7 @@ Moved to Badlands Ranch Dog Food
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Wed, 03 Jan 2024 21:16:33 GMT</pubDate>
+  <pubDate>Fri, 05 Jan 2024 00:01:35 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -1422,7 +1508,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Wed, 03 Jan 2024 21:16:33 GMT</pubDate>
+  <pubDate>Fri, 05 Jan 2024 00:01:35 GMT</pubDate>
 </item>
 </channel>
 </rss>
