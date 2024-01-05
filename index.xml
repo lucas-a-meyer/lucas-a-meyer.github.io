@@ -119,7 +119,7 @@ font-style: inherit;">]</span></span></code></pre></div>
 <figcaption class="figure-caption">Successful log in</figcaption>
 </figure>
 </div>
-<p>Now that I have an app that can authenticate users, I can start building the app itself.</p>
+<p>Now that I have an app that can authenticate users, I need to work on authorization, so that only authorized users can access the app.</p>
 
 
 </section>
@@ -964,7 +964,7 @@ Moved to Badlands Ranch Dog Food
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Fri, 05 Jan 2024 01:02:16 GMT</pubDate>
+  <pubDate>Fri, 05 Jan 2024 01:55:13 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -1553,7 +1553,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Fri, 05 Jan 2024 01:02:16 GMT</pubDate>
+  <pubDate>Fri, 05 Jan 2024 01:55:13 GMT</pubDate>
 </item>
 </channel>
 </rss>
