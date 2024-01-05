@@ -730,16 +730,23 @@
   {
     "objectID": "articles/thread_manager.html",
     "href": "articles/thread_manager.html",
-    "title": "Thread Manager: Helping Me Manage Social Media",
+    "title": "Thread Manager - Building a Web App",
     "section": "",
-    "text": "Thread Manager is the web app I use to schedule posts to social media sites and run some basic analytics. I’m starting from scratch as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.\nI intend to post my building experience on Threads. The code for this app is on GitHub."
+    "text": "Thread Manager is the web app I intend to use to schedule posts to social media sites and run some basic analytics. I’m starting from scratch as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.\nI intend to post my building experience on Threads. The code for this app is on GitHub."
   },
   {
-    "objectID": "articles/thread_manager.html#creating-the-app-in-azure",
-    "href": "articles/thread_manager.html#creating-the-app-in-azure",
-    "title": "Thread Manager: Helping Me Manage Social Media",
-    "section": "Creating the App in Azure",
-    "text": "Creating the App in Azure\nThe first step was creating a new App Service in Azure using the Azure Portal.\n\n\n\n\n\n\nNote\n\n\n\nI did not use the sample code in section 1 from the link above, because I will use the sample code for the Microsoft Identity Web library for Python later. I just created an empty app as described in section 2 of the link above.\n\n\nFrom the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.\nI then configured the app to sync with GitHub, so that I can push code to GitHub and have it automatically deployed to the App Service. Instead of using the sample code in section 1 of the link above, I used the sample code for the Microsoft Identity Web library for Python.\nThe next step was to enable authentication for the app in the Azure Portal. I followed the instructions on this link but instead of choosing “Current Tenant — Single tenant”, I chose “Personal Microsoft accounts only”.\nThe final step was to set up the environment variables CLIENT_SECRET and CLIENT_ID in the App Service. I followed the instructions on this link to set the environment variables. You can find the values for these variables in the Azure Portal. The CLIENT_ID is the Application (client) ID in the “Authentication” tab and the CLIENT_SECRET the MICROSOFT_PROVIDER_AUTHENTICATION_SECRET from the “Configuration” tab.\nOnce I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service. I could then go to the URL for the App Service and see the sample app running."
+    "objectID": "articles/thread_manager.html#creating-an-authenticated-app-in-azure",
+    "href": "articles/thread_manager.html#creating-an-authenticated-app-in-azure",
+    "title": "Thread Manager - Building a Web App",
+    "section": "Creating an authenticated App in Azure",
+    "text": "Creating an authenticated App in Azure\nThe first step was creating a new App Service in Azure using the Azure Portal.\n\n\n\n\n\n\nImportant\n\n\n\nI did not use the sample code in section 1 from the link above, because I intended to use the code that uses the Microsoft Authentication Library (MSAL) for Python. I just created an empty app.\n\n\nFrom the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.\nI then configured the app to sync with GitHub, so that I can push code to GitHub and have it automatically deployed to the App Service."
+  },
+  {
+    "objectID": "articles/thread_manager.html#configuring-microsoft-entra-id-and-linking-the-app",
+    "href": "articles/thread_manager.html#configuring-microsoft-entra-id-and-linking-the-app",
+    "title": "Thread Manager - Building a Web App",
+    "section": "Configuring Microsoft Entra ID and Linking the App",
+    "text": "Configuring Microsoft Entra ID and Linking the App\nI followed the instructions at Quickstart: Sign in users and call the Microsoft Graph API from a Python web app. The instructions will tell you where to find the CLIENT_ID and how to generate a CLIENT_SECRET for the app. The AUTHORITY needs to be set to AUTHORITY=\"https://login.microsoftonline.com/&lt;tenant_id&gt;\". I obtained the tenant_id from the Azure Portal, in the Overview page of Microsoft Entra ID.\nI downloaded the full code for the app, and the only change I had to make was to create an .env file with the variables described above. This is not required for the app to run on the web, but it helps when running locally.\nCLIENT_ID=[client_id]\nCLIENT_SECRET=[client_secret]\nAUTHORITY=https://login.microsoftonline.com/[tenant_id]\nThe instructions don’t mention this, but after finishing the instructions, you also have to link the Entra ID configuration to the Web App you created in the first step. To do this, go to the Azure Portal, open the App Service, go to the “Authentication” tab, and click on “Microsoft” under “Identity providers”. Then, select the “Existing App” tab and select the app you created in the previous step.\nThe final connection step was to set up the environment variables CLIENT_ID, CLIENT_SECRET and AUTHORITY in the App Service. I followed the instructions on this link to set the environment variables in the Web App to the same values present in the .env file.\nOnce I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service.\nI navigated to the app URL and was able to sign in with my Microsoft account. I was then redirected to the app, where I could see the information about my login.\n\n\n\nSuccessful log in\n\n\nNow that I have an app that can authenticate users, I can start building the app itself."
   },
   {
     "objectID": "articles/semantic_kernel.html",
@@ -928,7 +935,7 @@
     "href": "index.html",
     "title": "Articles",
     "section": "",
-    "text": "Do I Have ADHD? (Work In Progress)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy experience with the reMarkable 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThread Manager: Helping Me Manage Social Media\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplaining memes and images with the Semantic Kernel and the OpenAI Vision API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Midjourney\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Quick Tour of the Semantic Kernel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBadlands Ranch Dog Food Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsGuard is free for Microsoft Edge users\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy review of the Farmer’s Dog food service\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Do I Have ADHD? (Work In Progress)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy experience with the reMarkable 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThread Manager - Building a Web App\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExplaining memes and images with the Semantic Kernel and the OpenAI Vision API\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started with Midjourney\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Quick Tour of the Semantic Kernel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBadlands Ranch Dog Food Review\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsGuard is free for Microsoft Edge users\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy review of the Farmer’s Dog food service\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html",
