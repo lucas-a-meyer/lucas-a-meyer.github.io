@@ -681,13 +681,13 @@ Important
 <h1>The First Meeting</h1>
 <p>On Jan 3rd, 2024, I had the first meeting with the psychologist. We introduced ourselves and he asked me about the symptoms that resulted in me seeking a diagnosis. I described the symptoms I listed above, and he asked me to elaborate on each one of them. He also asked me about my childhood, and I described how I was a very good student, but I had a hard time focusing on things that were not interesting to me. I also described how I lost a lot of things, and how I had a hard time getting started with tasks.</p>
 <p>He asked about my family history. My mom is definitely not neurotypical, but she has never sought a diagnosis. I did not have enough contact with my dad to know if he was neurotypical or not. He also asked about my children, and I told him that their school has guided me to request accomodation arrangements for them (these are called 504s). I told him that I plan to get them through an ADHD and autism evaluation as well and that the school counselor had already suggested that earlier in the year.</p>
+<p>The whole meeting lasted about 40 minutes. We scheduled the appointment for the second meeting on January 8th, 2024.</p>
 <p>He then gave me three more tests to fill out on my own time, which I did later at night on that same day.</p>
 <ul>
-<li><strong>A personality test with over 250 questions</strong>. The test asked a lot about whether I can control other people’s minds, whether I think they control my mind, and how frequently I think about suicide. It also repeated several questions about the <a href="https://www.cdc.gov/ncbddd/adhd/diagnosis.html">usual ADHD symptoms</a>. It would ask “Do you always feel distracted?” and offer four options for me to choose (False, Slightly True, Mostly True, True). Later, it would ask “Do you frequently feel distracted?”, and show the four options again. This one took a while to get through.</li>
-<li><strong>[The Big Five personality test]</strong>(https://en.wikipedia.org/wiki/Big_Five_personality_traits): A standard personality test with about 50 questions, which was somewhat quick to get through.</li>
-<li><strong>An attention test called <a href="https://www.braintrain.com/ivaae2/">IVA-AE2</a></strong> that simultaneously shows an image of a number and speaks another number. For example, it can show 2 and speak “six”. You are assigned two different target numbers, one to click when you see it and another to click when you hear it. It then speaks and shows numbers for 20 minutes. I think it’s pretty normal to make the mistake of clicking when you hear the number you’re supposed to click only when you see and vice-versa, and I’m sure I made plenty of mistakes, but I think most people would. This test was very tiring.</li>
+<li><strong>A personality test with over 250 questions:</strong> the test asked a lot about whether I can control other people’s minds, whether I think they control my mind, and how frequently I think about suicide. It also repeated several questions about the <a href="https://www.cdc.gov/ncbddd/adhd/diagnosis.html">usual ADHD symptoms</a>. It would ask “Do you always feel distracted?” and offer four options for me to choose (False, Slightly True, Mostly True, True). Later, it would ask “Do you frequently feel distracted?”, and show the four options again. This one took a while to get through.</li>
+<li><strong><a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">The Big Five personality test</a>:</strong> a standard personality test with about 50 questions, which was somewhat quick to get through.</li>
+<li><strong>An attention test called <a href="https://www.braintrain.com/ivaae2/">IVA-AE2</a>:</strong> this test repeatedly shows an image of a number and speaks another number. For example, it can show 2 and speak “six”. You are assigned two different target numbers, one to click when you see it and another to click when you hear it. It then speaks and shows random numbers for 20 minutes. For example, if you are assigned the number “3 when seen” and “5 when heard”, you should click if it shows 3 and speaks 6, you should also click if it shows 2 and speaks 5, but you should not click when it shows 5 and speaks 3. I think it’s pretty normal to make the mistake of clicking when you hear the number you’re supposed to click only when you see and vice-versa, and I’m sure I made plenty of mistakes, but I think most people would. This test was very tiring.</li>
 </ul>
-<p>The whole meeting lasted about 40 minutes. We scheduled the appointment for the second meeting on January 8th, 2024.</p>
 </section>
 <section id="coping-technologies" class="level1">
 <h1>Coping Technologies</h1>
@@ -964,7 +964,7 @@ Moved to Badlands Ranch Dog Food
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/midjourney.html</guid>
-  <pubDate>Fri, 05 Jan 2024 01:55:13 GMT</pubDate>
+  <pubDate>Fri, 05 Jan 2024 02:01:38 GMT</pubDate>
 </item>
 <item>
   <title>A Quick Tour of the Semantic Kernel</title>
@@ -1553,7 +1553,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
  ]]></description>
   <guid>https://www.meyerperin.com/articles/semantic_kernel.html</guid>
-  <pubDate>Fri, 05 Jan 2024 01:55:13 GMT</pubDate>
+  <pubDate>Fri, 05 Jan 2024 02:01:38 GMT</pubDate>
 </item>
 </channel>
 </rss>
