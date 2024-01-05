@@ -1,0 +1,58 @@
+---
+title: "Thread Manager: Helping Me Manage Social Media"
+page-layout: full
+toc: True
+image: /images/thread_manager_logo.png
+toc-expand: true
+include-in-header: _msft-clarity.html
+date: 2024-01-04
+---
+
+Thread Manager is the web app I use to schedule posts to social media sites and run some basic analytics. **I'm starting from scratch** as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn. 
+
+I intend to post my building experience on Threads. The [code for this app is on GitHub](https://github.com/lucas-a-meyer/thread-manager).
+
+:::{.callout-note}
+This is purely a hobby project. I have a lot of personal commitments and I'll build this very slowly, as time allows.
+:::
+
+# Why build this?
+
+In 2021, I was writing a lot on LinkedIn, but I was limited by LinkedIn's post formatting being mostly text — no inline images, no code. To have images and code, I started writing more on my blog, but usually finished my posts in the middle of the night, and I wanted to schedule them to post the next morning. I also wanted to be able to post to multiple social media sites at once. I created a simple app to post to LinkedIn, Twitter and Mastodon, and it worked well enough for my needs.
+
+Now, in 2024, I'm using Threads a lot more, and an API is probably going to be available soon. I want to be able to schedule my blog posts to post to Threads, and I want to share my journey learning the Threads API.
+
+# Technology Choices
+
+Since I work at Microsoft, I am more familiar with Azure than other cloud providers. And since I work in data science, I am more familiar with Python. 
+
+My intended technology stack is:
+
+- Azure App Service to host the app
+- Azure Cosmos DB to host the data
+- Azure Functions for the scheduled job (using Python)
+- Python Flask for the web app, with Bootstrap helping make the UI better
+- [Quarto](https://www.quarto.org) for the blog posts
+- GitHub Pages to hold the blog posts
+
+# Building the App
+
+## Creating the App in Azure
+
+The first step was [creating a new App Service in Azure using the Azure Portal](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure).
+
+:::{.callout-note}
+I did not use the sample code in section 1 from the link above, because I will use the sample code for the Microsoft Identity Web library for Python later. I just created an empty app as described in section 2 of the link above.
+:::
+
+From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I'm using to develop.
+
+I then [configured the app to sync with GitHub](https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github), so that I can push code to GitHub and have it automatically deployed to the App Service. Instead of using the sample code in section 1 of the link above, I used the [sample code for the Microsoft Identity Web library for Python](https://github.com/Azure-Samples/ms-identity-python-webapp).
+
+The next step was to enable authentication for the app in the Azure Portal. I followed the instructions on [this link](https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service) but instead of choosing "Current Tenant — Single tenant", I chose "Personal Microsoft accounts only". 
+
+The final step was to set up the environment variables `CLIENT_SECRET` and `CLIENT_ID` in the App Service. I followed the instructions on [this link](https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings) to set the environment variables. You can find the values for these variables in the Azure Portal. The `CLIENT_ID` is the Application (client) ID in the "Authentication" tab and the `CLIENT_SECRET` the `MICROSOFT_PROVIDER_AUTHENTICATION_SECRET` from the "Configuration" tab.
+
+Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service. I could then go to the URL for the App Service and see the sample app running.
+
+![](/images/thread_manager/step1.png)

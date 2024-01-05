@@ -5,6 +5,7 @@ listing:
   contents: 
   - articles/adhd.qmd
   - articles/remarkable2.qmd
+  - articles/thread_manager.qmd
   - articles/skv_py.qmd
   - articles/midjourney.qmd
   - articles/semantic_kernel.qmd

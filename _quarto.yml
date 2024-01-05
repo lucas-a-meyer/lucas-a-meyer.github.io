@@ -34,6 +34,7 @@ website:
           - articles/midjourney.qmd
           - articles/semantic_kernel.qmd
           - articles/adhd.qmd
+          - articles/thread_manager.qmd
           - articles/skv_py.qmd
           - articles/badlands_ranch.qmd
           - articles/remarkable2.qmd

@@ -47,7 +47,7 @@ As mentioned above, the first step is to talk to a medical professional. I had a
 
 In the appointment, my PCP told me they would call me with a referral in a couple of days, but instead of calling me, they called my emergency contact, who forgot to tell me about it. Luckily, people in Threads kept reminding me to follow up, and I called my PCP office a few days later. I found the referral and called the psychologist office.
 
-# The Evaluation
+# The Initial Evaluation
 
 I called the psychologist's office in early November. The first thing I needed to do was to set up an account in their system, which took a few days. Then, when the account was completed, they asked me to fill several standard medical forms, plus a two-page biography describing why I think I may have ADHD, and three questionnaires designed to assess whether I have ADHD and potentially autism, which tends to happen hand-in-hand. The questionnaires are below:
 
@@ -59,19 +59,33 @@ The first questionnaire is a screening tool for ADHD. The second is a more detai
 
 I completed the forms December 8th. After all the forms are filled, there are three more appointments to go through, and the first can only be scheduled after the forms are completed. I received a message on the day after that I should schedule the first appointment. I only managed to call back on December 22nd, and scheduled the first evaluation for January 3rd, 2024.
 
+# The First Meeting
+
+On Jan 3rd, 2024, I had the first meeting with the psychologist. We introduced ourselves and he asked me about the symptoms that resulted in me seeking a diagnosis. I described the symptoms I listed above, and he asked me to elaborate on each one of them. He also asked me about my childhood, and I described how I was a very good student, but I had a hard time focusing on things that were not interesting to me. I also described how I lost a lot of things, and how I had a hard time getting started with tasks.
+
+He asked about my family history. My mom is definitely not neurotypical, but she has never sought a diagnosis. I did not have enough contact with my dad to know if he was neurotypical or not. He also asked about my children, and I told him that their school has guided me to request accomodation arrangements for them (these are called 504s). I told him that I plan to get them through an ADHD and autism evaluation as well and that the school counselor had already suggested that earlier in the year.
+
+He then gave me three more tests to fill out on my own time, which I did later at night on that same day.
+
+- **A personality test with over 250 questions**. The test asked a lot about whether I can control other people's minds, whether I think they control my mind, and how frequently I think about suicide. It also repeated several questions about the [usual ADHD symptoms](https://www.cdc.gov/ncbddd/adhd/diagnosis.html). It would ask "Do you always feel distracted?" and offer four options for me to choose (False, Slightly True, Mostly True, True). Later, it would ask "Do you frequently feel distracted?", and show the four options again. This one took a while to get through.
+- **[The Big Five personality test]**(https://en.wikipedia.org/wiki/Big_Five_personality_traits): A standard personality test with about 50 questions, which was somewhat quick to get through.
+- **An attention test called [IVA-AE2](https://www.braintrain.com/ivaae2/)** that simultaneously shows an image of a number and speaks another number. For example, it can show 2 and speak "six". You are assigned two different target numbers, one to click when you see it and another to click when you hear it. It then speaks and shows numbers for 20 minutes. I think it's pretty normal to make the mistake of clicking when you hear the number you're supposed to click only when you see and vice-versa, and I'm sure I made plenty of mistakes, but I think most people would. This test was very tiring.
+
+The whole meeting lasted about 40 minutes. We scheduled the appointment for the second meeting on January 8th, 2024.
+
 # Coping Technologies
 
 Over time I acquired a lot of products to help me cope with the [symptoms](#symptoms). I will list them below:
 
 {{< include _affiliate.qmd >}}
 
-- [**Apple AirTags**](https://l.meyerperin.com/airtags): I have these on everything since I lose something almost daily. The new AirTags have a feature called Precision Finding that allows me to find things a lot faster, and I use it a lot.
-- [**Wallet with keyring**](https://l.meyerperin.com/keyring_wallet): A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.
-- [**S-biner carabiners**](https://l.meyerperin.com/sbiner): I use these to attach things to my backpack and to each other, so I have only one bundle of items to keep track of.
-- [**Ray-Ban Meta**](https://l.meyerperin.com/rayban_meta): works as a headset and as reading glasses. It also has a camera, which I use quite a lot, and an AI that I don't use as much yet.
-- [**ReMarkable 2**](https://l.meyerperin.com/ReMarkable2): during the years, I had (and lost) many notebooks and loose sheets of paper. The ReMarkable2 is an e-ink notebook that feels like a real notebook, but has a lot of capacity. I can also carry academic papers on it. 
-- [**Pillbox**](https://l.meyerperin.com/pillbox): I use a pillbox to organize my vitamins and medications. I usually forget whether I took the medication or not a few hours after the time I was supposed to take it, so I use the pillbox to keep track of whether I took it or not.
-- [**Microsoft To-Do**](https://l.meyerperin.com/todo): I use Microsoft To-Do to keep track of tasks. I like it because it's **very** simple, it's multiplatform, so I can see and check tasks from my phone, my computer and my watch. Since it integrates well with Siri, I can add tasks simply by saying 'Hey Siri, remind me to X', which helps me keep track of things. I specifically add tasks to my to-do list as I'm starting them, because that will help me remember to finish if I get distracted.
+- **[Microsoft To-Do](https://l.meyerperin.com/todo):** I use Microsoft To-Do to keep track of tasks. I like it because it's **very** simple, it's multiplatform, so I can see and check tasks from my phone, my computer and my watch. Since it integrates well with Siri, I can add tasks simply by saying 'Hey Siri, remind me to X', which helps me keep track of things. I specifically add tasks to my to-do list as I'm starting them, because that will help me remember to finish if I get distracted.
+- **[Apple AirTags](https://l.meyerperin.com/airtags):** I have these on everything since I lose something almost daily. The new AirTags have a feature called Precision Finding that allows me to find things a lot faster, and I use it a lot.
+- **[Wallet with keyring](https://l.meyerperin.com/keyring_wallet)**: A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.
+- **[S-biner carabiners](https://l.meyerperin.com/sbiner):** I use these to attach things to my backpack and to each other, so I have only one bundle of items to keep track of.
+- **[Ray-Ban Meta](https://l.meyerperin.com/rayban_meta):** works as a headset and as reading glasses. It also has a camera, which I use quite a lot, and an AI that I don't use as much yet.
+- **[ReMarkable 2](https://l.meyerperin.com/ReMarkable2):** during the years, I had (and lost) many notebooks and loose sheets of paper. The ReMarkable2 is an e-ink notebook that feels like a real notebook, but has a lot of capacity. I can also carry academic papers on it. 
+- **[Pillbox](https://l.meyerperin.com/pillbox):** I use a pillbox to organize my vitamins and medications. I usually forget whether I took the medication or not a few hours after the time I was supposed to take it, so I use the pillbox to keep track of whether I took it or not.
 
 # Reactions
 
