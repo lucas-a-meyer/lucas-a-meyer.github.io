@@ -12,148 +12,336 @@
 <generator>quarto-1.3.450</generator>
 <lastBuildDate>Sat, 06 Jan 2024 08:00:00 GMT</lastBuildDate>
 <item>
-  <title>Creating an Azure Web App with Authentication and Authorization</title>
+  <title>Automatically adding meta tags to your blog posts with OpenAI</title>
   <dc:creator>Lucas A. Meyer</dc:creator>
-  <link>https://www.meyerperin.com/posts/2024-01-06-thread_manager_step_01.html</link>
+  <link>https://www.meyerperin.com/posts/2024-01-06-automatically-adding-descriptions.html</link>
   <description><![CDATA[ 
 
 
 
-<p>This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is <a href="../posts/2024-01-05-thread_manager.html">here</a>.</p>
-<p>We begin by <a href="https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure">creating a new App Service in Azure using the Azure Portal</a>.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>I did not use the sample code in section 1 from the link above, because I intended to use the code that uses the Microsoft Authentication Library (MSAL) for Python. <strong>I just created an empty app.</strong></p>
-</div>
-</div>
-<p>From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.</p>
-<p>I then <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github">configured the app to sync with GitHub</a>, so that I can push code to GitHub and have it automatically deployed to the App Service.</p>
-<section id="configuring-microsoft-entra-id-and-linking-the-app" class="level2">
-<h2 class="anchored" data-anchor-id="configuring-microsoft-entra-id-and-linking-the-app">Configuring Microsoft Entra ID and Linking the App</h2>
-<p>I followed the instructions at <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in?tabs=windows">Quickstart: Sign in users and call the Microsoft Graph API from a Python web app</a>. The instructions will tell you where to find the <code>CLIENT_ID</code> and how to generate a <code>CLIENT_SECRET</code> for the app. The <code>AUTHORITY</code> needs to be set to <code>AUTHORITY="https://login.microsoftonline.com/&lt;tenant_id&gt;"</code>. I obtained the <code>tenant_id</code> from the Azure Portal, in the Overview page of Microsoft Entra ID.</p>
-<p>I downloaded the full code for the app, and the only change I had to make was to create an <code>.env</code> file with the variables described above. This is not required for the app to run on the web, but it helps when running locally.</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="va" style="color: #111111;
+<p>As I was updating my blog, I realized that I had forgotten to add the <code>description</code> meta tag to many of my blog posts. This is the text that appears in search results and when you share a link on social media. I didn’t want to go through all my posts and add a description manually, so I decided to use OpenAI GPT to generate descriptions for me.</p>
+<p>This code is very simple, but it may be useful to you, so I’m sharing it here. It’s written in Python and uses the new <a href="https://github.com/openai/openai-python/discussions/742">OpenAI Python client syntax</a>.</p>
+<section id="the-code" class="level2">
+<h2 class="anchored" data-anchor-id="the-code">The code</h2>
+<p>My blog is written in Quarto, which is a Markdown-based document format. I use Quarto Markdown (<code>.qmd</code>) files to write my blog posts. A <code>.qmd</code> file is a Markdown file with YAML front matter. The YAML front matter contains metadata about the document, such as the title, author, and date. I wanted to add the <code>description</code> meta tag to the YAML front matter of each file.</p>
+<p>The first thing to do is to extract the YAML front matter from the file. I used a regular expression to do this. If the file doesn’t contain YAML front matter, I will skip it.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">CLIENT_ID</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">import</span> yaml</span>
+<span id="cb1-2"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">=</span><span class="pp" style="color: #AD0000;
+font-style: inherit;">import</span> re</span>
+<span id="cb1-3"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+font-style: inherit;">import</span> os</span>
+<span id="cb1-4"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">client_id</span><span class="pp" style="color: #AD0000;
+font-style: inherit;">from</span> openai <span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">]</span></span>
-<span id="cb1-2"><span class="va" style="color: #111111;
+font-style: inherit;">import</span> OpenAI</span>
+<span id="cb1-5"><span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">CLIENT_SECRET</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
 background-color: null;
-font-style: inherit;">=</span><span class="pp" style="color: #AD0000;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="kw" style="color: #003B4F;
 background-color: null;
-font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+font-style: inherit;">def</span> parse_qmd(content):</span>
+<span id="cb1-8">    <span class="co" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">client_secret</span><span class="pp" style="color: #AD0000;
+font-style: inherit;"># Extract the YAML front matter</span></span>
+<span id="cb1-9">    matches <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">]</span></span>
-<span id="cb1-3"><span class="va" style="color: #111111;
+font-style: inherit;">=</span> re.findall(<span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">AUTHORITY</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">r'^---\n(.*?)\n---'</span>, content, re.DOTALL)</span>
+<span id="cb1-10">    <span class="cf" style="color: #003B4F;
 background-color: null;
-font-style: inherit;">=</span>https://login.microsoftonline.com/<span class="pp" style="color: #AD0000;
+font-style: inherit;">if</span> <span class="kw" style="color: #003B4F;
 background-color: null;
-font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+font-style: inherit;">not</span> matches:</span>
+<span id="cb1-11">        <span class="cf" style="color: #003B4F;
 background-color: null;
-font-style: inherit;">tenant_id</span><span class="pp" style="color: #AD0000;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
 background-color: null;
-font-style: inherit;">]</span></span></code></pre></div>
-<p>The instructions don’t mention this, but after finishing the instructions, you also have to link the Entra ID configuration to the Web App you created in the first step. To do this, go to the Azure Portal, open the App Service, go to the “Authentication” tab, and click on “Microsoft” under “Identity providers”. Then, select the “Existing App” tab and select the app you created in the previous step.</p>
-<p>The final connection step was to set up the environment variables <code>CLIENT_ID</code>, <code>CLIENT_SECRET</code> and <code>AUTHORITY</code> in the App Service. I followed the instructions on <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings">this link</a> to set the environment variables in the Web App to the same values present in the .env file.</p>
-<p>Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service.</p>
-<p>I navigated to the app URL and was able to sign in with my Microsoft account. I was then redirected to the app, where I could see the information about my login.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.meyerperin.com/images/thread_manager/step1.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Successful log in</figcaption>
-</figure>
-</div>
-<p>Now that I have an app that can authenticate users, I need to work on authorization, so that only authorized users can access the app.</p>
+font-style: inherit;">None</span>, <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb1-12">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> matches[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>], content</span></code></pre></div>
+<p>I wrote a function to recompose the file content after modifying the YAML front matter. This function takes the original YAML front matter, the modified YAML data, and the full file content as input. It replaces the original YAML front matter with the modified YAML data and returns the updated file content.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> recompose_qmd(yaml_data, original_yaml, content):</span>
+<span id="cb2-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Convert the modified YAML data to string</span></span>
+<span id="cb2-3">    new_yaml_str <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yaml.dump(yaml_data, default_flow_style<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>)</span>
+<span id="cb2-4"></span>
+<span id="cb2-5">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Replace the original YAML content with the new one</span></span>
+<span id="cb2-6">    updated_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> content.replace(original_yaml, new_yaml_str)</span>
+<span id="cb2-7">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> updated_content</span></code></pre></div>
+<p>The workhorse of this code is the part that generates a summary of the Markdown content. I used the OpenAI chat API to do this. I created a chat prompt that asks the user to describe what the reader will learn after reading the article. I then used the <code>gpt-4</code> model to generate a response to this prompt. The response is the summary of the article.</p>
+<p>In my first attempts, GPT was starting the summary with “After reading the markdown article, the reader will learn”. I didn’t want this, so I added some text and an example to the prompt to remove this behavior.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> summarize_markdown(markdown):</span>
+<span id="cb3-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Load your OpenAI API key</span></span>
+<span id="cb3-3"></span>
+<span id="cb3-4">    client <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> OpenAI(</span>
+<span id="cb3-5">        api_key <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'OPENAI_API_KEY'</span>)</span>
+<span id="cb3-6">    )</span>
+<span id="cb3-7"></span>
+<span id="cb3-8">    chat_completion <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> client.chat.completions.create(</span>
+<span id="cb3-9">    messages<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[</span>
+<span id="cb3-10">        {</span>
+<span id="cb3-11">            <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"role"</span>: <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"user"</span>,</span>
+<span id="cb3-12">            <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"content"</span>: <span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"""Without repeating 'After reading the markdown article, the reader will learn', describe in one sentence what the reader will learn about after reading the markdown article. </span></span>
+<span id="cb3-13"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">            Also don't say 'the reader will learn about', just say what they'll learn. For example, instead of saying 'the reader will learn about strategies for programming', just say 'strategies for programming' </span></span>
+<span id="cb3-14"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">            Markdown:</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">\n\n</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>markdown<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"""</span>,</span>
+<span id="cb3-15">        }</span>
+<span id="cb3-16">    ],</span>
+<span id="cb3-17">    model<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gpt-4"</span>)</span>
+<span id="cb3-18"></span>
+<span id="cb3-19">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> chat_completion.choices[<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>].message.content</span></code></pre></div>
+<p>Finally, I wrote a function that processes all the <code>.qmd</code> files in a directory. It loops through all the files in the directory and calls the functions I wrote above to extract the YAML front matter, generate a summary of the Markdown content, and add the summary to the YAML front matter.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> process_qmd_files(directory):</span>
+<span id="cb4-2">    <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Loop through all files in the directory</span></span>
+<span id="cb4-3">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">for</span> filename <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> os.listdir(directory):</span>
+<span id="cb4-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> filename.endswith(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'.qmd'</span>):</span>
+<span id="cb4-5">            <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'Processing </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>filename<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">...'</span>)</span>
+<span id="cb4-6"></span>
+<span id="cb4-7">            file_path <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.path.join(directory, filename)</span>
+<span id="cb4-8"></span>
+<span id="cb4-9">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Read the file</span></span>
+<span id="cb4-10">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">with</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">open</span>(file_path, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'r'</span>, encoding<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'utf-8'</span>) <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">file</span>:</span>
+<span id="cb4-11">                content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">file</span>.read()</span>
+<span id="cb4-12"></span>
+<span id="cb4-13">            original_yaml, full_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> parse_qmd(content)</span>
+<span id="cb4-14">            markdown <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> full_content.replace(original_yaml, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">''</span>)</span>
+<span id="cb4-15"></span>
+<span id="cb4-16">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> original_yaml <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">is</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span>:</span>
+<span id="cb4-17">                <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'No YAML front matter found in </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>filename<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">, skipping...'</span>)</span>
+<span id="cb4-18">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">continue</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Skip files without YAML front matter</span></span>
+<span id="cb4-19"></span>
+<span id="cb4-20">            yaml_data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> yaml.safe_load(original_yaml)</span>
+<span id="cb4-21"></span>
+<span id="cb4-22">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'description'</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> yaml_data:</span>
+<span id="cb4-23">                <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f'YAML front matter already contains a description, skipping...'</span>)</span>
+<span id="cb4-24">                <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">continue</span></span>
+<span id="cb4-25"></span>
+<span id="cb4-26">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Generate a summary of the Markdown content</span></span>
+<span id="cb4-27">            summary <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> summarize_markdown(markdown)</span>
+<span id="cb4-28"></span>
+<span id="cb4-29">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Add the summary to the YAML front matter</span></span>
+<span id="cb4-30">            yaml_data[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'description'</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> summary</span>
+<span id="cb4-31">            </span>
+<span id="cb4-32">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Recompose the file content</span></span>
+<span id="cb4-33">            updated_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> recompose_qmd(yaml_data, original_yaml, full_content)</span>
+<span id="cb4-34"></span>
+<span id="cb4-35">            <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Write the updated content back to the file</span></span>
+<span id="cb4-36">            <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">with</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">open</span>(file_path, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'w'</span>, encoding<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'utf-8'</span>) <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">file</span>:</span>
+<span id="cb4-37">                <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">file</span>.write(updated_content)</span>
+<span id="cb4-38"></span>
+<span id="cb4-39">load_dotenv()</span>
+<span id="cb4-40"></span>
+<span id="cb4-41"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Specify the directory containing your .qmd files</span></span>
+<span id="cb4-42">directory <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;</span>YOUR_DIRECTORY<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&gt;</span></span>
+<span id="cb4-43"></span>
+<span id="cb4-44"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Process all .qmd files in the directory</span></span>
+<span id="cb4-45">process_qmd_files(directory)</span></code></pre></div>
+<p>My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.</p>
+<p>I used my ChatGPT Plus to generate the main block of code that has the function <code>process_qmd_files</code>, so the whole process, end-to-end, took less than 10 minutes.</p>
 
 
 </section>
 
  ]]></description>
-  <guid>https://www.meyerperin.com/posts/2024-01-06-thread_manager_step_01.html</guid>
+  <guid>https://www.meyerperin.com/posts/2024-01-06-automatically-adding-descriptions.html</guid>
   <pubDate>Sat, 06 Jan 2024 08:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/azure-web-app.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Thread Manager - Managing Social Media</title>
-  <dc:creator>Lucas A. Meyer</dc:creator>
-  <link>https://www.meyerperin.com/posts/2024-01-05-thread_manager.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>Thread Manager a the web app I intend to use to schedule posts to social media sites and run basic analytics.</p>
-<p><strong>I’m starting from scratch</strong> as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.</p>
-<p>I intend to post about the process of building this app on <a href="https://www.threads.net">Threads</a> as I build it. The <a href="https://github.com/lucas-a-meyer/thread-manager">code for this app is on GitHub</a>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is purely a hobby project. I have a lot of personal commitments and I’ll build this very slowly, as time allows.</p>
-</div>
-</div>
-<section id="why-build-this" class="level1">
-<h1>Why build this?</h1>
-<p>In 2021, I was writing a lot on LinkedIn, but I was limited by LinkedIn’s post formatting being mostly text — no inline images, no code. To have images and code, I started writing more on my blog, but usually finished my posts in the middle of the night, and I wanted to schedule them to post the next morning. I also wanted to be able to post to multiple social media sites at once. I created a simple app to post to LinkedIn, Twitter and Mastodon, and it worked well enough for my needs.</p>
-<p>Now, in 2024, I’m using Threads a lot more, and an API is probably going to be available in 2024. I want to be able to schedule my blog posts to post to Threads, and I also want to share my journey learning the Threads API.</p>
-</section>
-<section id="technology-choices" class="level1">
-<h1>Technology Choices</h1>
-<p>Since I work at Microsoft, I am more familiar with Azure than other cloud providers. And since I work in data science, I am more familiar with Python.</p>
-<p>My intended technology stack is:</p>
-<ul>
-<li>Azure App Service to host the app</li>
-<li>Azure Cosmos DB to host the data</li>
-<li>Azure Functions for the scheduled job (using Python)</li>
-<li>Python Flask for the web app, with Bootstrap helping make the UI better</li>
-<li><a href="https://www.quarto.org">Quarto</a> for the blog posts</li>
-<li>GitHub Pages to hold the blog posts</li>
-</ul>
-</section>
-<section id="project-steps" class="level1">
-<h1>Project steps</h1>
-<p>The list below shows the steps I am taking to build this app. I will update this list as I make progress.</p>
-<ul class="task-list">
-<li><input type="checkbox" checked=""><a href="../posts/2024-01-06-thread_manager_step_01.html">Create an Azure Web App with Authentication and Basic Authorization</a></li>
-<li><input type="checkbox">Create a user database in Cosmos DB and link it to authentication</li>
-<li><input type="checkbox">Create a user profile page</li>
-<li><input type="checkbox">Connect to the LinkedIn API</li>
-<li><input type="checkbox">Enable a basic text post to LinkedIn</li>
-</ul>
-<p>There will be more steps, and I’ll add them as I go.</p>
-
-
-</section>
-
- ]]></description>
-  <guid>https://www.meyerperin.com/posts/2024-01-05-thread_manager.html</guid>
-  <pubDate>Fri, 05 Jan 2024 08:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/thread_manager_logo.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.meyerperin.com/images/openai-logo.png" medium="image" type="image/png" height="146" width="144"/>
 </item>
 <item>
   <title>Tech reviewers wanted for my Semantic Kernel book</title>
@@ -835,7 +1023,7 @@ Note
 </div>
 </div>
 <p>Our dog, TheFuzzy, is very picky with food. She will go into hunger strikes for an extended period of time if she dislikes the food. The first brand that worked reliably for us was <a href="../posts/2022-06-28-farmers-dog.html">The Farmer’s Dog</a>. The main drawback of that food is that it’s wet and frozen. It takes a fair amount of freezer space, the kids don’t like to handle it, it’s hard to travel with. We tried a few other brands, but none of them worked. Then we found <a href="https://badlandsranch.com/">Badlands Ranch</a>, a dry food funded by the actress Katherine Heigl, and decided to give it a try.</p>
-<p>You can order the food on their <a href="www.badlandsranch.com">website</a>. They run promotions that give big discounts on the first order, but they seem to run promotions giving big discounts all the time.</p>
+<p>You can order the food on their <a href="https://www.badlandsranch.com">website</a>. They run promotions that give big discounts on the first order, but they seem to run promotions giving big discounts all the time.</p>
 <section id="what-you-should-know" class="level2">
 <h2 class="anchored" data-anchor-id="what-you-should-know">What you should know</h2>
 <p>Here’s a few things that you should know before you try that are not obvious from the website:</p>
@@ -1965,6 +2153,31 @@ font-style: inherit;">0</span>]</span></code></pre></div>
   <guid>https://www.meyerperin.com/posts/2022-12-08-mizuho-securities.html</guid>
   <pubDate>Thu, 08 Dec 2022 14:00:00 GMT</pubDate>
   <media:content url="https://www.meyerperin.com/images/mizuho-post.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Teamwork - what’s wrong with this picture?</title>
+  <dc:creator>Lucas A. Meyer</dc:creator>
+  <link>https://www.meyerperin.com/posts/2022-11-07-teamwork.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>If your office has a “teamwork gears” picture like this one, you may be thinking about working remotely.</p>
+<p><img src="https://www.meyerperin.com/images/teamwork-cogs.jpg" class="img-fluid"></p>
+<p>I’m not even talking about the guy riding the rocket. I’m going to assume that it’s a crash test dummy, not an allusion to the recent acquisition of #Twitter. The problem I have is with the gears.</p>
+<p>You see, if the person with the mustache and the red shirt turns the gear <strong>clockwise</strong>, this would push the other two gears to turn <strong>counter-clockwise</strong>. But these other two gears push each other in opposite directions.</p>
+<p>For example, if “red” moves clockwise, it will push “green” to move counter-clockwise, which in turn pushes “blue” to move clockwise, which in turn pushes “red” to move counter-clockwise… but “red” was being pushed to move clockwise to begin with. This whole gear system is stuck: if someone tries to introduce any movement, the system works to stay firmly locked into place.</p>
+<p>I’m still trying to decide if this is a mistake. Maybe it’s just great art, a subtle criticism about #teamwork that the artist snuck in. Maybe they worked in a #toxic workplace, or had a lot of group projects in high school.</p>
+<p>It’s in days like this that I realize how luck I’ve been in my career. The teams I worked in (and my current team, the AI for Good Lab) were always places that were simultaneously good at science and great places to work at.</p>
+<p>I hope you are as lucky as I am.</p>
+
+
+
+ ]]></description>
+  <category>management</category>
+  <guid>https://www.meyerperin.com/posts/2022-11-07-teamwork.html</guid>
+  <pubDate>Tue, 08 Nov 2022 14:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/teamwork-cogs.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
