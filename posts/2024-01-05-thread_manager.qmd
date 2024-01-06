@@ -1,7 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: 2024-01-05
-draft: true
+draft: false
 description: The process of developing a web app (Thread Manager) for scheduling posts
   across multiple social media platforms, utilizing technologies such as Azure, Python,
   Flask, and Bootstrap, alongside a narrative of the author's software development
