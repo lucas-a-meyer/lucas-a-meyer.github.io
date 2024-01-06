@@ -344,6 +344,68 @@ font-style: inherit;"># Process all .qmd files in the directory</span></span>
   <media:content url="https://www.meyerperin.com/images/openai-logo.png" medium="image" type="image/png" height="146" width="144"/>
 </item>
 <item>
+  <title>Thread Manager - Managing Social Media</title>
+  <dc:creator>Lucas A. Meyer</dc:creator>
+  <link>https://www.meyerperin.com/posts/2024-01-05-thread_manager.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>Thread Manager a the web app I intend to use to schedule posts to social media sites and run basic analytics.</p>
+<p><strong>I’m starting from scratch</strong> as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.</p>
+<p>I intend to post about the process of building this app on <a href="https://www.threads.net">Threads</a> as I build it. The <a href="https://github.com/lucas-a-meyer/thread-manager">code for this app is on GitHub</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is purely a hobby project. I have a lot of personal commitments and I’ll build this very slowly, as time allows.</p>
+</div>
+</div>
+<section id="why-build-this" class="level1">
+<h1>Why build this?</h1>
+<p>In 2021, I was writing a lot on LinkedIn, but I was limited by LinkedIn’s post formatting being mostly text — no inline images, no code. To have images and code, I started writing more on my blog, but usually finished my posts in the middle of the night, and I wanted to schedule them to post the next morning. I also wanted to be able to post to multiple social media sites at once. I created a simple app to post to LinkedIn, Twitter and Mastodon, and it worked well enough for my needs.</p>
+<p>Now, in 2024, I’m using Threads a lot more, and an API is probably going to be available in 2024. I want to be able to schedule my blog posts to post to Threads, and I also want to share my journey learning the Threads API.</p>
+</section>
+<section id="technology-choices" class="level1">
+<h1>Technology Choices</h1>
+<p>Since I work at Microsoft, I am more familiar with Azure than other cloud providers. And since I work in data science, I am more familiar with Python.</p>
+<p>My intended technology stack is:</p>
+<ul>
+<li>Azure App Service to host the app</li>
+<li>Azure Cosmos DB to host the data</li>
+<li>Azure Functions for the scheduled job (using Python)</li>
+<li>Python Flask for the web app, with Bootstrap helping make the UI better</li>
+<li><a href="https://www.quarto.org">Quarto</a> for the blog posts</li>
+<li>GitHub Pages to hold the blog posts</li>
+</ul>
+</section>
+<section id="project-steps" class="level1">
+<h1>Project steps</h1>
+<p>The list below shows the steps I am taking to build this app. I will update this list as I make progress.</p>
+<ul class="task-list">
+<li><input type="checkbox" checked=""><a href="../posts/2024-01-07-thread_manager_step_01.html">Create an Azure Web App with Authentication and Basic Authorization</a></li>
+<li><input type="checkbox">Create a user database in Cosmos DB and link it to authentication</li>
+<li><input type="checkbox">Create a user profile page</li>
+<li><input type="checkbox">Connect to the LinkedIn API</li>
+<li><input type="checkbox">Enable a basic text post to LinkedIn</li>
+</ul>
+<p>There will be more steps, and I’ll add them as I go.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/posts/2024-01-05-thread_manager.html</guid>
+  <pubDate>Fri, 05 Jan 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/thread_manager_logo.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
   <title>Tech reviewers wanted for my Semantic Kernel book</title>
   <dc:creator>Lucas A. Meyer</dc:creator>
   <link>https://www.meyerperin.com/posts/2024-01-05-review-semantic-kernel.html</link>
@@ -2153,31 +2215,6 @@ font-style: inherit;">0</span>]</span></code></pre></div>
   <guid>https://www.meyerperin.com/posts/2022-12-08-mizuho-securities.html</guid>
   <pubDate>Thu, 08 Dec 2022 14:00:00 GMT</pubDate>
   <media:content url="https://www.meyerperin.com/images/mizuho-post.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Teamwork - what’s wrong with this picture?</title>
-  <dc:creator>Lucas A. Meyer</dc:creator>
-  <link>https://www.meyerperin.com/posts/2022-11-07-teamwork.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>If your office has a “teamwork gears” picture like this one, you may be thinking about working remotely.</p>
-<p><img src="https://www.meyerperin.com/images/teamwork-cogs.jpg" class="img-fluid"></p>
-<p>I’m not even talking about the guy riding the rocket. I’m going to assume that it’s a crash test dummy, not an allusion to the recent acquisition of #Twitter. The problem I have is with the gears.</p>
-<p>You see, if the person with the mustache and the red shirt turns the gear <strong>clockwise</strong>, this would push the other two gears to turn <strong>counter-clockwise</strong>. But these other two gears push each other in opposite directions.</p>
-<p>For example, if “red” moves clockwise, it will push “green” to move counter-clockwise, which in turn pushes “blue” to move clockwise, which in turn pushes “red” to move counter-clockwise… but “red” was being pushed to move clockwise to begin with. This whole gear system is stuck: if someone tries to introduce any movement, the system works to stay firmly locked into place.</p>
-<p>I’m still trying to decide if this is a mistake. Maybe it’s just great art, a subtle criticism about #teamwork that the artist snuck in. Maybe they worked in a #toxic workplace, or had a lot of group projects in high school.</p>
-<p>It’s in days like this that I realize how luck I’ve been in my career. The teams I worked in (and my current team, the AI for Good Lab) were always places that were simultaneously good at science and great places to work at.</p>
-<p>I hope you are as lucky as I am.</p>
-
-
-
- ]]></description>
-  <category>management</category>
-  <guid>https://www.meyerperin.com/posts/2022-11-07-teamwork.html</guid>
-  <pubDate>Tue, 08 Nov 2022 14:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/teamwork-cogs.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

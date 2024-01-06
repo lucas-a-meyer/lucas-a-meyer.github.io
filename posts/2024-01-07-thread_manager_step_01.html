@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2024-01-07">
+<meta name="description" content="How to create, configure and link a new App Service in Azure to a GitHub repository, configure Microsoft Entra ID and sync it with a web app, and how to set up environment variables within the App Service.">
 
-<title>Lucas A. Meyer -</title>
+<title>Lucas A. Meyer - Creating an Azure Web App with Authentication and Authorization</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//favicon-32x32.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//favicon-32x32.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,16 +107,33 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </script>
-<meta http-equiv="refresh" content="4;url=http://www.meyerperin.com/">
+<!-- Clarity tracking code for https://meyerperin.com/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "cjhrvqb66a");
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/44798468.js"></script>
+<!-- End of HubSpot Embed Code -->
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Lucas A. Meyer -">
-<meta property="og:description" content="">
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - Creating an Azure Web App with Authentication and Authorization">
+<meta property="og:description" content="How to create, configure and link a new App Service in Azure to a GitHub repository, configure Microsoft Entra ID and sync it with a web app, and how to set up environment variables within the App Service.">
+<meta property="og:image" content="https://www.meyerperin.com/images/azure-web-app.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta name="twitter:title" content="Lucas A. Meyer -">
-<meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta property="og:image:height" content="512">
+<meta property="og:image:width" content="512">
+<meta name="twitter:title" content="Lucas A. Meyer - Creating an Azure Web App with Authentication and Authorization">
+<meta name="twitter:description" content="How to create, configure and link a new App Service in Azure to a GitHub repository, configure Microsoft Entra ID and sync it with a web app, and how to set up environment variables within the App Service.">
+<meta name="twitter:image" content="https://www.meyerperin.com/images/azure-web-app.png">
+<meta name="twitter:image-height" content="512">
+<meta name="twitter:image-width" content="512">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed">
@@ -89,10 +143,10 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/mplogo.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/mplogo.png" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Lucas A. Meyer</span>
     </a>
   </div>
@@ -103,15 +157,15 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./reviews.html" rel="" target="">
+    <a class="nav-link" href="../reviews.html" rel="" target="">
  <span class="menu-text">Reviews</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./using_quarto/index.html" rel="" target="">
+    <a class="nav-link" href="../using_quarto/index.html" rel="" target="">
  <span class="menu-text">Using Quarto</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -151,11 +205,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html" rel="" target="">
+    <a class="nav-link" href="../contact.html" rel="" target="">
  <span class="menu-text">Contact</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -170,7 +224,13 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#configuring-microsoft-entra-id-and-linking-the-app" id="toc-configuring-microsoft-entra-id-and-linking-the-app" class="nav-link active" data-scroll-target="#configuring-microsoft-entra-id-and-linking-the-app">Configuring Microsoft Entra ID and Linking the App</a></li>
+  </ul>
+</nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
 <div id="mc_embed_shell">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
@@ -207,29 +267,78 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Creating an Azure Web App with Authentication and Authorization</h1>
+</div>
+
+<div>
+  <div class="description">
+    How to create, configure and link a new App Service in Azure to a GitHub repository, configure Microsoft Entra ID and sync it with a web app, and how to set up environment variables within the App Service.
+  </div>
+</div>
 
 
-<p>
-&nbsp;
-</p>
-<p>
-&nbsp;
-</p>
-<hr>
-<center>
-<section id="thank-you-for-your-submission." class="level1">
-<h1>Thank you for your submission.</h1>
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 7, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is <a href="../posts/2024-01-05-thread_manager.html">here</a>.</p>
+<p>We begin by <a href="https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure">creating a new App Service in Azure using the Azure Portal</a>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I did not use the sample code in section 1 from the link above, because I intended to use the code that uses the Microsoft Authentication Library (MSAL) for Python. <strong>I just created an empty app.</strong></p>
+</div>
+</div>
+<p>From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.</p>
+<p>I then <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github">configured the app to sync with GitHub</a>, so that I can push code to GitHub and have it automatically deployed to the App Service.</p>
+<section id="configuring-microsoft-entra-id-and-linking-the-app" class="level2">
+<h2 class="anchored" data-anchor-id="configuring-microsoft-entra-id-and-linking-the-app">Configuring Microsoft Entra ID and Linking the App</h2>
+<p>I followed the instructions at <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in?tabs=windows">Quickstart: Sign in users and call the Microsoft Graph API from a Python web app</a>. The instructions will tell you where to find the <code>CLIENT_ID</code> and how to generate a <code>CLIENT_SECRET</code> for the app. The <code>AUTHORITY</code> needs to be set to <code>AUTHORITY="https://login.microsoftonline.com/&lt;tenant_id&gt;"</code>. I obtained the <code>tenant_id</code> from the Azure Portal, in the Overview page of Microsoft Entra ID.</p>
+<p>I downloaded the full code for the app, and the only change I had to make was to create an <code>.env</code> file with the variables described above. This is not required for the app to run on the web, but it helps when running locally.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">CLIENT_ID</span><span class="op">=</span><span class="pp">[</span><span class="ss">client_id</span><span class="pp">]</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">CLIENT_SECRET</span><span class="op">=</span><span class="pp">[</span><span class="ss">client_secret</span><span class="pp">]</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">AUTHORITY</span><span class="op">=</span>https://login.microsoftonline.com/<span class="pp">[</span><span class="ss">tenant_id</span><span class="pp">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The instructions don’t mention this, but after finishing the instructions, you also have to link the Entra ID configuration to the Web App you created in the first step. To do this, go to the Azure Portal, open the App Service, go to the “Authentication” tab, and click on “Microsoft” under “Identity providers”. Then, select the “Existing App” tab and select the app you created in the previous step.</p>
+<p>The final connection step was to set up the environment variables <code>CLIENT_ID</code>, <code>CLIENT_SECRET</code> and <code>AUTHORITY</code> in the App Service. I followed the instructions on <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings">this link</a> to set the environment variables in the Web App to the same values present in the .env file.</p>
+<p>Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service.</p>
+<p>I navigated to the app URL and was able to sign in with my Microsoft account. I was then redirected to the app, where I could see the information about my login.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="..\images/thread_manager/step1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Successful log in</figcaption>
+</figure>
+</div>
+<p>Now that I have an app that can authenticate users, I need to work on authorization, so that only authorized users can access the app.</p>
+
+
 </section>
-<section id="i-will-get-back-in-touch-soon." class="level1">
-<h1>I will get back in touch soon.</h1>
-<p>
-&nbsp;
-</p>
-</section></center>
-<hr>
-
-
-
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
