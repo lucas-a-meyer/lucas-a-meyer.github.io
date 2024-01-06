@@ -48,7 +48,7 @@ My intended technology stack is:
 
 The list below shows the steps I am taking to build this app. I will update this list as I make progress.
 
-- [x] [Create an Azure Web App with Authentication and Basic Authorization](2024-01-06-thread_manager_step_01.qmd)
+- [x] [Create an Azure Web App with Authentication and Basic Authorization](2024-01-07-thread_manager_step_01.qmd)
 - [ ] Create a user database in Cosmos DB and link it to authentication
 - [ ] Create a user profile page
 - [ ] Connect to the LinkedIn API
