@@ -29,6 +29,8 @@ website:
   navbar:
     logo: /images/mplogo.png
     left:
+      - text: "Home"
+        file: index.qmd
       - text: "Reviews"
         file: reviews.qmd
       - text: "Using Quarto"
