@@ -1,17 +1,16 @@
 ---
 author: Lucas A. Meyer
 date: 2019-02-13 06:00:00
+description: The value of sharing information and knowledge rather than keeping it
+  to oneself, the importance of documenting one's work in a detailed manner for consistent
+  reproducibility, the benefits of blogging for both aspiring and experienced data
+  scientists, and the significance of regular and insightful feedback to improve one's
+  work.
 draft: false
-id: 13f72afd6c098b3b748dbf8a0c6125f0
 image: /images/useful-output.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2019-02-13 06:00:00
-linkedin-target-date: 2019-02-13 06:00:00
-post-url: https://www.meyerperin.com/posts/2019-02-13-why-you-should-blog-if-you-are-a-data-scientist.html
 title: Why you should blog if you are a data scientist
-tweet-url: https://twitter.com/user/status/1570502726529736706
-twitter-posted: 2019-02-13 06:00:00
-twitter-target-date: 2019-02-13 06:00:00
+
 ---
 
 A while back, David Robinson offered the following advice on Twitter:

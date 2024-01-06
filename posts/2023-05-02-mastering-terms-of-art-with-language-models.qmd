@@ -1,18 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2023-05-02 06:00:00
+description: The intricacies and challenges language models face in understanding
+  and preserving "terms of art", the importance of supervising their usage, and the
+  significance of understanding their limitations for effective and accurate communication.
 draft: true
-id: 048f6b1dfb2df44f66f46659cda574a6
 image: /images/diffused_terms-of-art-david.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-05-02 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7059527036653993984
-post-url: https://www.meyerperin.com/posts/2023-05-02-mastering-terms-of-art-with-language-models.html
 title: Mastering Terms of Art with Language Models
-tweet-url: https://twitter.com/user/status/1653761333530177542
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-05-02 07:01:00
+
 ---
 
 # The Art of Navigating "Terms of Art" with Language Models

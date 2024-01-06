@@ -1,12 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2023-05-31 06:00:00
+description: The intricacies of navigating career paths, the factors influencing career
+  choices, the value of finding one's Ikigai or happy medium in their career, and
+  tips to identify and pursue what makes an individual happy and successful in their
+  professional life.
 draft: false
-id: 99c6315472bd9988547441554609b0c1
 image: /images/schnauzer_banker.jpg
 include-in-header: _msft-clarity.html
-post-url: https://www.meyerperin.com/posts/2023-05-31-you-should-not-base-your-career-plan-on-mine.html
 title: You should not base your career plan on mine
+
 ---
 I started writing code when I was 9 years old. I ended up going to Law school. Maybe you should not follow my career path.
 

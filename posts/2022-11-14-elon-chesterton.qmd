@@ -5,18 +5,14 @@ categories:
 - technology
 - management
 date: 2022-11-14 06:00:00
+description: The concept of Chesterton's fence, its importance in management decisions,
+  and how its lack of consideration could have potentially led to issues in companies
+  like Twitter.
 draft: true
-id: 3d1a39404a74eb97401fdc180eaa906f
 image: /images/twitter-bird-fence.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2022-11-14 10:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6997984013650935809
-post-url: https://www.meyerperin.com/posts/2022-11-14-elon-chesterton.html
 title: When Elon Musk tore down Twitter's Chesterton's Fence
-tweet-url: https://twitter.com/user/status/1592218312347422722
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2022-11-14 08:00:00
+
 ---
 
 A lot of the Twitter public mistakes could be avoided by using the [Chesteron's fence](/posts/2022-04-02-chestertons-fence.qmd) concept. 

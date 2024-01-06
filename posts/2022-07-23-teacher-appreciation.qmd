@@ -1,19 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2022-08-02 04:00:00
+description: The significance of interpersonal learning, important career and management
+  skills, economic modeling, conducting literature reviews, and understanding team
+  dynamics.
 draft: true
-id: cecdf93f4afc9e12fa1967212425c4bc
 image: /images/teacher-appreciation.jpg
 include-in-header: _msft-clarity.html
-linkedin-linkback: true
-linkedin-posted: 2022-07-11 07:05:00-07:00
-linkedin-target-date: 2022-08-02 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6960232777350860801
-post-url: https://www.meyerperin.com/posts/2022-07-23-teacher-appreciation.html
 title: Learning from others
-tweet-url: https://twitter.com/user/status/1554467075627925504
-twitter-posted: 2022-07-11 07:05:00-07:00
-twitter-target-date: 2022-08-02 07:01:00
+
 ---
 
 How much of what you do is borrowed from other people? When you realized you learned something from someone, did you tell them?

@@ -1,18 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2023-04-19 06:00:00
+description: The reader will gain insights into managing the constant stream of AI
+  developments, advising focus on enduring tools, keeping steady on projects without
+  being distracted by every new release, and prioritizing the use of technologies
+  that solve practical problems.
 draft: true
-id: d7b3dd0f9af45e930da618b1f3c3ffce
 image: /images/diffused_dont_create_bots.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-04-19 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7054453605717721088
-post-url: https://www.meyerperin.com/posts/2023-04-19-staying-ahead-of-the-curve-in-ai-development.html
 title: Staying Ahead of the Curve in AI Development
-tweet-url: https://twitter.com/user/status/1648687903030095874
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-04-19 07:01:00
+
 ---
 
 Have you been keeping up with all the latest developments in AI? It seems like every few days a new tool or platform is launched, making it difficult to stay up-to-date. Even though I used LLMs in a lot of recent projects, I've been struggling to keep up myself. ChatGPT, GPT-4, LLaMa, Dolly, AutoGPT... oh my!

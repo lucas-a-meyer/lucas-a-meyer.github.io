@@ -1,12 +1,17 @@
 ---
-title: "Creating an Azure Web App with Authentication and Authorization"
-page-layout: full
-toc: True
 author: Lucas A. Meyer
-toc-expand: true
+date: 2024-01-07
+draft: true
+description: How to create, configure and link a new App Service in Azure to a GitHub
+  repository, configure Microsoft Entra ID and sync it with a web app, and how to
+  set up environment variables within the App Service.
 image: /images/azure-web-app.png
 include-in-header: _msft-clarity.html
-date: 2024-01-06
+page-layout: full
+title: Creating an Azure Web App with Authentication and Authorization
+toc: true
+toc-expand: true
+
 ---
 
 This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is [here](2024-01-05-thread_manager.qmd).

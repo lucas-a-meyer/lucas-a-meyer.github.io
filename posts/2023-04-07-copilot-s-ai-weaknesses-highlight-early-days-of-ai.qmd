@@ -1,18 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2023-04-07 06:00:00
+description: The limitations of AI-powered tools like GitHub Copilot, particularly
+  in their ability to keep up with new APIs, and the importance of leveraging these
+  imperfections to gain a more nuanced understanding of the role of AI in our lives.
 draft: false
-id: 4676a4b9da3c2143d4033688977810f1
 image: /images/fancy_schnauzer.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-04-07 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7050104951657660417
-post-url: https://www.meyerperin.com/posts/2023-04-07-copilot-s-ai-weaknesses-highlight-early-days-of-ai.html
 title: Copilot's AI Weaknesses Highlight Early Days of AI
-tweet-url: https://twitter.com/user/status/1644339251369107456
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-04-07 07:01:00
+
 ---
 
 As a software developer, I have been using GitHub Copilot quite a lot in my daily work. It's an AI-powered code suggestion tool that has been saving me a lot of time. However, I recently stumbled upon an unexpected weakness of Copilot - it's not very good at very new APIs. 

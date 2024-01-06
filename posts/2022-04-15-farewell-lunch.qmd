@@ -3,16 +3,12 @@ author: Lucas A. Meyer
 categories:
 - career
 date: 2022-04-15 06:00:00
-id: 5e80bebd5ae81b252b37f442ab95caa3
+description: The importance and value of instilling good team dynamics and appreciating
+  contributory efforts in a distributed work environment.
 image: /images/farewell-lunch.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/posts/lucasameyer_amazon-seattle-leadership-activity-6920874431531618304-nxUL
-linkedin-posted: 2022-04-15 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2022-04-15-farewell-lunch.html
 title: Farewell Lunch
-twitter-posted: 2022-04-15 06:00:00
-twitter-target-date: null
+
 ---
 
 It was a good farewell lunch at #Amazon. It was a nice day (for #Seattle standards) and the company was top notch. My team at Amazon was very distributed, with some people in San Diego, some people in Vancouver and some in Seattle, so the sad part is that I only got to see the Seattle team.

@@ -3,21 +3,13 @@ author: Lucas A. Meyer
 categories:
 - data science
 date: 2021-09-11 06:00:00
-id: aacf28c81e284c87397e32165fbad49f
+description: "The importance of starting with a simple, na\xEFve model in data science\
+  \ before considering a more complex machine learning approach, using the CIA's photo\
+  \ analysis of \"The Pacer\" as an illustrative example."
 image: /images/bin-laden-compound.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6842098580736630784
-linkedin-linkback: true
-linkedin-posted: 2021-01-01 01:01:01
-linkedin-repost: 365
-linkedin-target-date: 2022-09-11 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6974713171618013184
-post-url: https://www.meyerperin.com/posts/2021-09-11-data-science-and-911.html
 title: Data science and 9/11
-tweet-url: https://twitter.com/user/status/1570472528690253825
-twitter-posted: 2021-01-01 01:01:01
-twitter-repost: 365
-twitter-target-date: 2022-09-11 06:00:00
+
 ---
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 

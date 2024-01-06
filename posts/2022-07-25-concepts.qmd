@@ -2,18 +2,14 @@
 author: Lucas A. Meyer
 categories: concepts
 date: 2022-07-26 06:00:00
+description: The etymology and usage of specific vocabulary as shortcuts for complex
+  ideas, the concept of cognitive biases, reduced language in computing, and a range
+  of coined concise concepts such as Cunningham's Law and the XY Problem.
 draft: true
-id: e36ff613ce551f9d84d137f16d924a70
 image: /images/shortcut.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-07-11 07:05:00-07:00
-linkedin-target-date: 2022-07-26 07:24:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6957711141728854016
-post-url: https://www.meyerperin.com/posts/2022-07-25-concepts.html
 title: Shortcuts and the smell of rain
-tweet-url: https://twitter.com/user/status/1551930338699579393
-twitter-posted: 2022-07-11 07:05:00-07:00
-twitter-target-date: 2022-07-26 07:24:00
+
 ---
 
 Throughout human history, there were billions of parents of teenagers. Being a parent of teenagers myself, I was surprised to discover that the word "angst" was first recorded somewhat recently, in the early 1800s, through the works of Kierkegaard. It is a perfect word to describe the teenager feeling. Just five letters instead of 10 _words_. It's brilliant. 

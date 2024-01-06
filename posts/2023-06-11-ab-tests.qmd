@@ -1,15 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2023-06-13 06:00:00
+description: The significance and limitations of A/B testing in decision-making processes,
+  the importance of understanding the underlying factors contributing to the result
+  of an experiment, and the applicability of the descriptive, predictive and prescriptive/causal
+  framework in understanding how something works.
 draft: false
-id: e83921b33131d12b250e0d818ff9a1f4
 image: /images/schnauzer_scientist.jpg
 include-in-header: _msft-clarity.html
-linkedin-target-date: 2023-06-13 08:00:00
-post-url: https://www.meyerperin.com/posts/2023-06-11-ab-tests.html
 title: A/B testing needs a theory
-tweet-url: https://twitter.com/user/status/1668729975590080512
-twitter-target-date: 2023-06-13 08:00:00
+
 ---
 Randomized controlled experiments (A/B tests) are frequently said to be the gold standard for decision-making. However, to make a good decision, you have to really understand what question is being answered.
 

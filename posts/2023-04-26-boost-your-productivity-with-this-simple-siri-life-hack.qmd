@@ -1,18 +1,13 @@
 ---
 author: Lucas A. Meyer
 date: 2023-04-26 06:00:00
+description: The integration of Siri with Microsoft To-Do to create a voice-command
+  to-do list as a productivity life hack.
 draft: true
-id: 85c0e235b3bab3f192a3428f5589cc75
 image: /images/diffused_todo-list.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-04-26 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7056990327919808512
-post-url: https://www.meyerperin.com/posts/2023-04-26-boost-your-productivity-with-this-simple-siri-life-hack.html
 title: Boost Your Productivity with This Simple Siri Life Hack
-tweet-url: https://twitter.com/user/status/1651224625303412737
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-04-26 07:01:00
+
 ---
 
 Once upon a time, as I got older and busier, I stumbled upon a life hack that has kept me on top of things like a superhero on caffeine. You see, in the realm of productivity, people can be as passionate about their to-do applications as sports fans are about their favorite teams. Personally, I've become a Microsoft To-Do devotee (even during my Amazonian days), but fear not, my trick works for all.

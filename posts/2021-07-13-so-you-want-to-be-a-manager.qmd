@@ -3,15 +3,11 @@ author: Lucas A. Meyer
 categories:
 - management
 date: 2021-07-13 06:00:00
-id: cd0cdfb93bb5a25fc6d358cab08e72cd
+description: The intricacies of a manager's calendar, necessary meetings, the importance
+  of interpersonal communication, and the individual's ability to endure lengthy interactions.
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6820742108136120320
-linkedin-posted: 2021-07-13 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-07-13-so-you-want-to-be-a-manager.html
 title: So you want to be a manager
-twitter-posted: 2021-07-13 06:00:00
-twitter-target-date: null
+
 ---
 This is what your calendar can look like. 
 

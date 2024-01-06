@@ -1,14 +1,21 @@
 ---
-title: "A Quick Tour of the Semantic Kernel"
+aliases:
+- /articles/semantic-kernel.html
 author: Lucas A. Meyer
+date: 2023-10-15
+description: A comprehensive understanding of Microsoft Semantic Kernel, a toolkit
+  that facilitates application interaction with AI services such as Python integration,
+  configuring AI services via Connectors, creating Semantic and Native functions,
+  putting together Plugins, and executing multiple functions in sequential order,
+  with abundant Python code examples and practical guidelines for proper usage of
+  the Microsoft Semantic Kernel.
+image: /images/tiger.jpg
+include-in-header: _msft-clarity.html
 page-layout: full
+title: A Quick Tour of the Semantic Kernel
 toc: true
 toc-expand: true
-include-in-header: _msft-clarity.html
-image: /images/tiger.jpg
-date: 2023-10-15
-aliases:
-  - /articles/semantic-kernel.html
+
 ---
 
 # Introduction

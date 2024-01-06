@@ -3,16 +3,13 @@ author: Lucas A. Meyer
 categories:
 - management
 date: 2021-08-17 06:00:00
-id: cabf3df89a0c2c2f6c2ee838dd56a8fd
+description: How to navigate and succeed in a managerial role while being neurodivergent
+  and introverted, including strategies for managing social interactions and planning
+  for recovery time after meetings.
 image: /images/goonies.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6833403014171250688
-linkedin-posted: 2021-08-17 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-08-17-the-neurodivergent-manager.html
 title: The neurodivergent manager
-twitter-posted: 2021-08-17 06:00:00
-twitter-target-date: null
+
 ---
 You can be a people manager if you are #neurodivergent and an #introvert. I am.
 

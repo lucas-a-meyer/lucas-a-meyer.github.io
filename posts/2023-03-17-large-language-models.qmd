@@ -3,18 +3,13 @@ author: Lucas A. Meyer
 categories:
 - technology
 date: 2023-03-17 06:00:00
+description: The benefits and applications of AI, the importance of learning how to
+  use it, and strategies for staying updated on the latest developments in the field.
 draft: true
-id: f8cd1b9e390fc2cf286447584e7e1d9c
 image: /images/chatbot.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-03-17 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7042558968937779200
-post-url: https://www.meyerperin.com/posts/2023-03-17-large-language-models.html
 title: Feeling overwhelmed? Me too!
-tweet-url: https://twitter.com/user/status/1636789506304012288
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-03-17 06:00:00
+
 ---
 
 Are you feeling overwhelmed by the sheer number of new AI launches happening every day? Don't worry, you're not alone! As a tech enthusiast, I often find myself feeling a little bit like a deer caught in the headlights when it comes to the latest and greatest AI developments. But here's the thing: AI isn't going to replace us. People who use AI will.

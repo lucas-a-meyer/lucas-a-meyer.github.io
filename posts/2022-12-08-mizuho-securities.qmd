@@ -4,18 +4,14 @@ categories:
 - technology
 - cautionary tales
 date: 2022-12-08 06:00:00
+description: The mechanics behind a significant trading error at Mizuho Securities
+  in Japan on December 8th, 2005, where a trader swapped the quantity and price leading
+  to instant profit for others who bought the cheaply priced stock.
 draft: false
-id: 19ff589a2eb2c55d79a8225a00891454
 image: /images/mizuho-post.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2022-12-08 08:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7006648606996783104
-post-url: https://www.meyerperin.com/posts/2022-12-08-mizuho-securities.html
 title: The data entry error that cost hundreds of millions
-tweet-url: https://twitter.com/user/status/1600882904434876417
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2022-12-08 08:00:00
+
 ---
 
 Have you ever had a bad day at work? On December 8th, 2005, a trader at Mizuho Securities in Japan probably had a worse one.

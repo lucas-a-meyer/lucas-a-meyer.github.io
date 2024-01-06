@@ -1,19 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2022-07-22 04:00:00
+description: Techniques for conducting a successful technical phone screening, distinguishing
+  between candidates who truly understand coding versus those who memorize algorithms
+  and solutions from resources like LeetCode, and tactics for improving interviewer
+  performance.
 draft: false
-id: 25886796503952d9ed680f98bdff2d01
 image: /images/leetcode.jpg
 include-in-header: _msft-clarity.html
-linkedin-linkback: true
-linkedin-posted: 2022-07-11 07:05:00-07:00
-linkedin-target-date: 2022-07-19 06:02:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6955144233498394624
-post-url: https://www.meyerperin.com/posts/2022-07-22-leetcode.html
 title: Separating LeetCode grinders from coders
-tweet-url: https://twitter.com/user/status/1549378524334669824
-twitter-posted: 2022-07-11 07:05:00-07:00
-twitter-target-date: 2022-07-19 06:02:00
+
 ---
 
 My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting. 

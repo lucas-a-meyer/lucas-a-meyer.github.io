@@ -1,20 +1,16 @@
 ---
 author: Lucas A. Meyer
 date: 2022-07-11 04:00:00
+description: The article delves into the challenges faced by potential candidates
+  when presented with ambiguous or unsolved problems during an interview, the dangers
+  that interviewers face when they don't know the answer to a problem, how a high-pressure
+  interview setting presents issues for dealing with ambiguity, and the need for preparation
+  and experienced interviewers to navigate these issues effectively.
 draft: false
-id: 5dc2cd0839228777b53103068b9c9797
 image: /images/interview-crying.jpg
 include-in-header: _msft-clarity.html
-linkedin-linkback: true
-linkedin-posted: 2022-07-11 09:53:28.359673
-linkedin-target-date: 2022-07-11 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-07-11-the-worst-interview-questions.html
 title: Two interview questions I hate
-tweet-url: https://twitter.com/user/status/1547036712039317507
-twitter-description: The two interview questions I hate
-twitter-posted: 2022-07-11 04:00:06.554047
-twitter-target-date: 2022-07-11 06:00:00
+
 ---
 
 There are two interview questions that I hate, and I see them a lot.

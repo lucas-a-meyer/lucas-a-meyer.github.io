@@ -5,19 +5,16 @@ categories:
 - ecology
 - networking
 date: 2023-03-30 06:00:00
+description: Insights on how trees communicate and share resources amongst themselves,
+  how this concept is applicable to our professional lives, and the emphasis on the
+  importance of networking and creating lasting relationships for individual and collective
+  success.
 draft: true
-id: 10752c49739ee9e8c0da4713703436ae
 image: /images/diffused_network_of_trees.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-03-30 07:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7047205848804192256
-post-url: https://www.meyerperin.com/posts/2023-03-30-simard.html
 title: 'Networking Lessons from Trees: How Suzanne Simard''s Discoveries Can Help
   You Connect Better'
-tweet-url: https://twitter.com/user/status/1641440146431295493
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-03-30 07:00:00
+
 ---
 Recently, I stumbled upon an intriguing interview on "People I mostly admire" podcast with Suzanne Simard, a professor of forest ecology at the University of British Columbia. In this interview, she shared a fascinating perspective on trees that I had never considered before. She argued that trees are social beings that communicate with each other, and they share nutrients using fungi networks. 
 

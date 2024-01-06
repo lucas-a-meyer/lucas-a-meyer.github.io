@@ -4,16 +4,14 @@ categories:
 - career
 - data science
 date: 2021-10-05 06:00:00
-id: 32f1f75574bcaf7d26c9780d3b0c2204
+description: The concept of optimization in careers, the trap of local versus global
+  optimization, strategies to guide career progress using concepts from economics
+  and data science, like the multi-armed bandit problem and exploration vs exploitation,
+  and the importance of understanding one's global objective or long-term career goals.
 image: /images/optimization-career.png
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/
-linkedin-posted: 2021-10-05 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-10-05-optimization-algorithms-for-your-career.html
 title: Optimization algorithms for your career
-twitter-posted: 2021-10-05 06:00:00
-twitter-target-date: null
+
 ---
 
 Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization. 

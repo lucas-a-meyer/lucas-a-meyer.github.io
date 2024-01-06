@@ -3,16 +3,14 @@ author: Lucas A. Meyer
 categories:
 - management
 date: 2021-07-31 06:00:00
-id: a783c5e17f78d3a870d59f346a113f2f
+description: Insights into the different skill set required for a manager, methods
+  to efficiently manage time and team commitments, the importance of internal and
+  external networking, the role of a manager as a recruiter, and the trade-off between
+  managerial tasks and tech depth growth.
 image: /images/become-manager.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
-linkedin-posted: 2021-07-31 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-07-31-so-you-want-to-become-a-manager.html
 title: So you want to become a manager
-twitter-posted: 2021-07-31 06:00:00
-twitter-target-date: null
+
 ---
 
 Nobody in their right mind would ask me about how to become a singer or dancer.

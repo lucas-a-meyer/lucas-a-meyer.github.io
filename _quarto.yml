@@ -14,16 +14,11 @@ execute:
 website:
   title: "Lucas A. Meyer"
   google-analytics: "G-6KTZ853BN5"
-  
+  margin-footer: subscribe.html
   twitter-card: true
   open-graph: true
   site-url: https://www.meyerperin.com
   description: "Lucas A. Meyer's blog"
-  comments: 
-    hypothesis:
-      theme: clean
-      openSidebar: false
-      showHighlights: always
   favicon: /favicon-32x32.png
 
   navbar:

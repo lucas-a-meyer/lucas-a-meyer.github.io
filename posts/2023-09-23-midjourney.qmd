@@ -1,14 +1,20 @@
 ---
-title: "Getting Started with Midjourney"
-author: Lucas A. Meyer
-page-layout: full
-toc: true
-image: /images/lucas_batman.png
-toc-expand: true
-include-in-header: _msft-clarity.html
-date: 2023-09-23
 aliases:
-  - /articles/midjourney.html
+- /articles/midjourney.html
+author: Lucas A. Meyer
+date: 2023-09-23
+description: The basics of installing, setting up, and using the Midjourney AI tool
+  on Discord, including creating a Discord account, setting up a personal server,
+  subscribing to Midjourney, and inviting the Midjourney bot to the server, as well
+  as utilizing the 'imagine' command to generate images and how to use existing images
+  as part of the prompts.
+image: /images/lucas_batman.png
+include-in-header: _msft-clarity.html
+page-layout: full
+title: Getting Started with Midjourney
+toc: true
+toc-expand: true
+
 ---
 
 # Introduction

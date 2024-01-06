@@ -2,18 +2,13 @@
 author: Lucas A. Meyer
 categories: concepts
 date: 2021-11-04 06:00:00
-id: a3611547d0e5972a1e48ddc6f77ea2d6
+description: The theory and application of Cunningham's Law, the concept of exploiting
+  biases against incorrect information, and how it economically benefits in reducing
+  the cost of producing answers.
 image: /images/cunninghams-law.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6862028173295648769
-linkedin-linkback: true
-linkedin-repost: 180
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6953453099390820352
-post-url: https://www.meyerperin.com/posts/2021-11-04-cunninghams-law.html
 title: Cunningham's Law
-tweet-url: https://twitter.com/user/status/1547687381251137536
-twitter-repost: 180
-twitter-target-date: 2022-07-14 06:02:00
+
 ---
 
 Cunningham's Law states "the best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer." 

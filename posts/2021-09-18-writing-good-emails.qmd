@@ -2,16 +2,13 @@
 author: Lucas A. Meyer
 categories: career
 date: 2021-09-18 06:00:00
-id: e6906504ab87b3f5fb25f968db48d2c4
+description: Efficient email handling techniques, including clearly identifying owners
+  for questions or actions, keeping owners on the 'to:' line, not forking threads
+  with actions, and placing actions at the end of the email.
 image: /images/grad-student-email.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746
-linkedin-posted: 2021-09-18 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-09-18-writing-good-emails.html
 title: Writing good emails
-twitter-posted: 2021-09-18 06:00:00
-twitter-target-date: null
+
 ---
 
 Earlier in my career, I took quite a while writing emails. As most people earlier in their careers, my main concern was to "not be wrong" rather than actually "moving the discussion forward efficiently" (or ending it). That was especially true when senior people were in the thread.

@@ -4,16 +4,13 @@ categories:
 - career
 - hiring
 date: 2022-04-05 06:00:00
-id: cdc28faa79291ebddb7217f7e8529171
+description: The importance of hiring and developing the best team members, the benefits
+  of an adaptive interview approach, and potentially flawed aspects of the conventional
+  interview process.
 image: /images/gladiator.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506
-linkedin-posted: 2022-04-05 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2022-04-05-hiring-is-a-superpower.html
 title: Hiring is a superpower
-twitter-posted: 2022-04-05 06:00:00
-twitter-target-date: null
+
 ---
 One of my superpowers from my #Amazon review process this year was "Hire and Develop the Best". 
 

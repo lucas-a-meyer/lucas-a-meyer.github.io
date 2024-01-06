@@ -3,18 +3,14 @@ author: Lucas A. Meyer
 categories:
 - management
 date: 2022-11-08 06:00:00
+description: The functional dynamics and potential inefficiencies of mechanical gear
+  systems as a metaphor for teamwork in professional settings, as well as reflections
+  on personal experiences of teamwork within the AI for Good Lab.
 draft: false
-id: 6b3ba1d63bcbe9332c9594241c236e06
 image: /images/teamwork-cogs.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2022-11-08 08:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6995776983603318785
-post-url: https://www.meyerperin.com/posts/2022-11-07-teamwork.html
 title: Teamwork - what's wrong with this picture?
-tweet-url: https://twitter.com/user/status/1590016305574313993
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2022-11-08 08:00:00
+
 ---
 
 If your office has a "teamwork gears" picture like this one, you may be thinking about working remotely.

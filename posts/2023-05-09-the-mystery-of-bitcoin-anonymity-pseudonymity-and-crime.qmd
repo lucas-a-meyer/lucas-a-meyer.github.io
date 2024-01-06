@@ -1,16 +1,14 @@
 ---
 author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
 date: 2023-05-09 06:00:00
+description: The distinctions between anonymity and pseudonymity in the context of
+  bitcoin, and how this digital currency can potentially be traced back to criminal
+  activities despite its seemingly anonymous nature.
 draft: true
-id: aec68d7c46ebfc126f73ec71a361210e
 image: /images/diffused_bitcoin_anonymity.png
 include-in-header: _msft-clarity.html
-linkedin-target-date: 2023-05-09 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7061701367844798465
-post-url: https://www.meyerperin.com/posts/2023-05-09-the-mystery-of-bitcoin-anonymity-pseudonymity-and-crime.html
 title: The Mystery of Bitcoin- Anonymity, Pseudonymity, and Crime
-tweet-url: https://twitter.com/user/status/1655935662389084163
-twitter-target-date: 2023-05-09 07:01:00
+
 ---
 
 # The Mystery of Bitcoin: Anonymity, Pseudonymity, and Crime

@@ -1,13 +1,13 @@
 ---
 author: Lucas A. Meyer
 date: 2022-05-10 06:00:00
-id: 3b6ac950c96468d2c386f064ca657207
+description: The intricacies and considerations when choosing between employment at
+  Microsoft and FAANG companies, comparing factors like compensation, work-life balance,
+  and personal goals.
 image: /images/money-gun.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-05-10 06:00:00
-post-url: https://www.meyerperin.com/posts/2022-05-10-work-life-balance.html
 title: Work life balance is worth something
-twitter-posted: 2022-05-10 06:00:00
+
 ---
 
 Should you choose #Microsoft or #FAANG?

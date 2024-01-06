@@ -3,18 +3,15 @@ author: Lucas A. Meyer
 categories:
 - technology
 date: 2023-03-22 06:00:00
+description: The disturbing findings of Dan Gilbert's psychological experiment on
+  humans' aversion to solitude, its implications in a technology-driven modern world,
+  the importance of solitude for creativity, self-reflection, and personal development,
+  and some strategies to overcome the fear of solitude.
 draft: true
-id: 12f6b065f93ab89b026dbe7824a924eb
 image: /images/shocking_experiment.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-03-22 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7044291645067988992
-post-url: https://www.meyerperin.com/posts/2023-03-22-a-shocking-experiment.html
 title: The Experiment That Revealed Our Fear of Solitude
-tweet-url: https://twitter.com/user/status/1638525943642742785
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-03-22 06:00:00
+
 ---
 
 In 2014, Dan Gilbert, a Harvard psychologist, conducted an experiment that revealed something disturbing about human nature: we would rather inflict pain on ourselves than be alone with our thoughts.

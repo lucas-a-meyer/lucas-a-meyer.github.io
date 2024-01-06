@@ -1,15 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2023-05-24 06:00:00
+description: The detailed working, limitations, and potential of Google's AI system,
+  Google Duplex, as well as advancements and potential concerns in AI technology,
+  particularly Large Language Models.
 draft: false
-id: acbdf6d687f0ffd01fc8d0405c505cad
 image: /images/schnauzer_haircut.jpg
 include-in-header: _msft-clarity.html
-linkedin-target-date: 2023-05-24 07:01:00
-post-url: https://www.meyerperin.com/posts/2023-05-24-google-duplex-was-going-to-change-the-world-five-years-ago.html
 title: Google Duplex was going to change the world five years ago
-tweet-url: https://twitter.com/user/status/1661371485720551424
-twitter-target-date: 2023-05-24 07:01:00
+
 ---
 # Google Duplex was going to change the world five years ago
 

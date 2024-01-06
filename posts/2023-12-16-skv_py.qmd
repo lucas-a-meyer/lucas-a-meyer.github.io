@@ -1,14 +1,20 @@
 ---
-title: "Explaining memes and images with the Semantic Kernel and the OpenAI Vision API"
-page-layout: full
-author: Lucas A. Meyer
-toc: True
-image: /images/meme2.png
-toc-expand: true
-include-in-header: _msft-clarity.html
-date: 2023-12-26
 aliases:
-  - /articles/skv_py.html
+- /articles/skv_py.html
+author: Lucas A. Meyer
+date: 2023-12-26
+description: How to use the Semantic Kernel and OpenAI Vision API to perform tasks
+  such as explaining why a meme is funny, identifying an animal in an image and generating
+  interesting facts about the animal, determining street intersection accessibility,
+  and building image descriptions automatically.
+image: /images/meme2.png
+include-in-header: _msft-clarity.html
+page-layout: full
+title: Explaining memes and images with the Semantic Kernel and the OpenAI Vision
+  API
+toc: true
+toc-expand: true
+
 ---
 
 In this article, I'll explain how to use the Semantic Kernel and the OpenAI Vision API to perform two tasks:

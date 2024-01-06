@@ -1,18 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2023-04-06 06:00:00
+description: The benefits and challenges tied to blogging as a medium for learning
+  and experimentation, such as its use for experimenting with Large Language Models
+  and the potential for automation in content creation.
 draft: true
-id: bb03ea3e6ac76d23d720772bc68e706f
 image: /images/diffused_robot_blogging.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-04-06 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7049742562890313729
-post-url: https://www.meyerperin.com/posts/2023-04-06-the-curious-case-of-blogging-finding-purpose-through-experimentation.html
 title: 'The curious case of blogging: Finding purpose through experimentation.'
-tweet-url: https://twitter.com/user/status/1643976861259825152
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-04-06 07:01:00
+
 ---
 
 As an economist, I'm always thinking about incentives. So when it comes to blogging, I have to admit that I'm not entirely sure what the point is. 

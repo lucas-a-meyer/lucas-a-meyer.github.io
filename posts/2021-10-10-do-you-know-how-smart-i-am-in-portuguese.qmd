@@ -2,16 +2,12 @@
 author: Lucas A. Meyer
 categories: writing
 date: 2021-10-10 06:00:00
-id: 8e27678574beb3eba35981d7be2472be
+description: The author's journey from beginner English speaker to professional writer,
+  the clarity gained from regular writing, and the writing culture at Amazon.
 image: /images/smart-portuguese.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6853333112810815488
-linkedin-posted: 2021-10-10 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-10-10-do-you-know-how-smart-i-am-in-portuguese.html
 title: Do you know how smart I am in Portuguese?
-twitter-posted: 2021-10-10 06:00:00
-twitter-target-date: null
+
 ---
 
 Recently, several people at work said they liked my #writing. 

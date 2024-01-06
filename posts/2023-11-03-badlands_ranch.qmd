@@ -1,14 +1,17 @@
 ---
-title: "Badlands Ranch Dog Food Review"
+aliases:
+- /articles/badlands-ranch.html
 author: Lucas A. Meyer
-page-layout: full
-toc: true
-toc-expand: true
+date: 2023-11-03
+description: Insight into Badlands Ranch dog food's behavior with picky eaters, its
+  price point, packaging, promotions, and comparison to other brands.
 image: /images/badlands.png
 include-in-header: _msft-clarity.html
-date: 2023-11-03
-aliases:
-  - /articles/badlands-ranch.html
+page-layout: full
+title: Badlands Ranch Dog Food Review
+toc: true
+toc-expand: true
+
 ---
 
 ::: {.callout-note}
@@ -19,7 +22,7 @@ This is a review of [Badlands Ranch](https://badlandsranch.com/), a dry dog food
 
 Our dog, TheFuzzy, is very picky with food. She will go into hunger strikes for an extended period of time if she dislikes the food. The first brand that worked reliably for us was [The Farmer's Dog](/posts/2022-06-28-farmers-dog.qmd). The main drawback of that food is that it's wet and frozen. It takes a fair amount of freezer space, the kids don't like to handle it, it's hard to travel with. We tried a few other brands, but none of them worked. Then we found [Badlands Ranch](https://badlandsranch.com/), a dry food funded by the actress Katherine Heigl, and decided to give it a try.
 
-You can order the food on their [website](www.badlandsranch.com). They run promotions that give big discounts on the first order, but they seem to run promotions giving big discounts all the time. 
+You can order the food on their [website](https://www.badlandsranch.com). They run promotions that give big discounts on the first order, but they seem to run promotions giving big discounts all the time. 
 
 ## What you should know
 

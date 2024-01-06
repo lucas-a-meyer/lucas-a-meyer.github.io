@@ -1,15 +1,13 @@
 ---
 author: Lucas A. Meyer
 date: 2022-06-26 06:00:00
+description: The importance of clear understanding and the comedic mishaps that can
+  occur from misunderstood sayings or phrases.
 draft: true
-id: c4cd78b61469fc0d5f35f2a57e2331b0
 image: /images/france-is-bacon.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-27 06:00:00
-linkedin-target-date: 2022-06-27 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-06-25-france-is-bacon.html
 title: France is bacon
+
 ---
 
 Although it's hard to know whether it's real or not, that's one of my favorite stories ever. Similar to a classic Greek tragedy, real or not, it shows a core truth about reality.

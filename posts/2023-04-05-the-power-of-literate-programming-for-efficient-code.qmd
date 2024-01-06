@@ -1,18 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2023-04-05 06:00:00
+description: The concept of literate programming as proposed by Donald Knuth, the
+  benefits of using it in terms of readability, maintenance, and efficiency, its implementation
+  in Jupyter notebooks and how it can be underutilized, as well as an introduction
+  to a literate programming tool called Quarto.
 draft: true
-id: 5fe59ff5c4ff0503c1dbee797b540563
 image: /images/diffused_literate_programming.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-04-05 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7049380180871544832
-post-url: https://www.meyerperin.com/posts/2023-04-05-the-power-of-literate-programming-for-efficient-code.html
 title: The Power of Literate Programming for Efficient Code
-tweet-url: https://twitter.com/user/status/1643614479043776516
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-04-05 07:01:00
+
 ---
 
 Literate programming is a concept that was proposed by Donald Knuth, a computer scientist who is widely regarded as one of the most influential figures in the history of computer science. The idea behind literate programming is to write computer programs in a way that is more like natural language than like machine language. This means that the code is organized in a way that makes it easy for humans to read and understand, rather than being optimized for machine processing.

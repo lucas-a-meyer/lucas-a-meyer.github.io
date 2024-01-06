@@ -1,18 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2023-04-11 06:00:00
+description: Mick Herron's thrilling Slow Horses series, its adaptation into a TV
+  show on Apple TV+ starring Gary Oldman, and the development and charm of the main
+  character, Jackson Lamb.
 draft: true
-id: 26d924e9f745ece9352bd247f53d2446
 image: /images/diffused_doggo_spy.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2023-04-11 07:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7051554502780354560
-post-url: https://www.meyerperin.com/posts/2023-04-11-discover-the-best-spy-novelist-of-our-time-with-mick-herron-s-slow-horses.html
 title: Discover the Best Spy Novelist of Our Time with Mick Herron's Slow Horses
-tweet-url: https://twitter.com/user/status/1645788800755564553
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2023-04-11 07:01:00
+
 ---
 
 Are you a fan of spy novels and TV shows? If so, you need to check out Mick Herron's Slow Horses series, which has been hailed as a masterpiece by critics and fans alike. In fact, Herron is now being heralded as the best spy novel writer of our generation.

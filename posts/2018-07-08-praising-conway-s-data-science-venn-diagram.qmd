@@ -1,16 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2018-07-08 06:00:00
-id: 98d9c4571fd2aa84d7284c83e5bc03ec
+description: Drew Conway's Data Science Venn Diagram as a key framework for understanding
+  the field of data science, the ongoing debates and confusions regarding the definition
+  and skill set of a data scientist, potential shortcomings of the diagram especially
+  its lack of an 'intensity' component, and how it can be useful in guiding career
+  development, team composition and project execution in data science despite its
+  limitations.
 include-in-header: _msft-clarity.html
-linkedin-posted: 2018-07-08 06:00:00
-linkedin-target-date: 2018-07-08 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268460934791169
-post-url: https://www.meyerperin.com/posts/2018-07-08-praising-conway-s-data-science-venn-diagram.html
 title: Praising Conway's Data Science Venn Diagram
-tweet-url: https://twitter.com/user/status/1570502731885862912
-twitter-posted: 2018-07-08 06:00:00
-twitter-target-date: 2018-07-08 06:00:00
+
 ---
 
 Drew Conway's [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) is perhaps the most well-known description of data science.

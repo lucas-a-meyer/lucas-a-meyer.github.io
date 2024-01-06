@@ -1,18 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2022-06-21 06:00:00
+description: 'Practical approaches to AI projects, particularly within the #AI4Good
+  domain, and the challenges encountered when applying AI in organizations whose primary
+  capability isn''t software engineering.'
 draft: false
-id: a84268e38ef6dccb44393685c21c853b
 image: /images/aiforgood.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-24 06:00:00
-linkedin-target-date: 2022-06-21 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-06-21-becoming-good-ai-for-good.html
 title: Becoming Good at AI for Good
-tweet-url: https://twitter.com/user/status/1547036088862212102
-twitter-posted: 2022-06-21 06:00:00
-twitter-target-date: 2022-06-21 06:00:00
+
 ---
 
 The AI for Good Research Lab published an [article](https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good) last year about how to do AI projects in the #AI4Good domain. 

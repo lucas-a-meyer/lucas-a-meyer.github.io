@@ -4,16 +4,15 @@ categories:
 - career
 - interviews
 date: 2021-07-02 06:00:00
-id: af99c3425251dced1ec35a6b62bedd02
+description: The ins and outs of technical phone screens, including their purpose
+  and the common ways candidates fail or pass, the importance of open communication
+  and organized responses during these screening procedures, and the need for understanding
+  and patience in finding the right job even after several failures in this stage
+  of the hiring process.
 image: /images/fail-tech-interview.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6816590001338486785
-linkedin-posted: 2021-07-02 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-07-02-how-to-fail-a-technical-phone-screen.html
 title: How to fail a technical phone screen
-twitter-posted: 2021-07-02 06:00:00
-twitter-target-date: null
+
 ---
 
 I wrote earlier about the hiring process for technical positions at big technology companies. The three main steps are: 1) resume review, 2) technical phone screen, 3) on-site interview (part technical, part behavioral). This article is about the technical phone screen and how to (not) fail it.

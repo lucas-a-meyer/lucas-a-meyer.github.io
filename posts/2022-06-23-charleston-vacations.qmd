@@ -1,17 +1,15 @@
 ---
 author: Lucas A. Meyer
 date: 2022-06-23 06:00:00
+description: The author's recent vacation experience in Charleston, SC area highlighting
+  their stay at the Wild Dunes Resort Residences at Sweetgrass, the benefits of concentrating
+  travel through Hyatt and OneWorld, great Mediterranean food destinations and seeing
+  dolphins in the wild.
 draft: true
-id: c9f3af1f0c41ea24adc70eebb545db45
 image: /images/wild-dunes.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-24 06:00:00
-linkedin-target-date: 2022-06-24 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-06-23-charleston-vacations.html
 title: Vacations at Wild Dunes
-twitter-posted: 2022-06-23 06:00:00
-twitter-target-date: null
+
 ---
 
 For my latest #vacation, I went with my family to the Charleston, SC area, more specifically to the Isle of Palms. We were very lucky to get amazing weather and see some [dolphins in the wild](2022-04-04-south-carolina-dolphins.qmd).

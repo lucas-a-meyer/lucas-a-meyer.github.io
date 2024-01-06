@@ -1,14 +1,17 @@
 ---
-title: "My experience with the reMarkable 2"
-author: Lucas A. Meyer
-page-layout: full
-toc: True
-image: /images/rm2.jpg
-toc-expand: true
-include-in-header: _msft-clarity.html
-date: 2023-12-31
 aliases:
-  - /articles/reamarkable2.html
+- /articles/reamarkable2.html
+author: Lucas A. Meyer
+date: 2023-12-31
+description: The functionality, pros, and cons of using the reMarkable 2 tablet for
+  various purposes such as academic reading, journaling, note-taking, and idea tracking.
+image: /images/rm2.jpg
+include-in-header: _msft-clarity.html
+page-layout: full
+title: My experience with the reMarkable 2
+toc: true
+toc-expand: true
+
 ---
 
 Do you want to start journaling in the new year? Tired of carrying notebooks around? Maybe you just want your notes to be more organized?

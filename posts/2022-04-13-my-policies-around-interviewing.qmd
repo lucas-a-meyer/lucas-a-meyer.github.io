@@ -5,16 +5,13 @@ categories:
 - hiring
 - interviewing
 date: 2022-04-13 06:00:00
-id: 2244f6a7dca87dfffdff374be7fb6afe
+description: The importance and benefits of regular practice in job interviewing,
+  strategies for effective interviewing, and how to handle difficult interview questions,
+  all through personal experiences and reflections.
 image: /images/offer-only.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6919995369711906816
-linkedin-posted: 2022-04-13 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2022-04-13-my-policies-around-interviewing.html
 title: My policies on interviewing
-twitter-posted: 2022-04-13 06:00:00
-twitter-target-date: null
+
 ---
 
 I have recently announced that I'm leaving Amazon and starting a new job (yet to be announced) next week. This means that I have been on the interviewee side of the interview process somewhat recently. 

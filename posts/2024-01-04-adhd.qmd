@@ -1,15 +1,20 @@
 ---
-title: "Do I Have ADHD? (Work In Progress)"
+aliases:
+- /articles/adhd.html
 author: Lucas A. Meyer
-page-layout: full
-toc: True
-image: /images/adhd_heading.png
-toc-expand: true
-include-in-header: _msft-clarity.html
 date: 2024-01-04
 date-modified: 2024-01-04
-aliases:
-  - /articles/adhd.html
+description: Real-life experiences and struggles of a person with ADHD, the process
+  of Adult ADHD diagnosis and consultations, the common symptoms of ADHD, the usefulness
+  of certain technologies for coping with these symptoms, as well as general reactions
+  and misconceptions about ADHD.
+image: /images/adhd_heading.png
+include-in-header: _msft-clarity.html
+page-layout: full
+title: Do I Have ADHD? (Work In Progress)
+toc: true
+toc-expand: true
+
 ---
 
 In October 2023, lots of people with ADHD started posting about their experiences on [Threads](https://www.threads.net). Have you ever commuted to work and forgot to bring your laptop? Check. Do you frequently procrastinate a simple two-minute task for several days? Check. 

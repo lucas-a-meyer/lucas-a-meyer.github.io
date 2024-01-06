@@ -4,15 +4,13 @@ categories:
 - career
 - interviews
 date: 2021-05-06 06:00:00
-id: 6414fe5b0f51364b43a4a15c424cbe6a
+description: Effective strategies for performing well in code interviews including
+  documenting thoughts, commenting code, appropriately naming variables and functions,
+  formatting and maintaining code, and understanding the importance of writing easily
+  understandable code.
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/posts/lucasameyer_interviewing-activity-6790481880534933505-RQRe
-linkedin-posted: 2021-05-06 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-05-06-document-variables.html
 title: Remember to document your code
-twitter-posted: 2021-05-06 06:00:00
-twitter-target-date: null
+
 ---
 
 When you are doing a code interview, it's possible (and even likely) that you're going to be nervous. Remember to document your thinking process.

@@ -5,18 +5,12 @@ categories:
 - hiring
 - interviews
 date: 2021-06-05 06:00:00
-id: 81ea2129461ba123056ef112d3b892f0
+description: The intricacies of the job application process for large companies, including
+  step-by-step breakdown from candidate pool selection to accepting an offer, along
+  with tips for each stage.
 image: /images/interview-process.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/pulse/what-happens-when-hiring-manager-posts-position-linkedin-meyer
-linkedin-posted: 2022-07-11 19:22:12.465819
-linkedin-target-date: 2022-07-12 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6957383981961007104
-post-url: https://www.meyerperin.com/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin-copy.html
-title: What happens when a hiring manager posts a position on LinkedIn
-tweet-url: https://twitter.com/user/status/1547036719643594754
-twitter-posted: 2022-07-07 22:59:22.119553
-twitter-target-date: 2022-07-12 06:00:00
+
 ---
 
 As of June 2021, I manage a technical team at Amazon, and I have some positions open. And when you have a position open, it's pretty standard to post it to LinkedIn. 

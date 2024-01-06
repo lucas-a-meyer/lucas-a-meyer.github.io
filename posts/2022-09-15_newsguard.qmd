@@ -3,16 +3,14 @@ author: Lucas A. Meyer
 categories:
 - disinformation
 date: 2022-09-15 06:00:00
+description: Methods for detecting fake news online, including evaluating the consistency
+  of a news headline with its content and assessing the credibility of the news sharer
+  or news website, along with an introduction to the NewsGuard service.
 draft: false
-id: a0029aa73acfbf252a75ddc3f4331bc3
 image: /images/newsguard.png
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2022-09-15 08:01:00
-post-url: https://www.meyerperin.com/posts/2022-09-15_newsguard.html
 title: NewsGuard is free for Microsoft Edge users
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2022-09-15 08:01:00
+
 ---
 
 If you have been following the news for the last few years, you have seen how much the prevalence of misinformation, disinformation (intentional misinformation), and propaganda (intentional misinformation by state actors) has increased a lot. Most topics of interest online have a shocking proportion of misinformation: Ukraine, COVID, elections, etc. 

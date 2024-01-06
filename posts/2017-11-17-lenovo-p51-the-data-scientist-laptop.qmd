@@ -1,16 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2017-11-17 06:00:00
-id: 8533873f8954ea05541025398e831b2a
+description: The author recently switched from a Microsoft Surface Pro 3 to a Lenovo
+  P51 laptop due to the Surface's small screen size not being suitable for their work
+  as a data scientist, and they express satisfaction with the P51's larger screen,
+  long battery life, and ample connectivity options, making it a great choice for
+  traveling data scientists.
 include-in-header: _msft-clarity.html
-linkedin-posted: 2017-11-17 06:00:00
-linkedin-target-date: 2017-11-17 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268439468331008
-post-url: https://www.meyerperin.com/posts/2017-11-17-lenovo-p51-the-data-scientist-laptop.html
 title: Lenovo P51 - the Data Scientist's laptop
-tweet-url: https://twitter.com/user/status/1570502717319028736
-twitter-posted: 2017-11-17 06:00:00
-twitter-target-date: 2017-11-17 06:00:00
+
 ---
 
 Recently, as part of a computer refresh, I have moved from a Microsoft Surface Pro 3 to a Lenovo P51. 

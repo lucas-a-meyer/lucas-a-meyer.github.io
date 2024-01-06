@@ -2,16 +2,13 @@
 author: Lucas A. Meyer
 categories: data science
 date: 2021-11-29 06:00:00
-id: 222a6396b638a180b21a895178d58483
+description: The significance of being cautious about the baseline used to determine
+  success in a data science project, as a poor baseline can lead to misinterpretation
+  of results and outcomes.
 image: /images/weak-baseline.jpg
 include-in-header: _msft-clarity.html
-linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6871097167612915712
-linkedin-posted: 2021-11-29 06:00:00
-linkedin-target-date: null
-post-url: https://www.meyerperin.com/posts/2021-11-29-weak-baselines.html
 title: Weak baselines
-twitter-posted: 2021-11-29 06:00:00
-twitter-target-date: null
+
 ---
 
 Gather close as I tell you another cautionary tale about data science.

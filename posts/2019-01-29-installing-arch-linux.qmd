@@ -1,16 +1,12 @@
 ---
 author: Lucas A. Meyer
 date: 2019-01-29 06:00:00
-id: 9d033842eca2dddf06293a2af7905321
+description: The benefits and challenges of using Arch Linux as an operating system,
+  including its steep learning curve, the return on time investment, difficulties
+  with high-DPI display, and the instability when using certain software combinations.
 include-in-header: _msft-clarity.html
-linkedin-posted: 2019-01-29 06:00:00
-linkedin-target-date: 2019-01-29 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6976268474423660544
-post-url: https://www.meyerperin.com/posts/2019-01-29-installing-arch-linux.html
 title: Installing Arch Linux
-tweet-url: https://twitter.com/user/status/1570502737564925953
-twitter-posted: 2019-01-29 06:00:00
-twitter-target-date: 2019-01-29 06:00:00
+
 ---
 
 Even though I work at Microsoft and really love Windows, I've recently installed Arch Linux as a dual boot. 

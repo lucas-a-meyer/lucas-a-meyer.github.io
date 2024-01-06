@@ -1,20 +1,13 @@
 ---
 author: Lucas A. Meyer
 date: 2022-06-30 06:00:00
+description: A detailed personal review, benefits, and drawbacks of using The Farmer's
+  Dog pet food and switching to Badlands Ranch dog food.
 draft: false
-id: 5da203149edf2caf144da73ac6a12db5
 image: /images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
-linkedin-linkback: true
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2022-06-30 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-06-28-farmers-dog.html
 title: My review of the Farmer's Dog food service
-tweet-url: https://twitter.com/user/status/1547036714723598336
-twitter-description: My review of the Farmer's Dog food service
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2022-06-30 06:00:00
+
 ---
 
 :::{.callout-important}

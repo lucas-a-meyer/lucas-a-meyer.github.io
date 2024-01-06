@@ -4,18 +4,17 @@ categories:
 - social media
 - technology
 date: 2022-11-06 06:00:00
+description: 'The reasons and ways to manage digital habits, specifically leaving
+  social media platforms like Twitter and Facebook, and transitioning to new platforms
+  like Mastodon, along with the influence such a decision can have on one''s career
+  and personal life.
+
+  '
 draft: false
-id: fbfcf863404ffb16ba458b528ee85a7b
 image: /images/fail-whale.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-30 06:00:00
-linkedin-target-date: 2022-11-06 08:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6995150339763056640
-post-url: https://www.meyerperin.com/posts/2022-11-09-quiet-quitting-twitter.html
 title: Quiet(ly) quitting Twitter
-tweet-url: https://twitter.com/user/status/1589358957810053121
-twitter-posted: 2022-06-30 06:00:00
-twitter-target-date: 2022-11-06 08:00:00
+
 ---
 
 I have "quietly left" Twitter. I've configured my devices in a way that I can only see Twitter if I use a specific device, and that usually takes more effort that it's worth. That's also how I tamed several other digital habits.

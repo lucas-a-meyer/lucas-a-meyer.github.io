@@ -1,10 +1,14 @@
 ---
 author: Lucas A. Meyer
 date: 2024-01-05
+description: Strategies for integrating Large Language Models with conventional programming
+  languages using the Microsoft Semantic Kernel, and an opportunity to become a technical
+  reviewer for a new book about it.
 draft: false
 image: /images/semantic_kernel_book/reviewerW.png
 include-in-header: _msft-clarity.html
 title: Tech reviewers wanted for my Semantic Kernel book
+
 ---
 
 I am wrting a book with [Packt Publishing](https://www.packtpub.com/) about the [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel). If you want to help by becoming a technical reviewer, please read on.

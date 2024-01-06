@@ -1,16 +1,13 @@
 ---
 author: Lucas A. Meyer
 date: 2022-06-16 06:00:00
-id: 82574b804c0e20792badcf6714fda9db
+description: The importance of setting a good example for work-life balance as a manager,
+  the power of admitting when you're wrong, and how prioritizing vacation time can
+  actually enhance your team's productivity and morale.
 image: /images/failing-to-lead.jpg
 include-in-header: _msft-clarity.html
-linkedin-posted: 2022-06-24 06:00:00
-linkedin-target-date: 2022-06-16 06:00:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:{response.get('id')}
-post-url: https://www.meyerperin.com/posts/2022-06-16-failing-to-lead-by-example.html
 title: Failing to lead by example
-twitter-posted: 2022-06-16 06:00:00
-twitter-target-date: null
+
 ---
 
 One of the worst things I have done as a manager was to go to a meeting. Luckily, I had a friend on that meeting (also a manager) that taught me something really important.

@@ -3,16 +3,15 @@ author: Lucas A. Meyer
 categories:
 - data science
 date: 2022-08-25 06:00:00
+description: The nuanced differences between using Arch Linux and other operating
+  systems, the pride associated with successfully installing and using Arch, the challenges
+  and rewards of its customizable nature, and the possible solution of using Windows
+  Subsystem for Linux 2 (WSL2) for dual benefits.
 draft: false
-id: 805c6fa21d1633519a9e961920af223a
 image: /images/jason-arch.png
 include-in-header: _msft-clarity.html
-linkedin-target-date: 2022-08-25 08:01:00
-linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:6968635624555769856
-post-url: https://www.meyerperin.com/posts/2022-08-25-a-love-letter-to-wsl.html
 title: I use Arch, btw
-tweet-url: https://twitter.com/user/status/1570472578363412480
-twitter-target-date: 2022-08-25 08:01:00
+
 ---
 
 # I use Arch, btw
