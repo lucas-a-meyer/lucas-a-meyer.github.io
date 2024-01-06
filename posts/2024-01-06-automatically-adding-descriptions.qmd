@@ -63,9 +63,13 @@ def summarize_markdown(markdown):
     messages=[
         {
             "role": "user",
-            "content": f"""Without repeating 'After reading the markdown article, the reader will learn', describe in one sentence what the reader will learn about after reading the markdown article. 
-            Also don't say 'the reader will learn about', just say what they'll learn. For example, instead of saying 'the reader will learn about strategies for programming', just say 'strategies for programming' 
-            Markdown:\n\n{markdown}""",
+            "content": f"""Without repeating 'After reading the markdown article, the reader will learn', 
+            describe in one sentence what the reader will learn about after reading the markdown article. 
+            Also don't say 'the reader will learn about', just say what they'll learn. For example, 
+            instead of saying 'the reader will learn about strategies for programming', 
+            just say 'strategies for programming' 
+            Markdown:\n
+            {markdown}""",
         }
     ],
     model="gpt-4")
@@ -126,3 +130,5 @@ process_qmd_files(directory)
 My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.
 
 I used my ChatGPT Plus to generate the main block of code that has the function `process_qmd_files`, so the whole process, end-to-end, took less than 10 minutes.
+
+The complete code is on [GitHub](https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py).
