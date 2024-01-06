@@ -132,30 +132,42 @@ font-style: inherit;">"user"</span>,</span>
 background-color: null;
 font-style: inherit;">"content"</span>: <span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">f"""Without repeating 'After reading the markdown article, the reader will learn', describe in one sentence what the reader will learn about after reading the markdown article. </span></span>
+font-style: inherit;">f"""Without repeating 'After reading the markdown article, the reader will learn', </span></span>
 <span id="cb3-13"><span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">            Also don't say 'the reader will learn about', just say what they'll learn. For example, instead of saying 'the reader will learn about strategies for programming', just say 'strategies for programming' </span></span>
+font-style: inherit;">            describe in one sentence what the reader will learn about after reading the markdown article. </span></span>
 <span id="cb3-14"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">            Also don't say 'the reader will learn about', just say what they'll learn. For example, </span></span>
+<span id="cb3-15"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">            instead of saying 'the reader will learn about strategies for programming', </span></span>
+<span id="cb3-16"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">            just say 'strategies for programming' </span></span>
+<span id="cb3-17"><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">            Markdown:</span><span class="ch" style="color: #20794D;
 background-color: null;
-font-style: inherit;">\n\n</span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">\n</span></span>
+<span id="cb3-18"><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">            </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span>markdown<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span><span class="ss" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"""</span>,</span>
-<span id="cb3-15">        }</span>
-<span id="cb3-16">    ],</span>
-<span id="cb3-17">    model<span class="op" style="color: #5E5E5E;
+<span id="cb3-19">        }</span>
+<span id="cb3-20">    ],</span>
+<span id="cb3-21">    model<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"gpt-4"</span>)</span>
-<span id="cb3-18"></span>
-<span id="cb3-19">    <span class="cf" style="color: #003B4F;
+<span id="cb3-22"></span>
+<span id="cb3-23">    <span class="cf" style="color: #003B4F;
 background-color: null;
 font-style: inherit;">return</span> chat_completion.choices[<span class="dv" style="color: #AD0000;
 background-color: null;
@@ -334,6 +346,7 @@ font-style: inherit;"># Process all .qmd files in the directory</span></span>
 <span id="cb4-45">process_qmd_files(directory)</span></code></pre></div>
 <p>My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.</p>
 <p>I used my ChatGPT Plus to generate the main block of code that has the function <code>process_qmd_files</code>, so the whole process, end-to-end, took less than 10 minutes.</p>
+<p>The complete code is on <a href="https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py">GitHub</a>.</p>
 
 
 </section>

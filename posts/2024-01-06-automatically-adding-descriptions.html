@@ -334,14 +334,18 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    messages<span class="op">=</span>[</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        {</span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>            <span class="st">"role"</span>: <span class="st">"user"</span>,</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            <span class="st">"content"</span>: <span class="ss">f"""Without repeating 'After reading the markdown article, the reader will learn', describe in one sentence what the reader will learn about after reading the markdown article. </span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ss">            Also don't say 'the reader will learn about', just say what they'll learn. For example, instead of saying 'the reader will learn about strategies for programming', just say 'strategies for programming' </span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ss">            Markdown:</span><span class="ch">\n\n</span><span class="sc">{</span>markdown<span class="sc">}</span><span class="ss">"""</span>,</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>        }</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    ],</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    model<span class="op">=</span><span class="st">"gpt-4"</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> chat_completion.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>            <span class="st">"content"</span>: <span class="ss">f"""Without repeating 'After reading the markdown article, the reader will learn', </span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ss">            describe in one sentence what the reader will learn about after reading the markdown article. </span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ss">            Also don't say 'the reader will learn about', just say what they'll learn. For example, </span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ss">            instead of saying 'the reader will learn about strategies for programming', </span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ss">            just say 'strategies for programming' </span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="ss">            Markdown:</span><span class="ch">\n</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="ss">            </span><span class="sc">{</span>markdown<span class="sc">}</span><span class="ss">"""</span>,</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    ],</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    model<span class="op">=</span><span class="st">"gpt-4"</span>)</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> chat_completion.choices[<span class="dv">0</span>].message.content</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Finally, I wrote a function that processes all the <code>.qmd</code> files in a directory. It loops through all the files in the directory and calls the functions I wrote above to extract the YAML front matter, generate a summary of the Markdown content, and add the summary to the YAML front matter.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> process_qmd_files(directory):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Loop through all files in the directory</span></span>
@@ -390,6 +394,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>process_qmd_files(directory)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.</p>
 <p>I used my ChatGPT Plus to generate the main block of code that has the function <code>process_qmd_files</code>, so the whole process, end-to-end, took less than 10 minutes.</p>
+<p>The complete code is on <a href="https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py">GitHub</a>.</p>
 
 
 </section>
