@@ -1,0 +1,28 @@
+---
+title: "Reviews"
+listing:
+- id: reviews
+  contents: 
+  - posts/2023-12-31-remarkable2.qmd
+  - posts/2023-11-03-badlands_ranch.qmd
+  - posts/2023-03-29-zotero.qmd
+  - posts/2022-09-15_newsguard.qmd
+  - posts/2022-06-28-farmers-dog.qmd
+  sort: False
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [image, title, subtitle, description]
+  feed: true
+
+page-layout: full
+title-block-banner: false
+include-in-header: _msft-clarity.html
+---
+
+:::{#reviews}
+:::
+
+
+<!--- <hr><p>You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a></p>. --->

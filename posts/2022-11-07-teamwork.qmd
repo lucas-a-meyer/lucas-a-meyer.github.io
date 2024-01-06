@@ -5,7 +5,7 @@ categories:
 date: 2022-11-08 06:00:00
 draft: false
 id: 6b3ba1d63bcbe9332c9594241c236e06
-image: https://mpsocial.blob.core.windows.net/blog-images/teamwork-cogs.jpg
+image: /images/teamwork-cogs.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-11-08 08:00:00
@@ -19,7 +19,7 @@ twitter-target-date: 2022-11-08 08:00:00
 
 If your office has a "teamwork gears" picture like this one, you may be thinking about working remotely.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/teamwork-cogs.jpg)
+![](/images/teamwork-cogs.jpg)
 
 I'm not even talking about the guy riding the rocket. I'm going to assume that it's a crash test dummy, not an allusion to the recent acquisition of #Twitter. The problem I have is with the gears.
 

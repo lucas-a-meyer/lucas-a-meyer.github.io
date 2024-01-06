@@ -7,7 +7,7 @@ categories:
 date: 2022-11-14 06:00:00
 draft: true
 id: 3d1a39404a74eb97401fdc180eaa906f
-image: https://mpsocial.blob.core.windows.net/blog-images/twitter-bird-fence.jpg
+image: /images/twitter-bird-fence.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-11-14 10:00:00
@@ -29,14 +29,14 @@ I don't have any private knowledge about Twitter, I'm only using public data to 
 
 The easiest example was the 50% layoffs, because the decison was partially and awkwardly undone shortly afterwards. The horrible Slack messages saying that they'll bring people back, do a knowledge transfer and fire them again show the callousness of the decision.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/luke-simon-slack.jpg)
+![](/images/luke-simon-slack.jpg)
 
 Another example was Elon's "1000 poorly batched RPCs are slowing down Twitter", and the public response by "sach @ the the hellsite". It's not impossible that Elon is correct, or at least partially correct. But the public back and forth is showing that his new management team is not taking time to talk to existing function owners to understand things.
 
 ::: {layout-ncol=2}
-![](https://mpsocial.blob.core.windows.net/blog-images/elon-rpcs.png)
+![](/images/elon-rpcs.png)
 
-![](https://mpsocial.blob.core.windows.net/blog-images/sach-graphql.png)
+![](/images/sach-graphql.png)
 :::
 
 ### Why are there sheep everywhere?

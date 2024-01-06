@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 categories: writing
 date: 2021-10-10 06:00:00
 id: 8e27678574beb3eba35981d7be2472be
-image: https://mpsocial.blob.core.windows.net/blog-images/smart-portuguese.jpg
+image: /images/smart-portuguese.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6853333112810815488
 linkedin-posted: 2021-10-10 06:00:00
@@ -16,7 +16,7 @@ twitter-target-date: null
 
 Recently, several people at work said they liked my #writing. 
 
-![](https://mpsocial.blob.core.windows.net/blog-images/smart-portuguese.jpg)
+![](/images/smart-portuguese.jpg)
 
 English is not my native language. It's Portuguese. I was actually a pretty good writer in Portuguese: I won a few writing contests, and got high writing grades in standardized tests.
 

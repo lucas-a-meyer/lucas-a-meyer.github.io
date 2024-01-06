@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2023-05-23 06:00:00
 draft: false
 id: 6e527799fe8036f688819dcbb9daa038
-image: https://mpsocial.blob.core.windows.net/blog-images/openai_blogging.jpg
+image: /images/openai_blogging.jpg
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-23 07:01:00
 post-url: https://www.meyerperin.com/posts/2023-05-23-my-experience-using-large-language-models-to-write-blog-posts.html

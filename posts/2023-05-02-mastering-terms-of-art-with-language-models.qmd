@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2023-05-02 06:00:00
 draft: true
 id: 048f6b1dfb2df44f66f46659cda574a6
-image: https://mpsocial.blob.core.windows.net/blog-images/diffused_terms-of-art-david.png
+image: /images/diffused_terms-of-art-david.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-05-02 07:01:00

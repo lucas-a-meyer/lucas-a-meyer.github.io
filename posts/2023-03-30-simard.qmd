@@ -7,7 +7,7 @@ categories:
 date: 2023-03-30 06:00:00
 draft: true
 id: 10752c49739ee9e8c0da4713703436ae
-image: https://mpsocial.blob.core.windows.net/blog-images/diffused_network_of_trees.png
+image: /images/diffused_network_of_trees.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-30 07:00:00

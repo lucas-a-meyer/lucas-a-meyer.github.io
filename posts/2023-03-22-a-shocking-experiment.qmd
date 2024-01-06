@@ -5,7 +5,7 @@ categories:
 date: 2023-03-22 06:00:00
 draft: true
 id: 12f6b065f93ab89b026dbe7824a924eb
-image: https://mpsocial.blob.core.windows.net/blog-images/shocking_experiment.png
+image: /images/shocking_experiment.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-22 06:00:00

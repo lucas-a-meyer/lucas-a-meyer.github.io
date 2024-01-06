@@ -5,7 +5,7 @@ categories:
 - interviews
 date: 2021-04-15 06:00:00
 id: 7e55c20ba72ab8c18e9d6fceed78e611
-image: https://mpsocial.blob.core.windows.net/blog-images/sql-fail.png
+image: /images/sql-fail.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6789180889353064448
 linkedin-linkback: true

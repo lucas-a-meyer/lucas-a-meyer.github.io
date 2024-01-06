@@ -15,7 +15,7 @@ twitter-target-date: null
 ---
 This is what your calendar can look like. 
 
-<center>![](https://mpsocial.blob.core.windows.net/blog-images/blurred-calendar.jpg){width=60%}</center>
+<center>![](/images/blurred-calendar.jpg){width=60%}</center>
 
 This is not a recent and real calendar from me (so don't try to book meetings in the open spaces) but it's a really good approximation of a typical week.
 

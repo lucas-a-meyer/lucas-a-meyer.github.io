@@ -3,7 +3,7 @@ author: Lucas A. Meyer, GPT-3.5, Stable Diffusion 2.1
 date: 2023-05-09 06:00:00
 draft: true
 id: aec68d7c46ebfc126f73ec71a361210e
-image: https://mpsocial.blob.core.windows.net/blog-images/diffused_bitcoin_anonymity.png
+image: /images/diffused_bitcoin_anonymity.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-09 07:01:00
 linkedin-url: https://www.linkedin.com/embed/feed/update/urn:li:share:7061701367844798465

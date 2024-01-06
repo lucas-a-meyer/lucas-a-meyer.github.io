@@ -3,9 +3,9 @@ author: Lucas A. Meyer
 categories:
 - technology
 date: 2023-03-29 06:00:00
-draft: true
+draft: false
 id: 406a01bdb16f27a842c0acc88e03fabc
-image: https://mpsocial.blob.core.windows.net/blog-images/diffused_professor.png
+image: /images/diffused_professor.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-29 07:00:00

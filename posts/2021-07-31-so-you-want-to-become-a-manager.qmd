@@ -4,7 +4,7 @@ categories:
 - management
 date: 2021-07-31 06:00:00
 id: a783c5e17f78d3a870d59f346a113f2f
-image: https://mpsocial.blob.core.windows.net/blog-images/become-manager.jpg
+image: /images/become-manager.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:ugcPost:6827388032719695872
 linkedin-posted: 2021-07-31 06:00:00
@@ -35,7 +35,7 @@ Unsurprisingly, the skills to perform well as an IC and the skills to perform we
 A large part of a manager's time is talking to people. Of course, it is extremely important to have frequent 1:1s with direct reports. Management books spend significant time on this topic (my favorite tip: keep 1:1 notes in a shared document accessible to both participants).
 In addition to 1:1s, managers also spend time talking to a whole lot of other people: their own managers, clients (internal and/or external), partner teams, suppliers, HR, Finance, recruiting. They also represent their team in planning meetings and review meetings. All those conversations add up, as it can be seen in a sample manager calendar below, in which all purple meetings are conversations with other people.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/blurred-calendar.jpg)
+![](/images/blurred-calendar.jpg)
 
 With that much pressure on their calendars, it's no surprise that managers give a lot of value to meeting efficiency. One of my favorite books on the topic is The Surprising Science of Meetings. Managers also need to be very efficient with their own time, which brings us to our next topic.
 

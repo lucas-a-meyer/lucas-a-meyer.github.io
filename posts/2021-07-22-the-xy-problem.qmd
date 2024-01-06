@@ -4,7 +4,7 @@ categories:
 - career
 date: 2021-07-22 06:00:00
 id: 02888e2d5f584f9662e357e4441e5416
-image: https://mpsocial.blob.core.windows.net/blog-images/xy-problem.jpg
+image: /images/xy-problem.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6824003596196085760
 linkedin-linkback: true

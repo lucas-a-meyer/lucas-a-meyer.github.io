@@ -5,7 +5,7 @@ categories:
 - data science
 date: 2021-10-05 06:00:00
 id: 32f1f75574bcaf7d26c9780d3b0c2204
-image: https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png
+image: /images/optimization-career.png
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/optimization-algorithms-your-career-lucas-a-meyer/
 linkedin-posted: 2021-10-05 06:00:00
@@ -18,7 +18,7 @@ twitter-target-date: null
 
 Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization. 
 
-![](https://mpsocial.blob.core.windows.net/blog-images/optimization-career.png)
+![](/images/optimization-career.png)
 
 We are also familiar with the traps of local versus global optimization and how to protect our code and models against those traps. However, we frequently fail to realize that the same concepts can be applied to our careers.
 
@@ -30,7 +30,7 @@ I had many career conversations in my tenure, and in a large proportion of cases
 
 It's like their algorithm is stuck near a local maxima (in this text, optimizing will mean maximizing) and the only thing they can see is the short-term objective, so they can only trace paths to get to the local maxima.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/local-minima.jpg)
+![](/images/local-minima.jpg)
 
 Eventually, people reach a local maxima and realize it's not their global objective. They may not know what their global objective is, they just know "it's not this". Interestingly, the way that people solve that problem is not that different from what an algorithm would do if it realized it got stuck in a local maxima: take a big step, and start again from someplace else.
 
@@ -52,7 +52,7 @@ Imagine a slot machine that has multiple levers, therefore a "multi-armed bandit
 
 Without knowing the distributions, you can't know the optimal action to take. In real life, not only one doesn't know the distributions, but the distributions for each lever can change over time. If that was not complicated enough, you also have infinite levers to choose from. Nobody said it was supposed to be easy.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/multi-armed-bandit.jpg)
+![](/images/multi-armed-bandit.jpg)
 
 The multi-armed bandit problem doesn't have a general optimal solution, but has several strategies that achieve approximate solutions. It is a classical reinforcement learning problem.
 

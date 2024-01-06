@@ -1,33 +1,49 @@
 ---
-title: "Articles"
+title: ""
+toc: true
+toc-expand: true
 listing:
 - id: articles
   contents: 
-  - articles/adhd.qmd
-  - articles/remarkable2.qmd
-  - articles/thread_manager.qmd
-  - articles/skv_py.qmd
-  - articles/midjourney.qmd
-  - articles/semantic_kernel.qmd
-  - articles/badlands_ranch.qmd
-  - posts/2023-03-29-zotero.qmd
-  - posts/2022-09-15_newsguard.qmd
-  - posts/2022-06-28-farmers-dog.qmd
+  - posts/2024-01-04-adhd.qmd
+  - posts/2023-12-31-remarkable2.qmd
+  - posts/2024-01-05-thread_manager.qmd
+  - posts/2023-12-16-skv_py.qmd
+  - posts/2023-09-23-midjourney.qmd
+  - posts/2023-10-15-semantic_kernel.qmd
   sort: False
   type: grid
+  image-height: 320px
   categories: false
   sort-ui: false
   filter-ui: false
-  fields: [image, title, subtitle, description]
+  fields: [image, author, date, title, subtitle]
   feed: true
+- id: blog
+  contents: posts
+  sort: "date desc"
+  type: grid
+  fields: [image, author, date, title, subtitle]
+  image-height: 320px
+  categories: false
+  sort-ui: true
+  filter-ui: true
 
 page-layout: full
 title-block-banner: false
 include-in-header: _msft-clarity.html
 ---
 
-:::{#pages}
+# Featured Articles  
+
+:::{#articles}
 :::
 
+---
+
+# Blog
+
+:::{#blog}
+:::
 
 <!--- <hr><p>You can also find me on <a rel="me" href="https://data-folks.masto.host/@lucasmeyer">Mastodon</a></p>. --->

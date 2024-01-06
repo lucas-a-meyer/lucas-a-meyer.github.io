@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 categories: career
 date: 2021-09-18 06:00:00
 id: e6906504ab87b3f5fb25f968db48d2c4
-image: https://mpsocial.blob.core.windows.net/blog-images/grad-student-email.jpg
+image: /images/grad-student-email.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/embed/feed/update/urn:li:share:6843910523256479746
 linkedin-posted: 2021-09-18 06:00:00
@@ -16,7 +16,7 @@ twitter-target-date: null
 
 Earlier in my career, I took quite a while writing emails. As most people earlier in their careers, my main concern was to "not be wrong" rather than actually "moving the discussion forward efficiently" (or ending it). That was especially true when senior people were in the thread.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/grad-student-email.jpg)
+![](/images/grad-student-email.jpg)
 
 I have been in threads with CEOs and CFOs of big companies, and these people are extremely efficient in their email handling. Bezos famously forwarded emails with a single question mark for action. Another CEO I worked for would simply write "fix this". Those threads tend to cascade really fast until they got to the person that could actually do something. One thread I was on got five forwards in about eight minutes (I was the lucky person that couldn't forward the thread to anyone else!).
 

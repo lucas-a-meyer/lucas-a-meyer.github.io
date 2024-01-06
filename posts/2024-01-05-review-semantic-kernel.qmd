@@ -1,0 +1,45 @@
+---
+author: Lucas A. Meyer
+date: 2024-01-05
+draft: false
+image: /images/semantic_kernel_book/reviewerW.png
+include-in-header: _msft-clarity.html
+title: Tech reviewers wanted for my Semantic Kernel book
+---
+
+I am wrting a book with [Packt Publishing](https://www.packtpub.com/) about the [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel). If you want to help by becoming a technical reviewer, please read on.
+
+The Microsoft Semantic Kernel is an SDK that integrates Large Language Models (LLMs) like [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), and [Hugging Face](https://huggingface.co/) with conventional programming languages like C# and Python. It allows you to define plugins that can be chained together in just a few lines of code.
+
+The book is called "Essential Guide for the Microsoft Semantic Kernel", and its intent is to provide a practical, hands-on introduction to the Semantic Kernel.
+
+## Reviewers wanted
+
+Packt Publishing is looking for technical reviewers to help with the book. 
+
+Reviewers need to have some programming experience and familiarity with AI. I don't know exactly how large is the workload and what are the deadlines, but the book will have between 200 and 250 pages.
+
+Reviewers get:
+
+1. Credit in the book: name and bio printed on the front matter as a Technical Reviewer.
+2. A complimentary print copy of the book at their doorstep.
+3. Free 12-month subscription to all Packt books.
+
+This can be a cool way of learning about the Semantic Kernel and AI, while also getting something for it.
+
+:::{.callout-important}
+I'm the author of the book, but I'm not involved in the selection of the reviewers, and I don't know how many reviewers will be selected. I'm just helping Packt to spread the word.
+:::
+
+If you are interested, please fill the form below and someone from Packt will contact you.
+
+--- 
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44798468",
+    formId: "202dcfb9-d901-4350-abc3-38c9ebee21bf"
+  });
+</script>

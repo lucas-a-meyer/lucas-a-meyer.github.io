@@ -1,0 +1,76 @@
+---
+title: "My experience with the reMarkable 2"
+author: Lucas A. Meyer
+page-layout: full
+toc: True
+image: /images/rm2.jpg
+toc-expand: true
+include-in-header: _msft-clarity.html
+date: 2023-12-31
+aliases:
+  - /articles/reamarkable2.html
+---
+
+Do you want to start journaling in the new year? Tired of carrying notebooks around? Maybe you just want your notes to be more organized?
+
+The reMarkable is a tablet with an e-ink display, similar to the Kindle. It is designed to be used with a stylus, and it is marketed as a paper replacement. Contrary to other tablets, if *feels* like paper.
+
+I got myself a reMarkable 2 in their Black Friday promotion, after having seen a colleague at work using it. Before having a reMarkable, I used a large number of disorganized Moleskines and loose paper sheets. A lot of loose paper sheets.
+
+I have been using the reMarkable 2 for a little over a month, and I am happy with it. I have used it for taking notes in meetings, for journaling, and for writing down ideas. I have also used it for reading PDFs and ebooks. But it's not without its issues.
+
+# What problems I want to solve?
+
+These days, I can take handwritten notes in most of my devices. My main device is a Surface Laptop Studio 2, which folds into a tablet and has a stylus. I also have an iPad Pro 13" with a stylus, but my Surface mostly replaced it. However, I cannot do everything with my Surface Laptop Studio 2. Here are a few of its problems:
+
+- It is a little on the heavy side. It is heavier than the iPad Pro 13", that many people already find too heavy for handwritten notes.
+- Battery life is not great. I can get about 2-3 hours of battery life out of it, which is not enough for a full day of meetings.
+- It is easy to get distracted by notifications and other apps on the device.
+
+# How does the reMarkable 2 solve these problems?
+
+The reMarkable 2 solves these problems in the following ways:
+
+- The reMarkable 2 is very light. It is 403 grams (0.9 pounds) and 4.7 mm (0.2 inches) thick. For comparison, my iPad Pro 13" is 682 grams (1.5 pounds) and 5.9 mm (0.23 inches) thick. 
+- It has no distractions. It is designed to be used for reading and writing, and it does not have a web browser or any other apps. It is very easy to focus on what you are doing.
+- It has a very long battery life. I find myself charging it about once or twice a week depending on how much I use it. It charges via USB-C, which is easily available.
+
+# What is the reMarkable 2 useful for?
+
+I have been using the reMarkable 2 for the following use cases:
+
+- **Academic paper reading and annotation**: This was my intended use case for the reMarkable 2. The reMarkable 2 works, but it's not ideal. It has a 10.3" screen, smaller than A4 paper, so I find myself reading papers in landscape mode, which makes the text a little bigger, but requires scrolling. In addition, I don't like the contrast of the reMarkable's e-ink display very much. It works, but it doesn't have contrast adjustments, and it's not as good as the Kindle's display.
+- **Journaling**: I have been using the reMarkable 2 for journaling almost every day. The writing experience is exceptional. It really feels like writing on paper, and the experience is very smooth.
+- **Note-taking in meetings**: I have taken the reMarkable 2 to meetings, and this allows me to focus a lot better on meetings. The note-taking is superb, and the lack of distractions is great. The apps in the phone and in the PC allows me to easily see and add to my notes.
+- **Writing down ideas**: I have been using the reMarkable 2 for writing down ideas and think about projects. It works well for that because it allows me to capture my ideas in a way that is easy to share and add to them later, without being distracted by technologies. This is specifically useful when I am in a plane or in a bus commuting.
+- **Many templates**: the reMarkable has many paper templates, including lined paper, grid paper, and even music sheets. You can even create your own templates. I used to have more than one notebook for different purposes, and now I can have them all in the same device.
+
+# Downsides
+
+The reMarkable 2 is not perfect. Here are some of the downsides:
+
+- The reMarkable 2 is expensive, starting at $299 for the barebones model. You need a pen, and you probably want a cover. You can save money by buying unnoficial pens and covers at Amazon. One of my colleagues likes a $20 pen he bought online. The official pen costs $79 without an eraser and $129 with one. Covers run between $79 (cloth) to $199 (leather, with a keyboard). 
+
+- You cannot sync Kindle e-books to it. You can read PDFs and e-books on it, but you cannot sync your Kindle library to it. 
+
+- Its 10" screen is a little small for reading PDFs. I have been reading a lot of academic papers on it, and it's easier to do it on landscape mode, where it gets a little bigger, but requires scrolling.
+
+- The lack of contrast is a little annoying. The reMarkable 2 does not have contrast adjustments, and it's not as good as the Kindle's display. I find myself looking for better lighting more than I expected.
+
+# Do I recommend it?
+
+Although I'm moderately happy with my reMarkable 2, it's not for everyone and not for every use case.
+
+It replaces my Moleskines and loose paper sheets, but it does not replace my iPad Pro completely: reading Kindle books and academic papers is still better on the iPad Pro. 
+
+Reading online reviews, people with ADHD seem to like the reMarkable 2 a lot, because it allows them to focus on what they are doing without distractions. [I am not sure yet whether I have ADHD or not](adhd.qmd), but I likely do, and this may be biasing my opinion towards it.
+
+# Conclusion
+
+The reMarkable 2 is, to me, a good replacement for loose paper sheets and Moleskines. A good Moleskine costs $30, so the reMarkable 2, at $299, pays for itself after 10 Moleskines, which is not that far off. It also helps me be more organized, because I can have all my notes in one place, they are always with me and I can easily search them and add to them.
+
+The downsides are still problematic, and it may be better to wait for the next version of the reMarkable. It (barely) works for my use cases, but it may not be for everyone.
+
+{{< include _affiliate.qmd >}}
+
+You can buy the reMarkable 2 at [Amazon](https://l.meyerperin.com/rm2).

@@ -9,7 +9,7 @@ categories:
 - interviews
 date: 2021-06-19 06:00:00
 id: 4c3b1d8825457cf2fb3f1a21fa7ca99e
-image: https://mpsocial.blob.core.windows.net/blog-images/linkedin-notifications.jpg
+image: /images/linkedin-notifications.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/pulse/im-hiring-manager-why-i-didnt-answer-your-linkedin-message-meyer
 linkedin-linkback: true

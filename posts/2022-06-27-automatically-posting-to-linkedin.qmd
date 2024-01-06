@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2022-06-28 06:00:00
 draft: false
 id: dc1f291d7f9f9c5c5f19f058c3961024
-image: https://mpsocial.blob.core.windows.net/blog-images/nobody-reads-blog.jpg
+image: /images/nobody-reads-blog.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-29 06:00:00
 linkedin-target-date: 2022-06-29 06:00:00

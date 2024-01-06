@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2022-08-02 04:00:00
 draft: true
 id: cecdf93f4afc9e12fa1967212425c4bc
-image: https://mpsocial.blob.core.windows.net/blog-images/teacher-appreciation.jpg
+image: /images/teacher-appreciation.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-11 07:05:00-07:00

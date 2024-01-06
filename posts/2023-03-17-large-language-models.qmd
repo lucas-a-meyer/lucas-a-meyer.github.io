@@ -5,7 +5,7 @@ categories:
 date: 2023-03-17 06:00:00
 draft: true
 id: f8cd1b9e390fc2cf286447584e7e1d9c
-image: https://mpsocial.blob.core.windows.net/blog-images/chatbot.png
+image: /images/chatbot.png
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2023-03-17 06:00:00

@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2023-05-25 06:00:00
 draft: false
 id: c6a3355503c95326acc0803b2d530538
-image: https://mpsocial.blob.core.windows.net/blog-images/42.jpg
+image: /images/42.jpg
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-05-25 07:01:00
 post-url: https://www.meyerperin.com/posts/2023-05-25-happy-towel-day.html

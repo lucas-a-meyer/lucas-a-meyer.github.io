@@ -6,7 +6,7 @@ categories:
 date: 2022-11-06 06:00:00
 draft: false
 id: fbfcf863404ffb16ba458b528ee85a7b
-image: https://mpsocial.blob.core.windows.net/blog-images/fail-whale.jpg
+image: /images/fail-whale.jpg
 include-in-header: _msft-clarity.html
 linkedin-posted: 2022-06-30 06:00:00
 linkedin-target-date: 2022-11-06 08:00:00
@@ -20,7 +20,7 @@ twitter-target-date: 2022-11-06 08:00:00
 
 I have "quietly left" Twitter. I've configured my devices in a way that I can only see Twitter if I use a specific device, and that usually takes more effort that it's worth. That's also how I tamed several other digital habits.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/fail-whale.jpg)
+![](/images/fail-whale.jpg)
 
 A few years ago, I used the same method to quit Facebook and its properties. It is really hard to leave these platforms completely, so I'm not deleting my account. You may even be reading this on Twitter, because I'm also not changing the tool I use to cross-post between Twitter and LinkedIn. 
 

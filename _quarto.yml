@@ -39,6 +39,7 @@ website:
           - articles/badlands_ranch.qmd
           - articles/remarkable2.qmd
       - text: "Reviews"
+        file: reviews.qmd
         menu: 
           - articles/remarkable2.qmd
           - articles/badlands_ranch.qmd

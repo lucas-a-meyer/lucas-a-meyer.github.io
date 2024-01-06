@@ -5,7 +5,7 @@ categories:
 - hiring
 date: 2022-04-05 06:00:00
 id: cdc28faa79291ebddb7217f7e8529171
-image: https://mpsocial.blob.core.windows.net/blog-images/gladiator.jpg
+image: /images/gladiator.jpg
 include-in-header: _msft-clarity.html
 linkedin-link: https://www.linkedin.com/feed/update/urn:li:share:6917105322906005506
 linkedin-posted: 2022-04-05 06:00:00
@@ -23,7 +23,7 @@ I looked at my statistics a while back and I really don't say "yes" that much mo
 
 I do this because it is extremely common for the interviewee to be nervous during an interview. Like on the movie Gladiator, you don't know what will come out when the gates open, even though you prepared a lot for it. If the first question throws the interviewee off, it's often hard for them to regain confidence. It's quicksand.
 
-![](https://mpsocial.blob.core.windows.net/blog-images/gladiator.jpg)
+![](/images/gladiator.jpg)
 
 I like #interview questions that are "adaptive", like the GMAT, meaning that you can make them easier or harder by changing small things. Sometimes, people would actually be able to do the hard version of the question, but they're nervous and need to start with the easy one.
 

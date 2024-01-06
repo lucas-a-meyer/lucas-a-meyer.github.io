@@ -3,7 +3,7 @@ author: Lucas A. Meyer
 date: 2022-07-22 04:00:00
 draft: false
 id: 25886796503952d9ed680f98bdff2d01
-image: https://mpsocial.blob.core.windows.net/blog-images/leetcode.jpg
+image: /images/leetcode.jpg
 include-in-header: _msft-clarity.html
 linkedin-linkback: true
 linkedin-posted: 2022-07-11 07:05:00-07:00

@@ -5,7 +5,7 @@ description: How to get started with Midjourney, an Generative AI tool that is g
   at creating photorealistic images.
 draft: false
 id: 50b3e21bac3b5df765df31fecb8ec77d
-image: https://mpsocial.blob.core.windows.net/blog-images/lucas-mj.png
+image: /images/lucas-mj.png
 include-in-header: _msft-clarity.html
 linkedin-target-date: 2023-09-24 06:00:00
 post-url: https://www.meyerperin.com/posts/2023-09-22-getting-started-with-midjourney.html
