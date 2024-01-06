@@ -9,7 +9,7 @@ include-in-header: _msft-clarity.html
 date: 2024-01-06
 ---
 
-This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is [here](thread_manager.qmd).
+This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is [here](2024-01-05-thread_manager.qmd).
 
 We begin by [creating a new App Service in Azure using the Azure Portal](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure).
 

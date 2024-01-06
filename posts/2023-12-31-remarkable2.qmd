@@ -63,7 +63,7 @@ Although I'm moderately happy with my reMarkable 2, it's not for everyone and no
 
 It replaces my Moleskines and loose paper sheets, but it does not replace my iPad Pro completely: reading Kindle books and academic papers is still better on the iPad Pro. 
 
-Reading online reviews, people with ADHD seem to like the reMarkable 2 a lot, because it allows them to focus on what they are doing without distractions. [I am not sure yet whether I have ADHD or not](adhd.qmd), but I likely do, and this may be biasing my opinion towards it.
+Reading online reviews, people with ADHD seem to like the reMarkable 2 a lot, because it allows them to focus on what they are doing without distractions. [I am not sure yet whether I have ADHD or not](2024-01-04-adhd.qmd), but I likely do, and this may be biasing my opinion towards it.
 
 # Conclusion
 

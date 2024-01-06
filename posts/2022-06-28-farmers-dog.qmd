@@ -20,15 +20,15 @@ twitter-target-date: 2022-06-30 06:00:00
 :::{.callout-important}
 ## Moved to Badlands Ranch Dog Food
 
-As of November 2023, we have moved to [Badlands Ranch Dog Food](/articles/badlands_ranch.qmd). 
+As of November 2023, we have moved to [Badlands Ranch Dog Food](2023-11-03-badlands_ranch.qmd). 
 
 :::
 
-The review below is about The Farmer's Dog, which we used for over a year. In November 2023, we moved to [Badlands Ranch dog food](/articles/badlands_ranch.qmd), which ended up being a lot more convenient for about the same price, and similarly appreciated by my dog. 
+The review below is about The Farmer's Dog, which we used for over a year. In November 2023, we moved to [Badlands Ranch dog food](2023-11-03-badlands_ranch.qmd), which ended up being a lot more convenient for about the same price, and similarly appreciated by my dog. 
 
 I did not receive any compensation for this review, and I'm not affiliated with Badlands Ranch or The Farmer's Dog in any way. 
 
-If you want to read my earlier review of the Farmer's Dog, read on. My new review of Badlands Ranch is [here](/articles/badlands_ranch.qmd).
+If you want to read my earlier review of the Farmer's Dog, read on. My new review of Badlands Ranch is [here](2023-11-03-badlands_ranch.qmd).
 ---
 
 I recently subscribed to the Farmer's Dog. I love it, even though I didn't expect to.

@@ -6,7 +6,7 @@ toc: True
 image: /images/adhd_heading.png
 toc-expand: true
 include-in-header: _msft-clarity.html
-date: 2023-01-04
+date: 2024-01-04
 date-modified: 2024-01-04
 aliases:
   - /articles/adhd.html
