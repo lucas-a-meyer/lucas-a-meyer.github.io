@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Lucas A. Meyer">
+<meta name="dcterms.date" content="2023-09-23">
+
+<title>Lucas A. Meyer - Getting Started with Midjourney</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//favicon-32x32.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/iconify-1.0.7/iconify-icon.min.js"></script>
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6KTZ853BN5"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
+</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false,
+  "showHighlights": "always"
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<!-- Clarity tracking code for https://meyerperin.com/ -->
+<script>
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "cjhrvqb66a");
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/44798468.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="Lucas A. Meyer - Getting Started with Midjourney">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://www.meyerperin.com/images/lucas_batman.png">
+<meta property="og:site-name" content="Lucas A. Meyer">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:width" content="1024">
+<meta name="twitter:title" content="Lucas A. Meyer - Getting Started with Midjourney">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="https://www.meyerperin.com/images/lucas_batman.png">
+<meta name="twitter:image-height" content="1024">
+<meta name="twitter:image-width" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/mplogo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Lucas A. Meyer</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-articles" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Articles</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-articles">    
+        <li class="dropdown-header">articles/midjourney.qmd</li>
+        <li class="dropdown-header">articles/semantic_kernel.qmd</li>
+        <li class="dropdown-header">articles/adhd.qmd</li>
+        <li class="dropdown-header">articles/thread_manager.qmd</li>
+        <li class="dropdown-header">articles/skv_py.qmd</li>
+        <li class="dropdown-header">articles/badlands_ranch.qmd</li>
+        <li class="dropdown-header">articles/remarkable2.qmd</li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../reviews.html" rel="" target="">
+ <span class="menu-text">Reviews</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html" rel="" target="">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../using_quarto/index.html" rel="" target="">
+ <span class="menu-text">Using Quarto</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-github-repositories" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">GitHub Repositories</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-github-repositories">    
+        <li>
+    <a class="dropdown-item" href="https://github.com/lucas-a-meyer/sk-vision-py" rel="" target="">
+ <span class="dropdown-text">OpenAI Vision API with the Semantic Kernel</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/lucas-a-meyer/pytly" rel="" target="">
+ <span class="dropdown-text">Pytly: Python client for the T.LY link shortener</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://threads.net/@lucas_a_meyer" rel="" target="">
+ <span class="menu-text"><iconify-icon inline="" icon="fa6-brands:threads"></iconify-icon></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/lucasameyer" rel="" target=""><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lucas-a-meyer" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://stackoverflow.com/users/1850561/lucas-a-meyer" rel="" target=""><i class="bi bi-stack-overflow" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html" rel="" target="">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#installing-midjourney" id="toc-installing-midjourney" class="nav-link" data-scroll-target="#installing-midjourney">Installing Midjourney</a>
+  <ul class="collapse">
+  <li><a href="#step-1-log-in-to-discord" id="toc-step-1-log-in-to-discord" class="nav-link" data-scroll-target="#step-1-log-in-to-discord">Step 1: Log in to Discord</a></li>
+  <li><a href="#step-2-an-easier-way-create-your-own-server" id="toc-step-2-an-easier-way-create-your-own-server" class="nav-link" data-scroll-target="#step-2-an-easier-way-create-your-own-server">Step 2: An easier way: create your own server</a>
+  <ul class="collapse">
+  <li><a href="#click-the-button-on-the-left-sidebar-to-add-a-server" id="toc-click-the-button-on-the-left-sidebar-to-add-a-server" class="nav-link" data-scroll-target="#click-the-button-on-the-left-sidebar-to-add-a-server">1. Click the <code>+</code> button on the left sidebar to <code>Add a Server</code></a></li>
+  <li><a href="#select-create-a-server" id="toc-select-create-a-server" class="nav-link" data-scroll-target="#select-create-a-server">2. Select <code>Create a server</code></a></li>
+  <li><a href="#give-your-server-a-name-and-optionally-an-icon-and-click-create" id="toc-give-your-server-a-name-and-optionally-an-icon-and-click-create" class="nav-link" data-scroll-target="#give-your-server-a-name-and-optionally-an-icon-and-click-create">3. Give your server a name and optionally an icon, and click <code>Create</code></a></li>
+  <li><a href="#thats-it" id="toc-thats-it" class="nav-link" data-scroll-target="#thats-it">4. That’s it!</a></li>
+  </ul></li>
+  <li><a href="#step-3-subscribe-to-midjourney" id="toc-step-3-subscribe-to-midjourney" class="nav-link" data-scroll-target="#step-3-subscribe-to-midjourney">Step 3: Subscribe to Midjourney</a></li>
+  <li><a href="#step-4-invite-the-midjourney-bot-to-your-server" id="toc-step-4-invite-the-midjourney-bot-to-your-server" class="nav-link" data-scroll-target="#step-4-invite-the-midjourney-bot-to-your-server">Step 4: Invite the Midjourney bot to your server</a></li>
+  </ul></li>
+  <li><a href="#basic-usage-of-midjourney" id="toc-basic-usage-of-midjourney" class="nav-link" data-scroll-target="#basic-usage-of-midjourney">Basic usage of Midjourney</a>
+  <ul class="collapse">
+  <li><a href="#the-imagine-command" id="toc-the-imagine-command" class="nav-link" data-scroll-target="#the-imagine-command">The <code>imagine</code> command</a></li>
+  <li><a href="#using-an-existing-image" id="toc-using-an-existing-image" class="nav-link" data-scroll-target="#using-an-existing-image">Using an existing image</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Getting Started with Midjourney</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Lucas A. Meyer </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 23, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p><a href="https://www.midjourney.com/">Midjourney</a> is a generative AI tool that can generate high quality images from text prompts. It is particularly good at generating photorealistic images, and also good at blending an existing picture with a prompt. Lots of people use Midjourney as a digital diary, or to quickly create images for their social media and blog posts.</p>
+<p>One unique characteristic of Midjourney is that its interface is only available on <a href="https://discord.com/">Discord</a>, a popular chat app. In order to create images, you have to chat with the Midjourney bot on a Discord server.</p>
+<p>This is a tutorial on how to get started with Midjourney. While it’s mostly based on the <a href="https://docs.midjourney.com/docs/quick-start">official Midjourney getting started guide</a>, I have added a few suggestions that made my life much easier, especially my Step 2. Hopefully will help you, too.</p>
+</section>
+<section id="installing-midjourney" class="level1">
+<h1>Installing Midjourney</h1>
+<section id="step-1-log-in-to-discord" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-log-in-to-discord">Step 1: Log in to Discord</h2>
+<p>If you don’t have a Discord account, you will have to <a href="https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started">create one</a>. Discord has apps for all major operating systems, mobile devices, and also a web app. Install all apps you think you’re going to use. I frequently use the desktop app the most, but the mobile app is also very convenient and works surprisingly well for chatting with the Midjourney bot.</p>
+</section>
+<section id="step-2-an-easier-way-create-your-own-server" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-an-easier-way-create-your-own-server">Step 2: An easier way: create your own server</h2>
+<p>This is where my instructions are <strong>very different</strong> from the official guide. The official guide asks you to join the <a href="https://discord.gg/2YJYJQ6Z">Midjourney Discord server</a> and chat with the Midjourney bot there. I don’t recommend doing that. The Midjourney Discord server is very active and noisy, and you will get <strong>a lot</strong> of notifications from other people’s conversations. It’s also very easy to get lost in the sea of messages. You can work around that by <a href="https://docs.midjourney.com/docs/direct-messages">directly messaging the Midjourney bot</a>, but you will still have to configure the server settings to mute all channels and notifications.</p>
+<p>Although it may sound intimidating, creating your own server is very easy and it’s mostly click-based. You can create a server for free, and you can create as many servers as you want. You can see detailed instructions <a href="https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-">here</a>. Here’s a quick summary:</p>
+<section id="click-the-button-on-the-left-sidebar-to-add-a-server" class="level3">
+<h3 class="anchored" data-anchor-id="click-the-button-on-the-left-sidebar-to-add-a-server">1. Click the <code>+</code> button on the left sidebar to <code>Add a Server</code></h3>
+<p><img src="https://support.discord.com/hc/article_attachments/360058897831/Screen_Shot_2020-06-04_at_1.11.06_PM.png" class="img-fluid"></p>
+</section>
+<section id="select-create-a-server" class="level3">
+<h3 class="anchored" data-anchor-id="select-create-a-server">2. Select <code>Create a server</code></h3>
+<p><img src="https://support.discord.com/hc/article_attachments/360058273791/Capture.JPG" class="img-fluid"></p>
+</section>
+<section id="give-your-server-a-name-and-optionally-an-icon-and-click-create" class="level3">
+<h3 class="anchored" data-anchor-id="give-your-server-a-name-and-optionally-an-icon-and-click-create">3. Give your server a name and optionally an icon, and click <code>Create</code></h3>
+<p><img src="https://support.discord.com/hc/article_attachments/360058897871/Screen_Shot_2020-06-04_at_1.40.12_PM.png" class="img-fluid"></p>
+</section>
+<section id="thats-it" class="level3">
+<h3 class="anchored" data-anchor-id="thats-it">4. That’s it!</h3>
+<p>You have created your own server. Now you need to subscribe to Midjourney and invite the Midjourney bot to your server.</p>
+</section>
+</section>
+<section id="step-3-subscribe-to-midjourney" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-subscribe-to-midjourney">Step 3: Subscribe to Midjourney</h2>
+<p>This is the hard part. There are no free trials anymore, and you need a paid subscription in order to use Midjourney.</p>
+<ul>
+<li>Visit <a href="https://midjourney.com/account">Midjourney.com/account</a>.</li>
+<li>Sign in using your <strong>verified</strong> Discord account.</li>
+<li>Select a subscription tier and click <code>Subscribe</code>.</li>
+</ul>
+<p>The least expensive subscription is good for most purposes, and I suggest you use that one to get started. This will give you about three hours of server time per month, and you lose what you don’t use. Even though I use Midjourney a lot, I rarely use up all my server time. You <strong>can</strong> top off if you need.</p>
+<p><img src="https://cdn.document360.io/3040c2b6-fead-4744-a3a9-d56d621c6c7e/Images/Documentation/MJ_SubscriptionTiers.png" class="img-fluid"></p>
+</section>
+<section id="step-4-invite-the-midjourney-bot-to-your-server" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-invite-the-midjourney-bot-to-your-server">Step 4: Invite the Midjourney bot to your server</h2>
+<p>Now that you have a server and a subscription, you need to invite the Midjourney bot to your server. This is also very easy, and done mostly by clicking.</p>
+<ol type="1">
+<li><p>In the left sidebar, right-click your server and select <code>App catalog</code> <img src="..\images/MJ-1.png" class="img-fluid"></p></li>
+<li><p>Search for <code>Midjourney</code>, select <code>Midjourney Bot</code>, and click <code>Add to server</code> <img src="..\images/MJ-2.png" class="img-fluid"></p></li>
+</ol>
+<p><img src="..\images/MJ-3.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Select your server from the dropdown, and click <code>Continue</code>, and then <code>Authorize</code>. <img src="..\images/MJ-4.png" class="img-fluid"></li>
+</ol>
+<p>You can now start using Midjourney in your own.</p>
+</section>
+</section>
+<section id="basic-usage-of-midjourney" class="level1">
+<h1>Basic usage of Midjourney</h1>
+<p>Now that Midjourney is installed on your server, you can start using it. I just send direct messages to it by right-clicking it and selecting <code>Message</code>.</p>
+<p><img src="..\images/MJ-5.png" class="img-fluid"></p>
+<p>The official guide has a <a href="https://docs.midjourney.com/docs/quick-start">very good introduction</a> to the basic usage of Midjourney, starting on step 5. I will just summarize the main command <code>imagine</code> here, and show you an example of how you can use your own image as a starting point.</p>
+<section id="the-imagine-command" class="level2">
+<h2 class="anchored" data-anchor-id="the-imagine-command">The <code>imagine</code> command</h2>
+<p>The <code>imagine</code> command is the main command you will use to generate images. It takes a prompt as input, and generates an image based on the prompt. The prompt can be a few words, a sentence, or even a paragraph. The longer the prompt, the more specific the image will be.</p>
+<p>There are a lot of prompting techniques, and I will not go into details here. You can find a lot of examples in the <a href="https://docs.midjourney.com/docs/explore-prompting">official guide</a>.</p>
+<p>Here’s a quick example:</p>
+<p><code>/imagine standard schnauzer sleeping on a computer keyboard</code></p>
+<p>Midjourney by default will reply with four suggestions. Their numbers start on the top left and go clockwise. There will be some buttons under the suggestions, labeled U1, U2, U3, U4 and V1, V2, V3, V4.</p>
+<p>You can click on the U buttons to upscale (increase the resolution) of a picture you liked, and click on the V buttons to see more variations of the current suggestion. If you’re going to use the image for social media, I suggest you upscale it before downloading.</p>
+<p>There’s also a button to regenerate all images if you don’t like any of the suggestions. Here’s what I got:</p>
+<p><img src="..\images/MJ-6.png" class="img-fluid"></p>
+<p>I like the second one, so I clicked on the U2 button to upscale it. Then I clicked on the download button to download the image. Here’s the final result:</p>
+<p><img src="..\images/MJ-7.png" class="img-fluid"></p>
+</section>
+<section id="using-an-existing-image" class="level2">
+<h2 class="anchored" data-anchor-id="using-an-existing-image">Using an existing image</h2>
+<p>You can use an existing image with the <code>/imagine</code> command. I frequently use my own headshot and ask Midjourney to put me in some weird place or situation. In order for Midjourney to use your image, you need to upload it to the web first and give Midjourney the URL. I have my own server, but you can also upload your image to Discord and use the URL Discord gives you, or upload it to GitHub. There are plenty of other services you can use, too, like <a href="https://imgur.com/">Imgur</a>.</p>
+<p>My headshot is at <code>https://links.meyerperin.com/headshot</code>.</p>
+<p><img src="..\images/lucas_new_headshot.png" class="img-fluid"></p>
+<p>I can use it with the <code>/imagine</code> command like this:</p>
+<p><code>/imagine https://links.meyerperin.com/headshot as Batman in Gotham City</code></p>
+<p>And here is the final result:</p>
+<p><img src="..\images/another-lucas-batman.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>I hope this tutorial helped you get started with Midjourney. If you have any questions, please feel free to drop me a message using my socials above (LinkedIn and Threads are my preferred ones).</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
