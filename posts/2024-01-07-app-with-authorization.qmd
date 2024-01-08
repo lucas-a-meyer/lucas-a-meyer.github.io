@@ -52,7 +52,7 @@ Once I did all this, I pushed my code to GitHub and it was automatically deploye
 
 ## Code walkthrough
 
-The code is for a [Flask](https://flask.palletsprojects.com/en/3.0.x/) Web App. Flask is a Python framework for building web apps. I decided to use it instead of other alternatives like Angular or NextJS because it allows me to use Python, which is the language I'm most familiar with. The code is in the `app.py` file, and I will walk through it below. I also created an `app_config.py` file to store the configuration variables, which you can see in GitHub [here](https://github.com/lucas-a-meyer/thread-manager/blob/main/app_config.py). I will not walk through the `app_config.py` file, because it is just a file to store the configuration variables.
+The code is for a [Flask](https://flask.palletsprojects.com/en/3.0.x/) Web App. Flask is a Python framework for building web apps. I decided to use it instead of other alternatives like Angular or NextJS because it allows me to use Python, which is the language I'm most familiar with. The code is in the [`app.py`](https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/app.py) file, and I will walk through it below. I also created an `app_config.py` file to store the configuration variables, which you can see in GitHub [here](https://github.com/lucas-a-meyer/thread-manager/blob/main/app_config.py). I will not walk through the `app_config.py` file, because it is just a file to store the configuration variables.
 
 ### The app.py file
 
@@ -94,7 +94,11 @@ auth = identity.web.Auth(
 )
 ```
 
-The next thing we do is create a route for the login page. The `@app.route("/login")` is a decorator that tells Flask that the function below it is a route for the login page. The `render_template` function renders the `login.html` template, which is the login page. The important line in the login template is [line 19], which simply redirects the user to the `auth_response` route. The `auth.log_in` function is from the `identity.web` library, and it returns a dictionary with the information needed to log in. The `scopes` parameter is used to specify the permissions that the user needs to consent to. The `redirect_uri` parameter is optional, must match the redirect URI registered in the Azure Portal. The `prompt` parameter is also optional, and it can take different values, which are defined in [this link](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).
+The next thing we do is create a route for the login page. The `@app.route("/login")` is a decorator that tells Flask that the function below it is a route for the login page. The `render_template` function renders the `login.html` template, which is the login page. 
+
+The important line in the login template is [line 19](https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/login.html#L19), which initiates the login process by directing the user to the `auth_response`route, which is the same as `app_config.REDIRECT_PATH`. 
+
+The `auth.log_in` function comes from the `identity.web` library, and returns a dictionary with the information needed to log in. The `scopes` parameter is used to tell the user what the app will be able to do on their behalf (in my case, just read their basic information). The `redirect_uri` parameter is optional, must match the redirect URI registered in the Azure Portal. The `prompt` parameter is also optional, and it can take different values, which are defined in [this link](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest).
 
 If the authentication is successful, the `auth_response` route will be called. If the authentication is not successful, the `auth_error.html` template will be rendered.
 
@@ -104,10 +108,11 @@ def login():
     return render_template("login.html", version=__version__, **auth.log_in(
         scopes=app_config.SCOPE, # Have user consent to scopes during log-in
         redirect_uri=url_for("auth_response", _external=True), 
-        prompt="select_account",  # Optional. More values defined in  https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest
+        prompt="select_account",  
         ))
 ```
-The next thing we do is create a route for the `auth_response` page. The `@app.route(app_config.REDIRECT_PATH)` is a decorator that tells Flask that the function below it is a route for the `auth_response` page. The `auth.complete_log_in(request.args)` function is from the `identity.web` library, and it returns a dictionary with the information needed to complete the log in. The `redirect` function redirects the user to the `index` route. The `url_for` function is from Flask, and it returns the URL for the `index` route, the initial page of my application.
+
+The next thing we do is create a route for the `auth_response` page. The `auth.complete_log_in(request.args)` function is from the `identity.web` library, and it returns a dictionary with the result of the log in process, which can be successful or an error, in which case it will contain an error message.
 
 ```python
 @app.route(app_config.REDIRECT_PATH)
@@ -118,7 +123,11 @@ def auth_response():
     return redirect(url_for("index"))
 ```
 
-If the login was successful, we show the [index page](https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/index.html), which lists the information we collected about the user from the authentication provider. I am only using Microsoft Accounts (formerly Live, currently used in Xbox and Outlook.com) as the authentication provider for now. I may add Google Accounts later, but I don't intend to manage my own authentication, even though the code supports it. From the Microsoft Accounts authentication provider I display the user name and subscription ID in the index page. The `auth.get_user()` function is from the `identity.web` library, and it returns a dictionary with the information about the user. The `render_template` function renders the `index.html` template, which is the index page. The `user` parameter is used to pass the user information to the template. The `version` parameter is used to pass the version information to the template.
+If the login was successful, we show the [index page](https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/index.html), which lists the information we collected about the user from the authentication provider. 
+
+I am only using Microsoft Accounts (formerly Live, currently used in Xbox and Outlook.com) as the authentication provider for now. I may add Google Accounts later, but I don't intend to manage my own authentication, even though the code supports it. 
+
+I call the function `auth.get_user()` from the `identity.web` library, and it returns a dictionary with the information about the user. The `render_template` function renders the `index.html` template, which is the index page. The `user` parameter is used to pass the user information to the template. The index page will display the user name and the subscription ID.
 
 ```python
 @app.route("/")
