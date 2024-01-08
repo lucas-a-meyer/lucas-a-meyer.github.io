@@ -10,7 +10,89 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Sat, 06 Jan 2024 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 07 Jan 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Creating an Azure Web App with Authentication and Authorization</title>
+  <dc:creator>Lucas A. Meyer</dc:creator>
+  <link>https://www.meyerperin.com/posts/2024-01-07-thread_manager_step_01.html</link>
+  <description><![CDATA[ 
+
+
+
+<p>This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is <a href="../posts/2024-01-05-thread_manager.html">here</a>.</p>
+<p>We begin by <a href="https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure">creating a new App Service in Azure using the Azure Portal</a>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I did not use the sample code in section 1 from the link above, because I intended to use the code that uses the Microsoft Authentication Library (MSAL) for Python. <strong>I just created an empty app.</strong></p>
+</div>
+</div>
+<p>From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.</p>
+<p>I then <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github">configured the app to sync with GitHub</a>, so that I can push code to GitHub and have it automatically deployed to the App Service.</p>
+<section id="configuring-microsoft-entra-id-and-linking-the-app" class="level2">
+<h2 class="anchored" data-anchor-id="configuring-microsoft-entra-id-and-linking-the-app">Configuring Microsoft Entra ID and Linking the App</h2>
+<p>I followed the instructions at <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in?tabs=windows">Quickstart: Sign in users and call the Microsoft Graph API from a Python web app</a>. The instructions will tell you where to find the <code>CLIENT_ID</code> and how to generate a <code>CLIENT_SECRET</code> for the app. The <code>AUTHORITY</code> needs to be set to <code>AUTHORITY="https://login.microsoftonline.com/&lt;tenant_id&gt;"</code>. I obtained the <code>tenant_id</code> from the Azure Portal, in the Overview page of Microsoft Entra ID.</p>
+<p>I downloaded the full code for the app, and the only change I had to make was to create an <code>.env</code> file with the variables described above. This is not required for the app to run on the web, but it helps when running locally.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CLIENT_ID</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">client_id</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">]</span></span>
+<span id="cb1-2"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">CLIENT_SECRET</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">client_secret</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">]</span></span>
+<span id="cb1-3"><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">AUTHORITY</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>https://login.microsoftonline.com/<span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">[</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">tenant_id</span><span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">]</span></span></code></pre></div>
+<p>The instructions don’t mention this, but after finishing the instructions, you also have to link the Entra ID configuration to the Web App you created in the first step. To do this, go to the Azure Portal, open the App Service, go to the “Authentication” tab, and click on “Microsoft” under “Identity providers”. Then, select the “Existing App” tab and select the app you created in the previous step.</p>
+<p>The final connection step was to set up the environment variables <code>CLIENT_ID</code>, <code>CLIENT_SECRET</code> and <code>AUTHORITY</code> in the App Service. I followed the instructions on <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings">this link</a> to set the environment variables in the Web App to the same values present in the .env file.</p>
+<p>Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service.</p>
+<p>I navigated to the app URL and was able to sign in with my Microsoft account. I was then redirected to the app, where I could see the information about my login.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.meyerperin.com/images/thread_manager/step1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Successful log in</figcaption>
+</figure>
+</div>
+<p>Now that I have an app that can authenticate users, I need to work on authorization, so that only authorized users can access the app.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/posts/2024-01-07-thread_manager_step_01.html</guid>
+  <pubDate>Sun, 07 Jan 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/azure-web-app.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
 <item>
   <title>Automatically adding meta tags to your blog posts with OpenAI</title>
   <dc:creator>Lucas A. Meyer</dc:creator>
@@ -2206,28 +2288,6 @@ font-style: inherit;">0</span>]</span></code></pre></div>
   <guid>https://www.meyerperin.com/posts/2023-03-20-stable-diffusion-with-diffusers.html</guid>
   <pubDate>Mon, 20 Mar 2023 13:00:00 GMT</pubDate>
   <media:content url="https://www.meyerperin.com/images/ai_schnauzer.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>The data entry error that cost hundreds of millions</title>
-  <dc:creator>Lucas A. Meyer</dc:creator>
-  <link>https://www.meyerperin.com/posts/2022-12-08-mizuho-securities.html</link>
-  <description><![CDATA[ 
-
-
-
-<p>Have you ever had a bad day at work? On December 8th, 2005, a trader at Mizuho Securities in Japan probably had a worse one.</p>
-<p>That Thursday, a trader wanted to sell one share of J-Com for 610,000 yen (back then, this was about $3,600). However, when placing the order, they swapped the quantity and price, and ended up offering to sell 610,000 shares for 1 yen each. The company tried to cancel the order on the Tokyo Stock Exchange unsuccessfuly. People scooped the cheaply priced stock and resold it for instant profit.</p>
-<p>The next day, the president of Mizuho said in a press release: “Someone unintentionally ignored the alerts.” It’s a good sign that there were alerts.</p>
-<p>Every December 8th, I raise a glass to that unnamed trader and count my blessings.</p>
-
-
-
- ]]></description>
-  <category>technology</category>
-  <category>cautionary tales</category>
-  <guid>https://www.meyerperin.com/posts/2022-12-08-mizuho-securities.html</guid>
-  <pubDate>Thu, 08 Dec 2022 14:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/mizuho-post.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
