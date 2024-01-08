@@ -8,7 +8,7 @@ description: How to create, configure and link a new App Service in Azure to a G
 image: /images/azure-web-app.png
 include-in-header: _msft-clarity.html
 page-layout: full
-title: Creating an Azure Web App with Authentication and Authorization
+title: Creating an Azure Web App with Authentication
 toc: true
 toc-expand: true
 
