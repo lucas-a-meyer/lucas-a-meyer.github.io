@@ -728,7 +728,7 @@ Note
 <h1>Project steps</h1>
 <p>The list below shows the steps I am taking to build this app. I will update this list as I make progress.</p>
 <ul class="task-list">
-<li><input type="checkbox" checked=""><a href="2024-01-07-thread_manager_step_01.qmd">Create an Azure Web App with Authentication and Basic Authorization</a></li>
+<li><input type="checkbox" checked=""><a href="../posts/2024-01-07-app-with-authorization.html">Create an Azure Web App with Authentication and Basic Authorization</a></li>
 <li><input type="checkbox">Create a user database in Cosmos DB and link it to authentication</li>
 <li><input type="checkbox">Create a user profile page</li>
 <li><input type="checkbox">Connect to the LinkedIn API</li>
