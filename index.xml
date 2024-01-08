@@ -14,7 +14,7 @@
 <item>
   <title>Creating an Azure Web App with Authentication and Authorization</title>
   <dc:creator>Lucas A. Meyer</dc:creator>
-  <link>https://www.meyerperin.com/posts/2024-01-07-thread_manager_step_01.html</link>
+  <link>https://www.meyerperin.com/posts/2024-01-07-app-with-authorization.html</link>
   <description><![CDATA[ 
 
 
@@ -94,7 +94,7 @@ font-style: inherit;">]</span></span></code></pre></div>
 </section>
 <section id="code-walkthrough" class="level2">
 <h2 class="anchored" data-anchor-id="code-walkthrough">Code walkthrough</h2>
-<p>The code is for a <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> Web App. Flask is a Python framework for building web apps. I decided to use it instead of other alternatives like Angular or NextJS because it allows me to use Python, which is the language I’m most familiar with. The code is in the <code>app.py</code> file, and I will walk through it below. I also created an <code>app_config.py</code> file to store the configuration variables, which you can see in GitHub <a href="https://github.com/lucas-a-meyer/thread-manager/blob/main/app_config.py">here</a>. I will not walk through the <code>app_config.py</code> file, because it is just a file to store the configuration variables.</p>
+<p>The code is for a <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> Web App. Flask is a Python framework for building web apps. I decided to use it instead of other alternatives like Angular or NextJS because it allows me to use Python, which is the language I’m most familiar with. The code is in the <a href="https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/app.py"><code>app.py</code></a> file, and I will walk through it below. I also created an <code>app_config.py</code> file to store the configuration variables, which you can see in GitHub <a href="https://github.com/lucas-a-meyer/thread-manager/blob/main/app_config.py">here</a>. I will not walk through the <code>app_config.py</code> file, because it is just a file to store the configuration variables.</p>
 <section id="the-app.py-file" class="level3">
 <h3 class="anchored" data-anchor-id="the-app.py-file">The app.py file</h3>
 <p>The first thing we do is import the libraries we will use. The <code>identity.web</code> library is the one that does the authentication. The <code>requests</code> library is used to make HTTP requests. The <code>Flask</code> library is the framework we are using to build the web app. The <code>redirect</code>, <code>render_template</code>, <code>request</code>, <code>session</code>, and <code>url_for</code> libraries are all from Flask. The <code>Session</code> library is used to store the session information. The <code>app_config</code> library is the one we created to store the configuration variables.</p>
@@ -205,7 +205,9 @@ font-style: inherit;">=</span>app.config[<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"CLIENT_SECRET"</span>],</span>
 <span id="cb3-16">)</span></code></pre></div>
-<p>The next thing we do is create a route for the login page. The <code>@app.route("/login")</code> is a decorator that tells Flask that the function below it is a route for the login page. The <code>render_template</code> function renders the <code>login.html</code> template, which is the login page. The important line in the login template is [line 19], which simply redirects the user to the <code>auth_response</code> route. The <code>auth.log_in</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the information needed to log in. The <code>scopes</code> parameter is used to specify the permissions that the user needs to consent to. The <code>redirect_uri</code> parameter is optional, must match the redirect URI registered in the Azure Portal. The <code>prompt</code> parameter is also optional, and it can take different values, which are defined in <a href="https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest">this link</a>.</p>
+<p>The next thing we do is create a route for the login page. The <code>@app.route("/login")</code> is a decorator that tells Flask that the function below it is a route for the login page. The <code>render_template</code> function renders the <code>login.html</code> template, which is the login page.</p>
+<p>The important line in the login template is <a href="https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/login.html#L19">line 19</a>, which initiates the login process by directing the user to the <code>auth_response</code>route, which is the same as <code>app_config.REDIRECT_PATH</code>.</p>
+<p>The <code>auth.log_in</code> function comes from the <code>identity.web</code> library, and returns a dictionary with the information needed to log in. The <code>scopes</code> parameter is used to tell the user what the app will be able to do on their behalf (in my case, just read their basic information). The <code>redirect_uri</code> parameter is optional, must match the redirect URI registered in the Azure Portal. The <code>prompt</code> parameter is also optional, and it can take different values, which are defined in <a href="https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest">this link</a>.</p>
 <p>If the authentication is successful, the <code>auth_response</code> route will be called. If the authentication is not successful, the <code>auth_error.html</code> template will be rendered.</p>
 <div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="at" style="color: #657422;
 background-color: null;
@@ -242,11 +244,9 @@ font-style: inherit;">True</span>), </span>
 background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"select_account"</span>,  <span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Optional. More values defined in  https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest</span></span>
+font-style: inherit;">"select_account"</span>,  </span>
 <span id="cb4-7">        ))</span></code></pre></div>
-<p>The next thing we do is create a route for the <code>auth_response</code> page. The <code>@app.route(app_config.REDIRECT_PATH)</code> is a decorator that tells Flask that the function below it is a route for the <code>auth_response</code> page. The <code>auth.complete_log_in(request.args)</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the information needed to complete the log in. The <code>redirect</code> function redirects the user to the <code>index</code> route. The <code>url_for</code> function is from Flask, and it returns the URL for the <code>index</code> route, the initial page of my application.</p>
+<p>The next thing we do is create a route for the <code>auth_response</code> page. The <code>auth.complete_log_in(request.args)</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the result of the log in process, which can be successful or an error, in which case it will contain an error message.</p>
 <div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">@app.route</span>(app_config.REDIRECT_PATH)</span>
@@ -275,7 +275,9 @@ background-color: null;
 font-style: inherit;">return</span> redirect(url_for(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"index"</span>))</span></code></pre></div>
-<p>If the login was successful, we show the <a href="https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/index.html">index page</a>, which lists the information we collected about the user from the authentication provider. I am only using Microsoft Accounts (formerly Live, currently used in Xbox and Outlook.com) as the authentication provider for now. I may add Google Accounts later, but I don’t intend to manage my own authentication, even though the code supports it. From the Microsoft Accounts authentication provider I display the user name and subscription ID in the index page. The <code>auth.get_user()</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the information about the user. The <code>render_template</code> function renders the <code>index.html</code> template, which is the index page. The <code>user</code> parameter is used to pass the user information to the template. The <code>version</code> parameter is used to pass the version information to the template.</p>
+<p>If the login was successful, we show the <a href="https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/index.html">index page</a>, which lists the information we collected about the user from the authentication provider.</p>
+<p>I am only using Microsoft Accounts (formerly Live, currently used in Xbox and Outlook.com) as the authentication provider for now. I may add Google Accounts later, but I don’t intend to manage my own authentication, even though the code supports it.</p>
+<p>I call the function <code>auth.get_user()</code> from the <code>identity.web</code> library, and it returns a dictionary with the information about the user. The <code>render_template</code> function renders the <code>index.html</code> template, which is the index page. The <code>user</code> parameter is used to pass the user information to the template. The index page will display the user name and the subscription ID.</p>
 <div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">@app.route</span>(<span class="st" style="color: #20794D;
@@ -331,7 +333,7 @@ font-style: inherit;">"__main__"</span>:</span>
 </section>
 
  ]]></description>
-  <guid>https://www.meyerperin.com/posts/2024-01-07-thread_manager_step_01.html</guid>
+  <guid>https://www.meyerperin.com/posts/2024-01-07-app-with-authorization.html</guid>
   <pubDate>Sun, 07 Jan 2024 08:00:00 GMT</pubDate>
   <media:content url="https://www.meyerperin.com/images/azure-web-app.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
@@ -726,7 +728,7 @@ Note
 <h1>Project steps</h1>
 <p>The list below shows the steps I am taking to build this app. I will update this list as I make progress.</p>
 <ul class="task-list">
-<li><input type="checkbox" checked=""><a href="../posts/2024-01-07-thread_manager_step_01.html">Create an Azure Web App with Authentication and Basic Authorization</a></li>
+<li><input type="checkbox" checked=""><a href="2024-01-07-thread_manager_step_01.qmd">Create an Azure Web App with Authentication and Basic Authorization</a></li>
 <li><input type="checkbox">Create a user database in Cosmos DB and link it to authentication</li>
 <li><input type="checkbox">Create a user profile page</li>
 <li><input type="checkbox">Connect to the LinkedIn API</li>
