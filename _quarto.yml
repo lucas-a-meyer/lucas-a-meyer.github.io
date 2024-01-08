@@ -29,7 +29,7 @@ website:
       - text: "Reviews"
         file: reviews.qmd
       - text: "Using Quarto"
-        file: using_quarto/index.qmd
+        href: using_quarto/
       - text: "GitHub Repositories" 
         menu:
           - text: "OpenAI Vision API with the Semantic Kernel"

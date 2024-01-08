@@ -1,3 +1,0 @@
-## Screenshot of website
-
-![](images/website.png)
