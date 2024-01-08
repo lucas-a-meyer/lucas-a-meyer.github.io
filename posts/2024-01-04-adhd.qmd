@@ -87,7 +87,7 @@ On January 8th, 2024, I had the second meeting with the psychologist. This meeti
 
 The test is similar to the IVA-AE2 test I did for the first meeting. It repeatedly shows images of several playing cards, but I have to identify a specific one (the Ace of Hearts) and press the space bar when I see it, while a lot of distractions happen simultaneously. The test takes 18 minutes to complete, and is also somewhat stressful and tiring.
 
-I downloaded a demo from their website and edited the video to show a snipped of only the most difficult part below. 
+I downloaded a demo from their website and edited the video to show a 15-second snippet of the most difficult part below. 
 
 {{< video https://www.youtube.com/watch?v=a3h038jjoIg >}}
 
