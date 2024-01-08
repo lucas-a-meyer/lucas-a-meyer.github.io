@@ -1,7 +1,7 @@
 ---
 author: Lucas A. Meyer
 date: 2024-01-07
-draft: true
+draft: false
 description: How to create, configure and link a new App Service in Azure to a GitHub
   repository, configure Microsoft Entra ID and sync it with a web app, and how to
   set up environment variables within the App Service.
