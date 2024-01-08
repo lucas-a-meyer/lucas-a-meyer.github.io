@@ -35,11 +35,26 @@ Important
 </div>
 </div>
 <p>From the defaults, I changed the App plan to a cheaper plan. The free plan (F1) also works. I also configured the app to use the Python 3.11 runtime, which is the version I’m using to develop.</p>
-<p>I then <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github">configured the app to sync with GitHub</a>, so that I can push code to GitHub and have it automatically deployed to the App Service.</p>
+<p>I then <a href="https://learn.microsoft.com/en-us/azure/app-service/deploy-continuous-deployment?tabs=github">configured the app to sync with GitHub for continuous deployment</a>, so that the app automatically updates in production when I push changes to GitHub. I simply followed the instructions on the link, which are very straightfoward: I selected GitHub as the source, authorized Azure to access my GitHub account, selected the repository and branch, and then selected the option to deploy the code automatically when I push changes to GitHub.</p>
 <section id="configuring-microsoft-entra-id-and-linking-the-app" class="level2">
 <h2 class="anchored" data-anchor-id="configuring-microsoft-entra-id-and-linking-the-app">Configuring Microsoft Entra ID and Linking the App</h2>
-<p>I followed the instructions at <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in?tabs=windows">Quickstart: Sign in users and call the Microsoft Graph API from a Python web app</a>. The instructions will tell you where to find the <code>CLIENT_ID</code> and how to generate a <code>CLIENT_SECRET</code> for the app. The <code>AUTHORITY</code> needs to be set to <code>AUTHORITY="https://login.microsoftonline.com/&lt;tenant_id&gt;"</code>. I obtained the <code>tenant_id</code> from the Azure Portal, in the Overview page of Microsoft Entra ID.</p>
+<p>Ultimately, I want to ensure that users are only allowed to see the app if they are authorized. To do this, I will use Microsoft Entra ID to authenticate users. To get to that, we first need to <strong><em>authenticate</em></strong> the users, and then <strong><em>authorize</em></strong> them to access the app. This post is about the authentication part.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Authentication is the process of verifying a user’s identity, typically using credentials like usernames and passwords. Authorization, on the other hand, determines if an authenticated user has permissions to access certain resources or perform specific actions. While authentication confirms who the user is, authorization decides what an authenticated user is allowed to do. Authentication is the first step, necessary before authorization can be applied to manage access and permissions.</p>
+</div>
+</div>
+<p>To create an app that does authentication, I followed the instructions at <a href="https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-python-sign-in?tabs=windows">Quickstart: Sign in users and call the Microsoft Graph API from a Python web app</a>. The instructions will tell you where to find the <code>CLIENT_ID</code> and how to generate a <code>CLIENT_SECRET</code> for the app. The <code>AUTHORITY</code> needs to be set to <code>AUTHORITY="https://login.microsoftonline.com/&lt;tenant_id&gt;"</code>, which I obtained from the Azure Portal, in the Overview page of Microsoft Entra ID.</p>
 <p>I downloaded the full code for the app, and the only change I had to make was to create an <code>.env</code> file with the variables described above. This is not required for the app to run on the web, but it helps when running locally.</p>
+<p>The <code>.env</code> file should look like this:</p>
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="va" style="color: #111111;
 background-color: null;
 font-style: inherit;">CLIENT_ID</span><span class="op" style="color: #5E5E5E;
@@ -76,6 +91,233 @@ font-style: inherit;">]</span></span></code></pre></div>
 <p>The instructions don’t mention this, but after finishing the instructions, you also have to link the Entra ID configuration to the Web App you created in the first step. To do this, go to the Azure Portal, open the App Service, go to the “Authentication” tab, and click on “Microsoft” under “Identity providers”. Then, select the “Existing App” tab and select the app you created in the previous step.</p>
 <p>The final connection step was to set up the environment variables <code>CLIENT_ID</code>, <code>CLIENT_SECRET</code> and <code>AUTHORITY</code> in the App Service. I followed the instructions on <a href="https://docs.microsoft.com/en-us/azure/app-service/configure-common#configure-app-settings">this link</a> to set the environment variables in the Web App to the same values present in the .env file.</p>
 <p>Once I did all this, I pushed my code to GitHub and it was automatically deployed to the App Service.</p>
+</section>
+<section id="code-walkthrough" class="level2">
+<h2 class="anchored" data-anchor-id="code-walkthrough">Code walkthrough</h2>
+<p>The code is for a <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> Web App. Flask is a Python framework for building web apps. I decided to use it instead of other alternatives like Angular or NextJS because it allows me to use Python, which is the language I’m most familiar with. The code is in the <code>app.py</code> file, and I will walk through it below. I also created an <code>app_config.py</code> file to store the configuration variables, which you can see in GitHub <a href="https://github.com/lucas-a-meyer/thread-manager/blob/main/app_config.py">here</a>. I will not walk through the <code>app_config.py</code> file, because it is just a file to store the configuration variables.</p>
+<section id="the-app.py-file" class="level3">
+<h3 class="anchored" data-anchor-id="the-app.py-file">The app.py file</h3>
+<p>The first thing we do is import the libraries we will use. The <code>identity.web</code> library is the one that does the authentication. The <code>requests</code> library is used to make HTTP requests. The <code>Flask</code> library is the framework we are using to build the web app. The <code>redirect</code>, <code>render_template</code>, <code>request</code>, <code>session</code>, and <code>url_for</code> libraries are all from Flask. The <code>Session</code> library is used to store the session information. The <code>app_config</code> library is the one we created to store the configuration variables.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> identity.web</span>
+<span id="cb2-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb2-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> flask <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> Flask, redirect, render_template, request, session, url_for</span>
+<span id="cb2-4"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> flask_session <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> Session</span>
+<span id="cb2-5"></span>
+<span id="cb2-6"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> app_config</span>
+<span id="cb2-7"></span>
+<span id="cb2-8">__version__ <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"0.7.0"</span>  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># The version of this sample, for troubleshooting purpose</span></span>
+<span id="cb2-9"></span>
+<span id="cb2-10">app <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> Flask(<span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">__name__</span>)</span>
+<span id="cb2-11">app.config.from_object(app_config)</span>
+<span id="cb2-12"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">assert</span> app.config[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"REDIRECT_PATH"</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"REDIRECT_PATH must not be /"</span></span></code></pre></div>
+<p>The next thing we do is create a session. This is used to store the session information. The <code>Session</code> library is used to store the session information. The <code>app.jinja_env.globals.update(Auth=identity.web.Auth)</code> is not used in my code.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">Session(app)</span>
+<span id="cb3-2"></span>
+<span id="cb3-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># This section is needed for url_for("foo", _external=True) to automatically</span></span>
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># generate http scheme when this sample is running on localhost,</span></span>
+<span id="cb3-5"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># and to generate https scheme when it is deployed behind reversed proxy.</span></span>
+<span id="cb3-6"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># See also https://flask.palletsprojects.com/en/2.2.x/deploying/proxy_fix/</span></span>
+<span id="cb3-7"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> werkzeug.middleware.proxy_fix <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> ProxyFix</span>
+<span id="cb3-8">app.wsgi_app <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> ProxyFix(app.wsgi_app, x_proto<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>, x_host<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>)</span>
+<span id="cb3-9"></span>
+<span id="cb3-10">app.jinja_env.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">globals</span>.update(Auth<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>identity.web.Auth)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Useful in template for B2C</span></span>
+<span id="cb3-11">auth <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> identity.web.Auth(</span>
+<span id="cb3-12">    session<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>session,</span>
+<span id="cb3-13">    authority<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>app.config[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"AUTHORITY"</span>],</span>
+<span id="cb3-14">    client_id<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>app.config[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CLIENT_ID"</span>],</span>
+<span id="cb3-15">    client_credential<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>app.config[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CLIENT_SECRET"</span>],</span>
+<span id="cb3-16">)</span></code></pre></div>
+<p>The next thing we do is create a route for the login page. The <code>@app.route("/login")</code> is a decorator that tells Flask that the function below it is a route for the login page. The <code>render_template</code> function renders the <code>login.html</code> template, which is the login page. The important line in the login template is [line 19], which simply redirects the user to the <code>auth_response</code> route. The <code>auth.log_in</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the information needed to log in. The <code>scopes</code> parameter is used to specify the permissions that the user needs to consent to. The <code>redirect_uri</code> parameter is optional, must match the redirect URI registered in the Azure Portal. The <code>prompt</code> parameter is also optional, and it can take different values, which are defined in <a href="https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest">this link</a>.</p>
+<p>If the authentication is successful, the <code>auth_response</code> route will be called. If the authentication is not successful, the <code>auth_error.html</code> template will be rendered.</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@app.route</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/login"</span>)</span>
+<span id="cb4-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> login():</span>
+<span id="cb4-3">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> render_template(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"login.html"</span>, version<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>__version__, <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">**</span>auth.log_in(</span>
+<span id="cb4-4">        scopes<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>app_config.SCOPE, <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Have user consent to scopes during log-in</span></span>
+<span id="cb4-5">        redirect_uri<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>url_for(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auth_response"</span>, _external<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">True</span>), </span>
+<span id="cb4-6">        prompt<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"select_account"</span>,  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Optional. More values defined in  https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest</span></span>
+<span id="cb4-7">        ))</span></code></pre></div>
+<p>The next thing we do is create a route for the <code>auth_response</code> page. The <code>@app.route(app_config.REDIRECT_PATH)</code> is a decorator that tells Flask that the function below it is a route for the <code>auth_response</code> page. The <code>auth.complete_log_in(request.args)</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the information needed to complete the log in. The <code>redirect</code> function redirects the user to the <code>index</code> route. The <code>url_for</code> function is from Flask, and it returns the URL for the <code>index</code> route, the initial page of my application.</p>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@app.route</span>(app_config.REDIRECT_PATH)</span>
+<span id="cb5-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> auth_response():</span>
+<span id="cb5-3">    result <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> auth.complete_log_in(request.args)</span>
+<span id="cb5-4">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"error"</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">in</span> result:</span>
+<span id="cb5-5">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> render_template(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auth_error.html"</span>, result<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>result)</span>
+<span id="cb5-6">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> redirect(url_for(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"index"</span>))</span></code></pre></div>
+<p>If the login was successful, we show the <a href="https://github.com/lucas-a-meyer/thread-manager/blob/65a6fe606281ab89b55b9e6add9fd476c3b0d024/templates/index.html">index page</a>, which lists the information we collected about the user from the authentication provider. I am only using Microsoft Accounts (formerly Live, currently used in Xbox and Outlook.com) as the authentication provider for now. I may add Google Accounts later, but I don’t intend to manage my own authentication, even though the code supports it. From the Microsoft Accounts authentication provider I display the user name and subscription ID in the index page. The <code>auth.get_user()</code> function is from the <code>identity.web</code> library, and it returns a dictionary with the information about the user. The <code>render_template</code> function renders the <code>index.html</code> template, which is the index page. The <code>user</code> parameter is used to pass the user information to the template. The <code>version</code> parameter is used to pass the version information to the template.</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">@app.route</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span>)</span>
+<span id="cb6-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">def</span> index():</span>
+<span id="cb6-3">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">not</span> auth.get_user():</span>
+<span id="cb6-4">        <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> redirect(url_for(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"login"</span>))</span>
+<span id="cb6-5">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">return</span> render_template(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'index.html'</span>, user<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>auth.get_user(), version<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>__version__)</span>
+<span id="cb6-6"></span>
+<span id="cb6-7"><span class="cf" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">if</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">__name__</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"__main__"</span>:</span>
+<span id="cb6-8">    app.run()</span></code></pre></div>
+</section>
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
 <p>I navigated to the app URL and was able to sign in with my Microsoft account. I was then redirected to the app, where I could see the information about my login.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
