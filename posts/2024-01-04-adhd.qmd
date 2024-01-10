@@ -2,8 +2,8 @@
 aliases:
 - /articles/adhd.html
 author: Lucas A. Meyer
-date: 2024-01-08
-date-modified: 2024-01-08
+date: 2024-01-10
+date-modified: 2024-01-10
 description: Real-life experiences and struggles of a person with ADHD, the process
   of Adult ADHD diagnosis and consultations, the common symptoms of ADHD, the usefulness
   of certain technologies for coping with these symptoms, as well as general reactions
@@ -11,19 +11,17 @@ description: Real-life experiences and struggles of a person with ADHD, the proc
 image: /images/adhd_heading.png
 include-in-header: _msft-clarity.html
 page-layout: full
-title: Do I Have ADHD? (Work In Progress)
+title: Do I Have ADHD?
 toc: true
 toc-expand: true
 
 ---
 
-In October 2023, lots of people with ADHD started posting about their experiences on [Threads](https://www.threads.net). Have you ever commuted to work and forgot to bring your laptop? Check. Do you frequently procrastinate a simple two-minute task for several days? Check. 
+In October 2023, lots of people with ADHD started posting about their experiences on [Threads](https://www.threads.net). Have you ever commuted to work and forgot to bring your laptop? Check. Do you frequently procrastinate a simple two-minute task for several days? Check. Another person I conneced with through LinkedIn also posts about her experience.
 
 As I started seeing a [lot of myself](#symptoms) in their experiences, and realized that I developed several coping mechanisms and acquired several [coping technologies](#coping-technologies) over time, I decided to go for a full diagnosis. 
 
 ::: {.callout-important}
-This is a work in progress and it's still being updated as I go through the process.
-
 **I am not a doctor. I am a computer scientist and economist. This is not medical advice. If you suspect you have ADHD, you should talk to a medical professional, like I did.**
 :::
 
@@ -77,7 +75,7 @@ The whole meeting lasted about 40 minutes. We scheduled the appointment for the 
 
 He then gave me three more tests to fill out on my own time, which I did later at night on that same day.
 
-- **A personality test with over 250 questions:** the test asked a lot about whether I can control other people's minds, whether I think they control my mind, and how frequently I think about suicide. It also repeated several questions about the [usual ADHD symptoms](https://www.cdc.gov/ncbddd/adhd/diagnosis.html). It would ask "Do you always feel distracted?" and offer four options for me to choose (False, Slightly True, Mostly True, True). Later, it would ask "Do you frequently feel distracted?", and show the four options again. This one took a while to get through.
+- **A personality test with 344 questions:** the test asked a lot about whether I can control other people's minds, whether I think they control my mind, and how frequently I think about suicide. It also repeated several questions about the [usual ADHD symptoms](https://www.cdc.gov/ncbddd/adhd/diagnosis.html). It would ask "Do you always feel distracted?" and offer four options for me to choose (False, Slightly True, Mostly True, True). Later, it would ask "Do you frequently feel distracted?", and show the four options again. This one took a while to get through.
 - **[The Big Five personality test](https://en.wikipedia.org/wiki/Big_Five_personality_traits):** a standard personality test with about 50 questions, which was somewhat quick to get through.
 - **An attention test called [IVA-AE2](https://www.braintrain.com/ivaae2/):** this test repeatedly shows an image of a number and speaks another number. For example, it can show 2 and speak "six". You are assigned two different target numbers, one to click when you see it and another to click when you hear it. It then speaks and shows random numbers for 20 minutes. For example, if you are assigned the number "3 when seen" and "5 when heard", you should click if it shows 3 and speaks 6, you should also click if it shows 2 and speaks 5, but you should not click when it shows 5 and speaks 3. I think it's pretty normal to make the mistake of clicking when you hear the number you're supposed to click only when you see and vice-versa, and I'm sure I made plenty of mistakes, but I think most people would. This test was very tiring.
 
@@ -101,6 +99,29 @@ I imagine the first question was related to my reaction time, but I'm probably o
 
 We ended the second meeting somewhat early, after just 30 minutes, and scheduled the feedback meeting for Wednesday January 10th, 2024.
 
+# The Third Meeting: The Diagnosis
+
+The doctor I used, Dr. Richard Wemhoff, Ph.D., from [Emmaus Counseling Center](https://www.emmauscounseling.net/), is a specialist in **adult** ADHD diagnosis. If you read the whole process above, you will see that it was very comprehensive. He goes through ten steps, seven of which are questionnaires. I'll describe the process and the final diagnosis below.
+
+1. **Do your symptoms get in the way of your personal or work life:** although this is a simple question, it's an important one. For me, the answer was yes.
+2. **Did this happen when you were young:** again, this was true in my case. ADHD that appears in adulthood is unusual, and it's important to rule out other causes.
+3. **[Brown ADD Scales](https://l.meyerperin.com/badds):** this test goes from a scale of 0 to 120. 0-40 means ADHD is unlikely. 41 to 55 means is possible, and 56+ means it's likely. I scored 67, and it was significant in all the five components: attention, activation, emotion, memory, and effort. One interesting thing is that if some components are too significant, this may indicate a different condition. For example, a high score on emotion (meaning that the person is feeling very bad about the symptoms) may indicate depression. That was not my case in any of the components.
+4. **DSM-5**: a set of 18 questions, 9 to screen for inattention and 9 to screen for hyperactivity. I scored 7/9 on inattention and 8/9 on hyperactivity, again, indicative of ADHD. There are three types of ADHD: innatentive, hyperactive, and combined. I scored high on both, so, according to this test, I'm likely to have combined ADHD.
+5. **Can the symptoms be due to another condition?** This is where the long tests done after the first meeting come into play. He scored the results and I don't seem to have any other condition. The only thing that was a little above average was "social detachment", but still within normal range.
+6. **Family history:** ADHD tends to run in families. My mom has some condition, as of yet undiagnosed. My kids have ADHD symptoms and given a screening, they should be tested, so there's definitely a family history.
+7. **[Adult ADHD Self-Report Scale (ASRS)](https://l.meyerperin.com/asrs):** an 18-question test, similar but not exactly the same as DSM-5. This also resulted in a high score, and it's a good indicator of ADHD.
+8. **[MOXO d-CPT ADHD Assessment](https://moxo.neurotech-solutions.com/patients/):** this is the test I did in the second meeting, and is considered to be very precise. I scored "ADHD present". The test has four components. I only had a normal score on "impulsiveness", meaning I'm not overly impulsive. I scored below average on "attentiveness", and far below average on "timeliness" and "hyper reactivity". This last one means that I overreact to distractions, and I felt it in my soul.
+9. **An attention test called [IVA-AE2](https://www.braintrain.com/ivaae2/):** to everyone's surprise, I passed on this test. The doctor said that this is not that unusual, people with ADHD can hyperfocus. 
+10. **[Autism Spectrum Quotient (AQ)](https://l.meyerperin.com/aq)**: this is a test to screen for autism, not to diagnose it. Autism is present in 25% of the ADHD cases, so it's important to rule it out. I scored way above the cut-off range, which means that I also need to be evaluated for autism. 
+
+In summary, the result is that I definitely have ADHD, and that information was sent to my PCP to discuss treatment options, which may include medicine. I also need to be evaluated for autism, which is a different process that I will document in a different article. The doctor also said that I should be proud of myself for having accomplished the things I did in life given my condition, and that things should improve a lot when I start treatment.
+
+# Do I recommend this process?
+
+During this whole process, I felt conflicted. End-to-end, it took months, and for a while I was so distracted with other things that I ended up delaying my diagnosis. I heard stories of people that get their diagnosis very quickly, in a single appointment. My process had several steps, and I had to do a lot of tests, and I was not sure if it was going to be worth it. 
+
+There is, however, an immense advantage in going through a process that was so comprehensive. I feel very confident about the diagnosis. I know that I have ADHD, and I know that I don't have any other condition that masks the symptoms. And now I know what to do about it.
+ 
 # Coping Technologies
 
 Over time I acquired a lot of products to help me cope with the [symptoms](#symptoms). I will list them below:
@@ -118,6 +139,8 @@ Over time I acquired a lot of products to help me cope with the [symptoms](#symp
 # Reactions
 
 I posted about my experience in Threads, and I got a lot of reactions. Most people are supportive and describe their own experiences being diagnosed. Some people, however, are skeptical. They say that ADHD is overdiagnosed, and that it's a fad, or a quick excuse to be lazy and forgetful. While I disagree, I have seen some websites that promise a "quick and easy" diagnosis and to get you medications fast. It feels similar to advertisements for Viagra and off-label Ozempic.
+
+Overall, having documented this process through posts has been a good experience, and I really hope it helps other people.
 
 # What about you?
 
