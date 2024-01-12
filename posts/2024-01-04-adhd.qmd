@@ -134,7 +134,7 @@ Over time I acquired a lot of products to help me cope with the [symptoms](#symp
 - **[Wallet with keyring](https://l.meyerperin.com/keyring_wallet)**: A wallet with an attached keyring allows me to carry my badge, car and house keys, wallet, and an AirTag all together, making it hard for me to lose things.
 - **[S-biner carabiners](https://l.meyerperin.com/sbiner):** I use these to attach things to my backpack and to each other, so I have only one bundle of items to keep track of.
 - **[Ray-Ban Meta](https://l.meyerperin.com/rayban_meta):** works as a headset and as reading glasses. It also has a camera, which I use quite a lot, and an AI that I don't use as much yet.
-- **[ReMarkable 2](https://l.meyerperin.com/ReMarkable2):** during the years, I had (and lost) many notebooks and loose sheets of paper. The ReMarkable2 is an e-ink notebook that feels like a real notebook, but has a lot of capacity. I can also carry academic papers on it. 
+- **[Kindle Scribe](2024-01-12-kindle-scribe.qmd):** during the years, I had (and lost) many notebooks and loose sheets of paper. The Kindle Scribe is an e-ink notebook that feels like a real notebook, but has a lot of capacity. I can also carry academic papers on it. I used to have a reMarkable 2 but I changed to the Kindle Scribe because it solves a few more of my use cases. 
 - **[Pillbox](https://l.meyerperin.com/pillbox):** I use a pillbox to organize my vitamins and medications. I usually forget whether I took the medication or not a few hours after the time I was supposed to take it, so I use the pillbox to keep track of whether I took it or not.
 
 # Reactions
