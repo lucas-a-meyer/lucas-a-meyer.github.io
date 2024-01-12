@@ -12,11 +12,11 @@ toc-expand: true
 ---
 <article data-clarity-region="article">
 
-I recently replaced my [reMarkable 2](2023-12-31-remarkable2.qmd) e-tablet by a [Kindle Scribe](https://amzn.to/4aOKq33). The Kindle Scribe solves a couple more of the use cases that are important to me, which I will describe below.
+I recently replaced my [reMarkable 2](2023-12-31-remarkable2.qmd) e-tablet by a [Kindle Scribe](https://amzn.to/4aOKq33). The Scribe solves some of the problems I had with the reMarkable 2, and it is a better fit for my needs. In this post, I will describe what I use the Kindle Scribe for, and how it compares to the reMarkable 2.
 
 The Kindle Scribe is a tablet with an e-ink display, similar to the Kindle. It is designed to be used with a stylus, and it is marketed as a paper replacement, similar to the reMarkable 2.
 
-Although the reMarkable 2 worked ok for me, one of the problems I found in my [review](2023-12-31-remarkable2.qmd) was that it was not great for reading PDFs. The main problem for me was the lack of a backlight, which made it hard to read in low light conditions, and even in somewhat normal conditions — the contrast is not very good and not adjustable. The Kindle Scribe solves this problem. 
+Although the reMarkable 2 worked ok for me, one of the problems I found in my [review](2023-12-31-remarkable2.qmd) was that it was not great for reading PDFs of academic articles, even ones that are text-only. The main problem for me was the lack of a backlight, which made it hard to read in low light conditions, and even in somewhat normal conditions — the contrast is not very good and not adjustable. The Kindle Scribe solves this problem. 
 
 In addition, the Kindle Scribe gives you access to the Kindle store, which means you can read most books on it.
 
