@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Lucas A. Meyer">
-<meta name="dcterms.date" content="2024-01-05">
-<meta name="description" content="The process of developing a web app (Thread Manager) for scheduling posts across multiple social media platforms, utilizing technologies such as Azure, Python, Flask, and Bootstrap, alongside a narrative of the author’s software development journey.">
+<meta name="dcterms.date" content="2024-01-12">
+<meta name="description" content="My review of the Kindle Scribe, and how it compares to the reMarkable 2">
 
-<title>Lucas A. Meyer - Thread Manager - Managing Social Media</title>
+<title>Lucas A. Meyer - Replacing my reMarkable 2 with a Kindle Scribe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,17 +88,17 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Lucas A. Meyer - Thread Manager - Managing Social Media">
-<meta property="og:description" content="The process of developing a web app (Thread Manager) for scheduling posts across multiple social media platforms, utilizing technologies such as Azure, Python, Flask, and Bootstrap, alongside a narrative of the author’s software development journey.">
-<meta property="og:image" content="https://www.meyerperin.com/images/thread_manager_logo.png">
+<meta property="og:title" content="Lucas A. Meyer - Replacing my reMarkable 2 with a Kindle Scribe">
+<meta property="og:description" content="My review of the Kindle Scribe, and how it compares to the reMarkable 2">
+<meta property="og:image" content="https://www.meyerperin.com/images/kindle-scribe.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
-<meta property="og:image:height" content="1024">
-<meta property="og:image:width" content="1024">
-<meta name="twitter:title" content="Lucas A. Meyer - Thread Manager - Managing Social Media">
-<meta name="twitter:description" content="The process of developing a web app (Thread Manager) for scheduling posts across multiple social media platforms, utilizing technologies such as Azure, Python, Flask, and Bootstrap, alongside a narrative of the author’s software development journey.">
-<meta name="twitter:image" content="https://www.meyerperin.com/images/thread_manager_logo.png">
-<meta name="twitter:image-height" content="1024">
-<meta name="twitter:image-width" content="1024">
+<meta property="og:image:height" content="1009">
+<meta property="og:image:width" content="919">
+<meta name="twitter:title" content="Lucas A. Meyer - Replacing my reMarkable 2 with a Kindle Scribe">
+<meta name="twitter:description" content="My review of the Kindle Scribe, and how it compares to the reMarkable 2">
+<meta name="twitter:image" content="https://www.meyerperin.com/images/kindle-scribe.png">
+<meta name="twitter:image-height" content="1009">
+<meta name="twitter:image-width" content="919">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -194,9 +194,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-build-this" id="toc-why-build-this" class="nav-link active" data-scroll-target="#why-build-this">Why build this?</a></li>
-  <li><a href="#technology-choices" id="toc-technology-choices" class="nav-link" data-scroll-target="#technology-choices">Technology Choices</a></li>
-  <li><a href="#project-steps" id="toc-project-steps" class="nav-link" data-scroll-target="#project-steps">Project steps</a></li>
+  <li><a href="#what-problems-i-want-to-solve" id="toc-what-problems-i-want-to-solve" class="nav-link active" data-scroll-target="#what-problems-i-want-to-solve">What problems I want to solve?</a></li>
+  <li><a href="#how-does-the-kindle-scribe-solve-these-problems" id="toc-how-does-the-kindle-scribe-solve-these-problems" class="nav-link" data-scroll-target="#how-does-the-kindle-scribe-solve-these-problems">How does the Kindle Scribe solve these problems?</a></li>
+  <li><a href="#what-is-the-kindle-scribe-useful-for" id="toc-what-is-the-kindle-scribe-useful-for" class="nav-link" data-scroll-target="#what-is-the-kindle-scribe-useful-for">What is the Kindle Scribe useful for?</a></li>
+  <li><a href="#what-are-its-downsides" id="toc-what-are-its-downsides" class="nav-link" data-scroll-target="#what-are-its-downsides">What are its downsides?</a></li>
+  <li><a href="#conclusion-do-i-recommend-it" id="toc-conclusion-do-i-recommend-it" class="nav-link" data-scroll-target="#conclusion-do-i-recommend-it">Conclusion: do I recommend it?</a></li>
   </ul>
 </nav>
     <div class="quarto-margin-footer"><div class="margin-footer-item">
@@ -236,12 +238,12 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Thread Manager - Managing Social Media</h1>
+<h1 class="title">Replacing my reMarkable 2 with a Kindle Scribe</h1>
 </div>
 
 <div>
   <div class="description">
-    The process of developing a web app (Thread Manager) for scheduling posts across multiple social media platforms, utilizing technologies such as Azure, Python, Flask, and Bootstrap, alongside a narrative of the author’s software development journey.
+    My review of the Kindle Scribe, and how it compares to the reMarkable 2
   </div>
 </div>
 
@@ -258,7 +260,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2024</p>
+      <p class="date">January 12, 2024</p>
     </div>
   </div>
   
@@ -269,9 +271,54 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 </header>
 
 <article data-clarity-region="article">
-<p>Thread Manager a the web app I intend to use to schedule posts to social media sites and run basic analytics.</p>
-<p><strong>I’m starting from scratch</strong> as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.</p>
-<p>I intend to post about the process of building this app on <a href="https://www.threads.net">Threads</a> as I build it. The <a href="https://github.com/lucas-a-meyer/thread-manager">code for this app is on GitHub</a>.</p>
+<p>I recently replaced my <a href="../posts/2023-12-31-remarkable2.html">reMarkable 2</a> e-tablet by a <a href="https://amzn.to/4aOKq33">Kindle Scribe</a>. The Kindle Scribe solves a couple more of the use cases that are important to me, which I will describe below.</p>
+<p>The Kindle Scribe is a tablet with an e-ink display, similar to the Kindle. It is designed to be used with a stylus, and it is marketed as a paper replacement, similar to the reMarkable 2.</p>
+<p>Although the reMarkable 2 worked ok for me, one of the problems I found in my <a href="../posts/2023-12-31-remarkable2.html">review</a> was that it was not great for reading PDFs. The main problem for me was the lack of a backlight, which made it hard to read in low light conditions, and even in somewhat normal conditions — the contrast is not very good and not adjustable. The Kindle Scribe solves this problem.</p>
+<p>In addition, the Kindle Scribe gives you access to the Kindle store, which means you can read most books on it.</p>
+<section id="what-problems-i-want-to-solve" class="level1">
+<h1>What problems I want to solve?</h1>
+<p>These days, I can take handwritten notes in most of my devices. My main device is a Surface Laptop Studio 2, which folds into a tablet and has a stylus. I also have an iPad Pro 13” with a stylus, but my Surface mostly replaced it. However, I cannot do everything with my Surface Laptop Studio 2. Here are a few of the issues preventing it from being my only device:</p>
+<ul>
+<li>It is a little on the heavy side. It is heavier than the iPad Pro 13”, that many people already find too heavy for handwritten notes.</li>
+<li>Battery life is not great. I can get about 2-3 hours of battery life out of it, which is not enough for a full day of meetings.</li>
+<li>It is easy to get distracted by notifications and other apps on the device.</li>
+</ul>
+</section>
+<section id="how-does-the-kindle-scribe-solve-these-problems" class="level1">
+<h1>How does the Kindle Scribe solve these problems?</h1>
+<p>The Kindle Scribe solves these problems in the following ways:</p>
+<ul>
+<li>The Kindle Scribe is light. It is 433 grams (28g heavier than the reMarkable 2) and 5.8 mm (0.22inches) thick, 1.1 mm (0.02 inches) thicker than the reMarkable 2. For comparison, my iPad Pro 13” is 682 grams (1.5 pounds) and 5.9 mm (0.23 inches) thick. I can confortable use the Scribe to read in in bed, which I do often.</li>
+<li>It has a very long battery life. I charge it about once a week.</li>
+<li>The Kindle Scribe doesn’t bother me with notifications, and its browser is hidden and very limited, so I don’t get distracted by it. One advantage of having a browser is that you can use captive networks, such as the ones in hotels, which was a problem I had with the reMarkable 2. Frequently I had to connect to my phone’s hotspot to get my notes out of the reMarkable 2. I have not traveled with the Kindle Scribe yet, but I expect it to be easier to join captive networks.</li>
+</ul>
+</section>
+<section id="what-is-the-kindle-scribe-useful-for" class="level1">
+<h1>What is the Kindle Scribe useful for?</h1>
+<p>I have been using the Kindle Scribe for the following use cases:</p>
+<ul>
+<li><strong>Academic paper reading and annotation</strong>: This was my main goal, and where the Kindle Scribe succeeded and the reMarkable 2 fell a little short because of the lack of contrast and backlight. There is still one issue with the Kindle scribe: similar to the reMarkable, it has a 10.3” screen, smaller than A4 paper, so I need to read papers in landscape mode and scroll. I can write notes directly on the PDF, and highlight parts of the PDF. The highlights are saved to a file called “My Clippings”, in text format.</li>
+<li><strong>Reading books</strong>: A big advantage that the Kindle Scribe has over the reMarkable 2 is that the Scribe has my whole Kindle library. Although some books I read require the iPad, the vast majority are perfectly fine in the Scribe, and this has helped me read more.</li>
+<li><strong>Journaling</strong>: I have been using the Kindle Scribe for journaling almost every day. The writing experience is good. If I never had a reMarkable, I think I’d find it great, but the reMarkable definitely feels more like paper. The Kindle Scribe sometimes feels like it slides a little bit too easily, but it’s a lot better than my experience writing on the iPad or on the Surface Laptop Studio. One thing that helped was to change my default pen to “marker” or “fountain pen”.</li>
+<li><strong>Note-taking in meetings</strong>: I have taken the Kindle Scribe to meetings, and this allows me to focus a lot better. I have had no problem importing notes later - you can scan them and send them by email to yourself if you need to use your notes in an email, for example.</li>
+<li><strong>Writing down ideas</strong>: I have been using the Kindle Scribe to write ideas, similar to what I did with the reMarkable. I find it easier to use the Kindle Scribe, because I can do it in low light conditions (e.g., when my kids are watching a movie in the living room).</li>
+</ul>
+</section>
+<section id="what-are-its-downsides" class="level1">
+<h1>What are its downsides?</h1>
+<p>Here are some of the downsides:</p>
+<ul>
+<li><strong>Templates</strong>: the Kindle Scribe doesn’t have many templates. My preferred template on the reMarkable 2 was the “small dotted”, a template that had barely visible dots to guide lines The Scribe has a dotted template but the dots are quite big, I end up mostly using the blank template. Also, the reMarkable 2 has tons of interesting templates (e.g.&nbsp;“Cornell Notes”) for download. I couldn’t find those for the Kindle yet.</li>
+<li><strong>Size</strong>: Its 10” screen is a little small for reading PDFs. I have been reading a lot of academic papers on it, and it’s easier to do it on landscape mode, where it gets a little bigger, but requires scrolling. This is similar to my experience with the reMarkable 2.</li>
+<li><strong>Writing experience</strong>: This is very subjective, but the writing experience is not as good as the reMarkable 2. The reMarkable 2 feels more like paper, and the Kindle Scribe feels a little more slippery. However, it’s still a lot better than writing on the iPad or on the Surface Laptop Studio.</li>
+<li><strong>Drawing mode</strong>: In the reMarkable, if you hold the pen for a few seconds, it switches to drawing mode, where you can draw shapes. I used this a lot to draw boxes and arrows. The Kindle Scribe doesn’t have this feature, so I have to draw boxes and arrows by hand with my low drawing skills.</li>
+<li><strong>No page turn buttons</strong>: some Kindles have page turn buttons, but the Kindle Scribe doesn’t. I don’t mind this, but some people do.</li>
+</ul>
+</section>
+<section id="conclusion-do-i-recommend-it" class="level1">
+<h1>Conclusion: do I recommend it?</h1>
+<p>I feel much better recommending the Kindle Scribe than the reMarkable 2 to most people. Besides solving more problems, the Scribe is cheaper than the reMarkable 2. I bought my Kindle Scribe with a premium pen for $299, while the reMarkable can easily get to $429. The materials used in the Kindle Scribe feel cheaper than the reMarkable 2, but it has more storage, a backlight, and access to the Kindle store. Being pragmatic, I think the Kindle Scribe is a better device for most people.</p>
+<p>If your regular Kindle is due for an update, it may be worth it to get the Kindle Scribe instead. I think it is a good device for people who want to read academic papers and books, and take notes on them. It is also a good device for people who want to replace their Moleskines and loose paper sheets.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -282,38 +329,10 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is purely a hobby project. I have a lot of personal commitments and I’ll build this very slowly, as time allows.</p>
+<p>Links to Amazon.com are affiliate links. These help the site stay online.</p>
 </div>
 </div>
-<section id="why-build-this" class="level1">
-<h1>Why build this?</h1>
-<p>In 2021, I was writing a lot on LinkedIn, but I was limited by LinkedIn’s post formatting being mostly text — no inline images, no code. To have images and code, I started writing more on my blog, but usually finished my posts in the middle of the night, and I wanted to schedule them to post the next morning. I also wanted to be able to post to multiple social media sites at once. I created a simple app to post to LinkedIn, Twitter and Mastodon, and it worked well enough for my needs.</p>
-<p>Now, in 2024, I’m using Threads a lot more, and an API is probably going to be available in 2024. I want to be able to schedule my blog posts to post to Threads, and I also want to share my journey learning the Threads API.</p>
-</section>
-<section id="technology-choices" class="level1">
-<h1>Technology Choices</h1>
-<p>Since I work at Microsoft, I am more familiar with Azure than other cloud providers. And since I work in data science, I am more familiar with Python.</p>
-<p>My intended technology stack is:</p>
-<ul>
-<li>Azure App Service to host the app</li>
-<li>Azure Cosmos DB to host the data</li>
-<li>Azure Functions for the scheduled job (using Python)</li>
-<li>Python Flask for the web app, with Bootstrap helping make the UI better</li>
-<li><a href="https://www.quarto.org">Quarto</a> for the blog posts</li>
-<li>GitHub Pages to hold the blog posts</li>
-</ul>
-</section>
-<section id="project-steps" class="level1">
-<h1>Project steps</h1>
-<p>The list below shows the steps I am taking to build this app. I will update this list as I make progress.</p>
-<ul class="task-list">
-<li><input type="checkbox" checked=""><a href="2024-01-07-app-with-authentication.qmd">Create an Azure Web App with Authentication and Basic Authorization</a></li>
-<li><input type="checkbox">Create a user database in Cosmos DB and link it to authentication</li>
-<li><input type="checkbox">Create a user profile page</li>
-<li><input type="checkbox">Connect to the LinkedIn API</li>
-<li><input type="checkbox">Enable a basic text post to LinkedIn</li>
-</ul>
-There will be more steps, and I’ll add them as I go.
+<p>You can buy the Kindle Scribe at <a href="https://amzn.to/4aOKq33">Amazon</a>.</p>
 </section></article>
 
 
