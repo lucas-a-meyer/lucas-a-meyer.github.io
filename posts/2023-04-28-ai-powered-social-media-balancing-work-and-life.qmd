@@ -9,8 +9,9 @@ draft: true
 image: /images/diffused_robot-blog-post.png
 include-in-header: _msft-clarity.html
 title: AI-Powered Social Media- Balancing Work and Life
-
 ---
+<article data-clarity-region="article">
+
 
 We all know the struggle of balancing a hectic work life with a bustling personal life, especially when you have three kids and countless other responsibilities. So, when a friend from work noticed I was posting on LinkedIn during my vacation, they couldn't help but ask if I was ruining my time off by staying connected. The truth is, I've developed a ridiculously complicated posting system that not only keeps me active online but also helps me learn and have fun in the process.
 
@@ -21,3 +22,4 @@ Once the content is polished and ready, it's saved in Azure Cosmos DB, along wit
 Now, you might be wondering if I'll eventually use Reinforcement Learning and Semantic Kernel to completely automate what I do in social media. While I'm considering doing some of this, I'd likely only use this approach for a small percentage of posts, just to test the waters.
 
 In the end, unless you're genuinely passionate about learning and experimenting, automating your social media posting like this might not be worth the effort. But for me, it's an exciting way to dive deeper into the world of AI while staying connected with my professional network, even during my well-deserved vacations.
+</article>

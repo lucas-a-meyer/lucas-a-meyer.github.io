@@ -8,8 +8,9 @@ draft: true
 image: /images/diffused_career_garden.png
 include-in-header: _msft-clarity.html
 title: 'The Productivity of Patience: What Gardening Taught Me About Career Growth'
-
 ---
+<article data-clarity-region="article">
+
 
 LinkedIn is an incredible platform to learn new skills and grow in your career. With so many promises of quick knowledge acquisition, it can be tempting to dive into new projects and expect instant results. However, as I learned from Vicki Boykis, it takes time and dedication to become proficient in any field.
 
@@ -20,3 +21,4 @@ Gardening also taught me that many of the things we do don't result in immediate
 I have applied these lessons to my career, and they have served me well. I am intentional about the things I do and strive to stay dedicated even when the results may not be immediate. I know that with time and effort, the payoff will come.
 
 So, to all those who are seeking to learn and grow in their careers, remember that it takes time, effort, and dedication to become proficient in any field. Don't let the lack of immediate results discourage you. Keep planting seeds, investing in yourself, and the payoff will come in due time.
+</article>

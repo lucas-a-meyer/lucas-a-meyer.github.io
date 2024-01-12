@@ -8,8 +8,9 @@ description: The author recently switched from a Microsoft Surface Pro 3 to a Le
   traveling data scientists.
 include-in-header: _msft-clarity.html
 title: Lenovo P51 - the Data Scientist's laptop
-
 ---
+<article data-clarity-region="article">
+
 
 Recently, as part of a computer refresh, I have moved from a Microsoft Surface Pro 3 to a Lenovo P51. 
 
@@ -30,3 +31,5 @@ One gripe I had about the Surface Pro 3 was that I always had to travel with a U
 I've also considered the P51-S. The slimmer version trades off some power (it goes from quad-core to dual-core) for a thinner, lighter frame. I think the P51-S would also have been a solid choice, but I think it would force me to do most of my work from a workstation and/or a server that I'd need to remote into frequently, adding to the stress of versioning and synchronizing. Somewhat counter-intuitively, I chose the heavier computer _because_ I travel a lot, as it has enough power for me to do the vast majority of my work on it and use a server or workstation just for the realhardcore stuff. 
 
 In summary, the Lenovo P51 is a great computer for the traveling data scientist. It's powerful enough to be used as your primary machine. For me, it's near the top limit of a computer that is comfortable to travel with, but still _within_ that limit. I got used to it in no time and completely gave up my desktop workstation.
+
+</article>

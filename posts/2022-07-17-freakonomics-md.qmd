@@ -14,8 +14,9 @@ draft: true
 image: /images/freakonomics-md.jpg
 include-in-header: _msft-clarity.html
 title: Freakonomics M.D. and experiment design
-
 ---
+<article data-clarity-region="article">
+
 
 Data science degrees teach students a lot about how to _perform_ an experiment, but very little about how to _set an experiment up_. 
 
@@ -38,3 +39,4 @@ Overall, I highly recommend this podcast. It's entertaining, and also useful in 
 That's a good value for my time.
 
 #ConversationsWithMyDog
+</article>

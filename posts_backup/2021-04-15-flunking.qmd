@@ -1,0 +1,24 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: 2021-04-15 06:00:00
+description: The ups and downs of the writer's journey in becoming proficient at SQL
+  and their experiences with job interviews, culminating in a job they consider perfect.
+image: /images/sql-fail.png
+include-in-header: _msft-clarity.html
+title: Flunking a SQL interview with 20+ years of practice
+
+---
+
+I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998. 
+
+I have written SQL almost daily for over 20 years. A few years ago, I flunked a SQL interview for a *manager* position. 
+
+The problem was that it had been too many years since my last interview. I didn't know _anything_ about interviewing recently, like, for example, the remote CoderPad. Even though I was prepared for the non-technical parts of the interview, since I had not done a technical interview for long, I was nervous. Not knowing how things worked made me more nervous.
+
+Since then, I have always volunteered to be an interviewer. I have occasionally interviewed ["just in case"](https://www.meyerperin.com/posts/2022-04-13-my-policies-around-interviewing.html). That helped, and when the [perfect job](https://www.meyerperin.com/posts/2022-04-18-joining-microsoft.html) appeared for me, I was ready.
+
+
+

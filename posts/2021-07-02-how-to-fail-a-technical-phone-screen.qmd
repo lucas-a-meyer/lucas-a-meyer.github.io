@@ -12,8 +12,9 @@ description: The ins and outs of technical phone screens, including their purpos
 image: /images/fail-tech-interview.jpg
 include-in-header: _msft-clarity.html
 title: How to fail a technical phone screen
-
 ---
+<article data-clarity-region="article">
+
 
 I wrote earlier about the hiring process for technical positions at big technology companies. The three main steps are: 1) resume review, 2) technical phone screen, 3) on-site interview (part technical, part behavioral). This article is about the technical phone screen and how to (not) fail it.
 
@@ -95,3 +96,4 @@ When you see people's profiles on LinkedIn, you may think they have everything f
 That's pretty far from the truth. Most people I know failed several interviews before getting where they are. The process is far from perfect and has a lot of false negatives.
 
 Of course a failure is a signal. You shouldn't complete ignore it. You should try to learn from it. But be kind to yourself, too. Many people you admire failed quite a lot before eventually succeeding.
+</article>

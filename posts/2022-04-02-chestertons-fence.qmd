@@ -9,8 +9,9 @@ draft: false
 image: /images/fence.jpg
 include-in-header: _msft-clarity.html
 title: Chesterton's Fence
-
 ---
+<article data-clarity-region="article">
+
 
 Chesterton’s Fence is an extremely important concept, especially if you are joining a new team in a senior or in a leadership position. 
 
@@ -25,3 +26,4 @@ I frequently learn a lot when trying to understand the reasons why the original 
 When I was less experienced and less careful, I brought down plenty of fences unnecessarily, and was later surprised to find escaped sheep on the road and farmers yelling at me.
 
 I also posted about other concepts, such as the [XY Problem](/posts/2021-07-22-the-xy-problem.qmd) and [Cunningham's Law](/posts/2021-11-04-cunninghams-law.qmd). I even keep [a list of my favorite concepts](/posts/2022-07-25-concepts.qmd)!
+</article>

@@ -1,0 +1,32 @@
+---
+author: Lucas A. Meyer
+categories: concepts
+date: 2022-07-26 06:00:00
+description: The etymology and usage of specific vocabulary as shortcuts for complex
+  ideas, the concept of cognitive biases, reduced language in computing, and a range
+  of coined concise concepts such as Cunningham's Law and the XY Problem.
+draft: true
+image: /images/shortcut.jpg
+include-in-header: _msft-clarity.html
+title: Shortcuts and the smell of rain
+
+---
+
+Throughout human history, there were billions of parents of teenagers. Being a parent of teenagers myself, I was surprised to discover that the word "angst" was first recorded somewhat recently, in the early 1800s, through the works of Kierkegaard. It is a perfect word to describe the teenager feeling. Just five letters instead of 10 _words_. It's brilliant. 
+
+A much less known example is the word [_petrichor_](https://www.bbc.com/news/science-environment-44904298), created in 1964 to describe the pleasant smell of rain that hits dry ground.
+
+I love collecting these shortcuts.
+
+They don't exist only in language. They also exist in computer science and math. Most algorithms are shortcuts. Software functions are shortcuts. It's a lot easier to append the command "sort" to a Python list than to implement QuickSort.
+
+Cognitive biases? Shortcuts. Instead of using more than a dozen words to describe "the tendency to search for and remember information that confirms one's own preconceptions", you can use two words: "confirmation bias".
+
+I **_really_** like are concepts that summarize more complex ideas in just a couple of words. Here are some other examples I wrote about:
+
+- Being able to get an answer faster by stating something wrong instead of asking a good question? [Cunningham's Law](/posts/2021-11-04-cunninghams-law.qmd). 
+- The way inexperienced people ask help with some step of their incorrect solution instead of asking for help solving their problem? [XY Problem](/posts/2021-07-22-the-xy-problem.qmd).
+- Advice to experienced people that want to repeat previous solutions before understanding the problem at hand? [Chesterton's Fence](/posts/2022-04-02-chestertons-fence.qmd)
+- That feeling that you are the only one that didn't understand everything, when in fact nobody did? [Pluralistic Ignorance](/posts/2022-07-04-that-is-a-good-question.qmd)
+
+This is the blog page where I keep my collection of concepts. I plan to keep adding to it.

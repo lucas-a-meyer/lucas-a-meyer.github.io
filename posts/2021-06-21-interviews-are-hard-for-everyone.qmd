@@ -9,8 +9,9 @@ description: The fundamental takeaways from this markdown article are the import
   the misconception of "overnight successes".
 include-in-header: _msft-clarity.html
 title: Interviews are hard for everyone
-
 ---
+<article data-clarity-region="article">
+
 
 I am bad at being at the "job seeker" side of the table in interviews. 
 
@@ -23,3 +24,5 @@ For every job I got, I failed to get at least the same number of jobs. I flunked
 When you look at someone's successes in social networks, remember that you're only seeing the numerator. You don't know the denominator. In my case, it took a lot of tries.
 
 It's hard for me to tell you what will work in your situation, but for most people I know, it took many tries. Most "overnight successes" actually had many years of preparation.
+
+</article>

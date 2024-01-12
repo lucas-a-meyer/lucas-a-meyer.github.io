@@ -8,8 +8,9 @@ draft: false
 image: /images/schnauzer_haircut.jpg
 include-in-header: _msft-clarity.html
 title: Google Duplex was going to change the world five years ago
-
 ---
+<article data-clarity-region="article">
+
 # Google Duplex was going to change the world five years ago
 
 ## Introduction
@@ -35,3 +36,5 @@ Emerging technologies like chaining and goal-seeking could significantly improve
 
 If you see the pace of AI technology releases releases and you get caught up in the hype, you may be worried like the people were worried about Duplex in 2018. Take your time to learn about new technologies. Be intentional: it's definitely worthwhile understanding what LLMs are and are their advantages and limitations, but not necessarily optimal worrying about every new application, like AutoGPT. Remember the Vicki Boykis rule: whatever is important will be here six months from now, a lot will not. 
 
+
+</article>

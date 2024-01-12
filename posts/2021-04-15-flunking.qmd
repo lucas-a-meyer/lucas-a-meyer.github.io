@@ -9,8 +9,9 @@ description: The ups and downs of the writer's journey in becoming proficient at
 image: /images/sql-fail.png
 include-in-header: _msft-clarity.html
 title: Flunking a SQL interview with 20+ years of practice
-
 ---
+<article data-clarity-region="article">
+
 
 I learned SQL in college in 1997. My first professional experience was MS SQL Server 6.5 in 1998. 
 
@@ -22,3 +23,5 @@ Since then, I have always volunteered to be an interviewer. I have occasionally 
 
 
 
+
+</article>

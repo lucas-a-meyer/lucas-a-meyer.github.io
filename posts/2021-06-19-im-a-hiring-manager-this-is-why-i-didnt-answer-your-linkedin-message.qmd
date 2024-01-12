@@ -15,8 +15,9 @@ description: The best strategies for approaching and interacting with hiring man
 image: /images/linkedin-notifications.jpg
 include-in-header: _msft-clarity.html
 title: 'I''m a hiring manager: this is why I didn''t answer your LinkedIn message'
-
 ---
+<article data-clarity-region="article">
+
 ## "It's not you, it's me"
 Most managers become managers because they care about helping people succeed. That's my philosophy, and I would answer all the messages I receive if I had enough time.
 
@@ -81,3 +82,5 @@ Treat people as you would like to be treated (or better). Job hunting is stressf
 
 Always try to remember that we (candidates, recruiters, hiring managers, service providers, influencers, etc.) are all people, and we're all busy and fallible. Assume good intentions, but most of all, be kind.
 
+
+</article>

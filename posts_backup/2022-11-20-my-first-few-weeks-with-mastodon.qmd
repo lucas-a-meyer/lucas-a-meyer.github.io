@@ -1,0 +1,52 @@
+---
+author: Lucas A. Meyer
+categories:
+- technology
+date: 2022-11-20 06:00:00
+description: The unique features and benefits of transitioning to Mastodon from Twitter,
+  potential problems that might arise due to its increasing popularity, and strategic
+  tips on how to maximize the benefits of this social media platform.
+draft: true
+image: /images/mastodon.jpg
+include-in-header: _msft-clarity.html
+title: My first few weeks with Mastodon
+
+---
+
+A couple of weeks ago, I moved to Mastodon, mostly abandoning Twitter. It has worked beautifully for me, and it may work well for you, too.
+
+## The multiple Twitters
+
+Twitter was multiple spaces rolled into one. We had the "core Twitter", where people with tons of followers like Donald Trump, Elon Musk and Kim Kardashian communicated with their followers. Then there was the "Twitter for brands", where companies like Steak-Umm could make themselves known by reaching directly to conumers. There was also the "Twitter for Government": I got a lot of information about my local government from Twitter. And then there was the more niche Twitter subspaces, like #EconTwitter, #ScienceTwitter, #DataTwitter, where we formed professional commnunities. The latter was brilliant, I met many people that taught me a lot. I've learned of many useful papers and tools through the "professional" Twitter. 
+
+I think the latter Twitter is mostly gone. Most of it seem to have gone to Mastodon. Predicting the future is hard, but I think this is going to stick: the professional conversations will happen on Mastodon. It's hard to make a bet about whether the other Twitter audiences will survive. I actually think it will. Maybe it will have to compete heavily with Gab and Truth Social, and maybe it will continue to be relevant for consumers and brands even without having to compete with those. Given all the engineers leaving Twitter, it's also very possible that it will stop working in such a way that everybody will just move away.
+
+## The Mastodon experience
+
+I see people complaining that Mastodon has a steep learning curve. I'd be surprised if people who follow me (who are usually in technology) had any trouble with it. The problem I see the most is people thinking that Mastodon is a Twitter replacement and try to do Twitter things on it. There's no "Quote Tweet" functionality, and there's also no search. These are intentional. In any case, the search on Twitter sucked. On the positive side, there's an edit button and you can follow hashtags. 
+
+On Mastodon, there are multiple servers, and the server you join makes a little difference. It is easier to see posts from people in the same server, and the moderation policies are also server-specific. Some servers might prevent you from seeing certain content that the server moderation team judges its harmful. On Twitter, if the moderation team decides some content is harmful, you're out of luck. On Mastodon, you can just switch servers.
+
+Regardless of the server you join, you will be able to see posts of people in other servers, as long as your administrator team has not blocked them. It usually takes a lot for a server to be blocked. It's just easier to see content from people in your server: you can see it even if you don't follow them and even if none of the people you follow repost them. Seeing content from people in other servers is a little harder, but it's still easy. You can see their content if you follow them directly, if one of the people you follow reposts it, or if people in your server have that content, although you need to go to a separate timeline, called the Federated timeline, to see it in this latter case.
+
+Most of the people I interacted with in a semi-professional capacity on Twitter made the move to Mastodon. The other options seem to be using Discord and Slack. I love both, but they tend to be more fragmented. I have the "people I know from Boston" Slack, the "people from Florida" Slack, the "people of a cool conference" Slack. Almost everyone on each of those is on Mastodon, so it works better as a place to hang out.
+
+## Potential problems
+
+As Twitter gets more unstable, lots of people migrate in droves to Mastodon, frequently causing Mastodon to be laggy. 
+
+Also, as Mastodon becomes more popular, it may become a bigger target for attacks, and most admins and moderators are volunteers. Although that may be a challenge, the mods and admins are very accomplished volunteers, and I think it will work better than most people expect. Eventually, famous people will move to Mastodon. The ones I've seen around so far are more on the nerdy side: James Gunn, George Takei, Neil Gaiman, Stephen Fry. I'm not sure Mastodon is ready for a Kardashian.
+
+## Should you make the move?
+
+Professionally, I think it's a good idea. You can probably find a server and a tech clique that is full of people that you can learn from. The server I use is called data-folks.masto.host, and I love it. The relevance of my timeline increased substantially - I find most of the posts in my timeline interesting and insightful, which required a lot of muting and blocking on Twitter. 
+
+My personal preference would have been for LinkedIn to become what Mastodon is becoming, but I think people tend to be a little more "real" on Mastodon. Maybe it's because LinkedIn allows giant posts like this one that makes it hard to engage. Maybe people want to take less risks on LinkedIn because it's so linked to employment, which is one of its strengths. 
+
+In any case, I suggest giving Mastodon a try, I think you'll like it.
+
+
+
+
+
+

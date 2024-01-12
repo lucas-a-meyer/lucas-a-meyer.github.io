@@ -8,8 +8,9 @@ draft: false
 image: https://quarto.org/quarto.png
 include-in-header: _msft-clarity.html
 title: Quarto with Python
-
 ---
+<article data-clarity-region="article">
+
 
 I am a firm believer in "learning out loud", that is, writing about what you learned.
 
@@ -33,3 +34,5 @@ You can generate PDFs, PowerPoints, Word documents and interactive websites. Qua
 
 Quarto has an [excellent tutorial](https://www.quarto.org/docs/get-started) to get you started. I also wrote [my own guide](https://links.meyerperin.com/quarto) as I learned it.
 
+
+</article>

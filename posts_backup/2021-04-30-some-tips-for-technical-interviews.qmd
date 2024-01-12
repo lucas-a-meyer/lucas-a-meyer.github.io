@@ -1,0 +1,18 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: 2021-04-30 06:00:00
+description: The importance of persistence in job interviews and the potential for
+  consideration for similar roles, even if the original role wasn't secured.
+include-in-header: _msft-clarity.html
+title: You're applying to more positions than you think
+
+---
+
+In most big companies, interviewers interview for the company, rather than for the position. 
+
+Even if you think you did bad in one of your interviews, it is still worthwhile to try to regroup and do your best for the next interviews.
+
+Maybe you won't get the exact position you applied for, but in most cases, you will be considered for similar positions.

@@ -9,8 +9,9 @@ description: Drew Conway's Data Science Venn Diagram as a key framework for unde
   limitations.
 include-in-header: _msft-clarity.html
 title: Praising Conway's Data Science Venn Diagram
-
 ---
+<article data-clarity-region="article">
+
 
 Drew Conway's [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) is perhaps the most well-known description of data science.
 
@@ -51,3 +52,5 @@ True to the famous Box aphorism that "all models are wrong but some are useful",
 It will, however, solve many problems that matter, and will provide useful information very elegantly. You can't ask much more from a model.
 
 
+
+</article>

@@ -1,0 +1,40 @@
+---
+author: Lucas A. Meyer
+date: 2023-05-25 06:00:00
+description: The significance of the number 42 in Douglas Adams' Hitchhikers Guide
+  to the Galaxy, its presence in other works of literature, particularly those by
+  Lewis Carroll, and its common usage in computer science as a seed number to generate
+  random sequences.
+draft: false
+image: /images/42.jpg
+include-in-header: _msft-clarity.html
+title: Happy Towel Day!
+
+---
+Happy Towel Day for those who celebrate it! On this day, fans of the famous Douglas Adams' book Hitchhikers Guide to the Galaxy carry a towel with them everywhere. Why? Because, as the Guide says, a towel is the most massively useful thing an interstellar hitchhiker can have. As a tribute to the book, I decided to write a blog post about the number 42, which is the answer to the ultimate question of life, the universe, and everything.
+
+## The Answer to the Ultimate Question of Life, the Universe, and Everything
+
+In the Hitchhikers Guide to the Galaxy, a supercomputer named Deep Thought is asked to calculate the answer to the ultimate question of life, the universe, and everything. After seven and a half million years, Deep Thought returns with the answer: forty-two. Although there are many theories about why the number came to be (101010 in binary, the angle at which light refracts through water to create a rainbow, etc.), the truth is that Douglas Adams chose the number randomly.
+
+In his words: "The answer to this is very simple. It was a joke. It had to be a number, an ordinary, smallish number, and I chose that one. Binary representations, base thirteen, Tibetan monks are all complete nonsense. I sat at my desk, stared into the garden and thought '42 will do' I typed it out. End of story."
+
+## Forty-Two in Literature
+
+Perhaps, subconsciously, Adams chose the number forty-two because of its significance in the works of another author that is also known for his use of humor and wit, and also admired by scientists, especially mathematicians. Lewis Carroll, the writer of Alice in Wonderland, made repeated use of the number 42 in his writings. The original version of Alice in Wonderland had 42 illustrations, and the king also makes use of rule 42, stating that all persons more than a mile high must leave the court immediately. His poem, the Hunting of the Snark, also has a rule 42 (no one shall speak to the man at the helm).
+
+The number 42 also appeared in Doctor Who, Star Trek, and The X-Files. Once the number made its way into literature and other media liked by scientists, it would not take long until it was used in computer science.
+
+## The Significance of Forty-Two in Computer Science
+
+Generating random numbers is a common task in computer science. One way to generate random numbers is to use a seed, which is a number that is used to initialize a pseudorandom number generator. The same seed will always produce the same sequence of numbers. Using a seed allows for reproducibility, which is important for debugging and testing.
+
+In 2016, the software engineer Aleksey Bilogur published a blog post analyzing GitHub and searching for the most used random seeds. The results: 0 was the most used seed, with 40% of the results, with 42 coming in second with 17.3% of the results, followed by 1 with 16.8%, 1234 with 4.14%, and 123 with 1.75%.
+
+## Do you like Wikipedia?
+
+In the book, the Guide is a competitor to the Encyclopedia Galactica, which is a repository of all knowledge in the universe. The Guide, instead of being written by experts, can comically be edited by anyone. The big advantage of the Guide, which accounts for most of its success, is that it's slightly cheaper. Presciently, that is similar to the way Wikipedia works.
+
+Therefore, on this Towel Day, I am donating $42 to Wikipedia, which my employer generously matches.
+
+Happy Towel Day!

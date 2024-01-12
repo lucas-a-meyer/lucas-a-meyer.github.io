@@ -12,8 +12,9 @@ image: /images/writing.jpg
 include-in-header: _msft-clarity.html
 layout: post
 title: How writing can help introverts communicate
-
 ---
+<article data-clarity-region="article">
+
 
 I don't like talking to people, but I don't mind writing to them.
 
@@ -27,3 +28,5 @@ It works like MAGIC. It's a lot easier for me to keep the conversations going af
 
 Of course, that works for me because I like writing, and even with three kids, I manage to find enough peace and quiet that I get to write from time to time. Some people find it better to "never have lunch alone", or have a packed schedule of coffee meetings. Even as an introvert, I found that keeping in touch was important for me: I just needed to find a way that worked for me.
 
+
+</article>

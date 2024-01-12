@@ -9,8 +9,9 @@ description: The importance of properly stating the problem one is trying to sol
 image: /images/xy-problem.jpg
 include-in-header: _msft-clarity.html
 title: The XY Problem
-
 ---
+<article data-clarity-region="article">
+
 
 During a recent presentation, I've been asked: "What do you wish new hires knew?" 
 
@@ -30,3 +31,5 @@ Don't be like Jay! State the problem you're trying to solve, rather than asking 
 
 I love shortcuts such as "the XY problem" to explain complex concepts. I have a [list in my blog](/posts/2022-07-25-concepts.qmd).
 
+
+</article>

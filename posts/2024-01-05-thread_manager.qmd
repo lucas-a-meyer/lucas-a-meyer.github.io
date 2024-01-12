@@ -1,19 +1,20 @@
 ---
 author: Lucas A. Meyer
 date: 2024-01-05
-draft: false
 description: The process of developing a web app (Thread Manager) for scheduling posts
   across multiple social media platforms, utilizing technologies such as Azure, Python,
   Flask, and Bootstrap, alongside a narrative of the author's software development
   journey.
+draft: false
 image: /images/thread_manager_logo.png
 include-in-header: _msft-clarity.html
 page-layout: full
 title: Thread Manager - Managing Social Media
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 Thread Manager a the web app I intend to use to schedule posts to social media sites and run basic analytics. 
 
@@ -55,3 +56,4 @@ The list below shows the steps I am taking to build this app. I will update this
 - [ ] Enable a basic text post to LinkedIn
   
 There will be more steps, and I'll add them as I go.
+</article>

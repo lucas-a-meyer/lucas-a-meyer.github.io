@@ -1,0 +1,39 @@
+---
+author: Lucas A. Meyer
+date: 2022-07-13 04:00:00
+description: The conception and optimization of loss functions, specifically through
+  the context of a hypothetical legal dispute scenario.
+draft: false
+image: /images/owning-twitter.jpg
+include-in-header: _msft-clarity.html
+title: 'Interview question: Musky vs Tweety'
+
+---
+
+One thing I find in my interviews is that data scientists are a lot better at calculating expectations than they are at defining loss functions. 
+
+Using some recent (July 2022) events, I wrote a question that requires setting up and optimizing a loss function. 
+
+"Musky promised to pay his friend Tweety US$ 1,000. Musky refused to pay, and now Tweety is suing Musky. Musky can either pay $1000 (Tweety won't settle) or go to court. If Musky goes to court, he needs to pay lawyers. Good lawyers are costly, and don't guarantee that Musky will win. The probability of Musky prevailing is a function of cost of his lawyers: ln(C)/7, where C is the amount Musky pays, and ln is the natural log function. Should Musky pay or go to court? If he goes to court, how much should Musky pay his lawyers? Assume Musky only cares about money."
+
+The first step is to set up the loss function in case Musky goes to trial. Going to trial requires paying C to the lawyers, and that gives Musky a probability to win of ln(C)/7, which means that his probability of losing is 1-ln(C)/7.
+
+$$
+L = -C - (1- \frac{ln(C)}{7}) \times 1000
+$$
+
+Since he only cares about money, Musky objective is to minimize his loss. To find the minimum of the loss function, we need to take the first derivative of this function and making it equal to zero. Luckily, natural logs have a simple derivative (1/x) and that's not too hard to do. Regardless, I'd let candidates use [Wolfram Alpha](https://www.wolframalpha.com/) to take derivatives, or whatever calculator they want to.
+
+Since the derivative ends up being 1000/7C - 1, the next steps are simple, and the result is 1000/7, meaning that to minimize his losses, Musky should pay $143.86 to his lawyers.
+
+$$
+\frac{\delta L}{\delta C} = \frac{1000}{7C} - 1
+$$
+$$
+\frac{1000}{7C} - 1 = 0 \implies C = \frac{1000}{7} = 142.86
+$$
+
+This results in an expected loss of $434.02 (of which $142.86 goes to the lawyers). It's bad, but it's a lot better than losing $1000.
+
+If you like data science interview questions, my friend Nirmal Budhathoki has been posting 30 days of them on LinkedIn. His questions are great (certainly better than mine above), and you should follow his series.
+

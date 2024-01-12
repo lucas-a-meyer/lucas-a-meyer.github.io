@@ -7,8 +7,9 @@ draft: false
 image: /images/lucas-mj.png
 include-in-header: _msft-clarity.html
 title: Getting started with Midjourney
-
 ---
+<article data-clarity-region="article">
+
 I've added a new section to my blog, called [A Quick Tour of Midjourney](https://links.meyerperin.com/mj). 
 
 You can find it here: <https://links.meyerperin.com/mj>.
@@ -17,3 +18,5 @@ If you never used Midjourney before, or if you tried to use it but got quickly i
 
 An important note: Midjourney is now a paid service, so you have to pay for a subscription (currently $10/month) to use it. There are no trials anymore.
 
+
+</article>

@@ -10,8 +10,9 @@ draft: false
 image: /images/useful-output.jpg
 include-in-header: _msft-clarity.html
 title: Why you should blog if you are a data scientist
-
 ---
+<article data-clarity-region="article">
+
 
 A while back, David Robinson offered the following advice on Twitter:
 
@@ -47,3 +48,5 @@ Besides the excellent reasons offered by David Robinson for aspiring data scient
 
 Similar to "practicing", blogging about technical topics helps you learn how to communicate better about them, and also helps you learn how to write better research reports. Similar to "portfolio", it signals a data scientist's body of work. For an early-in-career data scientist, it may be more showing that you can do analysis, but for an experienced data scientist is more about what type of analysis you like to do. Finally, I think that "feedback" also works differently for early-in-career and experienced data scientists. I'm not sure random strangers in the internet will sweep in and correct your posts, but you can find out what people are reading and sharing. You may be surprised when you learn what parts of your work people find interesting.
 
+
+</article>

@@ -7,8 +7,9 @@ draft: false
 image: /images/farmers-dog-logo.png
 include-in-header: _msft-clarity.html
 title: My review of the Farmer's Dog food service
-
 ---
+<article data-clarity-region="article">
+
 
 :::{.callout-important}
 ## Moved to Badlands Ranch Dog Food
@@ -61,3 +62,5 @@ The downside: I had to adjust the calorie count up, which meant that the Farmer'
 ## My verdict
 
 My final verdict: I think it's worthwhile giving it a try.
+
+</article>

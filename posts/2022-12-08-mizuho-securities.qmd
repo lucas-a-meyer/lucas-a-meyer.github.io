@@ -11,8 +11,9 @@ draft: false
 image: /images/mizuho-post.jpg
 include-in-header: _msft-clarity.html
 title: The data entry error that cost hundreds of millions
-
 ---
+<article data-clarity-region="article">
+
 
 Have you ever had a bad day at work? On December 8th, 2005, a trader at Mizuho Securities in Japan probably had a worse one.
 
@@ -21,3 +22,4 @@ That Thursday, a trader wanted to sell one share of J-Com for 610,000 yen (back 
 The next day, the president of Mizuho said in a press release: "Someone unintentionally ignored the alerts." It's a good sign that there were alerts.
 
 Every December 8th, I raise a glass to that unnamed trader and count my blessings.
+</article>

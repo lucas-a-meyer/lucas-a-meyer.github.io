@@ -8,8 +8,9 @@ draft: false
 image: /images/openai_blogging.jpg
 include-in-header: _msft-clarity.html
 title: My Experience Using Large Language Models to Write Blog Posts
-
 ---
+<article data-clarity-region="article">
+
 # My Experience Using Large Language Models to Write Blog Posts
 
 I recently conducted an experiment using large language models (LLMs) to write blog posts. However, I didn't enjoy the experience as much as I thought I would, even though LLMs should have been helpful since English is not my first language.
@@ -33,3 +34,5 @@ Lastly, LLMs can check my grammar. As a non-native English speaker, I make many 
 ## Using the Semantic Kernel
 
 This weekend, I began using the Microsoft Semantic Kernel to chain several LLM actions together. I'm still learning how to use it, but I'm already impressed. I'm using it to generate titles, fix my grammar, create images, and convert my text into a Quarto Markdown file. I'll soon write a blog post teaching how to use the Semantic Kernel in Python. If you can't wait, you can see how I'm using it by looking at the source code for my blog on GitHub.
+
+</article>

@@ -8,8 +8,9 @@ draft: true
 image: /images/diffused_robot_blogging.png
 include-in-header: _msft-clarity.html
 title: 'The curious case of blogging: Finding purpose through experimentation.'
-
 ---
+<article data-clarity-region="article">
+
 
 As an economist, I'm always thinking about incentives. So when it comes to blogging, I have to admit that I'm not entirely sure what the point is. 
 
@@ -22,3 +23,4 @@ Plus, I've been able to streamline the process of generating my blog posts and i
 In fact, if I could figure out what my ultimate goal is with blogging and what levers I could use to achieve it, I would love to try using reinforcement learning to make the whole process completely automatic. Who knows? Maybe that's the future of content creation. 
 
 So while I may not have a clear answer to the question of why I blog, I do know that it's been a useful tool for experimentation and learning. And who knows? Maybe I'll figure out the bigger picture someday.
+</article>

@@ -9,8 +9,9 @@ include-in-header: _msft-clarity.html
 response:
   id: urn:li:share:6952756995246493696
 title: My model is training
-
 ---
+<article data-clarity-region="article">
+
 
 If you're a data scientist, you're probably very much used to wait for model training results.
 
@@ -28,3 +29,5 @@ If I didn't receive the text, I would realize what happened only on the day afte
 
 That's pretty good value for one line.
 
+
+</article>

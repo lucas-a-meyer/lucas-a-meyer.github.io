@@ -10,8 +10,9 @@ draft: true
 image: /images/mastodon.jpg
 include-in-header: _msft-clarity.html
 title: My first few weeks with Mastodon
-
 ---
+<article data-clarity-region="article">
+
 
 A couple of weeks ago, I moved to Mastodon, mostly abandoning Twitter. It has worked beautifully for me, and it may work well for you, too.
 
@@ -50,3 +51,5 @@ In any case, I suggest giving Mastodon a try, I think you'll like it.
 
 
 
+
+</article>

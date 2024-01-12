@@ -8,6 +8,8 @@ title: Automatically adding meta tags to your blog posts with OpenAI
 toc: true
 toc-expand: true
 ---
+<article data-clarity-region="article">
+
 
 As I was updating my blog, I realized that I had forgotten to add the `description` meta tag to many of my blog posts. This is the text that appears in search results and when you share a link on social media. I didn't want to go through all my posts and add a description manually, so I decided to use OpenAI GPT to generate descriptions for me.
 
@@ -132,3 +134,4 @@ My blog has over 100 documents, and it took less than 2 minutes to add descripti
 I used my ChatGPT Plus to generate the main block of code that has the function `process_qmd_files`, so the whole process, end-to-end, took less than 10 minutes.
 
 The complete code is on [GitHub](https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py).
+</article>

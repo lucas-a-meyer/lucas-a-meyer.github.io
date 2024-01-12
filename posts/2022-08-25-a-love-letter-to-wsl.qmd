@@ -11,8 +11,9 @@ draft: false
 image: /images/jason-arch.png
 include-in-header: _msft-clarity.html
 title: I use Arch, btw
-
 ---
+<article data-clarity-region="article">
+
 
 # I use Arch, btw
 
@@ -54,3 +55,5 @@ Is this really using Arch? Probably not. My [audio works](https://thelinuxcast.o
 I think people worry too much about gatekeeping. You should use whatever makes you productive. I use Arch, btw.
 
 ![](/images/arch-merits.jpg)
+
+</article>

@@ -1,0 +1,23 @@
+---
+author: Lucas A. Meyer
+categories: concepts
+date: 2021-10-27 06:00:00
+description: Effective time management strategies for tasks they dislike and the benefits
+  of such strategies, including reduced stress and increased peace of mind.
+image: /images/reverse-laziness.jpg
+include-in-header: _msft-clarity.html
+title: Reverse laziness
+
+---
+
+I've noticed a behavior in both my professional life and with my kids doing their homework: people spend a lot of time on things they don't like.
+
+Many years ago, I had that realization about myself. For some things I didn't like doing, I'd procrastinate, complain, but ultimately ended up having to be engaged with that task over a long period of time. During that time, the stress of the task kept hanging over me. 
+
+I decided to do a deal with myself: I'd set up a short but reasonable time to do the task and during that time I'd do the best I could. At the end, I'd be *done*. Back then, I didn't know about the #pomodoro method, which can actually be used in a similar way.
+
+After that, the "dwell time" of tasks that annoyed me dropped sharply: once I booked the time, the task was mostly out of my mind. Once I finished the allocated time, I'd be in peace. Things that used to annoy me for a week became things that bothered me for an hour.
+
+I even started to like some of the tasks I thought I wouldn't. Getting started is half the battle.
+
+I still couldn't convince my kids.

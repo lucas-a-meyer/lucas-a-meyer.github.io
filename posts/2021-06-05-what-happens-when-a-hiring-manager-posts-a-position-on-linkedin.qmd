@@ -10,8 +10,9 @@ description: The intricacies of the job application process for large companies,
   with tips for each stage.
 image: /images/interview-process.jpg
 include-in-header: _msft-clarity.html
-
 ---
+<article data-clarity-region="article">
+
 
 As of June 2021, I manage a technical team at Amazon, and I have some positions open. And when you have a position open, it's pretty standard to post it to LinkedIn. 
 
@@ -108,3 +109,5 @@ If you got here, you are probably very happy. A lot of other people will also be
 Take a break (interviewing is hard) and start preparing to enjoy your new job!
 
 _This post reflects my experience interviewing both as a hiring manager and a candidate for several positions in the last couple of decades. It's not specific about my current or past employers. As of the writing of this post, I work for Amazon._
+
+</article>

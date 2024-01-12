@@ -10,8 +10,9 @@ draft: false
 image: /images/interview-crying.jpg
 include-in-header: _msft-clarity.html
 title: Two interview questions I hate
-
 ---
+<article data-clarity-region="article">
+
 
 There are two interview questions that I hate, and I see them a lot.
 
@@ -35,3 +36,5 @@ If they are *really* necessary, both these types of questions _can_ work out, bu
 
 
 
+
+</article>

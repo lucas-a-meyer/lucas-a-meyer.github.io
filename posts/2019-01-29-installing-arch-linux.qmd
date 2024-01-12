@@ -6,8 +6,9 @@ description: The benefits and challenges of using Arch Linux as an operating sys
   with high-DPI display, and the instability when using certain software combinations.
 include-in-header: _msft-clarity.html
 title: Installing Arch Linux
-
 ---
+<article data-clarity-region="article">
+
 
 Even though I work at Microsoft and really love Windows, I've recently installed Arch Linux as a dual boot. 
 
@@ -22,3 +23,4 @@ I first got into contact with Arch through a German friend back in 2010. When tr
 There are several things that still don't work well in Linux. One of the most vexing is having a high-DPI display. It's somewhat hard to configure it. It works well in KDE, but KDE has tearing issues. It doesn't work too well in GNOME unless you use Wayland, which brings a host of different issues. You can make everything a lot worse by using the NVidia proprietary driver with Wayland, but it's needed if you want to use the GPU efficiently. 
 
 So although I managed to configure my Arch installation to use GNOME under Wayland and use the NVidia proprietary driver, it's very unstable. Native applications tend to run, but many applications crash in comical ways: resizing Google Chrome under Wayland is a sure way to cause a crash, for example.
+</article>

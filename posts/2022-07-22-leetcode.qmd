@@ -9,8 +9,9 @@ draft: false
 image: /images/leetcode.jpg
 include-in-header: _msft-clarity.html
 title: Separating LeetCode grinders from coders
-
 ---
+<article data-clarity-region="article">
+
 
 My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting. 
 
@@ -35,3 +36,4 @@ My solution is imperfect, and may not work if the candidate is experienced, prac
 What I do is that I get some popular questions and change their assumptions to make them **a lot simpler**. During the intervew, I warn candidates that I did that. Even with the warning, the "grinders" regurgitate the solution from the websites, which don't even solve the simplified problem. Good coders solve the simplified problem, and when I reintroduce the harder assumptions, they solve that one as well. 
 
 Once I started doing that, my on-site pass rate became really high, and I got [some reputation for being a good interviewer](https://www.meyerperin.com/posts/2022-04-05-hiring-is-a-superpower.html). My team got a lot better, too!
+</article>

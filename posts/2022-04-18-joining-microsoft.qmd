@@ -10,8 +10,9 @@ description: The reader will garner knowledge about the author's excitement over
 image: /images/just-hired-microsoft.jpg
 include-in-header: _msft-clarity.html
 title: Joining Microsoft
-
 ---
+<article data-clarity-region="article">
+
 
 I’m extremely happy to share that I’m starting a new position as Principal Data Scientist at the AI for Good Research Lab at Microsoft!
 
@@ -31,3 +32,5 @@ I learn a lot from #writing, and from interacting with you. Thanks for making wr
 
 It's an exciting and energizing new beginning, and there's a lot of people and organizations to empower to achieve more.
 
+
+</article>

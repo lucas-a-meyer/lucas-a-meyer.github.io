@@ -1,0 +1,29 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+date: 2021-07-07 06:00:00
+description: The concept of a "goodwill account", ways in which colleagues can either
+  debit or credit this account, and its potential utility in understanding and addressing
+  annoying behaviors in a professional environment.
+include-in-header: _msft-clarity.html
+title: The goodwill account
+
+---
+
+One of the most helpful team-building exercises I participated in was very simple. It was called the "goodwill account".
+
+The exercise was for each team member to write 2-3 things that your colleagues can do that *debit* their goodwill account with you, and three things that your colleagues do that *credit* their account with you. We would then share these around the team.
+
+For me, the debits were:
+- scheduling a meeting without looking at my free/busy
+- scheduling a meeting with me outside of work hours and canceling it last minute
+- surprising me with an urgent deliverable request
+
+And the credits were:
+- being efficient in meetings: having an agenda, pre-reads, action items
+- giving me visibility of projects I might be involved in at some point in the future
+- giving me feedback on how I could do things better
+
+It was also helpful to learn about things that annoyed my colleagues that I did without realizing.
+

@@ -7,8 +7,9 @@ draft: false
 image: /images/nobody-reads-blog.jpg
 include-in-header: _msft-clarity.html
 title: Posting automatically from my blog to LinkedIn
-
 ---
+<article data-clarity-region="article">
+
 
 Write once, use everywhere.
 
@@ -41,3 +42,5 @@ This solves many problems for me. With that, I now do all my writing in VS Code.
 Now I just need to write interesting stuff!
 
 
+
+</article>

@@ -1,0 +1,81 @@
+---
+author: Lucas A. Meyer
+categories:
+- technology
+date: 2023-03-20 06:00:00
+description: The process of automating text and image generation on LinkedIn using
+  Stable Diffusion v2.1 from Hugging Face, including installation and login instructions,
+  and how to generate and customize images using this tool.
+draft: false
+image: /images/ai_schnauzer.png
+include-in-header: _msft-clarity.html
+title: How to Use Stable Diffusion from Hugging Face
+
+---
+
+Recently, I started to automate a lot of what I do on LinkedIn. I am using AI generators to improve my text and to generate images for my blog posts. In this post, I'll show how I am generating images for my blog and for LinkedIn with Stable Diffusion v2.1.
+
+# How to Use Stable Diffusion from Hugging Face
+
+Stable Diffusion is a text-to-image model that can, among other things, generate high-resolution and photo-realistic images from any text input. It uses a diffusion process to gradually refine an image from noise, guided by the text condition. 
+
+Hugging Face is an open-source provider of machine learning technologies. Their platform offers a variety of tools that allow developers to build and train AI models. One of these tools is Diffusers, a library that enables easy access and inference with diffusion models such as Stable Diffusion.
+
+In this tutorial, I will show you how to use Stable Diffusion from Hugging Face in a few simple steps.
+
+## Step 0 (optional): Install PyTorch and log in to Hugging Face
+
+If you haven't already, you need to install PyTorch and log in to Hugging Face. I'm installing on Windows 11:
+
+```
+pip3 install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+```
+
+You need to have a Hugging Face account to download models. To login to hugging face, create an account on the hugging face website and then use:
+
+```
+huggingface-cli login
+```
+
+## Step 1: Install Diffusers
+
+To use Stable Diffusion, you need to install Diffusers, which is available on PyPI. You can install it with pip. I usually suggest that you create a new virtual environment with `python -m venv .venv` before installing the library.
+
+```
+pip install diffusers
+```
+
+## Step 2: Load Stable Diffusion
+
+Next, you need to load the Stable Diffusion model from Hugging Face Hub. You can choose from several checkpoints that have been trained on different datasets and for different durations. For example, you can load the stable-diffusion-2-1 checkpoint with:
+
+```python
+from diffusers import StableDiffusionPipeline
+
+# you can also download the model manually
+pipeline = StableDiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-2-1-base")
+
+# if you have a CUDA-enabled GPU, you can use it to speed up image generation quite a lot
+pipeline = pipeline.to("cuda")
+
+```
+
+This will download the model weights and configuration to your local cache.
+
+## Step 3: Generate Images
+
+Now you are ready to generate images with Stable Diffusion. You just need to provide a text prompt as input. For example, the following code will generate an image of a "jedi schnauzer":
+
+```python
+prompt = "jedi schnauzer"
+image = pipeline(prompt=prompt, height=512, width=512, num_inference_steps=80, guidance_scale=7.5).images[0]
+```
+
+The pipeline method will return an image object that you can display or save as you wish. You can also customize some parameters of the generation process, such as the number of samples, the resolution, and the number of diffusion steps. For more details, please refer to the documentation of Diffusers (https://huggingface.co/docs/diffusers/index).
+
+## Conclusion
+
+In this tutorial, we have shown you how to use Stable Diffusion from Hugging Face with Diffusers library. We hope you enjoyed this tutorial and found it useful for your projects. If you have any questions or feedback, please feel free to contact us or open an issue on GitHub.
+
+My code is available on GitHub (https://github.com/lucas-a-meyer/diffusers-experiments/).
+

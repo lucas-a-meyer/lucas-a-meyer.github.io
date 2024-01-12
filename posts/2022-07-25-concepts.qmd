@@ -9,8 +9,9 @@ draft: true
 image: /images/shortcut.jpg
 include-in-header: _msft-clarity.html
 title: Shortcuts and the smell of rain
-
 ---
+<article data-clarity-region="article">
+
 
 Throughout human history, there were billions of parents of teenagers. Being a parent of teenagers myself, I was surprised to discover that the word "angst" was first recorded somewhat recently, in the early 1800s, through the works of Kierkegaard. It is a perfect word to describe the teenager feeling. Just five letters instead of 10 _words_. It's brilliant. 
 
@@ -30,3 +31,5 @@ I **_really_** like are concepts that summarize more complex ideas in just a cou
 - That feeling that you are the only one that didn't understand everything, when in fact nobody did? [Pluralistic Ignorance](/posts/2022-07-04-that-is-a-good-question.qmd)
 
 This is the blog page where I keep my collection of concepts. I plan to keep adding to it.
+
+</article>

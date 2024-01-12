@@ -8,8 +8,9 @@ description: The author recounts their experience preparing for and deciding whe
 draft: true
 include-in-header: _msft-clarity.html
 title: Hurricane Irma
-
 ---
+<article data-clarity-region="article">
+
 
 
 Florida has nice weather most of the time, but also has extreme weather occasionally.
@@ -28,3 +29,5 @@ There's surely an element of luck to all of this, but the outcome was positive. 
 that is hard to see, like on the roof. We did not lose power, internet or even satellite TV. The hardest part was the stress. 
 
 On Monday morning the winds were back to normal. There's still a lot of debris around the county. I'm supposed to fly back home tomorrow, if the airport opens, and hopefully I'll be able to get a ride home. This was more of a suspense than a horror movie. Many people were not as lucky as we were and we'll now see how we can help them.
+
+</article>

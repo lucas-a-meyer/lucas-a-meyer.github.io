@@ -8,8 +8,9 @@ description: Different techniques and strategies that interviewers can utilize t
   help a nervous candidate during a technical interview.
 include-in-header: _msft-clarity.html
 title: Getting nervous during an interview
-
 ---
+<article data-clarity-region="article">
+
 
 I do a lot of interviews, and they are high-pressure situations. 
 
@@ -23,3 +24,5 @@ It's very common for people to get nervous during them. When I'm doing a technic
 Frankly, I'm not that sure if what I do helps. Does it?
 
 What would you like interviewers to do if they realize you're stuck and getting nervous?
+
+</article>

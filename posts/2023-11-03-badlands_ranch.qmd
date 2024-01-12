@@ -11,8 +11,9 @@ page-layout: full
 title: Badlands Ranch Dog Food Review
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 ::: {.callout-note}
 
@@ -36,3 +37,4 @@ However, my dog reliably likes it. Because it's dry food, we can travel with it.
 ## Promotions
 
 Sometimes Badlands Ranch runs big promotions for large orders - I recently ordered 12 packages for $312.80. That's $2.60 per cup, or $6.50 per day for my dog, same as Blue Buffalo. They send you a large (and annoying) number of emails, so you'll know when they run promotions, even if you don't really want to.
+</article>

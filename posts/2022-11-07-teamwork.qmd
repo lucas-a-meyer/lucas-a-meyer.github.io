@@ -10,8 +10,9 @@ draft: false
 image: /images/teamwork-cogs.jpg
 include-in-header: _msft-clarity.html
 title: Teamwork - what's wrong with this picture?
-
 ---
+<article data-clarity-region="article">
+
 
 If your office has a "teamwork gears" picture like this one, you may be thinking about working remotely.
 
@@ -28,3 +29,4 @@ I'm still trying to decide if this is a mistake. Maybe it's just great art, a su
 It's in days like this that I realize how luck I've been in my career. The teams I worked in (and my current team, the AI for Good Lab) were always places that were simultaneously good at science and great places to work at. 
 
 I hope you are as lucky as I am.
+</article>

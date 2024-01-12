@@ -12,8 +12,9 @@ draft: false
 image: /images/professor.jpeg
 include-in-header: _msft-clarity.html
 title: Teaching Economics vs. teaching Physics
-
 ---
+<article data-clarity-region="article">
+
 [Ed Rice](https://foster.uw.edu/faculty-research/directory/edward-rice/), [one of my former Finance professors](/posts/2022-07-23-teacher-appreciation.qmd), was once telling me how teaching Economics is different from teaching Physics.
 
 Not exactly about how the _science_ differs, but about how people react when being taught.
@@ -33,3 +34,5 @@ The Economics professor takes a deep breath. "As I was trying to explain, in Eco
 Disheartened, the Economics professor tries their final weapon. "Ok, I know you'pre not cons... I mean, c-words, you are _people_. Do you people want to learn how to make a lot of money in the stock market so that you can buy whatever you want?" Everybody gets real quiet.
 
 Spoiler alert: he's going to tell them to invest in an index fund. Spoiler alert 2: they'll buy crypto.
+
+</article>

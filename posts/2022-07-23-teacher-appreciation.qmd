@@ -8,8 +8,9 @@ draft: true
 image: /images/teacher-appreciation.jpg
 include-in-header: _msft-clarity.html
 title: Learning from others
-
 ---
+<article data-clarity-region="article">
+
 
 How much of what you do is borrowed from other people? When you realized you learned something from someone, did you tell them?
 
@@ -33,3 +34,4 @@ I had to learn how to learn from other people myself. I recently realized that I
 - Jorge Pulido taught me to (very politely) learn about the incentives of people in teams I collaborate with. This helped me understand collaborators better and made my life substantially easier.
 
 There are a ton of other people that helped me be better. Some I did not include because I still work with them. It would feel sycophantic. Some I didn't have time to organize how to write about them yet. But I'll get there!
+</article>

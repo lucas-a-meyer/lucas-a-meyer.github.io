@@ -8,8 +8,9 @@ description: The theory and application of Cunningham's Law, the concept of expl
 image: /images/cunninghams-law.jpg
 include-in-header: _msft-clarity.html
 title: Cunningham's Law
-
 ---
+<article data-clarity-region="article">
+
 
 Cunningham's Law states "the best way to get the right answer on the internet is not to ask a question; it's to post the wrong answer." 
 
@@ -27,3 +28,5 @@ On the other hand, the incorrect statement "Han Solo is Luke's father" provides 
 
 ![](/images/cunninghams-law.jpg)
 
+
+</article>

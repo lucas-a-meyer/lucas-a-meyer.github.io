@@ -1,0 +1,30 @@
+---
+author: Lucas A. Meyer
+categories:
+- management
+date: 2022-11-08 06:00:00
+description: The functional dynamics and potential inefficiencies of mechanical gear
+  systems as a metaphor for teamwork in professional settings, as well as reflections
+  on personal experiences of teamwork within the AI for Good Lab.
+draft: false
+image: /images/teamwork-cogs.jpg
+include-in-header: _msft-clarity.html
+title: Teamwork - what's wrong with this picture?
+
+---
+
+If your office has a "teamwork gears" picture like this one, you may be thinking about working remotely.
+
+![](/images/teamwork-cogs.jpg)
+
+I'm not even talking about the guy riding the rocket. I'm going to assume that it's a crash test dummy, not an allusion to the recent acquisition of #Twitter. The problem I have is with the gears.
+
+You see, if the person with the mustache and the red shirt turns the gear **clockwise**, this would push the other two gears to turn **counter-clockwise**. But these other two gears push each other in opposite directions. 
+
+For example, if "red" moves clockwise, it will push "green" to move counter-clockwise, which in turn pushes "blue" to move clockwise, which in turn pushes "red" to move counter-clockwise... but "red" was being pushed to move clockwise to begin with. This whole gear system is stuck: if someone tries to introduce any movement, the system works to stay firmly locked into place.
+
+I'm still trying to decide if this is a mistake. Maybe it's just great art, a subtle criticism about #teamwork that the artist snuck in. Maybe they worked in a #toxic workplace, or had a lot of group projects in high school.
+
+It's in days like this that I realize how luck I've been in my career. The teams I worked in (and my current team, the AI for Good Lab) were always places that were simultaneously good at science and great places to work at. 
+
+I hope you are as lucky as I am.

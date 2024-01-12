@@ -1,15 +1,16 @@
 ---
 author: Lucas A. Meyer
 date: 2018-06-25 06:00:00
-description: Benefits and challenges of distributing
-  data science teams into client areas, as well as the importance of maintaining a
-  cohesive data scientist community and the potential advantages and disadvantages
-  of different reporting structures within the team.
+description: Benefits and challenges of distributing data science teams into client
+  areas, as well as the importance of maintaining a cohesive data scientist community
+  and the potential advantages and disadvantages of different reporting structures
+  within the team.
 image: https://cdn-images-1.medium.com/max/2000/1*YfxWi5QZkShNHS0XLuKlMQ.png
 include-in-header: _msft-clarity.html
 title: Centralized vs. Distributed Data Science Teams
-
 ---
+<article data-clarity-region="article">
+
 
 In a recent [DataFramed podcast](https://www.datacamp.com/community/podcast/organizing-data-science-teams), [Hugo Bowne-Anderson](https://github.com/hugobowne) and [Jonathan Nolis](https://github.com/jnolis) discuss whether data scientist teams should be centralized or distributed. I have my own opinions about that question.
 
@@ -54,3 +55,5 @@ One disadvantage is estimating the value of the data scientist to the client are
 Honestly, if you're starting a data science team, your best bet is to hire someone like Jonathan or Drew Conway to plan the team for you. You're going to spend a lot of money on Data Science, and it's important to make sure that it will be well spent.
 
 If you're on a budget and all you can invest is the time to read some blog posts, well... you probably don't have enough money to hire data scientists. But if you do, I recommend assigning them to the client areas and keeping them there. Even when they're not doing modeling or machine learning, they're learning more about the business and its data.
+
+</article>

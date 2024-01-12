@@ -8,8 +8,9 @@ draft: true
 image: /images/diffused_terms-of-art-david.png
 include-in-header: _msft-clarity.html
 title: Mastering Terms of Art with Language Models
-
 ---
+<article data-clarity-region="article">
+
 
 # The Art of Navigating "Terms of Art" with Language Models
 
@@ -30,3 +31,4 @@ Using an LLM is like relying on a GPS for navigation: if the GPS tells you to dr
 ## Conclusion
 
 As we continue to develop and refine LLMs, it's important to remember their limitations. By understanding the challenges they face with "terms of art" and other linguistic nuances, we can use these tools more effectively and ensure that our writing remains accurate, engaging, and true to our intended meaning. So, let your LLM be your co-pilot, but always keep a watchful eye on the road ahead.
+</article>

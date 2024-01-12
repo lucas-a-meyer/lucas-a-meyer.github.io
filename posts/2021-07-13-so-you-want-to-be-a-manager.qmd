@@ -7,8 +7,9 @@ description: The intricacies of a manager's calendar, necessary meetings, the im
   of interpersonal communication, and the individual's ability to endure lengthy interactions.
 include-in-header: _msft-clarity.html
 title: So you want to be a manager
-
 ---
+<article data-clarity-region="article">
+
 This is what your calendar can look like. 
 
 <center>![](/images/blurred-calendar.jpg){width=60%}</center>
@@ -24,3 +25,5 @@ These would be *meetings with people*, not blocked time to do work. This may not
 - meetings with peers to ensure we're learning from each other
 
 I am an extreme introvert, and try really hard to avoid low-value meetings. But I still do 30+ hours. So if you want to be a manager, you need to like (or at least be able to endure) talking to people for a long time each week.
+
+</article>

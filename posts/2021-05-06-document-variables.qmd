@@ -10,8 +10,9 @@ description: Effective strategies for performing well in code interviews includi
   understandable code.
 include-in-header: _msft-clarity.html
 title: Remember to document your code
-
 ---
+<article data-clarity-region="article">
+
 
 When you are doing a code interview, it's possible (and even likely) that you're going to be nervous. Remember to document your thinking process.
 
@@ -26,3 +27,5 @@ If you're writing SQL, name your CTEs and columns you create with meaningful nam
 Format your code well if you have time. Your mind may be racing to finish the problem, this will help.
 
 Of course we want candidates that can solve the interview problem, but we also want candidates that write code that is easy to understand and maintain.
+
+</article>

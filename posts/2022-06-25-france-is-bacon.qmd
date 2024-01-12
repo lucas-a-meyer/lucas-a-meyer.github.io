@@ -7,8 +7,9 @@ draft: true
 image: /images/france-is-bacon.jpg
 include-in-header: _msft-clarity.html
 title: France is bacon
-
 ---
+<article data-clarity-region="article">
+
 
 Although it's hard to know whether it's real or not, that's one of my favorite stories ever. Similar to a classic Greek tragedy, real or not, it shows a core truth about reality.
 
@@ -24,3 +25,5 @@ It wasn't until years later I saw it written down that the penny dropped."
 
 I can't imagine the number of things that I *think* I understand, but that are like "France is Bacon".
 
+
+</article>

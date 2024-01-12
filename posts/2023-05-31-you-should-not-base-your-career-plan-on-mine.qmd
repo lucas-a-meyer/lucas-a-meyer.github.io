@@ -9,8 +9,9 @@ draft: false
 image: /images/schnauzer_banker.jpg
 include-in-header: _msft-clarity.html
 title: You should not base your career plan on mine
-
 ---
+<article data-clarity-region="article">
+
 I started writing code when I was 9 years old. I ended up going to Law school. Maybe you should not follow my career path.
 
 ## Early promises
@@ -60,3 +61,5 @@ But maybe this whole experience was worthwhile. I've been exposed to a lot of th
 ## What about you?
 
 I don't know what your Ikigai is. I know that sometimes you can get far off-path. I needed help to find my bearings. You shouldn't follow my career path, as I was lost for a long time. But you can learn from my mistakes, and learn what you're good at and what makes you happy sooner rather than later, and start driving towards that. I hope your road to happiness is shorter than mine, and that it has at least as many beautiful sights along the way.
+
+</article>

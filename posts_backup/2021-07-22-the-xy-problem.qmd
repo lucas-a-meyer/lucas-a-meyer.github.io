@@ -1,0 +1,32 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+date: 2021-07-22 06:00:00
+description: The importance of properly stating the problem one is trying to solve
+  when asking technical questions, referred to as the "XY problem," through an example
+  of inefficient problem-solving due to lack of clarity.
+image: /images/xy-problem.jpg
+include-in-header: _msft-clarity.html
+title: The XY Problem
+
+---
+
+During a recent presentation, I've been asked: "What do you wish new hires knew?" 
+
+To me, the answer is "the XY problem", or "how to properly ask technical questions".
+
+The classic guide for asking technical questions can be [found on the web](https://buff.ly/3efqRVR), but the most important part for me is the ["XY Problem"](https://buff.ly/3yTtEvE).
+
+The common mistake is to ask "how can I do X to solve Y". The "to solve Y" part is frequently omitted, wasting time for everyone.
+
+Let me do an example to illustrate the problem. Jay is a new hire, recently hired from a prestigious school, to be the data analyst for a Finance team in a big tech company. The fiscal year is ending, and the company's accountant asks Jay for a report that aggregates tax expenses by country. Jay recently used pandas in Jupyter for a different project, and the graphs that the accountant wants are similar to what Jay just did. Jay decides to ask "How can I connect a Jupyter notebook to the corporate database?", so that Jay can use pandas to do fulfill the accountant's request. When asking for help, Jay didn't state why they want to connect their Jupyter notebook to the corporate database 
+
+What Jay doesn't know (and the accountant also doesn't know) is that a Power BI report that does what the accountant needs already exists, and everybody in Finance has access to it.
+
+People spend time helping Jay connect to the corporate database. Jay spends time getting permissions, installing and configuring packages, etc. to solve a problem that was already solved. All this time is invested in something that is unnecessary, instead of being invested in improving the onboarding experience and documentation so that Jay and the accountant could learn that the report they needed already existed.
+
+Don't be like Jay! State the problem you're trying to solve, rather than asking for help with a specific task. You may learn a lot more.
+
+I love shortcuts such as "the XY problem" to explain complex concepts. I have a [list in my blog](/posts/2022-07-25-concepts.qmd).
+

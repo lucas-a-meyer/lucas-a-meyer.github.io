@@ -8,8 +8,9 @@ freeze: true
 image: /images/quarto.png
 include-in-header: _msft-clarity.html
 title: Converting my blog from Jekyll to Quarto
-
 ---
+<article data-clarity-region="article">
+
 
 I thought moving from Jekyll to Quarto was going to be hard. It was not.
 
@@ -50,3 +51,4 @@ ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
 ```
+</article>

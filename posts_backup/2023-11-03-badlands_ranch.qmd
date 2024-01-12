@@ -1,0 +1,38 @@
+---
+aliases:
+- /articles/badlands-ranch.html
+author: Lucas A. Meyer
+date: 2023-11-03
+description: Insight into Badlands Ranch dog food's behavior with picky eaters, its
+  price point, packaging, promotions, and comparison to other brands.
+image: /images/badlands.png
+include-in-header: _msft-clarity.html
+page-layout: full
+title: Badlands Ranch Dog Food Review
+toc: true
+toc-expand: true
+
+---
+
+::: {.callout-note}
+
+This is a review of [Badlands Ranch](https://badlandsranch.com/), a dry dog food. I am not affiliated with the company in any way and I don't receive any compensation for this review. 
+
+:::
+
+Our dog, TheFuzzy, is very picky with food. She will go into hunger strikes for an extended period of time if she dislikes the food. The first brand that worked reliably for us was [The Farmer's Dog](/posts/2022-06-28-farmers-dog.qmd). The main drawback of that food is that it's wet and frozen. It takes a fair amount of freezer space, the kids don't like to handle it, it's hard to travel with. We tried a few other brands, but none of them worked. Then we found [Badlands Ranch](https://badlandsranch.com/), a dry food funded by the actress Katherine Heigl, and decided to give it a try.
+
+You can order the food on their [website](https://www.badlandsranch.com). They run promotions that give big discounts on the first order, but they seem to run promotions giving big discounts all the time. 
+
+## What you should know
+
+Here's a few things that you should know before you try that are not obvious from the website:
+
+- The **packages are small**, containing only 10 cups of food each. My dog is 40 lbs, and she needs 2.5 cups per day, so each package lasts only 4 days.
+- The food is **expensive**: if you buy the 6-bag bundle, it's $203.70 for 60 cups, or $3.40 per cup. That's $8.50 per day for my dog. Blue Buffalo food, a premium brand of wet food, is about $6.50 per day for my dog.
+
+However, my dog reliably likes it. Because it's dry food, we can travel with it. It's fairly calorie-dense, so it's easy to carry a few days worth of food in a small bag. It's also easy to store, and it doesn't smell. The kids feed the dog without complaining, and the dog eats mostly without complaining, so it works well for us. Unless we're eating pizza, in which case the dog will refuse to eat anything else. But you can't blame her for that.
+
+## Promotions
+
+Sometimes Badlands Ranch runs big promotions for large orders - I recently ordered 12 packages for $312.80. That's $2.60 per cup, or $6.50 per day for my dog, same as Blue Buffalo. They send you a large (and annoying) number of emails, so you'll know when they run promotions, even if you don't really want to.

@@ -10,8 +10,9 @@ description: Insights into the different skill set required for a manager, metho
 image: /images/become-manager.jpg
 include-in-header: _msft-clarity.html
 title: So you want to become a manager
-
 ---
+<article data-clarity-region="article">
+
 
 Nobody in their right mind would ask me about how to become a singer or dancer.
 
@@ -72,3 +73,5 @@ When you feel the same, it's worth it trying it out.
 
 
 
+
+</article>

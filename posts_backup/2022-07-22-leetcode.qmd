@@ -1,0 +1,37 @@
+---
+author: Lucas A. Meyer
+date: 2022-07-22 04:00:00
+description: Techniques for conducting a successful technical phone screening, distinguishing
+  between candidates who truly understand coding versus those who memorize algorithms
+  and solutions from resources like LeetCode, and tactics for improving interviewer
+  performance.
+draft: false
+image: /images/leetcode.jpg
+include-in-header: _msft-clarity.html
+title: Separating LeetCode grinders from coders
+
+---
+
+My preferred interview type is the technical phone screen. I can track my performance even without sophisticated reporting. 
+
+I also face an interesting problem: how to separate LeetCode "grinders" from people who can code.
+
+## Measuring screener performance
+
+I wrote before about the [many steps in an interview process](https://www.meyerperin.com/posts/2021-06-05-what-happens-when-a-hiring-manager-posts-a-position-on-linkedin.html). The last few steps of the process are: technical phone screen, on-site interview (now done remotely as well), and offer.
+
+A technical screener can have a good idea of their performance by observing the results of the on-site interview step. If the screener is too lenient, lots of people will pass the phone screen but fail the on-site interview. The opposite is not necessarily a good sign. If the pass rate on the phone screen is low but the pass rate on the on-site interview is high, it could mean that the screener is too strict, but it could also mean that the candidate pool is bad.
+
+Tech screeners should usually be [more experienced than the average interviewer](https://www.meyerperin.com/posts/2021-07-02-how-to-fail-a-technical-phone-screen.html). Having a screener that is too lenient is costly, as many people will talk to a candidate that passes a technical phone screen.
+
+## The problem with LeetCoding
+
+Some people use sites like LeetCode, StrataScratch and HackerRank to learn, but many use them to "grind" and simply memorize algorithms for interviews. Now that interviews are remote, some people cheat and copy the answers from these sites during the interview. The problem I need to solve is how to separate "grinders" (and cheaters) from people who know how to code.
+
+My solution is imperfect, and may not work if the candidate is experienced, practiced a lot, but is nervous. I try to work around that problem in different ways. On the other hand, I think my solution worked in some important cases.
+
+## The solution
+
+What I do is that I get some popular questions and change their assumptions to make them **a lot simpler**. During the intervew, I warn candidates that I did that. Even with the warning, the "grinders" regurgitate the solution from the websites, which don't even solve the simplified problem. Good coders solve the simplified problem, and when I reintroduce the harder assumptions, they solve that one as well. 
+
+Once I started doing that, my on-site pass rate became really high, and I got [some reputation for being a good interviewer](https://www.meyerperin.com/posts/2022-04-05-hiring-is-a-superpower.html). My team got a lot better, too!

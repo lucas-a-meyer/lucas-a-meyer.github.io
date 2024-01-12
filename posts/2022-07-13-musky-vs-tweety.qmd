@@ -7,8 +7,9 @@ draft: false
 image: /images/owning-twitter.jpg
 include-in-header: _msft-clarity.html
 title: 'Interview question: Musky vs Tweety'
-
 ---
+<article data-clarity-region="article">
+
 
 One thing I find in my interviews is that data scientists are a lot better at calculating expectations than they are at defining loss functions. 
 
@@ -37,3 +38,5 @@ This results in an expected loss of $434.02 (of which $142.86 goes to the lawyer
 
 If you like data science interview questions, my friend Nirmal Budhathoki has been posting 30 days of them on LinkedIn. His questions are great (certainly better than mine above), and you should follow his series.
 
+
+</article>

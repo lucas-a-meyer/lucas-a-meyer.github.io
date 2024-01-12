@@ -14,8 +14,9 @@ page-layout: full
 title: Getting Started with Midjourney
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 # Introduction
 [Midjourney](https://www.midjourney.com/) is a generative AI tool that can generate high quality images from text prompts. It is particularly good at generating photorealistic images, and also good at blending an existing picture with a prompt. Lots of people use Midjourney as a digital diary, or to quickly create images for their social media and blog posts. 
@@ -132,3 +133,4 @@ And here is the final result:
 # Conclusion
 
 I hope this tutorial helped you get started with Midjourney. If you have any questions, please feel free to drop me a message using my socials above (LinkedIn and Threads are my preferred ones).
+</article>

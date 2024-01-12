@@ -11,8 +11,9 @@ description: The importance and benefits of regular practice in job interviewing
 image: /images/offer-only.jpg
 include-in-header: _msft-clarity.html
 title: My policies on interviewing
-
 ---
+<article data-clarity-region="article">
+
 
 I have recently announced that I'm leaving Amazon and starting a new job (yet to be announced) next week. This means that I have been on the interviewee side of the interview process somewhat recently. 
 
@@ -26,3 +27,5 @@ One of the hardest questions for me is "why do you want to leave your current jo
 
 To wrap this up, I want to recognize that my experience above is one of extreme privilege: I have been around for a long time, and I'm extremely fortunate to be invited to interview. A large number of people are in earlier stages, when even getting an interview is hard. If you are in that situation, I think the takeaway is to still try to get as much practice as you can (by being open even after you're far into some process, by doing mock interviews in both sides of the table, etc.). I hope your time will come and I hope that I can help.
 
+
+</article>

@@ -8,8 +8,9 @@ draft: true
 image: /images/diffused_bitcoin_anonymity.png
 include-in-header: _msft-clarity.html
 title: The Mystery of Bitcoin- Anonymity, Pseudonymity, and Crime
-
 ---
+<article data-clarity-region="article">
+
 
 # The Mystery of Bitcoin: Anonymity, Pseudonymity, and Crime
 
@@ -25,3 +26,5 @@ The moment the actor uses bitcoin in a way that can be connected to their real i
 
 Now, you might be wondering if I am giving away too much information. Fear not, dear reader! The sophisticated bad actors in our mystery tales are already well aware of this, and the unsophisticated ones don't read my LinkedIn posts... only the sophisticated ones do!
 
+
+</article>

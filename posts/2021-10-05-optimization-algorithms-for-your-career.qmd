@@ -11,8 +11,9 @@ description: The concept of optimization in careers, the trap of local versus gl
 image: /images/optimization-career.png
 include-in-header: _msft-clarity.html
 title: Optimization algorithms for your career
-
 ---
+<article data-clarity-region="article">
+
 
 Most people in science and engineering professions (and us Economists) are very familiar with the concept of optimization. 
 
@@ -60,3 +61,5 @@ In career conversations, I always suggest that people take the time to explore n
 
 That's using data science in production.
 
+
+</article>

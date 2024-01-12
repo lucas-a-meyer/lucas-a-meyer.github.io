@@ -10,8 +10,9 @@ description: The importance of hiring and developing the best team members, the 
 image: /images/gladiator.jpg
 include-in-header: _msft-clarity.html
 title: Hiring is a superpower
-
 ---
+<article data-clarity-region="article">
+
 One of my superpowers from my #Amazon review process this year was "Hire and Develop the Best". 
 
 This may be because a few years ago, my (then) manager taught me a trick: when in doubt, err on the side of hiring people. 
@@ -25,3 +26,5 @@ I do this because it is extremely common for the interviewee to be nervous durin
 I like #interview questions that are "adaptive", like the GMAT, meaning that you can make them easier or harder by changing small things. Sometimes, people would actually be able to do the hard version of the question, but they're nervous and need to start with the easy one.
 
 As commonplace as it is, the interview process is very imperfect, and usually tends to yield false negatives: meaning that it fails people that would have succeeded. Given how hard the process is, people that are "on the margin" are more likely to be good hires than not. I have not regretted any bets I've made.
+
+</article>

@@ -7,8 +7,9 @@ draft: false
 image: /images/just-hired-microsoft.jpg
 include-in-header: _msft-clarity.html
 title: Happy new year, Microsoft
-
 ---
+<article data-clarity-region="article">
+
 
 I joined Microsoft in 2002. Since then, I missed only the FY11 (I was a Ph.D. student) and FY21 (I was working for Amazon) fiscal year-ends. 
 
@@ -23,3 +24,5 @@ I am extremely thankful for having the opportunity to work for #Microsoft for th
 Happy new (fiscal) year to all my Microsoft friends.
 
 
+
+</article>

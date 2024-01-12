@@ -8,8 +8,9 @@ description: The intricacies and challenges of developing a Slack bot using Pyth
   and cons of using Azure Functions.
 include-in-header: _msft-clarity.html
 title: Yo, Stroop!
-
 ---
+<article data-clarity-region="article">
+
 
 [YoStroop](https://github.com/RealLucasMeyer/yostroop) is a bot that allows members of a slack channel to give rewards to each other, usually as a way of saying "thank you" for help and valuable contributions. 
 
@@ -61,3 +62,5 @@ Once I was done with my development, which [Azure Functions Core Tools](https://
 ## Verdict
 
 Although I was so far unable to fulfill half of my initial objectives, it looks like I'll get there soon. There's something magical about Azure Functions. It does a lot of the hard work for you, and if you're familiar with one of the many languages available, you can deploy your program to production really fast. I had never developed a Slack bot before, and I've started the bot during a sleepless night and finished it in an afternoon. All in, it took me less than two days of work to get an app to production. There are still some kinks to be worked out but Azure Functions v2 has already proved to be useful to me.
+
+</article>

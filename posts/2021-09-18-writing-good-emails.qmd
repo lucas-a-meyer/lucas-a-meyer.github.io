@@ -8,8 +8,9 @@ description: Efficient email handling techniques, including clearly identifying 
 image: /images/grad-student-email.jpg
 include-in-header: _msft-clarity.html
 title: Writing good emails
-
 ---
+<article data-clarity-region="article">
+
 
 Earlier in my career, I took quite a while writing emails. As most people earlier in their careers, my main concern was to "not be wrong" rather than actually "moving the discussion forward efficiently" (or ending it). That was especially true when senior people were in the thread.
 
@@ -25,3 +26,5 @@ At my age, I already know a bunch of keyboard shortcuts, and can get through doz
 
 I'm still not at the professor level in the cartoon, but I'm working towards it.
 
+
+</article>

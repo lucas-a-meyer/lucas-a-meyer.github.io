@@ -8,8 +8,9 @@ description: The concept of a "goodwill account", ways in which colleagues can e
   annoying behaviors in a professional environment.
 include-in-header: _msft-clarity.html
 title: The goodwill account
-
 ---
+<article data-clarity-region="article">
+
 
 One of the most helpful team-building exercises I participated in was very simple. It was called the "goodwill account".
 
@@ -27,3 +28,5 @@ And the credits were:
 
 It was also helpful to learn about things that annoyed my colleagues that I did without realizing.
 
+
+</article>

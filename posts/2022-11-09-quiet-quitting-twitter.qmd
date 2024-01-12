@@ -14,8 +14,9 @@ draft: false
 image: /images/fail-whale.jpg
 include-in-header: _msft-clarity.html
 title: Quiet(ly) quitting Twitter
-
 ---
+<article data-clarity-region="article">
+
 
 I have "quietly left" Twitter. I've configured my devices in a way that I can only see Twitter if I use a specific device, and that usually takes more effort that it's worth. That's also how I tamed several other digital habits.
 
@@ -30,3 +31,5 @@ Vicki has several posts that changed how I think about the world. The reason why
 Right now, I'm [trying Mastodon](https://data-folks.masto.host/@lucasmeyer) and it's going super well. It took about a day for things to really catch up, but it did. Most of the people I followed on Twitter and LinkedIn already showed up.  It's glorious. If you are in Mastodon, come say hi. 
 
 Even though Twitter is a dumpster fire right now, I think it will survive. I think the specialized niches that thrived on Twitter will leave to Mastodon, where there will be less noise. I think the "pop culture" aspect of Twitter will remain. The way I'm thinking of this is: I don't expect a Kardashian to show up on Mastodon, and I don't expect scientists to move back to Twitter. It's probably for the best.
+
+</article>

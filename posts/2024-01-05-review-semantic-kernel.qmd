@@ -8,8 +8,9 @@ draft: false
 image: /images/semantic_kernel_book/reviewerW.png
 include-in-header: _msft-clarity.html
 title: Tech reviewers wanted for my Semantic Kernel book
-
 ---
+<article data-clarity-region="article">
+
 
 I am wrting a book with [Packt Publishing](https://www.packtpub.com/) about the [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel). If you want to help by becoming a technical reviewer, please read on.
 
@@ -47,3 +48,4 @@ If you are interested, please fill the form below and someone from Packt will co
     formId: "202dcfb9-d901-4350-abc3-38c9ebee21bf"
   });
 </script>
+</article>

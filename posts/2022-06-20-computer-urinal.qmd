@@ -8,8 +8,9 @@ draft: true
 image: /images/computer-urinal.jpg
 include-in-header: _msft-clarity.html
 title: Computers and Urinals
-
 ---
+<article data-clarity-region="article">
+
 
 Years ago, in a tech conference, a researcher asked: "Isn't it embarrassing that the conference center urinals can detect when you're done and automatically flush, but your computer can't detect that you're not using it and automatically lock?"
 
@@ -30,3 +31,5 @@ From my description above, you probably already appreciate how a seemingly simpl
 The people who implemented the feature still couldn't solve all problems. What to do if the user doesn't have their phone today? Current solution: just show an error message. What to do if the user moves away but leaves the phone nearby? We detect phones, not users, so it will leave it unlocked.
 
 In any case, I'm glad to see that computers of 2020s are inching closer to the toilets of the early 2000s.
+
+</article>

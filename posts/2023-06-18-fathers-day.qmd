@@ -9,8 +9,9 @@ freeze: true
 image: /images/calvin-father.jpg
 include-in-header: _msft-clarity.html
 title: Father's Day 2023
-
 ---
+<article data-clarity-region="article">
+
 I didn't have a good father. But my mother showed up. Happy Father's Day to all fathers that show up, and to all non-dads and single moms that do so much every day to fill in that giant void.
 
 We are different in social media than we are in real life. The most important thing I am is a father, but I avoid talking about my family on social media. 
@@ -28,3 +29,4 @@ I love my dad because: he is good at math, he is caring and loving, he's funny
 My dad loves me because: I'm the best (older, middle, youngest) child
 
 I'm very lucky, and I hope you are too. It goes faster than it seems.
+</article>

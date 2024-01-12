@@ -14,8 +14,9 @@ title: Explaining memes and images with the Semantic Kernel and the OpenAI Visio
   API
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 In this article, I'll explain how to use the Semantic Kernel and the OpenAI Vision API to perform two tasks:
 
@@ -164,3 +165,5 @@ The full code for the plugin and associated demo can be found in the [GitHub rep
 
 Yes, and with the blog post above, you can easily create one yourself. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expensive very quickly.
 
+
+</article>

@@ -8,8 +8,9 @@ draft: false
 image: /images/aiforgood.jpg
 include-in-header: _msft-clarity.html
 title: Becoming Good at AI for Good
-
 ---
+<article data-clarity-region="article">
+
 
 The AI for Good Research Lab published an [article](https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good) last year about how to do AI projects in the #AI4Good domain. 
 
@@ -22,3 +23,5 @@ I especially like the part about getting things from model to impact. Before lea
 This is a lot better, and likely to help you understand a lot about the real-world constraints of making AI happen.
 
 The article can be found at <https://www.microsoft.com/en-us/research/publication/becoming-good-at-ai-for-good>
+
+</article>

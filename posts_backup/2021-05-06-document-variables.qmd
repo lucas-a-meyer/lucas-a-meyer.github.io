@@ -1,0 +1,28 @@
+---
+author: Lucas A. Meyer
+categories:
+- career
+- interviews
+date: 2021-05-06 06:00:00
+description: Effective strategies for performing well in code interviews including
+  documenting thoughts, commenting code, appropriately naming variables and functions,
+  formatting and maintaining code, and understanding the importance of writing easily
+  understandable code.
+include-in-header: _msft-clarity.html
+title: Remember to document your code
+
+---
+
+When you are doing a code interview, it's possible (and even likely) that you're going to be nervous. Remember to document your thinking process.
+
+Remember to think out loud. But also don't forget:
+
+Comment your code. Maybe even write a quick comment of what you're going to do before you try to do it.
+
+Name your variables and functions carefully, with a name that explains what they're going to do.
+
+If you're writing SQL, name your CTEs and columns you create with meaningful names.
+
+Format your code well if you have time. Your mind may be racing to finish the problem, this will help.
+
+Of course we want candidates that can solve the interview problem, but we also want candidates that write code that is easy to understand and maintain.

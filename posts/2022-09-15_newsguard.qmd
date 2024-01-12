@@ -10,8 +10,9 @@ draft: false
 image: /images/newsguard.png
 include-in-header: _msft-clarity.html
 title: NewsGuard is free for Microsoft Edge users
-
 ---
+<article data-clarity-region="article">
+
 
 If you have been following the news for the last few years, you have seen how much the prevalence of misinformation, disinformation (intentional misinformation), and propaganda (intentional misinformation by state actors) has increased a lot. Most topics of interest online have a shocking proportion of misinformation: Ukraine, COVID, elections, etc. 
 
@@ -24,3 +25,5 @@ For this latter task, a product I have found to be useful is NewsGuard <https://
 It helps that NewsGuard is free for users of Microsoft Edge. You can install a NewsGuard extension and it will show whether the site you are seeing is trustworthy. It will also integrate with Bing when used in Edge, and show a badge next to each result.
 
 If you want to try it out, the following link has the instructions: <https://support.microsoft.com/en-us/topic/newsguard-b28e453e-568c-4d57-98ef-c61056f99462>. Note that it's only free for Microsoft Edge, which is a great browser that runs in a number of platforms such as Linux, Mac, etc. 
+
+</article>

@@ -15,8 +15,9 @@ page-layout: full
 title: A Quick Tour of the Semantic Kernel
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 # Introduction
 
@@ -266,3 +267,5 @@ This code will call the first (native) function that classifies an image, and th
 I hope this brief tour helps you get started. If you want to learn more, you can check the [official documentation](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide/getting-started?tabs=python).
 
 You can also join the community [Discord server](https://aka.ms/SKDiscord).
+
+</article>

@@ -9,8 +9,9 @@ description: The tools and strategies data scientists use when analyzing correla
 image: /images/reverse-causation.jpg
 include-in-header: _msft-clarity.html
 title: Reverse causation
-
 ---
+<article data-clarity-region="article">
+
 
 Gather close as I tell you a cautionary tale about data science. 
 
@@ -36,3 +37,5 @@ The project was scrapped. The team decided that data science was all hype. The d
 
 It took a while (and a new data scientist) for that team to trust data science again: a few years later, a new data scientist started experimenting with assigning different strategies to randomized customers, and that improved collections a lot. But that's another tale.
 
+
+</article>

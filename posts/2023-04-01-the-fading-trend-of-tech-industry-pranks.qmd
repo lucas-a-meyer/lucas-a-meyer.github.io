@@ -8,8 +8,9 @@ draft: true
 image: /images/diffused_pinocchio.png
 include-in-header: _msft-clarity.html
 title: The Fading Trend of Tech Industry Pranks
-
 ---
+<article data-clarity-region="article">
+
 
 In the tech industry, it used to be an amusing tradition for companies to play pranks on their employees and customers every April Fool's Day. However, it seems that this trend is slowly fading away.
 
@@ -24,3 +25,4 @@ As entertaining as these pranks were, for those of us who worked in customer sup
 It seems that tech companies have stopped playing pranks on their customers and employees, and maybe it's for the best. Although these jokes were a fun way to provide entertainment and engage with their customers, it is not worth the potential backlash and confusion that could arise. 
 
 As the tech industry evolves and continues to grow, it is important for companies to stay true to their mission and core values. Perhaps, leaving pranks in the past is the best way to ensure that companies maintain their reputation and focus on providing quality products and services to their customers.
+</article>

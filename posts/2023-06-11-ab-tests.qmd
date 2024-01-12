@@ -9,8 +9,9 @@ draft: false
 image: /images/schnauzer_scientist.jpg
 include-in-header: _msft-clarity.html
 title: A/B testing needs a theory
-
 ---
+<article data-clarity-region="article">
+
 Randomized controlled experiments (A/B tests) are frequently said to be the gold standard for decision-making. However, to make a good decision, you have to really understand what question is being answered.
 
 Let's say, hypothetically, that you want to try a new color palette for your website. You have the mechanisms to run proper A/B tests: you can bucket users into A and B groups such that the only difference between them is the color palette. You choose, arbitrarily, a random palette, run the experiment for a week, and find that the users in the B group have a $200k lift in revenue, which annualized represents a $10M increase in revenue. That's not nothing. You roll it out to all users, write your performance review, book a party and wait for your promotion.
@@ -30,3 +31,4 @@ Your A/B experiment is on the top of the evidence pyramid, but for which of the 
 There is, however, a hint that you learned something, and that it's familiar to data scientists: the descriptive, predictive and prescriptive/causal framework. When you really understand how something works, if you have the resources, you can make it happen at will. For example, if the reason why you got a lift in your experiment is because you were looking like your much larger competitor, you could now mimic their color palette every time they make a change and keep getting the lift. You could mimic palettes of other larger competitors and get lifts there, too. 
 
 A/B tests are great evidence when you understand the question. Better make sure you do.
+</article>

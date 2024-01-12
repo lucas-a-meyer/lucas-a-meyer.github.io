@@ -7,8 +7,9 @@ draft: true
 image: /images/diffused_schnauzer_eating_money.png
 include-in-header: _msft-clarity.html
 title: Streamlining Financial Analysis through AI and Semantic Technology
-
 ---
+<article data-clarity-region="article">
+
 
 Have you ever had to do financial analysis on a large number of companies? If so, you know how hard it is to get the sector part to make sense. There are several different taxonomies, such as NAICS, GIC, SIC, and more. Joining company names with taxonomies is not trivial, and one common complication is when a company has multiple subsidiaries.
 
@@ -17,3 +18,4 @@ The other day, I found myself in this exact situation. Since the companies were 
 While a lot of the benefits of GPT can be realized with just a single prompt, it's clear that a lot of the future benefit will come from integrating. I did this manually this time, but recently, Microsoft launched the Semantic Kernel to make this process easier. I hope to blog about the Semantic Kernel soon.
 
 In conclusion, financial analysis can be a complicated task, especially when it comes to identifying a company's sector. But with the help of new technologies like GPT and the Semantic Kernel, we can make the process easier and more efficient.
+</article>

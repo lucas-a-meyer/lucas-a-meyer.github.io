@@ -9,8 +9,9 @@ description: "The importance of starting with a simple, na\xEFve model in data s
 image: /images/bin-laden-compound.jpg
 include-in-header: _msft-clarity.html
 title: Data science and 9/11
-
 ---
+<article data-clarity-region="article">
+
 
 After the 9/11 attacks, the CIA was looking for Bin Laden all over the world. 
 
@@ -27,3 +28,5 @@ A lot of #datascience is like that: technically correct, but not super helpful f
 Many practitioners (including myself) think that before you start thinking hard, and WAY before you start thinking about #machinelearning, you should start with a naïve model. Sometimes that's all you need. Sometimes that's all you have data for. Your model should at least beat that.
 
 (The Pacer was actually Bin Laden)
+
+</article>

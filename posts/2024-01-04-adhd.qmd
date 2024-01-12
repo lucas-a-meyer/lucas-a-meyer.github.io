@@ -14,8 +14,9 @@ page-layout: full
 title: Do I Have ADHD?
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 In October 2023, lots of people with ADHD started posting about their experiences on [Threads](https://www.threads.net). Have you ever commuted to work and forgot to bring your laptop? Check. Do you frequently procrastinate a simple two-minute task for several days? Check. Another person I conneced with through LinkedIn also posts about her experience.
 
@@ -145,3 +146,5 @@ Overall, having documented this process through posts has been a good experience
 # What about you?
 
 If you suspect you may have ADHD, I recommend that you talk to a medical professional. Your PCP is a good place to start. Online communities, such as the ones in Threads, can also be a good place to start. 
+
+</article>

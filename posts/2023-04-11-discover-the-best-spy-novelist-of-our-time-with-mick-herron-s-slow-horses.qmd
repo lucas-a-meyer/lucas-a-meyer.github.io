@@ -8,8 +8,9 @@ draft: true
 image: /images/diffused_doggo_spy.png
 include-in-header: _msft-clarity.html
 title: Discover the Best Spy Novelist of Our Time with Mick Herron's Slow Horses
-
 ---
+<article data-clarity-region="article">
+
 
 Are you a fan of spy novels and TV shows? If so, you need to check out Mick Herron's Slow Horses series, which has been hailed as a masterpiece by critics and fans alike. In fact, Herron is now being heralded as the best spy novel writer of our generation.
 
@@ -22,3 +23,4 @@ The book series has 8 novels and 4 novellas, but it struggled for a while, even 
 One thing to note, however, is that if you are a manager, you shouldn't follow Jackson Lamb's management style. While he may be effective in managing his spies, his methods are not suitable for a real-life workplace.
 
 Overall, if you're looking for a thrilling and entertaining spy series, look no further than Mick Herron's Slow Horses. Trust me, you won't be disappointed.
+</article>

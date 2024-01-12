@@ -10,8 +10,9 @@ draft: false
 image: /images/ai_schnauzer.png
 include-in-header: _msft-clarity.html
 title: How to Use Stable Diffusion from Hugging Face
-
 ---
+<article data-clarity-region="article">
+
 
 Recently, I started to automate a lot of what I do on LinkedIn. I am using AI generators to improve my text and to generate images for my blog posts. In this post, I'll show how I am generating images for my blog and for LinkedIn with Stable Diffusion v2.1.
 
@@ -79,3 +80,5 @@ In this tutorial, we have shown you how to use Stable Diffusion from Hugging Fac
 
 My code is available on GitHub (https://github.com/lucas-a-meyer/diffusers-experiments/).
 
+
+</article>

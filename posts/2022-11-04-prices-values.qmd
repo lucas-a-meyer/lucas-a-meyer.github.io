@@ -10,8 +10,9 @@ description: The ins and outs of tech company compensation, the risks and reward
 image: /images/money-gun.jpg
 include-in-header: _msft-clarity.html
 title: What are you optimizing for?
-
 ---
+<article data-clarity-region="article">
+
 
 This post is revisiting an [earlier post from May](https://www.meyerperin.com/posts/2022-05-10-work-life-balance.html) about salaries in tech companies, especially after the recent layoffs.
 
@@ -28,3 +29,5 @@ For my own example, when I left Amazon, about 40% of my compensation was salary 
 The above is only considering compensation risk, but you can take even **_more_** risk. I know plenty of people that never sell their RSUs. Besides taking risk with their compensation, they are also taking risks with their wealth. When their company is doing well, stocks go up and both their compensation and wealth go up. But when the company is not doing well, they may lose their job at the exact time their wealth is taking a big hit.
 
 As I got older, I got more risk averse. For the last 10+ years, I have religiously diversified from my RSUs using a 10b5-1 plan, which I implemented manually. These plans are becoming more mainstream: there's a company called Candor that automates the RSU diversification process. Although I have myself never used their services, I am a regular reader of Niya Dragova's newsletter and I have also talked to David Chouinard abut RSUs. It's definitely worth checking them out.
+
+</article>

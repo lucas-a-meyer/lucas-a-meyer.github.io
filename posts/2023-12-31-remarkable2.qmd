@@ -11,8 +11,9 @@ page-layout: full
 title: My experience with the reMarkable 2
 toc: true
 toc-expand: true
-
 ---
+<article data-clarity-region="article">
+
 
 Do you want to start journaling in the new year? Tired of carrying notebooks around? Maybe you just want your notes to be more organized?
 
@@ -77,3 +78,5 @@ The downsides are still problematic, and it may be better to wait for the next v
 {{< include _affiliate.qmd >}}
 
 You can buy the reMarkable 2 at [Amazon](https://l.meyerperin.com/rm2).
+
+</article>

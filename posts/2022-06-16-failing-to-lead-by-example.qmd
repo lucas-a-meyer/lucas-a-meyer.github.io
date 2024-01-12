@@ -7,8 +7,9 @@ description: The importance of setting a good example for work-life balance as a
 image: /images/failing-to-lead.jpg
 include-in-header: _msft-clarity.html
 title: Failing to lead by example
-
 ---
+<article data-clarity-region="article">
+
 
 One of the worst things I have done as a manager was to go to a meeting. Luckily, I had a friend on that meeting (also a manager) that taught me something really important.
 
@@ -28,3 +29,5 @@ In addition to showing that "vacations are important", I also had the opportunit
 
 I didn't realize the message I was sending, and I was glad to be called out.
 
+
+</article>

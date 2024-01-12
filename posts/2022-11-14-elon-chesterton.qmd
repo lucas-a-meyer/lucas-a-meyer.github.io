@@ -12,8 +12,9 @@ draft: true
 image: /images/twitter-bird-fence.jpg
 include-in-header: _msft-clarity.html
 title: When Elon Musk tore down Twitter's Chesterton's Fence
-
 ---
+<article data-clarity-region="article">
+
 
 A lot of the Twitter public mistakes could be avoided by using the [Chesteron's fence](/posts/2022-04-02-chestertons-fence.qmd) concept. 
 
@@ -41,3 +42,5 @@ The most worrying examples might be still in the works. For example, Twitter fir
 
 The most important thing about Chesterton's fence is not that one needs to keep the fence. They just need to understand why it was put up. In my career, I have seen many useless fences, but by understanding why they were put up, I was able to find a better solution for the problem they were solving, rather than just creating new ones.
 
+
+</article>

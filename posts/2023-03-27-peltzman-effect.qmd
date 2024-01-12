@@ -11,8 +11,9 @@ draft: true
 image: /images/peltzman.png
 include-in-header: _msft-clarity.html
 title: 'The Peltzman Effect: How Regulations Can Encourage Risky Behavior'
-
 ---
+<article data-clarity-region="article">
+
 
 The Peltzman Effect is a well-established economic theory that explores the unanticipated consequences of safety regulations. Eminent economist Sam Peltzman introduced this theory in his 1975 paper "The Effects of Automobile Safety Regulation." According to the theory, safety regulations implemented with the best intentions can potentially encourage risky behavior among individuals, thereby offsetting the intended safety benefits.
 
@@ -25,3 +26,4 @@ Despite some debate, the Peltzman Effect remains a crucial concept in economics.
 Note 1: this post is part of a series of experiments I'm doing with generative AI. I'm trying to iteratively collaborate with text and image generators and create articles that are 50%-70% written by me and the edited/improved by AI generators (currently GPT-3.5-Turbo and Stable Diffusion 2.1). I am still not loving it but will upgrade to GPT-4 really soon.
 
 Note 2: If this worked, the "Disney Socialite" image I generated for this post is not wearning a seatbelt...
+</article>

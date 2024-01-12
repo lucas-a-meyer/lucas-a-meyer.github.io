@@ -1,0 +1,134 @@
+---
+author: Lucas A. Meyer
+date: 2024-01-06
+image: /images/openai-logo.png
+include-in-header: _msft-clarity.html
+page-layout: full
+title: Automatically adding meta tags to your blog posts with OpenAI
+toc: true
+toc-expand: true
+---
+
+As I was updating my blog, I realized that I had forgotten to add the `description` meta tag to many of my blog posts. This is the text that appears in search results and when you share a link on social media. I didn't want to go through all my posts and add a description manually, so I decided to use OpenAI GPT to generate descriptions for me.
+
+This code is very simple, but it may be useful to you, so I'm sharing it here. It's written in Python and uses the new [OpenAI Python client syntax](https://github.com/openai/openai-python/discussions/742).
+
+## The code
+
+My blog is written in Quarto, which is a Markdown-based document format. I use Quarto Markdown (`.qmd`) files to write my blog posts. A `.qmd` file is a Markdown file with YAML front matter. The YAML front matter contains metadata about the document, such as the title, author, and date. I wanted to add the `description` meta tag to the YAML front matter of each file.
+
+The first thing to do is to extract the YAML front matter from the file. I used a regular expression to do this. If the file doesn't contain YAML front matter, I will skip it.
+
+```python
+import yaml
+import re
+import os
+from openai import OpenAI
+from dotenv import load_dotenv
+
+def parse_qmd(content):
+    # Extract the YAML front matter
+    matches = re.findall(r'^---\n(.*?)\n---', content, re.DOTALL)
+    if not matches:
+        return None, None
+    return matches[0], content
+
+```
+
+I wrote a function to recompose the file content after modifying the YAML front matter. This function takes the original YAML front matter, the modified YAML data, and the full file content as input. It replaces the original YAML front matter with the modified YAML data and returns the updated file content.
+
+```python
+def recompose_qmd(yaml_data, original_yaml, content):
+    # Convert the modified YAML data to string
+    new_yaml_str = yaml.dump(yaml_data, default_flow_style=False)
+
+    # Replace the original YAML content with the new one
+    updated_content = content.replace(original_yaml, new_yaml_str)
+    return updated_content
+```
+
+The workhorse of this code is the part that generates a summary of the Markdown content. I used the OpenAI chat API to do this. I created a chat prompt that asks the user to describe what the reader will learn after reading the article. I then used the `gpt-4` model to generate a response to this prompt. The response is the summary of the article.
+
+In my first attempts, GPT was starting the summary with "After reading the markdown article, the reader will learn". I didn't want this, so I added some text and an example to the prompt to remove this behavior.
+
+```python
+def summarize_markdown(markdown):
+    # Load your OpenAI API key
+
+    client = OpenAI(
+        api_key = os.getenv('OPENAI_API_KEY')
+    )
+
+    chat_completion = client.chat.completions.create(
+    messages=[
+        {
+            "role": "user",
+            "content": f"""Without repeating 'After reading the markdown article, the reader will learn', 
+            describe in one sentence what the reader will learn about after reading the markdown article. 
+            Also don't say 'the reader will learn about', just say what they'll learn. For example, 
+            instead of saying 'the reader will learn about strategies for programming', 
+            just say 'strategies for programming' 
+            Markdown:\n
+            {markdown}""",
+        }
+    ],
+    model="gpt-4")
+
+    return chat_completion.choices[0].message.content
+```
+
+Finally, I wrote a function that processes all the `.qmd` files in a directory. It loops through all the files in the directory and calls the functions I wrote above to extract the YAML front matter, generate a summary of the Markdown content, and add the summary to the YAML front matter.
+
+```python
+def process_qmd_files(directory):
+    # Loop through all files in the directory
+    for filename in os.listdir(directory):
+        if filename.endswith('.qmd'):
+            print(f'Processing {filename}...')
+
+            file_path = os.path.join(directory, filename)
+
+            # Read the file
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+
+            original_yaml, full_content = parse_qmd(content)
+            markdown = full_content.replace(original_yaml, '')
+
+            if original_yaml is None:
+                print(f'No YAML front matter found in {filename}, skipping...')
+                continue  # Skip files without YAML front matter
+
+            yaml_data = yaml.safe_load(original_yaml)
+
+            if 'description' in yaml_data:
+                print(f'YAML front matter already contains a description, skipping...')
+                continue
+
+            # Generate a summary of the Markdown content
+            summary = summarize_markdown(markdown)
+
+            # Add the summary to the YAML front matter
+            yaml_data['description'] = summary
+            
+            # Recompose the file content
+            updated_content = recompose_qmd(yaml_data, original_yaml, full_content)
+
+            # Write the updated content back to the file
+            with open(file_path, 'w', encoding='utf-8') as file:
+                file.write(updated_content)
+
+load_dotenv()
+
+# Specify the directory containing your .qmd files
+directory = <YOUR_DIRECTORY>
+
+# Process all .qmd files in the directory
+process_qmd_files(directory)
+```
+
+My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.
+
+I used my ChatGPT Plus to generate the main block of code that has the function `process_qmd_files`, so the whole process, end-to-end, took less than 10 minutes.
+
+The complete code is on [GitHub](https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py).

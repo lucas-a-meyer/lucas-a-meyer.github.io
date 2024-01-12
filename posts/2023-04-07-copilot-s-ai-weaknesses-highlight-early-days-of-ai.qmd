@@ -8,8 +8,9 @@ draft: false
 image: /images/fancy_schnauzer.png
 include-in-header: _msft-clarity.html
 title: Copilot's AI Weaknesses Highlight Early Days of AI
-
 ---
+<article data-clarity-region="article">
+
 
 As a software developer, I have been using GitHub Copilot quite a lot in my daily work. It's an AI-powered code suggestion tool that has been saving me a lot of time. However, I recently stumbled upon an unexpected weakness of Copilot - it's not very good at very new APIs. 
 
@@ -18,3 +19,4 @@ The other day, I was using the new ChatCompletion API from GPT, and my Copilot d
 Instead of being frustrated, I think it's a good thing that Copilot is not perfect. It's a good reminder that we are still in the early days of AI, and there is still a lot of room for improvement in AI-powered tools. 
 
 Moreover, this makes me less worried about AI taking over the world. If AI decides to attack, it may use swords and shields, not the latest weapons, because it has a lot more battles with swords and shields in its training set. In conclusion, while we should still be cautious about the power and influence of AI, we should also embrace its imperfections and use it as a tool to make our lives easier.
+</article>
