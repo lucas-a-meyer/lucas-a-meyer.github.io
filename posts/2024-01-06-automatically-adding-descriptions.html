@@ -122,13 +122,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Lucas A. Meyer - Automatically adding meta tags to your blog posts with OpenAI">
-<meta property="og:description" content="">
 <meta property="og:image" content="https://www.meyerperin.com/images/openai-logo.png">
 <meta property="og:site-name" content="Lucas A. Meyer">
 <meta property="og:image:height" content="300">
 <meta property="og:image:width" content="296">
 <meta name="twitter:title" content="Lucas A. Meyer - Automatically adding meta tags to your blog posts with OpenAI">
-<meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://www.meyerperin.com/images/openai-logo.png">
 <meta name="twitter:image-height" content="300">
 <meta name="twitter:image-width" content="296">
@@ -294,6 +292,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
+<article data-clarity-region="article">
 <p>As I was updating my blog, I realized that I had forgotten to add the <code>description</code> meta tag to many of my blog posts. This is the text that appears in search results and when you share a link on social media. I didn’t want to go through all my posts and add a description manually, so I decided to use OpenAI GPT to generate descriptions for me.</p>
 <p>This code is very simple, but it may be useful to you, so I’m sharing it here. It’s written in Python and uses the new <a href="https://github.com/openai/openai-python/discussions/742">OpenAI Python client syntax</a>.</p>
 <section id="the-code" class="level2">
@@ -393,10 +392,11 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>process_qmd_files(directory)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.</p>
 <p>I used my ChatGPT Plus to generate the main block of code that has the function <code>process_qmd_files</code>, so the whole process, end-to-end, took less than 10 minutes.</p>
-<p>The complete code is on <a href="https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py">GitHub</a>.</p>
+The complete code is on <a href="https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py">GitHub</a>.
+</section></article>
 
 
-</section>
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

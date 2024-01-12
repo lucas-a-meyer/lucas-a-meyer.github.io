@@ -19,6 +19,7 @@
 
 
 
+<article data-clarity-region="article">
 <p>Do you want to start journaling in the new year? Tired of carrying notebooks around? Maybe you just want your notes to be more organized?</p>
 <p>The reMarkable is a tablet with an e-ink display, similar to the Kindle. It is designed to be used with a stylus, and it is marketed as a paper replacement. Contrary to other tablets, if <em>feels</em> like paper.</p>
 <p>I got myself a reMarkable 2 in their Black Friday promotion, after having seen a colleague at work using it. Before having a reMarkable, I used a large number of disorganized Moleskines and loose paper sheets. A lot of loose paper sheets.</p>
@@ -86,9 +87,10 @@ Note
 </div>
 </div>
 <p>You can buy the reMarkable 2 at <a href="https://l.meyerperin.com/rm2">Amazon</a>.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-12-31-remarkable2.html</guid>
@@ -103,6 +105,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -129,10 +132,11 @@ Note
 </section>
 <section id="promotions" class="level2">
 <h2 class="anchored" data-anchor-id="promotions">Promotions</h2>
-<p>Sometimes Badlands Ranch runs big promotions for large orders - I recently ordered 12 packages for $312.80. That’s $2.60 per cup, or $6.50 per day for my dog, same as Blue Buffalo. They send you a large (and annoying) number of emails, so you’ll know when they run promotions, even if you don’t really want to.</p>
+Sometimes Badlands Ranch runs big promotions for large orders - I recently ordered 12 packages for $312.80. That’s $2.60 per cup, or $6.50 per day for my dog, same as Blue Buffalo. They send you a large (and annoying) number of emails, so you’ll know when they run promotions, even if you don’t really want to.
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-11-03-badlands_ranch.html</guid>
@@ -147,6 +151,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <section id="zotero-vs-mendeley-a-comprehensive-comparison" class="level2">
 <h2 class="anchored" data-anchor-id="zotero-vs-mendeley-a-comprehensive-comparison">Zotero vs Mendeley: A Comprehensive Comparison</h2>
 <p>When it comes to managing research citations and bibliographies, two popular tools are often compared: Zotero and Mendeley. While both software programs are similar in many ways, Zotero offers certain advantages that make it a better choice for scholars and researchers.</p>
@@ -154,9 +159,10 @@ Note
 <p>Zotero’s customizable interface is also an advantage, allowing users to tailor the software to their specific needs. This is in contrast to Mendeley, which has a less customizable interface that may not be as user-friendly for some. Additionally, Zotero’s open-source nature allows for greater flexibility and customization, giving users the freedom to create their own plugins and add-ons or modify existing ones.</p>
 <p>Lastly, the community-driven development model of Zotero is a key differentiating factor. The developers are highly responsive to user feedback and suggestions, making Zotero a constantly evolving and improving product. Mendeley, on the other hand, has a corporate-driven development model, with less emphasis on community involvement.</p>
 <p>Overall, while Mendeley is a useful tool, Zotero is the superior choice for scholars and researchers. Its seamless integration with word processors, unlimited storage, customizable interface, open-source nature, and community-driven development model make it the clear winner. So, if you’re looking for a reliable and efficient citation management and bibliography creation tool, look no further than Zotero.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <category>technology</category>
@@ -172,12 +178,14 @@ Note
 
 
 
+<article data-clarity-region="article">
 <p>If you have been following the news for the last few years, you have seen how much the prevalence of misinformation, disinformation (intentional misinformation), and propaganda (intentional misinformation by state actors) has increased a lot. Most topics of interest online have a shocking proportion of misinformation: Ukraine, COVID, elections, etc.</p>
 <p>Determining whether a news article is fake or not is a difficult problem for both people and computer models. This ACM survey paper (<a href="https://dl.acm.org/doi/abs/10.1145/3395046" class="uri">https://dl.acm.org/doi/abs/10.1145/3395046</a>) gives a good idea about the state of the art around 2020. It is far from a solved problem.</p>
 <p>As you would expect, computer scientists break difficult problems into parts, and even the subtasks for fake news detection are hard. A few examples of subtasks are detecting if the headline matches the content of the news, evaluating the reputation of who is sharing the news, evaluating the reputation of the news website, etc.</p>
 <p>For this latter task, a product I have found to be useful is NewsGuard <a href="https://www.newsguardtech.com/" class="uri">https://www.newsguardtech.com/</a>. Although NewsGuard has been (in my opinion, fairly) criticized a few years ago for having a bias towards the left, it has been improving continuously. These days, I find it very helpful, especially since I study disinformation and fraud for a living, and therefore my browsing patterns are… atypical.</p>
 <p>It helps that NewsGuard is free for users of Microsoft Edge. You can install a NewsGuard extension and it will show whether the site you are seeing is trustworthy. It will also integrate with Bing when used in Edge, and show a badge next to each result.</p>
 <p>If you want to try it out, the following link has the instructions: <a href="https://support.microsoft.com/en-us/topic/newsguard-b28e453e-568c-4d57-98ef-c61056f99462" class="uri">https://support.microsoft.com/en-us/topic/newsguard-b28e453e-568c-4d57-98ef-c61056f99462</a>. Note that it’s only free for Microsoft Edge, which is a great browser that runs in a number of platforms such as Linux, Mac, etc.</p>
+</article>
 
 
 
@@ -195,6 +203,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -242,9 +251,10 @@ Moved to Badlands Ranch Dog Food
 <section id="my-verdict" class="level2">
 <h2 class="anchored" data-anchor-id="my-verdict">My verdict</h2>
 <p>My final verdict: I think it’s worthwhile giving it a try.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2022-06-28-farmers-dog.html</guid>

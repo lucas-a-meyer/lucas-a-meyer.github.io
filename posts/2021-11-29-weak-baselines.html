@@ -259,6 +259,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 
 </header>
 
+<article data-clarity-region="article">
 <p>Gather close as I tell you another cautionary tale about data science.</p>
 <p>The finance team of a company was trying to forecast their monthly cash. An analyst had been doing that for about ten years, and had a record of cash actually received per month going back all those years. He realized that some months, like December, received a lot more cash than others, like February.</p>
 <p>The analyst used Excel to calculate the percentage change for each month. For example, if the company received $100M in October 2009 and $80M in November 2009, he recorded -20% for Nov 2009. To calculate November 2021, he would take the average of the percentage changes for November over the last 10 years (2011 to 2020) and apply it to the October 2020 number.</p>
@@ -267,6 +268,7 @@ gtag('config', 'G-6KTZ853BN5', { 'anonymize_ip': true});
 <p>The project was celebrated as a success. A press release was issued, promoting the benefits of using cloud technologies and deep learning for more accurate financial forecasting. The person who hired the consultants was promoted.</p>
 <p>A few months later, a new data scientist joined the company, looked at the monthly data, and used the Excel FORECAST.ETS function to achieve a MAPE of 1% in seconds. This time, there was no press release.</p>
 <p>When starting a data science project, be careful about the baseline you’re using to determine success. Choosing a poor baseline (like the original analyst model) can result in thinking that fairly bad outcomes (like the one from the LSTM model) are good, just because they’re better than horrible outcomes. I’ve seen a number of cases in which a simple heuristic handily beat a complicated ML model.</p>
+</article>
 
 
 

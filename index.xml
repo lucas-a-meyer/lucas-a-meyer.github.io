@@ -19,6 +19,7 @@
 
 
 
+<article data-clarity-region="article">
 <p>In October 2023, lots of people with ADHD started posting about their experiences on <a href="https://www.threads.net">Threads</a>. Have you ever commuted to work and forgot to bring your laptop? Check. Do you frequently procrastinate a simple two-minute task for several days? Check. Another person I conneced with through LinkedIn also posts about her experience.</p>
 <p>As I started seeing a lot of myself in their experiences, and realized that I developed several coping mechanisms and acquired several coping technologies over time, I decided to go for a full diagnosis.</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -152,9 +153,10 @@ Note
 <section id="what-about-you" class="level1">
 <h1>What about you?</h1>
 <p>If you suspect you may have ADHD, I recommend that you talk to a medical professional. Your PCP is a good place to start. Online communities, such as the ones in Threads, can also be a good place to start.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2024-01-04-adhd.html</guid>
@@ -169,6 +171,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <p>This is the first post in a series of posts about creating a web app to manage my social media. The main page for this series is <a href="../posts/2024-01-05-thread_manager.html">here</a>.</p>
 <p>We begin by <a href="https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=django%2Cwindows%2Cazure-portal%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli#2---create-a-web-app-in-azure">creating a new App Service in Azure using the Azure Portal</a>.</p>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -478,9 +481,10 @@ font-style: inherit;">"__main__"</span>:</span>
 </figure>
 </div>
 <p>Now that I have an app that can authenticate users, I need to work on authorization, so that only authorized users can access the app.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2024-01-07-app-with-authentication.html</guid>
@@ -495,6 +499,7 @@ font-style: inherit;">"__main__"</span>:</span>
 
 
 
+<article data-clarity-region="article">
 <p>As I was updating my blog, I realized that I had forgotten to add the <code>description</code> meta tag to many of my blog posts. This is the text that appears in search results and when you share a link on social media. I didn’t want to go through all my posts and add a description manually, so I decided to use OpenAI GPT to generate descriptions for me.</p>
 <p>This code is very simple, but it may be useful to you, so I’m sharing it here. It’s written in Python and uses the new <a href="https://github.com/openai/openai-python/discussions/742">OpenAI Python client syntax</a>.</p>
 <section id="the-code" class="level2">
@@ -822,10 +827,11 @@ font-style: inherit;"># Process all .qmd files in the directory</span></span>
 <span id="cb4-45">process_qmd_files(directory)</span></code></pre></div>
 <p>My blog has over 100 documents, and it took less than 2 minutes to add descriptions to all the fields. Using GPT-4 cost me $2.41, but if I was going to do this manually it will have taken me hours. I think it was worth it.</p>
 <p>I used my ChatGPT Plus to generate the main block of code that has the function <code>process_qmd_files</code>, so the whole process, end-to-end, took less than 10 minutes.</p>
-<p>The complete code is on <a href="https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py">GitHub</a>.</p>
+The complete code is on <a href="https://github.com/lucas-a-meyer/lucas-a-meyer.github.io/blob/main/utils/add_description.py">GitHub</a>.
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2024-01-06-automatically-adding-descriptions.html</guid>
@@ -840,6 +846,7 @@ font-style: inherit;"># Process all .qmd files in the directory</span></span>
 
 
 
+<article data-clarity-region="article">
 <p>Thread Manager a the web app I intend to use to schedule posts to social media sites and run basic analytics.</p>
 <p><strong>I’m starting from scratch</strong> as of January 2024, replacing a previous app I wrote to post exclusively to LinkedIn.</p>
 <p>I intend to post about the process of building this app on <a href="https://www.threads.net">Threads</a> as I build it. The <a href="https://github.com/lucas-a-meyer/thread-manager">code for this app is on GitHub</a>.</p>
@@ -884,10 +891,11 @@ Note
 <li><input type="checkbox">Connect to the LinkedIn API</li>
 <li><input type="checkbox">Enable a basic text post to LinkedIn</li>
 </ul>
-<p>There will be more steps, and I’ll add them as I go.</p>
+There will be more steps, and I’ll add them as I go.
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2024-01-05-thread_manager.html</guid>
@@ -902,6 +910,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <p>I am wrting a book with <a href="https://www.packtpub.com/">Packt Publishing</a> about the <a href="https://github.com/microsoft/semantic-kernel">Microsoft Semantic Kernel</a>. If you want to help by becoming a technical reviewer, please read on.</p>
 <p>The Microsoft Semantic Kernel is an SDK that integrates Large Language Models (LLMs) like <a href="https://platform.openai.com/docs/introduction">OpenAI</a>, <a href="https://azure.microsoft.com/en-us/products/ai-services/openai-service">Azure OpenAI</a>, and <a href="https://huggingface.co/">Hugging Face</a> with conventional programming languages like C# and Python. It allows you to define plugins that can be chained together in just a few lines of code.</p>
 <p>The book is called “Essential Guide for the Microsoft Semantic Kernel”, and its intent is to provide a practical, hands-on introduction to the Semantic Kernel.</p>
@@ -939,9 +948,10 @@ Important
     formId: "202dcfb9-d901-4350-abc3-38c9ebee21bf"
   });
 </script>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2024-01-05-review-semantic-kernel.html</guid>
@@ -956,6 +966,7 @@ Important
 
 
 
+<article data-clarity-region="article">
 <p>Do you want to start journaling in the new year? Tired of carrying notebooks around? Maybe you just want your notes to be more organized?</p>
 <p>The reMarkable is a tablet with an e-ink display, similar to the Kindle. It is designed to be used with a stylus, and it is marketed as a paper replacement. Contrary to other tablets, if <em>feels</em> like paper.</p>
 <p>I got myself a reMarkable 2 in their Black Friday promotion, after having seen a colleague at work using it. Before having a reMarkable, I used a large number of disorganized Moleskines and loose paper sheets. A lot of loose paper sheets.</p>
@@ -1023,9 +1034,10 @@ Note
 </div>
 </div>
 <p>You can buy the reMarkable 2 at <a href="https://l.meyerperin.com/rm2">Amazon</a>.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-12-31-remarkable2.html</guid>
@@ -1040,6 +1052,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <p>In this article, I’ll explain how to use the Semantic Kernel and the OpenAI Vision API to perform two tasks:</p>
 <ol type="1">
 <li>Explain why a meme is funny</li>
@@ -1430,9 +1443,10 @@ font-style: inherit;">0</span>].message.content</span></code></pre></div>
 <section id="have-i-ever-thought-about-creating-an-app-that-does-this-as-a-service" class="level1">
 <h1>Have I ever thought about creating an app that does this as a service?</h1>
 <p>Yes, and with the blog post above, you can easily create one yourself. It will probably take you less than an hour to get it working. The main challenge is to bill for it, as the Open AI Vision calls can get expensive very quickly.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-12-16-skv_py.html</guid>
@@ -1447,6 +1461,7 @@ font-style: inherit;">0</span>].message.content</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1473,10 +1488,11 @@ Note
 </section>
 <section id="promotions" class="level2">
 <h2 class="anchored" data-anchor-id="promotions">Promotions</h2>
-<p>Sometimes Badlands Ranch runs big promotions for large orders - I recently ordered 12 packages for $312.80. That’s $2.60 per cup, or $6.50 per day for my dog, same as Blue Buffalo. They send you a large (and annoying) number of emails, so you’ll know when they run promotions, even if you don’t really want to.</p>
+Sometimes Badlands Ranch runs big promotions for large orders - I recently ordered 12 packages for $312.80. That’s $2.60 per cup, or $6.50 per day for my dog, same as Blue Buffalo. They send you a large (and annoying) number of emails, so you’ll know when they run promotions, even if you don’t really want to.
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-11-03-badlands_ranch.html</guid>
@@ -1491,6 +1507,7 @@ Note
 
 
 
+<article data-clarity-region="article">
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p>The <a href="https://github.com/microsoft/semantic-kernel">Microsoft Semantic Kernel</a> is a thin, open-source, software development toolkit that makes it easier for applications to interact with AI services.</p>
@@ -2065,9 +2082,10 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 <h1>Conclusion</h1>
 <p>I hope this brief tour helps you get started. If you want to learn more, you can check the <a href="https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide/getting-started?tabs=python">official documentation</a>.</p>
 <p>You can also join the community <a href="https://aka.ms/SKDiscord">Discord server</a>.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-10-15-semantic_kernel.html</guid>
@@ -2082,6 +2100,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
 <p><a href="https://www.midjourney.com/">Midjourney</a> is a generative AI tool that can generate high quality images from text prompts. It is particularly good at generating photorealistic images, and also good at blending an existing picture with a prompt. Lots of people use Midjourney as a digital diary, or to quickly create images for their social media and blog posts.</p>
@@ -2171,10 +2190,11 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>I hope this tutorial helped you get started with Midjourney. If you have any questions, please feel free to drop me a message using my socials above (LinkedIn and Threads are my preferred ones).</p>
+I hope this tutorial helped you get started with Midjourney. If you have any questions, please feel free to drop me a message using my socials above (LinkedIn and Threads are my preferred ones).
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-09-23-midjourney.html</guid>
@@ -2189,10 +2209,12 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>I’ve added a new section to my blog, called <a href="https://links.meyerperin.com/mj">A Quick Tour of Midjourney</a>.</p>
 <p>You can find it here: <a href="https://links.meyerperin.com/mj" class="uri">https://links.meyerperin.com/mj</a>.</p>
 <p>If you never used Midjourney before, or if you tried to use it but got quickly intimidated by the volume of messages in their Discord server, this will probably help.</p>
 <p>An important note: Midjourney is now a paid service, so you have to pay for a subscription (currently $10/month) to use it. There are no trials anymore.</p>
+</article>
 
 
 
@@ -2209,11 +2231,13 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>I didn’t have a good father. But my mother showed up. Happy Father’s Day to all fathers that show up, and to all non-dads and single moms that do so much every day to fill in that giant void.</p>
 <p>We are different in social media than we are in real life. The most important thing I am is a father, but I avoid talking about my family on social media.</p>
 <p>I’ll make a small exception today to share the “All About My Dad” worksheet my kids filled for me:</p>
 <p>Dad’s favorite thing to do: spend time with us Dad’s favorite food: eggs benedict Dad’s job: data scientist that does good Dad is happy when: he spends time with us, gets kisses from the dog Dad is mad when: we don’t do our homework and don’t ask for help Dad is really good at: being a dad, picking up dog poop Dad likes to say: “It’s Broncos country, let’s ride” (I’m a Seahawks fan) I love my dad because: he is good at math, he is caring and loving, he’s funny My dad loves me because: I’m the best (older, middle, youngest) child</p>
-<p>I’m very lucky, and I hope you are too. It goes faster than it seems.</p>
+I’m very lucky, and I hope you are too. It goes faster than it seems.
+</article>
 
 
 
@@ -2230,6 +2254,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>Randomized controlled experiments (A/B tests) are frequently said to be the gold standard for decision-making. However, to make a good decision, you have to really understand what question is being answered.</p>
 <p>Let’s say, hypothetically, that you want to try a new color palette for your website. You have the mechanisms to run proper A/B tests: you can bucket users into A and B groups such that the only difference between them is the color palette. You choose, arbitrarily, a random palette, run the experiment for a week, and find that the users in the B group have a $200k lift in revenue, which annualized represents a $10M increase in revenue. That’s not nothing. You roll it out to all users, write your performance review, book a party and wait for your promotion.</p>
 <p>There’s just one important thing missing: you have no idea exactly why it worked. Here’s a few possible explanations, some of which are quite far-fetched:</p>
@@ -2241,7 +2266,8 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 </ul>
 <p>Your A/B experiment is on the top of the evidence pyramid, but for which of the cases above? Without a theory and alternative explanations, you may never know.</p>
 <p>There is, however, a hint that you learned something, and that it’s familiar to data scientists: the descriptive, predictive and prescriptive/causal framework. When you really understand how something works, if you have the resources, you can make it happen at will. For example, if the reason why you got a lift in your experiment is because you were looking like your much larger competitor, you could now mimic their color palette every time they make a change and keep getting the lift. You could mimic palettes of other larger competitors and get lifts there, too.</p>
-<p>A/B tests are great evidence when you understand the question. Better make sure you do.</p>
+A/B tests are great evidence when you understand the question. Better make sure you do.
+</article>
 
 
 
@@ -2258,6 +2284,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>I started writing code when I was 9 years old. I ended up going to Law school. Maybe you should not follow my career path.</p>
 <section id="early-promises" class="level2">
 <h2 class="anchored" data-anchor-id="early-promises">Early promises</h2>
@@ -2300,9 +2327,10 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 <section id="what-about-you" class="level2">
 <h2 class="anchored" data-anchor-id="what-about-you">What about you?</h2>
 <p>I don’t know what your Ikigai is. I know that sometimes you can get far off-path. I needed help to find my bearings. You shouldn’t follow my career path, as I was lost for a long time. But you can learn from my mistakes, and learn what you’re good at and what makes you happy sooner rather than later, and start driving towards that. I hope your road to happiness is shorter than mine, and that it has at least as many beautiful sights along the way.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-05-31-you-should-not-base-your-career-plan-on-mine.html</guid>
@@ -2317,6 +2345,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>Happy Towel Day for those who celebrate it! On this day, fans of the famous Douglas Adams’ book Hitchhikers Guide to the Galaxy carry a towel with them everywhere. Why? Because, as the Guide says, a towel is the most massively useful thing an interstellar hitchhiker can have. As a tribute to the book, I decided to write a blog post about the number 42, which is the answer to the ultimate question of life, the universe, and everything.</p>
 <section id="the-answer-to-the-ultimate-question-of-life-the-universe-and-everything" class="level2">
 <h2 class="anchored" data-anchor-id="the-answer-to-the-ultimate-question-of-life-the-universe-and-everything">The Answer to the Ultimate Question of Life, the Universe, and Everything</h2>
@@ -2338,9 +2367,10 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 <p>In the book, the Guide is a competitor to the Encyclopedia Galactica, which is a repository of all knowledge in the universe. The Guide, instead of being written by experts, can comically be edited by anyone. The big advantage of the Guide, which accounts for most of its success, is that it’s slightly cheaper. Presciently, that is similar to the way Wikipedia works.</p>
 <p>Therefore, on this Towel Day, I am donating $42 to Wikipedia, which my employer generously matches.</p>
 <p>Happy Towel Day!</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-05-25-happy-towel-day.html</guid>
@@ -2355,6 +2385,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <section id="google-duplex-was-going-to-change-the-world-five-years-ago" class="level1">
 <h1>Google Duplex was going to change the world five years ago</h1>
 <section id="introduction" class="level2">
@@ -2377,10 +2408,11 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>If you see the pace of AI technology releases releases and you get caught up in the hype, you may be worried like the people were worried about Duplex in 2018. Take your time to learn about new technologies. Be intentional: it’s definitely worthwhile understanding what LLMs are and are their advantages and limitations, but not necessarily optimal worrying about every new application, like AutoGPT. Remember the Vicki Boykis rule: whatever is important will be here six months from now, a lot will not.</p>
+</section></section></article>
 
 
-</section>
-</section>
+
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-05-24-google-duplex-was-going-to-change-the-world-five-years-ago.html</guid>
@@ -2395,6 +2427,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <section id="my-experience-using-large-language-models-to-write-blog-posts" class="level1">
 <h1>My Experience Using Large Language Models to Write Blog Posts</h1>
 <p>I recently conducted an experiment using large language models (LLMs) to write blog posts. However, I didn’t enjoy the experience as much as I thought I would, even though LLMs should have been helpful since English is not my first language.</p>
@@ -2413,10 +2446,11 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 <section id="using-the-semantic-kernel" class="level2">
 <h2 class="anchored" data-anchor-id="using-the-semantic-kernel">Using the Semantic Kernel</h2>
 <p>This weekend, I began using the Microsoft Semantic Kernel to chain several LLM actions together. I’m still learning how to use it, but I’m already impressed. I’m using it to generate titles, fix my grammar, create images, and convert my text into a Quarto Markdown file. I’ll soon write a blog post teaching how to use the Semantic Kernel in Python. If you can’t wait, you can see how I’m using it by looking at the source code for my blog on GitHub.</p>
+</section></section></article>
 
 
-</section>
-</section>
+
+
 
  ]]></description>
   <guid>https://www.meyerperin.com/posts/2023-05-23-my-experience-using-large-language-models-to-write-blog-posts.html</guid>
@@ -2431,10 +2465,12 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>As a software developer, I have been using GitHub Copilot quite a lot in my daily work. It’s an AI-powered code suggestion tool that has been saving me a lot of time. However, I recently stumbled upon an unexpected weakness of Copilot - it’s not very good at very new APIs.</p>
 <p>The other day, I was using the new ChatCompletion API from GPT, and my Copilot didn’t know about it. It kept pushing me to the older Completion API. It made me realize that these AI-powered tools are still learning and growing. It will be interesting to see how these tools will balance new and established APIs in the future.</p>
 <p>Instead of being frustrated, I think it’s a good thing that Copilot is not perfect. It’s a good reminder that we are still in the early days of AI, and there is still a lot of room for improvement in AI-powered tools.</p>
-<p>Moreover, this makes me less worried about AI taking over the world. If AI decides to attack, it may use swords and shields, not the latest weapons, because it has a lot more battles with swords and shields in its training set. In conclusion, while we should still be cautious about the power and influence of AI, we should also embrace its imperfections and use it as a tool to make our lives easier.</p>
+Moreover, this makes me less worried about AI taking over the world. If AI decides to attack, it may use swords and shields, not the latest weapons, because it has a lot more battles with swords and shields in its training set. In conclusion, while we should still be cautious about the power and influence of AI, we should also embrace its imperfections and use it as a tool to make our lives easier.
+</article>
 
 
 
@@ -2451,6 +2487,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <section id="zotero-vs-mendeley-a-comprehensive-comparison" class="level2">
 <h2 class="anchored" data-anchor-id="zotero-vs-mendeley-a-comprehensive-comparison">Zotero vs Mendeley: A Comprehensive Comparison</h2>
 <p>When it comes to managing research citations and bibliographies, two popular tools are often compared: Zotero and Mendeley. While both software programs are similar in many ways, Zotero offers certain advantages that make it a better choice for scholars and researchers.</p>
@@ -2458,9 +2495,10 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 <p>Zotero’s customizable interface is also an advantage, allowing users to tailor the software to their specific needs. This is in contrast to Mendeley, which has a less customizable interface that may not be as user-friendly for some. Additionally, Zotero’s open-source nature allows for greater flexibility and customization, giving users the freedom to create their own plugins and add-ons or modify existing ones.</p>
 <p>Lastly, the community-driven development model of Zotero is a key differentiating factor. The developers are highly responsive to user feedback and suggestions, making Zotero a constantly evolving and improving product. Mendeley, on the other hand, has a corporate-driven development model, with less emphasis on community involvement.</p>
 <p>Overall, while Mendeley is a useful tool, Zotero is the superior choice for scholars and researchers. Its seamless integration with word processors, unlimited storage, customizable interface, open-source nature, and community-driven development model make it the clear winner. So, if you’re looking for a reliable and efficient citation management and bibliography creation tool, look no further than Zotero.</p>
+</section></article>
 
 
-</section>
+
 
  ]]></description>
   <category>technology</category>
@@ -2476,6 +2514,7 @@ font-style: inherit;">print</span>(response)</span></code></pre></div>
 
 
 
+<article data-clarity-region="article">
 <p>Recently, I started to automate a lot of what I do on LinkedIn. I am using AI generators to improve my text and to generate images for my blog posts. In this post, I’ll show how I am generating images for my blog and for LinkedIn with Stable Diffusion v2.1.</p>
 <section id="how-to-use-stable-diffusion-from-hugging-face" class="level1">
 <h1>How to Use Stable Diffusion from Hugging Face</h1>
@@ -2559,10 +2598,11 @@ font-style: inherit;">0</span>]</span></code></pre></div>
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
 <p>In this tutorial, we have shown you how to use Stable Diffusion from Hugging Face with Diffusers library. We hope you enjoyed this tutorial and found it useful for your projects. If you have any questions or feedback, please feel free to contact us or open an issue on GitHub.</p>
 <p>My code is available on GitHub (https://github.com/lucas-a-meyer/diffusers-experiments/).</p>
+</section></section></article>
 
 
-</section>
-</section>
+
+
 
  ]]></description>
   <category>technology</category>
