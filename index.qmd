@@ -6,8 +6,8 @@ toc-expand: true
 listing:
 - id: articles
   contents: 
+  - posts/2024-01-12-kindle-scribe.qmd
   - posts/2024-01-04-adhd.qmd
-  - posts/2023-12-31-remarkable2.qmd
   - posts/2024-01-05-thread_manager.qmd
   - posts/2023-12-16-skv_py.qmd
   - posts/2023-09-23-midjourney.qmd
