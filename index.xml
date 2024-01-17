@@ -10,7 +10,53 @@
 <atom:link href="https://www.meyerperin.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lucas A. Meyer&#39;s blog</description>
 <generator>quarto-1.3.450</generator>
-<lastBuildDate>Fri, 12 Jan 2024 08:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 17 Jan 2024 08:00:00 GMT</lastBuildDate>
+<item>
+  <title>Is a PhD worth it?</title>
+  <dc:creator>Lucas A. Meyer</dc:creator>
+  <link>https://www.meyerperin.com/posts/2024-01-17-phd-for-job.html</link>
+  <description><![CDATA[ 
+
+
+
+<article data-clarity-region="article">
+<p>“Is a PhD worth it?” is a question that I get quite a lot on LinkedIn.</p>
+<p>If you do an online search or ask ChatGPT about it, you will get a lot of answers, but most people find those answers unsatisfactory. A lot of the problem is with the question, as it’s a little bit like asking whether “is it worth it to travel to Seattle?” It depends on you, on the timing, and on your objectives. Most of the text below is about the experience from a PhD in the US, but some of it is applicable to other countries.</p>
+<section id="phds-are-vastly-different" class="level2">
+<h2 class="anchored" data-anchor-id="phds-are-vastly-different">PhDs are vastly different</h2>
+<p>Although there are some similarities between PhD fields, in practice the careers in different fields are vastly different. The differences are not only between fields, but also between countries, universities, departments, and even supervisors. Someone’s experience with a PhD in English is going to be vastly different from someone’s experience with a PhD in Finance or Accounting. The supply and demand for professionals in different fields varies a lot. Therefore, when you are looking for opinions, it’s important to talk to people that at least have done a PhD in a similar subject as you are considering. Different subjects can be thought as completely different careers. Asking an English PhD about a PhD in Finance is like asking a poet about a career in accounting.</p>
+<p>Some fields have a robust market in the industry, but for some others, the market is mostly limited to academia. For example, PhDs in Finance, Accounting, Economics, Statistics, Computer Science, and Engineering have a robust market in the industry. On the other hand, the industry market for PhDs in English, History, and Philosophy is very limited. This is not to say that there are no jobs, or that the PhD won’t be helpful to get a specific job, but that the PhD is usually not a requirement for industry jobs in these subjects and it’s unlikely to help in the average case. In addition, some careers are more careful about admitting PhD students, and only admit a small number that will be employable later (that tends to be the case with Finance and Accounting). Some other fields admit as many students as possible, which can cause the market to become oversupplied.</p>
+</section>
+<section id="what-is-your-objective" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-your-objective">What is your objective?</h2>
+<p>If you worked with me on anything, you know that this is a question you hear a lot from me. You need to know what you’re trying to accomplish before you can be helped.</p>
+<p>If you want to work as a researcher in a research university, you need a PhD, and usually a PhD from a well-regarded university. For most other cases, a PhD is not a hard requirement. There are some positions in large companies that require it, usually research positions, and there are some positions for which it is strongly desired. In some cases, requirements make little sense: I’ve seen someone with a Ph.D.&nbsp;in Philosophy from a mid-tier university get an interview for a software development position that required a PhD, but another person with a Master’s in Computer Science from a top university not get an interview for the same position because they didn’t have a PhD, even though the person without the PhD had a lot of experience in the subject and in the area. These cases are uncommon. One example of an industry position that often requires PhDs is the Applied Scientist position at Amazon, although if I recall correctly, it’s not a hard requirement for all teams.</p>
+<p>If you don’t want to work in a position that requires a PhD, your question is probably about the overall value of the PhD, as in “is it worth the investment?” Most PhDs are funded with a stipend that is enough to live on, but it’s not a lot of money. This makes getting a PhD a substantial investment — depending on your career, you will be forfeiting 4-6 years of salary, and you will be spending a lot of time and effort. The starting salary of a Computer Science graduate in the West Coast is easily over $100,000, so you are looking at a $400,000 to $600,000 investment in forfeited salary alone, and there’s no guarantee that having a Ph.D.&nbsp;will substantially improve your salary later. For science careers with a solid industry market, the PhD is more likely to make a difference in your salary after the initial investment than in other fields. For a long career in these fields, it’s likely to pay off, but not guaranteed. For fields with a weaker market, a PhD is unlikely to pay off financially. Also, doing a PhD outside of your career is unlikely to help you get a job. For example, if you are planning to work as a software engineer and want to do a PhD in English before you start your career, you are probably going to be better off financially if you don’t do the PhD. It may still be worth it for you for the learning experience.</p>
+<p>If want to do it because you really love to learn… well, maybe that’s a good reason. PhDs in top universities are very rigorous, and you will learn a lot. I have to say that after doing it, you will feel that you know <em>less</em> than before you started it, but at least you are going to be pretty sure about what you know well and what you don’t. You get lots of skills: you will learn to research rigorously, you will improve your presentation skills, you will learn how to learn, you will get project management skills, but those are skills that you can get elsewhere while being paid.</p>
+</section>
+<section id="can-it-help-me-get-a-job" class="level2">
+<h2 class="anchored" data-anchor-id="can-it-help-me-get-a-job">Can it help me get a job?</h2>
+<p>As it’s common with most answers… it depends. Let’s do a multiverse analysis. Assume that there are two versions of you. Both just finished a Computer Science degree at a prestigious university. One of them will go to work in a well-recognized tech company for five years, the other version will go for a PhD in Computer Science at a prestigious university for five years. Five years later, both apply for a non-research software engineering position. Besides having more money, the engineering version of you has more experience and it’s more likely to get the job. On the other hand, if five years later both of you apply for a research position in a tech company, the PhD version of you is more likely to get the job. Only the research version of you can apply for a tenure-track Assistant Professor position. Ten years after finishing school, the software engineer version is likely to have more wealth.</p>
+</section>
+<section id="what-about-the-experience" class="level2">
+<h2 class="anchored" data-anchor-id="what-about-the-experience">What about the experience?</h2>
+<p>For most people in research institutions, the experience is very hard. It’s a lot of work, and it’s very stressful. It’s not uncommon to have to work 60-80 hours a week. There’s a lot to learn and a lot of work to do in a short amount of time, and your work will be evaluated at the highest level. You need to improve the overall human body of knowledge, and a lot of dedicated people have been working on it for a while before you started, so it’s supposed to be hard. You need to find something that you enjoy doing hours on end and researching very deeply. You need to be able to self-motivate. For some careers, a lot of the experience is about recovering from failure, as a successful researcher has many papers rejected. Most people who start a PhD are good students that are used to success, and it’s a very different experience to have to deal with failure.</p>
+<p>Therefore, it’s not something that most people would recommend for the experience alone.</p>
+<p>For people in non-research institutions that get the title without having to publish new research at top tier journals, the experience tends to be a lot better, but the applicability of the degree also tends to be a lot lower.</p>
+</section>
+<section id="so-should-i-do-a-phd" class="level2">
+<h2 class="anchored" data-anchor-id="so-should-i-do-a-phd">So, should <strong><em>I</em></strong> do a PhD?</h2>
+<p>If you want to be a researcher in a top university, it’s kind of the only way. If you are thinking about doing a PhD to make someone else happy, or to get a lot of easy money, my suggestion is that you shouldn’t do it — it’s an uncertain way to make parents happy, or to make a lot of money. For all other cases, the answer is an unsatisfactory <em>“it depends a lot on your particular situation and unlikely that you’ll find the answer in an online article”</em>. You need to look hard into your objectives and talk to some people in both your subject area and the career you plan to pursue afterwards. A PhD is probably one of the major purchases you will do in your whole life, usually as big as a house, so you should invest a lot of time in researching it and making sure it’s the right decision for you. It’s definitely worth your time and money to get information from people that have been through a similar path in order to answer your questions.</p>
+</section></article>
+
+
+
+
+ ]]></description>
+  <guid>https://www.meyerperin.com/posts/2024-01-17-phd-for-job.html</guid>
+  <pubDate>Wed, 17 Jan 2024 08:00:00 GMT</pubDate>
+  <media:content url="https://www.meyerperin.com/images/phd-holding-book.jpeg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Replacing my reMarkable 2 with a Kindle Scribe</title>
   <dc:creator>Lucas A. Meyer</dc:creator>
@@ -2559,33 +2605,6 @@ Moreover, this makes me less worried about AI taking over the world. If AI decid
   <guid>https://www.meyerperin.com/posts/2023-04-07-copilot-s-ai-weaknesses-highlight-early-days-of-ai.html</guid>
   <pubDate>Fri, 07 Apr 2023 13:00:00 GMT</pubDate>
   <media:content url="https://www.meyerperin.com/images/fancy_schnauzer.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>Zotero for Citation Management and Bibliography Creation</title>
-  <dc:creator>Lucas A. Meyer</dc:creator>
-  <link>https://www.meyerperin.com/posts/2023-03-29-zotero.html</link>
-  <description><![CDATA[ 
-
-
-
-<article data-clarity-region="article">
-<section id="zotero-vs-mendeley-a-comprehensive-comparison" class="level2">
-<h2 class="anchored" data-anchor-id="zotero-vs-mendeley-a-comprehensive-comparison">Zotero vs Mendeley: A Comprehensive Comparison</h2>
-<p>When it comes to managing research citations and bibliographies, two popular tools are often compared: Zotero and Mendeley. While both software programs are similar in many ways, Zotero offers certain advantages that make it a better choice for scholars and researchers.</p>
-<p>The issue of storage is also worth noting. Zotero’s unlimited storage for references and attachments is a definite plus, whereas Mendeley’s free version allows only 2GB of storage. This limitation can affect researchers who work with vast amounts of data and documents as Zotero’s capacity ensures all the research materials can be kept in one place and accessed easily.</p>
-<p>Zotero’s customizable interface is also an advantage, allowing users to tailor the software to their specific needs. This is in contrast to Mendeley, which has a less customizable interface that may not be as user-friendly for some. Additionally, Zotero’s open-source nature allows for greater flexibility and customization, giving users the freedom to create their own plugins and add-ons or modify existing ones.</p>
-<p>Lastly, the community-driven development model of Zotero is a key differentiating factor. The developers are highly responsive to user feedback and suggestions, making Zotero a constantly evolving and improving product. Mendeley, on the other hand, has a corporate-driven development model, with less emphasis on community involvement.</p>
-<p>Overall, while Mendeley is a useful tool, Zotero is the superior choice for scholars and researchers. Its seamless integration with word processors, unlimited storage, customizable interface, open-source nature, and community-driven development model make it the clear winner. So, if you’re looking for a reliable and efficient citation management and bibliography creation tool, look no further than Zotero.</p>
-</section></article>
-
-
-
-
- ]]></description>
-  <category>technology</category>
-  <guid>https://www.meyerperin.com/posts/2023-03-29-zotero.html</guid>
-  <pubDate>Wed, 29 Mar 2023 13:00:00 GMT</pubDate>
-  <media:content url="https://www.meyerperin.com/images/diffused_professor.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>
