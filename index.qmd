@@ -4,22 +4,6 @@ title-meta: "Articles and Blog"
 toc: true
 toc-expand: true
 listing:
-- id: articles
-  contents: 
-  - posts/2024-01-12-kindle-scribe.qmd
-  - posts/2024-01-04-adhd.qmd
-  - posts/2024-01-05-thread_manager.qmd
-  - posts/2023-12-16-skv_py.qmd
-  - posts/2023-09-23-midjourney.qmd
-  - posts/2023-10-15-semantic_kernel.qmd
-  sort: False
-  type: grid
-  image-height: 320px
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [image, author, date, title, subtitle]
-  feed: true
 - id: blog
   contents: posts
   sort: "date desc"
@@ -34,14 +18,22 @@ page-layout: full
 title-block-banner: false
 include-in-header: _msft-clarity.html
 ---
-# Featured Articles  
 
-:::{#articles}
-:::
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
----
+<center>
+<span style="font-weight:700;font-size:28px">
+This is my personal blog, kept mostly for historical purposes. You are probably looking for the [MeyerPerin Foundation Blog](https://meyerperin.org/), where I keep my technical content about Artificial Intelligence and Education.
+</span>
+</center>
 
-# Blog
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+## Blog
 
 :::{#blog}
 :::

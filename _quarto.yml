@@ -14,7 +14,6 @@ execute:
 website:
   title: "Lucas A. Meyer"
   google-analytics: "G-6KTZ853BN5"
-  margin-footer: subscribe.html
   twitter-card: true
   open-graph: true
   site-url: https://www.meyerperin.com
@@ -26,16 +25,8 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Reviews"
-        file: reviews.qmd
       - text: "Using Quarto"
         href: using_quarto/
-      - text: "GitHub Repositories" 
-        menu:
-          - text: "OpenAI Vision API with the Semantic Kernel"
-            href: https://github.com/lucas-a-meyer/sk-vision-py
-          - text: "Pytly: Python client for the T.LY link shortener"
-            href: https://github.com/lucas-a-meyer/pytly     
     right:
       - text: "{{< iconify fa6-brands threads >}}"
         href: https://threads.net/@lucas_a_meyer
